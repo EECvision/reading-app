@@ -8,9 +8,9 @@ export const dynamic = 'force-dynamic';
 
 export async function GET(
   request: Request,
-  { params }: { params: { deckId: string } }
+  { params }: { params: Promise<{ deckId: string }> }
 ) {
-  const { deckId } = params;
+  const { deckId } = await params;
   
   if (!deckId.startsWith('file:')) {
     return NextResponse.json({ error: 'Invalid file deck ID' }, { status: 400 });
