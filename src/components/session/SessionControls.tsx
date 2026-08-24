@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { TTSSettings, SessionStyle } from '@/types';
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
@@ -18,14 +18,12 @@ interface SessionControlsProps {
   onShuffleChange: (v: boolean) => void;
   sessionStyle: SessionStyle;
   onStyleChange: (s: SessionStyle) => void;
+  onAudioEnd?: () => void;
 }
 
 const SESSION_STYLES: { id: SessionStyle; label: string }[] = [
   { id: 'card-flip',       label: 'Card Flip' },
-  { id: 'tts-listen',      label: 'Listen Only' },
   { id: 'read-and-listen', label: 'Read + Listen' },
-  { id: 'audio-first',     label: 'Audio First' },
-  { id: 'study-session',   label: 'Study Session' },
 ];
 
 const SPEED_OPTIONS = [0.5, 0.75, 1, 1.25, 1.5, 2];
@@ -42,6 +40,7 @@ export function SessionControls({
   onShuffleChange,
   sessionStyle,
   onStyleChange,
+  onAudioEnd,
 }: SessionControlsProps) {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [ttsSettings, setTTSSettings] = useState<TTSSettings>(() => getSettings().tts);
@@ -59,6 +58,37 @@ export function SessionControls({
     saveTTSSettings(next);
   };
 
+  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle });
+  useEffect(() => {
+    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle };
+  });
+
+  useEffect(() => {
+    if (autoplay && currentText) {
+      const timer = setTimeout(() => {
+        stop();
+        speak({
+          text: currentText,
+          settings: latestProps.current.ttsSettings,
+          onStart: () => { setSpeaking(true); setPaused(false); },
+          onEnd: () => {
+            setSpeaking(false);
+            setPaused(false);
+            const p = latestProps.current;
+            if (p.onAudioEnd) p.onAudioEnd();
+            if (p.autoplay && p.canNext && p.sessionStyle !== 'card-flip') p.onNext();
+          },
+        });
+      }, 100);
+      return () => {
+        clearTimeout(timer);
+        stop();
+        setSpeaking(false);
+        setPaused(false);
+      };
+    }
+  }, [currentText, autoplay]);
+
   const handleSpeak = () => {
     if (paused) {
       resume();
@@ -73,7 +103,8 @@ export function SessionControls({
       onEnd: () => {
         setSpeaking(false);
         setPaused(false);
-        if (autoplay && canNext) onNext();
+        if (onAudioEnd) onAudioEnd();
+        if (autoplay && canNext && sessionStyle !== 'card-flip') onNext();
       },
     });
   };
@@ -220,6 +251,18 @@ export function SessionControls({
               </select>
             </div>
           )}
+
+          {/* Mute Voice */}
+          <label className={styles.checkboxLabel}>
+            <input
+              id="toggle-mute"
+              type="checkbox"
+              checked={ttsSettings.muted || false}
+              onChange={(e) => updateTTS({ muted: e.target.checked })}
+              className={styles.toggleSwitch}
+            />
+            Mute Voice
+          </label>
 
           {/* Autoplay */}
           <label className={styles.checkboxLabel}>

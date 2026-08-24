@@ -1,17 +1,27 @@
 'use client';
 
-import type { NotesItem } from '@/types';
+import type { NotesItem, SessionStyle } from '@/types';
 import styles from './NotesCard.module.css';
 
 interface NotesCardProps {
   item: NotesItem;
+  sessionStyle: SessionStyle;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function NotesCard({ item, onKnown, onReview }: NotesCardProps) {
+export function NotesCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: NotesCardProps) {
   return (
-    <div className={styles.container}>
+    <div 
+      className={styles.container}
+      onClick={() => {
+        if (!isFlipped && (sessionStyle === 'card-flip')) {
+          onFlip();
+        }
+      }}
+    >
       <div className={`card-glass ${styles.card}`}>
         {item.category && (
           <span className={`badge badge-brand ${styles.category}`}>

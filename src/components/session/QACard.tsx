@@ -7,15 +7,16 @@ import styles from './QACard.module.css';
 interface QACardProps {
   item: QAItem;
   sessionStyle: SessionStyle;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
-  const [revealed, setRevealed] = useState(false);
+export function QACard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: QACardProps) {
   const [hintVisible, setHintVisible] = useState(false);
 
-  const showBoth = sessionStyle === 'read-and-listen' || sessionStyle === 'tts-listen';
+  const showBoth = sessionStyle === 'read-and-listen';
 
   return (
     <div className={styles.container}>
@@ -31,7 +32,7 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
         </p>
 
         {/* Hint */}
-        {item.hint && !revealed && (
+        {item.hint && !isFlipped && (
           <div className={styles.hintContainer}>
             {hintVisible ? (
               <p className={styles.hintText}>
@@ -51,7 +52,7 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
       </div>
 
       {/* Answer */}
-      {(revealed || showBoth) ? (
+      {(isFlipped || showBoth) ? (
         <div className={`card animate-slideUp ${styles.answerCard}`}>
           <p className={styles.answerText}>
             {item.answer}
@@ -62,7 +63,7 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
           <button
             id="btn-reveal-answer"
             className="btn btn-secondary"
-            onClick={() => setRevealed(true)}
+            onClick={() => onFlip()}
           >
             Reveal Answer
           </button>
@@ -70,12 +71,12 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
       )}
 
       {/* Rating */}
-      {(revealed || showBoth) && (
+      {(isFlipped || showBoth) && (
         <div className={`animate-slideUp ${styles.actionsContainer}`}>
-          <button id="btn-review" className="btn btn-danger" onClick={() => { setRevealed(false); setHintVisible(false); onReview(); }}>
+          <button id="btn-review" className="btn btn-danger" onClick={() => { setHintVisible(false); onReview(); }}>
             Needs Review
           </button>
-          <button id="btn-known" className="btn btn-success" onClick={() => { setRevealed(false); setHintVisible(false); onKnown(); }}>
+          <button id="btn-known" className="btn btn-success" onClick={() => { setHintVisible(false); onKnown(); }}>
             Got It ✓
           </button>
         </div>

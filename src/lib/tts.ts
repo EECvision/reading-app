@@ -37,6 +37,7 @@ export function speak(opts: SpeakOptions): void {
   const utterance = new SpeechSynthesisUtterance(opts.text);
   utterance.rate = opts.settings.rate;
   utterance.pitch = opts.settings.pitch;
+  utterance.volume = opts.settings.muted ? 0 : 1;
   utterance.lang = 'en-US';
 
   if (opts.settings.voiceURI) {

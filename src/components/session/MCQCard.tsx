@@ -6,17 +6,23 @@ import styles from './MCQCard.module.css';
 
 interface MCQCardProps {
   item: MCQItem;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function MCQCard({ item, onKnown, onReview }: MCQCardProps) {
+export function MCQCard({ item, isFlipped, onFlip, onKnown, onReview }: MCQCardProps) {
   const [selected, setSelected] = useState<string | null>(null);
-  const revealed = selected !== null;
+  const revealed = selected !== null || isFlipped;
   const correct = selected === item.correct_answer;
 
+  // If user selects an option, also trigger onFlip so page.tsx knows it's flipped
   const handleSelect = (opt: string) => {
-    if (!revealed) setSelected(opt);
+    if (!revealed) {
+      setSelected(opt);
+      onFlip();
+    }
   };
 
   const handleNext = () => {

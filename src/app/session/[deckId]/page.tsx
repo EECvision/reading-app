@@ -8,7 +8,7 @@ import type {
   InterviewDeck, InterviewQuestion,
   FlashcardItem, QAItem, ArticleItem, NotesItem, MCQItem,
 } from '@/types';
-import { getDeck } from '@/lib/localStorage';
+import { getDeck, getSettings, saveAutoplaySettings, saveShuffleSettings } from '@/lib/localStorage';
 import { buildStudyList, rateItem, saveSessionSummary } from '@/lib/progress';
 import { stop, buildSpeechText } from '@/lib/tts';
 import { SessionControls } from '@/components/session/SessionControls';
@@ -39,10 +39,11 @@ export default function SessionPage() {
   const [level, setLevel] = useState('');
   const [index, setIndex] = useState(0);
   const [sessionStyle, setSessionStyle] = useState<SessionStyle>('card-flip');
-  const [shuffle, setShuffle] = useState(false);
-  const [autoplay, setAutoplay] = useState(false);
+  const [shuffle, setShuffle] = useState(() => getSettings().shuffle);
+  const [autoplay, setAutoplay] = useState(() => getSettings().autoplay);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
   const [startedAt] = useState(new Date().toISOString());
+  const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
     const deck = getDeck(deckId);
@@ -84,6 +85,7 @@ export default function SessionPage() {
     setItems(buildStudyList(list, deckId, shuffle));
      
     setIndex(0);
+    setIsFlipped(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shuffle]);
 
@@ -98,6 +100,7 @@ export default function SessionPage() {
 
   const handleNext = useCallback(() => {
     stop();
+    setIsFlipped(false);
     if (index < items.length - 1) {
       setIndex((i) => i + 1);
     } else {
@@ -120,8 +123,11 @@ export default function SessionPage() {
 
   const handlePrev = useCallback(() => {
     stop();
+    setIsFlipped(false);
     if (index > 0) setIndex((i) => i - 1);
   }, [index]);
+
+
 
   if (!currentItem) {
     return (
@@ -131,8 +137,14 @@ export default function SessionPage() {
     );
   }
 
-  // Build the text for TTS — cast through unknown to satisfy the union
-  const speechText = buildSpeechText(mode, currentItem as unknown as Record<string, unknown>);
+  // Build the text for TTS dynamically based on mode, sessionStyle, and isFlipped
+  let phase: 'front' | 'back' | 'full' = 'full';
+  if (sessionStyle === 'card-flip') {
+    phase = isFlipped ? 'back' : 'front';
+  }
+  
+  const speechText = buildSpeechText(mode, currentItem as unknown as Record<string, unknown>, phase);
+
 
   const renderCard = () => {
     const onKnown = () => { handleRate('known'); handleNext(); };
@@ -140,21 +152,23 @@ export default function SessionPage() {
 
     switch (mode) {
       case 'flashcard':
-        return <FlashCard item={currentItem as FlashcardItem} sessionStyle={sessionStyle} onKnown={onKnown} onReview={onReview} />;
+        return <FlashCard item={currentItem as FlashcardItem} sessionStyle={sessionStyle} isFlipped={isFlipped} onFlip={() => setIsFlipped(f => !f)} onKnown={onKnown} onReview={onReview} />;
       case 'qa':
-        return <QACard item={currentItem as QAItem} sessionStyle={sessionStyle} onKnown={onKnown} onReview={onReview} />;
+        return <QACard item={currentItem as QAItem} sessionStyle={sessionStyle} isFlipped={isFlipped} onFlip={() => setIsFlipped(f => !f)} onKnown={onKnown} onReview={onReview} />;
       case 'article':
-        return <ArticleCard item={currentItem as ArticleItem} onKnown={onKnown} onReview={onReview} />;
+        return <ArticleCard item={currentItem as ArticleItem} sessionStyle={sessionStyle} isFlipped={isFlipped} onFlip={() => setIsFlipped(f => !f)} onKnown={onKnown} onReview={onReview} />;
       case 'notes':
-        return <NotesCard item={currentItem as NotesItem} onKnown={onKnown} onReview={onReview} />;
+        return <NotesCard item={currentItem as NotesItem} sessionStyle={sessionStyle} isFlipped={isFlipped} onFlip={() => setIsFlipped(f => !f)} onKnown={onKnown} onReview={onReview} />;
       case 'mcq':
-        return <MCQCard item={currentItem as MCQItem} onKnown={onKnown} onReview={onReview} />;
+        return <MCQCard item={currentItem as MCQItem} isFlipped={isFlipped} onFlip={() => setIsFlipped(f => !f)} onKnown={onKnown} onReview={onReview} />;
       case 'interview':
         return (
           <InterviewCard
             question={currentItem as unknown as InterviewQuestion}
             role={role}
             level={level}
+            isFlipped={isFlipped}
+            onFlip={() => setIsFlipped(f => !f)}
             onKnown={onKnown}
             onReview={onReview}
           />
@@ -200,11 +214,20 @@ export default function SessionPage() {
             canPrev={index > 0}
             canNext={index < items.length - 1}
             autoplay={autoplay}
-            onAutoplayChange={setAutoplay}
+            onAutoplayChange={(val) => {
+              setAutoplay(val);
+              saveAutoplaySettings(val);
+            }}
             shuffle={shuffle}
-            onShuffleChange={setShuffle}
+            onShuffleChange={(val) => {
+              setShuffle(val);
+              saveShuffleSettings(val);
+            }}
             sessionStyle={sessionStyle}
-            onStyleChange={setSessionStyle}
+            onStyleChange={(s) => {
+              setSessionStyle(s);
+              setIsFlipped(false); // reset state when switching modes
+            }}
           />
         </div>
 

@@ -10,10 +10,7 @@ export type ReadingMode =
 
 export type SessionStyle =
   | 'card-flip'
-  | 'tts-listen'
-  | 'read-and-listen'
-  | 'audio-first'
-  | 'study-session';
+  | 'read-and-listen';
 
 // ─── JSON Item Shapes ────────────────────────────────────────────────────────
 
@@ -148,6 +145,7 @@ export interface TTSSettings {
   rate: number;      // 0.5 – 2.0
   pitch: number;     // 0.5 – 2.0
   voiceURI: string;  // SpeechSynthesisVoice.voiceURI
+  muted?: boolean;
 }
 
 // ─── App Settings ────────────────────────────────────────────────────────────
@@ -157,6 +155,8 @@ export type Theme = 'light' | 'dark';
 export interface AppSettings {
   theme: Theme;
   tts: TTSSettings;
+  autoplay: boolean;
+  shuffle: boolean;
 }
 
 // ─── Session State ───────────────────────────────────────────────────────────

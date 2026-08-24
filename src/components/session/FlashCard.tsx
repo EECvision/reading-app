@@ -1,21 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+
 import type { FlashcardItem, SessionStyle } from '@/types';
 import styles from './FlashCard.module.css';
 
 interface FlashCardProps {
   item: FlashcardItem;
   sessionStyle: SessionStyle;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardProps) {
-  const [flipped, setFlipped] = useState(false);
+export function FlashCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: FlashCardProps) {
 
-  const isFlipMode = sessionStyle === 'card-flip' || sessionStyle === 'study-session';
-  const showBoth = sessionStyle === 'read-and-listen' || sessionStyle === 'tts-listen';
+  const isFlipMode = sessionStyle === 'card-flip';
+  const showBoth = sessionStyle === 'read-and-listen';
 
   return (
     <div className={styles.container}>
@@ -23,8 +24,8 @@ export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardPr
       {/* Card */}
       <div className={`flip-scene ${styles.flipSceneWrapper}`}>
         <div
-          className={`flip-card ${flipped ? 'flipped' : ''} ${styles.flipCardInner}`}
-          onClick={() => isFlipMode && setFlipped((f) => !f)}
+          className={`flip-card ${isFlipped ? 'flipped' : ''} ${styles.flipCardInner}`}
+          onClick={() => isFlipMode && onFlip()}
         >
           {/* Front */}
           <div className={`flip-front card-glass ${styles.frontSide}`}>
@@ -75,12 +76,12 @@ export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardPr
       )}
 
       {/* Rating buttons — shown after flip or in show-both mode */}
-      {(flipped || showBoth) && (
+      {(isFlipped || showBoth) && (
         <div className={`animate-slideUp ${styles.actions}`}>
-          <button id="btn-review" className="btn btn-danger" onClick={() => { setFlipped(false); onReview(); }}>
+          <button id="btn-review" className="btn btn-danger" onClick={() => { onReview(); }}>
             Needs Review
           </button>
-          <button id="btn-known" className="btn btn-success" onClick={() => { setFlipped(false); onKnown(); }}>
+          <button id="btn-known" className="btn btn-success" onClick={() => { onKnown(); }}>
             Got It ✓
           </button>
         </div>

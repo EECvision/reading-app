@@ -88,6 +88,8 @@ const defaultSettings: AppSettings = {
     pitch: 1,
     voiceURI: '',
   },
+  autoplay: false,
+  shuffle: false,
 };
 
 export function getSettings(): AppSettings {
@@ -106,6 +108,16 @@ export function saveTheme(theme: Theme): void {
 export function saveTTSSettings(tts: TTSSettings): void {
   const s = getSettings();
   saveSettings({ ...s, tts });
+}
+
+export function saveAutoplaySettings(autoplay: boolean): void {
+  const s = getSettings();
+  saveSettings({ ...s, autoplay });
+}
+
+export function saveShuffleSettings(shuffle: boolean): void {
+  const s = getSettings();
+  saveSettings({ ...s, shuffle });
 }
 
 // ─── Active Session ───────────────────────────────────────────────────────────

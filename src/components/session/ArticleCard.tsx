@@ -1,17 +1,27 @@
 'use client';
 
-import type { ArticleItem } from '@/types';
+import type { ArticleItem, SessionStyle } from '@/types';
 import styles from './ArticleCard.module.css';
 
 interface ArticleCardProps {
   item: ArticleItem;
+  sessionStyle: SessionStyle;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function ArticleCard({ item, onKnown, onReview }: ArticleCardProps) {
+export function ArticleCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: ArticleCardProps) {
   return (
-    <div className={styles.container}>
+    <div 
+      className={styles.container}
+      onClick={() => {
+        if (!isFlipped && (sessionStyle === 'card-flip')) {
+          onFlip();
+        }
+      }}
+    >
       <div className={`card-glass ${styles.card}`}>
         {item.category && (
           <span className={`badge badge-brand ${styles.category}`}>

@@ -8,18 +8,30 @@ interface InterviewCardProps {
   question: InterviewQuestion;
   role: string;
   level: string;
+  isFlipped: boolean;
+  onFlip: () => void;
   onKnown: () => void;
   onReview: () => void;
 }
 
-export function InterviewCard({ question, role, level, onKnown, onReview }: InterviewCardProps) {
+export function InterviewCard({ question, role, level, isFlipped, onFlip, onKnown, onReview }: InterviewCardProps) {
   const [phase, setPhase] = useState<'question' | 'answer' | 'followups'>('question');
   const [followupIndex, setFollowupIndex] = useState(0);
 
   const followups = question.follow_ups ?? [];
   const hasFollowups = followups.length > 0;
 
-  const handleRevealAnswer = () => setPhase('answer');
+  // Sync internal phase with isFlipped prop
+  if (isFlipped && phase === 'question') {
+    setPhase('answer');
+  } else if (!isFlipped && phase !== 'question') {
+    setPhase('question');
+    setFollowupIndex(0);
+  }
+
+  const handleRevealAnswer = () => {
+    onFlip();
+  };
   const handleNextFollowup = () => {
     if (followupIndex < followups.length - 1) {
       setFollowupIndex((i) => i + 1);
