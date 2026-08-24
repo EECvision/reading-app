@@ -14,6 +14,7 @@ import {
   getSettings,
   saveAutoplaySettings,
   saveShuffleSettings,
+  saveRepeatSettings,
 } from "@/lib/localStorage";
 import { buildStudyList, rateItem, saveSessionSummary } from "@/lib/progress";
 import { buildSpeechText, stop } from "@/lib/tts";
@@ -42,11 +43,13 @@ function getId(item: AnyItem): string {
 }
 
 export default function SessionPage() {
-  const { deckId } = useParams<{ deckId: string }>();
+  const params = useParams<{ deckId: string }>();
   const router = useRouter();
+  const rawDeckId = params.deckId;
+  const deckId = typeof rawDeckId === "string" ? decodeURIComponent(rawDeckId) : "";
 
   const [deck, setDeck] = useState<Deck | null>(() => {
-    if (typeof deckId === "string" && !deckId.startsWith("file:")) {
+    if (deckId && !deckId.startsWith("file:")) {
       return getDeck(deckId) ?? null;
     }
     return null;
@@ -58,6 +61,7 @@ export default function SessionPage() {
   const [shuffle, setShuffle] = useState(() => getSettings().shuffle);
   const [prevShuffle, setPrevShuffle] = useState(shuffle);
   const [autoplay, setAutoplay] = useState(() => getSettings().autoplay);
+  const [repeat, setRepeat] = useState(() => getSettings().repeat);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
@@ -92,25 +96,26 @@ export default function SessionPage() {
   }, [deck, deckId, shuffle]);
 
   useEffect(() => {
-    if (typeof deckId !== "string") return;
+    if (!deckId) return;
 
-    if (typeof deckId === "string" && !deckId.startsWith("file:")) {
+    if (!deckId.startsWith("file:")) {
       if (!deck) router.push("/decks");
       return;
     }
 
-    if (deckId.startsWith("file:")) {
-      fetch(`/api/decks/${encodeURIComponent(deckId)}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.error) {
-            router.push("/decks");
-            return;
-          }
-          setDeck(data);
-        })
-        .catch(() => router.push("/decks"));
-    }
+    // Prevent infinite fetch loop
+    if (deck?.id === deckId) return;
+
+    fetch(`/api/decks/${encodeURIComponent(deckId)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          router.push("/decks");
+          return;
+        }
+        setDeck(data);
+      })
+      .catch(() => router.push("/decks"));
   }, [deck, deckId, router]);
 
   const currentItem = items[index];
@@ -130,6 +135,8 @@ export default function SessionPage() {
     setIsFlipped(false);
     if (index < items.length - 1) {
       setIndex((i) => i + 1);
+    } else if (repeat) {
+      setIndex(0);
     } else {
       const endedAt = new Date().toISOString();
       const durationSeconds = Math.round(
@@ -150,7 +157,7 @@ export default function SessionPage() {
       });
       router.push(`/session/${deckId}/summary`);
     }
-  }, [index, items.length, deckId, startedAt, ratings, sessionStyle, router]);
+  }, [index, items.length, repeat, deckId, startedAt, ratings, sessionStyle, router]);
 
   const handlePrev = useCallback(() => {
     stop();
@@ -272,7 +279,7 @@ export default function SessionPage() {
           <div className={styles.navBrand}>
             <Link id="nav-home" href="/" className={styles.navLogoLink}>
               <span className={styles.navLogo}>📚</span>
-              <span className={styles.navTitle}>ReadWise</span>
+              <span className={styles.navTitle}>EchoDeck</span>
             </Link>
             <span className={styles.navSeparator}>/</span>
             <span className={styles.navDeckName}>{deckName}</span>
@@ -309,7 +316,7 @@ export default function SessionPage() {
             onPrev={handlePrev}
             onNext={handleNext}
             canPrev={index > 0}
-            canNext={index < items.length - 1}
+            canNext={index < items.length - 1 || (repeat && items.length > 0)}
             autoplay={autoplay}
             onAutoplayChange={(val) => {
               setAutoplay(val);
@@ -319,6 +326,11 @@ export default function SessionPage() {
             onShuffleChange={(val) => {
               setShuffle(val);
               saveShuffleSettings(val);
+            }}
+            repeat={repeat}
+            onRepeatChange={(val) => {
+              setRepeat(val);
+              saveRepeatSettings(val);
             }}
             sessionStyle={sessionStyle}
             onStyleChange={(s) => {

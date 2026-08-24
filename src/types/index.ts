@@ -164,6 +164,7 @@ export interface AppSettings {
   tts: TTSSettings;
   autoplay: boolean;
   shuffle: boolean;
+  repeat: boolean;
 }
 
 // ─── Session State ───────────────────────────────────────────────────────────

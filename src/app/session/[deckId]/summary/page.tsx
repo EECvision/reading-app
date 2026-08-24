@@ -42,10 +42,12 @@ export default function SummaryPage() {
     <div className="page-bg min-h-screen">
       <nav className="nav">
         <div className="nav-inner">
-          <Link id="nav-home" href="/" className={styles.navBrand}>
-            <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>ReadWise</span>
-          </Link>
+          <div className={styles.navBrand}>
+            <Link id="nav-home" href="/" className={styles.navLogoLink}>
+              <span className={styles.navLogo}>📚</span>
+              <span className={styles.navTitle}>EchoDeck</span>
+            </Link>
+          </div>
           <ThemeToggle />
         </div>
       </nav>

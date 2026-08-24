@@ -16,12 +16,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'ReadWise — Learn By Listening',
+  title: 'EchoDeck — Learn By Listening',
   description:
     'Upload your study content as JSON and learn through flashcards, Q&A, articles, notes, MCQ, and interview practice — all with text-to-speech support.',
   keywords: ['study', 'flashcards', 'text-to-speech', 'learning', 'interview prep'],
   openGraph: {
-    title: 'ReadWise — Learn By Listening',
+    title: 'EchoDeck — Learn By Listening',
     description: 'Your personal study companion with text-to-speech and spaced repetition.',
     type: 'website',
   },

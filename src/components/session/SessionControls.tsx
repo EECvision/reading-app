@@ -18,6 +18,8 @@ interface SessionControlsProps {
   onAutoplayChange: (v: boolean) => void;
   shuffle: boolean;
   onShuffleChange: (v: boolean) => void;
+  repeat: boolean;
+  onRepeatChange: (v: boolean) => void;
   sessionStyle: SessionStyle;
   onStyleChange: (s: SessionStyle) => void;
   onAudioEnd?: () => void;
@@ -42,6 +44,8 @@ export function SessionControls({
   onAutoplayChange,
   shuffle,
   onShuffleChange,
+  repeat,
+  onRepeatChange,
   sessionStyle,
   onStyleChange,
   onAudioEnd,
@@ -76,9 +80,9 @@ export function SessionControls({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [voices, ttsSettings.voiceURI]);
 
-  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText });
+  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat });
   useEffect(() => {
-    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText };
+    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat };
   });
 
   const runSequence = (seqId: number) => {
@@ -415,6 +419,17 @@ export function SessionControls({
               type="checkbox"
               checked={shuffle}
               onChange={(e) => onShuffleChange(e.target.checked)}
+              className={styles.toggleSwitch}
+            />
+          </label>
+
+          <label className={styles.listRow}>
+            <span className={styles.listLabel}>Repeat</span>
+            <input
+              id="toggle-repeat"
+              type="checkbox"
+              checked={repeat}
+              onChange={(e) => onRepeatChange(e.target.checked)}
               className={styles.toggleSwitch}
             />
           </label>

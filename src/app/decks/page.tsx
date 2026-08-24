@@ -58,7 +58,7 @@ export default function DecksPage() {
         <div className="nav-inner">
           <Link id="nav-home" href="/" className={styles.navBrand}>
             <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>ReadWise</span>
+            <span className={styles.navTitle}>EchoDeck</span>
           </Link>
           <div className={styles.navActions}>
             <Link

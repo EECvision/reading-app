@@ -84,19 +84,23 @@ export function resetProgress(deckId: string): void {
 const defaultSettings: AppSettings = {
   theme: 'dark',
   tts: {
-    rate: 1,
+    rate: 0.75,
     pitch: 1,
     voiceURI: '',
     audioMode: 'single-pause',
   },
-  autoplay: false,
+  autoplay: true,
   shuffle: false,
+  repeat: true,
 };
 
 export function getSettings(): AppSettings {
   const settings = read<AppSettings>(KEYS.settings, defaultSettings);
   if (!settings.tts.audioMode) {
     settings.tts.audioMode = 'single-pause';
+  }
+  if (settings.repeat === undefined) {
+    settings.repeat = true;
   }
   return settings;
 }
@@ -123,6 +127,11 @@ export function saveAutoplaySettings(autoplay: boolean): void {
 export function saveShuffleSettings(shuffle: boolean): void {
   const s = getSettings();
   saveSettings({ ...s, shuffle });
+}
+
+export function saveRepeatSettings(repeat: boolean): void {
+  const s = getSettings();
+  saveSettings({ ...s, repeat });
 }
 
 // ─── Active Session ───────────────────────────────────────────────────────────

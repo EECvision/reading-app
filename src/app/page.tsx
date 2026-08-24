@@ -18,7 +18,7 @@ export default function HomePage() {
           <div className={styles.navBrand}>
             <span className={styles.navLogo}>📚</span>
             <span className={styles.navTitle}>
-              ReadWise
+              EchoDeck
             </span>
           </div>
           <div className={styles.navActions}>
@@ -44,7 +44,7 @@ export default function HomePage() {
               </h1>
 
               <p className={styles.heroDesc}>
-                Upload your study content as JSON and let ReadWise read it to you — with flashcards, Q&amp;A, articles, notes, MCQ, and interview practice.
+                Upload your study content as JSON and let EchoDeck read it to you — with flashcards, Q&amp;A, articles, notes, MCQ, and interview practice.
               </p>
 
               <div className={styles.heroActions}>
@@ -63,7 +63,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className="container">
-          ReadWise · All data stored locally in your browser
+          EchoDeck · All data stored locally in your browser
         </div>
       </footer>
     </div>
