@@ -12,6 +12,11 @@ export type SessionStyle =
   | 'card-flip'
   | 'read-and-listen';
 
+export type AudioPlaybackMode = 
+  | 'continuous'
+  | 'single-pause'
+  | 'switch';
+
 // ─── JSON Item Shapes ────────────────────────────────────────────────────────
 
 export interface FlashcardItem {
@@ -145,6 +150,8 @@ export interface TTSSettings {
   rate: number;      // 0.5 – 2.0
   pitch: number;     // 0.5 – 2.0
   voiceURI: string;  // SpeechSynthesisVoice.voiceURI
+  secondaryVoiceURI?: string; // For switch mode
+  audioMode: AudioPlaybackMode;
   muted?: boolean;
 }
 

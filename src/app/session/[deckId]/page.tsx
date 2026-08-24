@@ -137,13 +137,8 @@ export default function SessionPage() {
     );
   }
 
-  // Build the text for TTS dynamically based on mode, sessionStyle, and isFlipped
-  let phase: 'front' | 'back' | 'full' = 'full';
-  if (sessionStyle === 'card-flip') {
-    phase = isFlipped ? 'back' : 'front';
-  }
-  
-  const speechText = buildSpeechText(mode, currentItem as unknown as Record<string, unknown>, phase);
+  const frontText = buildSpeechText(mode, currentItem as unknown as Record<string, unknown>, 'front');
+  const backText = buildSpeechText(mode, currentItem as unknown as Record<string, unknown>, 'back');
 
 
   const renderCard = () => {
@@ -208,7 +203,9 @@ export default function SessionPage() {
         {/* Session Controls */}
         <div className={styles.controlsContainer}>
           <SessionControls
-            currentText={speechText}
+            frontText={frontText}
+            backText={backText}
+            isFlipped={isFlipped}
             onPrev={handlePrev}
             onNext={handleNext}
             canPrev={index > 0}

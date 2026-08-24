@@ -117,9 +117,36 @@ export function getAIPrompt(mode: ReadingMode, topic: string, count: number): st
   const data = templates[mode];
   const jsonSample = JSON.stringify(data, null, 2);
   
-  return `I am creating a study deck for a flashcard and quiz app. Please generate ${count} ${mode} items about "${topic}".
+  let intro = '';
+  switch (mode) {
+    case 'flashcard':
+      intro = `I am creating a study deck for a flashcard app. Please generate ${count} flashcard items about "${topic}".`;
+      break;
+    case 'qa':
+      intro = `I am creating a Q&A quiz app. Please generate ${count} question-and-answer pairs about "${topic}".`;
+      break;
+    case 'article':
+      intro = `I am creating an educational reading app. Please generate ${count} short articles about "${topic}".`;
+      break;
+    case 'notes':
+      intro = `I am creating a structured study notes app. Please generate ${count} detailed study notes about "${topic}".`;
+      break;
+    case 'mcq':
+      intro = `I am creating a multiple-choice testing app. Please generate ${count} multiple-choice questions about "${topic}".`;
+      break;
+    case 'interview':
+      intro = `I am creating an interactive mock interview app. Please generate an interview deck with ${count} questions about "${topic}".`;
+      break;
+    default:
+      intro = `I am creating a learning app. Please generate ${count} items about "${topic}".`;
+  }
+  
+  return `${intro}
 
-You must output ONLY raw, valid JSON. Do not include any markdown formatting, explanations, or text outside of the JSON array. You must strictly follow this exact JSON structure:
+You must output ONLY raw, valid JSON. Do not include any markdown formatting, explanations, or text outside of the JSON structure. 
+CRITICAL: DO NOT use double quotes inside string values (such as inside \`code_snippet\` or HTML attributes). You MUST use single quotes ('...') instead to prevent breaking the JSON format.
+
+You must strictly follow this exact JSON structure:
 
 ${jsonSample}`;
 }

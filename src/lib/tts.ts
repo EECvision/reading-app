@@ -100,7 +100,7 @@ export function buildSpeechText(
     case 'flashcard':
       if (phase === 'front') return String(item.word ?? '');
       if (phase === 'back') {
-        const parts = [`Definition: ${item.definition}`];
+        const parts = [String(item.definition)];
         if (item.example) parts.push(`Example: ${item.example}`);
         return parts.join('. ');
       }

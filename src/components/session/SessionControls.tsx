@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import type { TTSSettings, SessionStyle } from '@/types';
+import type { TTSSettings, SessionStyle, AudioPlaybackMode } from '@/types';
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
 import styles from './SessionControls.module.css';
 
 interface SessionControlsProps {
-  currentText: string;       // text to speak for current item
+  frontText: string;
+  backText: string;
+  isFlipped: boolean;
   onPrev: () => void;
   onNext: () => void;
   canPrev: boolean;
@@ -29,7 +31,9 @@ const SESSION_STYLES: { id: SessionStyle; label: string }[] = [
 const SPEED_OPTIONS = [0.5, 0.75, 1, 1.25, 1.5, 2];
 
 export function SessionControls({
-  currentText,
+  frontText,
+  backText,
+  isFlipped,
   onPrev,
   onNext,
   canPrev,
@@ -52,42 +56,118 @@ export function SessionControls({
     return onVoicesChanged(setVoices);
   }, []);
 
+  const playSequenceId = React.useRef(0);
+
   const updateTTS = (patch: Partial<TTSSettings>) => {
     const next = { ...ttsSettings, ...patch };
     setTTSSettings(next);
     saveTTSSettings(next);
   };
 
-  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle });
+  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText });
   useEffect(() => {
-    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle };
+    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText };
   });
 
+  const runSequence = (seqId: number) => {
+    const p = latestProps.current;
+    
+    if (p.sessionStyle === 'card-flip') {
+      const textToRead = p.isFlipped ? p.backText : p.frontText;
+      speak({
+        text: textToRead,
+        settings: p.ttsSettings,
+        onStart: () => { if (playSequenceId.current === seqId) { setSpeaking(true); setPaused(false); } },
+        onEnd: () => {
+          if (playSequenceId.current !== seqId) return;
+          setSpeaking(false);
+          setPaused(false);
+          if (p.onAudioEnd) p.onAudioEnd();
+          // We intentionally don't auto-next on card flip completion as per previous user request
+        },
+      });
+      return;
+    }
+
+    // read-and-listen mode
+    const mode = p.ttsSettings.audioMode || 'continuous';
+
+    if (mode === 'continuous') {
+      speak({
+        text: `${p.frontText}. ${p.backText}`,
+        settings: p.ttsSettings,
+        onStart: () => { if (playSequenceId.current === seqId) { setSpeaking(true); setPaused(false); } },
+        onEnd: () => {
+          if (playSequenceId.current !== seqId) return;
+          setSpeaking(false);
+          setPaused(false);
+          if (p.onAudioEnd) p.onAudioEnd();
+          if (p.autoplay && p.canNext) p.onNext();
+        },
+      });
+    } else if (mode === 'single-pause') {
+      speak({
+        text: p.frontText,
+        settings: p.ttsSettings,
+        onStart: () => { if (playSequenceId.current === seqId) { setSpeaking(true); setPaused(false); } },
+        onEnd: () => {
+          if (playSequenceId.current !== seqId) return;
+          setTimeout(() => {
+            if (playSequenceId.current !== seqId) return;
+            speak({
+              text: p.backText,
+              settings: p.ttsSettings,
+              onEnd: () => {
+                if (playSequenceId.current !== seqId) return;
+                setSpeaking(false);
+                setPaused(false);
+                if (p.onAudioEnd) p.onAudioEnd();
+                if (p.autoplay && p.canNext) p.onNext();
+              }
+            });
+          }, 1500); // 1.5s pause
+        },
+      });
+    } else if (mode === 'switch') {
+      speak({
+        text: p.frontText,
+        settings: p.ttsSettings,
+        onStart: () => { if (playSequenceId.current === seqId) { setSpeaking(true); setPaused(false); } },
+        onEnd: () => {
+          if (playSequenceId.current !== seqId) return;
+          speak({
+            text: p.backText,
+            settings: { ...p.ttsSettings, voiceURI: p.ttsSettings.secondaryVoiceURI || p.ttsSettings.voiceURI },
+            onEnd: () => {
+              if (playSequenceId.current !== seqId) return;
+              setSpeaking(false);
+              setPaused(false);
+              if (p.onAudioEnd) p.onAudioEnd();
+              if (p.autoplay && p.canNext) p.onNext();
+            }
+          });
+        },
+      });
+    }
+  };
+
   useEffect(() => {
-    if (autoplay && currentText) {
+    if (autoplay && (frontText || backText)) {
       const timer = setTimeout(() => {
         stop();
-        speak({
-          text: currentText,
-          settings: latestProps.current.ttsSettings,
-          onStart: () => { setSpeaking(true); setPaused(false); },
-          onEnd: () => {
-            setSpeaking(false);
-            setPaused(false);
-            const p = latestProps.current;
-            if (p.onAudioEnd) p.onAudioEnd();
-            if (p.autoplay && p.canNext && p.sessionStyle !== 'card-flip') p.onNext();
-          },
-        });
+        const seqId = ++playSequenceId.current;
+        runSequence(seqId);
       }, 100);
       return () => {
         clearTimeout(timer);
         stop();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        playSequenceId.current++; // invalidate sequence
         setSpeaking(false);
         setPaused(false);
       };
     }
-  }, [currentText, autoplay]);
+  }, [frontText, backText, isFlipped, autoplay, sessionStyle]);
 
   const handleSpeak = () => {
     if (paused) {
@@ -96,17 +176,9 @@ export function SessionControls({
       setSpeaking(true);
       return;
     }
-    speak({
-      text: currentText,
-      settings: ttsSettings,
-      onStart: () => { setSpeaking(true); setPaused(false); },
-      onEnd: () => {
-        setSpeaking(false);
-        setPaused(false);
-        if (onAudioEnd) onAudioEnd();
-        if (autoplay && canNext && sessionStyle !== 'card-flip') onNext();
-      },
-    });
+    stop();
+    const seqId = ++playSequenceId.current;
+    runSequence(seqId);
   };
 
   const handlePause = () => {
@@ -117,6 +189,7 @@ export function SessionControls({
 
   const handleStop = () => {
     stop();
+    playSequenceId.current++; // invalidate sequence
     setSpeaking(false);
     setPaused(false);
   };
@@ -228,28 +301,69 @@ export function SessionControls({
             </select>
           </div>
 
+          {/* Audio Playback Mode */}
+          <div className={styles.settingItem}>
+            <span className={styles.settingLabelNoWrap}>Audio Mode</span>
+            <select
+              id="tts-audio-mode"
+              className={`input ${styles.selectSpeed}`}
+              value={ttsSettings.audioMode || 'continuous'}
+              onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
+            >
+              <option value="continuous">Continuous</option>
+              <option value="single-pause">Single (with pause)</option>
+              <option value="switch">Switch Voices</option>
+            </select>
+          </div>
+
           {/* Voice */}
           {voices.length > 0 && (
-            <div className={styles.settingItem}>
-              <span className={styles.settingLabel}>Voice</span>
-              <select
-                id="tts-voice"
-                className={`input ${styles.selectVoice}`}
-                value={ttsSettings.voiceURI}
-                onChange={(e) => updateTTS({ voiceURI: e.target.value })}
-              >
-                {voices
-                  .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                  .map((v) => {
-                    const label = v.name === 'Google UK English Male' ? 'Male voice' : 'Female voice';
-                    return (
-                      <option key={v.voiceURI} value={v.voiceURI}>
-                        {label}
-                      </option>
-                    );
-                  })}
-              </select>
-            </div>
+            <>
+              <div className={styles.settingItem}>
+                <span className={styles.settingLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+                <select
+                  id="tts-voice"
+                  className={`input ${styles.selectVoice}`}
+                  value={ttsSettings.voiceURI}
+                  onChange={(e) => updateTTS({ voiceURI: e.target.value })}
+                >
+                  {voices
+                    .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                    .map((v) => {
+                      const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                      return (
+                        <option key={v.voiceURI} value={v.voiceURI}>
+                          {label}
+                        </option>
+                      );
+                    })}
+                </select>
+              </div>
+              
+              {ttsSettings.audioMode === 'switch' && (
+                <div className={styles.settingItem}>
+                  <span className={styles.settingLabel}>Voice 2</span>
+                  <select
+                    id="tts-voice-secondary"
+                    className={`input ${styles.selectVoice}`}
+                    value={ttsSettings.secondaryVoiceURI || ''}
+                    onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
+                  >
+                    <option value="">Same as Voice 1</option>
+                    {voices
+                      .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                      .map((v) => {
+                        const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                        return (
+                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>
+                            {label}
+                          </option>
+                        );
+                      })}
+                  </select>
+                </div>
+              )}
+            </>
           )}
 
           {/* Mute Voice */}
