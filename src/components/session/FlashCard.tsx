@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { FlashcardItem, SessionStyle } from '@/types';
+import styles from './FlashCard.module.css';
 
 interface FlashCardProps {
   item: FlashcardItem;
@@ -17,70 +18,38 @@ export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardPr
   const showBoth = sessionStyle === 'read-and-listen' || sessionStyle === 'tts-listen';
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)', alignItems: 'center' }}>
+    <div className={styles.container}>
 
       {/* Card */}
-      <div className="flip-scene" style={{ width: '100%', maxWidth: 560, height: 280 }}>
+      <div className={`flip-scene ${styles.flipSceneWrapper}`}>
         <div
-          className={`flip-card ${flipped ? 'flipped' : ''}`}
-          style={{ width: '100%', height: '100%', borderRadius: 'var(--radius-2xl)' }}
+          className={`flip-card ${flipped ? 'flipped' : ''} ${styles.flipCardInner}`}
           onClick={() => isFlipMode && setFlipped((f) => !f)}
         >
           {/* Front */}
-          <div
-            className="flip-front card-glass"
-            style={{
-              background: 'linear-gradient(135deg, hsl(252 74% 55% / 0.15), hsl(252 74% 55% / 0.05))',
-              borderRadius: 'var(--radius-2xl)',
-              padding: 'var(--space-8)',
-            }}
-          >
+          <div className={`flip-front card-glass ${styles.frontSide}`}>
             {item.category && (
-              <span className="badge badge-brand" style={{ marginBottom: 'var(--space-3)' }}>
+              <span className={`badge badge-brand ${styles.category}`}>
                 {item.category}
               </span>
             )}
-            <h2 style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
-              fontWeight: 800,
-              color: 'var(--text-primary)',
-              letterSpacing: '-0.02em',
-            }}>
+            <h2 className={styles.wordFront}>
               {item.word}
             </h2>
             {isFlipMode && (
-              <p style={{ marginTop: 'var(--space-4)', color: 'var(--text-muted)', fontSize: 'var(--text-sm)' }}>
+              <p className={styles.tapHint}>
                 Tap to reveal definition
               </p>
             )}
           </div>
 
           {/* Back */}
-          <div
-            className="flip-back card-glass"
-            style={{
-              background: 'linear-gradient(135deg, hsl(38 100% 60% / 0.12), hsl(38 100% 60% / 0.04))',
-              borderRadius: 'var(--radius-2xl)',
-              padding: 'var(--space-8)',
-              gap: 'var(--space-3)',
-            }}
-          >
-            <p style={{
-              fontSize: 'var(--text-xl)',
-              color: 'var(--text-primary)',
-              lineHeight: 1.5,
-              textAlign: 'center',
-            }}>
+          <div className={`flip-back card-glass ${styles.backSide}`}>
+            <p className={styles.definitionText}>
               {item.definition}
             </p>
             {item.example && (
-              <p style={{
-                fontSize: 'var(--text-sm)',
-                color: 'var(--text-muted)',
-                fontStyle: 'italic',
-                textAlign: 'center',
-              }}>
+              <p className={styles.exampleText}>
                 &ldquo;{item.example}&rdquo;
               </p>
             )}
@@ -90,15 +59,15 @@ export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardPr
 
       {/* Show-both mode (no flip) */}
       {showBoth && (
-        <div className="card" style={{ width: '100%', maxWidth: 560, textAlign: 'center' }}>
-          <h3 style={{ fontSize: 'var(--text-2xl)', fontWeight: 800, marginBottom: 'var(--space-3)' }}>
+        <div className={`card ${styles.showBothContainer}`}>
+          <h3 className={styles.showBothWord}>
             {item.word}
           </h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: item.example ? 'var(--space-3)' : 0 }}>
+          <p className={`${styles.showBothDefinition} ${item.example ? styles.showBothDefinitionWithExample : ''}`}>
             {item.definition}
           </p>
           {item.example && (
-            <p style={{ color: 'var(--text-muted)', fontStyle: 'italic', fontSize: 'var(--text-sm)' }}>
+            <p className={styles.showBothExample}>
               &ldquo;{item.example}&rdquo;
             </p>
           )}
@@ -107,7 +76,7 @@ export function FlashCard({ item, sessionStyle, onKnown, onReview }: FlashCardPr
 
       {/* Rating buttons — shown after flip or in show-both mode */}
       {(flipped || showBoth) && (
-        <div style={{ display: 'flex', gap: 'var(--space-3)' }} className="animate-slideUp">
+        <div className={`animate-slideUp ${styles.actions}`}>
           <button id="btn-review" className="btn btn-danger" onClick={() => { setFlipped(false); onReview(); }}>
             Needs Review
           </button>

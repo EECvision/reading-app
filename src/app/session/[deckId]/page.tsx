@@ -20,6 +20,7 @@ import { NotesCard } from '@/components/session/NotesCard';
 import { MCQCard } from '@/components/session/MCQCard';
 import { InterviewCard } from '@/components/session/InterviewCard';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import styles from './page.module.css';
 
 // Helper: safely extract the id added by normaliseItems()
 function getId(item: AnyItem): string {
@@ -124,8 +125,8 @@ export default function SessionPage() {
 
   if (!currentItem) {
     return (
-      <div className="page-bg min-h-screen flex items-center justify-center">
-        <div className="animate-pulse" style={{ color: 'var(--text-muted)' }}>Loading deck…</div>
+      <div className={`page-bg min-h-screen ${styles.loadingContainer}`}>
+        <div className={`animate-pulse ${styles.loadingText}`}>Loading deck…</div>
       </div>
     );
   }
@@ -162,20 +163,20 @@ export default function SessionPage() {
   };
 
   return (
-    <div className="page-bg-accent" style={{ minHeight: '100vh' }}>
+    <div className={`page-bg-accent ${styles.pageContainer}`}>
       <nav className="nav">
         <div className="nav-inner">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-            <Link id="nav-home" href="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-              <span style={{ fontSize: '1.25rem' }}>📚</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-lg)', color: 'var(--text-primary)' }}>ReadWise</span>
+          <div className={styles.navBrand}>
+            <Link id="nav-home" href="/" className={styles.navLogoLink}>
+              <span className={styles.navLogo}>📚</span>
+              <span className={styles.navTitle}>ReadWise</span>
             </Link>
-            <span style={{ color: 'var(--border)', fontSize: 'var(--text-lg)' }}>/</span>
-            <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: 200 }}>
+            <span className={styles.navSeparator}>/</span>
+            <span className={styles.navDeckName}>
               {deckName}
             </span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+          <div className={styles.navActions}>
             <Link id="nav-end-session" href={`/session/${deckId}/summary`} className="btn btn-ghost btn-sm">
               End Session
             </Link>
@@ -185,13 +186,13 @@ export default function SessionPage() {
       </nav>
 
       <div className="container-sm section">
-        {/* Progress — wrapped in div to avoid non-existent style prop on ProgressBar */}
-        <div style={{ marginBottom: 'var(--space-8)' }} className="animate-slideDown">
+        {/* Progress */}
+        <div className={`animate-slideDown ${styles.progressContainer}`}>
           <ProgressBar current={index + 1} total={items.length} />
         </div>
 
         {/* Session Controls */}
-        <div style={{ marginBottom: 'var(--space-6)' }}>
+        <div className={styles.controlsContainer}>
           <SessionControls
             currentText={speechText}
             onPrev={handlePrev}
@@ -210,8 +211,7 @@ export default function SessionPage() {
         {/* Card Area */}
         <div
           key={currentId}
-          style={{ display: 'flex', justifyContent: 'center' }}
-          className="animate-scaleIn"
+          className={`animate-scaleIn ${styles.cardArea}`}
         >
           {renderCard()}
         </div>

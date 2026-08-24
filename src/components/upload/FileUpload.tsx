@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState, useRef } from 'react';
+import styles from './FileUpload.module.css';
 
 interface FileUploadProps {
   onFile: (content: string, name: string) => void;
@@ -39,6 +40,10 @@ export function FileUpload({ onFile, disabled }: FileUploadProps) {
     e.target.value = '';
   };
 
+  let containerClass = styles.dropZone;
+  if (dragging) containerClass += ` ${styles.dragging}`;
+  if (disabled) containerClass += ` ${styles.disabled}`;
+
   return (
     <div>
       <div
@@ -51,35 +56,26 @@ export function FileUpload({ onFile, disabled }: FileUploadProps) {
         onDragOver={(e) => { e.preventDefault(); if (!disabled) setDragging(true); }}
         onDragLeave={() => setDragging(false)}
         onDrop={onDrop}
-        style={{
-          border: `2px dashed ${dragging ? 'var(--brand-400)' : 'var(--border-strong)'}`,
-          borderRadius: 'var(--radius-xl)',
-          padding: 'var(--space-10) var(--space-6)',
-          textAlign: 'center',
-          cursor: disabled ? 'not-allowed' : 'pointer',
-          background: dragging ? 'hsl(252 74% 55% / 0.05)' : 'var(--bg-elevated)',
-          transition: 'all var(--transition-fast)',
-          opacity: disabled ? 0.5 : 1,
-        }}
+        className={containerClass}
       >
-        <div style={{ marginBottom: 'var(--space-3)', fontSize: '2.5rem' }}>
+        <div className={styles.icon}>
           {fileName ? '✅' : '📂'}
         </div>
         {fileName ? (
           <>
-            <div style={{ fontWeight: 600, color: 'var(--brand-400)', marginBottom: 'var(--space-1)' }}>
+            <div className={styles.fileName}>
               {fileName}
             </div>
-            <div style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>
+            <div className={styles.fileDesc}>
               Click to replace
             </div>
           </>
         ) : (
           <>
-            <div style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: 'var(--space-1)' }}>
+            <div className={styles.promptTitle}>
               Drop your JSON file here
             </div>
-            <div style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>
+            <div className={styles.promptDesc}>
               or click to browse — .json files only
             </div>
           </>
@@ -90,7 +86,7 @@ export function FileUpload({ onFile, disabled }: FileUploadProps) {
         type="file"
         accept=".json,application/json"
         onChange={onInputChange}
-        style={{ display: 'none' }}
+        className={styles.hiddenInput}
         aria-hidden="true"
       />
     </div>

@@ -1,0 +1,72 @@
+/* src/app/session/[deckId]/page.module.css */
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingText {
+  color: var(--text-muted);
+}
+
+.pageContainer {
+  min-height: 100vh;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navLogoLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.navLogo {
+  font-size: 1.25rem;
+}
+
+.navTitle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}
+
+.navSeparator {
+  color: var(--border);
+  font-size: var(--text-lg);
+}
+
+.navDeckName {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.progressContainer {
+  margin-bottom: var(--space-8);
+}
+
+.controlsContainer {
+  margin-bottom: var(--space-6);
+}
+
+.cardArea {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

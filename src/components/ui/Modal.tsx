@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type ReactNode } from 'react';
+import styles from './Modal.module.css';
 
 interface ModalProps {
   open: boolean;
@@ -42,8 +43,8 @@ export function Modal({ open, onClose, title, children, maxWidth = '520px' }: Mo
         style={{ maxWidth }}
       >
         {title && (
-          <div className="flex items-center justify-between" style={{ marginBottom: 'var(--space-6)' }}>
-            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-xl)' }}>{title}</h3>
+          <div className={`flex items-center justify-between ${styles.header}`}>
+            <h3 className={styles.title}>{title}</h3>
             <button
               id="modal-close"
               className="btn btn-ghost btn-icon"

@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReadingMode } from '@/types';
+import styles from './ModeSelector.module.css';
 
 interface Mode {
   id: ReadingMode;
@@ -63,19 +64,10 @@ interface ModeSelectorProps {
 export function ModeSelector({ selected, onSelect }: ModeSelectorProps) {
   return (
     <div>
-      <h2 style={{
-        fontFamily: 'var(--font-display)',
-        fontSize: 'var(--text-xl)',
-        marginBottom: 'var(--space-4)',
-        color: 'var(--text-primary)',
-      }}>
+      <h2 className={styles.title}>
         Choose a Reading Mode
       </h2>
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-        gap: 'var(--space-3)',
-      }}>
+      <div className={styles.grid}>
         {MODES.map((mode) => {
           const isSelected = selected === mode.id;
           return (
@@ -83,41 +75,26 @@ export function ModeSelector({ selected, onSelect }: ModeSelectorProps) {
               key={mode.id}
               id={`mode-${mode.id}`}
               onClick={() => onSelect(mode.id)}
+              className={styles.modeCard}
               style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                gap: 'var(--space-2)',
-                padding: 'var(--space-4)',
                 background: isSelected
                   ? `linear-gradient(135deg, ${mode.color}22, ${mode.color}11)`
-                  : 'var(--bg-surface)',
-                border: `2px solid ${isSelected ? mode.color : 'var(--border)'}`,
-                borderRadius: 'var(--radius-lg)',
-                cursor: 'pointer',
-                textAlign: 'left',
-                transition: 'all var(--transition-fast)',
-                boxShadow: isSelected ? `0 0 0 4px ${mode.color}18` : 'none',
-                transform: isSelected ? 'translateY(-2px)' : 'none',
+                  : undefined,
+                borderColor: isSelected ? mode.color : undefined,
+                boxShadow: isSelected ? `0 0 0 4px ${mode.color}18` : undefined,
+                transform: isSelected ? 'translateY(-2px)' : undefined,
               }}
               aria-pressed={isSelected}
             >
-              <span style={{ fontSize: '1.75rem', lineHeight: 1 }}>{mode.icon}</span>
+              <span className={styles.icon}>{mode.icon}</span>
               <div>
-                <div style={{
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 700,
-                  fontSize: 'var(--text-sm)',
-                  color: isSelected ? mode.color : 'var(--text-primary)',
-                  marginBottom: '2px',
-                }}>
+                <div 
+                  className={styles.label}
+                  style={{ color: isSelected ? mode.color : 'var(--text-primary)' }}
+                >
                   {mode.label}
                 </div>
-                <div style={{
-                  fontSize: 'var(--text-xs)',
-                  color: 'var(--text-muted)',
-                  lineHeight: 1.4,
-                }}>
+                <div className={styles.description}>
                   {mode.description}
                 </div>
               </div>

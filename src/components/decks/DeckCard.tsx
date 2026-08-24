@@ -2,6 +2,7 @@
 
 import type { DeckProgress } from '@/types';
 import Link from 'next/link';
+import styles from './DeckCard.module.css';
 
 interface DeckCardProps {
   id: string;
@@ -50,40 +51,32 @@ export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role
   const offset = circ - (pct / 100) * circ;
 
   return (
-    <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', transition: 'transform var(--transition-fast), box-shadow var(--transition-fast)' }}
-      onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'var(--shadow-lg)'; }}
-      onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = ''; (e.currentTarget as HTMLDivElement).style.boxShadow = ''; }}
-    >
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 'var(--space-3)' }}>
+    <div className={`card ${styles.card}`}>
+      <div className={styles.headerRow}>
         {/* Mode icon */}
-        <div style={{
-          width: 48, height: 48, borderRadius: 'var(--radius-lg)',
-          background: `${color}18`,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: '1.5rem', flexShrink: 0,
-        }}>
+        <div className={styles.iconBox} style={{ background: `${color}18` }}>
           {icon}
         </div>
 
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--text-primary)', marginBottom: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        <div className={styles.infoCol}>
+          <div className={styles.title}>
             {name}
           </div>
           {mode === 'interview' && role && (
-            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>
+            <div className={styles.role}>
               {level} {role}
             </div>
           )}
-          <div style={{ display: 'flex', gap: 'var(--space-2)', marginTop: 'var(--space-1)', flexWrap: 'wrap' }}>
+          <div className={styles.metaRow}>
             <span className="badge badge-muted">{mode}</span>
-            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>
+            <span className={styles.metaText}>
               {itemCount} items · {uploadDate}
             </span>
           </div>
         </div>
 
         {/* Progress ring */}
-        <div style={{ position: 'relative', flexShrink: 0 }}>
+        <div className={styles.progressRing}>
           <svg width={60} height={60}>
             <circle cx={30} cy={30} r={r} fill="none" stroke="var(--bg-overlay)" strokeWidth={4} />
             <circle
@@ -95,56 +88,45 @@ export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role
               strokeDashoffset={offset}
               strokeLinecap="round"
               transform="rotate(-90 30 30)"
-              style={{ transition: 'stroke-dashoffset 0.5s ease' }}
+              className={styles.progressCircle}
             />
           </svg>
-          <div style={{
-            position: 'absolute', inset: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 'var(--text-xs)', fontWeight: 700, color: 'var(--text-primary)',
-          }}>
+          <div className={styles.progressText}>
             {pct}%
           </div>
         </div>
       </div>
 
       {/* Stats */}
-      <div style={{
-        display: 'flex', gap: 'var(--space-4)',
-        padding: 'var(--space-3) var(--space-4)',
-        background: 'var(--bg-elevated)',
-        borderRadius: 'var(--radius-lg)',
-      }}>
-        <div style={{ textAlign: 'center', flex: 1 }}>
-          <div style={{ fontWeight: 700, color: 'var(--green-400)', fontSize: 'var(--text-lg)' }}>{known}</div>
-          <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>Known</div>
+      <div className={styles.statsRow}>
+        <div className={styles.statCol}>
+          <div className={styles.statValKnown}>{known}</div>
+          <div className={styles.statLabel}>Known</div>
         </div>
-        <div style={{ textAlign: 'center', flex: 1 }}>
-          <div style={{ fontWeight: 700, color: 'var(--accent-400)', fontSize: 'var(--text-lg)' }}>{progress?.totalReview ?? 0}</div>
-          <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>Review</div>
+        <div className={styles.statCol}>
+          <div className={styles.statValReview}>{progress?.totalReview ?? 0}</div>
+          <div className={styles.statLabel}>Review</div>
         </div>
-        <div style={{ textAlign: 'center', flex: 1 }}>
-          <div style={{ fontWeight: 700, color: 'var(--text-muted)', fontSize: 'var(--text-lg)' }}>{itemCount - seen}</div>
-          <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>Unseen</div>
+        <div className={styles.statCol}>
+          <div className={styles.statValUnseen}>{itemCount - seen}</div>
+          <div className={styles.statLabel}>Unseen</div>
         </div>
       </div>
 
       {/* Actions */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)' }}>
+      <div className={styles.actionsRow}>
         <Link
           href={`/session/${id}`}
           id={`study-${id}`}
-          className="btn btn-primary"
-          style={{ flex: 1, textAlign: 'center' }}
+          className={`btn btn-primary ${styles.studyBtn}`}
         >
           Study
         </Link>
         <button
           id={`delete-${id}`}
-          className="btn btn-ghost btn-icon"
+          className={`btn btn-ghost btn-icon ${styles.deleteBtn}`}
           onClick={() => onDelete(id)}
           aria-label="Delete deck"
-          style={{ color: 'var(--red-400)' }}
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>

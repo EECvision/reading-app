@@ -1,0 +1,75 @@
+/* src/app/decks/page.module.css */
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navLogo {
+  font-size: 1.5rem;
+}
+
+.navTitle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.pageHeader {
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-2);
+}
+
+.pageSubtitle {
+  color: var(--text-secondary);
+}
+
+.decksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+.skeletonItem {
+  height: 240px;
+  border-radius: var(--radius-xl);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-20) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.emptyIcon {
+  font-size: 4rem;
+}
+
+.emptyTitle {
+  font-family: var(--font-display);
+  margin-bottom: var(--space-3);
+}
+
+.emptyDesc {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}

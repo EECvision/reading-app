@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { getDeck, getProgress } from '@/lib/localStorage';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import styles from './page.module.css';
 
 export default function SummaryPage() {
   const { deckId } = useParams<{ deckId: string }>();
@@ -41,35 +42,30 @@ export default function SummaryPage() {
     <div className="page-bg min-h-screen">
       <nav className="nav">
         <div className="nav-inner">
-          <Link id="nav-home" href="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-            <span style={{ fontSize: '1.5rem' }}>📚</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-xl)', color: 'var(--text-primary)' }}>ReadWise</span>
+          <Link id="nav-home" href="/" className={styles.navBrand}>
+            <span className={styles.navLogo}>📚</span>
+            <span className={styles.navTitle}>ReadWise</span>
           </Link>
           <ThemeToggle />
         </div>
       </nav>
 
       <div className="container-xs section">
-        <div className="animate-slideUp" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)', textAlign: 'center' }}>
+        <div className={`animate-slideUp ${styles.summaryContainer}`}>
 
           <div>
-            <div style={{ fontSize: '3rem', marginBottom: 'var(--space-3)' }}>
+            <div className={styles.iconWrapper}>
               {pct >= 80 ? '🎉' : pct >= 50 ? '📈' : '💪'}
             </div>
-            <h1 style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 900,
-              letterSpacing: '-0.02em',
-              marginBottom: 'var(--space-2)',
-            }}>
+            <h1 className={styles.title}>
               Session Complete!
             </h1>
-            <p style={{ color: 'var(--text-secondary)' }}>{deckName}</p>
+            <p className={styles.deckName}>{deckName}</p>
           </div>
 
           {/* Donut chart */}
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ position: 'relative', width: 160, height: 160 }}>
+          <div className={styles.chartContainer}>
+            <div className={styles.chartWrapper}>
               <svg width={160} height={160} viewBox="0 0 160 160">
                 {/* Track */}
                 <circle cx={80} cy={80} r={R} fill="none" stroke="var(--bg-overlay)" strokeWidth={14} />
@@ -98,55 +94,47 @@ export default function SummaryPage() {
                   />
                 )}
               </svg>
-              <div style={{
-                position: 'absolute', inset: 0,
-                display: 'flex', flexDirection: 'column',
-                alignItems: 'center', justifyContent: 'center',
-              }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 'var(--text-3xl)', lineHeight: 1 }}>
+              <div className={styles.pctLabelContainer}>
+                <div className={styles.pctLabel}>
                   {pct}%
                 </div>
-                <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>known</div>
+                <div className={styles.pctSubtext}>known</div>
               </div>
             </div>
           </div>
 
           {/* Stats grid */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 'var(--space-3)',
-          }}>
+          <div className={styles.statsGrid}>
             {[
               { label: 'Known', value: known, color: 'var(--green-400)' },
               { label: 'Review', value: review, color: 'var(--accent-400)' },
               { label: 'Unseen', value: unseen, color: 'var(--text-muted)' },
             ].map((stat) => (
-              <div key={stat.label} className="card" style={{ padding: 'var(--space-4)', textAlign: 'center' }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-2xl)', color: stat.color }}>
+              <div key={stat.label} className={`card ${styles.statCard}`}>
+                <div className={styles.statValue} style={{ color: stat.color }}>
                   {stat.value}
                 </div>
-                <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>{stat.label}</div>
+                <div className={styles.statLabel}>{stat.label}</div>
               </div>
             ))}
           </div>
 
           {/* Last session details */}
           {lastSession && (
-            <div className="card" style={{ textAlign: 'left', padding: 'var(--space-5)' }}>
-              <h4 style={{ fontFamily: 'var(--font-display)', marginBottom: 'var(--space-4)', fontSize: 'var(--text-base)' }}>
+            <div className={`card ${styles.lastSessionCard}`}>
+              <h4 className={styles.lastSessionTitle}>
                 Last Session
               </h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+              <div className={styles.lastSessionRows}>
                 {[
                   { label: 'Items Studied', value: lastSession.itemsStudied },
                   { label: 'Items Known', value: lastSession.itemsKnown },
                   { label: 'Time', value: formatTime(lastSession.durationSeconds) },
                   { label: 'Total Sessions', value: sessions },
                 ].map((row) => (
-                  <div key={row.label} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>{row.label}</span>
-                    <span style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-primary)' }}>{row.value}</span>
+                  <div key={row.label} className={styles.lastSessionRow}>
+                    <span className={styles.rowLabel}>{row.label}</span>
+                    <span className={styles.rowValue}>{row.value}</span>
                   </div>
                 ))}
               </div>
@@ -154,7 +142,7 @@ export default function SummaryPage() {
           )}
 
           {/* Actions */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
+          <div className={styles.actionsContainer}>
             <Link id="btn-study-again" href={`/session/${deckId}`} className="btn btn-primary btn-lg">
               Study Again
             </Link>

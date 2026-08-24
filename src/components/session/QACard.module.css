@@ -1,0 +1,61 @@
+/* src/components/session/QACard.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+  max-width: 600px;
+}
+
+.questionCard {
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.category {
+  margin-bottom: var(--space-4);
+}
+
+.question {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-family: var(--font-display);
+}
+
+.hintContainer {
+  margin-top: var(--space-4);
+}
+
+.hintText {
+  color: var(--accent-400);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.answerCard {
+  background: linear-gradient(135deg, hsl(142 71% 45% / 0.08), transparent);
+  border-color: hsl(142 71% 45% / 0.3);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.answerText {
+  color: var(--text-primary);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+}
+
+.revealContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.actionsContainer {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}

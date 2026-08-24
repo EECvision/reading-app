@@ -1,0 +1,118 @@
+/* src/app/upload/page.module.css */
+
+.pageContainer {
+  min-height: 100vh;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navLogo {
+  font-size: 1.5rem;
+}
+
+.navTitle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.pageDesc {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-10);
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.stepCard {
+  padding: var(--space-6);
+}
+
+.stepCardWithTransition {
+  padding: var(--space-6);
+  transition: opacity var(--transition-base);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.step2Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.stepHeaderInner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: var(--text-sm);
+  background: var(--brand-500);
+  color: white;
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.validatorContainer {
+  margin-top: var(--space-4);
+}
+
+.nameSaveForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.inputLabel {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.saveButton {
+  align-self: flex-start;
+}

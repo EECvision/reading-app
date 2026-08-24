@@ -1,0 +1,52 @@
+/* src/components/upload/FileUpload.module.css */
+
+.dropZone {
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  cursor: pointer;
+  background: var(--bg-elevated);
+  transition: all var(--transition-fast);
+}
+
+.dragging {
+  border-color: var(--brand-400);
+  background: hsl(252 74% 55% / 0.05);
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.icon {
+  margin-bottom: var(--space-3);
+  font-size: 2.5rem;
+}
+
+.fileName {
+  font-weight: 600;
+  color: var(--brand-400);
+  margin-bottom: var(--space-1);
+}
+
+.fileDesc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.promptTitle {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.promptDesc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.hiddenInput {
+  display: none;
+}

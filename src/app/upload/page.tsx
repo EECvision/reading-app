@@ -13,6 +13,7 @@ import { validateJSON, normaliseItems, type ValidationResult } from '@/lib/schem
 import { saveDeck } from '@/lib/localStorage';
 import { nanoid } from '@/lib/nanoid';
 import type { Deck, InterviewDeck } from '@/types';
+import styles from './page.module.css';
 
 export default function UploadPage() {
   const router = useRouter();
@@ -90,17 +91,17 @@ export default function UploadPage() {
   const canSave = mode && validationResult?.valid && parsedData;
 
   return (
-    <div className="page-bg" style={{ minHeight: '100vh' }}>
+    <div className={`page-bg ${styles.pageContainer}`}>
       {/* Nav */}
       <nav className="nav">
         <div className="nav-inner">
-          <Link id="nav-home" href="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-            <span style={{ fontSize: '1.5rem' }}>📚</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-xl)', color: 'var(--text-primary)' }}>
+          <Link id="nav-home" href="/" className={styles.navBrand}>
+            <span className={styles.navLogo}>📚</span>
+            <span className={styles.navTitle}>
               ReadWise
             </span>
           </Link>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+          <div className={styles.navActions}>
             <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">My Decks</Link>
             <ThemeToggle />
           </div>
@@ -109,30 +110,20 @@ export default function UploadPage() {
 
       <div className="container-sm section">
         <div className="animate-slideUp">
-          <h1 style={{
-            fontFamily: 'var(--font-display)',
-            fontWeight: 900,
-            letterSpacing: '-0.02em',
-            marginBottom: 'var(--space-3)',
-          }}>
+          <h1 className={styles.pageTitle}>
             Upload a Deck
           </h1>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-10)' }}>
+          <p className={styles.pageDesc}>
             Choose a reading mode, download a template, fill it in, and upload to start studying.
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
+          <div className={styles.stepsContainer}>
 
             {/* Step 1 — Mode */}
-            <div className="card" style={{ padding: 'var(--space-6)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-5)' }}>
-                <span style={{
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  width: 32, height: 32, borderRadius: '50%',
-                  background: 'var(--brand-500)', color: 'white',
-                  fontWeight: 800, fontSize: 'var(--text-sm)',
-                }}>1</span>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', margin: 0 }}>
+            <div className={`card ${styles.stepCard}`}>
+              <div className={styles.stepHeader}>
+                <span className={styles.stepNumber}>1</span>
+                <h2 className={styles.stepTitle}>
                   Select Mode
                 </h2>
               </div>
@@ -140,16 +131,22 @@ export default function UploadPage() {
             </div>
 
             {/* Step 2 — Upload */}
-            <div className="card" style={{ padding: 'var(--space-6)', opacity: mode ? 1 : 0.5, transition: 'opacity var(--transition-base)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-5)', flexWrap: 'wrap', gap: 'var(--space-3)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-                  <span style={{
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    width: 32, height: 32, borderRadius: '50%',
-                    background: mode ? 'var(--brand-500)' : 'var(--bg-overlay)', color: mode ? 'white' : 'var(--text-muted)',
-                    fontWeight: 800, fontSize: 'var(--text-sm)',
-                  }}>2</span>
-                  <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', margin: 0 }}>
+            <div 
+              className={`card ${styles.stepCardWithTransition}`} 
+              style={{ opacity: mode ? 1 : 0.5 }}
+            >
+              <div className={styles.step2Header}>
+                <div className={styles.stepHeaderInner}>
+                  <span 
+                    className={styles.stepNumber}
+                    style={{ 
+                      background: mode ? 'var(--brand-500)' : 'var(--bg-overlay)', 
+                      color: mode ? 'white' : 'var(--text-muted)' 
+                    }}
+                  >
+                    2
+                  </span>
+                  <h2 className={styles.stepTitle}>
                     Upload JSON
                   </h2>
                 </div>
@@ -157,7 +154,7 @@ export default function UploadPage() {
               </div>
               <FileUpload onFile={handleFile} disabled={!mode} />
               {(validating || validationResult) && (
-                <div style={{ marginTop: 'var(--space-4)' }}>
+                <div className={styles.validatorContainer}>
                   <JsonValidator result={validationResult} loading={validating} />
                 </div>
               )}
@@ -165,22 +162,17 @@ export default function UploadPage() {
 
             {/* Step 3 — Name & Save */}
             {validationResult?.valid && (
-              <div className="card animate-slideUp" style={{ padding: 'var(--space-6)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-5)' }}>
-                  <span style={{
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    width: 32, height: 32, borderRadius: '50%',
-                    background: 'var(--brand-500)', color: 'white',
-                    fontWeight: 800, fontSize: 'var(--text-sm)',
-                  }}>3</span>
-                  <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', margin: 0 }}>
+              <div className={`card animate-slideUp ${styles.stepCard}`}>
+                <div className={styles.stepHeader}>
+                  <span className={styles.stepNumber}>3</span>
+                  <h2 className={styles.stepTitle}>
                     Name & Start
                   </h2>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+                <div className={styles.nameSaveForm}>
                   <div>
-                    <label htmlFor="deck-name" style={{ display: 'block', fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: 'var(--space-2)' }}>
+                    <label htmlFor="deck-name" className={styles.inputLabel}>
                       Deck Name
                     </label>
                     <input
@@ -195,10 +187,9 @@ export default function UploadPage() {
 
                   <button
                     id="btn-start-studying"
-                    className="btn btn-primary btn-lg"
+                    className={`btn btn-primary btn-lg ${styles.saveButton}`}
                     onClick={handleSave}
                     disabled={saving || !canSave}
-                    style={{ alignSelf: 'flex-start' }}
                   >
                     {saving ? 'Starting…' : 'Start Studying →'}
                   </button>

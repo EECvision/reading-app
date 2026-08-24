@@ -1,6 +1,7 @@
 'use client';
 
 import type { NotesItem } from '@/types';
+import styles from './NotesCard.module.css';
 
 interface NotesCardProps {
   item: NotesItem;
@@ -10,42 +11,27 @@ interface NotesCardProps {
 
 export function NotesCard({ item, onKnown, onReview }: NotesCardProps) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)', width: '100%', maxWidth: 680 }}>
-      <div className="card-glass" style={{ borderRadius: 'var(--radius-2xl)', padding: 'var(--space-8)' }}>
+    <div className={styles.container}>
+      <div className={`card-glass ${styles.card}`}>
         {item.category && (
-          <span className="badge badge-brand" style={{ marginBottom: 'var(--space-3)' }}>
+          <span className={`badge badge-brand ${styles.category}`}>
             {item.category}
           </span>
         )}
-        <h2 style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'var(--text-2xl)',
-          fontWeight: 800,
-          color: 'var(--text-primary)',
-          marginBottom: 'var(--space-6)',
-        }}>
+        <h2 className={styles.topicTitle}>
           {item.topic}
         </h2>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+        <div className={styles.subtopicsContainer}>
           {item.subtopics.map((sub, i) => (
             <div
               key={i}
-              style={{
-                paddingLeft: 'var(--space-5)',
-                borderLeft: '3px solid var(--brand-400)',
-              }}
+              className={styles.subtopicItem}
             >
-              <h4 style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'var(--text-base)',
-                fontWeight: 700,
-                color: 'var(--text-primary)',
-                marginBottom: 'var(--space-2)',
-              }}>
+              <h4 className={styles.subtopicHeading}>
                 {sub.heading}
               </h4>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', lineHeight: 1.7 }}>
+              <p className={styles.subtopicBody}>
                 {sub.body}
               </p>
             </div>
@@ -53,7 +39,7 @@ export function NotesCard({ item, onKnown, onReview }: NotesCardProps) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: 'var(--space-3)', justifyContent: 'center' }}>
+      <div className={styles.actions}>
         <button id="btn-review" className="btn btn-danger" onClick={onReview}>Needs Review</button>
         <button id="btn-known" className="btn btn-success" onClick={onKnown}>Got It ✓</button>
       </div>

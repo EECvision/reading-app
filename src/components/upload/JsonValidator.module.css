@@ -1,0 +1,90 @@
+/* src/components/upload/JsonValidator.module.css */
+
+.loadingContainer {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-top-color: var(--brand-400);
+  border-radius: 50%;
+}
+
+.loadingText {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.validContainer {
+  background: hsl(142 71% 45% / 0.1);
+  border: 1px solid hsl(142 71% 45% / 0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.validTitle {
+  font-weight: 600;
+  color: var(--green-400);
+  font-size: var(--text-sm);
+}
+
+.validSubtext {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.invalidContainer {
+  background: hsl(0 84% 55% / 0.08);
+  border: 1px solid hsl(0 84% 55% / 0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+.invalidHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.invalidHeaderWithErrors {
+  margin-bottom: var(--space-3);
+}
+
+.invalidTitle {
+  font-weight: 600;
+  color: var(--red-400);
+  font-size: var(--text-sm);
+}
+
+.errorList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+.errorItem {
+  font-size: var(--text-xs);
+  color: var(--red-400);
+  font-family: var(--font-mono);
+}
+
+.errorMore {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}

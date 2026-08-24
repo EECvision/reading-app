@@ -1,5 +1,7 @@
 'use client';
 
+import styles from './ProgressBar.module.css';
+
 interface ProgressBarProps {
   current: number;
   total: number;
@@ -13,7 +15,7 @@ export function ProgressBar({ current, total, showLabel = true, className = '' }
   return (
     <div className={`flex flex-col gap-1 ${className}`}>
       {showLabel && (
-        <div className="flex justify-between items-center" style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>
+        <div className={`flex justify-between items-center ${styles.labelContainer}`}>
           <span>{current} of {total}</span>
           <span>{pct}%</span>
         </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'ReadWise — Learn By Listening',
@@ -28,13 +29,13 @@ export default function HomePage() {
       {/* Nav */}
       <nav className="nav">
         <div className="nav-inner">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-            <span style={{ fontSize: '1.5rem' }}>📚</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-xl)', color: 'var(--text-primary)' }}>
+          <div className={styles.navBrand}>
+            <span className={styles.navLogo}>📚</span>
+            <span className={styles.navTitle}>
               ReadWise
             </span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+          <div className={styles.navActions}>
             <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">My Decks</Link>
             <Link id="nav-upload" href="/upload" className="btn btn-primary btn-sm">+ Upload</Link>
             <ThemeToggle />
@@ -43,52 +44,23 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="section" style={{ textAlign: 'center', paddingTop: 'var(--space-20)' }}>
+      <section className={`section ${styles.heroSection}`}>
         <div className="container-sm">
           <div className="animate-slideUp">
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 'var(--space-2)',
-              padding: 'var(--space-2) var(--space-4)',
-              background: 'hsl(252 74% 55% / 0.12)',
-              border: '1px solid hsl(252 74% 55% / 0.25)',
-              borderRadius: 'var(--radius-full)',
-              marginBottom: 'var(--space-6)',
-              fontSize: 'var(--text-xs)',
-              fontWeight: 600,
-              color: 'var(--brand-400)',
-              letterSpacing: '0.05em',
-            }}>
+            <div className={styles.heroBadge}>
               <span>✦</span>
               YOUR PERSONAL STUDY COMPANION
             </div>
 
-            <h1 style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 900,
-              lineHeight: 1.1,
-              letterSpacing: '-0.03em',
-              marginBottom: 'var(--space-6)',
-              background: 'linear-gradient(135deg, var(--text-primary) 0%, var(--brand-300) 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
+            <h1 className={styles.heroTitle}>
               Learn Anything.<br />Just Listen.
             </h1>
 
-            <p style={{
-              fontSize: 'var(--text-xl)',
-              color: 'var(--text-secondary)',
-              lineHeight: 1.7,
-              maxWidth: 500,
-              margin: '0 auto var(--space-10)',
-            }}>
+            <p className={styles.heroDesc}>
               Upload your study content as JSON and let ReadWise read it to you — with flashcards, Q&amp;A, articles, notes, MCQ, and interview practice.
             </p>
 
-            <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div className={styles.heroActions}>
               <Link id="hero-upload" href="/upload" className="btn btn-primary btn-lg">
                 Start Studying →
               </Link>
@@ -103,48 +75,34 @@ export default function HomePage() {
       {/* Reading Modes Grid */}
       <section className="section-sm">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: 'var(--space-10)' }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', marginBottom: 'var(--space-3)' }}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
               6 Ways to Study
             </h2>
-            <p style={{ color: 'var(--text-secondary)', maxWidth: 480, margin: '0 auto' }}>
+            <p className={styles.sectionDesc}>
               Choose the mode that fits your content — then switch any time during a session.
             </p>
           </div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: 'var(--space-4)',
-          }}>
+          <div className={styles.featuresGrid}>
             {FEATURES.map((f) => (
               <Link
                 key={f.title}
                 href="/upload"
-                className="card"
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 'var(--space-3)',
-                  textDecoration: 'none',
-                  cursor: 'pointer',
-                  border: `1px solid ${f.color}22`,
-                }}
+                className={`card ${styles.featureCard}`}
+                style={{ border: `1px solid ${f.color}22` }}
               >
-                <div style={{
-                  width: 48, height: 48,
-                  borderRadius: 'var(--radius-lg)',
-                  background: `${f.color}18`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: '1.5rem',
-                }}>
+                <div 
+                  className={styles.featureIcon}
+                  style={{ background: `${f.color}18` }}
+                >
                   {f.icon}
                 </div>
                 <div>
-                  <h4 style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)', marginBottom: 4 }}>
+                  <h4 className={styles.featureTitle}>
                     {f.title}
                   </h4>
-                  <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>{f.desc}</p>
+                  <p className={styles.featureDesc}>{f.desc}</p>
                 </div>
               </Link>
             ))}
@@ -155,30 +113,22 @@ export default function HomePage() {
       {/* How It Works */}
       <section className="section">
         <div className="container-sm">
-          <div style={{ textAlign: 'center', marginBottom: 'var(--space-10)' }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', marginBottom: 'var(--space-3)' }}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
               How It Works
             </h2>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>
+          <div className={styles.stepsContainer}>
             {HOW_IT_WORKS.map((step, i) => (
-              <div key={i} style={{ display: 'flex', gap: 'var(--space-5)', alignItems: 'flex-start' }}>
-                <div style={{
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 900,
-                  fontSize: 'var(--text-3xl)',
-                  color: 'var(--border)',
-                  lineHeight: 1,
-                  flexShrink: 0,
-                  width: 64,
-                }}>
+              <div key={i} className={styles.stepItem}>
+                <div className={styles.stepNumber}>
                   {step.step}
                 </div>
                 <div>
-                  <h4 style={{ fontFamily: 'var(--font-display)', marginBottom: 'var(--space-2)', color: 'var(--text-primary)' }}>
+                  <h4 className={styles.stepTitle}>
                     {step.title}
                   </h4>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', lineHeight: 1.7 }}>
+                  <p className={styles.stepDesc}>
                     {step.desc}
                   </p>
                 </div>
@@ -189,13 +139,13 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="section-sm" style={{ textAlign: 'center', paddingBottom: 'var(--space-20)' }}>
+      <section className={`section-sm ${styles.ctaSection}`}>
         <div className="container-xs">
-          <div className="card-glass" style={{ padding: 'var(--space-12)', borderRadius: 'var(--radius-2xl)' }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', marginBottom: 'var(--space-4)' }}>
+          <div className={`card-glass ${styles.ctaCard}`}>
+            <h2 className={styles.ctaTitle}>
               Ready to start?
             </h2>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-8)' }}>
+            <p className={styles.ctaDesc}>
               Download a template, fill it in, and upload to begin your study session.
             </p>
             <Link id="cta-upload" href="/upload" className="btn btn-primary btn-lg">
@@ -206,13 +156,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer style={{
-        borderTop: '1px solid var(--border)',
-        padding: 'var(--space-6) 0',
-        textAlign: 'center',
-        color: 'var(--text-muted)',
-        fontSize: 'var(--text-sm)',
-      }}>
+      <footer className={styles.footer}>
         <div className="container">
           ReadWise · All data stored locally in your browser
         </div>

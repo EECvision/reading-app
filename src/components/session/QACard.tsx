@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { QAItem, SessionStyle } from '@/types';
+import styles from './QACard.module.css';
 
 interface QACardProps {
   item: QAItem;
@@ -17,29 +18,23 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
   const showBoth = sessionStyle === 'read-and-listen' || sessionStyle === 'tts-listen';
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)', width: '100%', maxWidth: 600 }}>
+    <div className={styles.container}>
       {/* Question card */}
-      <div className="card-glass" style={{ borderRadius: 'var(--radius-2xl)', padding: 'var(--space-8)', textAlign: 'center' }}>
+      <div className={`card-glass ${styles.questionCard}`}>
         {item.category && (
-          <span className="badge badge-brand" style={{ marginBottom: 'var(--space-4)' }}>
+          <span className={`badge badge-brand ${styles.category}`}>
             {item.category}
           </span>
         )}
-        <p style={{
-          fontSize: 'var(--text-xl)',
-          fontWeight: 600,
-          color: 'var(--text-primary)',
-          lineHeight: 1.5,
-          fontFamily: 'var(--font-display)',
-        }}>
+        <p className={styles.question}>
           {item.question}
         </p>
 
         {/* Hint */}
         {item.hint && !revealed && (
-          <div style={{ marginTop: 'var(--space-4)' }}>
+          <div className={styles.hintContainer}>
             {hintVisible ? (
-              <p style={{ color: 'var(--accent-400)', fontSize: 'var(--text-sm)', fontStyle: 'italic' }}>
+              <p className={styles.hintText}>
                 💡 {item.hint}
               </p>
             ) : (
@@ -57,21 +52,13 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
 
       {/* Answer */}
       {(revealed || showBoth) ? (
-        <div
-          className="card animate-slideUp"
-          style={{
-            background: 'linear-gradient(135deg, hsl(142 71% 45% / 0.08), transparent)',
-            borderColor: 'hsl(142 71% 45% / 0.3)',
-            textAlign: 'center',
-            padding: 'var(--space-6)',
-          }}
-        >
-          <p style={{ color: 'var(--text-primary)', fontSize: 'var(--text-lg)', lineHeight: 1.6 }}>
+        <div className={`card animate-slideUp ${styles.answerCard}`}>
+          <p className={styles.answerText}>
             {item.answer}
           </p>
         </div>
       ) : (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className={styles.revealContainer}>
           <button
             id="btn-reveal-answer"
             className="btn btn-secondary"
@@ -84,7 +71,7 @@ export function QACard({ item, sessionStyle, onKnown, onReview }: QACardProps) {
 
       {/* Rating */}
       {(revealed || showBoth) && (
-        <div style={{ display: 'flex', gap: 'var(--space-3)', justifyContent: 'center' }} className="animate-slideUp">
+        <div className={`animate-slideUp ${styles.actionsContainer}`}>
           <button id="btn-review" className="btn btn-danger" onClick={() => { setRevealed(false); setHintVisible(false); onReview(); }}>
             Needs Review
           </button>

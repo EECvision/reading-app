@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import type { TTSSettings, SessionStyle } from '@/types';
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
+import styles from './SessionControls.module.css';
 
 interface SessionControlsProps {
   currentText: string;       // text to speak for current item
@@ -90,36 +91,27 @@ export function SessionControls({
   };
 
   return (
-    <div style={{
-      background: 'var(--bg-surface)',
-      border: '1px solid var(--border)',
-      borderRadius: 'var(--radius-xl)',
-      padding: 'var(--space-4) var(--space-5)',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 'var(--space-4)',
-    }}>
+    <div className={styles.container}>
       {/* Session Style Selector */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
+      <div className={styles.styleSelector}>
         {SESSION_STYLES.map((s) => (
           <button
             key={s.id}
             id={`style-${s.id}`}
-            className={`btn btn-sm ${sessionStyle === s.id ? 'btn-primary' : 'btn-secondary'}`}
+            className={`btn btn-sm ${sessionStyle === s.id ? 'btn-primary' : 'btn-secondary'} ${styles.styleButton}`}
             onClick={() => onStyleChange(s.id)}
-            style={{ borderRadius: 'var(--radius-full)' }}
           >
             {s.label}
           </button>
         ))}
       </div>
 
-      <div className="divider" style={{ margin: 0 }} />
+      <div className={`divider ${styles.divider}`} />
 
       {/* Playback Controls */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-3)' }}>
+      <div className={styles.controlsRow}>
         {/* Prev / Play / Pause / Stop / Next */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+        <div className={styles.playbackButtons}>
           <button
             id="btn-prev"
             className="btn btn-secondary btn-icon"
@@ -163,18 +155,17 @@ export function SessionControls({
             </button>
           )}
 
-          {(speaking || paused) && (
-            <button
-              id="btn-stop"
-              className="btn btn-secondary btn-icon"
-              onClick={handleStop}
-              aria-label="Stop"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <rect x="4" y="4" width="16" height="16"/>
-              </svg>
-            </button>
-          )}
+          <button
+            id="btn-stop"
+            className="btn btn-secondary btn-icon-lg"
+            onClick={handleStop}
+            aria-label="Stop"
+            disabled={!(speaking || paused)}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="4" y="4" width="16" height="16"/>
+            </svg>
+          </button>
 
           <button
             id="btn-next"
@@ -190,14 +181,13 @@ export function SessionControls({
         </div>
 
         {/* TTS Settings */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', flexWrap: 'wrap' }}>
+        <div className={styles.settingsGroup}>
           {/* Speed */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}>Speed</span>
+          <div className={styles.settingItem}>
+            <span className={styles.settingLabelNoWrap}>Speed</span>
             <select
               id="tts-speed"
-              className="input"
-              style={{ padding: 'var(--space-1) var(--space-2)', fontSize: 'var(--text-xs)', width: 'auto' }}
+              className={`input ${styles.selectSpeed}`}
               value={ttsSettings.rate}
               onChange={(e) => updateTTS({ rate: parseFloat(e.target.value) })}
             >
@@ -209,43 +199,48 @@ export function SessionControls({
 
           {/* Voice */}
           {voices.length > 0 && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-              <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>Voice</span>
+            <div className={styles.settingItem}>
+              <span className={styles.settingLabel}>Voice</span>
               <select
                 id="tts-voice"
-                className="input"
-                style={{ padding: 'var(--space-1) var(--space-2)', fontSize: 'var(--text-xs)', maxWidth: '140px' }}
+                className={`input ${styles.selectVoice}`}
                 value={ttsSettings.voiceURI}
                 onChange={(e) => updateTTS({ voiceURI: e.target.value })}
               >
-                <option value="">Default</option>
-                {voices.map((v) => (
-                  <option key={v.voiceURI} value={v.voiceURI}>{v.name}</option>
-                ))}
+                {voices
+                  .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                  .map((v) => {
+                    const label = v.name === 'Google UK English Male' ? 'Male voice' : 'Female voice';
+                    return (
+                      <option key={v.voiceURI} value={v.voiceURI}>
+                        {label}
+                      </option>
+                    );
+                  })}
               </select>
             </div>
           )}
 
           {/* Autoplay */}
-          <label style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', cursor: 'pointer', fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
+          <label className={styles.checkboxLabel}>
             <input
               id="toggle-autoplay"
               type="checkbox"
               checked={autoplay}
               onChange={(e) => onAutoplayChange(e.target.checked)}
-              style={{ accentColor: 'var(--brand-400)' }}
+              className={styles.toggleSwitch}
             />
             Autoplay
           </label>
 
           {/* Shuffle */}
-          <label style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', cursor: 'pointer', fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
+          <label className={styles.checkboxLabel}>
             <input
               id="toggle-shuffle"
               type="checkbox"
               checked={shuffle}
               onChange={(e) => onShuffleChange(e.target.checked)}
-              style={{ accentColor: 'var(--brand-400)' }}
+              className={styles.toggleSwitch}
             />
             Shuffle
           </label>

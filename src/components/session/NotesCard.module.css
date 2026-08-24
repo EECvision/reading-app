@@ -1,0 +1,57 @@
+/* src/components/session/NotesCard.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+  max-width: 680px;
+}
+
+.card {
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+}
+
+.category {
+  margin-bottom: var(--space-3);
+}
+
+.topicTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.subtopicsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.subtopicItem {
+  padding-left: var(--space-5);
+  border-left: 3px solid var(--brand-400);
+}
+
+.subtopicHeading {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.subtopicBody {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
