@@ -1,95 +1,176 @@
 /* src/components/session/SessionControls.module.css */
 
-.container {
+.dockedContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.primaryControls {
+  padding: var(--space-4) var(--space-4);
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
 }
 
-.styleSelector {
+.topRow {
   display: flex;
-  justify-content: center;
-  gap: var(--space-2);
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.styleButton {
+.activeSettingBtn {
+  background: var(--brand-500) !important;
+  color: white !important;
+  border-color: var(--brand-500) !important;
+}
+
+/* Segmented Control */
+.segmentedControl {
+  display: flex;
+  background: var(--bg-overlay);
+  padding: 4px;
   border-radius: var(--radius-full);
+  gap: 2px;
 }
 
-.divider {
-  margin: 0;
+.segment {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.controlsRow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-4);
+.segmentActive {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
 }
 
-.playbackButtons {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.settingsGroup {
+/* Playback Row */
+.playbackRow {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--space-4);
-  flex-wrap: wrap;
+  gap: var(--space-6);
 }
 
-.settingItem {
+.playControlBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  justify-content: center;
+  padding: var(--space-2);
+  border-radius: var(--radius-full);
+  transition: color 0.2s;
 }
 
-.settingLabel {
-  font-size: var(--text-xs);
-  color: var(--text-muted);
+.playControlBtn:hover:not(:disabled) {
+  color: var(--text-primary);
 }
 
-.settingLabelNoWrap {
-  font-size: var(--text-xs);
-  color: var(--text-muted);
+.playControlBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mainPlayBtn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--brand-500);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px hsl(252 74% 55% / 0.3);
+  transition: transform 0.1s ease;
+}
+
+.mainPlayBtn:active {
+  transform: scale(0.95);
+}
+
+/* Collapsible Settings Drawer */
+.settingsDrawer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-body);
+}
+
+.settingsOpen {
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+.settingsDrawerInner {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Native-style list rows */
+.listRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.listRow:last-child {
+  border-bottom: none;
+}
+
+.listLabel {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  font-weight: 500;
   white-space: nowrap;
 }
 
-.selectSpeed {
-  padding: var(--space-1) var(--space-2);
-  font-size: var(--text-xs);
-  width: auto;
-}
-
-.selectVoice {
-  padding: var(--space-1) var(--space-2);
-  font-size: var(--text-xs);
-  max-width: 140px;
-}
-
-.checkboxLabel {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  cursor: pointer;
-  font-size: var(--text-xs);
+.nativeSelect {
+  background: transparent;
+  border: none;
   color: var(--text-secondary);
+  font-size: var(--text-base);
+  text-align: right;
+  padding-right: var(--space-2);
+  cursor: pointer;
+  direction: rtl; /* Right align the select text */
 }
 
+.nativeSelect option {
+  direction: ltr;
+}
+
+/* Switches */
 .toggleSwitch {
   appearance: none;
-  width: 32px;
-  height: 18px;
+  width: 50px;
+  height: 30px;
   background: var(--bg-overlay);
-  border-radius: 18px;
+  border-radius: 30px;
   position: relative;
   cursor: pointer;
   outline: none;
@@ -99,12 +180,12 @@
 }
 
 .toggleSwitch::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 14px;
-  height: 14px;
+  width: 26px;
+  height: 26px;
   background: white;
   border-radius: 50%;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,9 +193,39 @@
 }
 
 .toggleSwitch:checked {
-  background: var(--brand-400);
+  background: var(--brand-500);
 }
 
 .toggleSwitch:checked::after {
-  transform: translateX(14px);
+  transform: translateX(20px);
+}
+
+@media (max-width: 480px) {
+  .primaryControls {
+    padding: var(--space-3);
+    gap: var(--space-3);
+  }
+
+  .segment {
+    padding: var(--space-2) var(--space-3);
+    font-size: 0.75rem;
+  }
+
+  .playbackRow {
+    gap: var(--space-4);
+  }
+
+  .mainPlayBtn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .listLabel {
+    font-size: var(--text-sm);
+  }
+
+  .nativeSelect {
+    font-size: var(--text-sm);
+    max-width: 60%;
+  }
 }

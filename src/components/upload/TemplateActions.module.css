@@ -19,10 +19,6 @@
 }
 
 .panel {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -70,4 +66,26 @@
   display: flex;
   justify-content: flex-end;
   gap: 8px;
+}
+
+.formRow {
+  display: flex;
+  gap: 12px;
+}
+
+.topicInput {
+  flex: 1;
+}
+
+.countInput {
+  width: 120px;
+}
+
+@media (max-width: 600px) {
+  .formRow {
+    flex-direction: column;
+  }
+  .topicInput, .countInput {
+    width: 100%;
+  }
 }

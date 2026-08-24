@@ -95,7 +95,7 @@
 .tabBtn.active {
   background: var(--bg-surface);
   color: var(--text-primary);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stepHeaderInner {
@@ -110,6 +110,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
   border-radius: 50%;
   font-weight: 800;
   font-size: var(--text-sm);
@@ -149,4 +150,10 @@
 
 .saveButton {
   align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .saveButton {
+    align-self: stretch;
+  }
 }

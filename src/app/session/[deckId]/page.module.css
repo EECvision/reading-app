@@ -12,6 +12,7 @@
 
 .pageContainer {
   min-height: 100vh;
+  padding-bottom: 200px;
 }
 
 .navBrand {
@@ -69,4 +70,35 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navBrand {
+    gap: var(--space-2);
+  }
+  
+  .navLogo {
+    font-size: 1.125rem;
+  }
+  
+  .navTitle, .navSeparator {
+    display: none;
+  }
+  
+  .navDeckName {
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--text-primary);
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navDeckName {
+    max-width: 120px;
+  }
+  
+  .pageContainer {
+    padding-bottom: 250px; /* extra space for session controls on mobile */
+  }
 }

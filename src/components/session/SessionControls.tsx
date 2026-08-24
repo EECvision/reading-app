@@ -194,36 +194,67 @@ export function SessionControls({
     setPaused(false);
   };
 
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
   return (
-    <div className={styles.container}>
-      {/* Session Style Selector */}
-      <div className={styles.styleSelector}>
-        {SESSION_STYLES.map((s) => (
+    <div className={styles.dockedContainer}>
+      <div className={styles.primaryControls}>
+        {/* Top row: Settings button and Segmented Control */}
+        <div className={styles.topRow}>
           <button
-            key={s.id}
-            id={`style-${s.id}`}
-            className={`btn btn-sm ${sessionStyle === s.id ? 'btn-primary' : 'btn-secondary'} ${styles.styleButton}`}
-            onClick={() => onStyleChange(s.id)}
+            className={`btn btn-secondary btn-icon ${isSettingsOpen ? styles.activeSettingBtn : ''}`}
+            onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+            aria-label="Toggle Settings"
           >
-            {s.label}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
           </button>
-        ))}
-      </div>
 
-      <div className={`divider ${styles.divider}`} />
+          <div className={styles.segmentedControl}>
+            {SESSION_STYLES.map((s) => (
+              <button
+                key={s.id}
+                id={`style-${s.id}`}
+                className={`${styles.segment} ${sessionStyle === s.id ? styles.segmentActive : ''}`}
+                onClick={() => onStyleChange(s.id)}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+          <button
+            id="btn-stop"
+            className="btn btn-secondary btn-icon"
+            onClick={handleStop}
+            aria-label="Reload"
+            disabled={!(speaking || paused)}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5 }}>
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+              <path d="M3 3v5h5"/>
+            </svg>
+          </button>
+        </div>
 
-      {/* Playback Controls */}
-      <div className={styles.controlsRow}>
-        {/* Prev / Play / Pause / Stop / Next */}
-        <div className={styles.playbackButtons}>
+        {/* Playback Controls Row */}
+        <div className={styles.playbackRow}>
           <button
             id="btn-prev"
-            className="btn btn-secondary btn-icon"
+            className={styles.playControlBtn}
             onClick={onPrev}
             disabled={!canPrev}
             aria-label="Previous item"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="15 18 9 12 15 6"/>
             </svg>
           </button>
@@ -231,11 +262,11 @@ export function SessionControls({
           {speaking ? (
             <button
               id="btn-pause"
-              className="btn btn-primary btn-icon-lg"
+              className={styles.mainPlayBtn}
               onClick={handlePause}
               aria-label="Pause"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                 <rect x="6" y="4" width="4" height="16"/>
                 <rect x="14" y="4" width="4" height="16"/>
               </svg>
@@ -243,55 +274,38 @@ export function SessionControls({
           ) : (
             <button
               id="btn-play"
-              className="btn btn-primary btn-icon-lg"
+              className={styles.mainPlayBtn}
               onClick={handleSpeak}
               aria-label={paused ? 'Resume' : 'Play'}
             >
-              {paused ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-              ) : (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-              )}
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: 4 }}>
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
             </button>
           )}
 
           <button
-            id="btn-stop"
-            className="btn btn-secondary btn-icon-lg"
-            onClick={handleStop}
-            aria-label="Stop"
-            disabled={!(speaking || paused)}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <rect x="4" y="4" width="16" height="16"/>
-            </svg>
-          </button>
-
-          <button
             id="btn-next"
-            className="btn btn-secondary btn-icon"
+            className={styles.playControlBtn}
             onClick={onNext}
             disabled={!canNext}
             aria-label="Next item"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="9 18 15 12 9 6"/>
             </svg>
           </button>
         </div>
+      </div>
 
-        {/* TTS Settings */}
-        <div className={styles.settingsGroup}>
-          {/* Speed */}
-          <div className={styles.settingItem}>
-            <span className={styles.settingLabelNoWrap}>Speed</span>
+      {/* Collapsible Settings Panel */}
+      <div className={`${styles.settingsDrawer} ${isSettingsOpen ? styles.settingsOpen : ''}`}>
+        <div className={styles.settingsDrawerInner}>
+          <div className={styles.listRow}>
+            <span className={styles.listLabel}>Speed</span>
             <select
               id="tts-speed"
-              className={`input ${styles.selectSpeed}`}
+              className={`input ${styles.nativeSelect}`}
               value={ttsSettings.rate}
               onChange={(e) => updateTTS({ rate: parseFloat(e.target.value) })}
             >
@@ -301,29 +315,27 @@ export function SessionControls({
             </select>
           </div>
 
-          {/* Audio Playback Mode */}
-          <div className={styles.settingItem}>
-            <span className={styles.settingLabelNoWrap}>Audio Mode</span>
+          <div className={styles.listRow}>
+            <span className={styles.listLabel}>Audio Mode</span>
             <select
               id="tts-audio-mode"
-              className={`input ${styles.selectSpeed}`}
+              className={`input ${styles.nativeSelect}`}
               value={ttsSettings.audioMode || 'continuous'}
               onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
             >
               <option value="continuous">Continuous</option>
-              <option value="single-pause">Single (with pause)</option>
+              <option value="single-pause">Single (pause)</option>
               <option value="switch">Switch Voices</option>
             </select>
           </div>
 
-          {/* Voice */}
           {voices.length > 0 && (
             <>
-              <div className={styles.settingItem}>
-                <span className={styles.settingLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+              <div className={styles.listRow}>
+                <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
                 <select
                   id="tts-voice"
-                  className={`input ${styles.selectVoice}`}
+                  className={`input ${styles.nativeSelect}`}
                   value={ttsSettings.voiceURI}
                   onChange={(e) => updateTTS({ voiceURI: e.target.value })}
                 >
@@ -332,20 +344,18 @@ export function SessionControls({
                     .map((v) => {
                       const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
                       return (
-                        <option key={v.voiceURI} value={v.voiceURI}>
-                          {label}
-                        </option>
+                        <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
                       );
                     })}
                 </select>
               </div>
               
               {ttsSettings.audioMode === 'switch' && (
-                <div className={styles.settingItem}>
-                  <span className={styles.settingLabel}>Voice 2</span>
+                <div className={styles.listRow}>
+                  <span className={styles.listLabel}>Voice 2</span>
                   <select
                     id="tts-voice-secondary"
-                    className={`input ${styles.selectVoice}`}
+                    className={`input ${styles.nativeSelect}`}
                     value={ttsSettings.secondaryVoiceURI || ''}
                     onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
                   >
@@ -355,9 +365,7 @@ export function SessionControls({
                       .map((v) => {
                         const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
                         return (
-                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>
-                            {label}
-                          </option>
+                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
                         );
                       })}
                   </select>
@@ -366,8 +374,8 @@ export function SessionControls({
             </>
           )}
 
-          {/* Mute Voice */}
-          <label className={styles.checkboxLabel}>
+          <label className={styles.listRow}>
+            <span className={styles.listLabel}>Mute Voice</span>
             <input
               id="toggle-mute"
               type="checkbox"
@@ -375,11 +383,10 @@ export function SessionControls({
               onChange={(e) => updateTTS({ muted: e.target.checked })}
               className={styles.toggleSwitch}
             />
-            Mute Voice
           </label>
 
-          {/* Autoplay */}
-          <label className={styles.checkboxLabel}>
+          <label className={styles.listRow}>
+            <span className={styles.listLabel}>Autoplay</span>
             <input
               id="toggle-autoplay"
               type="checkbox"
@@ -387,11 +394,10 @@ export function SessionControls({
               onChange={(e) => onAutoplayChange(e.target.checked)}
               className={styles.toggleSwitch}
             />
-            Autoplay
           </label>
 
-          {/* Shuffle */}
-          <label className={styles.checkboxLabel}>
+          <label className={styles.listRow}>
+            <span className={styles.listLabel}>Shuffle</span>
             <input
               id="toggle-shuffle"
               type="checkbox"
@@ -399,7 +405,6 @@ export function SessionControls({
               onChange={(e) => onShuffleChange(e.target.checked)}
               className={styles.toggleSwitch}
             />
-            Shuffle
           </label>
         </div>
       </div>

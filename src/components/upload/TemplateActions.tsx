@@ -87,8 +87,8 @@ export function TemplateActions({ mode }: TemplateActionsProps) {
         <div className={styles.panel}>
           <h3 className={styles.panelTitle}>Generate with ChatGPT</h3>
           
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <div className={styles.inputGroup} style={{ flex: 1 }}>
+          <div className={styles.formRow}>
+            <div className={`${styles.inputGroup} ${styles.topicInput}`}>
               <label htmlFor="topic-input" className={styles.inputLabel}>
                 What do you want to learn? *
               </label>
@@ -102,7 +102,7 @@ export function TemplateActions({ mode }: TemplateActionsProps) {
               />
             </div>
             
-            <div className={styles.inputGroup} style={{ width: '120px' }}>
+            <div className={`${styles.inputGroup} ${styles.countInput}`}>
               <label htmlFor="count-input" className={styles.inputLabel}>
                 How many?
               </label>

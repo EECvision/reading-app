@@ -683,11 +683,13 @@ select.input {
 
 /* ─── Section ────────────────────────────────────────────────────────────── */
 .section {
-  padding: var(--space-16) 0;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
 }
 
 .section-sm {
-  padding: var(--space-8) 0;
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
 /* ─── Divider ────────────────────────────────────────────────────────────── */
@@ -835,7 +837,8 @@ select.input {
   }
 
   .section {
-    padding: var(--space-10) 0;
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-10);
   }
   .modal-panel {
     padding: var(--space-6);

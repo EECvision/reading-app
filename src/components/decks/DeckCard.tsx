@@ -46,54 +46,58 @@ export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role
   });
 
   // SVG ring progress
-  const r = 24;
+  const r = 20;
   const circ = 2 * Math.PI * r;
   const offset = circ - (pct / 100) * circ;
 
   return (
-    <div className={`card ${styles.card}`}>
+    <div className={`card ${styles.card}`} style={{ '--deck-color': color } as React.CSSProperties}>
+      
+      {/* Top Header */}
       <div className={styles.headerRow}>
-        {/* Mode icon */}
-        <div className={styles.iconBox} style={{ background: `${color}18` }}>
-          {icon}
-        </div>
-
-        <div className={styles.infoCol}>
-          <div className={styles.title}>
-            {name}
+        <div className={styles.titleGroup}>
+          <div className={styles.iconBox} style={{ background: `${color}18`, color }}>
+            {icon}
           </div>
-          {mode === 'interview' && role && (
-            <div className={styles.role}>
-              {level} {role}
-            </div>
-          )}
-          <div className={styles.metaRow}>
-            <span className="badge badge-muted">{mode}</span>
-            <span className={styles.metaText}>
-              {itemCount} items · {uploadDate}
-            </span>
+          <div className={styles.title} title={name}>
+            {name}
           </div>
         </div>
 
         {/* Progress ring */}
         <div className={styles.progressRing}>
-          <svg width={60} height={60}>
-            <circle cx={30} cy={30} r={r} fill="none" stroke="var(--bg-overlay)" strokeWidth={4} />
+          <svg width={48} height={48}>
+            <circle cx={24} cy={24} r={r} fill="none" stroke="var(--bg-elevated)" strokeWidth={4} />
             <circle
-              cx={30} cy={30} r={r}
+              cx={24} cy={24} r={r}
               fill="none"
               stroke={color}
               strokeWidth={4}
               strokeDasharray={circ}
               strokeDashoffset={offset}
               strokeLinecap="round"
-              transform="rotate(-90 30 30)"
+              transform="rotate(-90 24 24)"
               className={styles.progressCircle}
             />
           </svg>
           <div className={styles.progressText}>
             {pct}%
           </div>
+        </div>
+      </div>
+
+      {/* Main Info */}
+      <div className={styles.mainInfo}>
+        {mode === 'interview' && role && (
+          <div className={styles.role}>
+            {level} {role}
+          </div>
+        )}
+        <div className={styles.metaRow}>
+          <span className="badge" style={{ background: `${color}20`, color: color, letterSpacing: '0.05em' }}>{mode}</span>
+          <span className={styles.metaText}>{itemCount} items</span>
+          <span className={styles.metaDot}>·</span>
+          <span className={styles.metaText}>{uploadDate}</span>
         </div>
       </div>
 
