@@ -87,7 +87,7 @@ const defaultSettings: AppSettings = {
     rate: 1,
     pitch: 1,
     voiceURI: '',
-    audioMode: 'continuous',
+    audioMode: 'single-pause',
   },
   autoplay: false,
   shuffle: false,
@@ -96,7 +96,7 @@ const defaultSettings: AppSettings = {
 export function getSettings(): AppSettings {
   const settings = read<AppSettings>(KEYS.settings, defaultSettings);
   if (!settings.tts.audioMode) {
-    settings.tts.audioMode = 'continuous';
+    settings.tts.audioMode = 'single-pause';
   }
   return settings;
 }

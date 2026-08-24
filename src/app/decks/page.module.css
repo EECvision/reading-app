@@ -29,6 +29,11 @@
   gap: var(--space-4);
 }
 
+.filterSelect {
+  width: 100%;
+  max-width: 200px;
+}
+
 .pageTitle {
   font-family: var(--font-display);
   font-weight: 900;
@@ -72,4 +77,10 @@
 .emptyDesc {
   color: var(--text-secondary);
   margin-bottom: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .filterSelect {
+    max-width: 100%;
+  }
 }

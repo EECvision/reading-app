@@ -129,6 +129,12 @@ export default function SessionPage() {
 
 
 
+  const handleRestart = useCallback(() => {
+    stop();
+    setIsFlipped(false);
+    setIndex(0);
+  }, []);
+
   if (!currentItem) {
     return (
       <div className={`page-bg min-h-screen ${styles.loadingContainer}`}>
@@ -197,7 +203,7 @@ export default function SessionPage() {
       <div className="container-sm section">
         {/* Progress */}
         <div className={`animate-slideDown ${styles.progressContainer}`}>
-          <ProgressBar current={index + 1} total={items.length} />
+          <ProgressBar current={index + 1} total={items.length} onRestart={handleRestart} />
         </div>
 
         {/* Session Controls */}

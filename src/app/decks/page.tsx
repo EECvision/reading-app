@@ -10,6 +10,7 @@ import styles from './page.module.css';
 
 export default function DecksPage() {
   const [decks, setDecks] = useState<Deck[]>(() => getDecks());
+  const [filterMode, setFilterMode] = useState<string>('all');
   const [progresses, setProgresses] = useState<Record<string, DeckProgress>>(() => {
     const d = getDecks();
     const p: Record<string, DeckProgress> = {};
@@ -24,6 +25,10 @@ export default function DecksPage() {
     setDecks((prev) => prev.filter((d) => d.id !== id));
     setProgresses((prev) => { const next = { ...prev }; delete next[id]; return next; });
   };
+
+  const filteredDecks = decks.filter((d) => 
+    filterMode === 'all' || d.mode === filterMode
+  );
 
   return (
     <div className="page-bg min-h-screen">
@@ -50,6 +55,19 @@ export default function DecksPage() {
               {decks.length} deck{decks.length !== 1 ? 's' : ''} saved locally
             </p>
           </div>
+          <select
+            className={`input ${styles.filterSelect}`}
+            value={filterMode}
+            onChange={(e) => setFilterMode(e.target.value)}
+          >
+            <option value="all">All Types</option>
+            <option value="flashcard">Flashcards</option>
+            <option value="qa">Q&A</option>
+            <option value="mcq">Multiple Choice</option>
+            <option value="interview">Interview</option>
+            <option value="article">Article</option>
+            <option value="notes">Notes</option>
+          </select>
         </div>
 
         {!loaded ? (
@@ -58,22 +76,28 @@ export default function DecksPage() {
               <div key={i} className={`skeleton ${styles.skeletonItem}`} />
             ))}
           </div>
-        ) : decks.length === 0 ? (
+        ) : filteredDecks.length === 0 ? (
           <div className={styles.emptyState}>
             <div className={styles.emptyIcon}>📭</div>
             <div>
-              <h2 className={styles.emptyTitle}>No decks yet</h2>
+              <h2 className={styles.emptyTitle}>
+                {filterMode !== 'all' ? 'No matching decks' : 'No decks yet'}
+              </h2>
               <p className={styles.emptyDesc}>
-                Upload your first JSON deck to get started.
+                {filterMode !== 'all' 
+                  ? 'Try selecting a different deck type.' 
+                  : 'Upload your first JSON deck to get started.'}
               </p>
-              <Link id="btn-upload-first" href="/upload" className="btn btn-primary btn-lg">
-                Upload Your First Deck →
-              </Link>
+              {filterMode === 'all' && (
+                <Link id="btn-upload-first" href="/upload" className="btn btn-primary btn-lg">
+                  Upload Your First Deck →
+                </Link>
+              )}
             </div>
           </div>
         ) : (
           <div className={`animate-fadeIn ${styles.decksGrid}`}>
-            {decks.map((deck) => (
+            {filteredDecks.map((deck) => (
               <DeckCard
                 key={deck.id}
                 id={deck.id}

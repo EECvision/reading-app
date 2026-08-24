@@ -4,3 +4,21 @@
   font-size: var(--text-xs);
   color: var(--text-muted);
 }
+
+.restartBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restartBtn:hover {
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+}

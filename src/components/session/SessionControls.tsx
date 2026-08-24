@@ -64,6 +64,18 @@ export function SessionControls({
     saveTTSSettings(next);
   };
 
+  // Set a default Google UK voice if none is selected (first load)
+  useEffect(() => {
+    if (voices.length > 0 && !ttsSettings.voiceURI) {
+      const defaultVoice = voices.find(v => v.name === 'Google UK English Female' || v.name === 'Google UK English Male');
+      if (defaultVoice) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        updateTTS({ voiceURI: defaultVoice.voiceURI });
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [voices, ttsSettings.voiceURI]);
+
   const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText });
   useEffect(() => {
     latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText };
