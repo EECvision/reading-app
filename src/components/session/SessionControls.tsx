@@ -22,8 +22,8 @@ interface SessionControlsProps {
 }
 
 const SESSION_STYLES: { id: SessionStyle; label: string }[] = [
-  { id: 'card-flip',       label: 'Card Flip' },
   { id: 'read-and-listen', label: 'Read + Listen' },
+  { id: 'card-flip',       label: 'Card Flip' },
 ];
 
 const SPEED_OPTIONS = [0.5, 0.75, 1, 1.25, 1.5, 2];

@@ -64,9 +64,6 @@ interface ModeSelectorProps {
 export function ModeSelector({ selected, onSelect }: ModeSelectorProps) {
   return (
     <div>
-      <h2 className={styles.title}>
-        Choose a Reading Mode
-      </h2>
       <div className={styles.grid}>
         {MODES.map((mode) => {
           const isSelected = selected === mode.id;

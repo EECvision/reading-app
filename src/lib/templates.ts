@@ -112,3 +112,14 @@ export function downloadTemplate(mode: ReadingMode): void {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
+
+export function getAIPrompt(mode: ReadingMode, topic: string, count: number): string {
+  const data = templates[mode];
+  const jsonSample = JSON.stringify(data, null, 2);
+  
+  return `I am creating a study deck for a flashcard and quiz app. Please generate ${count} ${mode} items about "${topic}".
+
+You must output ONLY raw, valid JSON. Do not include any markdown formatting, explanations, or text outside of the JSON array. You must strictly follow this exact JSON structure:
+
+${jsonSample}`;
+}

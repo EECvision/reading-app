@@ -38,7 +38,7 @@ export default function SessionPage() {
   const [role, setRole] = useState('');
   const [level, setLevel] = useState('');
   const [index, setIndex] = useState(0);
-  const [sessionStyle, setSessionStyle] = useState<SessionStyle>('card-flip');
+  const [sessionStyle, setSessionStyle] = useState<SessionStyle>('read-and-listen');
   const [shuffle, setShuffle] = useState(() => getSettings().shuffle);
   const [autoplay, setAutoplay] = useState(() => getSettings().autoplay);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});

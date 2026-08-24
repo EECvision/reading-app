@@ -63,11 +63,39 @@
 
 .step2Header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: var(--space-5);
-  flex-wrap: wrap;
-  gap: var(--space-3);
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.uploadMethodTabs {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-overlay);
+  padding: 4px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabBtn:hover {
+  color: var(--text-primary);
+}
+
+.tabBtn.active {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .stepHeaderInner {
@@ -93,6 +121,12 @@
   font-family: var(--font-display);
   font-size: var(--text-lg);
   margin: 0;
+}
+
+.stepDesc {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
 }
 
 .validatorContainer {
