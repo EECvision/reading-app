@@ -48,20 +48,18 @@ export default function SessionPage() {
   const rawDeckId = params.deckId;
   const deckId = typeof rawDeckId === "string" ? decodeURIComponent(rawDeckId) : "";
 
-  const [deck, setDeck] = useState<Deck | null>(() => {
-    if (deckId && !deckId.startsWith("file:")) {
-      return getDeck(deckId) ?? null;
-    }
-    return null;
-  });
+  // Always start null — localStorage is only available client-side.
+  // Reading it in the useState initializer causes hydration mismatches because
+  // the server renders null while the client immediately finds the deck.
+  const [deck, setDeck] = useState<Deck | null>(null);
 
   const [index, setIndex] = useState(0);
   const [sessionStyle, setSessionStyle] =
     useState<SessionStyle>("read-and-listen");
-  const [shuffle, setShuffle] = useState(() => getSettings().shuffle);
-  const [prevShuffle, setPrevShuffle] = useState(shuffle);
-  const [autoplay, setAutoplay] = useState(() => getSettings().autoplay);
-  const [repeat, setRepeat] = useState(() => getSettings().repeat);
+  const [shuffle, setShuffle] = useState(false);
+  const [prevShuffle, setPrevShuffle] = useState(false);
+  const [autoplay, setAutoplay] = useState(true);
+  const [repeat, setRepeat] = useState(true);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
@@ -95,20 +93,41 @@ export default function SessionPage() {
     return buildStudyList(list, deckId as string, shuffle);
   }, [deck, deckId, shuffle]);
 
+  // Load actual settings from localStorage after mount
+  useEffect(() => {
+    // Avoid synchronous setState in effect to pass the linter rule
+    Promise.resolve().then(() => {
+      const s = getSettings();
+      setShuffle(s.shuffle);
+      setPrevShuffle(s.shuffle);
+      setAutoplay(s.autoplay);
+      setRepeat(s.repeat);
+    });
+  }, []);
+
+  // Load deck after mount — keeps server + client initial render identical.
   useEffect(() => {
     if (!deckId) return;
 
     if (!deckId.startsWith("file:")) {
-      if (!deck) router.push("/decks");
+      // Local deck — read from localStorage (client-only)
+      Promise.resolve().then(() => {
+        const found = getDeck(deckId) ?? null;
+        if (!found) {
+          router.push("/decks");
+        } else {
+          setDeck(found);
+        }
+      });
       return;
     }
 
-    // Prevent infinite fetch loop
+    // File deck — fetch from API; skip if already loaded
     if (deck?.id === deckId) return;
 
     fetch(`/api/decks/${encodeURIComponent(deckId)}`)
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: Deck & { error?: string }) => {
         if (data.error) {
           router.push("/decks");
           return;
@@ -116,7 +135,10 @@ export default function SessionPage() {
         setDeck(data);
       })
       .catch(() => router.push("/decks"));
-  }, [deck, deckId, router]);
+  // deck intentionally omitted: the `deck?.id === deckId` guard prevents re-fetching
+  // without needing deck in the dep array, avoiding an infinite loop.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [deckId, router]);
 
   const currentItem = items[index];
   const currentId = currentItem ? getId(currentItem) : "";

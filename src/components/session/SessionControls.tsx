@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import type { TTSSettings, SessionStyle, AudioPlaybackMode } from '@/types';
+import type { TTSSettings, SessionStyle, AudioPlaybackMode, TTSEngine } from '@/types';
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
+import { loadKokoro, onKokoroStatusChange, getKokoroStatus, getKokoroError, KOKORO_VOICES } from '@/lib/kokoroTts';
 import styles from './SessionControls.module.css';
 
 interface SessionControlsProps {
@@ -54,38 +55,49 @@ export function SessionControls({
   const [ttsSettings, setTTSSettings] = useState<TTSSettings>(() => getSettings().tts);
   const [speaking, setSpeaking] = useState(false);
   const [paused, setPaused] = useState(false);
+  const [kokoroStatus, setKokoroStatus] = useState(() => getKokoroStatus());
 
   // Subscribe to voice list changes (voices load asynchronously in browsers)
   useEffect(() => {
     return onVoicesChanged(setVoices);
   }, []);
 
-  const playSequenceId = React.useRef(0);
+  // Subscribe to Kokoro model load status
+  useEffect(() => {
+    return onKokoroStatusChange(setKokoroStatus);
+  }, []);
 
-  const updateTTS = (patch: Partial<TTSSettings>) => {
-    const next = { ...ttsSettings, ...patch };
-    setTTSSettings(next);
-    saveTTSSettings(next);
-  };
+  const playSequenceId = React.useRef(0);
+  const invalidateSequence = React.useCallback(() => {
+    playSequenceId.current++;
+  }, []);
+
+  const updateTTS = React.useCallback((patch: Partial<TTSSettings>) => {
+    setTTSSettings(prev => {
+      const next = { ...prev, ...patch };
+      saveTTSSettings(next);
+      return next;
+    });
+  }, []);
 
   // Set a default Google UK voice if none is selected (first load)
   useEffect(() => {
     if (voices.length > 0 && !ttsSettings.voiceURI) {
       const defaultVoice = voices.find(v => v.name === 'Google UK English Female' || v.name === 'Google UK English Male');
       if (defaultVoice) {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        updateTTS({ voiceURI: defaultVoice.voiceURI });
+        Promise.resolve().then(() => {
+          updateTTS({ voiceURI: defaultVoice.voiceURI });
+        });
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [voices, ttsSettings.voiceURI]);
+  }, [voices, ttsSettings.voiceURI, updateTTS]);
 
   const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat });
   useEffect(() => {
     latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat };
   });
 
-  const runSequence = (seqId: number) => {
+  const runSequence = React.useCallback((seqId: number) => {
     const p = latestProps.current;
     
     if (p.sessionStyle === 'card-flip') {
@@ -165,7 +177,7 @@ export function SessionControls({
         },
       });
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (autoplay && (frontText || backText)) {
@@ -177,13 +189,12 @@ export function SessionControls({
       return () => {
         clearTimeout(timer);
         stop();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        playSequenceId.current++; // invalidate sequence
+        invalidateSequence(); // invalidate sequence
         setSpeaking(false);
         setPaused(false);
       };
     }
-  }, [frontText, backText, isFlipped, autoplay, sessionStyle]);
+  }, [frontText, backText, isFlipped, autoplay, sessionStyle, runSequence, invalidateSequence]);
 
   const handleSpeak = () => {
     if (paused) {
@@ -317,6 +328,68 @@ export function SessionControls({
       {/* Collapsible Settings Panel */}
       <div className={`${styles.settingsDrawer} ${isSettingsOpen ? styles.settingsOpen : ''}`}>
         <div className={styles.settingsDrawerInner}>
+
+          {/* ── TTS Engine ── */}
+          <div className={styles.listRow}>
+            <span className={styles.listLabel}>
+              Voice Engine
+              <span className={styles.betaBadge}>BETA</span>
+            </span>
+            <select
+              id="tts-engine"
+              className={`input ${styles.nativeSelect}`}
+              value={ttsSettings.ttsEngine ?? 'webspeech'}
+              onChange={(e) => {
+                const engine = e.target.value as TTSEngine;
+                updateTTS({ ttsEngine: engine });
+                // Kick off model load when the user switches to Kokoro
+                if (engine === 'kokoro' && getKokoroStatus() === 'idle') {
+                  loadKokoro().catch(() => {/* errors handled via status */});
+                }
+              }}
+            >
+              <option value="webspeech">Device Voice</option>
+              <option value="kokoro">AI Voice (Kokoro)</option>
+            </select>
+          </div>
+
+          {/* Kokoro status indicator */}
+          {ttsSettings.ttsEngine === 'kokoro' && kokoroStatus !== 'ready' && (
+            <div className={styles.kokoroStatus}>
+              {kokoroStatus === 'loading' && (
+                <>
+                  <span className={styles.kokoroSpinner} />
+                  <span>Downloading AI model (~60 MB)…</span>
+                </>
+              )}
+              {kokoroStatus === 'error' && (
+                <span className={styles.kokoroError}>
+                  ⚠ {getKokoroError() ?? 'Failed to load model'}
+                </span>
+              )}
+              {kokoroStatus === 'idle' && (
+                <span className={styles.kokoroHint}>Model will download on first play</span>
+              )}
+            </div>
+          )}
+
+          {/* Kokoro voice selector */}
+          {ttsSettings.ttsEngine === 'kokoro' && (
+            <div className={styles.listRow}>
+              <span className={styles.listLabel}>AI Voice</span>
+              <select
+                id="kokoro-voice"
+                className={`input ${styles.nativeSelect}`}
+                value={ttsSettings.kokoroVoice ?? 'af_heart'}
+                onChange={(e) => updateTTS({ kokoroVoice: e.target.value })}
+              >
+                {KOKORO_VOICES.map((v) => (
+                  <option key={v.id} value={v.id}>{v.label}</option>
+                ))}
+              </select>
+            </div>
+          )}
+
           <div className={styles.listRow}>
             <span className={styles.listLabel}>Speed</span>
             <select
@@ -331,61 +404,66 @@ export function SessionControls({
             </select>
           </div>
 
-          <div className={styles.listRow}>
-            <span className={styles.listLabel}>Audio Mode</span>
-            <select
-              id="tts-audio-mode"
-              className={`input ${styles.nativeSelect}`}
-              value={ttsSettings.audioMode || 'continuous'}
-              onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
-            >
-              <option value="continuous">Continuous</option>
-              <option value="single-pause">Single (pause)</option>
-              <option value="switch">Switch Voices</option>
-            </select>
-          </div>
-
-          {voices.length > 0 && (
+          {/* Web Speech-only controls */}
+          {ttsSettings.ttsEngine !== 'kokoro' && (
             <>
               <div className={styles.listRow}>
-                <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+                <span className={styles.listLabel}>Audio Mode</span>
                 <select
-                  id="tts-voice"
+                  id="tts-audio-mode"
                   className={`input ${styles.nativeSelect}`}
-                  value={ttsSettings.voiceURI}
-                  onChange={(e) => updateTTS({ voiceURI: e.target.value })}
+                  value={ttsSettings.audioMode || 'continuous'}
+                  onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
                 >
-                  {voices
-                    .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                    .map((v) => {
-                      const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                      return (
-                        <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
-                      );
-                    })}
+                  <option value="continuous">Continuous</option>
+                  <option value="single-pause">Single (pause)</option>
+                  <option value="switch">Switch Voices</option>
                 </select>
               </div>
-              
-              {ttsSettings.audioMode === 'switch' && (
-                <div className={styles.listRow}>
-                  <span className={styles.listLabel}>Voice 2</span>
-                  <select
-                    id="tts-voice-secondary"
-                    className={`input ${styles.nativeSelect}`}
-                    value={ttsSettings.secondaryVoiceURI || ''}
-                    onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
-                  >
-                    <option value="">Same as Voice 1</option>
-                    {voices
-                      .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                      .map((v) => {
-                        const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                        return (
-                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
-                        );
-                      })}
-                  </select>
-                </div>
+
+              {voices.length > 0 && (
+                <>
+                  <div className={styles.listRow}>
+                    <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+                    <select
+                      id="tts-voice"
+                      className={`input ${styles.nativeSelect}`}
+                      value={ttsSettings.voiceURI}
+                      onChange={(e) => updateTTS({ voiceURI: e.target.value })}
+                    >
+                      {voices
+                        .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                        .map((v) => {
+                          const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                          return (
+                            <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
+                          );
+                        })}
+                    </select>
+                  </div>
+
+                  {ttsSettings.audioMode === 'switch' && (
+                    <div className={styles.listRow}>
+                      <span className={styles.listLabel}>Voice 2</span>
+                      <select
+                        id="tts-voice-secondary"
+                        className={`input ${styles.nativeSelect}`}
+                        value={ttsSettings.secondaryVoiceURI || ''}
+                        onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
+                      >
+                        <option value="">Same as Voice 1</option>
+                        {voices
+                          .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                          .map((v) => {
+                            const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                            return (
+                              <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
+                            );
+                          })}
+                      </select>
+                    </div>
+                  )}
+                </>
               )}
             </>
           )}

@@ -146,6 +146,8 @@ export interface SessionSummary {
 
 // ─── TTS Settings ────────────────────────────────────────────────────────────
 
+export type TTSEngine = 'webspeech' | 'kokoro';
+
 export interface TTSSettings {
   rate: number;      // 0.5 – 2.0
   pitch: number;     // 0.5 – 2.0
@@ -153,6 +155,8 @@ export interface TTSSettings {
   secondaryVoiceURI?: string; // For switch mode
   audioMode: AudioPlaybackMode;
   muted?: boolean;
+  ttsEngine?: TTSEngine;
+  kokoroVoice?: string;  // e.g. 'af_heart', 'am_michael'
 }
 
 // ─── App Settings ────────────────────────────────────────────────────────────
