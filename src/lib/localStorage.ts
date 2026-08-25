@@ -88,8 +88,6 @@ const defaultSettings: AppSettings = {
     pitch: 1,
     voiceURI: '',
     audioMode: 'single-pause',
-    ttsEngine: 'webspeech',
-    kokoroVoice: 'af_heart',
   },
   autoplay: true,
   shuffle: false,
@@ -100,12 +98,6 @@ export function getSettings(): AppSettings {
   const settings = read<AppSettings>(KEYS.settings, defaultSettings);
   if (!settings.tts.audioMode) {
     settings.tts.audioMode = 'single-pause';
-  }
-  if (!settings.tts.ttsEngine) {
-    settings.tts.ttsEngine = 'webspeech';
-  }
-  if (!settings.tts.kokoroVoice) {
-    settings.tts.kokoroVoice = 'af_heart';
   }
   if (settings.repeat === undefined) {
     settings.repeat = true;

@@ -1,5 +1,4 @@
 import type { TTSSettings } from '@/types';
-import { kokoroSpeak, kokoroStop } from '@/lib/kokoroTts';
 
 // ─── TTS State ────────────────────────────────────────────────────────────────
 
@@ -33,26 +32,6 @@ export interface SpeakOptions {
 
 export function speak(opts: SpeakOptions): void {
   if (typeof window === 'undefined') return;
-
-  // Route to Kokoro engine when selected
-  if (opts.settings.ttsEngine === 'kokoro') {
-    kokoroStop();
-    kokoroSpeak({
-      text: opts.text,
-      voice: opts.settings.kokoroVoice ?? 'af_heart',
-      rate: opts.settings.rate,
-      muted: opts.settings.muted,
-      onStart: opts.onStart,
-      onEnd: opts.onEnd,
-      onError: () => {
-        // Silently fall through; onEnd still needed to advance the deck
-        opts.onEnd?.();
-      },
-    });
-    return;
-  }
-
-  // ── Web Speech API ──
   stop();
 
   const utterance = new SpeechSynthesisUtterance(opts.text);
@@ -89,7 +68,6 @@ export function resume(): void {
 
 export function stop(): void {
   if (typeof window === 'undefined') return;
-  kokoroStop();
   window.speechSynthesis.cancel();
   isPausedState = false;
 }
