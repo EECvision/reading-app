@@ -88,6 +88,8 @@ const defaultSettings: AppSettings = {
     pitch: 1,
     voiceURI: '',
     audioMode: 'single-pause',
+    ttsEngine: 'edge',
+    edgeVoice: 'en-US-AriaNeural',
   },
   autoplay: true,
   shuffle: false,

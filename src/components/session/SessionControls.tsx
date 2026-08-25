@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import type { TTSSettings, SessionStyle, AudioPlaybackMode } from '@/types';
+import type { TTSSettings, SessionStyle, AudioPlaybackMode, TTSEngine } from '@/types';
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
+import { EDGE_VOICES } from '@/lib/edgeTts';
 import styles from './SessionControls.module.css';
 
 interface SessionControlsProps {
@@ -317,6 +318,37 @@ export function SessionControls({
       {/* Collapsible Settings Panel */}
       <div className={`${styles.settingsDrawer} ${isSettingsOpen ? styles.settingsOpen : ''}`}>
         <div className={styles.settingsDrawerInner}>
+
+          {/* Voice Engine selector */}
+          <div className={styles.listRow}>
+            <span className={styles.listLabel}>Voice Engine</span>
+            <select
+              id="tts-engine"
+              className={`input ${styles.nativeSelect}`}
+              value={ttsSettings.ttsEngine ?? 'edge'}
+              onChange={(e) => updateTTS({ ttsEngine: e.target.value as TTSEngine })}
+            >
+              <option value="edge">Edge AI Voice</option>
+              <option value="webspeech">Device Voice</option>
+            </select>
+          </div>
+
+          {/* Edge voice selector — only when Edge engine is active */}
+          {(ttsSettings.ttsEngine ?? 'edge') === 'edge' && (
+            <div className={styles.listRow}>
+              <span className={styles.listLabel}>Voice</span>
+              <select
+                id="tts-edge-voice"
+                className={`input ${styles.nativeSelect}`}
+                value={ttsSettings.edgeVoice ?? 'en-US-AriaNeural'}
+                onChange={(e) => updateTTS({ edgeVoice: e.target.value })}
+              >
+                {EDGE_VOICES.map((v) => (
+                  <option key={v.id} value={v.id}>{v.label}</option>
+                ))}
+              </select>
+            </div>
+          )}
           <div className={styles.listRow}>
             <span className={styles.listLabel}>Speed</span>
             <select
@@ -329,68 +361,69 @@ export function SessionControls({
                 <option key={s} value={s}>{s}×</option>
               ))}
             </select>
-          </div>
-
-          <div className={styles.listRow}>
-            <span className={styles.listLabel}>Audio Mode</span>
-            <select
-              id="tts-audio-mode"
-              className={`input ${styles.nativeSelect}`}
-              value={ttsSettings.audioMode || 'continuous'}
-              onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
-            >
-              <option value="continuous">Continuous</option>
-              <option value="single-pause">Single (pause)</option>
-              <option value="switch">Switch Voices</option>
-            </select>
-          </div>
-
-          {voices.length > 0 && (
+          </div>          {/* Audio mode + Device voice selectors — only for Web Speech */}
+          {(ttsSettings.ttsEngine ?? 'edge') === 'webspeech' && (
             <>
               <div className={styles.listRow}>
-                <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+                <span className={styles.listLabel}>Audio Mode</span>
                 <select
-                  id="tts-voice"
+                  id="tts-audio-mode"
                   className={`input ${styles.nativeSelect}`}
-                  value={ttsSettings.voiceURI}
-                  onChange={(e) => updateTTS({ voiceURI: e.target.value })}
+                  value={ttsSettings.audioMode || 'continuous'}
+                  onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
                 >
-                  {voices
-                    .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                    .map((v) => {
-                      const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                      return (
-                        <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
-                      );
-                    })}
+                  <option value="continuous">Continuous</option>
+                  <option value="single-pause">Single (pause)</option>
+                  <option value="switch">Switch Voices</option>
                 </select>
               </div>
-              
-              {ttsSettings.audioMode === 'switch' && (
-                <div className={styles.listRow}>
-                  <span className={styles.listLabel}>Voice 2</span>
-                  <select
-                    id="tts-voice-secondary"
-                    className={`input ${styles.nativeSelect}`}
-                    value={ttsSettings.secondaryVoiceURI || ''}
-                    onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
-                  >
-                    <option value="">Same as Voice 1</option>
-                    {voices
-                      .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                      .map((v) => {
-                        const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                        return (
-                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
-                        );
-                      })}
-                  </select>
-                </div>
+
+              {voices.length > 0 && (
+                <>
+                  <div className={styles.listRow}>
+                    <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
+                    <select
+                      id="tts-voice"
+                      className={`input ${styles.nativeSelect}`}
+                      value={ttsSettings.voiceURI}
+                      onChange={(e) => updateTTS({ voiceURI: e.target.value })}
+                    >
+                      {voices
+                        .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                        .map((v) => {
+                          const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                          return (
+                            <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
+                          );
+                        })}
+                    </select>
+                  </div>
+
+                  {ttsSettings.audioMode === 'switch' && (
+                    <div className={styles.listRow}>
+                      <span className={styles.listLabel}>Voice 2</span>
+                      <select
+                        id="tts-voice-secondary"
+                        className={`input ${styles.nativeSelect}`}
+                        value={ttsSettings.secondaryVoiceURI || ''}
+                        onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
+                      >
+                        <option value="">Same as Voice 1</option>
+                        {voices
+                          .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
+                          .map((v) => {
+                            const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
+                            return (
+                              <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
+                            );
+                          })}
+                      </select>
+                    </div>
+                  )}
+                </>
               )}
             </>
-          )}
-
-          <label className={styles.listRow}>
+          )}  <label className={styles.listRow}>
             <span className={styles.listLabel}>Mute Voice</span>
             <input
               id="toggle-mute"

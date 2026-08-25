@@ -1,4 +1,5 @@
 import type { TTSSettings } from '@/types';
+import { edgeSpeak, edgeStop, edgePause, edgeResume } from '@/lib/edgeTts';
 
 // ─── TTS State ────────────────────────────────────────────────────────────────
 
@@ -32,7 +33,25 @@ export interface SpeakOptions {
 
 export function speak(opts: SpeakOptions): void {
   if (typeof window === 'undefined') return;
+
+  // Always cancel both engines first — prevents overlap when switching
   stop();
+
+  // Route to Edge TTS when selected
+  if (opts.settings.ttsEngine === 'edge') {
+    edgeSpeak({
+      text:  opts.text,
+      voice: opts.settings.edgeVoice ?? 'en-US-AriaNeural',
+      rate:  opts.settings.rate,
+      muted: opts.settings.muted,
+      onStart: opts.onStart,
+      onEnd:   opts.onEnd,
+      onError: () => opts.onEnd?.(), // advance deck even on error
+    });
+    return;
+  }
+
+  // ── Web Speech API ──
 
   const utterance = new SpeechSynthesisUtterance(opts.text);
   utterance.rate = opts.settings.rate;
@@ -56,18 +75,21 @@ export function speak(opts: SpeakOptions): void {
 
 export function pause(): void {
   if (typeof window === 'undefined') return;
+  edgePause();
   window.speechSynthesis.pause();
   isPausedState = true;
 }
 
 export function resume(): void {
   if (typeof window === 'undefined') return;
+  edgeResume();
   window.speechSynthesis.resume();
   isPausedState = false;
 }
 
 export function stop(): void {
   if (typeof window === 'undefined') return;
+  edgeStop();
   window.speechSynthesis.cancel();
   isPausedState = false;
 }

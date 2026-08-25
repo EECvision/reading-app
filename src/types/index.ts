@@ -146,13 +146,17 @@ export interface SessionSummary {
 
 // ─── TTS Settings ────────────────────────────────────────────────────────────
 
+export type TTSEngine = 'webspeech' | 'edge';
+
 export interface TTSSettings {
-  rate: number;      // 0.5 – 2.0
-  pitch: number;     // 0.5 – 2.0
-  voiceURI: string;  // SpeechSynthesisVoice.voiceURI
+  rate: number;              // 0.5 – 2.0
+  pitch: number;             // 0.5 – 2.0
+  voiceURI: string;          // SpeechSynthesisVoice.voiceURI
   secondaryVoiceURI?: string; // For switch mode
   audioMode: AudioPlaybackMode;
   muted?: boolean;
+  ttsEngine?: TTSEngine;     // 'webspeech' | 'edge'
+  edgeVoice?: string;        // e.g. 'en-US-AriaNeural'
 }
 
 // ─── App Settings ────────────────────────────────────────────────────────────
