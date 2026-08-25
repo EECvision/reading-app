@@ -34,6 +34,18 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
     return;
   }
 
+  // IMPORTANT for mobile (iOS Safari, Android Chrome):
+  // AudioContext must be created and resumed synchronously inside the user
+  // interaction event handler before any async await (like fetch) happens.
+  if (!audioCtx || audioCtx.state === 'closed') {
+    audioCtx = new AudioContext();
+  }
+  if (audioCtx.state === 'suspended') {
+    // We don't await this here because we want to trigger it synchronously
+    // in the event loop tick of the user interaction.
+    audioCtx.resume();
+  }
+
   const abort = new AbortController();
   currentAbort = abort;
 
@@ -55,13 +67,6 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
   }
 
   if (abort.signal.aborted) return;
-
-  if (!audioCtx || audioCtx.state === 'closed') {
-    audioCtx = new AudioContext();
-  }
-  if (audioCtx.state === 'suspended') {
-    await audioCtx.resume();
-  }
 
   let decoded: AudioBuffer;
   try {

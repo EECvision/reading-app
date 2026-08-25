@@ -48,30 +48,38 @@ export default function SessionPage() {
   const rawDeckId = params.deckId;
   const deckId = typeof rawDeckId === "string" ? decodeURIComponent(rawDeckId) : "";
 
-  const [deck, setDeck] = useState<Deck | null>(() => {
-    if (deckId && !deckId.startsWith("file:")) {
-      return getDeck(deckId) ?? null;
-    }
-    return null;
-  });
+  // ── Server-safe initial state ───────────────────────────────────────────────
+  // All initializers must be static so server and client render identically.
+  // Real values from localStorage are loaded after mount (see effect below).
+  const [deck, setDeck] = useState<Deck | null>(null);
 
   const [index, setIndex] = useState(0);
   const [sessionStyle, setSessionStyle] =
     useState<SessionStyle>("read-and-listen");
-  const [shuffle, setShuffle] = useState(() => getSettings().shuffle);
-  const [prevShuffle, setPrevShuffle] = useState(shuffle);
-  const [autoplay, setAutoplay] = useState(() => getSettings().autoplay);
-  const [repeat, setRepeat] = useState(() => getSettings().repeat);
+  const [shuffle, setShuffle] = useState(false);
+  const [prevShuffle, setPrevShuffle] = useState(false);
+  const [autoplay, setAutoplay] = useState(false);
+  const [repeat, setRepeat] = useState(false);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
 
-  // Reset index when shuffle changes
-  if (shuffle !== prevShuffle) {
-    setPrevShuffle(shuffle);
-    setIndex(0);
-    setIsFlipped(false);
-  }
+  // Load persisted settings from localStorage after mount
+  useEffect(() => {
+    Promise.resolve().then(() => {
+      const s = getSettings();
+      setShuffle(s.shuffle);
+      setPrevShuffle(s.shuffle);
+      setAutoplay(s.autoplay);
+      setRepeat(s.repeat);
+
+      // For localStorage-stored decks, load now (not in useState to avoid SSR mismatch)
+      if (deckId && !deckId.startsWith("file:")) {
+        const stored = getDeck(deckId);
+        if (stored) setDeck(stored);
+      }
+    });
+  }, [deckId]);
 
   const mode = deck?.mode ?? "flashcard";
   const deckName = deck?.name ?? "";
@@ -99,8 +107,12 @@ export default function SessionPage() {
     if (!deckId) return;
 
     if (!deckId.startsWith("file:")) {
-      if (!deck) router.push("/decks");
-      return;
+      // deck will be null until the mount effect above loads it — give it one tick
+      if (deck) return; // already loaded
+      const timer = setTimeout(() => {
+        if (!deck) router.push("/decks");
+      }, 300);
+      return () => clearTimeout(timer);
     }
 
     // Prevent infinite fetch loop
