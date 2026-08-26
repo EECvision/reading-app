@@ -31,7 +31,8 @@
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -0.02em;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-8);
+  text-align: center;
 }
 
 .pageDesc {

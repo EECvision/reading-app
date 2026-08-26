@@ -10,7 +10,7 @@
 
 .flipSceneWrapper {
   width: 100%;
-  max-width: 560px;
+  max-width: 800px;
   height: 280px;
 }
 
@@ -29,7 +29,9 @@
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
   /* Use a sharp transition halfway through the 0.55s flip (0.275s) */
-  transition: opacity 0s 0.275s, visibility 0s 0.275s;
+  transition:
+    opacity 0s 0.275s,
+    visibility 0s 0.275s;
   opacity: 1;
   visibility: visible;
 }
@@ -67,7 +69,9 @@
   padding: var(--space-8);
   gap: var(--space-3);
   /* Hidden by default until flipped */
-  transition: opacity 0s 0.275s, visibility 0s 0.275s;
+  transition:
+    opacity 0s 0.275s,
+    visibility 0s 0.275s;
   opacity: 0;
   visibility: hidden;
 }
@@ -93,7 +97,7 @@
 
 .showBothContainer {
   width: 100%;
-  max-width: 560px;
+  max-width: 800px;
   text-align: center;
 }
 
