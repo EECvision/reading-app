@@ -6,9 +6,19 @@ import styles from './JsonValidator.module.css';
 interface JsonValidatorProps {
   result: ValidationResult | null;
   loading?: boolean;
+  mode?: string;
 }
 
-export function JsonValidator({ result, loading }: JsonValidatorProps) {
+const MODE_NAMES: Record<string, string> = {
+  flashcard: "Flashcards",
+  qa: "Q&A",
+  mcq: "Multiple Choice",
+  interview: "Interview",
+  article: "Article",
+  notes: "Notes"
+};
+
+export function JsonValidator({ result, loading, mode }: JsonValidatorProps) {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
@@ -41,22 +51,15 @@ export function JsonValidator({ result, loading }: JsonValidatorProps) {
       <div className={`${styles.invalidHeader} ${result.errors.length > 0 ? styles.invalidHeaderWithErrors : ''}`}>
         <span className={styles.icon}>❌</span>
         <div className={styles.invalidTitle}>
-          Invalid JSON — {result.errors.length} error{result.errors.length !== 1 ? 's' : ''}
+          Invalid JSON Format
         </div>
       </div>
       {result.errors.length > 0 && (
-        <ul className={styles.errorList}>
-          {result.errors.slice(0, 8).map((err, i) => (
-            <li key={i} className={styles.errorItem}>
-              {err}
-            </li>
-          ))}
-          {result.errors.length > 8 && (
-            <li className={styles.errorMore}>
-              …and {result.errors.length - 8} more errors
-            </li>
-          )}
-        </ul>
+        <div className={styles.invalidMessage}>
+          {mode 
+            ? `The uploaded JSON structure does not match the requirements for the ${MODE_NAMES[mode] || mode} learning mode. Please ensure you are using the correct file and format for this mode.` 
+            : "The uploaded JSON structure is invalid. Please check the format and try again."}
+        </div>
       )}
     </div>
   );

@@ -109,11 +109,17 @@ export default function UploadPage() {
   const canSave = mode && validationResult?.valid && parsedData;
 
   const nextStep = () => {
-    if (currentStep < 3) setCurrentStep((prev) => prev + 1);
+    if (currentStep < 3) {
+      setCurrentStep((prev) => prev + 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const prevStep = () => {
-    if (currentStep > 1) setCurrentStep((prev) => prev - 1);
+    if (currentStep > 1) {
+      setCurrentStep((prev) => prev - 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const renderStepper = () => {
@@ -211,7 +217,9 @@ export default function UploadPage() {
               <div className={`card-glass animate-blurFadeIn delay-1 ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>
-                    <h2 className={styles.stepTitle}>Generate & Upload Content</h2>
+                    <h2 className={styles.stepTitle}>
+                      Generate & Upload {mode ? (mode.charAt(0).toUpperCase() + mode.slice(1)).replace('qa', 'Q&A').replace('mcq', 'Multiple Choice') : ''} Content
+                    </h2>
                     <div className={styles.stepDesc}>
                       Use AI to generate study materials, or upload your own JSON file below.
                     </div>
@@ -250,6 +258,7 @@ export default function UploadPage() {
                     <JsonValidator
                       result={validationResult}
                       loading={validating}
+                      mode={mode || undefined}
                     />
                   </div>
                 )}
