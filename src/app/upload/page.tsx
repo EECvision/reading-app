@@ -131,7 +131,7 @@ export default function UploadPage() {
                 <span className={styles.stepperNum}>
                   {isCompleted ? '✓' : step.num}
                 </span>
-                <span>{step.label}</span>
+                <span className={styles.stepperLabel}>{step.label}</span>
               </div>
               {idx < steps.length - 1 && (
                 <div className={`${styles.stepperSeparator} ${isCompleted ? styles.completed : ''}`} />
