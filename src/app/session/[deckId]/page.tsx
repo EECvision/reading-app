@@ -1,18 +1,21 @@
 "use client";
 
 import { ArticleCard } from "@/components/session/ArticleCard";
+import { BatchSwitcherDrawer } from "@/components/session/BatchSwitcherDrawer";
 import { FlashCard } from "@/components/session/FlashCard";
 import { InterviewCard } from "@/components/session/InterviewCard";
 import { MCQCard } from "@/components/session/MCQCard";
 import { NotesCard } from "@/components/session/NotesCard";
 import { QACard } from "@/components/session/QACard";
 import { SessionControls } from "@/components/session/SessionControls";
+import { Button } from "@/components/ui/Button";
+import { Navbar } from "@/components/ui/Navbar";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { Navbar } from "@/components/ui/Navbar";
-import { Button } from "@/components/ui/Button";
 import {
-  getDeck,
+  getCollectionForDeck,
+  getCollectionWithDecks,
+  getDecks,
   getSettings,
   saveAutoplaySettings,
   saveRepeatSettings,
@@ -24,6 +27,7 @@ import { buildSpeechText, stop } from "@/lib/tts";
 import type {
   AnyItem,
   ArticleItem,
+  Collection,
   Deck,
   FlashcardItem,
   InterviewDeck,
@@ -55,15 +59,25 @@ export default function SessionPage() {
   // All initializers must be static so server and client render identically.
   // Real values from localStorage are loaded after mount (see effect below).
   const [deck, setDeck] = useState<Deck | null>(null);
+  const [collection, setCollection] = useState<Collection | null>(null);
+  const [allDecks, setAllDecks] = useState<Deck[]>([]);
+  // decks that form the collection session (populated when deckId starts with 'collection:')
+  const [collectionDecks, setCollectionDecks] = useState<Deck[]>([]);
+  const [batchDrawerOpen, setBatchDrawerOpen] = useState(false);
 
   const [index, setIndex] = useState(0);
-  const [sessionStyle, setSessionStyle] =
-    useState<SessionStyle>("listen");
+  const [sessionStyle, setSessionStyle] = useState<SessionStyle>("listen");
   const [shuffle, setShuffle] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
+
+  // Is this a collection-wide session?
+  const isCollectionSession = deckId.startsWith("collection:");
+  const collectionId = isCollectionSession
+    ? deckId.slice("collection:".length)
+    : null;
 
   // Load persisted settings from localStorage after mount
   useEffect(() => {
@@ -72,24 +86,57 @@ export default function SessionPage() {
       setShuffle(s.shuffle);
       setAutoplay(s.autoplay);
       setRepeat(s.repeat);
-      setSessionStyle(s.sessionStyle ?? 'listen');
+      setSessionStyle(s.sessionStyle ?? "listen");
 
-      // For localStorage-stored decks, load now (not in useState to avoid SSR mismatch)
-      if (deckId && !deckId.startsWith("file:")) {
-        const stored = getDeck(deckId);
+      const decks = getDecks();
+      setAllDecks(decks);
+
+      if (isCollectionSession && collectionId) {
+        // Load all decks in the collection
+        const result = getCollectionWithDecks(collectionId);
+        if (!result) {
+          router.push("/decks");
+          return;
+        }
+        setCollection(result.collection);
+        setCollectionDecks(result.decks);
+        // Use first deck's mode/name as the "primary" deck for display purposes
+        if (result.decks.length > 0) setDeck(result.decks[0]);
+      } else if (deckId && !deckId.startsWith("file:")) {
+        const col = getCollectionForDeck(deckId);
+        setCollection(col);
+        const stored = decks.find((d) => d.id === deckId) ?? null;
         if (stored) setDeck(stored);
       }
     });
-  }, [deckId]);
+  }, [deckId, isCollectionSession, collectionId, router]);
 
+  // For a collection session, derive mode/name from the collection rather than one deck
   const mode = deck?.mode ?? "flashcard";
-  const deckName = deck?.name ?? "";
+  const deckName =
+    isCollectionSession && collection
+      ? `📁 ${collection.name}`
+      : (deck?.name ?? "");
   const role =
     deck?.mode === "interview" ? (deck.items as InterviewDeck).role : "";
   const level =
     deck?.mode === "interview" ? (deck.items as InterviewDeck).level : "";
 
   const items = useMemo(() => {
+    // Collection session: flatten all deck items in order
+    if (isCollectionSession && collectionDecks.length > 0) {
+      const merged: AnyItem[] = [];
+      for (const d of collectionDecks) {
+        let list: AnyItem[] = [];
+        if (d.mode === "interview") {
+          list = (d.items as InterviewDeck).questions as unknown as AnyItem[];
+        } else {
+          list = d.items as AnyItem[];
+        }
+        merged.push(...buildStudyList(list, d.id, shuffle));
+      }
+      return merged;
+    }
     if (!deck) return [];
     let list: AnyItem[] = [];
     if (deck.mode === "interview") {
@@ -98,10 +145,12 @@ export default function SessionPage() {
       list = deck.items as AnyItem[];
     }
     return buildStudyList(list, deckId as string, shuffle);
-  }, [deck, deckId, shuffle]);
+  }, [deck, deckId, shuffle, isCollectionSession, collectionDecks]);
 
   useEffect(() => {
     if (!deckId) return;
+    // Collection sessions are handled entirely in the mount effect above
+    if (isCollectionSession) return;
 
     if (!deckId.startsWith("file:")) {
       // deck will be null until the mount effect above loads it — give it one tick
@@ -125,7 +174,7 @@ export default function SessionPage() {
         setDeck(data);
       })
       .catch(() => router.push("/decks"));
-  }, [deck, deckId, router]);
+  }, [deck, deckId, router, isCollectionSession]);
 
   const currentItem = items[index];
   const currentId = currentItem ? getId(currentItem) : "";
@@ -251,7 +300,7 @@ export default function SessionPage() {
 
   return (
     <div className={`page-bg-accent ${styles.pageContainer}`}>
-      <Navbar 
+      <Navbar
         left={
           <div className={styles.navBrand}>
             <Link id="nav-home" href="/" className={styles.navLogoLink}>
@@ -264,9 +313,23 @@ export default function SessionPage() {
         }
         right={
           <>
+            {/* Batches button — only shown when deck is in a collection */}
+            {collection && (
+              <Button
+                id="btn-batches"
+                variant="ghost"
+                size="sm"
+                onClick={() => setBatchDrawerOpen(true)}
+              >
+                📁 Batches
+              </Button>
+            )}
             <Button
               id="nav-end-session"
-              href={`/session/${deckId}/summary`}
+              onClick={() => {
+                stop();
+                router.push("/decks");
+              }}
               variant="ghost"
               size="sm"
             >
@@ -326,6 +389,16 @@ export default function SessionPage() {
           {renderCard()}
         </div>
       </div>
+
+      {/* Batch switcher drawer */}
+      {batchDrawerOpen && collection && (
+        <BatchSwitcherDrawer
+          collection={collection}
+          decks={allDecks}
+          currentDeckId={deckId}
+          onClose={() => setBatchDrawerOpen(false)}
+        />
+      )}
     </div>
   );
 }

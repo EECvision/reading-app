@@ -1,4 +1,4 @@
-import type { Deck, DeckProgress, AppSettings, SessionState, SessionStyle, Theme, TTSSettings } from '@/types';
+import type { Collection, Deck, DeckProgress, AppSettings, SessionState, SessionStyle, Theme, TTSSettings } from '@/types';
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────
 
@@ -7,6 +7,7 @@ const KEYS = {
   progress: (id: string) => `rdapp_progress_${id}`,
   settings: 'rdapp_settings',
   session: 'rdapp_active_session',
+  collections: 'rdapp_collections',
 } as const;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -144,6 +145,62 @@ export function saveSessionStyleSettings(sessionStyle: SessionStyle): void {
   const s = getSettings();
   saveSettings({ ...s, sessionStyle });
 }
+
+// ─── Collections ─────────────────────────────────────────────────────────────
+
+export function getCollections(): Collection[] {
+  return read<Collection[]>(KEYS.collections, []);
+}
+
+export function getCollection(id: string): Collection | null {
+  return getCollections().find((c) => c.id === id) ?? null;
+}
+
+export function saveCollection(collection: Collection): void {
+  const rest = getCollections().filter((c) => c.id !== collection.id);
+  write(KEYS.collections, [collection, ...rest]);
+}
+
+export function deleteCollection(id: string): void {
+  write(KEYS.collections, getCollections().filter((c) => c.id !== id));
+}
+
+export function addDeckToCollection(collectionId: string, deckId: string): void {
+  const collections = getCollections();
+  // Remove from any existing collection first (a deck belongs to at most one)
+  const cleaned = collections.map((c) => ({
+    ...c,
+    deckIds: c.deckIds.filter((id) => id !== deckId),
+  }));
+  const target = cleaned.find((c) => c.id === collectionId);
+  if (!target) return;
+  target.deckIds = [...target.deckIds, deckId];
+  write(KEYS.collections, cleaned);
+}
+
+export function removeDeckFromCollection(deckId: string): void {
+  const updated = getCollections().map((c) => ({
+    ...c,
+    deckIds: c.deckIds.filter((id) => id !== deckId),
+  }));
+  write(KEYS.collections, updated);
+}
+
+export function getCollectionForDeck(deckId: string): Collection | null {
+  return getCollections().find((c) => c.deckIds.includes(deckId)) ?? null;
+}
+
+/** Returns the collection and all its member Deck objects in order. */
+export function getCollectionWithDecks(collectionId: string): { collection: Collection; decks: Deck[] } | null {
+  const collection = getCollection(collectionId);
+  if (!collection) return null;
+  const allDecks = getDecks();
+  const decks = collection.deckIds
+    .map((id) => allDecks.find((d) => d.id === id))
+    .filter(Boolean) as Deck[];
+  return { collection, decks };
+}
+
 
 // ─── Active Session ───────────────────────────────────────────────────────────
 

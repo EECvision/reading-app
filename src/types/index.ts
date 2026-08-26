@@ -8,6 +8,15 @@ export type ReadingMode =
   | 'mcq'
   | 'interview';
 
+// ─── Collections ─────────────────────────────────────────────────────────────
+
+export interface Collection {
+  id: string;        // nanoid
+  name: string;      // e.g. "2019 Past Questions"
+  deckIds: string[]; // ordered list of deck IDs
+  createdAt: string; // ISO string
+}
+
 export type SessionStyle =
   | 'listen'
   | 'read';

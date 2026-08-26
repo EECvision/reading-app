@@ -327,13 +327,21 @@ pre {
 }
 
 .card-glass {
-  background: var(--glass-bg);
+  background: linear-gradient(180deg, var(--glass-bg) 0%, hsl(230 18% 10% / 0.7) 100%);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
   padding: var(--space-6);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  box-shadow: 
+    var(--shadow-xl), 
+    0 1px 0 0 inset hsl(0 0% 100% / 0.1),
+    0 -1px 0 0 inset hsl(0 0% 0% / 0.2);
+  position: relative;
+}
+
+[data-theme="light"] .card-glass {
+  background: linear-gradient(180deg, var(--glass-bg) 0%, hsl(0 0% 100% / 0.5) 100%);
 }
 
 /* ─── Buttons ────────────────────────────────────────────────────────────── */
