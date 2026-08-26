@@ -62,6 +62,11 @@ export function SessionControls({
   }, []);
 
   const playSequenceId = React.useRef(0);
+  // True once the user has manually pressed Play for the first time.
+  // Prevents audio from auto-starting as soon as the session loads.
+  const hasUserStarted = React.useRef(false);
+  // Snapshot of previous TTS settings — used to detect which settings changed.
+  const prevTTSSettings = React.useRef(ttsSettings);
 
   const updateTTS = (patch: Partial<TTSSettings>) => {
     const next = { ...ttsSettings, ...patch };
@@ -84,9 +89,9 @@ export function SessionControls({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [voices, ttsSettings.voiceURI]);
 
-  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat });
+  const latestProps = React.useRef({ ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat, speaking });
   useEffect(() => {
-    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat };
+    latestProps.current = { ttsSettings, canNext, onNext, onAudioEnd, autoplay, sessionStyle, isFlipped, frontText, backText, repeat, speaking };
   });
 
   const runSequence = (seqId: number) => {
@@ -171,8 +176,38 @@ export function SessionControls({
     }
   };
 
+  // ── Restart audio when TTS settings change while speaking ───────────────────
+  // Compares relevant fields against the previous snapshot so that changes to
+  // voice, speed, engine, or audio-mode take effect immediately without the
+  // user needing to manually stop and press Play again.
   useEffect(() => {
-    if (autoplay && (frontText || backText)) {
+    const prev = prevTTSSettings.current;
+    prevTTSSettings.current = ttsSettings;
+
+    const audioAffected =
+      prev.rate        !== ttsSettings.rate        ||
+      prev.edgeVoice   !== ttsSettings.edgeVoice   ||
+      prev.voiceURI    !== ttsSettings.voiceURI     ||
+      prev.ttsEngine   !== ttsSettings.ttsEngine    ||
+      prev.audioMode   !== ttsSettings.audioMode    ||
+      prev.muted       !== ttsSettings.muted;
+
+    if (audioAffected && latestProps.current.speaking && hasUserStarted.current) {
+      stop();
+      const seqId = ++playSequenceId.current;
+      setSpeaking(false);
+      setPaused(false);
+      // Small delay lets the state settle before starting the new sequence
+      setTimeout(() => runSequence(seqId), 80);
+    }
+  }, [ttsSettings]);
+
+
+  // ── Auto-advance when text changes (card navigation + autoplay) ───────────
+  // Only fires once the user has manually pressed Play at least once, so the
+  // session doesn't start talking the moment it loads.
+  useEffect(() => {
+    if (autoplay && hasUserStarted.current && (frontText || backText)) {
       const timer = setTimeout(() => {
         stop();
         const seqId = ++playSequenceId.current;
@@ -190,6 +225,10 @@ export function SessionControls({
   }, [frontText, backText, isFlipped, autoplay, sessionStyle]);
 
   const handleSpeak = () => {
+    // Mark that the user has intentionally started playback.
+    // The autoplay effect won't fire until this is true.
+    hasUserStarted.current = true;
+
     if (paused) {
       resume();
       setPaused(false);
@@ -216,8 +255,21 @@ export function SessionControls({
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
+  // Close the settings drawer when the user clicks outside the control panel
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!isSettingsOpen) return;
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setIsSettingsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, [isSettingsOpen]);
+
   return (
-    <div className={styles.dockedContainer}>
+    <div ref={containerRef} className={styles.dockedContainer}>
       <div className={styles.primaryControls}>
         {/* Top row: Settings button and Segmented Control */}
         <div className={styles.topRow}>

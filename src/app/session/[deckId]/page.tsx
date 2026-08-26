@@ -57,7 +57,6 @@ export default function SessionPage() {
   const [sessionStyle, setSessionStyle] =
     useState<SessionStyle>("read-and-listen");
   const [shuffle, setShuffle] = useState(false);
-  const [prevShuffle, setPrevShuffle] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
@@ -69,7 +68,6 @@ export default function SessionPage() {
     Promise.resolve().then(() => {
       const s = getSettings();
       setShuffle(s.shuffle);
-      setPrevShuffle(s.shuffle);
       setAutoplay(s.autoplay);
       setRepeat(s.repeat);
 

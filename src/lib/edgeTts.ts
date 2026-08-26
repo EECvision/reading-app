@@ -101,8 +101,7 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
   currentBlobUrl = blobUrl;
 
   audio.src = blobUrl;
-  audio.playbackRate = opts.rate ?? 1;
-  audio.load(); // required after changing src
+  audio.load(); // required after changing src — resets playbackRate to 1 in some browsers
 
   audio.onended = () => {
     if (currentAudio === audio) {
@@ -117,6 +116,10 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
       opts.onError?.('Audio playback error');
     }
   };
+
+  // Set playbackRate AFTER load() — load() resets it to 1 in Firefox/Safari/Chrome.
+  // This must be the last thing set before play() to guarantee the correct speed.
+  audio.playbackRate = opts.rate ?? 1;
 
   try {
     await audio.play();
