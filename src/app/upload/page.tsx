@@ -105,7 +105,7 @@ export default function UploadPage() {
   const canSave = mode && validationResult?.valid && parsedData;
 
   const nextStep = () => {
-    if (currentStep < 4) setCurrentStep((prev) => prev + 1);
+    if (currentStep < 3) setCurrentStep((prev) => prev + 1);
   };
 
   const prevStep = () => {
@@ -115,9 +115,8 @@ export default function UploadPage() {
   const renderStepper = () => {
     const steps = [
       { num: 1, label: "Mode" },
-      { num: 2, label: "Generate" },
-      { num: 3, label: "Upload" },
-      { num: 4, label: "Start" },
+      { num: 2, label: "Upload" },
+      { num: 3, label: "Start" },
     ];
 
     return (
@@ -210,59 +209,15 @@ export default function UploadPage() {
               <div className={`card animate-fadeIn ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>
-                    <h2 className={styles.stepTitle}>Generate Content</h2>
+                    <h2 className={styles.stepTitle}>Generate & Upload Content</h2>
                     <div className={styles.stepDesc}>
-                      <ul
-                        style={{
-                          listStyleType: "disc",
-                          paddingLeft: "20px",
-                          marginTop: "8px",
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "4px",
-                        }}
-                      >
-                        <li>
-                          Use AI or our templates to create your study
-                          materials.
-                        </li>
-                        <li>
-                          You will upload the generated JSON file in the next
-                          step.
-                        </li>
-                        <li>
-                          If you already have your content ready, you can skip
-                          this step.
-                        </li>
-                      </ul>
+                      Use AI to generate study materials, or upload your own JSON file below.
                     </div>
                   </div>
                 </div>
-                <TemplateActions mode={mode} />
-
-                <div className={styles.wizardActions}>
-                  <button className="btn btn-secondary" onClick={prevStep}>
-                    ← Back
-                  </button>
-                  <div className={styles.wizardActionsRight}>
-                    <button className="btn btn-primary" onClick={nextStep}>
-                      Next Step →
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {currentStep === 3 && (
-              <div className={`card animate-fadeIn ${styles.stepCard}`}>
-                <div className={styles.stepHeader}>
-                  <div>
-                    <h2 className={styles.stepTitle}>Upload JSON</h2>
-                    <p className={styles.stepDesc}>
-                      Provide your study content as a JSON file or via
-                      copy-paste.
-                    </p>
-                  </div>
+                
+                <div style={{ marginBottom: "40px" }}>
+                  <TemplateActions mode={mode} />
                 </div>
 
                 <div className={styles.uploadMethodTabs}>
@@ -314,7 +269,7 @@ export default function UploadPage() {
               </div>
             )}
 
-            {currentStep === 4 && (
+            {currentStep === 3 && (
               <div className={`card animate-fadeIn ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>

@@ -1,53 +1,58 @@
-.container {
+.aiContainer {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 100%;
+  gap: 16px;
 }
 
-.actionsRow {
+.aiHeader {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
-.actionButton {
+.aiTitleGroup {
   display: flex;
   align-items: center;
   gap: 8px;
-  white-space: nowrap;
 }
 
-.panel {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  animation: slideDown 0.2s ease-out forwards;
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.panelTitle {
+.aiIcon {
   font-size: 1rem;
+}
+
+.aiTitle {
+  font-size: 0.9rem;
   font-weight: 600;
   margin: 0;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
-.codeBlock {
-  background: var(--bg-base);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 12px;
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  max-height: 200px;
-  overflow-y: auto;
+.formRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.topicInput {
+  flex: 1;
+}
+
+.countInput {
+  width: 100px;
+}
+
+.countInput input::-webkit-outer-spin-button,
+.countInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.countInput input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .inputGroup {
@@ -62,30 +67,46 @@
   color: var(--text-secondary);
 }
 
-.buttonRow {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
+.generateBtn {
+  align-self: flex-end;
+  height: 42px; /* matches typical input height */
 }
 
-.formRow {
-  display: flex;
-  gap: 12px;
+.hint {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+  padding: 10px 12px;
+  background: hsl(252 74% 55% / 0.1);
+  border-left: 3px solid var(--brand-500);
+  border-radius: 4px;
 }
 
-.topicInput {
-  flex: 1;
+.copyPromptLink {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 8px;
+  align-self: flex-start;
 }
-
-.countInput {
-  width: 120px;
+.copyPromptLink:hover {
+  color: var(--text-primary);
 }
 
 @media (max-width: 600px) {
   .formRow {
     flex-direction: column;
+    align-items: stretch;
   }
-  .topicInput, .countInput {
+  .countInput {
+    width: 100%;
+  }
+  .generateBtn {
     width: 100%;
   }
 }
