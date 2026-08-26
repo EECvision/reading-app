@@ -4,6 +4,7 @@ import { DeckCard } from "@/components/decks/DeckCard";
 import { Button } from "@/components/ui/Button";
 import { Navbar } from "@/components/ui/Navbar";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Select } from "@/components/ui/Select";
 import { deleteDeck, getDecks } from "@/lib/localStorage";
 import type { Deck } from "@/types";
 import { useEffect, useState } from "react";
@@ -75,19 +76,20 @@ export default function DecksPage() {
                 {decks.length} deck{decks.length !== 1 ? "s" : ""} saved locally
               </p>
             </div>
-            <select
-              className={`input ${styles.filterSelect}`}
+            <Select
+              className={styles.filterSelect}
               value={filterMode}
-              onChange={(e) => setFilterMode(e.target.value)}
-            >
-              <option value="all">All Types</option>
-              <option value="flashcard">Flashcards</option>
-              <option value="qa">Q&A</option>
-              <option value="mcq">Multiple Choice</option>
-              <option value="interview">Interview</option>
-              <option value="article">Article</option>
-              <option value="notes">Notes</option>
-            </select>
+              onChange={(val) => setFilterMode(val)}
+              options={[
+                { label: "All Types", value: "all" },
+                { label: "Flashcards", value: "flashcard" },
+                { label: "Q&A", value: "qa" },
+                { label: "Multiple Choice", value: "mcq" },
+                { label: "Interview", value: "interview" },
+                { label: "Article", value: "article" },
+                { label: "Notes", value: "notes" },
+              ]}
+            />
           </div>
 
           {loading ? (
@@ -128,6 +130,7 @@ export default function DecksPage() {
                   <div
                     key={deck.id}
                     className={`animate-blurFadeIn ${delayClass}`}
+                    style={{ height: "100%" }}
                   >
                     <DeckCard
                       id={deck.id}

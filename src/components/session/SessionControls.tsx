@@ -5,6 +5,7 @@ import type { TTSSettings, SessionStyle, AudioPlaybackMode, TTSEngine } from '@/
 import { onVoicesChanged, speak, pause, resume, stop } from '@/lib/tts';
 import { getSettings, saveTTSSettings } from '@/lib/localStorage';
 import { EDGE_VOICES } from '@/lib/edgeTts';
+import { Select } from "@/components/ui/Select";
 import styles from './SessionControls.module.css';
 
 interface SessionControlsProps {
@@ -408,94 +409,84 @@ export function SessionControls({
           {/* Voice Engine selector */}
           <div className={styles.listRow}>
             <span className={styles.listLabel}>Voice Engine</span>
-            <select
+            <Select
               id="tts-engine"
-              className={`input ${styles.nativeSelect}`}
+              className={styles.nativeSelect}
               value={ttsSettings.ttsEngine ?? 'edge'}
-              onChange={(e) => updateTTS({ ttsEngine: e.target.value as TTSEngine })}
-            >
-              <option value="edge">Edge AI Voice</option>
-              <option value="webspeech">Device Voice</option>
-            </select>
+              onChange={(val) => updateTTS({ ttsEngine: val as TTSEngine })}
+              options={[
+                { label: "Edge AI Voice", value: "edge" },
+                { label: "Device Voice", value: "webspeech" },
+              ]}
+            />
           </div>
 
           {/* Edge voice selector — only when Edge engine is active */}
           {(ttsSettings.ttsEngine ?? 'edge') === 'edge' && (
             <div className={styles.listRow}>
               <span className={styles.listLabel}>Voice</span>
-              <select
+              <Select
                 id="tts-edge-voice"
-                className={`input ${styles.nativeSelect}`}
+                className={styles.nativeSelect}
                 value={ttsSettings.edgeVoice ?? 'en-US-AriaNeural'}
-                onChange={(e) => updateTTS({ edgeVoice: e.target.value })}
-              >
-                {EDGE_VOICES.map((v) => (
-                  <option key={v.id} value={v.id}>{v.label}</option>
-                ))}
-              </select>
+                onChange={(val) => updateTTS({ edgeVoice: val })}
+                options={EDGE_VOICES.map(v => ({ label: v.label, value: v.id }))}
+              />
             </div>
           )}
           <div className={styles.listRow}>
             <span className={styles.listLabel}>Speed</span>
-            <select
+            <Select
               id="tts-speed"
-              className={`input ${styles.nativeSelect}`}
-              value={ttsSettings.rate}
-              onChange={(e) => updateTTS({ rate: parseFloat(e.target.value) })}
-            >
-              {SPEED_OPTIONS.map((s) => (
-                <option key={s} value={s}>{s}×</option>
-              ))}
-            </select>
+              className={styles.nativeSelect}
+              value={ttsSettings.rate.toString()}
+              onChange={(val) => updateTTS({ rate: parseFloat(val) })}
+              options={SPEED_OPTIONS.map(s => ({ label: `${s}×`, value: s.toString() }))}
+            />
           </div>          {/* Audio mode + Device voice selectors — only for Web Speech */}
           {(ttsSettings.ttsEngine ?? 'edge') === 'webspeech' && (
             <>
               <div className={styles.listRow}>
                 <span className={styles.listLabel}>Audio Mode</span>
-                <select
+                <Select
                   id="tts-audio-mode"
-                  className={`input ${styles.nativeSelect}`}
+                  className={styles.nativeSelect}
                   value={ttsSettings.audioMode || 'continuous'}
-                  onChange={(e) => updateTTS({ audioMode: e.target.value as AudioPlaybackMode })}
-                >
-                  <option value="continuous">Continuous</option>
-                  <option value="single-pause">Single (pause)</option>
-                  <option value="switch">Switch Voices</option>
-                </select>
+                  onChange={(val) => updateTTS({ audioMode: val as AudioPlaybackMode })}
+                  options={[
+                    { label: "Continuous", value: "continuous" },
+                    { label: "Single (pause)", value: "single-pause" },
+                    { label: "Switch Voices", value: "switch" },
+                  ]}
+                />
               </div>
 
               {voices.length > 0 && (
                 <>
                   <div className={styles.listRow}>
                     <span className={styles.listLabel}>{ttsSettings.audioMode === 'switch' ? 'Voice 1' : 'Voice'}</span>
-                    <select
+                    <Select
                       id="tts-voice"
-                      className={`input ${styles.nativeSelect}`}
-                      value={ttsSettings.voiceURI}
-                      onChange={(e) => updateTTS({ voiceURI: e.target.value })}
-                    >
-                      {/* Show all available English voices — no Google-UK filter so Firefox
-                          users see the voices their OS provides rather than an empty list */}
-                      {voices.map((v) => (
-                        <option key={v.voiceURI} value={v.voiceURI}>{v.name}</option>
-                      ))}
-                    </select>
+                      className={styles.nativeSelect}
+                      value={ttsSettings.voiceURI || (voices[0]?.voiceURI ?? "")}
+                      onChange={(val) => updateTTS({ voiceURI: val })}
+                      options={voices.map(v => ({ label: v.name, value: v.voiceURI }))}
+                    />
                   </div>
 
                   {ttsSettings.audioMode === 'switch' && (
                     <div className={styles.listRow}>
                       <span className={styles.listLabel}>Voice 2</span>
-                      <select
+                      <Select
                         id="tts-voice-secondary"
-                        className={`input ${styles.nativeSelect}`}
+                        className={styles.nativeSelect}
                         value={ttsSettings.secondaryVoiceURI || ''}
-                        onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
-                      >
-                        <option value="">Same as Voice 1</option>
-                        {voices.map((v) => (
-                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{v.name}</option>
-                        ))}
-                      </select>
+                        onChange={(val) => updateTTS({ secondaryVoiceURI: val })}
+                        options={[
+                          { label: "Same as Voice 1", value: "" },
+                          ...voices.map(v => ({ label: v.name, value: v.voiceURI }))
+                        ]}
+                      />
                     </div>
                   )}
                 </>
