@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { Button } from '@/components/ui/Button';
+import { ArrowRight } from '@/components/icons/ArrowRight';
 import type { MCQItem } from '@/types';
 import styles from './MCQCard.module.css';
 
@@ -96,9 +98,9 @@ export function MCQCard({ item, isFlipped, onFlip, onNext }: MCQCardProps) {
 
       {revealed && (
         <div className={`animate-slideUp ${styles.nextButtonContainer}`}>
-          <button id="btn-next-mcq" className="btn btn-primary" onClick={handleNext}>
-            Next Question →
-          </button>
+          <Button id="btn-next-mcq" variant="primary" onClick={handleNext} rightIcon={<ArrowRight />}>
+            Next Question
+          </Button>
         </div>
       )}
     </div>

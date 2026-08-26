@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { Button } from '@/components/ui/Button';
+import { ArrowRight } from '@/components/icons/ArrowRight';
 import type { InterviewQuestion } from '@/types';
 import styles from './InterviewCard.module.css';
 
@@ -108,9 +110,9 @@ export function InterviewCard({ question, role, level, isFlipped, onFlip }: Inte
 
           {followupIndex < followups.length - 1 && (
             <div className={styles.nextButtonWrapper}>
-              <button id="btn-next-followup" className="btn btn-secondary" onClick={handleNextFollowup}>
-                Next Follow-up →
-              </button>
+              <Button id="btn-next-followup" variant="secondary" onClick={handleNextFollowup} rightIcon={<ArrowRight />}>
+                Next Follow-up
+              </Button>
             </div>
           )}
         </div>
@@ -119,28 +121,28 @@ export function InterviewCard({ question, role, level, isFlipped, onFlip }: Inte
       {/* Action buttons */}
       <div className={styles.actionsContainer}>
         {phase === 'question' && (
-          <button id="btn-reveal-answer" className="btn btn-primary btn-lg" onClick={handleRevealAnswer}>
+          <Button id="btn-reveal-answer" variant="primary" size="lg" onClick={handleRevealAnswer}>
             Reveal Answer
-          </button>
+          </Button>
         )}
 
         {phase === 'answer' && (
           <>
             {hasFollowups && (
-              <button id="btn-show-followups" className="btn btn-accent" onClick={() => setPhase('followups')}>
+              <Button id="btn-show-followups" variant="accent" onClick={() => setPhase('followups')}>
                 Follow-ups ({followups.length})
-              </button>
+              </Button>
             )}
-            <button id="btn-next" className="btn btn-primary" onClick={handleNext}>
-              Next →
-            </button>
+            <Button id="btn-next" variant="primary" onClick={handleNext} rightIcon={<ArrowRight />}>
+              Next
+            </Button>
           </>
         )}
 
         {phase === 'followups' && followupIndex === followups.length - 1 && (
-          <button id="btn-next" className="btn btn-primary" onClick={handleNext}>
-            Next →
-          </button>
+          <Button id="btn-next" variant="primary" onClick={handleNext} rightIcon={<ArrowRight />}>
+            Next
+          </Button>
         )}
       </div>
     </div>

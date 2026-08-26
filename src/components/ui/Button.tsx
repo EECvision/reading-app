@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'success' | 'glass' | 'subtle';
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'success' | 'glass' | 'subtle' | 'accent';
 export type ButtonSize = 'sm' | 'md' | 'lg' | 'icon' | 'icon-lg';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -39,7 +39,7 @@ export function Button({
           <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" strokeLinecap="round" />
         </svg>
       ) : leftIcon ? (
-        <span className="btn-icon-left" style={{ display: 'inline-flex', marginRight: children ? '6px' : '0' }}>{leftIcon}</span>
+        <span className="btn-icon-left" style={{ display: 'inline-flex', marginRight: children ? '2px' : '0' }}>{leftIcon}</span>
       ) : null}
       
       {children && <span>{children}</span>}

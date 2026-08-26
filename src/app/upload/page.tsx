@@ -6,6 +6,8 @@ import { JsonPaste } from "@/components/upload/JsonPaste";
 import { JsonValidator } from "@/components/upload/JsonValidator";
 import { Navbar } from "@/components/ui/Navbar";
 import { Button } from "@/components/ui/Button";
+import { ArrowLeft } from "@/components/icons/ArrowLeft";
+import { ArrowRight } from "@/components/icons/ArrowRight";
 import { ModeSelector } from "@/components/upload/ModeSelector";
 import { TemplateActions } from "@/components/upload/TemplateActions";
 import { saveDeck } from "@/lib/localStorage";
@@ -192,13 +194,14 @@ export default function UploadPage() {
 
                 <div className={styles.wizardActions}>
                   <div className={styles.wizardActionsRight}>
-                    <button
-                      className="btn btn-primary"
+                    <Button
+                      variant="primary"
                       onClick={nextStep}
                       disabled={!mode}
+                      rightIcon={<ArrowRight />}
                     >
-                      Next Step →
-                    </button>
+                      Next Step
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -252,17 +255,18 @@ export default function UploadPage() {
                 )}
 
                 <div className={styles.wizardActions}>
-                  <button className="btn btn-secondary" onClick={prevStep}>
-                    ← Back
-                  </button>
+                  <Button variant="secondary" onClick={prevStep} leftIcon={<ArrowLeft />}>
+                    Back
+                  </Button>
                   <div className={styles.wizardActionsRight}>
-                    <button
-                      className="btn btn-primary"
+                    <Button
+                      variant="primary"
                       onClick={nextStep}
                       disabled={!validationResult?.valid}
+                      rightIcon={<ArrowRight />}
                     >
-                      Next Step →
-                    </button>
+                      Next Step
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -296,18 +300,20 @@ export default function UploadPage() {
                 </div>
 
                 <div className={styles.wizardActions}>
-                  <button className="btn btn-secondary" onClick={prevStep}>
-                    ← Back
-                  </button>
+                  <Button variant="secondary" onClick={prevStep} leftIcon={<ArrowLeft />}>
+                    Back
+                  </Button>
                   <div className={styles.wizardActionsRight}>
-                    <button
+                    <Button
                       id="btn-start-studying"
-                      className={`btn btn-primary ${styles.saveButton}`}
+                      className={styles.saveButton}
+                      variant="primary"
                       onClick={handleSave}
                       disabled={saving || !canSave}
+                      rightIcon={!saving ? <ArrowRight /> : undefined}
                     >
-                      {saving ? "Starting…" : "Start Studying →"}
-                    </button>
+                      {saving ? "Starting…" : "Start Studying"}
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Navbar } from "@/components/ui/Navbar";
 import { Button } from "@/components/ui/Button";
+import { PlusIcon } from "@/components/icons/PlusIcon";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 
@@ -20,8 +21,8 @@ export default function HomePage() {
             <Button id="nav-decks" href="/decks" variant="ghost" size="sm">
               My Decks
             </Button>
-            <Button id="nav-upload" href="/upload" variant="primary" size="sm">
-              + Upload
+            <Button id="nav-upload" href="/upload" variant="primary" size="sm" leftIcon={<PlusIcon />}>
+              Upload
             </Button>
             <ThemeToggle />
           </>

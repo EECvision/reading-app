@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/Button";
 import { Navbar } from "@/components/ui/Navbar";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Select } from "@/components/ui/Select";
+import { ArrowRight } from "@/components/icons/ArrowRight";
+import { PlusIcon } from "@/components/icons/PlusIcon";
 import { deleteDeck, getDecks } from "@/lib/localStorage";
 import type { Deck } from "@/types";
 import { useEffect, useState } from "react";
@@ -58,8 +60,9 @@ export default function DecksPage() {
                 href="/upload"
                 variant="primary"
                 size="sm"
+                leftIcon={<PlusIcon />}
               >
-                + Upload
+                Upload
               </Button>
               <ThemeToggle />
             </>
@@ -111,13 +114,8 @@ export default function DecksPage() {
                     : "Upload your first JSON deck to get started."}
                 </p>
                 {filterMode === "all" && (
-                  <Button
-                    id="btn-upload-first"
-                    href="/upload"
-                    variant="primary"
-                    size="lg"
-                  >
-                    Upload Your First Deck →
+                  <Button id="btn-upload-first" href="/upload" variant="primary" size="lg" rightIcon={<ArrowRight />}>
+                    Upload Your First Deck
                   </Button>
                 )}
               </div>
