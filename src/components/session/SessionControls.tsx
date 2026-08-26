@@ -203,15 +203,21 @@ export function SessionControls({
     const prev = prevTTSSettings.current;
     prevTTSSettings.current = ttsSettings;
 
+    const muteChanged  = prev.muted !== ttsSettings.muted;
     const audioAffected =
       prev.rate        !== ttsSettings.rate        ||
       prev.edgeVoice   !== ttsSettings.edgeVoice   ||
       prev.voiceURI    !== ttsSettings.voiceURI     ||
       prev.ttsEngine   !== ttsSettings.ttsEngine    ||
       prev.audioMode   !== ttsSettings.audioMode    ||
-      prev.muted       !== ttsSettings.muted;
+      muteChanged;
 
-    if (audioAffected && latestProps.current.speaking && hasAutoStarted.current) {
+    // When mute is toggled, restart even if speaking===false, because muted
+    // mode calls onStart/onEnd immediately, leaving speaking=false the whole time.
+    const shouldRestart = audioAffected && hasAutoStarted.current &&
+      (latestProps.current.speaking || muteChanged);
+
+    if (shouldRestart) {
       stop();
       const seqId = ++playSequenceId.current;
       setSpeaking(false);
