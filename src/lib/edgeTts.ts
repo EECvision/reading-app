@@ -1,17 +1,14 @@
 // ─── Edge TTS Client Module ───────────────────────────────────────────────────
-// Fetches audio from /api/tts and plays it via the Web Audio API.
-// All heavy lifting (msedge-tts, caching) happens server-side.
+// Fetches audio from /api/tts (server-side msedge-tts) and plays it via a
+// standard HTML5 <audio> element (Blob URL). Using HTMLAudioElement instead of
+// the Web Audio API gives us:
+//   • Native cross-browser MP3 support (Firefox, Safari, Chrome, mobile)
+//   • Built-in pause / seek without manual offset tracking
+//   • Better autoplay policy compliance (no AudioContext resume dance)
 
-let audioCtx: AudioContext | null = null;
-let currentSource: AudioBufferSourceNode | null = null;
+let currentAudio: HTMLAudioElement | null = null;
+let currentBlobUrl: string | null = null;
 let currentAbort: AbortController | null = null;
-
-// ─── Pause / resume state ─────────────────────────────────────────────────────
-// AudioBufferSourceNode can't pause natively — we stop it, record the offset,
-// then create a new source from the same buffer starting at that offset.
-let pausedBuffer: AudioBuffer | null = null;
-let pauseOffset = 0;       // seconds into the audio where we paused
-let startedAt = 0;         // audioCtx.currentTime when source.start() was called
 let savedOnEnd: (() => void) | undefined;
 let edgeIsPaused = false;
 
@@ -34,20 +31,9 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
     return;
   }
 
-  // IMPORTANT for mobile (iOS Safari, Android Chrome):
-  // AudioContext must be created and resumed synchronously inside the user
-  // interaction event handler before any async await (like fetch) happens.
-  if (!audioCtx || audioCtx.state === 'closed') {
-    audioCtx = new AudioContext();
-  }
-  if (audioCtx.state === 'suspended') {
-    // We don't await this here because we want to trigger it synchronously
-    // in the event loop tick of the user interaction.
-    audioCtx.resume();
-  }
-
   const abort = new AbortController();
   currentAbort = abort;
+  savedOnEnd = opts.onEnd;
 
   const params = new URLSearchParams({
     text:  opts.text,
@@ -55,11 +41,11 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
     rate:  String(opts.rate ?? 1),
   });
 
-  let arrayBuffer: ArrayBuffer;
+  let blob: Blob;
   try {
     const res = await fetch(`/api/tts?${params.toString()}`, { signal: abort.signal });
     if (!res.ok) throw new Error(`TTS API ${res.status}`);
-    arrayBuffer = await res.arrayBuffer();
+    blob = await res.blob();
   } catch (err: unknown) {
     if ((err as Error).name === 'AbortError') return;
     opts.onError?.((err as Error).message ?? 'Edge TTS request failed');
@@ -68,60 +54,63 @@ export async function edgeSpeak(opts: EdgeSpeakOptions): Promise<void> {
 
   if (abort.signal.aborted) return;
 
-  let decoded: AudioBuffer;
-  try {
-    decoded = await audioCtx.decodeAudioData(arrayBuffer);
-  } catch {
-    opts.onError?.('Failed to decode audio');
-    return;
-  }
+  // Create a Blob URL and hand it to a plain <audio> element.
+  // This approach works identically in Chrome, Firefox, Safari, and on mobile —
+  // no AudioContext, no decodeAudioData, no resume() dance required.
+  const blobUrl = URL.createObjectURL(blob);
+  currentBlobUrl = blobUrl;
 
-  if (abort.signal.aborted) return;
+  const audio = new Audio(blobUrl);
+  currentAudio = audio;
+  edgeIsPaused = false;
 
-  // Save state needed for pause/resume
-  pausedBuffer = decoded;
-  savedOnEnd = opts.onEnd;
+  // Apply playback rate — HTML audio element supports it natively
+  audio.playbackRate = opts.rate ?? 1;
 
-  _playFromOffset(decoded, 0, abort);
-
-  opts.onStart?.();
-}
-
-function _playFromOffset(buffer: AudioBuffer, offset: number, abort: AbortController): void {
-  if (!audioCtx) return;
-
-  const source = audioCtx.createBufferSource();
-  source.buffer = buffer;
-  source.connect(audioCtx.destination);
-  currentSource = source;
-  startedAt = audioCtx.currentTime - offset;
-
-  source.onended = () => {
-    if (currentSource === source) currentSource = null;
-    // Only fire onEnd if this wasn't a manual stop/pause
-    if (!abort.signal.aborted && !edgeIsPaused) savedOnEnd?.();
+  audio.onended = () => {
+    if (currentAudio === audio) {
+      _cleanup();
+      if (!abort.signal.aborted) savedOnEnd?.();
+    }
   };
 
-  source.start(0, offset);
+  audio.onerror = () => {
+    if (currentAudio === audio) {
+      _cleanup();
+      opts.onError?.('Audio playback error');
+    }
+  };
+
+  try {
+    await audio.play();
+    opts.onStart?.();
+  } catch (err: unknown) {
+    // play() rejects if aborted between fetch and play (e.g. user navigated away)
+    if ((err as Error).name !== 'AbortError') {
+      opts.onError?.((err as Error).message ?? 'Audio play failed');
+    }
+    _cleanup();
+  }
+}
+
+function _cleanup(): void {
+  currentAudio = null;
+  if (currentBlobUrl) {
+    URL.revokeObjectURL(currentBlobUrl);
+    currentBlobUrl = null;
+  }
 }
 
 export function edgePause(): void {
-  if (!currentSource || !audioCtx || edgeIsPaused) return;
-  // Record how far into the audio we are
-  pauseOffset = audioCtx.currentTime - startedAt;
+  if (!currentAudio || edgeIsPaused) return;
   edgeIsPaused = true;
-  try { currentSource.stop(); } catch { /* already stopped */ }
-  currentSource = null;
+  currentAudio.pause();
 }
 
 export function edgeResume(): void {
-  if (!edgeIsPaused || !pausedBuffer || !audioCtx) return;
+  if (!edgeIsPaused || !currentAudio) return;
   edgeIsPaused = false;
-  // Reuse the same abort controller from the original speak call — if it was
-  // aborted (i.e. edgeStop was called) edgePause would have already reset state
-  const abort = currentAbort ?? new AbortController();
-  _playFromOffset(pausedBuffer, pauseOffset, abort);
-  pauseOffset = 0;
+  currentAudio.play().catch(() => {/* ignore */});
 }
 
 export function edgeGetIsPaused(): boolean {
@@ -133,14 +122,14 @@ export function edgeStop(): void {
     currentAbort.abort();
     currentAbort = null;
   }
-  if (currentSource) {
-    try { currentSource.stop(); } catch { /* already stopped */ }
-    currentSource = null;
+  if (currentAudio) {
+    currentAudio.onended = null;
+    currentAudio.onerror = null;
+    currentAudio.pause();
+    currentAudio = null;
   }
-  // Reset pause state so next speak() starts fresh
+  _cleanup();
   edgeIsPaused = false;
-  pausedBuffer = null;
-  pauseOffset = 0;
   savedOnEnd = undefined;
 }
 

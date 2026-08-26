@@ -69,10 +69,13 @@ export function SessionControls({
     saveTTSSettings(next);
   };
 
-  // Set a default Google UK voice if none is selected (first load)
+  // Set a sensible default voice if none is selected (first load).
+  // Prefer Google UK voices if available (Chrome/Edge), otherwise fall back to
+  // the first English voice in the list (ensures Firefox isn't left with nothing).
   useEffect(() => {
     if (voices.length > 0 && !ttsSettings.voiceURI) {
-      const defaultVoice = voices.find(v => v.name === 'Google UK English Female' || v.name === 'Google UK English Male');
+      const preferred = voices.find(v => v.name === 'Google UK English Female' || v.name === 'Google UK English Male');
+      const defaultVoice = preferred ?? voices[0];
       if (defaultVoice) {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         updateTTS({ voiceURI: defaultVoice.voiceURI });
@@ -388,14 +391,11 @@ export function SessionControls({
                       value={ttsSettings.voiceURI}
                       onChange={(e) => updateTTS({ voiceURI: e.target.value })}
                     >
-                      {voices
-                        .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                        .map((v) => {
-                          const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                          return (
-                            <option key={v.voiceURI} value={v.voiceURI}>{label}</option>
-                          );
-                        })}
+                      {/* Show all available English voices — no Google-UK filter so Firefox
+                          users see the voices their OS provides rather than an empty list */}
+                      {voices.map((v) => (
+                        <option key={v.voiceURI} value={v.voiceURI}>{v.name}</option>
+                      ))}
                     </select>
                   </div>
 
@@ -409,14 +409,9 @@ export function SessionControls({
                         onChange={(e) => updateTTS({ secondaryVoiceURI: e.target.value })}
                       >
                         <option value="">Same as Voice 1</option>
-                        {voices
-                          .filter((v) => v.name === 'Google UK English Male' || v.name === 'Google UK English Female')
-                          .map((v) => {
-                            const label = v.name === 'Google UK English Male' ? 'UK Male' : 'UK Female';
-                            return (
-                              <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{label}</option>
-                            );
-                          })}
+                        {voices.map((v) => (
+                          <option key={`sec-${v.voiceURI}`} value={v.voiceURI}>{v.name}</option>
+                        ))}
                       </select>
                     </div>
                   )}
