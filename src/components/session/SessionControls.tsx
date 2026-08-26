@@ -220,23 +220,40 @@ export function SessionControls({
   // ── Auto-advance when text changes (card navigation + autoplay) ───────────
   // Only fires after the one-shot auto-start has already run, so it doesn't
   // double-trigger on the first card load.
+  // isFlipped is intentionally NOT in the dependency array — including it would
+  // cause React to re-run this effect (and its stop() cleanup) whenever the user
+  // clicks "Reveal Answer" in read-and-listen mode, interrupting ongoing speech.
+  // Card-flip audio-on-flip is handled separately below.
   useEffect(() => {
     if (autoplay && hasAutoStarted.current && (frontText || backText)) {
+      const seqIdRef = playSequenceId; // stable ref object, safe to capture
       const timer = setTimeout(() => {
         stop();
-        const seqId = ++playSequenceId.current;
+        const seqId = ++seqIdRef.current;
         runSequence(seqId);
       }, 100);
       return () => {
         clearTimeout(timer);
         stop();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        playSequenceId.current++; // invalidate sequence
+        seqIdRef.current++; // invalidate sequence
         setSpeaking(false);
         setPaused(false);
       };
     }
-  }, [frontText, backText, isFlipped, autoplay, sessionStyle]);
+  }, [frontText, backText, autoplay, sessionStyle]);
+
+  // ── Card-flip: restart audio when the card is flipped ────────────────────
+  // Intentionally separate from the auto-advance effect above so that
+  // isFlipped changes in read-and-listen mode (Reveal Answer) are ignored.
+  useEffect(() => {
+    if (latestProps.current.sessionStyle !== 'card-flip') return;
+    if (!hasAutoStarted.current) return;
+    stop();
+    const seqId = ++playSequenceId.current;
+    setSpeaking(false);
+    setPaused(false);
+    setTimeout(() => runSequence(seqId), 80);
+  }, [isFlipped]);
 
   const handleSpeak = () => {
     // Mark as started so the autoplay card-navigation effect works
