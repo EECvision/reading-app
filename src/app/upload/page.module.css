@@ -234,6 +234,9 @@
 }
 
 @media (max-width: 600px) {
+  .stepDesc {
+    font-size: var(--text-xs);
+  }
   .stepper {
     gap: var(--space-2);
   }
