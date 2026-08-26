@@ -31,6 +31,8 @@ export default function UploadPage() {
   const [saving, setSaving] = useState(false);
   const [uploadMethod, setUploadMethod] = useState<"file" | "paste">("file");
 
+  const [currentStep, setCurrentStep] = useState(1);
+
   const handleModeSelect = (m: ReadingMode) => {
     setMode(m);
     setValidationResult(null);
@@ -102,6 +104,45 @@ export default function UploadPage() {
 
   const canSave = mode && validationResult?.valid && parsedData;
 
+  const nextStep = () => {
+    if (currentStep < 4) setCurrentStep((prev) => prev + 1);
+  };
+
+  const prevStep = () => {
+    if (currentStep > 1) setCurrentStep((prev) => prev - 1);
+  };
+
+  const renderStepper = () => {
+    const steps = [
+      { num: 1, label: "Mode" },
+      { num: 2, label: "Generate" },
+      { num: 3, label: "Upload" },
+      { num: 4, label: "Start" }
+    ];
+
+    return (
+      <div className={styles.stepper}>
+        {steps.map((step, idx) => {
+          const isActive = currentStep === step.num;
+          const isCompleted = currentStep > step.num;
+          return (
+            <div key={step.num} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
+              <div className={`${styles.stepperItem} ${isActive ? styles.active : ''} ${isCompleted ? styles.completed : ''}`}>
+                <span className={styles.stepperNum}>
+                  {isCompleted ? '✓' : step.num}
+                </span>
+                <span>{step.label}</span>
+              </div>
+              {idx < steps.length - 1 && (
+                <div className={`${styles.stepperSeparator} ${isCompleted ? styles.completed : ''}`} />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   return (
     <div className={`page-bg ${styles.pageContainer}`}>
       {/* Nav */}
@@ -123,115 +164,128 @@ export default function UploadPage() {
       <div className="container-sm section">
         <div className="animate-slideUp">
           <h1 className={styles.pageTitle}>Upload a Deck</h1>
+          
+          {renderStepper()}
 
           <div className={styles.stepsContainer}>
-            {/* Step 1 — Mode */}
-            <div className={`card ${styles.stepCard}`}>
-              <div className={styles.stepHeader}>
-                <span className={styles.stepNumber}>1</span>
-                <div>
-                  <h2 className={styles.stepTitle}>Select Learning Mode</h2>
-                  <p className={styles.stepDesc}>
-                    Choose the format that best fits what you are trying to
-                    learn.
-                  </p>
-                </div>
-              </div>
-              <ModeSelector selected={mode} onSelect={handleModeSelect} />
-            </div>
-
-            {/* Step 2 — Generate Content */}
-            <div
-              className={`card ${styles.stepCardWithTransition}`}
-              style={{ opacity: mode ? 1 : 0.5 }}
-            >
-              <div className={styles.stepHeader}>
-                <span
-                  className={styles.stepNumber}
-                  style={{
-                    background: mode ? "var(--brand-500)" : "var(--bg-overlay)",
-                    color: mode ? "white" : "var(--text-muted)",
-                  }}
-                >
-                  2
-                </span>
-                <div>
-                  <h2 className={styles.stepTitle}>Generate Content</h2>
-                  <p className={styles.stepDesc}>
-                    Use AI or our templates to create your study materials.
-                  </p>
-                </div>
-              </div>
-              <TemplateActions mode={mode} />
-            </div>
-
-            {/* Step 3 — Upload */}
-            <div
-              className={`card ${styles.stepCardWithTransition}`}
-              style={{ opacity: mode ? 1 : 0.5 }}
-            >
-              <div className={styles.stepHeader}>
-                <span
-                  className={styles.stepNumber}
-                  style={{
-                    background: mode ? "var(--brand-500)" : "var(--bg-overlay)",
-                    color: mode ? "white" : "var(--text-muted)",
-                  }}
-                >
-                  3
-                </span>
-                <div>
-                  <h2 className={styles.stepTitle}>Upload JSON</h2>
-                  <p className={styles.stepDesc}>
-                    Provide your study content as a JSON file or via copy-paste.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className={styles.uploadMethodTabs}
-                style={{
-                  opacity: mode ? 1 : 0.5,
-                  pointerEvents: mode ? "auto" : "none",
-                }}
-              >
-                <button
-                  className={`${styles.tabBtn} ${uploadMethod === "file" ? styles.active : ""}`}
-                  onClick={() => setUploadMethod("file")}
-                >
-                  Upload File
-                </button>
-                <button
-                  className={`${styles.tabBtn} ${uploadMethod === "paste" ? styles.active : ""}`}
-                  onClick={() => setUploadMethod("paste")}
-                >
-                  Paste JSON
-                </button>
-              </div>
-
-              <div style={{ marginTop: "16px" }}>
-                {uploadMethod === "file" ? (
-                  <FileUpload onFile={handleFile} disabled={!mode} />
-                ) : (
-                  <JsonPaste onPasteSubmit={handleFile} disabled={!mode} />
-                )}
-              </div>
-
-              {(validating || validationResult) && (
-                <div className={styles.validatorContainer}>
-                  <JsonValidator
-                    result={validationResult}
-                    loading={validating}
-                  />
-                </div>
-              )}
-            </div>
-
-            {/* Step 4 — Name & Start */}
-            {validationResult?.valid && (
-              <div className={`card animate-slideUp ${styles.stepCard}`}>
+            {currentStep === 1 && (
+              <div className={`card animate-fadeIn ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
-                  <span className={styles.stepNumber}>4</span>
+                  <div>
+                    <h2 className={styles.stepTitle}>Select Learning Mode</h2>
+                    <p className={styles.stepDesc}>
+                      Choose the format that best fits what you are trying to learn.
+                    </p>
+                  </div>
+                </div>
+                <ModeSelector selected={mode} onSelect={handleModeSelect} />
+                
+                <div className={styles.wizardActions}>
+                  <div className={styles.wizardActionsRight}>
+                    <button 
+                      className="btn btn-primary" 
+                      onClick={nextStep} 
+                      disabled={!mode}
+                    >
+                      Next Step →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {currentStep === 2 && (
+              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+                <div className={styles.stepHeader}>
+                  <div>
+                    <h2 className={styles.stepTitle}>Generate Content</h2>
+                    <div className={styles.stepDesc}>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "8px", display: "flex", flexDirection: "column", gap: "4px" }}>
+                        <li>Use AI or our templates to create your study materials.</li>
+                        <li>You will upload the generated JSON file in the next step.</li>
+                        <li>If you already have your content ready, you can skip this step.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <TemplateActions mode={mode} />
+
+                <div className={styles.wizardActions}>
+                  <button className="btn btn-secondary" onClick={prevStep}>
+                    ← Back
+                  </button>
+                  <div className={styles.wizardActionsRight}>
+                    <button className="btn btn-primary" onClick={nextStep}>
+                      Next Step →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {currentStep === 3 && (
+              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+                <div className={styles.stepHeader}>
+                  <div>
+                    <h2 className={styles.stepTitle}>Upload JSON</h2>
+                    <p className={styles.stepDesc}>
+                      Provide your study content as a JSON file or via copy-paste.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.uploadMethodTabs}>
+                  <button
+                    className={`${styles.tabBtn} ${uploadMethod === "file" ? styles.active : ""}`}
+                    onClick={() => setUploadMethod("file")}
+                  >
+                    Upload File
+                  </button>
+                  <button
+                    className={`${styles.tabBtn} ${uploadMethod === "paste" ? styles.active : ""}`}
+                    onClick={() => setUploadMethod("paste")}
+                  >
+                    Paste JSON
+                  </button>
+                </div>
+
+                <div style={{ marginTop: "16px" }}>
+                  {uploadMethod === "file" ? (
+                    <FileUpload onFile={handleFile} disabled={!mode} />
+                  ) : (
+                    <JsonPaste onPasteSubmit={handleFile} disabled={!mode} />
+                  )}
+                </div>
+
+                {(validating || validationResult) && (
+                  <div className={styles.validatorContainer}>
+                    <JsonValidator
+                      result={validationResult}
+                      loading={validating}
+                    />
+                  </div>
+                )}
+
+                <div className={styles.wizardActions}>
+                  <button className="btn btn-secondary" onClick={prevStep}>
+                    ← Back
+                  </button>
+                  <div className={styles.wizardActionsRight}>
+                    <button 
+                      className="btn btn-primary" 
+                      onClick={nextStep}
+                      disabled={!validationResult?.valid}
+                    >
+                      Next Step →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {currentStep === 4 && (
+              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+                <div className={styles.stepHeader}>
                   <div>
                     <h2 className={styles.stepTitle}>Name & Start</h2>
                     <p className={styles.stepDesc}>
@@ -254,15 +308,22 @@ export default function UploadPage() {
                       onChange={(e) => setDeckName(e.target.value)}
                     />
                   </div>
+                </div>
 
-                  <button
-                    id="btn-start-studying"
-                    className={`btn btn-primary btn-lg ${styles.saveButton}`}
-                    onClick={handleSave}
-                    disabled={saving || !canSave}
-                  >
-                    {saving ? "Starting…" : "Start Studying →"}
+                <div className={styles.wizardActions}>
+                  <button className="btn btn-secondary" onClick={prevStep}>
+                    ← Back
                   </button>
+                  <div className={styles.wizardActionsRight}>
+                    <button
+                      id="btn-start-studying"
+                      className={`btn btn-primary ${styles.saveButton}`}
+                      onClick={handleSave}
+                      disabled={saving || !canSave}
+                    >
+                      {saving ? "Starting…" : "Start Studying →"}
+                    </button>
+                  </div>
                 </div>
               </div>
             )}

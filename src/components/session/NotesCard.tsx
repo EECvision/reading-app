@@ -8,11 +8,9 @@ interface NotesCardProps {
   sessionStyle: SessionStyle;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
 }
 
-export function NotesCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: NotesCardProps) {
+export function NotesCard({ item, sessionStyle, isFlipped, onFlip }: NotesCardProps) {
   return (
     <div 
       className={styles.container}
@@ -49,10 +47,7 @@ export function NotesCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onRe
         </div>
       </div>
 
-      <div className={styles.actions}>
-        <button id="btn-review" className="btn btn-danger" onClick={onReview}>Needs Review</button>
-        <button id="btn-known" className="btn btn-success" onClick={onKnown}>Got It ✓</button>
-      </div>
+
     </div>
   );
 }

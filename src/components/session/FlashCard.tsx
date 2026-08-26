@@ -9,11 +9,9 @@ interface FlashCardProps {
   sessionStyle: SessionStyle;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
 }
 
-export function FlashCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: FlashCardProps) {
+export function FlashCard({ item, sessionStyle, isFlipped, onFlip }: FlashCardProps) {
 
   const isFlipMode = sessionStyle === 'card-flip';
   const showBoth = sessionStyle === 'read-and-listen';
@@ -75,17 +73,7 @@ export function FlashCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onRe
         </div>
       )}
 
-      {/* Rating buttons — shown after flip or in show-both mode */}
-      {(isFlipped || showBoth) && (
-        <div className={`animate-slideUp ${styles.actions}`}>
-          <button id="btn-review" className="btn btn-danger" onClick={() => { onReview(); }}>
-            Needs Review
-          </button>
-          <button id="btn-known" className="btn btn-success" onClick={() => { onKnown(); }}>
-            Got It ✓
-          </button>
-        </div>
-      )}
+
     </div>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './JsonPaste.module.css';
 
 interface JsonPasteProps {
@@ -12,24 +12,29 @@ export function JsonPaste({ onPasteSubmit, disabled }: JsonPasteProps) {
   const [content, setContent] = useState('');
   const [error, setError] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const val = e.target.value;
-    setContent(val);
-    if (!val.trim()) {
-      setError(null);
-      return;
-    }
-    try {
-      JSON.parse(val);
-      setError(null);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Invalid JSON');
-    }
-  };
+  const onSubmitRef = useRef(onPasteSubmit);
+  useEffect(() => { onSubmitRef.current = onPasteSubmit; });
 
-  const handleSubmit = () => {
-    if (!content.trim() || error) return;
-    onPasteSubmit(content, 'Pasted-Deck');
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!content.trim()) {
+        setError(null);
+        return;
+      }
+      try {
+        JSON.parse(content);
+        setError(null);
+        onSubmitRef.current(content, 'Pasted-Deck');
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Invalid JSON');
+      }
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [content]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setContent(e.target.value);
   };
 
   return (
@@ -41,16 +46,11 @@ export function JsonPaste({ onPasteSubmit, disabled }: JsonPasteProps) {
         onChange={handleChange}
         disabled={disabled}
       />
-      <div className={styles.actions}>
-        {error && <span className={styles.errorText}>{error}</span>}
-        <button
-          className="btn btn-primary"
-          onClick={handleSubmit}
-          disabled={disabled || !content.trim() || !!error}
-        >
-          Import
-        </button>
-      </div>
+      {error && (
+        <div className={styles.actions}>
+          <span className={styles.errorText}>{error}</span>
+        </div>
+      )}
     </div>
   );
 }

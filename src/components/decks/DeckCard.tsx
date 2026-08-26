@@ -1,6 +1,5 @@
 'use client';
 
-import type { DeckProgress } from '@/types';
 import Link from 'next/link';
 import styles from './DeckCard.module.css';
 
@@ -10,7 +9,6 @@ interface DeckCardProps {
   mode: string;
   itemCount: number;
   uploadedAt: string;
-  progress: DeckProgress | null;
   role?: string;
   level?: string;
   onDelete: (id: string) => void;
@@ -34,21 +32,13 @@ const MODE_COLORS: Record<string, string> = {
   interview: 'hsl(16, 80%, 52%)',
 };
 
-export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role, level, onDelete }: DeckCardProps) {
-  const known = progress?.totalKnown ?? 0;
-  const seen = progress?.totalSeen ?? 0;
-  const pct = itemCount > 0 ? Math.round((known / itemCount) * 100) : 0;
+export function DeckCard({ id, name, mode, itemCount, uploadedAt, role, level, onDelete }: DeckCardProps) {
   const color = MODE_COLORS[mode] ?? 'var(--brand-400)';
   const icon = MODE_ICONS[mode] ?? '📚';
 
   const uploadDate = new Date(uploadedAt).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric',
   });
-
-  // SVG ring progress
-  const r = 20;
-  const circ = 2 * Math.PI * r;
-  const offset = circ - (pct / 100) * circ;
 
   return (
     <div className={`card ${styles.card}`} style={{ '--deck-color': color } as React.CSSProperties}>
@@ -64,26 +54,6 @@ export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role
           </div>
         </div>
 
-        {/* Progress ring */}
-        <div className={styles.progressRing}>
-          <svg width={48} height={48}>
-            <circle cx={24} cy={24} r={r} fill="none" stroke="var(--bg-elevated)" strokeWidth={4} />
-            <circle
-              cx={24} cy={24} r={r}
-              fill="none"
-              stroke={color}
-              strokeWidth={4}
-              strokeDasharray={circ}
-              strokeDashoffset={offset}
-              strokeLinecap="round"
-              transform="rotate(-90 24 24)"
-              className={styles.progressCircle}
-            />
-          </svg>
-          <div className={styles.progressText}>
-            {pct}%
-          </div>
-        </div>
       </div>
 
       {/* Main Info */}
@@ -101,21 +71,7 @@ export function DeckCard({ id, name, mode, itemCount, uploadedAt, progress, role
         </div>
       </div>
 
-      {/* Stats */}
-      <div className={styles.statsRow}>
-        <div className={styles.statCol}>
-          <div className={styles.statValKnown}>{known}</div>
-          <div className={styles.statLabel}>Known</div>
-        </div>
-        <div className={styles.statCol}>
-          <div className={styles.statValReview}>{progress?.totalReview ?? 0}</div>
-          <div className={styles.statLabel}>Review</div>
-        </div>
-        <div className={styles.statCol}>
-          <div className={styles.statValUnseen}>{itemCount - seen}</div>
-          <div className={styles.statLabel}>Unseen</div>
-        </div>
-      </div>
+
 
       {/* Actions */}
       <div className={styles.actionsRow}>

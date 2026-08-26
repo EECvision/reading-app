@@ -8,14 +8,12 @@ interface MCQCardProps {
   item: MCQItem;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
+  onNext: () => void;
 }
 
-export function MCQCard({ item, isFlipped, onFlip, onKnown, onReview }: MCQCardProps) {
+export function MCQCard({ item, isFlipped, onFlip, onNext }: MCQCardProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const revealed = selected !== null || isFlipped;
-  const correct = selected === item.correct_answer;
 
   // If user selects an option, also trigger onFlip so page.tsx knows it's flipped
   const handleSelect = (opt: string) => {
@@ -27,8 +25,7 @@ export function MCQCard({ item, isFlipped, onFlip, onKnown, onReview }: MCQCardP
 
   const handleNext = () => {
     setSelected(null);
-    if (correct) onKnown();
-    else onReview();
+    onNext();
   };
 
   return (

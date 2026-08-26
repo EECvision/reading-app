@@ -28,6 +28,15 @@
   );
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
+  /* Use a sharp transition halfway through the 0.55s flip (0.275s) */
+  transition: opacity 0s 0.275s, visibility 0s 0.275s;
+  opacity: 1;
+  visibility: visible;
+}
+
+:global(.flipped) .frontSide {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .category {
@@ -57,6 +66,15 @@
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
   gap: var(--space-3);
+  /* Hidden by default until flipped */
+  transition: opacity 0s 0.275s, visibility 0s 0.275s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+:global(.flipped) .backSide {
+  opacity: 1;
+  visibility: visible;
 }
 
 .definitionText {

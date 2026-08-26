@@ -9,11 +9,9 @@ interface QACardProps {
   sessionStyle: SessionStyle;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
 }
 
-export function QACard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: QACardProps) {
+export function QACard({ item, sessionStyle, isFlipped, onFlip }: QACardProps) {
   const [hintVisible, setHintVisible] = useState(false);
 
   const showBoth = sessionStyle === 'read-and-listen';
@@ -70,17 +68,7 @@ export function QACard({ item, sessionStyle, isFlipped, onFlip, onKnown, onRevie
         </div>
       )}
 
-      {/* Rating */}
-      {(isFlipped || showBoth) && (
-        <div className={`animate-slideUp ${styles.actionsContainer}`}>
-          <button id="btn-review" className="btn btn-danger" onClick={() => { setHintVisible(false); onReview(); }}>
-            Needs Review
-          </button>
-          <button id="btn-known" className="btn btn-success" onClick={() => { setHintVisible(false); onKnown(); }}>
-            Got It ✓
-          </button>
-        </div>
-      )}
+
     </div>
   );
 }

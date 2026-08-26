@@ -16,7 +16,7 @@ import {
   saveShuffleSettings,
   saveRepeatSettings,
 } from "@/lib/localStorage";
-import { buildStudyList, rateItem, saveSessionSummary } from "@/lib/progress";
+import { buildStudyList, saveSessionSummary } from "@/lib/progress";
 import { buildSpeechText, stop } from "@/lib/tts";
 import type {
   AnyItem,
@@ -24,7 +24,6 @@ import type {
   FlashcardItem,
   InterviewDeck,
   InterviewQuestion,
-  ItemRating,
   MCQItem,
   NotesItem,
   QAItem,
@@ -59,7 +58,6 @@ export default function SessionPage() {
   const [shuffle, setShuffle] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [repeat, setRepeat] = useState(false);
-  const [ratings, setRatings] = useState<Record<string, ItemRating>>({});
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -131,14 +129,6 @@ export default function SessionPage() {
   const currentItem = items[index];
   const currentId = currentItem ? getId(currentItem) : "";
 
-  const handleRate = useCallback(
-    (rating: ItemRating) => {
-      if (!currentId) return;
-      rateItem(deckId, currentId, rating);
-      setRatings((prev) => ({ ...prev, [currentId]: rating }));
-    },
-    [deckId, currentId],
-  );
 
   const handleNext = useCallback(() => {
     stop();
@@ -152,22 +142,18 @@ export default function SessionPage() {
       const durationSeconds = Math.round(
         (new Date(endedAt).getTime() - new Date(startedAt).getTime()) / 1000,
       );
-      const known = Object.values(ratings).filter((r) => r === "known").length;
-      const review = Object.values(ratings).filter(
-        (r) => r === "review",
-      ).length;
       saveSessionSummary(deckId, {
         startedAt,
         endedAt,
         durationSeconds,
-        itemsStudied: Object.keys(ratings).length,
-        itemsKnown: known,
-        itemsToReview: review,
+        itemsStudied: items.length,
+        itemsKnown: 0,
+        itemsToReview: 0,
         sessionStyle,
       });
       router.push(`/session/${deckId}/summary`);
     }
-  }, [index, items.length, repeat, deckId, startedAt, ratings, sessionStyle, router]);
+  }, [index, items.length, repeat, deckId, startedAt, sessionStyle, router]);
 
   const handlePrev = useCallback(() => {
     stop();
@@ -203,15 +189,6 @@ export default function SessionPage() {
   );
 
   const renderCard = () => {
-    const onKnown = () => {
-      handleRate("known");
-      handleNext();
-    };
-    const onReview = () => {
-      handleRate("review");
-      handleNext();
-    };
-
     switch (mode) {
       case "flashcard":
         return (
@@ -220,8 +197,6 @@ export default function SessionPage() {
             sessionStyle={sessionStyle}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
           />
         );
       case "qa":
@@ -231,8 +206,6 @@ export default function SessionPage() {
             sessionStyle={sessionStyle}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
           />
         );
       case "article":
@@ -242,8 +215,6 @@ export default function SessionPage() {
             sessionStyle={sessionStyle}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
           />
         );
       case "notes":
@@ -253,8 +224,6 @@ export default function SessionPage() {
             sessionStyle={sessionStyle}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
           />
         );
       case "mcq":
@@ -263,8 +232,7 @@ export default function SessionPage() {
             item={currentItem as MCQItem}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
+            onNext={handleNext}
           />
         );
       case "interview":
@@ -275,8 +243,6 @@ export default function SessionPage() {
             level={level}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
-            onKnown={onKnown}
-            onReview={onReview}
           />
         );
     }

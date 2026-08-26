@@ -8,11 +8,9 @@ interface ArticleCardProps {
   sessionStyle: SessionStyle;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
 }
 
-export function ArticleCard({ item, sessionStyle, isFlipped, onFlip, onKnown, onReview }: ArticleCardProps) {
+export function ArticleCard({ item, sessionStyle, isFlipped, onFlip }: ArticleCardProps) {
   return (
     <div 
       className={styles.container}
@@ -48,10 +46,7 @@ export function ArticleCard({ item, sessionStyle, isFlipped, onFlip, onKnown, on
         )}
       </div>
 
-      <div className={styles.actions}>
-        <button id="btn-review" className="btn btn-danger" onClick={onReview}>Needs Review</button>
-        <button id="btn-known" className="btn btn-success" onClick={onKnown}>Read ✓</button>
-      </div>
+
     </div>
   );
 }

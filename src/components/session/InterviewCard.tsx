@@ -10,11 +10,9 @@ interface InterviewCardProps {
   level: string;
   isFlipped: boolean;
   onFlip: () => void;
-  onKnown: () => void;
-  onReview: () => void;
 }
 
-export function InterviewCard({ question, role, level, isFlipped, onFlip, onKnown, onReview }: InterviewCardProps) {
+export function InterviewCard({ question, role, level, isFlipped, onFlip }: InterviewCardProps) {
   const [phase, setPhase] = useState<'question' | 'answer' | 'followups'>('question');
   const [followupIndex, setFollowupIndex] = useState(0);
 
@@ -38,11 +36,10 @@ export function InterviewCard({ question, role, level, isFlipped, onFlip, onKnow
     }
   };
 
-  const handleRating = (rating: 'known' | 'review') => {
+  const handleNext = () => {
     setPhase('question');
     setFollowupIndex(0);
-    if (rating === 'known') onKnown();
-    else onReview();
+    onFlip();
   };
 
   const difficultyBadge = `badge badge-${question.difficulty}`;
@@ -134,24 +131,16 @@ export function InterviewCard({ question, role, level, isFlipped, onFlip, onKnow
                 Follow-ups ({followups.length})
               </button>
             )}
-            <button id="btn-review" className="btn btn-danger" onClick={() => handleRating('review')}>
-              Needs Review
-            </button>
-            <button id="btn-known" className="btn btn-success" onClick={() => handleRating('known')}>
-              Got It ✓
+            <button id="btn-next" className="btn btn-primary" onClick={handleNext}>
+              Next →
             </button>
           </>
         )}
 
         {phase === 'followups' && followupIndex === followups.length - 1 && (
-          <>
-            <button id="btn-review" className="btn btn-danger" onClick={() => handleRating('review')}>
-              Needs Review
-            </button>
-            <button id="btn-known" className="btn btn-success" onClick={() => handleRating('known')}>
-              Got It ✓
-            </button>
-          </>
+          <button id="btn-next" className="btn btn-primary" onClick={handleNext}>
+            Next →
+          </button>
         )}
       </div>
     </div>

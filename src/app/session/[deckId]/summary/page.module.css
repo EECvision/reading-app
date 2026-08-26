@@ -132,3 +132,8 @@
   flex-direction: column;
   gap: var(--space-3);
 }
+
+.actionsContainer a,
+.actionsContainer button {
+  min-height: 56px;
+}

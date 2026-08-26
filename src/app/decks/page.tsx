@@ -2,8 +2,8 @@
 
 import { DeckCard } from "@/components/decks/DeckCard";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { deleteDeck, getDecks, getProgress } from "@/lib/localStorage";
-import type { Deck, DeckProgress } from "@/types";
+import { deleteDeck, getDecks } from "@/lib/localStorage";
+import type { Deck } from "@/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
@@ -13,16 +13,7 @@ export default function DecksPage() {
   const [fileDecks, setFileDecks] = useState<Deck[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterMode, setFilterMode] = useState<string>("all");
-  const [progresses, setProgresses] = useState<Record<string, DeckProgress>>(
-    () => {
-      const d = getDecks();
-      const p: Record<string, DeckProgress> = {};
-      d.forEach((deck) => {
-        p[deck.id] = getProgress(deck.id);
-      });
-      return p;
-    },
-  );
+
 
   useEffect(() => {
     fetch("/api/decks")
@@ -41,11 +32,6 @@ export default function DecksPage() {
     if (!confirm("Delete this deck? This cannot be undone.")) return;
     deleteDeck(id);
     setLocalDecks((prev) => prev.filter((d) => d.id !== id));
-    setProgresses((prev) => {
-      const next = { ...prev };
-      delete next[id];
-      return next;
-    });
   };
 
   const filteredDecks = decks.filter(
@@ -137,7 +123,6 @@ export default function DecksPage() {
                 mode={deck.mode}
                 itemCount={deck.itemCount}
                 uploadedAt={deck.uploadedAt}
-                progress={progresses[deck.id] ?? null}
                 role={deck.role}
                 level={deck.level}
                 onDelete={handleDelete}
