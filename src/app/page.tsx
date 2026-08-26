@@ -38,37 +38,36 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero */}
         <section className={`section ${styles.heroSection}`}>
-          <div className="container-sm">
-            <div className="animate-slideUp">
-              <div className={styles.heroBadge}>
-                <span>✦</span>
-                YOUR PERSONAL STUDY COMPANION
+          <div className={styles.heroGlow} />
+
+          <div className={`container-sm ${styles.heroContent}`}>
+            <div className="flex-col items-center">
+              <div className={`${styles.heroBadge} animate-blurFadeIn delay-1`}>
+                Audiobooklm 2.0
               </div>
 
-              <h1 className={styles.heroTitle}>
-                Learn Anything.
+              <h1 className={`${styles.heroTitle} animate-blurFadeIn delay-2`}>
+                Learn anything.
                 <br />
-                Just Listen.
+                Just listen.
               </h1>
 
-              <p className={styles.heroDesc}>
-                Upload your study content as JSON and let Audiobooklm read it to
-                you — with flashcards, Q&amp;A, articles, notes, MCQ, and
-                interview practice.
+              <p className={`${styles.heroDesc} animate-blurFadeIn delay-3`}>
+                Upload your study content as JSON and experience a frictionless way to learn. Flashcards, Q&amp;A, and interview practice powered by seamless text-to-speech.
               </p>
 
-              <div className={styles.heroActions}>
+              <div className={`${styles.heroActions} animate-blurFadeIn delay-4`}>
                 <Link
                   id="hero-upload"
                   href="/upload"
-                  className="btn btn-primary btn-lg"
+                  className={styles.btnGlass}
                 >
-                  Start Studying →
+                  <span>Start Studying</span>
                 </Link>
                 <Link
                   id="hero-decks"
                   href="/decks"
-                  className="btn btn-secondary btn-lg"
+                  className={styles.btnSubtle}
                 >
                   My Decks
                 </Link>
