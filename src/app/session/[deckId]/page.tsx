@@ -74,9 +74,10 @@ export default function SessionPage() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Is this a collection-wide session?
-  const isCollectionSession = deckId.startsWith("collection:");
+  const isCollectionSession = deckId.startsWith("collection:") || deckId.startsWith("filecol:");
+  const isFileCollection = deckId.startsWith("filecol:");
   const collectionId = isCollectionSession
-    ? deckId.slice("collection:".length)
+    ? deckId.slice(deckId.indexOf(":") + 1)
     : null;
 
   // Load persisted settings from localStorage after mount
@@ -92,16 +93,26 @@ export default function SessionPage() {
       setAllDecks(decks);
 
       if (isCollectionSession && collectionId) {
-        // Load all decks in the collection
-        const result = getCollectionWithDecks(collectionId);
-        if (!result) {
-          router.push("/decks");
-          return;
+        if (isFileCollection) {
+          // File-based collection — fetch from API
+          fetch("/api/collections")
+            .then((r) => r.json())
+            .then((data: { collection: Collection; decks: Deck[] }[]) => {
+              const found = data.find((fc) => fc.collection.id === `filecol:${collectionId}`);
+              if (!found) { router.push("/decks"); return; }
+              setCollection(found.collection);
+              setCollectionDecks(found.decks);
+              if (found.decks.length > 0) setDeck(found.decks[0]);
+            })
+            .catch(() => router.push("/decks"));
+        } else {
+          // localStorage-based collection
+          const result = getCollectionWithDecks(collectionId);
+          if (!result) { router.push("/decks"); return; }
+          setCollection(result.collection);
+          setCollectionDecks(result.decks);
+          if (result.decks.length > 0) setDeck(result.decks[0]);
         }
-        setCollection(result.collection);
-        setCollectionDecks(result.decks);
-        // Use first deck's mode/name as the "primary" deck for display purposes
-        if (result.decks.length > 0) setDeck(result.decks[0]);
       } else if (deckId && !deckId.startsWith("file:")) {
         const col = getCollectionForDeck(deckId);
         setCollection(col);
@@ -109,7 +120,7 @@ export default function SessionPage() {
         if (stored) setDeck(stored);
       }
     });
-  }, [deckId, isCollectionSession, collectionId, router]);
+  }, [deckId, isCollectionSession, collectionId, router, isFileCollection]);
 
   // For a collection session, derive mode/name from the collection rather than one deck
   const mode = deck?.mode ?? "flashcard";
@@ -394,11 +405,12 @@ export default function SessionPage() {
       {batchDrawerOpen && collection && (
         <BatchSwitcherDrawer
           collection={collection}
-          decks={allDecks}
+          decks={collectionDecks.length > 0 ? collectionDecks : allDecks}
           currentDeckId={deckId}
           onClose={() => setBatchDrawerOpen(false)}
         />
       )}
+
     </div>
   );
 }

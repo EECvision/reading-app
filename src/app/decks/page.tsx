@@ -26,6 +26,7 @@ export default function DecksPage() {
   const [localDecks, setLocalDecks] = useState<Deck[]>([]);
   const [fileDecks, setFileDecks] = useState<Deck[]>([]);
   const [collections, setCollections] = useState<Collection[]>([]);
+  const [fileCollections, setFileCollections] = useState<{ collection: Collection; decks: Deck[] }[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterMode, setFilterMode] = useState<string>("all");
   const [creatingCollection, setCreatingCollection] = useState(false);
@@ -40,18 +41,31 @@ export default function DecksPage() {
     });
   }, []);
 
-  // Load file-based decks from API
+  // Load file-based decks and collections from API
   useEffect(() => {
-    fetch("/api/decks")
-      .then((res) => res.json())
-      .then((data) => setFileDecks(Array.isArray(data) ? data : []))
-      .catch((err) => console.error("Failed to load file decks:", err))
-      .finally(() => setLoading(false));
+    Promise.all([
+      fetch("/api/decks").then((r) => r.json()).catch(() => []),
+      fetch("/api/collections").then((r) => r.json()).catch(() => []),
+    ]).then(([decksData, collectionsData]) => {
+      setFileDecks(Array.isArray(decksData) ? decksData : []);
+      setFileCollections(Array.isArray(collectionsData) ? collectionsData : []);
+    }).finally(() => setLoading(false));
   }, []);
 
-  const allDecks = [...localDecks, ...fileDecks];
+  const allDecks = [
+    ...localDecks,
+    ...fileDecks,
+    // Include all decks from file collections so they can be found by ID
+    ...fileCollections.flatMap((fc) => fc.decks),
+  ];
 
-  // ── Collection handlers ───────────────────────────────────────────────────
+  // IDs of all decks already in a collection (user or file)
+  const deckIdsInCollections = new Set([
+    ...collections.flatMap((c) => c.deckIds),
+    ...fileCollections.flatMap((fc) => fc.collection.deckIds),
+  ]);
+
+  const allFolderCount = collections.length + fileCollections.length;
 
   const handleCreateCollection = () => {
     const name = newCollectionName.trim();
@@ -103,12 +117,7 @@ export default function DecksPage() {
     setLocalDecks((prev) => prev.filter((d) => d.id !== id));
   };
 
-  // ── Derived state ─────────────────────────────────────────────────────────
-
-  // IDs of all decks that belong to a collection
-  const deckIdsInCollections = new Set(collections.flatMap((c) => c.deckIds));
-
-  // Standalone = not in any collection
+  // Standalone = not in any collection (user OR file)
   const allStandaloneDecks = allDecks.filter((d) => !deckIdsInCollections.has(d.id));
   const standaloneDecks = allStandaloneDecks.filter(
     (d) => filterMode === "all" || d.mode === filterMode
@@ -141,7 +150,7 @@ export default function DecksPage() {
             <div>
               <h1 className={styles.pageTitle}>My Library</h1>
               <p className={styles.pageSubtitle}>
-                {allDecks.length} deck{allDecks.length !== 1 ? "s" : ""} · {collections.length} folder{collections.length !== 1 ? "s" : ""}
+                {allDecks.length} deck{allDecks.length !== 1 ? "s" : ""} · {allFolderCount} folder{allFolderCount !== 1 ? "s" : ""}
               </p>
             </div>
             <div className={styles.headerActions}>
@@ -193,7 +202,27 @@ export default function DecksPage() {
           ) : (
             <div className={styles.libraryLayout}>
 
-              {/* Collections */}
+              {/* File-based collections (readonly) */}
+              {fileCollections.length > 0 && (
+                <div className={styles.collectionsSection}>
+                  {fileCollections.map(({ collection, decks: fcDecks }) => (
+                    <CollectionRow
+                      key={collection.id}
+                      collection={collection}
+                      decks={fcDecks}
+                      readonly
+                      onDeleteCollection={() => {}}
+                      onRenameCollection={() => {}}
+                      onRemoveDeck={() => {}}
+                      onDeleteDeck={() => {}}
+                      onMoveDeck={() => {}}
+                      allCollections={[]}
+                    />
+                  ))}
+                </div>
+              )}
+
+              {/* User-created collections */}
               {collections.length > 0 && (
                 <div className={styles.collectionsSection}>
                   {collections.map((col) => (

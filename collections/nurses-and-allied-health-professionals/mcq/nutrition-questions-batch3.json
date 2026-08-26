@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-323",
+    "question": "Approximately how much protein does an average adult male require each day to maintain nitrogen balance?",
+    "options": [
+      "24g",
+      "72g",
+      "120g",
+      "240g"
+    ],
+    "correct_answer": "72g",
+    "explanation": "The recommended dietary allowance for protein in healthy adults is zero point eight grams per kilogram of body weight. For a typical adult male weighing seventy to ninety kilograms, this translates to roughly fifty-six to seventy-two grams of protein daily.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-324",
+    "question": "A child presenting with wasted muscles, dry hair, and severe edema of the extremities is most likely suffering from which nutritional condition?",
+    "options": [
+      "Pellagra",
+      "Vitamin A deficiency",
+      "Marasmus",
+      "Kwashiokor"
+    ],
+    "correct_answer": "Kwashiokor",
+    "explanation": "Kwashiorkor is a form of severe protein-energy malnutrition characterized by adequate calorie intake but a profound protein deficiency. This lack of dietary protein reduces serum albumin, leading to a loss of oncotic pressure and severe generalized edema.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-325",
+    "question": "Which of the following statements represents a true physiological effect of the pancreatic hormone glucagon?",
+    "options": [
+      "Stimulates gluconeogenesis in the liver",
+      "Stimulates the secretion of insulin by beta cells",
+      "Inhibits glucose utilization by skeletal muscle",
+      "Inhibits uptake of aminoacids by cells"
+    ],
+    "correct_answer": "Stimulates gluconeogenesis in the liver",
+    "explanation": "Glucagon is a catabolic hormone secreted by pancreatic alpha cells during hypoglycemia. It acts primarily on the liver to stimulate glycogenolysis and gluconeogenesis, releasing glucose into the bloodstream to restore normal levels.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-326",
+    "question": "Which of the following vitamins can be synthesized in the human body from a dietary precursor, such as beta-carotene?",
+    "options": [
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin B1",
+      "Vitamin B6"
+    ],
+    "correct_answer": "Vitamin A",
+    "explanation": "Beta-carotene is a provitamin carotenoid found in orange and yellow vegetables that acts as a precursor to vitamin A. The mucosal cells of the small intestine cleave beta-carotene to synthesize active retinol, or vitamin A, for cellular use.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-327",
+    "question": "Which of the following descriptions represents the pathophysiology of the nutritional deficiency disease pellagra?",
+    "options": [
+      "A disease caused by a deficiency of niacin in the diet and characterized by skin eruptions, digestive and nervous system disturbances, and eventual mental deterioration",
+      "Inflammation of several nerves at one time caused by a deficiency of thiamin, marked by paralysis, pain, and muscle wasting. Also called multiple neuritis or polyneuritis",
+      "A severe form of anemia most often affecting elderly adults, caused by a failure of the stomach to absorb vitamin B12 and characterized by abnormally large red blood cells, gastrointestinal disturbances, and lesions of the spinal cord also called pernicious anemia, malignant anemia",
+      "All of the above"
+    ],
+    "correct_answer": "A disease caused by a deficiency of niacin in the diet and characterized by skin eruptions, digestive and nervous system disturbances, and eventual mental deterioration",
+    "explanation": "Pellagra is caused by a severe deficiency of niacin, also known as vitamin B3, or its precursor amino acid tryptophan. It is clinically characterized by the four Ds: dermatitis, diarrhea, dementia, and eventually death if left untreated.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-328",
+    "question": "Which of the following specialized enzymes is utilized as a chemotherapy agent in cancer therapy, particularly for acute lymphoblastic leukemia?",
+    "options": [
+      "Pepsin",
+      "Urokidase",
+      "L-asparaginase",
+      "Lydaze"
+    ],
+    "correct_answer": "L-asparaginase",
+    "explanation": "L-asparaginase is an enzyme that degrades circulating asparagine into aspartic acid and ammonia. Because certain leukemic cells cannot synthesize their own asparagine and rely on external sources, this enzymatic depletion selectively starves and destroys cancer cells.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-329",
+    "question": "The skeletal childhood disease known as rickets occurs when children do not receive sufficient quantities of which nutrient?",
+    "options": [
+      "Vitamin A",
+      "B group vitamins",
+      "vitamin C",
+      "vitamin D"
+    ],
+    "correct_answer": "vitamin D",
+    "explanation": "Rickets is caused by a severe deficiency of vitamin D, which is required for proper calcium absorption and deposition in bone matrices. Without adequate vitamin D, osteoid tissue fails to calcify, leading to soft, weak bones and skeletal deformities.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-330",
+    "question": "An oral iron supplement like ferrous sulfate is absorbed most efficiently when administered along with which of the following substances?",
+    "options": [
+      "Milk",
+      "A meal",
+      "Orange juice",
+      "Undiluted"
+    ],
+    "correct_answer": "Orange juice",
+    "explanation": "Ascorbic acid, or vitamin C, present in orange juice reduces ferric iron to the more soluble ferrous form within the duodenum, significantly increasing its absorption across the mucosal membrane. Administering iron with milk or meals should be avoided because calcium and phytates inhibit iron uptake.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-331",
+    "question": "Which of the following clinical conditions are recognized as major causes of adult hypocalcemia?",
+    "options": [
+      "Hypoparathyroidism",
+      "Vitamin D deficiency",
+      "Renal failure and malabsorption",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Hypocalcemia can result from hypoparathyroidism, which reduces parathyroid hormone levels, or from vitamin D deficiency, which limits intestinal calcium absorption. Additionally, renal failure impairs active vitamin D synthesis, and intestinal malabsorption prevents calcium from being absorbed.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-332",
+    "question": "The clinical phosphatase test is routinely performed in the dairy industry to achieve which of the following goals?",
+    "options": [
+      "To test the presence of nitric acid",
+      "To determine the type of methemoglobinemia, a blood disorder",
+      "Test for the efficacy of pasteurization of milk",
+      "None of the above"
+    ],
+    "correct_answer": "Test for the efficacy of pasteurization of milk",
+    "explanation": "Alkaline phosphatase is an enzyme naturally present in raw milk that is destroyed at temperatures slightly higher than those required to kill common pathogens. Testing for the absence of active phosphatase confirms that pasteurization was carried out effectively.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-333",
+    "question": "Which of the following scenarios is most likely to lead to an endemic iodine deficiency and goiter?",
+    "options": [
+      "Low intake of fruits and Vegetables",
+      "Intake of only locally grown food in central Africa",
+      "Insufficient caloric intake",
+      "Inadequate sunlight exposure"
+    ],
+    "correct_answer": "Intake of only locally grown food in central Africa",
+    "explanation": "Central Africa and other mountainous, landlocked regions often have soil depleted of iodine because of glacial leaching. If the local population consumes exclusively locally grown foods without access to imported foods or iodized salt, they are at high risk of developing iodine-deficiency goiter.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-334",
+    "question": "Which of the following common dietary sources is considered a highly poor source of bioavailable iron?",
+    "options": [
+      "Meat",
+      "Eggs",
+      "Milk",
+      "Liver"
+    ],
+    "correct_answer": "Milk",
+    "explanation": "While milk is an excellent source of calcium, protein, and riboflavin, it is naturally extremely low in iron. Relying too heavily on milk as a primary beverage can displace iron-rich foods, representing a common cause of iron-deficiency anemia in toddlers.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-335",
+    "question": "What is the recommended average daily dietary allowance of calcium for healthy adult individuals?",
+    "options": [
+      "5 mg",
+      "50 mg",
+      "250 mg",
+      "500 mg"
+    ],
+    "correct_answer": "500 mg",
+    "explanation": "While optimal bone health standards often recommend eight hundred to one thousand milligrams of calcium daily, five hundred milligrams is the closest realistic baseline standard among the limited options provided. Extremely low values like five or fifty milligrams are completely insufficient.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-336",
+    "question": "The development of dental caries and the softening of tooth enamel is associated with a dietary lack of which mineral?",
+    "options": [
+      "Fluorine",
+      "Chlorine",
+      "Iodine",
+      "Bromine"
+    ],
+    "correct_answer": "Fluorine",
+    "explanation": "Fluorine, in the form of fluoride, is incorporated into tooth enamel to form fluoroapatite, which resists acid dissolution by plaque bacteria. A lack of dietary fluoride impairs enamel remineralization, significantly increasing the risk of dental caries.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-337",
+    "question": "Under standard clinical screening criteria, an adult with a calculated body mass index of thirty to thirty-four point nine is classified as:",
+    "options": [
+      "Over weight",
+      "Obesity class 1",
+      "Obesity class II",
+      "Extreme obesity"
+    ],
+    "correct_answer": "Obesity class 1",
+    "explanation": "A body mass index between twenty-five and twenty-nine point nine is classified as overweight. A index of thirty point zero to thirty-four point nine is classified as class one obesity, representing the initial tier of clinical obesity.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-338",
+    "question": "Which of the following organs secretes the most critical digestive enzymes responsible for breaking down all major macronutrients?",
+    "options": [
+      "Bile from the liver",
+      "Pancreatic juices poured into the small intestines",
+      "Secretions of large intestines",
+      "Gastric secretion"
+    ],
+    "correct_answer": "Pancreatic juices poured into the small intestines",
+    "explanation": "Pancreatic juice contains a highly potent cocktail of digestive enzymes, including pancreatic amylase, lipase, and trypsin. These enzymes are secreted into the duodenum and are responsible for digesting the vast majority of carbohydrates, fats, and proteins.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-339",
+    "question": "What is the recommended dietary daily allowance range of magnesium for healthy adult individuals?",
+    "options": [
+      "350-400 mg",
+      "6-9 g",
+      "25 g",
+      "1.5-4 mg"
+    ],
+    "correct_answer": "350-400 mg",
+    "explanation": "The recommended dietary allowance of magnesium for adults is typically three hundred and fifty to four hundred milligrams per day. Magnesium is an essential cofactor for over three hundred enzymatic reactions, including ATP production and muscle contraction.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-340",
+    "question": "Which of the following descriptions represents a characteristic that is not true for a biological catalyst?",
+    "options": [
+      "Speeds up a chemical reaction",
+      "Slows down a chemical reaction",
+      "Become changed during a chemical reaction",
+      "Choose the particular substances to which it is attracted during a chemical reaction"
+    ],
+    "correct_answer": "Become changed during a chemical reaction",
+    "explanation": "A biological catalyst, or enzyme, increases the rate of a chemical reaction by lowering its activation energy. Crucially, the enzyme is not consumed, modified, or permanently changed by the reaction, allowing it to be recycled for subsequent cycles.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-341",
+    "question": "Under the standard principles of nutritional science, essential nutrients can be classified under all of the following groups EXCEPT:",
+    "options": [
+      "Energy nutrient",
+      "Body Nutrient",
+      "Organic nutrient",
+      "Inorganic nutrient"
+    ],
+    "correct_answer": "Body Nutrient",
+    "explanation": "Nutrients are classified scientifically into organic or inorganic, and energy-producing or non-energy-producing. The term body nutrients is not a recognized nutritional or biochemical classification category.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-342",
+    "question": "Which of the following staple food items contains absolutely zero carbohydrates?",
+    "options": [
+      "Potato",
+      "Sugar",
+      "Meat",
+      "Rice"
+    ],
+    "correct_answer": "Meat",
+    "explanation": "Animal muscle tissue, or meat, consists almost entirely of proteins, lipids, and water, with only negligible trace amounts of glycogen. Potatoes, sugar, and rice are all extremely rich in carbohydrates.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-343",
+    "question": "What is the biochemical name of the starch-digesting enzyme found in human saliva?",
+    "options": [
+      "Ptyalin",
+      "Maltase",
+      "Lactase",
+      "Hydrochloric acid"
+    ],
+    "correct_answer": "Ptyalin",
+    "explanation": "Ptyalin, or salivary amylase, is secreted by the salivary glands and begins the chemical digestion of starches in the mouth. It hydrolyzes complex starch polymers into simpler maltose disaccharides before the food is swallowed.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-344",
+    "question": "Which of the following vitamins should be co-administered with the anti-tuberculosis drug isoniazid to prevent peripheral neuropathy?",
+    "options": [
+      "Thiamine",
+      "Niacin",
+      "Pyridoxine",
+      "Riboflavin"
+    ],
+    "correct_answer": "Pyridoxine",
+    "explanation": "Isoniazid competitively inhibits the activation of pyridoxine, or vitamin B6, which can lead to severe vitamin B6 deficiency and peripheral neuropathy. Routinely administering pyridoxine supplements with isoniazid protects nerve function and prevents this neurological side effect.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-345",
+    "question": "Which of the following is the most frequently utilized anthropometric screening measurement to estimate total body mass?",
+    "options": [
+      "Fat-free mass",
+      "Body fat",
+      "Body height",
+      "Body weight"
+    ],
+    "correct_answer": "Body weight",
+    "explanation": "Body weight is the most basic, direct, and frequently measured anthropometric metric used to monitor fluid status, evaluate nutritional adequacy, and calculate clinical medication dosages. It provides a baseline assessment of overall body mass.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-346",
+    "question": "In stereochemistry, which of the following pairs of monosaccharides represents a classic example of epimers?",
+    "options": [
+      "Glucose and Ribose",
+      "Glucose and Galactose",
+      "Galactose, Mannose and Glucose",
+      "Glucose, Ribose and Mannose"
+    ],
+    "correct_answer": "Glucose and Galactose",
+    "explanation": "Epimers are diastereomers that differ in configuration around only one specific chiral carbon atom. Glucose and galactose are classic C-4 epimers because they are identical in structure except for the spatial orientation of the hydroxyl group at carbon number four.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-347",
+    "question": "Which of the following vitamins is highly water-soluble, rather than fat-soluble?",
+    "options": [
+      "D",
+      "Retinol",
+      "Thiamin",
+      "K"
+    ],
+    "correct_answer": "Thiamin",
+    "explanation": "Vitamins are classified into fat-soluble and water-soluble groups. Thiamin, or vitamin B1, is a water-soluble vitamin, meaning it dissolves in water and excess quantities are excreted in urine, unlike fat-soluble vitamins like vitamins D, A, and K, which are stored in lipid tissues.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-348",
+    "question": "Amino acids are the essential monomer end-products of the enzymatic digestion of which macronutrient?",
+    "options": [
+      "Fats",
+      "Vitamins",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "correct_answer": "Proteins",
+    "explanation": "Proteins are complex nitrogenous polymers composed of long chains of amino acids. During digestion, proteolytic enzymes like pepsin and trypsin hydrolyze the peptide bonds, breaking the proteins down into free amino acids that can be absorbed by the intestinal mucosa.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-349",
+    "question": "Metabolism represents a complex network of cellular chemical reactions that are physiologically necessary for:",
+    "options": [
+      "Building tissues and storing fat",
+      "Building and repairing tissue and releasing heat and energy",
+      "Using nutritive elements to provide energy",
+      "Providing for elimination of waste products accumulated in the tissues"
+    ],
+    "correct_answer": "Building and repairing tissue and releasing heat and energy",
+    "explanation": "Metabolism encompasses both anabolic pathways, which consume energy to build and repair complex cellular structures, and catabolic pathways, which degrade molecules to release kinetic heat and biochemical energy. This continuous balance is vital for cellular survival, maintenance, and cellular reproduction.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-350",
+    "question": "What is the meaning of the acronym DASH in cardiovascular and nutritional medicine?",
+    "options": [
+      "Diet application to stop hypertension",
+      "Direct approaches to stop hypertension",
+      "Diet approaches to study hypertension",
+      "Dietary approaches to stop hypertension"
+    ],
+    "correct_answer": "Dietary approaches to stop hypertension",
+    "explanation": "DASH stands for Dietary Approaches to Stop Hypertension, which is a specialized eating plan designed to help treat or prevent high blood pressure. It emphasizes portion size, eating a variety of foods, and obtaining nutrients like potassium, calcium, and magnesium that help lower blood pressure.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-351",
+    "question": "Which of the following is considered one of the major physiological functions of fat in the human body?",
+    "options": [
+      "Produce heat and energy",
+      "Repaired body tissue",
+      "Replace damaged cells",
+      "Build the muscle"
+    ],
+    "correct_answer": "Produce heat and energy",
+    "explanation": "One of the major functions of dietary and storage lipids is to produce heat and metabolic energy. Fats represent a highly concentrated energy source, yielding nine kilocalories per gram, which is more than double the energy density of carbohydrates or proteins.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-352",
+    "question": "Which of the following vitamins is primarily stored in the human liver?",
+    "options": [
+      "Vitamin K",
+      "Vitamin D",
+      "Vitamin E",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Vitamins A, D, E, and K are fat-soluble vitamins that require dietary lipids for proper absorption. Because they are hydrophobic, they are stored in significant quantities within the lipid droplets of the liver and adipose tissues.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-353",
+    "question": "The digestive enzyme amylase found in human saliva begins the chemical breakdown of carbohydrates into:",
+    "options": [
+      "Glycerol",
+      "Compound sugar",
+      "Simple sugar",
+      "Polypeptides"
+    ],
+    "correct_answer": "Simple sugar",
+    "explanation": "Ptyalin, or salivary amylase, initiates the chemical digestion of starches in the mouth by breaking down complex polysaccharide chains. It hydrolyzes these large molecules into simple sugar units and disaccharides like maltose before the food is swallowed.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-354",
+    "question": "Which of the following hormones is primarily responsible for regulating the basal metabolic rate of the body?",
+    "options": [
+      "Thyroxine",
+      "Insulin",
+      "Glucagon",
+      "None of these"
+    ],
+    "correct_answer": "Thyroxine",
+    "explanation": "Thyroxine, synthesized and released by the thyroid gland, acts as the primary regulator of the body's basal metabolic rate. It stimulates cellular respiration, increases oxygen consumption, and regulates macronutrient metabolism in almost all tissues.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-355",
+    "question": "Deficiencies of which of the following pairs of nutrients are most commonly associated with the development of nutritional anemia?",
+    "options": [
+      "Iodine and vitamin C",
+      "Copper and iron",
+      "Zinc and protein",
+      "Vitamin D and zinc"
+    ],
+    "correct_answer": "Copper and iron",
+    "explanation": "Iron is a critical component of heme, which is required for hemoglobin synthesis and oxygen transport. Copper is also essential because it serves as a cofactor for ceruloplasmin, an enzyme that oxidizes iron to its ferric state so it can be transported and utilized by developing red blood cells.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-356",
+    "question": "The nurse is planning the dietary care of a client recovering from acute pancreatitis. Which of the following diets should the nurse select for this client?",
+    "options": [
+      "High in carbohydrate and protein",
+      "Low in sodium but high fat",
+      "High in protein and sodium",
+      "Low in fat and low protein"
+    ],
+    "correct_answer": "Low in fat and low protein",
+    "explanation": "During recovery from acute pancreatitis, the pancreatic ducts remain sensitive to stimulation. A diet low in fat and low in protein is essential because fats and proteins are strong stimulants for pancreatic enzyme secretion, which could trigger auto-digestion and a recurrence of inflammation.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-357",
+    "question": "Which of the following demographic or body type groups has the largest percentage of total water weight in their bodies?",
+    "options": [
+      "Fat men",
+      "Lean men",
+      "Lean women",
+      "Fat women"
+    ],
+    "correct_answer": "Lean men",
+    "explanation": "Total body water is highly dependent on muscle mass and body fat percentage. Muscle tissue contains approximately seventy-five percent water, whereas adipose tissue contains only about ten percent. Consequently, lean individuals have more water than obese individuals, and men have more muscle mass on average than women, giving lean men the highest percentage of body water.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-358",
+    "question": "The nurse is caring for a client hospitalized with bipolar disorder in the acute manic phase. Which of the following snacks would be most appropriate for this client?",
+    "options": [
+      "Potato chips",
+      "Diet cola",
+      "Apple",
+      "Milkshake"
+    ],
+    "correct_answer": "Milkshake",
+    "explanation": "Clients in the manic phase of bipolar disorder exhibit high physical activity and are often too distracted to sit down for a meal, putting them at risk for nutritional and fluid depletion. High-calorie, nutrient-dense finger foods or portable beverages like a milkshake allow the client to consume energy and protein on the go.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-359",
+    "question": "Which of the following organic compounds acts as a metabolic catalyst in various physiological processes in the human body?",
+    "options": [
+      "Vitamins",
+      "Protein",
+      "Fat cells",
+      "Carbohydrate"
+    ],
+    "correct_answer": "Vitamins",
+    "explanation": "Vitamins are organic micro-nutrients that do not provide energy directly but act as essential coenzymes or cofactors in metabolic pathways. They function as biological catalysts, facilitating enzymatic reactions required for energy release and tissue growth.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-360",
+    "question": "The client is receiving total parenteral nutrition. Which of the following laboratory parameters must the nurse evaluate closely during this therapy?",
+    "options": [
+      "Hemoglobin",
+      "Creatinine",
+      "Blood glucose",
+      "White cell count"
+    ],
+    "correct_answer": "Blood glucose",
+    "explanation": "Total parenteral nutrition solutions contain a highly concentrated dose of dextrose, which can trigger hyperglycemia if the pancreas cannot secrete enough insulin, or hypoglycemia if the infusion is suddenly interrupted. Regular blood glucose monitoring is critical to guide insulin administration and maintain metabolic stability.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-361",
+    "question": "Which of the following essential amino acids cannot be synthesized by the human body and must be obtained through the diet?",
+    "options": [
+      "Arginine",
+      "Glutamine",
+      "Histidine",
+      "Proline"
+    ],
+    "correct_answer": "Histidine",
+    "explanation": "Histidine is classified as an essential amino acid because the human body cannot synthesize it in adequate quantities to meet metabolic demands. It must be obtained through dietary sources like meat, dairy, and legumes to support growth and tissue repair.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-362",
+    "question": "What is the global prevalence of obesity in adult men and women according to epidemiological records?",
+    "options": [
+      "11% of men; 15% of women",
+      "6% of men; 20% of women",
+      "27% of men; 34% of women",
+      "45% of men; 36% of women"
+    ],
+    "correct_answer": "11% of men; 15% of women",
+    "explanation": "Based on historical epidemiological data from the World Health Organization, the global prevalence of clinical obesity was estimated to be approximately eleven percent in adult men and fifteen percent in adult women. These figures highlight obesity as a widespread and growing public health challenge.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-363",
+    "question": "The clinical presentation of the three Ds, which are diarrhea, dementia, and dermatitis, is characteristic of which nutritional deficiency disorder?",
+    "options": [
+      "Thiamine",
+      "Biotin",
+      "Niacin",
+      "Riboflavin"
+    ],
+    "correct_answer": "Niacin",
+    "explanation": "Pellagra is caused by a severe deficiency of niacin, also known as vitamin B3. It is classically characterized by three hallmark symptoms: diarrhea, dermatitis (especially in sun-exposed areas), and dementia, which can be fatal if left untreated.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-364",
+    "question": "A client with iron-deficiency anemia is prescribed an oral iron supplement. To maximize absorption, the nurse should instruct the client to take the medication with:",
+    "options": [
+      "Orange juice",
+      "Water only",
+      "Milk",
+      "Apple juice"
+    ],
+    "correct_answer": "Orange juice",
+    "explanation": "Ascorbic acid, or vitamin C, present in orange juice enhances the absorption of non-heme iron by reducing it to its more soluble ferrous state within the intestine. The client should avoid taking iron with milk, as calcium inhibits iron absorption.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-365",
+    "question": "A hospitalized client with advanced liver cirrhosis has developed abdominal ascites. To support tissue repair, the nurse should provide snacks rich in:",
+    "options": [
+      "Sodium",
+      "Potassium",
+      "Protein",
+      "Fat"
+    ],
+    "correct_answer": "Protein",
+    "explanation": "Ascites in liver cirrhosis is primarily driven by portal hypertension and hypoalbuminemia, which is a decrease in circulating albumin proteins synthesized by the liver. Providing adequate dietary protein helps support hepatic protein synthesis, helping to restore vascular oncotic pressure.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-366",
+    "question": "The maximum natural concentration of vitamin D is found in which of the following foods?",
+    "options": [
+      "Liver",
+      "Cheese",
+      "Egg yolk",
+      "Cod liver oil"
+    ],
+    "correct_answer": "Cod liver oil",
+    "explanation": "Cod liver oil is one of the richest natural dietary sources of vitamin D, providing massive concentrations of cholecalciferol, or vitamin D3. In contrast, while liver, egg yolks, and cheese contain vitamin D, their concentrations are significantly lower.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-367",
+    "question": "In the metabolic synthesis of non-essential amino acids, which of the following biochemical components is generally utilized?",
+    "options": [
+      "Fatty acids",
+      "alpha-ketoglutaric acid",
+      "Mineral salts",
+      "Volatile acids"
+    ],
+    "correct_answer": "alpha-ketoglutaric acid",
+    "explanation": "Alpha-ketoglutaric acid is a key intermediate in the Krebs cycle that serves as a precursor for the synthesis of several non-essential amino acids, such as glutamate, via transamination. This biochemical pathway links carbohydrate metabolism directly to protein synthesis.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-368",
+    "question": "Which of the following clinical methods represents the most direct and accurate approach for measuring body composition?",
+    "options": [
+      "Underwater weighing",
+      "Skinfold test",
+      "Body mass index",
+      "weight"
+    ],
+    "correct_answer": "Underwater weighing",
+    "explanation": "Underwater weighing, or hydrostatic weighing, is a highly accurate method of body composition analysis based on Archimedes' principle of displacement. Because bone and muscle are more dense than water, while fat is less dense, weighing a person underwater yields a precise measurement of body density and body fat percentage.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-369",
+    "question": "Which of the following dietary prescriptions would a nurse expect to see ordered for a patient diagnosed with nephrotic syndrome?",
+    "options": [
+      "Low carbohydrate potassium",
+      "Moderate protein",
+      "Low calcium",
+      "Increased potassium"
+    ],
+    "correct_answer": "Moderate protein",
+    "explanation": "Nephrotic syndrome is characterized by massive glomerular protein loss, which historically led to the prescription of high-protein diets. However, modern clinical guidelines recommend a moderate-protein diet to avoid worsening glomerular damage, combined with sodium restriction to manage edema.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-370",
+    "question": "Assuming all individuals are of similar physical size, which of the following professionals is most likely to have the highest daily energy requirement?",
+    "options": [
+      "A student",
+      "A shop assistant",
+      "An office worker",
+      "A farmer"
+    ],
+    "correct_answer": "A farmer",
+    "explanation": "Daily energy requirements are heavily influenced by physical activity level. Farming involves continuous, high-intensity manual labor that significantly raises energy expenditure compared to sedentary or light-active occupations like studying or office work.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-371",
+    "question": "The ocular disorder known as nyctalopia, or night blindness, can occur due to a severe dietary deficiency in which of the following?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin B2"
+    ],
+    "correct_answer": "Vitamin A",
+    "explanation": "Vitamin A is essential for the synthesis of rhodopsin, the light-sensitive pigment located in the rod cells of the retina. A deficiency in vitamin A compromises rod cell function, resulting in an inability to adapt and see in dim light, a condition known as night blindness.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-372",
+    "question": "The nurse is assisting a client with diverticulitis to select appropriate foods for their recovery. Which of the following foods should the nurse instruct the client to avoid during an acute flare-up?",
+    "options": [
+      "Bran",
+      "Fresh peach",
+      "Tomatoes",
+      "Dinner roll"
+    ],
+    "correct_answer": "Tomatoes",
+    "explanation": "During an acute flare-up of diverticulitis, the colon is inflamed, and the client must follow a low-fiber or clear liquid diet to rest the bowel. Foods containing small, indigestible seeds, such as tomatoes, should be avoided because seeds can theoretically become trapped in the diverticula, worsening inflammation.",
+    "category": "Nutrition and Dietetics"
+  }
+]

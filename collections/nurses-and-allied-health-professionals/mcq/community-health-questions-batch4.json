@@ -1,0 +1,236 @@
+[
+  {
+    "id": "item-788",
+    "question": "Which of the following clinical conditions is classically characterized by a bull-necked appearance in a patient?",
+    "options": [
+      "Tetanus",
+      "Diphtheria",
+      "Poliomyelitis",
+      "Pertussis"
+    ],
+    "correct_answer": "Diphtheria",
+    "explanation": "A bull-necked appearance, caused by severe cervical lymphadenopathy and soft tissue edema in the neck, is a classic clinical manifestation of severe diphtheria. This symptom is often accompanied by a thick, gray pseudomembrane over the tonsils and pharynx.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-789",
+    "question": "Which of the following levels of healthcare facilities serves as the ideal first point of contact for a client entering the national health care delivery system?",
+    "options": [
+      "Primary health facility",
+      "Secondary health facility",
+      "Intermediate health facility",
+      "Tertiary health facility"
+    ],
+    "correct_answer": "Primary health facility",
+    "explanation": "A primary health facility represents the ideal entry point and first level of contact for individuals and families within the healthcare system. It delivers essential, accessible, and affordable healthcare close to where people live and work.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-790",
+    "question": "Which of the following waste management methods represents the most effective sanitary practice for the disinfection of hazardous hospital waste?",
+    "options": [
+      "Fumigation",
+      "Incineration",
+      "Burying",
+      "Sorting"
+    ],
+    "correct_answer": "Incineration",
+    "explanation": "Incineration is the preferred sanitary method for disposing of infectious and hazardous hospital waste. This high-temperature thermal process completely destroys pathogens and organic materials, reducing the waste to sterile ash and preventing environmental contamination.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-791",
+    "question": "A home health nurse is planning her daily patient visits. Which of the following clients should the nurse prioritize to visit first?",
+    "options": [
+      "A client with acquired immunodeficiency syndrome being treated with foscarnet",
+      "A client recovering from a fractured femur in a long leg cast",
+      "A client with a recent total laryngectomy for laryngeal cancer",
+      "A client with active diabetic ulcers on the left foot"
+    ],
+    "correct_answer": "A client with a recent total laryngectomy for laryngeal cancer",
+    "explanation": "Applying the airway, breathing, and circulation clinical framework, the client with a recent total laryngectomy represents the highest risk of airway compromise. This patient must be prioritized for the first home visit of the day to ensure airway patency and stoma care safety.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-792",
+    "question": "Healthcare delivery that is systematically organized and focused around the health needs and expectations of populations rather than individual diseases is defined as:",
+    "options": [
+      "People-centered care",
+      "People and community-centered care",
+      "Public-centered care",
+      "Community-centered care"
+    ],
+    "correct_answer": "People and community-centered care",
+    "explanation": "People and community-centered care represents an approach that prioritizes the holistic health needs of families and communities rather than focusing on isolated diseases. This model empowers communities to actively participate in local health decision-making.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-793",
+    "question": "Which of the following pioneering scientists is historically recognized as the father of modern epidemiology?",
+    "options": [
+      "John Snow",
+      "Joseph Lister",
+      "Edward Jenner",
+      "John Hunter"
+    ],
+    "correct_answer": "John Snow",
+    "explanation": "John Snow is widely considered the father of modern epidemiology for his historic investigation of the eighteen fifty-four Broad Street cholera outbreak in London. By mapping cholera cases and identifying a contaminated public water pump as the source, he established the foundations of epidemiological research.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-794",
+    "question": "Epidemiological surveillance relies on diverse data sources. All of the following are recognized methods for obtaining standardized population morbidity data EXCEPT:",
+    "options": [
+      "Institutional hospital records",
+      "Legally mandated notifiable disease registries",
+      "Unverified online records",
+      "Employment and recruitment health records"
+    ],
+    "correct_answer": "Unverified online records",
+    "explanation": "Morbidity data is standardly gathered from institutional hospital records, legally mandated notifiable disease registries, and employment or recruitment health records. General unverified online records are not classified as a standardized, reliable source for epidemiological surveillance.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-795",
+    "question": "Under standard guidelines for the National Health Insurance Scheme, what is the required waiting period for a registered beneficiary to access healthcare services?",
+    "options": [
+      "Fifteen days",
+      "Thirty days",
+      "Sixty days",
+      "Ninety days"
+    ],
+    "correct_answer": "Thirty days",
+    "explanation": "Under standard National Health Insurance Scheme regulations, there is a thirty-day waiting period after registration before a beneficiary can begin accessing covered clinical services. This administrative period allows for database synchronization and premium processing.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-796",
+    "question": "All of the following represent standard components of a community's leadership composition EXCEPT:",
+    "options": [
+      "Opinion leaders",
+      "Common interest leaders",
+      "Formal leaders",
+      "Informal leaders"
+    ],
+    "correct_answer": "Common interest leaders",
+    "explanation": "Community leadership is structurally composed of formal leaders (such as elected officials), informal leaders (such as traditional healers), and opinion leaders (such as religious figures). Common interest leaders is not a recognized category in community health sociology.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-797",
+    "question": "In pediatric immunization schedules, administering a zero-dose of oral polio vaccine refers to which of the following scenarios?",
+    "options": [
+      "An infant who has received no vaccinations of any kind",
+      "A supplemental vaccine dose given after the first primary dose",
+      "The baseline vaccine dose administered to a newborn immediately at birth",
+      "An immunization dose administered exclusively in displaced person camps"
+    ],
+    "correct_answer": "The baseline vaccine dose administered to a newborn immediately at birth",
+    "explanation": "The zero-dose of oral polio vaccine refers specifically to the baseline dose administered to an infant immediately at birth, or within the first two weeks of life. This dose provides early mucosal intestinal immunity before subsequent primary doses are given.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-798",
+    "question": "Which of the following demographic parameters calculates the ratio of the total number of deaths in a given year to the average mid-year total population of that same year?",
+    "options": [
+      "Fertility rate",
+      "Mortality rate",
+      "Fatality rate",
+      "Birth rate"
+    ],
+    "correct_answer": "Mortality rate",
+    "explanation": "The crude mortality rate is calculated by dividing the total number of registered deaths during a year by the average mid-year total population of that same year, expressed per one thousand individuals. This provides a baseline measure of mortality in a general population.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-799",
+    "question": "All of the following represent traditional, culturally integrated methods of community health communication EXCEPT:",
+    "options": [
+      "Flannelgraphs",
+      "Story telling",
+      "Puppet shows",
+      "Role playing"
+    ],
+    "correct_answer": "Flannelgraphs",
+    "explanation": "Storytelling, puppet shows, and interactive role-playing are traditional, oral, and culturally integrated methods of community communication. Flannelgraphs are a modern, visual educational aid rather than a traditional oral method.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-800",
+    "question": "When preparing insulated cold chain equipment for vaccine transport, which of the following packing practices is NOT correct?",
+    "options": [
+      "If there are not enough ice packs, place available ice packs at the sides and on top of the vaccines",
+      "The Bacillus Calmette-Guerin vaccine can be placed anywhere in the cold box as long as it is kept cold",
+      "Ice packs must be placed on the bottom, at the sides, and on the top of the container",
+      "Measles and polio vaccines must be kept coldest by placing them at the bottom of the cold box, closest to the ice packs"
+    ],
+    "correct_answer": "The Bacillus Calmette-Guerin vaccine can be placed anywhere in the cold box as long as it is kept cold",
+    "explanation": "The Bacillus Calmette-Guerin vaccine is highly sensitive to light and heat and must be meticulously positioned within the cold box, rather than placed anywhere inside. Proper packing requires maintaining a steady cold chain between two and eight degrees Celsius with balanced ice pack placement.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-801",
+    "question": "Which of the following diseases is classified as a water-washed, or water-shortage, infection because its transmission is heavily promoted by a lack of water for personal hygiene?",
+    "options": [
+      "Bartholinitis",
+      "Leprosy",
+      "Cholera",
+      "Trichomoniasis"
+    ],
+    "correct_answer": "Leprosy",
+    "explanation": "Leprosy is classified as a water-washed or water-shortage disease because its transmission and prevention are closely tied to water availability for personal hygiene and basic cleanliness. In contrast, cholera is a waterborne disease transmitted by ingesting contaminated water, while bartholinitis and trichomoniasis are genitourinary conditions.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-802",
+    "question": "Which of the following epidemiological parameters calculates the rate of newly diagnosed cases of a disease observed in a population over a specified period of time?",
+    "options": [
+      "Incidence rate",
+      "Prevalence rate",
+      "Case fatality rate",
+      "Case-specific mortality rate"
+    ],
+    "correct_answer": "Incidence rate",
+    "explanation": "The incidence rate measures the frequency of newly developed cases of a disease in a population over a given period, typically expressed per one thousand or one hundred thousand person-years. Prevalence rate, in contrast, measures both new and existing cases.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-803",
+    "question": "Under international public health guidelines, the Bacillus Calmette-Guerin vaccine is routinely administered in the upper left arm primarily for which reason?",
+    "options": [
+      "It has been shown to be clinically more effective when administered in the left arm",
+      "Administering the vaccine in the right arm can lead to localized paralysis",
+      "To maintain universal uniformity so that immunized individuals can be easily identified by the vaccination scar",
+      "It is not a strict requirement and can be administered in the right arm based on clinician preference"
+    ],
+    "correct_answer": "To maintain universal uniformity so that immunized individuals can be easily identified by the vaccination scar",
+    "explanation": "Administering the Bacillus Calmette-Guerin vaccine universally in the upper left arm ensures global consistency, allowing public health workers and clinicians to easily verify an individual's immunization status by inspecting for the characteristic scar. There is no difference in vaccine efficacy or side effects between the left and right arms.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-804",
+    "question": "Which of the following pathogenic microorganisms is the specific causative agent of the severe respiratory disease diphtheria?",
+    "options": [
+      "Escherichia coli",
+      "Corynebacterium diphtheriae",
+      "Diphtheria virus",
+      "Salmonella typhi"
+    ],
+    "correct_answer": "Corynebacterium diphtheriae",
+    "explanation": "Diphtheria is caused by the gram-positive, club-shaped bacterium Corynebacterium diphtheriae. This pathogen secretes a potent diphtheria exotoxin that inhibits cellular protein synthesis, leading to tissue necrosis, pseudomembrane formation, and systemic myocarditis or neuropathy.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-805",
+    "question": "Which of the following routes of administration is recommended for the delivery of the Diphtheria, Pertussis, and Tetanus combination vaccine?",
+    "options": [
+      "Subcutaneous injection",
+      "Deep intramuscular injection",
+      "Hypodermal injection",
+      "Dermal injection"
+    ],
+    "correct_answer": "Deep intramuscular injection",
+    "explanation": "The DPT combination vaccine is formulated as an adsorbed preparation containing adjuvants that must be delivered via deep intramuscular injection, typically into the anterolateral thigh of infants. Delivering the vaccine subcutaneously or dermally can cause severe local tissue irritation, sterile abscesses, and decreased immunogenicity.",
+    "category": "Primary Health Care and Community Health Nursing"
+  }
+]

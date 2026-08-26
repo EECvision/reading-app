@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-856",
+    "question": "Which of the following represents exactly one billion characters of data storage?",
+    "options": [
+      "Kilobyte",
+      "Megabyte",
+      "Gigabyte",
+      "Terabyte"
+    ],
+    "correct_answer": "Gigabyte",
+    "explanation": "A gigabyte represents approximately one billion bytes, or characters, of data. In computer storage hierarchies, one kilobyte is one thousand bytes, one megabyte is one million bytes, and one terabyte is one trillion bytes.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-857",
+    "question": "Which of the following practices is recommended to ensure secure online financial transactions?",
+    "options": [
+      "Lock your personal computer screen when leaving the room",
+      "Provide credit card or bank details only on verified secure websites",
+      "Install a standard antivirus software program on your device",
+      "Avoid using pirated software programs from unverified sources"
+    ],
+    "correct_answer": "Provide credit card or bank details only on verified secure websites",
+    "explanation": "To protect sensitive financial information from interception, users should only enter credit card or bank details on secure, encrypted websites. Secure websites typically use hypertext transfer protocol secure and display a padlock icon in the browser address bar.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-858",
+    "question": "A compiler is a type of system software program that performs which of the following functions?",
+    "options": [
+      "Translates characters into individual binary bits",
+      "Translates high-level programming language into machine language",
+      "Translates machine language back into high-level programming language",
+      "Translates spoken words into digital bits of information"
+    ],
+    "correct_answer": "Translates high-level programming language into machine language",
+    "explanation": "A compiler is a translation program that converts an entire source code written in a high-level language into machine language or object code at once. This translation must occur before the computer processor can execute the instructions.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-859",
+    "question": "Which of the following online services is classified primarily as a social networking platform?",
+    "options": [
+      "amazon.com",
+      "eBay",
+      "gmail.com",
+      "Twitter"
+    ],
+    "correct_answer": "Twitter",
+    "explanation": "Twitter, currently known as X, is a social networking and microblogging platform designed for public communication and social interaction. In contrast, Amazon and eBay are e-commerce websites, and Gmail is an email service provider.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-860",
+    "question": "If y in base x represents a number, then which of the following numeric representations is the smallest of all?",
+    "options": [
+      "(1111) in base two",
+      "(1111) in base eight",
+      "(1111) in base ten",
+      "(1111) in base sixteen"
+    ],
+    "correct_answer": "(1111) in base two",
+    "explanation": "Converting each number to its base ten decimal equivalent reveals that one one one one in base two equals fifteen, in base eight equals five hundred and eighty-five, in base ten equals one thousand one hundred and eleven, and in base sixteen equals four thousand three hundred and sixty-nine. Therefore, base two is the smallest value.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-861",
+    "question": "An unsolicited email message sent concurrently to a very large number of recipients is defined as which of the following?",
+    "options": [
+      "Worm",
+      "Virus",
+      "Threat",
+      "Spam"
+    ],
+    "correct_answer": "Spam",
+    "explanation": "Spam refers to unsolicited bulk email messages sent to numerous recipients, often for commercial advertising. It clogs network bandwidth and email storage, and can occasionally be used to distribute malware.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-862",
+    "question": "To maintain cybersecurity, what elements should a strong password ideally consist of?",
+    "options": [
+      "Only uppercase and lowercase letters",
+      "Numbers and special characters only",
+      "The name of a close person or pet",
+      "A complex combination of letters, numbers, and special characters"
+    ],
+    "correct_answer": "A complex combination of letters, numbers, and special characters",
+    "explanation": "A strong security password should combine uppercase and lowercase letters, numerical digits, and special characters to resist brute-force and dictionary attacks. Using simple words or personal names makes the account highly vulnerable to unauthorized access.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-863",
+    "question": "Implementing telemedicine projects within correctional facilities and prisons has been shown to achieve which of the following outcomes?",
+    "options": [
+      "Improve health care access for inmates",
+      "Significantly cut medical transport costs",
+      "Improve facility security by reducing inmate transport",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Telemedicine in prisons allows specialists to evaluate inmates remotely, improving healthcare access while cutting transportation costs. Additionally, keeping high-risk inmates inside the facility improves public and institutional security.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-864",
+    "question": "The first operational supercomputer, known as the Cray-one, was successfully created in which year?",
+    "options": [
+      "Nineteen fifty-four",
+      "Nineteen seventy-six",
+      "Seventeen ninety-six",
+      "Nineteen eighty-nine"
+    ],
+    "correct_answer": "Nineteen seventy-six",
+    "explanation": "The Cray-one supercomputer was designed by Seymour Cray and released in nineteen seventy-six. It was celebrated for its vector processing speed and distinctive C-shaped cooling framework, representing a major leap in computing power.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-865",
+    "question": "In basic computer architecture, what are the five main physical components that compose a computer system?",
+    "options": [
+      "Central processing unit, compact disc read-only memory, mouse, keyboard, and sound card",
+      "Memory, video card, monitor, software, and hardware",
+      "Modem, keyboard, word processor, printer, and screen",
+      "Central processing unit, memory, system bus, input devices, and output devices"
+    ],
+    "correct_answer": "Central processing unit, memory, system bus, input devices, and output devices",
+    "explanation": "A complete computer system consists of the central processing unit for processing, memory for storage, input devices for data entry, output devices for data display, and the system bus to transmit signals between these hardware components.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-866",
+    "question": "Within medical informatics, the clinical abbreviation EPR stands for which of the following terms?",
+    "options": [
+      "Electronic patient records",
+      "Electrical Patient Recording",
+      "Electronic Patient Record Keeping",
+      "None of the above"
+    ],
+    "correct_answer": "Electronic patient records",
+    "explanation": "EPR stands for electronic patient records, which are digital files containing a patient's clinical history, treatments, and medical data. This system allows health providers to access and share patient data rapidly to improve care coordination.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-867",
+    "question": "Which of the following hardware devices is not classified as a network connecting device?",
+    "options": [
+      "Router",
+      "Switch",
+      "Central processing unit",
+      "Hub"
+    ],
+    "correct_answer": "Central processing unit",
+    "explanation": "Routers, switches, and hubs are hardware peripherals designed to route, filter, and transmit data packages across networks. The central processing unit is the primary processing brain of a single computer, not a network connection device.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-868",
+    "question": "Which of the following computer categories is positioned immediately below mainframe computers in terms of processing speed and storage capacity?",
+    "options": [
+      "Minicomputer",
+      "Supercomputer",
+      "Mainframes",
+      "Hybrid computer"
+    ],
+    "correct_answer": "Minicomputer",
+    "explanation": "Minicomputers are mid-range multi-user computers that possess less processing speed and storage capacity than massive mainframe systems, but are more powerful than individual microcomputers. They were widely adopted by small businesses and research labs.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-869",
+    "question": "A computer program that translates and executes a source code statement-by-statement into machine language is called which of the following?",
+    "options": [
+      "Compiler",
+      "Simulator",
+      "Translator",
+      "Interpreter"
+    ],
+    "correct_answer": "Interpreter",
+    "explanation": "An interpreter translates and executes high-level programming instructions statement-by-statement, pausing to report any errors immediately. In contrast, a compiler translates the entire source code program into machine code before execution.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-870",
+    "question": "A modern electronic computer is an automated system designed primarily to perform which function?",
+    "options": [
+      "Doing quick mathematical calculations only",
+      "The input storage and manipulation of outputting data",
+      "Electronic data processing",
+      "Performing repetitive manual tasks with physical accuracy"
+    ],
+    "correct_answer": "Electronic data processing",
+    "explanation": "The primary purpose of a modern computer is electronic data processing, which involves collecting, manipulating, analyzing, and storing digital data to generate meaningful information. This system relies on electronic circuitry rather than manual or mechanical components.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-871",
+    "question": "In computer networking, the communication acronym WAN stands for which of the following?",
+    "options": [
+      "Widest Area Network",
+      "Wild Area Network",
+      "Wide Area Networking",
+      "Wide Area Network"
+    ],
+    "correct_answer": "Wide Area Network",
+    "explanation": "WAN stands for Wide Area Network, which is a telecommunications network that connects computers and local networks across vast geographic distances, such as cities, states, or entire countries. The internet is the largest public Wide Area Network.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-872",
+    "question": "Implementing systematic data back-up procedures is essential in healthcare settings because it helps restore which elements?",
+    "options": [
+      "Both application and system software programs during disk corruption",
+      "Computer operations during a physical hard disk failure",
+      "Critical patient data files during a sudden system crash",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Regular data backups preserve system software, operating parameters, and clinical data files, allowing IT administrators to restore complete system operations rapidly after a hardware failure, crash, or malware infection.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-873",
+    "question": "Which of the following terms refers to the specialized non-volatile memory circuitry that permanently holds the computer's startup routine?",
+    "options": [
+      "Read Initial Memory",
+      "Random Access Memory",
+      "Read Only Memory",
+      "Cache Memory"
+    ],
+    "correct_answer": "Read Only Memory",
+    "explanation": "Read Only Memory, or ROM, is non-volatile memory that permanently stores the basic input and output system (BIOS) and startup routines of the computer. This data remains intact even when the device is powered off, allowing the computer to boot up.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-874",
+    "question": "The implementation of a digital Electronic Prescription Service (EPS) provides direct clinical and operational benefits to all of the following groups EXCEPT:",
+    "options": [
+      "General practitioners",
+      "Patients",
+      "Practice nurses",
+      "Pharmacies"
+    ],
+    "correct_answer": "Practice nurses",
+    "explanation": "Electronic Prescription Services link general practitioners directly to pharmacies, allowing prescriptions to be sent, processed, and dispensed electronically, which directly benefits GPs, pharmacies, and patients. Practice nurses, while critical to outpatient care, are typically outside this direct prescription dispatch loop.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-875",
+    "question": "In computer science, which of the following is not classified as a standardized character encoding computer code?",
+    "options": [
+      "EDIC",
+      "ASCII",
+      "BCD",
+      "EBCDIC"
+    ],
+    "correct_answer": "EDIC",
+    "explanation": "ASCII, BCD, and EBCDIC are standard binary-to-character encoding systems used to represent letters, numbers, and symbols in computer memory. The term EDIC is not a recognized computer character code.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-876",
+    "question": "The historical transition to utilizing Integrated Circuits (ICs) inside computers achieved which of the following physical advancements?",
+    "options": [
+      "Significantly increased the heat generated by the computer circuits",
+      "Drastically reduced the physical size and manufacturing cost of computers",
+      "Reduced the number of peripheral input and output devices that could be used",
+      "Significantly reduced the baseline processing speed of the processor"
+    ],
+    "correct_answer": "Drastically reduced the physical size and manufacturing cost of computers",
+    "explanation": "Integrated circuits placed thousands of transistors onto a tiny silicon wafer, starting the third generation of computers. This breakthrough reduced both the physical footprint and manufacturing costs while increasing speed and power.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-877",
+    "question": "Bluetooth is a short-range radio wave communication technology that standardly maintains a reliable connection up to what distance?",
+    "options": [
+      "Thirty feet",
+      "Thirty yards",
+      "Thirty miles",
+      "Three hundred miles"
+    ],
+    "correct_answer": "Thirty feet",
+    "explanation": "Standard class two Bluetooth devices, commonly used in consumer electronics and wireless medical sensors, operate over a short-range radius of approximately ten meters, or thirty feet. This range is designed to prevent signal interference between neighboring devices.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-878",
+    "question": "Which of the following statements is true regarding Random Access Memory (RAM)?",
+    "options": [
+      "Random Access Memory acts as a permanent, non-volatile data storage area",
+      "Random Access Memory is functionally identical to magnetic hard disk storage",
+      "Random Access Memory is a highly volatile, temporary storage area",
+      "Information stored in Random Access Memory remains intact when the device is turned off"
+    ],
+    "correct_answer": "Random Access Memory is a highly volatile, temporary storage area",
+    "explanation": "Random Access Memory is the primary, volatile memory of a computer that temporarily holds active program files and data during use. Because it is volatile, all stored data is cleared instantly as soon as the power is turned off.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-879",
+    "question": "The digital combination of text, graphics, audio, animation, and video presented to a user is defined as which of the following?",
+    "options": [
+      "Multiprogramme",
+      "Multifacet",
+      "Multimedia",
+      "Multiprocess"
+    ],
+    "correct_answer": "Multimedia",
+    "explanation": "Multimedia refers to the integration of multiple media content forms, such as text, images, sound, animation, and video, into a single interactive presentation. This technology is widely used in patient education and virtual clinical training.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-880",
+    "question": "What is the smallest, most fundamental unit of binary data that a computer can process?",
+    "options": [
+      "Bit",
+      "Kilobyte",
+      "Nibble",
+      "Byte"
+    ],
+    "correct_answer": "Bit",
+    "explanation": "A bit, short for binary digit, is the smallest unit of digital data, representing a logical state of either zero or one. A nibble is composed of four bits, a byte contains eight bits, and a kilobyte equals one thousand and twenty-four bytes.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-881",
+    "question": "Which of the following computer application programs is specifically designed to calculate and manipulate numbers organized in rows and columns?",
+    "options": [
+      "Window program",
+      "Spreadsheet program",
+      "Graphics program",
+      "Word program"
+    ],
+    "correct_answer": "Spreadsheet program",
+    "explanation": "A spreadsheet program, such as Microsoft Excel, organizes data in grid tables composed of intersecting rows and columns. It allows users to perform complex mathematical calculations and data analysis using formulas.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-882",
+    "question": "Which of the following software packages is not classified as a programming language used to write code?",
+    "options": [
+      "Pascal",
+      "Microsoft Office",
+      "Java",
+      "C plus plus"
+    ],
+    "correct_answer": "Microsoft Office",
+    "explanation": "Microsoft Office is a suite of office productivity applications, such as Word and PowerPoint, not a programming language. Pascal, Java, and C plus plus are programming languages used to write executable software code.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-883",
+    "question": "On the basis of data handling capabilities, computers are classified into which of the following valid physical types?",
+    "options": [
+      "Analog computers",
+      "Digital computers",
+      "Hybrid computers",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Computers are classified into analog (measuring continuous physical values), digital (processing discrete binary data), and hybrid systems (combining both analog and digital features to monitor and control processes).",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-884",
+    "question": "During the computer boot-up process, the Basic Input and Output System (BIOS) is primarily utilized by which element?",
+    "options": [
+      "The operating system",
+      "The compiler",
+      "The interpreter",
+      "The application software"
+    ],
+    "correct_answer": "The operating system",
+    "explanation": "The Basic Input and Output System, or BIOS, is a firmware program used by the operating system during startup to perform hardware initialization and test system peripherals. This check is known as the power-on self-test.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-885",
+    "question": "Which of the following hardware components is classified as an output peripheral device rather than an input device?",
+    "options": [
+      "Microphone",
+      "Keyboard",
+      "Joystick",
+      "Monitor"
+    ],
+    "correct_answer": "Monitor",
+    "explanation": "A monitor is an output device that displays processed text, images, and video to the user. Microphones, keyboards, and joysticks are input devices used to enter data or control commands into the system.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-886",
+    "question": "Which specialized part of a computer processor contains the hardware circuitry necessary to execute all mathematical and logical calculations?",
+    "options": [
+      "Controller",
+      "Registers",
+      "Cache memory",
+      "Datapath"
+    ],
+    "correct_answer": "Datapath",
+    "explanation": "In processor architecture, the CPU is divided into control logic and the datapath. The datapath contains the arithmetic logic unit and registers that perform additions, subtractions, and logical comparisons on data.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-887",
+    "question": "In web terminology, the standard abbreviation www stands for which of the following?",
+    "options": [
+      "Work with web",
+      "Word wide web",
+      "World wide web",
+      "Worth while web"
+    ],
+    "correct_answer": "World wide web",
+    "explanation": "The acronym www stands for World Wide Web, which is an information space where documents and other web resources are identified by URLs and linked via hyperlinks over the internet.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-888",
+    "question": "Hyper Text Markup Language (HTML) is a standard markup system used specifically to design and structure which of the following?",
+    "options": [
+      "Machine language programs",
+      "High-level compiler source codes",
+      "Web pages",
+      "Apache web servers"
+    ],
+    "correct_answer": "Web pages",
+    "explanation": "HTML stands for Hyper Text Markup Language and is used to structure and display documents as web pages in browsers. It defines the layout of text, links, and media using predefined tags.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-889",
+    "question": "What is the full, standardized name of the computer connection protocol known as USB?",
+    "options": [
+      "Universal Security Block",
+      "Universal Serial Bus",
+      "United Serial Bus",
+      "Ultra Security Block"
+    ],
+    "correct_answer": "Universal Serial Bus",
+    "explanation": "USB stands for Universal Serial Bus, which is a standardized plug-and-play interface used to establish communication, power supply, and data transfer between computers and external peripherals.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-890",
+    "question": "The vast majority of World Wide Web pages are formatted and structured using commands written in which language?",
+    "options": [
+      "National Institutes of Health markup",
+      "Uniform Resource Locator parameters",
+      "Hyper Text Markup Language",
+      "Internet Relay Chat commands"
+    ],
+    "correct_answer": "Hyper Text Markup Language",
+    "explanation": "Hyper Text Markup Language, or HTML, is the standard language used to format web pages. Web browsers read HTML files and render them into visual pages containing styled text, images, and links.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-891",
+    "question": "Which of the following natural elements serves as the primary semiconductor material used to manufacture computer microprocessor chips?",
+    "options": [
+      "Silicon",
+      "Carbon",
+      "Iron",
+      "Uranium"
+    ],
+    "correct_answer": "Silicon",
+    "explanation": "Silicon is an abundant natural metalloid that acts as an exceptional semiconductor. It is purified and sliced into thin wafers to serve as the substrate for printing integrated circuits and microchips.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-892",
+    "question": "Based on size and capacity classifications in computer engineering, how many primary physical types of computers are recognized?",
+    "options": [
+      "Seven types",
+      "Five types",
+      "Three types",
+      "Four types"
+    ],
+    "correct_answer": "Four types",
+    "explanation": "Computers are classified into four main categories based on size, speed, and processing capacity: microcomputers, minicomputers, mainframes, and supercomputers.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-893",
+    "question": "Which of the following attributes is not recognized as a natural characteristic of an electronic computer system?",
+    "options": [
+      "Versatility",
+      "Accuracy",
+      "Diligence",
+      "Intelligence quotient"
+    ],
+    "correct_answer": "Intelligence quotient",
+    "explanation": "Computers possess speed, accuracy, diligence, and versatility, but lack an intelligence quotient (IQ) because they cannot think independently and can only execute instructions provided by human programs.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-894",
+    "question": "The popular graphic software program Corel Draw is best classified under which software category?",
+    "options": [
+      "Illustration program",
+      "Programming language",
+      "Text editor program",
+      "None of the above"
+    ],
+    "correct_answer": "Illustration program",
+    "explanation": "Corel Draw is a vector graphics editor and illustration program used to create layouts, logos, and digital artwork, not a text editor or a programming language.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-895",
+    "question": "What is the technical term for an electronic device or software program that converts written text into spoken sentences?",
+    "options": [
+      "Speech Sensors",
+      "Compact convertors",
+      "Speech Synthesizers",
+      "Voice systems"
+    ],
+    "correct_answer": "Speech Synthesizers",
+    "explanation": "A speech synthesizer is an electronic or text-to-speech software system that converts written text into spoken words, helping visually impaired individuals access digital content.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-896",
+    "question": "The use of batch processing was the primary mode of computer operation during which computer generation?",
+    "options": [
+      "First generation",
+      "Second generation",
+      "Third generation",
+      "Fourth generation"
+    ],
+    "correct_answer": "First generation",
+    "explanation": "First-generation computers, which used vacuum tubes, relied on batch processing where groups of punch-card jobs were run sequentially without direct user interaction.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-897",
+    "question": "Which of the following physical computer components is classified as an input hardware device rather than an output device?",
+    "options": [
+      "Printer",
+      "Speaker",
+      "Monitor",
+      "Keyboard"
+    ],
+    "correct_answer": "Keyboard",
+    "explanation": "A keyboard is an input device used to enter text and command signals. Printers, speakers, and monitors are output devices that present processed data to the user.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-898",
+    "question": "Which specific unit within the Central Processing Unit (CPU) is responsible for executing arithmetic additions and logical comparisons?",
+    "options": [
+      "Arithmetic Logic Unit",
+      "Alternating Logic Unit",
+      "Alternate Local Unit",
+      "American Logic Unit"
+    ],
+    "correct_answer": "Arithmetic Logic Unit",
+    "explanation": "The Arithmetic Logic Unit (ALU) is the core processor circuitry that executes arithmetic operations (addition, subtraction) and logical comparisons (and, or, not) on binary data.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-899",
+    "question": "Which of the following devices is specifically designed to convert physical maps, blueprints, and drawings into digital data for computer storage?",
+    "options": [
+      "Digitizer",
+      "Scanner",
+      "Image Scanner",
+      "Magnetic Ink Character Recognition"
+    ],
+    "correct_answer": "Digitizer",
+    "explanation": "A digitizer is an electromagnetic drawing tablet and pen used to trace physical maps and drawings, converting their analog coordinates into precise digital vector data for computer systems.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-900",
+    "question": "Which of the following binary values represents the correct binary equivalent of the decimal number twenty-five?",
+    "options": [
+      "10101",
+      "01101",
+      "11001",
+      "11011"
+    ],
+    "correct_answer": "11001",
+    "explanation": "Converting the decimal number twenty-five to binary yields one one zero zero one, calculated by adding the values of sixteen, eight, and one, while the positions for four and two are set to zero.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-901",
+    "question": "In word processing software, what is the term for the function that combines static document templates with a variable database source to generate personalized letters?",
+    "options": [
+      "Electronic mail",
+      "Data sourcing",
+      "Mail merge",
+      "Spam mail"
+    ],
+    "correct_answer": "Mail merge",
+    "explanation": "Mail merge is a word processing function that combines a static template document with a data source (such as an Excel list) to generate a customized batch of personalized letters or labels.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-902",
+    "question": "Which of the following printer categories is characterized by an average printing speed in the range of forty to three hundred characters per second?",
+    "options": [
+      "Inkjet printer",
+      "Laser printer",
+      "Dot matrix printer",
+      "Drum printer"
+    ],
+    "correct_answer": "Dot matrix printer",
+    "explanation": "Dot matrix printers are impact printers that use pins striking an inked ribbon, with speeds typically ranging from forty to three hundred characters per second. They are valued in clinical settings for printing carbon copies.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-903",
+    "question": "In computer network communications, the protocol acronym FTP stands for which of the following?",
+    "options": [
+      "File Transaction Protocol",
+      "File Truncation Protocol",
+      "File Translation Protocol",
+      "File Transfer Protocol"
+    ],
+    "correct_answer": "File Transfer Protocol",
+    "explanation": "FTP stands for File Transfer Protocol, which is a standard network protocol used to transfer files securely between a client and a server over a computer network.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-904",
+    "question": "File extensions such as gif, jpg, bmp, and png are standardly used to identify files containing what type of data?",
+    "options": [
+      "Audio data",
+      "Image data",
+      "Video data",
+      "Text data"
+    ],
+    "correct_answer": "Image data",
+    "explanation": "The file extensions .gif, .jpg, .bmp, and .png are standardized formats used to compress and store digital images, photographs, and raster graphics files on computers.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-905",
+    "question": "Which of the following features in word processing programs is designed to automatically detect and highlight typographical errors and misspellings in text?",
+    "options": [
+      "Grammar checker",
+      "Spell checker",
+      "Word checker",
+      "None of the above"
+    ],
+    "correct_answer": "Spell checker",
+    "explanation": "A spell checker is a utility program that compares typed words in a document against its built-in dictionary, automatically highlighting unrecognized words or potential misspellings for correction.",
+    "category": "Information Communication Technology"
+  }
+]

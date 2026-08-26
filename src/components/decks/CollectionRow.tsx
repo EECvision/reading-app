@@ -15,6 +15,7 @@ interface CollectionRowProps {
   onDeleteDeck: (deckId: string) => void;
   onMoveDeck: (deckId: string, toCollectionId: string) => void;
   allCollections: Collection[];
+  readonly?: boolean; // file-based collections: no rename/delete
 }
 
 export function CollectionRow({
@@ -26,6 +27,7 @@ export function CollectionRow({
   onDeleteDeck,
   onMoveDeck,
   allCollections,
+  readonly = false,
 }: CollectionRowProps) {
   const [expanded, setExpanded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -80,13 +82,17 @@ export function CollectionRow({
           <span className={styles.batchCount}>
             {memberDecks.length} batch{memberDecks.length !== 1 ? 'es' : ''}
           </span>
+          {readonly && <span className={styles.readonlyBadge}>system</span>}
         </button>
 
         {/* Study All button */}
         {memberDecks.length > 0 && (
           <Link
             id={`study-all-${collection.id}`}
-            href={`/session/collection:${collection.id}`}
+            href={readonly
+              ? `/session/${encodeURIComponent(collection.id)}`
+              : `/session/collection:${collection.id}`
+            }
             className={styles.studyAllBtn}
             title="Study all batches in this folder"
           >
@@ -97,34 +103,37 @@ export function CollectionRow({
           </Link>
         )}
 
-        <div className={styles.menuWrapper}>
-          <button
-            id={`menu-collection-${collection.id}`}
-            className={styles.menuBtn}
-            onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); }}
-            aria-label="Collection options"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
-            </svg>
-          </button>
-          {menuOpen && (
-            <>
-              <div className={styles.menuOverlay} onClick={() => setMenuOpen(false)} />
-              <div className={styles.menu}>
-                <button className={styles.menuItem} onClick={() => { setRenaming(true); setMenuOpen(false); setExpanded(true); }}>
-                  ✏️ Rename
-                </button>
-                <button
-                  className={`${styles.menuItem} ${styles.menuItemDanger}`}
-                  onClick={() => { setMenuOpen(false); onDeleteCollection(collection.id); }}
-                >
-                  🗑 Delete Folder
-                </button>
-              </div>
-            </>
-          )}
-        </div>
+
+        {!readonly && (
+          <div className={styles.menuWrapper}>
+            <button
+              id={`menu-collection-${collection.id}`}
+              className={styles.menuBtn}
+              onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); }}
+              aria-label="Collection options"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
+              </svg>
+            </button>
+            {menuOpen && (
+              <>
+                <div className={styles.menuOverlay} onClick={() => setMenuOpen(false)} />
+                <div className={styles.menu}>
+                  <button className={styles.menuItem} onClick={() => { setRenaming(true); setMenuOpen(false); setExpanded(true); }}>
+                    ✏️ Rename
+                  </button>
+                  <button
+                    className={`${styles.menuItem} ${styles.menuItemDanger}`}
+                    onClick={() => { setMenuOpen(false); onDeleteCollection(collection.id); }}
+                  >
+                    🗑 Delete Folder
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Expanded deck list */}
@@ -145,9 +154,9 @@ export function CollectionRow({
                   role={deck.role}
                   level={deck.level}
                   onDelete={onDeleteDeck}
-                  onRemoveFromCollection={() => onRemoveDeck(deck.id)}
-                  allCollections={allCollections.filter((c) => c.id !== collection.id)}
-                  onMoveToCollection={(cid) => onMoveDeck(deck.id, cid)}
+                  onRemoveFromCollection={readonly ? undefined : () => onRemoveDeck(deck.id)}
+                  allCollections={readonly ? [] : allCollections.filter((c) => c.id !== collection.id)}
+                  onMoveToCollection={readonly ? undefined : (cid) => onMoveDeck(deck.id, cid)}
                 />
               ))}
             </div>

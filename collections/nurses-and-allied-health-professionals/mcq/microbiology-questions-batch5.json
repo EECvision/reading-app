@@ -1,0 +1,301 @@
+[
+  {
+    "id": "item-200",
+    "question": "The study of changes in the body brought about by illness or injury is called:",
+    "options": [
+      "Microbiology",
+      "Pathology",
+      "Psychology",
+      "Etiology"
+    ],
+    "correct_answer": "Pathology",
+    "explanation": "Pathology is the branch of medical science that focuses on the study of the causes, mechanisms, and structural and functional changes in cells, tissues, and organs during disease or injury. This field helps clinicians diagnose illnesses and understand disease progression.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-201",
+    "question": "The body increases its number of white blood cells when an infection occurs because:",
+    "options": [
+      "White blood cells contain oxygen which the tissues need to destroy bacteria",
+      "White blood cells destroy and ingest bacteria",
+      "The formation of pus from white blood cells is necessary for the proper healing of an inflammation",
+      "White blood cells aid in the clotting of blood"
+    ],
+    "correct_answer": "White blood cells destroy and ingest bacteria",
+    "explanation": "An elevated white blood cell count, known as leukocytosis, is a classic physiological response to infection. These immune cells, particularly neutrophils and macrophages, migrate to the infection site to actively engulf and destroy invading pathogens through phagocytosis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-202",
+    "question": "Circulating plasma proteins which are made in the liver and activated when an antibody combines with antigen are known as:",
+    "options": [
+      "Null lymphocytes",
+      "Lymphokines",
+      "Natural Killer cells",
+      "Complement"
+    ],
+    "correct_answer": "Complement",
+    "explanation": "The complement system consists of a group of circulating plasma proteins synthesized primarily by the liver. When an antibody binds to its specific antigen, it initiates a cascade of complement activation that leads to pathogen lysis, opsonization, and recruitment of phagocytes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-203",
+    "question": "Giving a patient an immune serum against a specific disease will provide them with:",
+    "options": [
+      "An active immunity that is permanent",
+      "A natural immunity that is only temporary",
+      "A passive immunity that is permanent",
+      "A passive immunity that is only temporary"
+    ],
+    "correct_answer": "A passive immunity that is only temporary",
+    "explanation": "Immune serum contains preformed antibodies harvested from another host, providing immediate but temporary protection against a pathogen. Because the recipient's own immune system is not stimulated to produce its own antibodies or memory cells, this passive immunity fades as the injected antibodies are naturally degraded.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-204",
+    "question": "The criteria for proving the causal relationship between a microorganism and a specific disease are known as:",
+    "options": [
+      "Koch postulates",
+      "Jenner postulates",
+      "Pasteur postulates",
+      "Leeuwenhoek postulates"
+    ],
+    "correct_answer": "Koch postulates",
+    "explanation": "Koch's postulates are a set of four scientific criteria established by Robert Koch in nineteen hundred to prove that a specific microbe causes a specific disease. These guidelines laid the foundation for medical microbiology and the germ theory of disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-205",
+    "question": "Nipah henipavirus is which of the following types of virus?",
+    "options": [
+      "Water-borne virus",
+      "Bat-borne virus",
+      "Air-borne virus",
+      "None of the above"
+    ],
+    "correct_answer": "Bat-borne virus",
+    "explanation": "Nipah virus is a zoonotic virus that is primarily transmitted to humans from animals, with fruit bats of the Pteropodidae family serving as the natural reservoir host. It can cause severe respiratory and neurological disease, including fatal encephalitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-206",
+    "question": "Another name for antibody-mediated defenses is:",
+    "options": [
+      "Humonal immunity",
+      "Active immunity",
+      "Humoral immunity",
+      "Herd immunity"
+    ],
+    "correct_answer": "Humoral immunity",
+    "explanation": "Humoral immunity, or antibody-mediated immunity, is the aspect of adaptive host defenses that is mediated by macromolecules such as secreted antibodies and complement proteins in extracellular fluids. This system is coordinated primarily by B-lymphocytes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-207",
+    "question": "A nurse reads the results of a Mantoux test on a three-year-old child. The results indicate an area of induration measuring ten millimeters. The nurse would interpret this result as:",
+    "options": [
+      "Negative",
+      "Positive",
+      "Definitive and requiring a repeat test",
+      "Inconclusive"
+    ],
+    "correct_answer": "Positive",
+    "explanation": "In children under four years of age, or those with other clinical risk factors, an induration of ten millimeters or greater during a tuberculin skin test is interpreted as a positive result. This indicates that the child has been exposed to and sensitized by Mycobacterium tuberculosis, requiring further clinical evaluation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-208",
+    "question": "Which of the following organisms is the most common cause of post-operative ward infections?",
+    "options": [
+      "Escherichia coli",
+      "Aerobacter aerogenes",
+      "Staphylococcus aureus",
+      "Streptococcus pyogenes"
+    ],
+    "correct_answer": "Staphylococcus aureus",
+    "explanation": "Staphylococcus aureus is a transient commensal bacterium that colonizes the skin and nares, making it a major cause of surgical site infections and healthcare-associated infections. Its ability to form biofilms on medical equipment and its resistance to many antibiotics make it a persistent clinical challenge.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-209",
+    "question": "Which of the following plans is used as a comprehensive waste management plan?",
+    "options": [
+      "Plan for reuse",
+      "The integrated plan",
+      "Plan for recycling",
+      "Plan for reducing"
+    ],
+    "correct_answer": "The integrated plan",
+    "explanation": "An integrated waste management plan combines several waste control methods, including reduction, reuse, recycling, composting, and landfilling, to manage municipal waste sustainably. This holistic approach optimizes resources and minimizes environmental impact.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-210",
+    "question": "The following statements are true of immunoglobulin G EXCEPT:",
+    "options": [
+      "It crosses the placenta",
+      "It activates the complement system",
+      "It forms seventy-five percent of the total immunoglobulins",
+      "It combats parasitic infection"
+    ],
+    "correct_answer": "It combats parasitic infection",
+    "explanation": "Immunoglobulin G is the most abundant antibody class in human serum, comprising seventy-five percent of total antibodies, and is capable of crossing the placenta and activating complement. However, host defense against multicellular parasitic infections is primarily mediated by immunoglobulin E, not immunoglobulin G.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-211",
+    "question": "When recommending the use of a non-prescription decongestant to a client with catarrh, the nurse should first assess for a medical history of which condition?",
+    "options": [
+      "Diabetes",
+      "Asthma",
+      "Hypertension",
+      "Arthritis"
+    ],
+    "correct_answer": "Hypertension",
+    "explanation": "Oral and nasal decongestants typically contain sympathomimetic agents like pseudoephedrine or phenylephrine, which stimulate alpha-adrenergic receptors to cause vasoconstriction. Because this systemic vasoconstriction can significantly raise blood pressure, these medications are contraindicated or must be used with extreme caution in patients with hypertension.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-212",
+    "question": "Who discovered the Mycobacterium leprae bacilli, which cause leprosy?",
+    "options": [
+      "Edward Jenner",
+      "Alexandre Yersin",
+      "Friedrich Loeffler",
+      "Gerhard Armauer Hansen"
+    ],
+    "correct_answer": "Gerhard Armauer Hansen",
+    "explanation": "Gerhard Armauer Hansen identified Mycobacterium leprae under the microscope in eighteen seventy-three, proving that leprosy was an infectious disease caused by a bacterium rather than a hereditary curse. This was the first time a chronic human disease was linked to a specific bacterial pathogen.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-213",
+    "question": "Which of the following statements is true regarding the chickenpox virus?",
+    "options": [
+      "It can be grown in standard cell-free culture medium",
+      "It is a single-stranded ribonucleic acid virus",
+      "It does not cross the placental barrier",
+      "It is not found in the crusts or scabs of lesions"
+    ],
+    "correct_answer": "It is not found in the crusts or scabs of lesions",
+    "explanation": "Varicella-Zoster virus is highly infectious in fluid from active vesicle lesions and respiratory droplets, but is absent from dry, crusted lesions. Once all skin lesions have crusted over, the patient is no longer considered contagious.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-214",
+    "question": "Perinatal transmission is said to occur when a pathogen is transmitted from:",
+    "options": [
+      "A non-human vector to a human host",
+      "An infected individual to an uninfected individual through casual contact",
+      "A mother to her infant during pregnancy, labor, or delivery",
+      "A contaminated source in the environment to a host"
+    ],
+    "correct_answer": "A mother to her infant during pregnancy, labor, or delivery",
+    "explanation": "Perinatal transmission refers to the vertical transfer of pathogens from mother to child immediately before, during, or shortly after birth. This can occur across the placenta, through exposure to blood and vaginal secretions during delivery, or through breast milk.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-215",
+    "question": "Why is it highly difficult to recycle post-consumer plastics?",
+    "options": [
+      "They are physically too hard to break down",
+      "They come in too many different shapes and sizes",
+      "They are too adhesive and stick to machinery",
+      "They contain different types of polymer resins that cannot be mixed"
+    ],
+    "correct_answer": "They contain different types of polymer resins that cannot be mixed",
+    "explanation": "Post-consumer plastics are made from diverse poolymer resins, such as polyethylene, polypropylene, and polystyrene, which have different melting points and chemical structures. Because these resins are incompatible, they must be meticulously sorted before recycling to prevent structural defects in the recycled material.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-216",
+    "question": "Which of the following infectious diseases is NOT transmitted mainly through the fecal-oral route?",
+    "options": [
+      "Enteric fever",
+      "Measles",
+      "Cholera",
+      "Hepatitis A"
+    ],
+    "correct_answer": "Measles",
+    "explanation": "Measles is a highly contagious viral disease transmitted through airborne respiratory droplets or direct contact with nasal secretions. In contrast, enteric fever, cholera, and hepatitis A are primarily waterborne or foodborne pathogens transmitted via the fecal-oral route.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-217",
+    "question": "Who is credited with being the first to design a simple microscope and observe living microorganisms?",
+    "options": [
+      "James Paget",
+      "Max Knoll and Ernst Ruska",
+      "Antoni van Leeuwenhoek",
+      "Athanasius Kircher"
+    ],
+    "correct_answer": "Antoni van Leeuwenhoek",
+    "explanation": "Antoni van Leeuwenhoek designed high-quality, high-magnification single-lens microscopes in the late sixteen hundreds. He was the first to observe, describe, and record microscopic unicellular organisms, which he called animalcules, including bacteria and protozoa.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-218",
+    "question": "Which of the following is recognized as a physiological function of mesosomes in bacterial cells?",
+    "options": [
+      "Cellular respiration",
+      "Cell division and chromosome segregation",
+      "Sporulation processes",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Mesosomes are folded invaginations of the bacterial cell membrane. Historically, they have been associated with cellular respiration, cell wall synthesis, DNA replication, cell division, and spore formation, although some modern techniques view them as artifacts of chemical fixation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-219",
+    "question": "Which of the following preservation methods preserves food by slowing down the growth and reproduction of microorganisms and the action of rot-causing enzymes?",
+    "options": [
+      "Cooling",
+      "Freezing",
+      "Curing",
+      "Boiling"
+    ],
+    "correct_answer": "Cooling",
+    "explanation": "Cooling, or refrigeration, lowers the temperature of food to between one and five degrees Celsius. This reduction in temperature slows down the metabolic rates and enzymatic processes of both spoiling bacteria and the food tissue itself, significantly extending shelf life.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-220",
+    "question": "Humans act as the definitive host, and mosquitoes serve as the intermediate host, in which of the following diseases?",
+    "options": [
+      "Malaria",
+      "Lymphatic filariasis",
+      "Japanese encephalitis",
+      "Dengue fever"
+    ],
+    "correct_answer": "Lymphatic filariasis",
+    "explanation": "In lymphatic filariasis, caused by parasitic filarial worms, humans serve as the definitive host because the adult worms mature and undergo sexual reproduction within the human lymphatic system. Mosquitoes serve as intermediate hosts, where the microfilariae develop into infective larvae.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-221",
+    "question": "Which of the following statements is NOT true regarding prokaryotic organisms?",
+    "options": [
+      "The nuclear material is not bounded by a nuclear membrane",
+      "Their chromosomes do not contain histone proteins",
+      "Eighty-S ribosomes are distributed throughout the cytoplasm",
+      "The cell wall contains peptidoglycan as a major structural component"
+    ],
+    "correct_answer": "Eighty-S ribosomes are distributed throughout the cytoplasm",
+    "explanation": "Prokaryotic cells contain seventy-S ribosomes, which are smaller and structurally different from the eighty-S ribosomes found in the cytoplasm of eukaryotic cells. While prokaryotic cell walls are composed of peptidoglycan and lack a true nuclear membrane or histones, their ribosomes remain strictly seventy-S.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-222",
+    "question": "Which of the following microorganisms are classified under the biological Kingdom Prokaryotae?",
+    "options": [
+      "Bacteria",
+      "Protozoa",
+      "Fungi",
+      "All of the above"
+    ],
+    "correct_answer": "Bacteria",
+    "explanation": "Kingdom Prokaryotae consists exclusively of single-celled prokaryotic organisms, which are bacteria and archaea. Protozoa and fungi are eukaryotic organisms that contain membrane-bound nuclei and organelles, placing them in separate eukaryotic kingdoms.",
+    "category": "Microbiology and Infectious Diseases"
+  }
+]

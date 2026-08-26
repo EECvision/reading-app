@@ -1,0 +1,457 @@
+[
+  {
+    "id": "item-906",
+    "question": "A laptop is classified under which of the following computer categories?",
+    "options": [
+      "Microcomputer",
+      "Workstation",
+      "Mainframe computer",
+      "Supercomputer"
+    ],
+    "correct_answer": "Microcomputer",
+    "explanation": "A laptop is a portable personal computer, which is classified as a microcomputer. This category of computers is designed for individual use and contains a single microprocessor as its central processing unit.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-907",
+    "question": "In computer terminology, a change in the underlying technology of a computer system is referred to as a:",
+    "options": [
+      "Development",
+      "Generation",
+      "Advancement",
+      "Growth"
+    ],
+    "correct_answer": "Generation",
+    "explanation": "The term generation in computer science refers to the technological stage or phase of computer development. Each generation is characterized by major technological breakthroughs, such as vacuum tubes, transistors, or integrated circuits.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-908",
+    "question": "Which of the following is an emerging branch in computer science that interprets the means and methods of making computers think like human beings?",
+    "options": [
+      "Block chain",
+      "Virtual reality",
+      "Artificial intelligence",
+      "Cloud computing"
+    ],
+    "correct_answer": "Artificial intelligence",
+    "explanation": "Artificial intelligence is the field of computer science dedicated to creating hardware and software systems capable of performing tasks that typically require human intelligence, such as reasoning, learning, and decision-making.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-909",
+    "question": "Which of the following is considered a temporary output in computer systems?",
+    "options": [
+      "Hard copy",
+      "Soft copy",
+      "Duplicate copy",
+      "On paper"
+    ],
+    "correct_answer": "Soft copy",
+    "explanation": "A soft copy is an electronic or digital display on a screen, representing a temporary output that disappears when the screen is turned off. In contrast, a hard copy is printed on paper and is permanent.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-910",
+    "question": "The fourth generation of computers is characterized by which of the following technological advancements?",
+    "options": [
+      "Vacuum tubes",
+      "Transistors",
+      "Integrated circuits",
+      "Very large scale integration microprocessors"
+    ],
+    "correct_answer": "Very large scale integration microprocessors",
+    "explanation": "The fourth generation of computers utilizes very large scale integration technology to fit thousands of transistors onto a single silicon microprocessor chip. This advancement greatly reduced the cost and physical size of computers.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-911",
+    "question": "What does the computer memory acronym R A M stand for?",
+    "options": [
+      "Random Access Memory",
+      "Rigid Access Memory",
+      "Rapid Access Memory",
+      "Revolving Access Memory"
+    ],
+    "correct_answer": "Random Access Memory",
+    "explanation": "R A M stands for Random Access Memory, which is the fast, volatile primary memory of a computer where active data and program instructions currently in use are temporarily stored.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-912",
+    "question": "Which of the following statements provides the most appropriate definition of a computer?",
+    "options": [
+      "A computer is a machine that can process information",
+      "A computer is an electronic device that can store, retrieve and process both qualitative and quantitative data quickly and accurately",
+      "A computer is an electronic device that can store, retrieve and quickly process only quantitative data",
+      "A computer is a machine that can store, retrieve and process quickly and accurately only qualitative data"
+    ],
+    "correct_answer": "A computer is an electronic device that can store, retrieve and process both qualitative and quantitative data quickly and accurately",
+    "explanation": "A computer is best defined as an electronic device capable of accepting, storing, retrieving, and processing both qualitative and quantitative data with high speed and precision. It is a versatile tool used in virtually every professional field.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-913",
+    "question": "A standard computer keyboard has at least how many keys?",
+    "options": [
+      "91 keys",
+      "101 keys",
+      "111 keys",
+      "121 keys"
+    ],
+    "correct_answer": "101 keys",
+    "explanation": "A standard full-sized computer keyboard has at least one hundred and one keys, which include alphanumeric keys, function keys, navigation keys, and a numeric keypad. This standardized design ensures consistent typing layouts globally.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-914",
+    "question": "Which generation of computer started with using vacuum tubes as their basic hardware components?",
+    "options": [
+      "First generation",
+      "Second generation",
+      "Third generation",
+      "Fourth generation"
+    ],
+    "correct_answer": "First generation",
+    "explanation": "The first generation of computers utilized vacuum tubes as their primary circuitry components. These early machines generated immense heat, consumed vast amounts of electricity, and required large physical rooms for installation.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-915",
+    "question": "Which of the following components is considered the brain of the computer?",
+    "options": [
+      "Central Processing Unit",
+      "Primary memory",
+      "Arithmetic and logic unit",
+      "Control unit"
+    ],
+    "correct_answer": "Central Processing Unit",
+    "explanation": "The Central Processing Unit is commonly called the brain of the computer because it is the primary hardware component that executes instructions, performs mathematical calculations, and coordinates all other system hardware.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-916",
+    "question": "Which of the following is not a standard physical classification of a computer?",
+    "options": [
+      "Personal computer",
+      "Workstation",
+      "Logical computer",
+      "Supercomputer"
+    ],
+    "correct_answer": "Logical computer",
+    "explanation": "Standard physical computer classifications include personal computers, workstations, mainframes, and supercomputers. A logical computer is not a recognized physical hardware classification.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-917",
+    "question": "A printer that prints one line at a time and has a predefined set of characters is called a:",
+    "options": [
+      "Laser printer",
+      "Drum printer",
+      "Inkjet printer",
+      "Impact printer"
+    ],
+    "correct_answer": "Drum printer",
+    "explanation": "A drum printer is a classic type of line printer that contains a solid cylindrical drum with embossed characters. It rotates to print an entire line of text at a time, using a rapid hammer mechanism.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-918",
+    "question": "Which of the following top-level domain names is standardly used for-profit businesses?",
+    "options": [
+      "dot net",
+      "dot edu",
+      "dot com",
+      "dot org"
+    ],
+    "correct_answer": "dot com",
+    "explanation": "The dot com top-level domain stands for commercial and is standardly used by for-profit businesses and commercial entities on the internet. Dot org is typically for non-profit organizations, and dot edu is restricted to educational institutions.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-919",
+    "question": "Many telemedicine programs have been found to be effective, but which of the following is not typically categorized as one?",
+    "options": [
+      "Distance monitoring of problem pregnancies",
+      "Telehome care",
+      "Telemedicine in prisons",
+      "Teletriage programs run by telenurses"
+    ],
+    "correct_answer": "Teletriage programs run by telenurses",
+    "explanation": "While telemedicine encompasses remote clinical diagnostics, teletriage programs run by telenurses are often classified under telenursing or telephone triage rather than formal telemedicine programs. Telenursing triage focuses on clinical guidance and routing rather than remote physician-led diagnosis.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-920",
+    "question": "What is the common term used for a web page address?",
+    "options": [
+      "Directory",
+      "Protocol",
+      "Uniform Resource Locator",
+      "Domain"
+    ],
+    "correct_answer": "Uniform Resource Locator",
+    "explanation": "A Uniform Resource Locator is the complete web address used to find and load a specific web page on the internet. It specifies both the file path and the transfer protocol used.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-921",
+    "question": "The statement 'the study, design, development, implementation, support or management of computer-based information systems, particularly software applications and computer hardware' refers to:",
+    "options": [
+      "Information Technology",
+      "Information and Collaborative Technology",
+      "Information and Data Technology",
+      "Artificial Intelligence"
+    ],
+    "correct_answer": "Information Technology",
+    "explanation": "This statement is the standard definition of Information Technology, which covers the use and management of computer systems, software, and networks to process and distribute data.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-922",
+    "question": "Which of the following software programs is not classified as an internet search engine?",
+    "options": [
+      "Google",
+      "Chrome",
+      "Yahoo",
+      "Bing"
+    ],
+    "correct_answer": "Chrome",
+    "explanation": "Google Chrome is a web browser used to access the internet, whereas Google, Yahoo, and Bing are search engines used to search for information on the World Wide Web. This is an important distinction in web technology.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-923",
+    "question": "Which of the following software packages allows individuals to use personal computers for storing and retrieving their personal information?",
+    "options": [
+      "Personal assistance package",
+      "Graphics package",
+      "Spreadsheet package",
+      "Animation package"
+    ],
+    "correct_answer": "Personal assistance package",
+    "explanation": "A personal assistance package, such as a personal information manager, is designed to help users store and retrieve personal details, schedules, contacts, and daily notes on their personal devices.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-924",
+    "question": "Which of the following features in word processing software enables us to send the same letter to different persons in Microsoft Word?",
+    "options": [
+      "Mail join",
+      "Mail copy",
+      "Mail insert",
+      "Mail merge"
+    ],
+    "correct_answer": "Mail merge",
+    "explanation": "Mail merge is a powerful word processing feature that allows users to create a single template document and merge it with a data source of names and addresses to send personalized letters to multiple recipients.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-925",
+    "question": "Which of the following refers to the physical, tangible devices of a computer system?",
+    "options": [
+      "Hardware",
+      "Software",
+      "System Software",
+      "Package"
+    ],
+    "correct_answer": "Hardware",
+    "explanation": "Computer hardware consists of the physical, tangible devices of a computer system, such as the monitor, keyboard, motherboard, and central processing unit, which can be physically seen and touched.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-926",
+    "question": "The binary equivalent of the decimal number thirty-five is:",
+    "options": [
+      "100011",
+      "110001",
+      "110101",
+      "101011"
+    ],
+    "correct_answer": "100011",
+    "explanation": "To convert decimal thirty-five to binary, we divide by two repeatedly, yielding a binary sequence of one zero zero zero one one, which represents thirty-two plus two plus one in base two math.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-927",
+    "question": "Which of the following languages does a computer natively understand?",
+    "options": [
+      "C Language",
+      "Assembly Language",
+      "Binary Language",
+      "BASIC Language"
+    ],
+    "correct_answer": "Binary Language",
+    "explanation": "Computers operate on electronic circuits that can only recognize two states, on or off, which are represented as binary digits zero and one. Thus, computers natively understand only binary machine language.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-928",
+    "question": "Which of the following is recognized as the very first web browser in computing history?",
+    "options": [
+      "Internet Explorer",
+      "Netscape Navigator",
+      "World Wide Web",
+      "Mozilla Firefox"
+    ],
+    "correct_answer": "World Wide Web",
+    "explanation": "The very first web browser was created by Tim Berners-Lee in nineteen ninety and was named WorldWideWeb. It was later renamed Nexus to avoid confusion with the information space itself.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-929",
+    "question": "The main processor of a computer that directs and controls the operations of connected peripheral devices is called the:",
+    "options": [
+      "Common Power Unit",
+      "Common Processing Unit",
+      "Central Power Unit",
+      "Central Processing Unit"
+    ],
+    "correct_answer": "Central Processing Unit",
+    "explanation": "The Central Processing Unit is the main processor of a computer that directs and controls the operations of all connected peripheral devices while executing system programs.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-930",
+    "question": "A computer virus is fundamentally classified under which category?",
+    "options": [
+      "Hardware",
+      "Bacteria",
+      "Software",
+      "None of these"
+    ],
+    "correct_answer": "Software",
+    "explanation": "A computer virus is a malicious software program designed to replicate itself and spread to other files or devices, often causing data damage or system disruptions.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-931",
+    "question": "Remote medical consultations and clinical examinations were first attempted during which historical period?",
+    "options": [
+      "After World War II",
+      "In nineteen ninety-seven",
+      "As soon as the telephone was invented",
+      "In nineteen seventy-seven"
+    ],
+    "correct_answer": "As soon as the telephone was invented",
+    "explanation": "Remote medical consults and clinical advice were first attempted using telephone lines almost immediately after the invention of the telephone in the late nineteenth century.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-932",
+    "question": "Which of the following equations represents a mathematically correct base conversion?",
+    "options": [
+      "seventeen base ten equals seventeen base sixteen",
+      "seventeen base ten equals seventeen base eight",
+      "seventeen base ten equals ten thousand one hundred and eleven base two",
+      "seventeen base ten equals ten thousand and one base two"
+    ],
+    "correct_answer": "seventeen base ten equals ten thousand and one base two",
+    "explanation": "The decimal number seventeen is represented in binary as one zero zero zero one, which corresponds to sixteen plus one. In spoken text, this represents seventeen base ten equals ten thousand and one base two.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-933",
+    "question": "The internet acronym D N S stands for which of the following?",
+    "options": [
+      "Domain Name System",
+      "Defense Nuclear System",
+      "Downloadable New Software",
+      "Dependent Name Server"
+    ],
+    "correct_answer": "Domain Name System",
+    "explanation": "D N S stands for Domain Name System, which acts as the phonebook of the internet by translating human-readable domain names into numerical internet protocol addresses.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-934",
+    "question": "Which of the following statements is true regarding a supercomputer?",
+    "options": [
+      "It is used for scientific research",
+      "It has very high computation speed",
+      "It is very expensive",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "Supercomputers are exceptionally fast, high-performance systems utilized primarily for complex scientific research. Because of their massive hardware scale and specialized cooling, they are extremely expensive to manufacture and operate.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-935",
+    "question": "The octal number system consists of exactly which set of symbols?",
+    "options": [
+      "Zero to seven",
+      "Zero to nine",
+      "Zero to nine and letters A to F",
+      "None of the above"
+    ],
+    "correct_answer": "Zero to seven",
+    "explanation": "The octal number system is a base-eight positional numeral system that utilizes exactly eight symbols, which are the digits from zero to seven.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-936",
+    "question": "Which of the following personal computing devices falls under the category of personal computers?",
+    "options": [
+      "Laptop",
+      "Macbook",
+      "College computer",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "Laptops, Macbooks, and standard institutional desktop computers are all microcomputers designed structurally for individual personal use, placing them under the broad category of personal computers.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-937",
+    "question": "Which of the following represents the correct educational full-form abbreviation of the word COMPUTER?",
+    "options": [
+      "Commonly Occupied Machines Used in Technical and Educational Research",
+      "Commonly Operated Machines Used in Technical and Environmental Research",
+      "Commonly Oriented Machines Used in Technical and Educational Research",
+      "Commonly Operated Machines Used in Technical and Educational Research"
+    ],
+    "correct_answer": "Commonly Operated Machines Used in Technical and Educational Research",
+    "explanation": "While computer was originally a job description for people performing calculations, the popular educational backronym is Commonly Operated Machines Used in Technical and Educational Research.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-938",
+    "question": "The digital storage technology abbreviation C D R O M stands for:",
+    "options": [
+      "Computer Disk Read Only Memory",
+      "Compact Disk Read Over Memory",
+      "Compact Disk Read Only Memory",
+      "Computer Disk Read Over Memory"
+    ],
+    "correct_answer": "Compact Disk Read Only Memory",
+    "explanation": "C D R O M stands for Compact Disc Read-Only Memory, which is a pre-pressed optical compact disc containing digital data that can be read by a computer but cannot be written to or erased.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-940",
+    "question": "Who is widely recognized in computing history as the father of computers?",
+    "options": [
+      "James Gosling",
+      "Charles Babbage",
+      "Dennis Ritchie",
+      "Bjarne Stroustrup"
+    ],
+    "correct_answer": "Charles Babbage",
+    "explanation": "Charles Babbage is credited as the father of computers for designing the Analytical Engine in the nineteenth century, which was the first conceptual model of a general-purpose, programmable computer.",
+    "category": "Information Communication Technology"
+  },
+  {
+    "id": "item-941",
+    "question": "Which of the following telemedicine methods involves sending digital radiological medical images over telecommunications lines?",
+    "options": [
+      "Teleradiology",
+      "Telekinetics",
+      "Both A and B",
+      "None of the above"
+    ],
+    "correct_answer": "Teleradiology",
+    "explanation": "Teleradiology is the specialized branch of telemedicine that involves transmitting digital radiographic images across a network for remote interpretation and diagnostic reporting.",
+    "category": "Information Communication Technology"
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-737",
+    "question": "Active immunity may be gained by which of the following?",
+    "options": [
+      "Natural infection",
+      "Vaccines",
+      "Toxoids",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "Active immunity occurs when the host's own immune system is stimulated to produce antibodies and memory cells in response to an antigen. This can be achieved naturally through an active infection, or artificially through administering vaccines or inactivated toxins known as toxoids.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-738",
+    "question": "Focused antenatal care demands that a pregnant woman should take which minimum number of visits?",
+    "options": [
+      "Visit for four times",
+      "Visit every four weeks",
+      "Visit every four months",
+      "Visit every four days"
+    ],
+    "correct_answer": "Visit for four times",
+    "explanation": "The World Health Organization's focused antenatal care model recommends a minimum of four goal-directed visits for women with uncomplicated pregnancies. This approach emphasizes individualized, high-quality care rather than a high frequency of routine visits.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-739",
+    "question": "The historic global declaration of 'Health for all by the year two thousand' was formally declared at which conference?",
+    "options": [
+      "Ata Alma",
+      "Alma Alma",
+      "Alma ata",
+      "Ata Ata"
+    ],
+    "correct_answer": "Alma ata",
+    "explanation": "The landmark International Conference on Primary Health Care was held in Alma Ata, USSR, in nineteen seventy-eight. This conference adopted the Declaration of Alma Ata, which identified primary health care as the key to achieving health for all worldwide.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-740",
+    "question": "Which of the following is NOT considered an appropriate source of health information in a country affected by a protracted crisis?",
+    "options": [
+      "Civil registration system",
+      "Surveillance system",
+      "Academic journals",
+      "Household surveys"
+    ],
+    "correct_answer": "Academic journals",
+    "explanation": "During a protracted crisis, academic journals are not appropriate sources of active, real-time health data because they suffer from significant publication delays. Public health responders rely instead on surveillance systems, targeted household surveys, and even compromised civil registration data to make immediate decisions.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-741",
+    "question": "Toxic shock syndrome is an unforeseen, rare complication associated with contamination of which of the following vaccines?",
+    "options": [
+      "Mumps",
+      "Measles",
+      "Salk",
+      "Tetanus"
+    ],
+    "correct_answer": "Measles",
+    "explanation": "If a reconstituted measles vaccine is left at room temperature for several hours, it can support the rapid growth of contaminating Staphylococcus aureus bacteria. This contamination can lead to toxic shock syndrome in children upon administration, making strict cold chain adherence vital.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-742",
+    "question": "The following are recognized objectives of primary health care operations in Nigeria EXCEPT:",
+    "options": [
+      "Development of a national family health program",
+      "Reducing exclusion and social disparities in health",
+      "Improved collection and monitoring of health data",
+      "Accelerated health care personnel development"
+    ],
+    "correct_answer": "Reducing exclusion and social disparities in health",
+    "explanation": "While reducing social disparities in health is a major global primary health care goal, it is not explicitly listed as a specific operational target in Nigeria's local primary health care development policies. Nigeria's operational policies focus on family health programs, personnel training, and strengthening health management information systems.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-743",
+    "question": "The first confirmed death due to coronavirus disease in India was officially reported in which district of Kerala?",
+    "options": [
+      "Kasaragod",
+      "Ernakulam",
+      "Trivandrum",
+      "Malappuram"
+    ],
+    "correct_answer": "Ernakulam",
+    "explanation": "Kerala recorded its first positive case of coronavirus disease in January twenty twenty, and its first death was reported in Ernakulam district on March twenty-eight of the same year. This highlight the importance of early localized epidemiological containment efforts.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-744",
+    "question": "Which of the following demographic parameters is defined as the total number of births in a year per one thousand individuals in a population?",
+    "options": [
+      "Fertility rate",
+      "Mortality rate",
+      "Fatality rate",
+      "Birth rate"
+    ],
+    "correct_answer": "Birth rate",
+    "explanation": "The birth rate, or crude birth rate, calculates the annual number of live births per one thousand people in a given population. This is a basic demographic indicator of population growth and reproductive trends.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-745",
+    "question": "In a laboratory or clinical setting, anhydrous materials such as oils and powders are best sterilized by which method?",
+    "options": [
+      "Autoclaving",
+      "Microwaving",
+      "Hydroclaving",
+      "Hot air oven"
+    ],
+    "correct_answer": "Hot air oven",
+    "explanation": "Dry heat sterilization using a hot air oven is the method of choice for sterilizing anhydrous materials like oils, powders, and petroleum jelly, which steam cannot penetrate. This process relies on high temperatures, typically one hundred and sixty degrees Celsius for two hours, to destroy microbial life.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-746",
+    "question": "If an outbreak of cholera occurs in your community, which of the following measure clusters would be most appropriate to prevent the spread of the disease?",
+    "options": [
+      "Social services, health care, and environmental sanitation",
+      "Food handling, isolation, and sanitation",
+      "Quarantine, oral fluids, and vaccine",
+      "Isolation, immunization, and proper disposal of feces"
+    ],
+    "correct_answer": "Isolation, immunization, and proper disposal of feces",
+    "explanation": "Cholera is a highly contagious waterborne disease transmitted through the fecal-oral route. Controlling an outbreak requires a combination of isolating active cases, vaccinating vulnerable populations, and ensuring the sanitary and proper disposal of human feces to protect the water supply.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-747",
+    "question": "Which of the following groups of infectious diseases is prevented by the administration of the triple vaccine to an individual?",
+    "options": [
+      "Diphtheria, tetanus, and pertussis",
+      "Tetanus, pertussis, and polio",
+      "Polio, diphtheria, and tetanus",
+      "Typhoid, diphtheria, and tetanus"
+    ],
+    "correct_answer": "Diphtheria, tetanus, and pertussis",
+    "explanation": "The triple vaccine, commonly known as DPT, provides active protective immunity against diphtheria, tetanus, and pertussis, which is also called whooping cough. This combination vaccine has dramatically reduced pediatric mortality from these three severe infections.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-748",
+    "question": "Which of the following is considered a classic example of a death rate in public health statistics?",
+    "options": [
+      "Adjusted life death rate",
+      "Specific death rate",
+      "Crude death rate",
+      "Mortality rate"
+    ],
+    "correct_answer": "Crude death rate",
+    "explanation": "The crude death rate measures the total number of deaths in a specified population over a given year, calculated per one thousand mid-year residents. It represents the most basic, unadjusted indicator of mortality in a community.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-749",
+    "question": "When organizing a dedicated immunization refrigerator, which of the following practices is NOT correct?",
+    "options": [
+      "Placing Bacillus Calmette-Guerin, Human Papillomavirus, and Tetanus Toxoid vaccines on the middle shelf",
+      "Placing measles and polio vaccines on the top shelf",
+      "Storing some other vaccines in the refrigerator door",
+      "Leaving about two centimeters of space between each tray to allow cold air to circulate"
+    ],
+    "correct_answer": "Storing some other vaccines in the refrigerator door",
+    "explanation": "Vaccines must never be stored in the refrigerator door because opening the door exposes them to frequent temperature fluctuations, compromising their potency. Measles and polio vaccines are stored on the cold top shelf, while others are arranged in the middle, leaving adequate space for air circulation.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-750",
+    "question": "The number of deaths from a specified cause per one hundred thousand person-years at risk is defined as which of the following rates?",
+    "options": [
+      "Cause specific death rate",
+      "Case specific death rate",
+      "Specific death rate",
+      "Case fatality rate"
+    ],
+    "correct_answer": "Cause specific death rate",
+    "explanation": "The cause-specific death rate measures the rate of mortality due to a single, defined cause in a population over a given time frame. It is standardly expressed per one hundred thousand individuals to allow for precise epidemiological comparisons.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-751",
+    "question": "The clinical presence of multiple distinct illnesses or medical conditions simultaneously in a single patient is referred to as:",
+    "options": [
+      "Co-morbidity",
+      "Co-existence",
+      "Compromise",
+      "Co-morbitality"
+    ],
+    "correct_answer": "Co-morbidity",
+    "explanation": "Co-morbidity refers to the coexistence of two or more chronic diseases or conditions in a single individual. This state increases clinical complexity, as treatments for one condition can adversely affect the management of another.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-752",
+    "question": "In which of the following scenarios should a public health nurse anticipate that a sexually assaulted client is at the greatest risk for future adjustment problems, requiring additional counseling?",
+    "options": [
+      "When her parents show suspicion about her part in the rape",
+      "When she becomes upset when talking about the rape",
+      "When her life becomes focused on helping other rape victims like herself",
+      "When she seeks support from formally ignored relatives and friends"
+    ],
+    "correct_answer": "When her parents show suspicion about her part in the rape",
+    "explanation": "Lack of family support and parental blame are major risk factors for poor psychological adjustment and post-traumatic stress following a sexual assault. Providing supportive, non-judgmental counseling and helping the client establish a safe support network are essential nursing interventions.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-753",
+    "question": "Which of the following biological indicators is the industry standard used to test the sterilization efficiency of an autoclave?",
+    "options": [
+      "Bacillus subtilis",
+      "Clostridium Tetanise",
+      "Bacillus stearothermophilus",
+      "Bacillus pumilus"
+    ],
+    "correct_answer": "Bacillus stearothermophilus",
+    "explanation": "Bacillus stearothermophilus endospores are highly heat-resistant, making them the ideal biological indicator to validate steam sterilization in an autoclave. If the autoclave cycle successfully kills these spores, it confirms that all other vegetative pathogens and spores have been destroyed.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-754",
+    "question": "Which of the following clinical observations is recognized as a hallmark characteristic of the rash associated with chickenpox?",
+    "options": [
+      "Koplik's spot",
+      "Pleomorphism",
+      "Triangular pattern",
+      "None of these"
+    ],
+    "correct_answer": "Pleomorphism",
+    "explanation": "Pleomorphism is the defining characteristic of a chickenpox rash, where lesions in various stages of development\u2014including macules, papules, vesicles, and crusts\u2014coexist simultaneously on the same area of skin. This occurs because the varicella rash develops in successive crops over several days.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-755",
+    "question": "What is the recommended dose of the Bacillus Calmette-Guerin vaccine administered to a newborn infant?",
+    "options": [
+      "Zero point zero five milliliter",
+      "Zero point five milliliter",
+      "Zero point one milliliter",
+      "Five point zero milliliters"
+    ],
+    "correct_answer": "Zero point zero five milliliter",
+    "explanation": "The standard dose of the Bacillus Calmette-Guerin vaccine for neonates is zero point zero five milliliter administered intradermally at birth. This lower dose minimizes the risk of local adverse reactions, such as severe ulceration or lymphadenitis, in very young infants.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-756",
+    "question": "The essential elements of primary health care are focused on basic care. Which of the following is NOT a core component of primary health care?",
+    "options": [
+      "Family planning",
+      "Environmental sanitation",
+      "Provision of portable water",
+      "Treatment of complicated diseases"
+    ],
+    "correct_answer": "Treatment of complicated diseases",
+    "explanation": "Primary health care focuses on health promotion, disease prevention, and the treatment of common illnesses and injuries. Highly complicated, advanced, or specialized medical conditions fall outside this scope and must be referred to secondary or tertiary medical facilities.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-757",
+    "question": "Which of the following represents the most highly recommended, World Health Organization approved method of sewage disposal in a rural community?",
+    "options": [
+      "Pit latrine",
+      "Bucket latrine",
+      "Water carriage system",
+      "Ventilated Improved Pit latrine"
+    ],
+    "correct_answer": "Ventilated Improved Pit latrine",
+    "explanation": "The Ventilated Improved Pit, or VIP, latrine is highly recommended for rural and low-resource communities because it features a continuous ventilation pipe that eliminates offensive odors and traps flies, preventing them from spreading disease-causing pathogens.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-758",
+    "question": "The World Health Organization officially declared the novel coronavirus outbreak as a Public Health Emergency of International Concern on which date?",
+    "options": [
+      "January thirty, twenty twenty",
+      "January thirteen, twenty twenty",
+      "January twenty-three, twenty twenty",
+      "January twenty-seven, twenty twenty"
+    ],
+    "correct_answer": "January thirty, twenty twenty",
+    "explanation": "On January thirty, twenty twenty, the World Health Organization declared the novel coronavirus outbreak a Public Health Emergency of International Concern. This declaration alerted governments worldwide to mobilize resources and coordinate clinical containment measures.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-759",
+    "question": "The following are typically manufactured as freeze-dried, or lyophilized, vaccines EXCEPT:",
+    "options": [
+      "Yellow fever",
+      "Bacillus Calmette-Guerin",
+      "Diphtheria, Pertussis, and Tetanus",
+      "Measles"
+    ],
+    "correct_answer": "Diphtheria, Pertussis, and Tetanus",
+    "explanation": "The DPT vaccine is manufactured as a liquid suspension and should never be frozen, as freezing damages its potency. In contrast, yellow fever, BCG, and measles vaccines are typically freeze-dried and must be reconstituted with cold diluent immediately before administration.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-760",
+    "question": "A school health nurse assesses a pre-school child suspected of having attention-deficit disorder. Which of the following behaviors is most characteristic of this condition?",
+    "options": [
+      "Difficulty in maintaining eye-to-eye contact",
+      "Failure to finish the test he started",
+      "Repetitive motor mannerism",
+      "Rigid adherence to routine activities"
+    ],
+    "correct_answer": "Failure to finish the test he started",
+    "explanation": "Children with attention-deficit disorder characteristically exhibit inattention, distractibility, and impulsivity, often failing to finish tasks or tests they have started. In contrast, rigid routines and repetitive motor mannerisms are more characteristic of autism spectrum disorders.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-761",
+    "question": "According to standard childhood survival programs, the first protective dose of Vitamin A should be administered to an infant at which age?",
+    "options": [
+      "Eighteen months",
+      "Two years",
+      "Seven months",
+      "Nine months"
+    ],
+    "correct_answer": "Nine months",
+    "explanation": "In many developing nations, the first dose of Vitamin A is administered to infants at nine months of age, alongside the measles vaccine. This timing establishes early protection against Vitamin A deficiency, which can exacerbate measles-related ocular complications.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-762",
+    "question": "Which of the following demographic parameters calculates the total annual number of births per one thousand women of reproductive age in a population?",
+    "options": [
+      "Fertility rate",
+      "Mortality rate",
+      "Fatality rate",
+      "Birth rate"
+    ],
+    "correct_answer": "Fertility rate",
+    "explanation": "The general fertility rate is calculated by dividing the number of live births in a year by the number of women of childbearing age, conventionally defined as fifteen to forty-five years, and multiplying by one thousand. This is a more precise measure of reproductive trends than the crude birth rate.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-763",
+    "question": "School health services are designed to protect student health. Which of the following is NOT considered a direct clinical component of these specialized services?",
+    "options": [
+      "School immunization campaigns",
+      "Student mental health services",
+      "General environmental sanitation",
+      "Basic dental health screenings"
+    ],
+    "correct_answer": "General environmental sanitation",
+    "explanation": "School health services primarily focus on child-specific clinical interventions, such as immunizations, dental check-ups, and mental health screenings. General environmental sanitation is a broad public health and municipal infrastructure task rather than a direct clinical school health service.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-764",
+    "question": "The Bacillus Calmette-Guerin vaccine provides active protection against tuberculosis. Which of the following describes its formulation?",
+    "options": [
+      "Live, attenuated bacteria",
+      "Weakened virus",
+      "Killed bacteria",
+      "Weakened toxin"
+    ],
+    "correct_answer": "Live, attenuated bacteria",
+    "explanation": "The Bacillus Calmette-Guerin vaccine is composed of live, attenuated Mycobacterium bovis bacteria. This strain has been weakened in a laboratory to stimulate a protective cellular immune response in the host without causing active disease.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-765",
+    "question": "In planning primary health care support for refugee populations, providing increased funding for non-governmental organization outreach programs is an example of:",
+    "options": [
+      "A strategy",
+      "A benchmark",
+      "An official policy",
+      "A contingency plan"
+    ],
+    "correct_answer": "A strategy",
+    "explanation": "A strategy is an actionable plan designed to achieve a specific objective under resource constraints, such as funding targeted NGO outreach to bridge healthcare gaps. Benchmarks are measurement standards, policies are guiding frameworks, and contingency plans are backup options.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-766",
+    "question": "When communicating with clients in primary health care settings, which of the following clusters represents the correct guiding rules that should be followed?",
+    "options": [
+      "Shouting, organize, listen, and communicating",
+      "Listener, plan, succinct, and ideals",
+      "Awareness, organize, respectful, and plan",
+      "Bully, plan, organize, and feedback"
+    ],
+    "correct_answer": "Awareness, organize, respectful, and plan",
+    "explanation": "Effective communication in community nursing requires self-awareness, structured organization, a respectful attitude, and a planned approach. These principles ensure that health messages are clear, culturally appropriate, and successfully received by clients.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-767",
+    "question": "Which of the following demographic parameters calculates the number of live births occurring in a given geographical area during a year, per one thousand mid-year residents of that area?",
+    "options": [
+      "Crude death rate",
+      "Crude birth rate",
+      "Crude fatality rate",
+      "Prevalence rate"
+    ],
+    "correct_answer": "Crude birth rate",
+    "explanation": "The crude birth rate measures the annual frequency of live births per one thousand people in a specified geographical area. It provides a baseline assessment of fertility trends in a general population.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-768",
+    "question": "If a nurse is traveling to Gambia for a clinical assignment, which of the following vaccinations is strictly required under international travel health regulations?",
+    "options": [
+      "Yellow fever and cholera vaccine",
+      "Yellow fever only",
+      "Tetanus Toxoid and measles vaccine",
+      "DPT and Sabin vaccine"
+    ],
+    "correct_answer": "Yellow fever only",
+    "explanation": "International Health Regulations require a valid yellow fever vaccination certificate for travelers entering Gambia and other endemic tropical regions. Cholera and measles vaccinations are recommended but are not legally mandated for entry.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-769",
+    "question": "In epidemiological statistics, the parameter known as the neonatal mortality rate is defined as which of the following?",
+    "options": [
+      "The number of deaths of children under forty-eight days of age per one thousand live births",
+      "The number of deaths of children under twenty-eight days of age per one thousand live births",
+      "The number of deaths of children under thirty-eight days of age per one thousand live births",
+      "The number of deaths of children under forty-six days of age per one thousand live births"
+    ],
+    "correct_answer": "The number of deaths of children under twenty-eight days of age per one thousand live births",
+    "explanation": "The neonatal mortality rate measures the number of infant deaths occurring within the first twenty-eight days of life, calculated per one thousand live births. This rate is a sensitive indicator of the quality of prenatal, obstetric, and immediate newborn care.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-770",
+    "question": "In public health epidemiology, the contagiousness or communicability of an infectious disease is best evaluated using which metric?",
+    "options": [
+      "Secondary attack rate",
+      "Generation time",
+      "Serial interval",
+      "Incubation period"
+    ],
+    "correct_answer": "Secondary attack rate",
+    "explanation": "The secondary attack rate measures the proportion of exposed, susceptible close contacts who contract an infectious disease from an index case. This metric is a key indicator of a pathogen's contagiousness and transmissibility within a household or community.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-771",
+    "question": "The municipal solid waste management practice that involves the collection, sorting, and refabrication of discarded waste materials into new useful products is known as:",
+    "options": [
+      "Waste segregation",
+      "Controlled tipping",
+      "Controlled dumping",
+      "Recycling"
+    ],
+    "correct_answer": "Recycling",
+    "explanation": "Recycling is the process of collecting, sorting, and processing waste materials to recover raw materials, which are then refabricated into new products. This practice conserves resources, reduces landfill waste, and minimizes environmental pollution.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-772",
+    "question": "The standard levels of healthcare delivery include all of the following structural tiers EXCEPT:",
+    "options": [
+      "Tertiary health care",
+      "Secondary health care",
+      "Comprehensive health care",
+      "Primary health care"
+    ],
+    "correct_answer": "Comprehensive health care",
+    "explanation": "Healthcare systems are structurally organized into primary (first-contact clinics), secondary (district hospitals), and tertiary (specialized teaching hospitals) levels of care. 'Comprehensive health care' is an approach or philosophy of holistic patient care rather than a structural delivery tier.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-773",
+    "question": "Under public health legislation, which of the following is NOT classified as a legally notifiable disease?",
+    "options": [
+      "Malaria",
+      "Cholera",
+      "Severe physical wound injury",
+      "Dysentery"
+    ],
+    "correct_answer": "Severe physical wound injury",
+    "explanation": "Infectious diseases of significant public health importance\u2014such as cholera, malaria, and bacillary dysentery\u2014are legally notifiable to facilitate rapid epidemiological tracking. Physical wound injuries, while clinically significant, are not infectious and are not notifiable.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-774",
+    "question": "Epidemiological studies indicate that the majority of hospital-acquired, or nosocomial, surgical wound infections are caused by pathogens originating from:",
+    "options": [
+      "The attending surgeon",
+      "Airborne dust in the operating theater",
+      "The patient's own endogenous microflora",
+      "Unsterile surgical instruments"
+    ],
+    "correct_answer": "The patient's own endogenous microflora",
+    "explanation": "The vast majority of surgical site infections are caused by the patient's own endogenous skin flora, such as Staphylococcus aureus, colonizing the surgical incision. While exogenous transmission from surgeons or instruments can occur, strict pre-operative skin antisepsis is the primary defense against endogenous contamination.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-775",
+    "question": "Which of the following insulated cold chain equipment is designed to transport vaccines safely during community outreach sessions?",
+    "options": [
+      "Ice pack",
+      "Freezer",
+      "Vaccine carrier",
+      "Cold box"
+    ],
+    "correct_answer": "Vaccine carrier",
+    "explanation": "Vaccine carriers are portable, insulated containers cooled with frozen ice packs, designed to keep vaccines at safe temperatures (between two and eight degrees Celsius) during day-trips for localized community outreach campaigns.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-776",
+    "question": "Which of the following epidemiological parameters measures the total number of active (both new and existing) cases of a disease observed in a population over a given period?",
+    "options": [
+      "Incidence rate",
+      "Prevalence rate",
+      "Case fatality rate",
+      "Case specific mortality rate"
+    ],
+    "correct_answer": "Prevalence rate",
+    "explanation": "The prevalence rate measures the proportion of individuals in a population who have a specific disease or condition at a given time, encompassing both newly diagnosed and pre-existing cases. This provides a comprehensive assessment of the total disease burden on a community.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-777",
+    "question": "Active community participation is a cornerstone of primary health care. From a development perspective, this principle is vital because it:",
+    "options": [
+      "Creates a sense of ownership of health development programs within the community",
+      "Acts as an effective method of social mobilization",
+      "Makes the daily work of healthcare staff significantly easier",
+      "Increases basic health awareness among individual community members"
+    ],
+    "correct_answer": "Creates a sense of ownership of health development programs within the community",
+    "explanation": "Engaging community members in the planning, execution, and evaluation of health services fosters a strong sense of local responsibility and ownership. This grassroots buy-in is essential for the long-term success of community health programs.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-778",
+    "question": "In the organization of primary health care in Nigeria, which level of government is primarily responsible for national policy formulation, research promotion, and system evaluation?",
+    "options": [
+      "Ward level Government",
+      "Local Government level",
+      "State Government level",
+      "Federal Government level"
+    ],
+    "correct_answer": "Federal Government level",
+    "explanation": "In Nigeria's health system, the Federal Government, through the Federal Ministry of Health and its parastatals, holds primary responsibility for formulating national health policies, funding medical research, and conducting nationwide program evaluations. Local governments focus on direct service delivery at the primary care level.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-779",
+    "question": "The transmission of pathogens is heavily influenced by water availability. Which of the following is NOT classified as a water-washed, or water-shortage, infection?",
+    "options": [
+      "Diarrhea",
+      "Scabies",
+      "Cholera",
+      "Dysentery"
+    ],
+    "correct_answer": "Scabies",
+    "explanation": "Water-washed, or water-shortage, diseases are those whose transmission is promoted by a lack of water for personal hygiene, such as scabies, trachoma, and leprosy. In contrast, diarrhea, cholera, and dysentery are classic waterborne diseases caused by the ingestion of water contaminated with fecal pathogens.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-781",
+    "question": "Which of the following is NOT recognized as a primary clinical responsibility of a community health nurse?",
+    "options": [
+      "Participating in localized preventative health programs",
+      "Participating in primitive health programs",
+      "Participating in community-based rehabilitative services",
+      "Participating in the pre-operative care of patients undergoing major surgery"
+    ],
+    "correct_answer": "Participating in the pre-operative care of patients undergoing major surgery",
+    "explanation": "Pre-operative care for major surgical patients is the responsibility of hospital-based perioperative nursing staff. Community health nurses focus instead on primary care interventions, including preventive programs, basic health promotion, and localized home-based rehabilitation.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-782",
+    "question": "Before administering a live-attenuated vaccine, the clinical injection site should not be cleaned with surgical spirit or alcohol because:",
+    "options": [
+      "It may cause a severe local tissue reaction",
+      "It will induce localized aseptic necrosis",
+      "The chemical can destroy the live organisms present in the vaccine",
+      "There is no valid scientific or clinical reason"
+    ],
+    "correct_answer": "The chemical can destroy the live organisms present in the vaccine",
+    "explanation": "Surgical spirit, or isopropyl alcohol, is a potent antiseptic. If it is not allowed to dry completely before injection, it can penetrate the needle track and neutralize or kill the live-attenuated pathogens in vaccines like BCG or measles, reducing their effectiveness.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-783",
+    "question": "Which of the following descriptions best defines the professional discipline of community health nursing?",
+    "options": [
+      "The synthesis of nursing and public health practice applied to promote and protect the health of populations",
+      "The provision of specialized clinical care within a localized private practice",
+      "The coordination of clinical resources within a centralized hospital ward",
+      "The administrative management of regional or state health departments"
+    ],
+    "correct_answer": "The synthesis of nursing and public health practice applied to promote and protect the health of populations",
+    "explanation": "Community health nursing is a specialized field that merges the clinical skills of nursing with the epidemiological principles of public health. This practice focuses on promoting, preserving, and protecting the health of entire communities and vulnerable populations.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-784",
+    "question": "Communities utilize diverse structures for decision-making. Which of the following is NOT recognized as a standard demographic or organizational decision-making structure in public health?",
+    "options": [
+      "Common group",
+      "Heterogeneous groups",
+      "Subgroups within the population",
+      "Homogeneous groups"
+    ],
+    "correct_answer": "Common group",
+    "explanation": "Public health planners mobilize communities by working through homogeneous groups (sharing similar characteristics), heterogeneous groups (comprising diverse perspectives), or targeted subgroups (such as women's or youth associations). A 'common group' is not a recognized structural term in community sociology.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-785",
+    "question": "Which of the following demographic parameters calculates the total annual number of deaths divided by the population exposed to the risk of death in that same period?",
+    "options": [
+      "Crude death rate",
+      "Crude birth rate",
+      "Crude fatality rate",
+      "Prevalence rate"
+    ],
+    "correct_answer": "Crude death rate",
+    "explanation": "The crude death rate measures the annual frequency of deaths per one thousand individuals in a specified population. It represents the most basic, unadjusted indicator of mortality in a community.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-786",
+    "question": "Which of the following is NOT a traditional oral method of community health communication?",
+    "options": [
+      "Flipcharts",
+      "Traditional songs",
+      "The town crier",
+      "Interactive role play"
+    ],
+    "correct_answer": "Flipcharts",
+    "explanation": "Flipcharts are a modern visual aid used in structured health education sessions. In contrast, songs, town criers, and role-playing are traditional, oral, and culturally integrated methods of communication widely used for grassroots community mobilization.",
+    "category": "Primary Health Care and Community Health Nursing"
+  },
+  {
+    "id": "item-787",
+    "question": "The major source of healthcare funding in Nigeria is:",
+    "options": [
+      "Out-of-pocket spending",
+      "Direct government funding",
+      "The National Health Insurance Scheme",
+      "International donor funding"
+    ],
+    "correct_answer": "Out-of-pocket spending",
+    "explanation": "Out-of-pocket expenditure remains the dominant source of healthcare financing in Nigeria, accounting for over seventy percent of total health spending. This high level of direct spending highlights the urgent need to expand health insurance coverage to protect families from catastrophic health costs.",
+    "category": "Primary Health Care and Community Health Nursing"
+  }
+]

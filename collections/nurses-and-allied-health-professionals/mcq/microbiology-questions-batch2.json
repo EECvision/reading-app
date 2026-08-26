@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-50",
+    "question": "Which of the following statements is true regarding Louis Pasteur's discoveries about stereoisomers?",
+    "options": [
+      "Living organisms can discriminate between different stereoisomers",
+      "Fermentation is strictly an aerobic process",
+      "Living organisms are unable to discriminate between different stereoisomers",
+      "Both the discrimination of stereoisomers and aerobic fermentation are true"
+    ],
+    "correct_answer": "Living organisms can discriminate between different stereoisomers",
+    "explanation": "Louis Pasteur discovered that organic molecules can exist in asymmetric stereoisomeric forms. He demonstrated that living organisms selectively interact with or metabolize one specific stereoisomer over another, establishing biological specificity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-51",
+    "question": "Naturally acquired active immunity would be most likely acquired through which of the following processes?",
+    "options": [
+      "Receiving a vaccine injection",
+      "Drinking colostrums as an infant",
+      "The process of natural birth",
+      "Infection with a disease causing organism followed by recovery"
+    ],
+    "correct_answer": "Infection with a disease causing organism followed by recovery",
+    "explanation": "Naturally acquired active immunity occurs when a person is exposed to a live pathogen, develops the disease, and subsequently recovers. This exposure triggers the immune system to produce its own antibodies and memory cells for long-term protection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-52",
+    "question": "Which of the following descriptions best classifies the bacterium Clostridium botulinum?",
+    "options": [
+      "Facultative aerobe",
+      "Obligate anaerobe",
+      "Facultative anaerobe",
+      "Obligate aerobe"
+    ],
+    "correct_answer": "Obligate anaerobe",
+    "explanation": "Clostridium botulinum is a gram-positive, spore-forming rod that is an obligate anaerobe, meaning it cannot grow in the presence of free oxygen. It produces a highly potent neurotoxin under anaerobic conditions, which causes botulism.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-53",
+    "question": "Which of the following organisms is the causative agent of syphilis?",
+    "options": [
+      "A spirochete called Treponema pallidum",
+      "A bacillus called Tubercle bacillus",
+      "A staphylococcus that grows in pairs",
+      "A comma shaped organism classified as a vibrio"
+    ],
+    "correct_answer": "A spirochete called Treponema pallidum",
+    "explanation": "Syphilis is a sexually transmitted infection caused by Treponema pallidum, which is a highly spiral, motile spirochete bacterium. This pathogen penetrates mucous membranes or broken skin and can spread systemically.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-54",
+    "question": "Which of the following viruses does not contain an ribonucleic acid genome?",
+    "options": [
+      "Reovirus",
+      "Orthomyxovirus",
+      "Deltavirus",
+      "Herpesvirus"
+    ],
+    "correct_answer": "Herpesvirus",
+    "explanation": "Herpesvirus is a double-stranded deoxyribonucleic acid virus, not an ribonucleic acid virus. Reovirus, orthomyxovirus, and deltavirus are all classified as ribonucleic acid viruses.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-55",
+    "question": "Infectious diseases that are caused by fungi are collectively referred to as which of the following?",
+    "options": [
+      "Mycoses",
+      "Melena",
+      "Monilial infections",
+      "Mixed infections"
+    ],
+    "correct_answer": "Mycoses",
+    "explanation": "Fungal infections are medically termed mycoses. They can range from superficial skin infections, like athlete's foot, to severe systemic infections that affect internal organs, particularly in immunocompromised individuals.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-56",
+    "question": "Which of the following groups of diseases is characterized by being caused by various pathogenic microorganisms?",
+    "options": [
+      "Deficiency diseases",
+      "Hereditary diseases",
+      "Infectious diseases",
+      "Degenerative diseases"
+    ],
+    "correct_answer": "Infectious diseases",
+    "explanation": "Infectious diseases are caused by the invasion and multiplication of pathogenic microorganisms, such as bacteria, viruses, fungi, or parasites, in a host. Unlike hereditary or deficiency diseases, they are directly tied to active pathogens.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-57",
+    "question": "Bacteria belonging to the genus Shigella are the primary causative agents of which of the following food-borne illnesses?",
+    "options": [
+      "Cholera",
+      "Brucellosis",
+      "Dysentery",
+      "Enteric fever"
+    ],
+    "correct_answer": "Dysentery",
+    "explanation": "Shigella species cause bacillary dysentery, or shigellosis, which is marked by severe abdominal cramps, fever, and bloody diarrhea. It is typically transmitted via the fecal-oral route through contaminated food or water.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-58",
+    "question": "Which of the following is a key characteristic of spore-forming bacteria?",
+    "options": [
+      "They are easily destroyed by simple boiling",
+      "They are highly resistant to many standard methods of sterilization",
+      "They are easily destroyed by drying and cooling",
+      "They are much less dangerous than other types of bacteria"
+    ],
+    "correct_answer": "They are highly resistant to many standard methods of sterilization",
+    "explanation": "Bacterial endospores are extremely resilient structures that allow bacteria to survive harsh conditions, such as extreme heat, radiation, desiccation, and chemical disinfectants. Because of this, sterilizing them requires rigorous autoclaving.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-59",
+    "question": "The tsetse fly serves as the primary biological vector for transmitting which of the following pathogenic organisms?",
+    "options": [
+      "Trichomonas vaginalis",
+      "Trypanosoma gambiense",
+      "Entamoeba histolytica",
+      "Toxoplasma"
+    ],
+    "correct_answer": "Trypanosoma gambiense",
+    "explanation": "Trypanosoma gambiense, a protozoan parasite that causes West African sleeping sickness, is transmitted to humans through the bite of an infected tsetse fly. The parasite multiplies in the blood and lymphatic system, eventually invading the central nervous system.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-60",
+    "question": "Which of the following is the first antibody isotype to make contact with invading microorganisms during a primary immune response?",
+    "options": [
+      "Immunoglobulin M",
+      "Immunoglobulin G",
+      "Immunoglobulin A",
+      "Immunoglobulin D"
+    ],
+    "correct_answer": "Immunoglobulin M",
+    "explanation": "Immunoglobulin M is the first class of antibody secreted by plasma cells during a primary antibody response to an antigen. Its pentameric structure makes it highly effective at neutralizing pathogens and activating the complement system.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-61",
+    "question": "What is the approximate size range of a typical bacterial cell?",
+    "options": [
+      "One millimeter in diameter",
+      "Zero point five to one point zero micrometer in diameter",
+      "Two millimeter in diameter",
+      "Two micrometer in diameter"
+    ],
+    "correct_answer": "Zero point five to one point zero micrometer in diameter",
+    "explanation": "Most typical bacterial cells measure between zero point five and one point zero micrometer in diameter. This microscopic size requires compound light microscopy or electron microscopy for detailed visualization.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-62",
+    "question": "Staphylococcus aureus is a pyogenic bacterium that commonly causes boils and abscesses. Why is it classified as pyogenic?",
+    "options": [
+      "Because its infection is accompanied by the formation of pus",
+      "Because it does not usually produce a fever in a patient",
+      "Because it is capable of extremely rapid cell division",
+      "Because it produces highly resistant endospores"
+    ],
+    "correct_answer": "Because its infection is accompanied by the formation of pus",
+    "explanation": "The term pyogenic literally translates to pus-producing. Staphylococcus aureus attracts neutrophils to the infection site, resulting in the accumulation of dead immune cells, bacteria, and tissue fluid, which forms pus.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-63",
+    "question": "Which of the following microbial elements can be destroyed by the enzyme lysozyme found in human tears and saliva?",
+    "options": [
+      "Some of the fungi",
+      "Host cells that are infected with viruses",
+      "All types of viruses",
+      "Some of the bacteria"
+    ],
+    "correct_answer": "Some of the bacteria",
+    "explanation": "Lysozyme is an antimicrobial enzyme that cleaves the chemical bonds in peptidoglycan, a major component of bacterial cell walls. It is particularly effective at destroying gram-positive bacteria by compromising their structural integrity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-64",
+    "question": "Antibiotics are ineffective against viral infections. In response to a viral infection, what antiviral protein does the human body produce to protect other cells?",
+    "options": [
+      "Interferon",
+      "Leishmania",
+      "Ascaris",
+      "Pertussis"
+    ],
+    "correct_answer": "Interferon",
+    "explanation": "Interferons are signaling proteins made and released by host cells in response to viral infections. They stimulate neighboring cells to synthesize antiviral proteins, interfering with the process of viral replication and limiting the spread of infection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-65",
+    "question": "In a laboratory setting, which of the following media must be used to grow viruses for study?",
+    "options": [
+      "Glucose solution",
+      "Living tissues",
+      "Agar",
+      "Beef broth"
+    ],
+    "correct_answer": "Living tissues",
+    "explanation": "Viruses are obligate intracellular parasites, meaning they lack their own metabolic machinery and can only replicate inside living host cells. Unlike bacteria, they cannot grow on non-living nutrient media like agar or beef broth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-66",
+    "question": "The emission of light by luminescent bacteria is chemically mediated by which of the following enzymes?",
+    "options": [
+      "Coenzyme Q",
+      "Luciferase",
+      "Lactose dehydrogenase",
+      "Carboxylase reductase"
+    ],
+    "correct_answer": "Luciferase",
+    "explanation": "Bioluminescence in bacteria is catalyzed by the enzyme luciferase. This enzyme catalyzes the oxidation of reduced flavin mononucleotide and a long-chain aldehyde, releasing energy in the form of visible blue-green light.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-67",
+    "question": "Which of the following groups of microorganisms are classified as the smallest?",
+    "options": [
+      "The bacteria",
+      "The fungi",
+      "The viruses",
+      "The protozoa"
+    ],
+    "correct_answer": "The viruses",
+    "explanation": "Viruses are submicroscopic, non-cellular infectious agents that are significantly smaller than bacteria, fungi, and protozoa. Most viruses range in size from twenty to four hundred nanometers, requiring electron microscopes to be seen.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-68",
+    "question": "Which of the following descriptions best represents the cellular shape of Salmonella bacteria?",
+    "options": [
+      "Spherical",
+      "Rod-shaped",
+      "Comma-shaped",
+      "Spiral"
+    ],
+    "correct_answer": "Rod-shaped",
+    "explanation": "Salmonella species are rod-shaped, gram-negative, facultative anaerobic bacilli. This rod shape is characteristic of enterobacteria and helps distinguish them from spherical cocci or spiral spirochetes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-69",
+    "question": "Which of the following structures in a bacterial cell is primarily responsible for providing protection and structural integrity?",
+    "options": [
+      "The cell wall",
+      "The cell membrane",
+      "The flagella",
+      "The cytoplasm"
+    ],
+    "correct_answer": "The cell wall",
+    "explanation": "The bacterial cell wall provides mechanical protection, maintains cell shape, and prevents osmotic lysis. It is composed of peptidoglycan, which provides a rigid outer framework that protects the cell from internal turgor pressure.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-70",
+    "question": "Which of the following is the primary method of asexual reproduction in yeasts?",
+    "options": [
+      "Binary fission",
+      "Production of hyphae",
+      "Budding",
+      "Spore formation"
+    ],
+    "correct_answer": "Budding",
+    "explanation": "Budding is the most common method of vegetative reproduction in unicellular fungi like yeasts. During this process, a new cell develops as an outgrowth, or bud, from the parent cell, eventually pinching off as a separate individual.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-71",
+    "question": "Which of the following factors for the growth of microorganisms cannot be exploited on its own during food processing to prevent microbial growth?",
+    "options": [
+      "Control of temperature",
+      "Removal of water",
+      "Removal of oxygen",
+      "Control of pH conditions"
+    ],
+    "correct_answer": "Removal of oxygen",
+    "explanation": "While temperature, moisture, and pH control can directly stop microbial growth, simply removing oxygen cannot prevent microbial growth on its own. Many foodborne pathogens are anaerobic or facultatively anaerobic, allowing them to thrive in oxygen-free environments.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-72",
+    "question": "Most microorganisms grow best when the surrounding environmental pH is in which of the following ranges?",
+    "options": [
+      "Between pH two and four",
+      "Between pH four and six",
+      "Between pH six and eight",
+      "Between pH eight and ten"
+    ],
+    "correct_answer": "Between pH six and eight",
+    "explanation": "Most medically relevant microorganisms are neutrophiles that grow best in a pH range near neutrality, typically between six point eight and seven point four. Extreme acidic or alkaline conditions can denature essential enzymes and disrupt cell membranes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-73",
+    "question": "Pathogenic microorganisms grow most rapidly and optimally within which of the following temperature ranges?",
+    "options": [
+      "Between five and ten degrees Celsius",
+      "Between fifteen and twenty degrees Celsius",
+      "Between twenty-five and thirty degrees Celsius",
+      "Between thirty-five and forty degrees Celsius"
+    ],
+    "correct_answer": "Between thirty-five and forty degrees Celsius",
+    "explanation": "Human pathogens are mesophilic organisms that have evolved to grow best at or near human body temperature, which is approximately thirty-seven degrees Celsius. Temperatures outside this mesophilic range slow down enzymatic activity or kill the cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-74",
+    "question": "To obtain the greatest resolution in light microscopy, which of the following combinations should be utilized?",
+    "options": [
+      "The shortest wavelength of visible light",
+      "The longest wavelength of visible light",
+      "An objective lens with the minimum numerical aperture",
+      "The shortest wavelength of visible light and an objective lens with the maximum numerical aperture"
+    ],
+    "correct_answer": "The shortest wavelength of visible light and an objective lens with the maximum numerical aperture",
+    "explanation": "Resolution in light microscopy is determined by Abbe's limit, which states that resolution is directly proportional to the wavelength of light used and inversely proportional to the numerical aperture of the objective lens. Using shorter wavelengths and high numerical apertures minimizes light diffraction.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-75",
+    "question": "Which of the following types of immunity provides the longest lasting protection against an infectious pathogen?",
+    "options": [
+      "Naturally acquired passive immunity",
+      "Artificially acquired passive immunity",
+      "Naturally acquired active immunity",
+      "All of these options provide equal protection"
+    ],
+    "correct_answer": "Naturally acquired active immunity",
+    "explanation": "Naturally acquired active immunity stimulates the host's own immune system to produce antibodies and memory T and B cells. Because these memory cells persist in the body for decades, they mount a rapid response upon re-exposure, providing long-term immunity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-76",
+    "question": "Rickettsial infections, such as Rocky Mountain spotted fever and typhus, are almost always transmitted to humans through which of the following?",
+    "options": [
+      "The bite of arthropods such as lice, fleas, or ticks",
+      "Consumption of a contaminated water supply",
+      "Being bitten by common flies and mosquitoes",
+      "Direct physical contact with a person carrying the disease"
+    ],
+    "correct_answer": "The bite of arthropods such as lice, fleas, or ticks",
+    "explanation": "Rickettsial diseases are caused by obligate intracellular bacteria that rely on biological vectors for transmission. Ticks, lice, and fleas harbor these pathogens and inject them into human hosts during feeding, causing systemic infections.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-77",
+    "question": "The motile zygote of the malaria-causing parasite Plasmodium is found in which of the following locations?",
+    "options": [
+      "Human liver cells",
+      "Human red blood cells",
+      "Salivary glands of the female Anopheles mosquito",
+      "The gut of the female Anopheles mosquito"
+    ],
+    "correct_answer": "The gut of the female Anopheles mosquito",
+    "explanation": "After sexual reproduction of Plasmodium occurs within the stomach of an infected female Anopheles mosquito, the resulting zygote becomes a motile ookinete. This motile form is located in the mosquito's gut, where it penetrates the wall to form an oocyst.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-78",
+    "question": "The principles of surgical asepsis are primarily based upon which of the following goals?",
+    "options": [
+      "Destroying bacteria as they exit the patient's body",
+      "Destroying microorganisms before they can enter the body",
+      "Isolating all patients who are diagnosed with an infectious disease",
+      "Promoting basic daily cleanliness and hygiene measures"
+    ],
+    "correct_answer": "Destroying microorganisms before they can enter the body",
+    "explanation": "Surgical asepsis, or sterile technique, aims to prevent any microbial contamination of open wounds or sterile body cavities. It involves treating and handling equipment in a manner that ensures all micro-organisms are eliminated before contact.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-79",
+    "question": "Which of the following clinical conditions is not typically associated with a Haemophilus influenzae bacterial infection?",
+    "options": [
+      "Otitis media",
+      "Pneumonia",
+      "Malaria",
+      "Epiglottitis"
+    ],
+    "correct_answer": "Malaria",
+    "explanation": "Malaria is a mosquito-borne disease caused by protozoan parasites of the genus Plasmodium. Haemophilus influenzae is a bacterium that can cause respiratory tract infections, middle ear infections, and epiglottitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-80",
+    "question": "Fungal infections are most likely to develop and thrive in environments characterized by which of the following conditions?",
+    "options": [
+      "In warm and dry places",
+      "In cool and dry places",
+      "On dry outer surfaces of the hands and feet",
+      "In warm and moist places"
+    ],
+    "correct_answer": "In warm and moist places",
+    "explanation": "Fungi thrive in warm, damp, and humid environments. Moisture is critical for the germination of fungal spores, and warmth facilitates cellular growth, making skin folds and warm, damp climates prime areas for mycoses.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-81",
+    "question": "Which of the following is utilized within an electron microscope to focus and create highly magnified images of specimens?",
+    "options": [
+      "Electron beams and electromagnetic fields",
+      "Visible light waves",
+      "Electrostatic and light fields",
+      "Electron beams alone without focusing elements"
+    ],
+    "correct_answer": "Electron beams and electromagnetic fields",
+    "explanation": "Electron microscopes utilize a beam of accelerated electrons instead of light to illuminate specimens. Because electrons have a wave-particle nature, electromagnetic lenses are used to focus the electron beams, achieving massive magnification.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-82",
+    "question": "Salt and sugar are effective at preserving food products primarily because they perform which of the following actions?",
+    "options": [
+      "They significantly lower the pH of the food to make it highly acidic",
+      "They produce a hypotonic environment that causes bacterial cells to swell",
+      "They deplete all essential vitamins and minerals within the food",
+      "They produce a hypertonic environment that draws water out of bacterial cells"
+    ],
+    "correct_answer": "They produce a hypertonic environment that draws water out of bacterial cells",
+    "explanation": "High concentrations of salt or sugar create a hypertonic extracellular environment. Water inside microbial cells moves out via osmosis, resulting in plasmolysis and dehydration, which prevents microbial cell division and growth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-83",
+    "question": "Approximately fifty percent of children will suffer from congenital defects if the mother contracts rubella during which of the following periods?",
+    "options": [
+      "During the first month of pregnancy",
+      "During the fourth month of pregnancy",
+      "During the sixth month of pregnancy",
+      "Immediately prior to labor and delivery"
+    ],
+    "correct_answer": "During the first month of pregnancy",
+    "explanation": "Maternal rubella infection during the first trimester, especially the first month, carries a massive risk of Congenital Rubella Syndrome. During this early gestational period, fetal organs are actively developing, making them highly vulnerable to viral disruption.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-84",
+    "question": "The Schick test is a diagnostic test designed to determine susceptibility to which of the following infectious diseases?",
+    "options": [
+      "Rubella",
+      "Measles",
+      "Diphtheria",
+      "Mumps"
+    ],
+    "correct_answer": "Diphtheria",
+    "explanation": "The Schick test evaluates a patient's immunity to diphtheria. It involves injecting a small, diluted dose of diphtheria toxin under the skin; a localized inflammatory skin reaction indicates a lack of neutralizing antibodies.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-85",
+    "question": "Protozoan organisms are most commonly found living in which of the following environments?",
+    "options": [
+      "Arid mountainous regions",
+      "Dry desert sand and soil",
+      "Almost any substantial body of water",
+      "Strictly within tropical geographic regions"
+    ],
+    "correct_answer": "Almost any substantial body of water",
+    "explanation": "Protozoa are single-celled eukaryotic microorganisms that require moisture to survive and reproduce. They are ubiquitous in aquatic habitats, including freshwater lakes, rivers, ocean waters, and moist soils.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-86",
+    "question": "Which of the following interventions is effective at reducing the severity and transmission of a pertussis infection if administered early?",
+    "options": [
+      "There are no effective pharmacological treatments",
+      "Erythromycin",
+      "Benzyl penicillin",
+      "Ampicillin"
+    ],
+    "correct_answer": "Erythromycin",
+    "explanation": "Erythromycin is a macrolide antibiotic of choice for treating whooping cough. When started early in the catarrhal stage, it helps eliminate the bacterium Bordetella pertussis from the respiratory tract, reducing the duration and spread of infection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-87",
+    "question": "The ability of the human body to recognize and defend itself against specific foreign invaders, such as bacteria, toxins, and viruses, is defined as which of the following?",
+    "options": [
+      "Hormones",
+      "Secretion",
+      "Immunity",
+      "Glands"
+    ],
+    "correct_answer": "Immunity",
+    "explanation": "Immunity is the physiological state of defense against specific pathogens or toxic substances. It involves both innate barriers and adaptive immune responses that coordinate to eliminate foreign antigens and establish long-term cellular memory.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-88",
+    "question": "Which of the following diseases is matched incorrectly with its causative agent?",
+    "options": [
+      "Syphilis and Treponema pallidum",
+      "Tinea nigra and Cladosporium werneckii",
+      "Lyme disease and Borrelia burgdorferi",
+      "Diphtheria and Yersinia enterocolitica"
+    ],
+    "correct_answer": "Diphtheria and Yersinia enterocolitica",
+    "explanation": "Diphtheria is caused by the gram-positive rod Corynebacterium diphtheriae, which produces the potent diphtheria toxin. Yersinia enterocolitica is an enteropathogenic bacterium that causes yersiniosis, an intestinal illness.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-89",
+    "question": "Which of the following is widely recognized as the most prevalent and clinically significant protozoal infection in humans?",
+    "options": [
+      "Pneumonia",
+      "Cholera",
+      "Syphilis",
+      "Malaria"
+    ],
+    "correct_answer": "Malaria",
+    "explanation": "Malaria is a major global health threat caused by protozoa of the genus Plasmodium and transmitted by Anopheles mosquitoes. It causes widespread morbidity and mortality, making it the best-known protozoal disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-90",
+    "question": "Strong disinfectants, such as phenol or carbolic acid, are primarily intended to perform which of the following actions?",
+    "options": [
+      "Kill bacteria present on medical instruments and other inanimate objects",
+      "Sterilize and disinfect human skin prior to incisions",
+      "Inhibit the growth of bacteria on living tissue without killing them",
+      "Remove bacteria from open wounds or active skin infections safely"
+    ],
+    "correct_answer": "Kill bacteria present on medical instruments and other inanimate objects",
+    "explanation": "Disinfectants are antimicrobial agents designed to destroy microorganisms on inanimate surfaces. Because strong chemicals like phenol are highly tissue-toxic, they cannot be used safely on living skin or open wounds.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-91",
+    "question": "The tubercle bacillus, Mycobacterium tuberculosis, is characteristically identified under microscopy using which of the following properties?",
+    "options": [
+      "Its gram-positive cell wall structure",
+      "Its status as an acid-fast bacillus",
+      "The ease with which it is cultured on simple nutrient agar",
+      "None of these options are correct"
+    ],
+    "correct_answer": "Its status as an acid-fast bacillus",
+    "explanation": "Mycobacterium tuberculosis is characterized by a cell wall containing high levels of mycolic acid. This waxy lipid coat resists decolorization by acid-alcohol during staining, classifying it as an acid-fast bacillus.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-92",
+    "question": "Within a bacterial cell, the enzymes and carriers of the respiratory electron transport chain are associated with which of the following structures?",
+    "options": [
+      "The cytoplasmic membrane",
+      "The outer cell wall",
+      "The fluid cytoplasm",
+      "The inner mitochondrial membrane"
+    ],
+    "correct_answer": "The cytoplasmic membrane",
+    "explanation": "Bacteria are prokaryotes and lack membrane-bound organelles like mitochondria. Consequently, their cellular respiration machinery, including electron carriers and ATP synthase, is embedded in their cytoplasmic membrane.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-93",
+    "question": "The human immunodeficiency virus selectively targets and destroys which of the following primary immune cells?",
+    "options": [
+      "Polymorphonuclear leukocytes",
+      "B-lymphocytes",
+      "Blood platelets",
+      "Helper T-lymphocytes"
+    ],
+    "correct_answer": "Helper T-lymphocytes",
+    "explanation": "The human immunodeficiency virus utilizes its gp120 glycoprotein to bind specifically to the CD4 receptor on helper T-lymphocytes. Once inside, the virus replicates and eventually lyses the host cell, leading to immunodeficiency.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-94",
+    "question": "Which of the following statements is true regarding human immunoglobulin M antibodies?",
+    "options": [
+      "Immunoglobulin M can readily cross the placental barrier",
+      "Immunoglobulin M is the primary antibody protecting mucosal surfaces",
+      "Immunoglobulin M is secreted exclusively by high-affinity plasma cells",
+      "Immunoglobulin M is primarily restricted within the systemic circulation"
+    ],
+    "correct_answer": "Immunoglobulin M is primarily restricted within the systemic circulation",
+    "explanation": "Immunoglobulin M is a large pentameric antibody molecule with a high molecular weight. Because of its large size, it cannot easily cross blood vessel walls or the placenta, remaining largely restricted to the bloodstream.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-95",
+    "question": "The process of rendering medical instruments completely free of all viable microbial life, including bacterial endospores, is referred to as which of the following?",
+    "options": [
+      "Sterilization",
+      "Disinfection",
+      "Asepsis",
+      "Carbonization"
+    ],
+    "correct_answer": "Sterilization",
+    "explanation": "Sterilization is an absolute term describing the complete destruction or removal of all living microorganisms, including vegetative cells, viruses, and highly resistant bacterial endospores. This is typically achieved using heat, chemicals, or radiation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-96",
+    "question": "B-lymphocytes and T-lymphocytes originate from hematopoietic stem cells that are formed within which of the following tissues?",
+    "options": [
+      "The bone marrow",
+      "The fetal liver",
+      "The systemic circulatory vessels",
+      "The lymphoid spleen tissue"
+    ],
+    "correct_answer": "The bone marrow",
+    "explanation": "All blood cells, including B-lymphocytes and T-lymphocytes, originate from pluripotent stem cells in the red bone marrow. B cells also mature in the bone marrow, while pre-T cells migrate to the thymus for maturation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-97",
+    "question": "The chemical fixation of atmospheric nitrogen into organic compounds is achieved through which of the following pathways?",
+    "options": [
+      "Biological processes by diazotrophic bacteria",
+      "Abiotic atmospheric lightning strikes",
+      "High-energy solar ultraviolet light exposure",
+      "All of these pathways are correct"
+    ],
+    "correct_answer": "All of these pathways are correct",
+    "explanation": "Nitrogen fixation occurs biologically through free-living or symbiotic diazotrophs like Rhizobium. It also occurs non-biologically through lightning strikes and solar ultraviolet radiation, which provide the high energy needed to break nitrogen's triple bond.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-98",
+    "question": "Medical asepsis is a nursing technique primarily utilized to achieve which of the following clinical goals?",
+    "options": [
+      "Preventing the introduction of any microbes into a sterile surgical site",
+      "Eliminating all organisms from every object in contact with the patient",
+      "Preventing the spread of disease-causing pathogens from person to person",
+      "Removing bacteria from objects before they contact an open wound"
+    ],
+    "correct_answer": "Preventing the spread of disease-causing pathogens from person to person",
+    "explanation": "Medical asepsis, or clean technique, focuses on reducing the number, growth, and transmission of pathogens in the healthcare environment. This includes practices like hand hygiene and environmental cleaning.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-99",
+    "question": "The metabolic process of glycolysis can take place within which of the following cell types?",
+    "options": [
+      "Strictly anaerobic cells",
+      "Strictly aerobic cells",
+      "Neither aerobic nor anaerobic cells",
+      "Both aerobic and anaerobic cells"
+    ],
+    "correct_answer": "Both aerobic and anaerobic cells",
+    "explanation": "Glycolysis is a universal, oxygen-independent metabolic pathway that breaks down glucose in the cytosol. Because it does not require oxygen, it is utilized by both aerobic and anaerobic cells to yield pyruvate and ATP.",
+    "category": "Microbiology and Infectious Diseases"
+  }
+]

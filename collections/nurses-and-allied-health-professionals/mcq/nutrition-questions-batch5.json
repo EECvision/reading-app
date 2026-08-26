@@ -1,0 +1,41 @@
+[
+  {
+    "id": "item-423",
+    "question": "Which of the following nutrients is not present in eggs:",
+    "options": [
+      "Iron",
+      "Riboflavin (vitamin B2)",
+      "Vitamin C",
+      "Vitamin A"
+    ],
+    "correct_answer": "Vitamin C",
+    "explanation": "Eggs are highly nutritious, providing high-quality proteins, lipids, vitamin A, riboflavin, and iron. However, they contain absolutely no vitamin C, which must be obtained from plant sources.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-424",
+    "question": "Which of the following amino acids has to be supplemented in the diet?",
+    "options": [
+      "Phenylalanine",
+      "Cysteine",
+      "Glutamine",
+      "Asparagine"
+    ],
+    "correct_answer": "Phenylalanine",
+    "explanation": "Phenylalanine is an essential amino acid that cannot be synthesized by the human body and must be supplied by the diet. Cysteine, glutamine, and asparagine are non-essential amino acids that the body can synthesize.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-425",
+    "question": "What are the two most widely used assessments for interpreting body fatness?",
+    "options": [
+      "Body weight & densitometry",
+      "BMI & densitometry",
+      "Skinfold thickness & waist circumference",
+      "BMI & waist circumference"
+    ],
+    "correct_answer": "BMI & waist circumference",
+    "explanation": "In clinical practice, Body Mass Index and waist circumference are the two most common, non-invasive, and practical anthropometric assessments used to screen for obesity and abdominal fatness, which are closely linked to cardiovascular risk.",
+    "category": "Nutrition and Dietetics"
+  }
+]

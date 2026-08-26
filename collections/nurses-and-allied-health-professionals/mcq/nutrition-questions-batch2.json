@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-273",
+    "question": "What is the recommended daily allowance range for the trace mineral fluoride in adult health?",
+    "options": [
+      "One point five to four milligrams",
+      "Six hundred to nine hundred grams",
+      "Twenty-five grams",
+      "Three hundred and fifty to four hundred milligrams"
+    ],
+    "correct_answer": "One point five to four milligrams",
+    "explanation": "The recommended daily intake of fluoride for adults typically ranges from one point five to four milligrams, which is sufficient to optimize dental health and prevent caries without causing adverse effects like fluorosis.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-274",
+    "question": "A clinical deficiency in riboflavin, or vitamin B two, is most commonly associated with which of the following signs?",
+    "options": [
+      "Cheilitis, which is inflammation and cracking of the lips",
+      "Cheilosis, characterized by deep fissures at the corners of the mouth",
+      "Angular stomatitis, which is inflammation of the oral mucosa at the mouth corners",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Riboflavin deficiency, or ariboflavinosis, is characterized by localized oral lesions, including painful lip cracking, deep fissures at the mouth corners, and angular stomatitis. It is often accompanied by a magenta-colored tongue.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-275",
+    "question": "Which of the following dietary combinations represents the most appropriate solid food menu for an eight-month-old infant?",
+    "options": [
+      "Cocoa-flavored cereal, orange juice, and strained meat",
+      "Graham crackers, strained prunes, and pudding",
+      "Rice cereal, mashed bananas, and strained carrots",
+      "Mashed potatoes, strained beets, and whole milk"
+    ],
+    "correct_answer": "Rice cereal, mashed bananas, and strained carrots",
+    "explanation": "Iron-fortified single-grain rice cereal, ripe mashed bananas, and pureed carrots are excellent transition foods for an eight-month-old infant because they are hypoallergenic and easily digestible. Whole cow milk and cocoa are inappropriate at this developmental stage.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-276",
+    "question": "When the foods we ingest are successfully acted upon by chemical digestive juices, they have been structurally:",
+    "options": [
+      "Changed into completely new and different chemical substances",
+      "Broken down into physically smaller particles without chemical alteration",
+      "Liquefied strictly to facilitate mechanical transport through the tract",
+      "Altered physically while retaining their original macromolecular bonds"
+    ],
+    "correct_answer": "Changed into completely new and different chemical substances",
+    "explanation": "Chemical digestion utilizes hydrolytic enzymes to break complex polymers down into their monomeric subunits. This process breaks covalent bonds to transform complex food into completely new, absorbable chemical substances like amino acids and simple sugars.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-277",
+    "question": "A clinical nurse teaching a patient with gout about dietary management should advise them to avoid consuming which of the following foods?",
+    "options": [
+      "Yellow root vegetables",
+      "Processed cheese",
+      "Shellfish",
+      "Organ meats"
+    ],
+    "correct_answer": "Organ meats",
+    "explanation": "Organ meats, such as liver and kidneys, contain exceptionally high concentrations of purines, which are metabolized into uric acid in the human body. High uric acid levels can precipitate as monosodium urate crystals in joints, triggering acute gout attacks.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-278",
+    "question": "Which of the following proteolytic enzymes is administered as part of oral replacement therapy to improve gastrointestinal digestive function?",
+    "options": [
+      "Pepsin",
+      "Urokinase",
+      "L-asparaginase",
+      "Lydaze"
+    ],
+    "correct_answer": "Pepsin",
+    "explanation": "Pepsin is a primary proteolytic enzyme that initiates protein digestion in the stomach by cleaving peptide bonds. It can be administered as an oral supplement to support digestive function in patients with gastric or exocrine pancreatic insufficiency.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-279",
+    "question": "A client is one point seven five meters tall and weighs ninety-nine kilograms. What is this client's calculated body mass index?",
+    "options": [
+      "Twenty-five",
+      "Thirty",
+      "Thirty-two",
+      "Forty-three"
+    ],
+    "correct_answer": "Thirty-two",
+    "explanation": "To calculate body mass index, weight in kilograms is divided by the square of the height in meters. For this client, ninety-nine divided by the square of one point seven five yields approximately thirty-two point three, placing them in the class one obesity category.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-280",
+    "question": "Which of the following severe protein-energy malnutrition disorders is caused by a severe deficiency of dietary protein despite a relatively adequate caloric intake?",
+    "options": [
+      "Anemia",
+      "Kwashiorkor",
+      "Hypothyroidism",
+      "Marasmus"
+    ],
+    "correct_answer": "Kwashiorkor",
+    "explanation": "Kwashiorkor is a form of severe protein-energy malnutrition characterized by marked edema, hepatomegaly with fatty liver infiltration, and skin changes. It is classically caused by a diet that is deficient in protein but contains sufficient carbohydrates, distinguishing it from marasmus.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-281",
+    "question": "What is the recommended dietary allowance range for phosphorus in adult nutrition?",
+    "options": [
+      "Nine hundred to twelve hundred milligrams",
+      "Six hundred to nine hundred grams",
+      "Twenty-five grams",
+      "One point five to four milligrams"
+    ],
+    "correct_answer": "Nine hundred to twelve hundred milligrams",
+    "explanation": "While the standard recommended dietary allowance for healthy adults is seven hundred milligrams of phosphorus daily, values up to twelve hundred milligrams are recommended during adolescence and pregnancy. This range supports skeletal mineralization and cellular energy production.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-282",
+    "question": "Which of the following vitamins is biochemically required for the synthesis of rhodopsin, making it essential for night vision?",
+    "options": [
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin A",
+      "Vitamin E"
+    ],
+    "correct_answer": "Vitamin A",
+    "explanation": "Vitamin A is converted into eleven-cis-retinal, which combines with the protein opsin in the retina's rod cells to form rhodopsin. Rhodopsin is highly sensitive to light, allowing for visual transduction in low-light conditions.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-283",
+    "question": "To help stimulate teething gums and promote chewing coordination in a toddler with newly erupted primary teeth, which of the following foods is most appropriate?",
+    "options": [
+      "Pieces of hot dog",
+      "Carrot sticks",
+      "Pieces of cereal",
+      "Raisins"
+    ],
+    "correct_answer": "Carrot sticks",
+    "explanation": "Providing firm raw foods like carrot sticks under close supervision helps satisfy a toddler's natural urge to bite, stimulates newly erupted primary teeth, and promotes jaw development. This mechanical stimulation helps build chewing coordination.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-284",
+    "question": "The primary mineralocorticoid hormones produced by the adrenal cortex include all of the following chemical agents EXCEPT:",
+    "options": [
+      "Aldosterone",
+      "Deoxycorticosterone",
+      "Fludrocortisone",
+      "Hydrocortisone"
+    ],
+    "correct_answer": "Hydrocortisone",
+    "explanation": "Aldosterone and deoxycorticosterone are major endogenous mineralocorticoid hormones that regulate sodium and water balance, while fludrocortisone is a powerful synthetic mineralocorticoid. Hydrocortisone, or cortisol, is primarily classified as a glucocorticoid hormone.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-285",
+    "question": "In the human digestive tract, the primary site for the enzymatic chemical digestion and absorption of nutritive elements is the:",
+    "options": [
+      "Stomach",
+      "Small intestine",
+      "Large intestine",
+      "Colon"
+    ],
+    "correct_answer": "Small intestine",
+    "explanation": "The small intestine possesses specialized structural adaptations, including circular folds, villi, and microvilli, that vastly increase its surface area. This tissue is the main site for enzymatic chemical digestion and the absorption of nutrients into the bloodstream.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-286",
+    "question": "Which of the following physiological processes is NOT a function of vitamin A or its active metabolites in the human body?",
+    "options": [
+      "Transmission of light stimuli to the optic nerve via visual pigments in the retina",
+      "Regulation of cellular growth and epithelial differentiation in mucosal linings",
+      "Supporting embryogenesis and organogenesis during early gestational development",
+      "Acting as a direct hormone regulator of systemic calcium and phosphorus homeostasis"
+    ],
+    "correct_answer": "Acting as a direct hormone regulator of systemic calcium and phosphorus homeostasis",
+    "explanation": "Systemic calcium and phosphorus homeostasis is regulated by vitamin D in coordination with parathyroid hormone and calcitonin, not vitamin A. Vitamin A is primarily responsible for vision, epithelial integrity, gene expression, and immune function.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-287",
+    "question": "A clinical nurse assessing a three-year-old child suspected of severe malnutrition would expect to identify which of the following primary physical findings?",
+    "options": [
+      "Failure to gain weight and growth stagnation",
+      "Frequent expulsion of intestinal flatus",
+      "Severe localized difficulty in swallowing",
+      "A soft, non-tender abdominal area on palpation"
+    ],
+    "correct_answer": "Failure to gain weight and growth stagnation",
+    "explanation": "Growth failure, characterized by a persistent failure to gain weight or an active loss of body weight, is the primary indicator of pediatric malnutrition. It is often accompanied by wasting of subcutaneous fat and muscle mass.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-288",
+    "question": "A severe deficiency of vitamin A in young children leads to which of the following serious public health outcomes?",
+    "options": [
+      "The development of a nodular goiter",
+      "Impaired early cognitive and intellectual development",
+      "Skeletal growth delays and rickets",
+      "An increased risk of pediatric infectious disease mortality"
+    ],
+    "correct_answer": "An increased risk of pediatric infectious disease mortality",
+    "explanation": "Vitamin A is essential for maintaining epithelial barriers and supporting adaptive immune responses. A deficiency compromises mucosal defenses, significantly increasing a child's susceptibility to severe infections and elevating pediatric mortality rates from measles and diarrhea.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-289",
+    "question": "In laboratory medicine and physiology, the term pH is defined as a measurement of which of the following?",
+    "options": [
+      "The physical density of a fluid solution",
+      "The exact proportion of solute to solvent in a mixture",
+      "The hydro-mechanical pressure exerted by circulating blood",
+      "The degree to which a fluid solution is acidic or basic"
+    ],
+    "correct_answer": "The degree to which a fluid solution is acidic or basic",
+    "explanation": "The term pH represents the potential of hydrogen and is calculated as the negative logarithm of the hydrogen ion concentration. It quantifies the degree to which a solution is acidic or basic on a scale of zero to fourteen.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-290",
+    "question": "An epidemiological history of consuming a diet exceptionally high in saturated fats is most strongly linked to an increased risk of developing which condition?",
+    "options": [
+      "Ulcerative colitis",
+      "Cardiovascular disease",
+      "Acute renal failure",
+      "Type one diabetes mellitus"
+    ],
+    "correct_answer": "Cardiovascular disease",
+    "explanation": "Diets rich in saturated animal fats elevate circulating low-density lipoprotein cholesterol levels, promoting the development of arterial plaques and atherosclerosis. This atherosclerotic process increases the risk of coronary artery disease and myocardial infarction.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-291",
+    "question": "Which of the following dietary recommendations should a nurse provide to a client who suffers from recurrent urinary tract infections?",
+    "options": [
+      "Increase daily consumption of red meats",
+      "Avoid eating citrus fruits to maintain urine alkalinity",
+      "Limit the daily intake of calcium-rich dairy products",
+      "Drink a glass of cranberry juice every day"
+    ],
+    "correct_answer": "Drink a glass of cranberry juice every day",
+    "explanation": "Cranberry juice contains active compounds, such as proanthocyanidins, that chemically inhibit the adherence of uropathogenic Escherichia coli bacteria to the uroepithelial lining of the bladder. This preventing of bacterial adhesion helps reduce infection rates.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-292",
+    "question": "The primary chemical reaction during enzymatic digestion that utilizes water molecules to break down complex organic polymers into monomers is called:",
+    "options": [
+      "Hydrolysis",
+      "Hydration",
+      "Oxidation",
+      "Dehydration synthesis"
+    ],
+    "correct_answer": "Hydrolysis",
+    "explanation": "Chemical digestion is accomplished through hydrolysis, where water molecules are added to complex polymers to break the covalent bonds linking their subunits. This reaction is catalyzed by specific digestive enzymes throughout the gastrointestinal tract.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-293",
+    "question": "Which of the following mild organic acids represents the primary sour component of common household vinegar?",
+    "options": [
+      "Boric acid",
+      "Citric acid",
+      "Acetic acid",
+      "Lactic acid"
+    ],
+    "correct_answer": "Acetic acid",
+    "explanation": "Household vinegar is an aqueous solution containing approximately four to eight percent acetic acid by volume. Acetic acid is produced during the bacterial fermentation of ethanol and gives vinegar its characteristic sour taste and pungent aroma.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-294",
+    "question": "The major physiological causes of hypomagnesaemia in clinical practice include which of the following pathways?",
+    "options": [
+      "Insufficient dietary intake or severe protein malnutrition",
+      "Abnormal gastrointestinal losses due to severe diarrhea or chronic alcoholism",
+      "Abnormal renal losses associated with uncontrolled diabetes mellitus or diuretic therapy",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Hypomagnesaemia is a common electrolyte disorder caused by inadequate magnesium intake, excessive gastrointestinal losses from chronic diarrhea or alcoholism, or renal wasting triggered by diabetes mellitus and loop or thiazide diuretics.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-295",
+    "question": "The classic nutritional deficiency disease known as beriberi is caused by a lack of which of the following water-soluble vitamins?",
+    "options": [
+      "Riboflavin",
+      "Ascorbic acid",
+      "Nicotinic acid",
+      "Thiamine"
+    ],
+    "correct_answer": "Thiamine",
+    "explanation": "Beriberi is caused by a severe deficiency of thiamine, or vitamin B1, which is a key cofactor in carbohydrate metabolism. It presents as dry beriberi, characterized by peripheral neuropathy and muscle wasting, or wet beriberi, which causes high-output heart failure.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-296",
+    "question": "Which of the following biological statements is correct regarding the cellular distribution of cholesterol?",
+    "options": [
+      "Cholesterol is an essential component of the cell boundaries of bacterial cells",
+      "Cholesterol mainly occurs in the cell membranes of mammalian cells",
+      "Cholesterol represents the primary sterol found in the cell walls of yeast cells",
+      "Cholesterol occurs in high concentrations within plant cell walls"
+    ],
+    "correct_answer": "Cholesterol mainly occurs in the cell membranes of mammalian cells",
+    "explanation": "Cholesterol is a vital lipid component of mammalian cell membranes, where it regulates membrane fluidity and permeability. It is absent in bacterial cell membranes, and plant and yeast cell boundaries are composed of different sterols and rigid structural walls.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-297",
+    "question": "Which of the following organic nutrients provides the highest metabolizable energy value per single gram of weight?",
+    "options": [
+      "Carbohydrate",
+      "Fat",
+      "Protein",
+      "Water"
+    ],
+    "correct_answer": "Fat",
+    "explanation": "Dietary fats are highly reduced hydrocarbons that provide approximately nine kilocalories of metabolizable energy per gram. In contrast, carbohydrates and proteins provide four kilocalories per gram, and water provides zero calories.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-298",
+    "question": "In hypothalamic regulation of eating behavior, which of the following pairs of neurological centers coordinates the drive to eat and the subsequent sensation of fullness?",
+    "options": [
+      "Satiety center and hunger center",
+      "Hunger center and satiety center",
+      "Metabolic drive and satiety center",
+      "Nutritional need and metabolic drive"
+    ],
+    "correct_answer": "Hunger center and satiety center",
+    "explanation": "The lateral hypothalamus contains the hunger center, which stimulates appetite and feeding behavior. The ventromedial hypothalamus contains the satiety center, which processes chemical signals like leptin to reduce appetite and produce a sensation of fullness.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-299",
+    "question": "Which of the following essential vitamins is biochemically the most stable and least affected by exposure to standard cooking temperatures and food preparation?",
+    "options": [
+      "Vitamin A",
+      "The Vitamin B complex group",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct_answer": "Vitamin D",
+    "explanation": "Vitamin D is a highly stable, fat-soluble vitamin that resists thermal degradation, oxidation, and extreme pH shifts. In contrast, water-soluble vitamins like vitamin C and many B vitamins are highly heat-labile and easily destroyed during cooking.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-300",
+    "question": "Which of the following factors does not affect oxidative rancidity in food products?",
+    "options": [
+      "Enzymes",
+      "Oxygen",
+      "Temperature",
+      "Ultra-violet light"
+    ],
+    "correct_answer": "Enzymes",
+    "explanation": "Oxidative rancidity is a non-enzymatic chemical reaction where unsaturated fatty acids react with oxygen. While heat, light, and oxygen speed up this oxidation process, enzymes like lipase are responsible for enzymatic rancidity rather than oxidative rancidity.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-301",
+    "question": "In which of the following food elements is vitamin D found in the highest concentration?",
+    "options": [
+      "Animal fat",
+      "Animal protein",
+      "Fruits",
+      "Legumes"
+    ],
+    "correct_answer": "Animal fat",
+    "explanation": "Vitamin D is a fat-soluble vitamin that is absorbed along with dietary lipids and stored in adipose tissues. Consequently, it is concentrated in animal fat and fatty animal tissues, such as egg yolks, fish oils, and liver.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-302",
+    "question": "When starch is cooked in moist and warm conditions, which chemical process is most likely to occur?",
+    "options": [
+      "Caramelise",
+      "Coagulate",
+      "Gelatinise",
+      "Oxidise"
+    ],
+    "correct_answer": "Gelatinise",
+    "explanation": "Gelatinization occurs when starch granules are heated in the presence of water, causing them to absorb water, swell, and disrupt their crystalline structure. This process thickens the mixture and makes the starch more digestible for the body.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-303",
+    "question": "Which of the following food selections provides the highest amount of calcium for a client who is four months pregnant?",
+    "options": [
+      "A bowl of oatmeal",
+      "A bran muffin",
+      "One cup of yogurt",
+      "A large orange"
+    ],
+    "correct_answer": "One cup of yogurt",
+    "explanation": "Yogurt is a dairy product that is exceptionally rich in calcium, providing a highly bioavailable source of this mineral. Pregnant women require adequate calcium to support fetal skeletal development and maintain maternal bone density.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-304",
+    "question": "Which of the following toxic chemical elements is most commonly associated with heavy metal food poisoning?",
+    "options": [
+      "Lead",
+      "Iron",
+      "Calcium",
+      "Phosphorus"
+    ],
+    "correct_answer": "Lead",
+    "explanation": "Lead is a toxic heavy metal that can contaminate food or water through old pipes, industrial pollution, or glazed ceramics, causing chemical food poisoning. Unlike essential minerals like calcium and iron, lead has no physiological role and is highly neurotoxic.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-305",
+    "question": "The minimum energy expenditure required to sustain vital, involuntary physiological processes in a resting individual is known as:",
+    "options": [
+      "Body Mass Index",
+      "Resting Energy Expenditure",
+      "Basal Metabolic rate",
+      "Basal Metabolic Expenditure"
+    ],
+    "correct_answer": "Basal Metabolic rate",
+    "explanation": "Basal metabolic rate is the baseline level of energy required by the body to maintain life-sustaining functions such as respiration and circulation while at complete rest. It is measured under strict standardized conditions of physical and mental quiet.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-306",
+    "question": "In which of the following staple food products are nutritional fortifying agents added by legal mandate in many regions?",
+    "options": [
+      "White flour",
+      "Coffee",
+      "Sugar",
+      "Sausages"
+    ],
+    "correct_answer": "White flour",
+    "explanation": "White flour is routinely fortified with essential micro-nutrients like folic acid, iron, and B vitamins by law in many countries to prevent widespread nutritional deficiencies. This public health strategy has significantly reduced the incidence of neural tube defects and iron-deficiency anemia.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-307",
+    "question": "Which of the following macronutrients or compounds contains absolutely no dietary fat?",
+    "options": [
+      "Meat",
+      "Cheese",
+      "Butter",
+      "Sugar"
+    ],
+    "correct_answer": "Sugar",
+    "explanation": "Sugar is a pure carbohydrate that contains no lipids or fatty acids whatsoever. In contrast, butter is almost entirely fat, while cheese and meat contain significant amounts of structural and storage fats.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-308",
+    "question": "Which of the following vitamins is most likely to be lost from beef if it is boiled or stewed for an extended period?",
+    "options": [
+      "Vitamin A",
+      "Nicotinic acid",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct_answer": "Nicotinic acid",
+    "explanation": "Nicotinic acid, or niacin, is a water-soluble B vitamin present in beef that can easily leach out of the meat tissue and into the cooking liquid during boiling. While relatively heat-stable, discarding the boiling water results in a significant loss of this nutrient.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-309",
+    "question": "Which type of dietary pattern is most strongly associated with the development of diverticulosis?",
+    "options": [
+      "A lower fiber diet",
+      "A high fiber diet",
+      "A high protein diet",
+      "A low carbohydrate diet"
+    ],
+    "correct_answer": "A lower fiber diet",
+    "explanation": "A diet low in fiber leads to smaller, harder stools that require higher colonic pressure to propel, which can cause the mucosal lining to herniate through the muscular wall of the colon. Consuming a high-fiber diet helps maintain soft stool bulk and prevents this pressure build-up.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-310",
+    "question": "Bile is a critical secretion in the digestive process because it performs which of the following actions?",
+    "options": [
+      "It dissolves meat fibers to make them easier to digest",
+      "It digests simple fats directly",
+      "It breaks down fat globules so they can be more easily digested by enzymes",
+      "It chemically converts complex sugars to glucose"
+    ],
+    "correct_answer": "It breaks down fat globules so they can be more easily digested by enzymes",
+    "explanation": "Bile salts act as biological detergents that emulsify large fat droplets into tiny micelles, vastly increasing the surface area of the lipids. This mechanical breakdown allows pancreatic lipases to rapidly access and chemically digest the fat molecules.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-311",
+    "question": "Chemically, the over-the-counter medication milk of magnesia is best classified under which category?",
+    "options": [
+      "An acid",
+      "A base",
+      "An inorganic salt",
+      "An organic salt"
+    ],
+    "correct_answer": "A base",
+    "explanation": "Milk of magnesia is a suspension of magnesium hydroxide, which is a basic alkaline compound. When ingested, it chemically neutralizes excess hydrochloric acid in the stomach, acting as an effective antacid and laxative.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-312",
+    "question": "Which of the following is not considered a primary physiological function of amino acids in the human body?",
+    "options": [
+      "Energy production",
+      "Regulation of body processes",
+      "Growth of body tissues",
+      "Maintenance and repair of body tissues"
+    ],
+    "correct_answer": "Energy production",
+    "explanation": "The primary roles of amino acids are structural synthesis, tissue repair, and the regulation of metabolic processes through enzymes and hormones. While they can be oxidized for energy, the body prioritizes carbohydrates and fats for energy production, using protein only during starvation.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-313",
+    "question": "A deficiency in which of the following vitamins is linked to an increase in dental caries because of its crucial relationship with calcium absorption?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B group",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct_answer": "Vitamin D",
+    "explanation": "Vitamin D is essential for the active transport of calcium across the intestinal mucosa and its deposition in mineralized tissues like bone and teeth. A deficiency impair dental calcification, making tooth enamel soft and highly susceptible to bacterial decay.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-314",
+    "question": "The primary goal of nutritional therapy for a client suffering from congestive heart failure is which of the following?",
+    "options": [
+      "To reduce sodium and fluid retention and to minimize cardiac overload",
+      "To augment sodium, decrease fluid retention and minimize cardiac overload",
+      "To minimize sodium and fluid retention and enhance cardiac overload",
+      "To measure sodium and fluid retention and reduce cardiac overload"
+    ],
+    "correct_answer": "To reduce sodium and fluid retention and to minimize cardiac overload",
+    "explanation": "Congestive heart failure compromises cardiac output, leading to compensatory aldosterone release that causes fluid and sodium retention. Restricting dietary sodium and fluids directly relieves this vascular congestion, easing the workload on the failing heart.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-315",
+    "question": "A severe and prolonged lack of dietary thiamin, or vitamin B1, is the primary cause of which of the following deficiency diseases?",
+    "options": [
+      "Beri-beri",
+      "Pellagra",
+      "Anaemia",
+      "Scurvy"
+    ],
+    "correct_answer": "Beri-beri",
+    "explanation": "Thiamin is a coenzyme required for carbohydrate metabolism and neural function, and its severe deficiency leads to beriberi. Dry beriberi is characterized by peripheral neuropathy and muscle wasting, while wet beriberi presents with high-output cardiac failure.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-316",
+    "question": "In organic chemistry, which of the following represents the general empirical formula for simple carbohydrates?",
+    "options": [
+      "(C4H2O)n",
+      "(C6H2O)n",
+      "(CH2O)n",
+      "(C2H2O)n COOH"
+    ],
+    "correct_answer": "(CH2O)n",
+    "explanation": "Simple carbohydrates, or sugars, are composed of carbon, hydrogen, and oxygen in a ratio of one carbon atom to two hydrogen atoms and one oxygen atom. This ratio is represented by the empirical formula carbon-hydrogen-two-oxygen, repeated n times.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-317",
+    "question": "When a client is receiving total parenteral nutrition, which of the following is the most important reason for closely monitoring their daily intake and fluid output?",
+    "options": [
+      "To determine how quickly the client is metabolizing the solution",
+      "To determine whether the client's oral intake is sufficient",
+      "To detect the development of hypovolemia",
+      "To decrease the risk of fluid overload"
+    ],
+    "correct_answer": "To decrease the risk of fluid overload",
+    "explanation": "Total parenteral nutrition solutions are highly hypertonic and are infused directly into the central circulation, drawing intracellular fluid into the bloodstream. Monitoring fluid balance is critical to prevent circulatory volume overload, which can lead to pulmonary edema and acute heart failure.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-318",
+    "question": "Which of the following clinical symptoms is not associated with scurvy, the disease caused by vitamin C deficiency?",
+    "options": [
+      "Night blindness",
+      "bleeding in the skin",
+      "Inability to recover quickly from illness",
+      "anaemia"
+    ],
+    "correct_answer": "Night blindness",
+    "explanation": "Scurvy is characterized by impaired collagen synthesis, leading to bleeding gums, cutaneous bruising, anemia, and poor wound healing. Night blindness is caused by a deficiency of vitamin A, which is required to synthesize the visual pigment rhodopsin, and is unrelated to vitamin C.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-319",
+    "question": "Which of the following represents the most appropriate anthropometric measurement for evaluating the growth and physical development of infants?",
+    "options": [
+      "Standing height",
+      "Recumbent length",
+      "Sitting height",
+      "Laying height"
+    ],
+    "correct_answer": "Recumbent length",
+    "explanation": "Because infants cannot stand unsupported, their height cannot be measured using a standard stadiometer. Instead, clinicians measure their recumbent length from head to heel using a horizontal measuring board, ensuring accurate tracking of infant development.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-320",
+    "question": "Which hormone, secreted by the beta cells of the islets of Langerhans, is essential for facilitating cellular glucose uptake and storage?",
+    "options": [
+      "Epinephrine",
+      "Ptyalin",
+      "Insulin",
+      "Pancreatic enzymes"
+    ],
+    "correct_answer": "Insulin",
+    "explanation": "Insulin is an anabolic hormone secreted in response to elevated blood glucose levels. It binds to cell receptors to facilitate the transport of glucose into muscle and adipose tissues, promoting glycogen synthesis and preventing hyperglycemia.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-321",
+    "question": "How many standard amino acids are utilized by the genetic code to synthesize proteins in the human body?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "50"
+    ],
+    "correct_answer": "20",
+    "explanation": "There are twenty standard amino acids that serve as the fundamental building blocks of proteins, linked together in specific sequences by peptide bonds. Of these twenty, nine are essential amino acids that must be obtained directly from the diet.",
+    "category": "Nutrition and Dietetics"
+  },
+  {
+    "id": "item-322",
+    "question": "Which of the following dietary formulations is most appropriate for a pediatric client diagnosed with cystic fibrosis?",
+    "options": [
+      "High calories, high protein, moderate fat",
+      "High calories, moderate protein, low fat",
+      "Moderate calories, moderate protein, moderate fat",
+      "Low calories, high protein, low fat"
+    ],
+    "correct_answer": "High calories, high protein, moderate fat",
+    "explanation": "Cystic fibrosis causes thick mucus secretions that obstruct pancreatic enzyme ducts, leading to malabsorption of fats and proteins. To support growth and combat energy loss, these patients require a high-calorie, high-protein diet along with oral pancreatic enzyme replacement therapy.",
+    "category": "Nutrition and Dietetics"
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "id": "item-941",
+    "question": "A client who is complaining of tinnitus is describing a symptom that is:",
+    "options": [
+      "Objective",
+      "Subjective",
+      "Functional",
+      "Prodromal"
+    ],
+    "correct_answer": "Subjective",
+    "explanation": "Tinnitus, which is a ringing or buzzing sensation in the ears, is a classic subjective symptom because it is experienced only by the patient and cannot be directly observed or measured by an examiner. Objective data, in contrast, represents measurable and observable physical findings like blood pressure or a rash.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-942",
+    "question": "Why is the client nursing process important in professional nursing care?",
+    "options": [
+      "Required for accreditation",
+      "Reduces the workload of nurses",
+      "Represents a logical approach to problem solving",
+      "Provides an organizational approach for client care"
+    ],
+    "correct_answer": "Represents a logical approach to problem solving",
+    "explanation": "The nursing process is a systematic, client-centered, and goal-oriented framework that provides a logical, scientific approach to clinical problem-solving. By using these structured steps, professional nurses can deliver individualized, effective, and safe patient-centered care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-943",
+    "question": "Once a nurse assesses a client's condition and identifies appropriate nursing diagnoses, what is the next step?",
+    "options": [
+      "A plan is developed for nursing care",
+      "Physical assessment begins",
+      "A list of priorities is determined",
+      "A review of the assessment is conducted with other team members"
+    ],
+    "correct_answer": "A list of priorities is determined",
+    "explanation": "Immediately after identifying the appropriate nursing diagnoses, the nurse must establish a list of clinical priorities to determine which concerns require immediate attention. Once priorities are established, the nurse can proceed to formulate client-centered goals and plan specific interventions.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-944",
+    "question": "A client arrives in the emergency department after a motor vehicle accident. Nursing assessment findings include a blood pressure of sixty-eight over thirty-four, a pulse rate of one hundred and thirty beats per minute, and a respiratory rate of eighteen breaths per minute. Which of the following is the most appropriate priority nursing diagnosis?",
+    "options": [
+      "Alteration in cerebral tissue perfusion",
+      "Deficient fluid volume",
+      "Ineffective airway clearance",
+      "Alteration in sensory perception"
+    ],
+    "correct_answer": "Deficient fluid volume",
+    "explanation": "The patient's clinical findings of profound hypotension and tachycardia are classic indicators of hypovolemic shock following trauma, making deficient fluid volume the most urgent, life-threatening priority nursing diagnosis. Restoring circulatory volume is critical to maintain tissue perfusion and prevent organ failure.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-945",
+    "question": "The following are recognized assessment models utilized by professional nurses to organize patient data EXCEPT:",
+    "options": [
+      "Maslow's hierarchy of needs",
+      "Organization of institutional data",
+      "Body systems model",
+      "Marjory Gordon's functional health patterns"
+    ],
+    "correct_answer": "Organization of institutional data",
+    "explanation": "Nurses organize clinical assessment data using holistic, patient-centered frameworks such as Maslow's hierarchy of needs, Gordon's functional health patterns, or a medical body systems model. Organizing data by institutional or administrative categories does not support clinical nursing diagnosis or patient-centered care planning.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-946",
+    "question": "The systematic, scientific problem-solving approach utilized by nurses to provide individualized, goal-directed care is known as which of the following?",
+    "options": [
+      "Nursing care plan",
+      "The nursing process",
+      "The nurse practice act",
+      "None of the above"
+    ],
+    "correct_answer": "The nursing process",
+    "explanation": "The nursing process is a structured, five-step framework consisting of assessment, diagnosis, planning, implementation, and evaluation. This systematic approach is used to identify patient health concerns, plan and deliver targeted interventions, and evaluate clinical outcomes.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-947",
+    "question": "Which of the following represents a priority nursing diagnosis for a pediatric client immediately following a surgical tonsillectomy?",
+    "options": [
+      "Altered nutrition",
+      "Impaired communication",
+      "Risk for injury or aspiration",
+      "Altered urinary elimination"
+    ],
+    "correct_answer": "Risk for injury or aspiration",
+    "explanation": "Following a tonsillectomy, the child is at a high risk for postoperative hemorrhage, which can lead to airway obstruction or blood aspiration. Monitoring for signs of bleeding, such as frequent swallowing, and maintaining a safe side-lying position to protect the airway is the highest nursing priority.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-948",
+    "question": "The interactive clinical process in which a nurse utilizes a planned, goal-directed approach to learn about the client's health status and build rapport is defined as:",
+    "options": [
+      "Social interaction",
+      "Professional communication",
+      "Nurse-patient interaction",
+      "Therapeutic communication"
+    ],
+    "correct_answer": "Nurse-patient interaction",
+    "explanation": "A planned, structured nurse-patient interaction is designed to gather comprehensive subjective and objective health data while establishing a professional, therapeutic relationship. This purposeful interaction forms the basis of the initial nursing assessment.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-949",
+    "question": "In professional nursing practice, the planning phase is best defined as a category of nursing behaviors in which:",
+    "options": [
+      "The nurse determines the medical treatment needed for the client",
+      "Client-centered goals and expected outcomes are established",
+      "The physician determines the plan of care for the client",
+      "The client determines the care needed"
+    ],
+    "correct_answer": "Client-centered goals and expected outcomes are established",
+    "explanation": "During the planning phase of the nursing process, the nurse collaborates with the patient and healthcare team to establish realistic, measurable, client-centered goals and expected outcomes. The nurse also selects specific, evidence-based nursing interventions designed to achieve these outcomes.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-950",
+    "question": "Which of the following professional organizations was established to develop, refine, and promote a standardized taxonomy of nursing diagnostic terminology?",
+    "options": [
+      "North American Nursing Diagnosis Association International",
+      "The Nursing and Midwifery Council of Nigeria",
+      "The American Nurses Association",
+      "The Ethical Nursing Association"
+    ],
+    "correct_answer": "North American Nursing Diagnosis Association International",
+    "explanation": "The North American Nursing Diagnosis Association International, commonly known as NANDA, was founded to establish, standardize, and systematically update a professional taxonomy of nursing diagnoses. This standardized terminology ensures consistent communication of patient responses to health conditions across clinical settings.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-951",
+    "question": "Which of the following clinical positions is most appropriate to promote venous return to the heart and prevent shock in a hypotensive patient?",
+    "options": [
+      "Dorsal recumbent",
+      "Horizontal recumbent",
+      "Reverse Trendelenburg",
+      "Trendelenburg"
+    ],
+    "correct_answer": "Trendelenburg",
+    "explanation": "The Trendelenburg position, where the patient's head is lowered and the legs are elevated, utilizes gravity to facilitate venous return from the lower extremities to the central circulation. This helps maintain cardiac output and tissue perfusion in patients experiencing acute hypotension or shock.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-952",
+    "question": "A patient with an acute asthma exacerbation is admitted to the hospital. Which of the following identified concerns represents a first-level priority for the nurse?",
+    "options": [
+      "Ineffective self-health management",
+      "Risk for infection",
+      "Impaired gas exchange",
+      "Readiness for enhanced spiritual well-being"
+    ],
+    "correct_answer": "Impaired gas exchange",
+    "explanation": "Applying the airway, breathing, and circulation clinical framework, impaired gas exchange is a first-level, life-threatening priority concern. Immediate nursing interventions must focus on restoring adequate oxygenation and ventilation before addressing educational, psychosocial, or spiritual needs.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-953",
+    "question": "When a client presents with multiple concurrent health problems, the nurse must sequence and prioritize interventions. These priorities are primarily determined based on which of the following parameters?",
+    "options": [
+      "The preferences of the attending physician",
+      "Non-emergent, non-life-threatening concerns",
+      "The clinical urgency of the problems",
+      "The future socioeconomic well-being of the patient"
+    ],
+    "correct_answer": "The clinical urgency of the problems",
+    "explanation": "Nursing priorities are determined based on the clinical urgency and severity of the patient's problems, utilizing frameworks such as the airway, breathing, and circulation hierarchy or Maslow's hierarchy of needs. Life-threatening physiological issues are always addressed before stable or non-urgent concerns.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-954",
+    "question": "Under professional nursing classification standards, the following are recognized types of nursing diagnoses EXCEPT:",
+    "options": [
+      "Actual or problem-focused diagnosis",
+      "Risk nursing diagnosis",
+      "Safety and security diagnosis",
+      "Health promotion or wellness diagnosis"
+    ],
+    "correct_answer": "Safety and security diagnosis",
+    "explanation": "Standardized nursing diagnoses are classified into four main types: problem-focused (actual), risk, health promotion, and syndrome diagnoses. Safety and security represents a level within Maslow's hierarchy of needs rather than a formal, distinct type of nursing diagnosis.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-955",
+    "question": "Which of the following represents the most appropriate priority nursing diagnosis for a multigravida client in active labor who is completing the latent phase?",
+    "options": [
+      "Impaired gas exchange related to hyperventilation",
+      "Alteration in placental perfusion related to maternal position",
+      "Impaired physical mobility related to fetal-monitoring equipment",
+      "Risk for deficient fluid volume related to decreased fluid intake"
+    ],
+    "correct_answer": "Risk for deficient fluid volume related to decreased fluid intake",
+    "explanation": "During labor, the client experiences increased metabolic demands, physical exertion, and hyperventilation, often accompanied by a restricted oral intake of fluids. Consequently, the nurse must prioritize monitoring for risk for deficient fluid volume to prevent dehydration, uterine muscle fatigue, and maternal exhaustion.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-956",
+    "question": "In clinical nursing documentation and care planning, the standard acronym APIE stands for which of the following sequences?",
+    "options": [
+      "Assessment, Planning, Implementation, and Evaluation",
+      "Accurate Planning, Intervention, and Evaluation",
+      "Assessment, Problem identification, Intervention, and Evaluation",
+      "Action, Planning, Implementation, and Evaluation"
+    ],
+    "correct_answer": "Assessment, Planning, Implementation, and Evaluation",
+    "explanation": "APIE is a widely used clinical documentation format that mirrors the core steps of the nursing process: Assessment (gathering subjective and objective data), Planning (formulating diagnoses and goals), Implementation (carrying out nursing actions), and Evaluation (assessing patient responses).",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-957",
+    "question": "A clinical instructor is teaching nursing students about diagnostic reasoning. The primary purpose of formulating a nursing diagnosis is to:",
+    "options": [
+      "Support and validate the physician's medical plan of care",
+      "Provide a standardized, rigid treatment approach for all clients",
+      "Identify and recognize the client's response to an active illness or life situation",
+      "Offer the nurse's personal, subjective view of the client's behaviors"
+    ],
+    "correct_answer": "Identify and recognize the client's response to an active illness or life situation",
+    "explanation": "Unlike a medical diagnosis, which identifies a specific disease pathology, a nursing diagnosis focuses on identifying how a patient, family, or community responds physically, psychologically, and spiritually to that illness or health transition. This identification guides autonomous nursing care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-958",
+    "question": "When conducting a physical and psychosocial assessment, the nurse knows that which of the following symptoms is most heavily influenced by a patient's cultural heritage?",
+    "options": [
+      "Hearing loss",
+      "The perception and expression of pain",
+      "A palpable breast lump",
+      "Food intolerance"
+    ],
+    "correct_answer": "The perception and expression of pain",
+    "explanation": "While physiological pain pathways are universal, the subjective perception, tolerance, and behavioral expression of pain are deeply influenced by cultural background, family upbringing, and personal beliefs. Nurses must conduct culturally sensitive pain assessments to provide effective care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-959",
+    "question": "In the planning phase of the nursing process, a client-centered goal is defined as a specific, measurable behavior or response that reflects which of the following?",
+    "options": [
+      "The patient's desire for specific medical interventions",
+      "The patient's highest possible level of wellness and independence in function",
+      "The physician's preferred clinical target for that specific client",
+      "A standardized response when compared to another patient with a similar problem"
+    ],
+    "correct_answer": "The patient's highest possible level of wellness and independence in function",
+    "explanation": "A client-centered goal is a realistic, measurable, and time-bound projection of what the patient will achieve, reflecting their optimal level of physiological, psychological, and functional independence. These goals serve as the baseline criteria for subsequent clinical evaluation.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-960",
+    "question": "Which of the following lists represents the standard types of clinical assessments performed by professional nurses?",
+    "options": [
+      "Initial, focused, emergency, and ongoing time-lapsed assessments",
+      "Minor, focused, emergency, and ongoing assessments",
+      "Minimal, focused, complete, and ongoing assessments",
+      "Short, middle, long-term, and comprehensive assessments"
+    ],
+    "correct_answer": "Initial, focused, emergency, and ongoing time-lapsed assessments",
+    "explanation": "In clinical practice, nursing assessments are categorized into four standard types based on timing and clinical purpose: a comprehensive initial assessment, a targeted focused assessment, a rapid emergency assessment, and an ongoing time-lapsed reassessment.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-961",
+    "question": "Which of the following nursing diagnoses represents the highest priority for a patient admitted with severe hypothyroidism?",
+    "options": [
+      "Impaired physical mobility related to muscle weakness",
+      "Hypothermia related to a decreased metabolic rate",
+      "Disturbed thought processes related to cognitive slowing",
+      "Decreased cardiac output related to profound bradycardia"
+    ],
+    "correct_answer": "Decreased cardiac output related to profound bradycardia",
+    "explanation": "Profound bradycardia and decreased cardiac output in severe hypothyroidism (which can progress to myxedema coma) represent a life-threatening physiological emergency. Maintaining cardiac output and hemodynamic stability takes immediate priority over hypothermia, physical weakness, or cognitive changes.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-962",
+    "question": "During patient assessment, clinical findings that are directly observed, measured, or detected through physical examination and diagnostic testing are classified as:",
+    "options": [
+      "Objective data",
+      "Subjective data",
+      "Expected data",
+      "Outcome data"
+    ],
+    "correct_answer": "Objective data",
+    "explanation": "Objective data consists of observable, measurable, and verifiable information obtained by the nurse through inspection, palpation, percussion, auscultation, and diagnostic results. Subjective data, in contrast, represents the patient's self-reported feelings and perceptions.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-963",
+    "question": "A nurse is caring for a postoperative client and is concerned about the potential development of atelectasis. If atelectasis occurs, which of the following is the most appropriate diagnostic label?",
+    "options": [
+      "Ineffective airway clearance",
+      "Impaired gas exchange",
+      "Decreased cardiac output",
+      "Impaired spontaneous ventilation"
+    ],
+    "correct_answer": "Impaired gas exchange",
+    "explanation": "Atelectasis involves the collapse of alveoli, which directly compromises the alveolar-capillary membrane and prevents normal oxygen and carbon dioxide transport. This physiological disruption is clinically represented by the nursing diagnosis of impaired gas exchange.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-964",
+    "question": "To ensure active participation and success in clinical goal setting, the nurse must verify that the patient meets which of the following criteria?",
+    "options": [
+      "Is alert, cognitively intact, and possesses some degree of functional independence",
+      "Is fully ambulatory and physically mobile",
+      "Is able to speak and write fluently",
+      "Is able to read and write complex instructions"
+    ],
+    "correct_answer": "Is alert, cognitively intact, and possesses some degree of functional independence",
+    "explanation": "Collaborative goal setting requires that the patient is alert and cognitively capable of understanding and participating in their care decisions. While physical mobility or literacy are beneficial, they are not prerequisites for a patient to engage in setting personal health goals.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-965",
+    "question": "Which of the following descriptions best defines the primary clinical purpose of obtaining a patient's health history?",
+    "options": [
+      "To gather strictly subjective data about the patient's current feelings",
+      "To obtain a complete genetic record to determine inherited disease susceptibility",
+      "To compile a comprehensive database of past and present objective and subjective health data",
+      "To establish a genealogical record of familial medical conditions"
+    ],
+    "correct_answer": "To compile a comprehensive database of past and present objective and subjective health data",
+    "explanation": "A complete health history is designed to gather comprehensive, holistic information regarding the patient's past and current health status, lifestyle, and medical history. This database combines subjective interview data with objective records to guide clinical care planning.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-966",
+    "question": "During which phase of the nursing process does the professional nurse systematically evaluate whether the patient has successfully achieved the projected expected outcomes?",
+    "options": [
+      "Implementation",
+      "Diagnosis",
+      "Evaluation",
+      "Assessment"
+    ],
+    "correct_answer": "Evaluation",
+    "explanation": "The evaluation phase is the final, continuous step of the nursing process where the nurse measures the patient's progress toward achieving their established goals. Based on this evaluation, the nurse decides whether to terminate, continue, or modify the care plan.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-967",
+    "question": "A nurse formulates a nursing diagnosis of altered bowel elimination for a patient. Which of the following identified factors represents an inappropriate etiology for this specific diagnosis?",
+    "options": [
+      "Poor dietary fiber intake",
+      "Severely restricted daily fluid intake",
+      "A history of total hip replacement surgery",
+      "The simple presence of lower abdominal discomfort"
+    ],
+    "correct_answer": "The simple presence of lower abdominal discomfort",
+    "explanation": "Low fiber intake, restricted fluids, and physical immobility following hip surgery are valid physiological etiologies that directly cause constipation or altered elimination. Lower abdominal discomfort is a symptom or clinical manifestation resulting from altered elimination, rather than its underlying cause.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-968",
+    "question": "Which of the following represents a high-priority, common nursing diagnosis for a patient recovering from a newly created surgical ileostomy?",
+    "options": [
+      "Disturbed body image",
+      "Impaired comfort",
+      "Risk for deficient fluid volume",
+      "Disturbed sleep pattern"
+    ],
+    "correct_answer": "Risk for deficient fluid volume",
+    "explanation": "An ileostomy bypasses the entire large intestine, which is the primary site for water reabsorption. In the immediate postoperative period, the patient experiences continuous liquid fecal output, putting them at an exceptionally high risk for rapid fluid and electrolyte depletion.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-969",
+    "question": "Which of the following statements represents a correctly formulated, measurable expected outcome statement?",
+    "options": [
+      "The client will experience significantly less pain during the shift",
+      "The client will report a pain acuity score of less than four on a scale of zero to ten within thirty minutes",
+      "The client will remain completely pain-free throughout hospitalization",
+      "The client will receive prescribed pain medications every four hours around the clock"
+    ],
+    "correct_answer": "The client will report a pain acuity score of less than four on a scale of zero to ten within thirty minutes",
+    "explanation": "A high-quality outcome statement must be specific, measurable, attainable, realistic, and time-bound. Reporting a quantitative pain score (less than four on a scale of zero to ten) within a specific timeframe (thirty minutes) satisfies all of these clinical criteria.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-970",
+    "question": "Which of the following interview techniques should a community nurse utilize during a patient assessment to encourage the client to share detailed, descriptive information about their health status?",
+    "options": [
+      "Open-ended questioning",
+      "Closed-ended questioning",
+      "Biased and leading questioning",
+      "Direct, single-word questioning"
+    ],
+    "correct_answer": "Open-ended questioning",
+    "explanation": "Open-ended questions allow patients to describe their symptoms, feelings, and health concerns in their own words, yielding rich, descriptive qualitative data. Closed-ended questions are useful for rapid, specific, or binary data collection.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-971",
+    "question": "The systematic, continuous, and holistic collection of subjective and objective patient data across physical, psychological, emotional, spiritual, and social domains represents which step of the nursing process?",
+    "options": [
+      "Assessment",
+      "Nursing Diagnosis",
+      "Planning",
+      "Implementation"
+    ],
+    "correct_answer": "Assessment",
+    "explanation": "Assessment is the foundational first step of the nursing process, involving the systematic gathering, verification, and organization of subjective and objective data. This comprehensive database is essential for identifying accurate nursing diagnoses and planning targeted care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-972",
+    "question": "Which of the following mechanical assistive devices is most effective at preventing the development of joint contractures and foot drop in a bedbound patient?",
+    "options": [
+      "A bed block",
+      "An ergonomic footrest or footboard",
+      "A contoured knee rest",
+      "An adjustable backrest"
+    ],
+    "correct_answer": "An ergonomic footrest or footboard",
+    "explanation": "A footrest or footboard is used to keep the ankles of a bedbound patient in a neutral, ninety-degree dorsiflexed position. This support prevents the Achilles tendon from shortening, which causes the permanent plantarflexion contracture known as foot drop.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-973",
+    "question": "Which of the following nursing diagnoses represents the highest clinical priority for a patient who has just returned to the unit following a fresh tracheostomy procedure?",
+    "options": [
+      "Acute pain related to the surgical incision",
+      "Impaired verbal communication related to the tracheostomy tube",
+      "Ineffective airway clearance related to increased tracheobronchial secretions",
+      "Risk for impaired skin integrity related to stoma drainage"
+    ],
+    "correct_answer": "Ineffective airway clearance related to increased tracheobronchial secretions",
+    "explanation": "Applying the airway, breathing, and circulation priority framework, maintaining airway patency is the highest, life-support priority. A new tracheostomy stimulates massive mucus production, requiring frequent suctioning to prevent airway occlusion.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-974",
+    "question": "A complete health history provides a foundation for the nursing care plan. Which of the following statements is true regarding its characteristics?",
+    "options": [
+      "It represents strictly subjective data provided by the client",
+      "It focuses exclusively on physical health and body systems",
+      "It represents a holistic database covering mind, body, and spirit",
+      "It is solely concerned with the patient's psychiatric history"
+    ],
+    "correct_answer": "It represents a holistic database covering mind, body, and spirit",
+    "explanation": "A comprehensive health history is holistic, gathering detailed information about a patient's physical health, emotional well-being, social support systems, lifestyle, and spiritual practices. This complete picture helps the nurse design fully integrated, individualized care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-975",
+    "question": "The nursing process is a cornerstone of professional practice. It is best described as a:",
+    "options": [
+      "Palliative care protocol for end-of-life support",
+      "Rigid, medical treatment algorithm focused on disease eradication",
+      "Systematic, rational method of planning and providing individualized nursing care",
+      "Structured administrative tool to manage hospital staffing ratios"
+    ],
+    "correct_answer": "Systematic, rational method of planning and providing individualized nursing care",
+    "explanation": "The nursing process is a systematic, logical, and dynamic framework designed to identify, prevent, and treat actual or potential health problems. It ensures that patients receive structured, evidence-based, and highly individualized nursing care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-976",
+    "question": "Which of the following positions is most appropriate for a client presenting with severe ascites and respiratory distress to facilitate maximum lung expansion?",
+    "options": [
+      "Side-lying lateral position",
+      "Sim's position",
+      "Dorsal recumbent position",
+      "Fowler's position"
+    ],
+    "correct_answer": "Fowler's position",
+    "explanation": "In patients with severe ascites, abdominal fluid exerts massive pressure upward against the diaphragm, limiting lung expansion. Placing the patient in Fowler's or semi-Fowler's position utilizes gravity to pull the abdominal contents downward, relieving pressure on the diaphragm and improving tidal volume.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-977",
+    "question": "As the nurse collaborates with the healthcare team to establish realistic goals, outcomes, and interventions, the nurse must maintain which critical professional standard?",
+    "options": [
+      "Retain absolute, unilateral control over all aspects of the care plan",
+      "Be aware of and committed to the accepted evidence-based standards of nursing practice",
+      "Avoid making any subsequent changes to the established plan of care",
+      "Enforce compliance with interventions without patient input"
+    ],
+    "correct_answer": "Be aware of and committed to the accepted evidence-based standards of nursing practice",
+    "explanation": "Professional nurses must ensure that all planned goals and interventions align with established, evidence-based nursing standards, clinical guidelines, and institutional protocols. This commitment ensures patient safety and maintains high-quality care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-978",
+    "question": "Under North American Nursing Diagnosis Association International diagnostic taxonomy, a standard risk nursing diagnosis is formulated with how many primary parts?",
+    "options": [
+      "One part",
+      "Two parts",
+      "Three parts",
+      "Four parts"
+    ],
+    "correct_answer": "Two parts",
+    "explanation": "A risk nursing diagnosis is a two-part statement consisting of the diagnostic label (the specific risk) and the associated risk factors (for example, 'Risk for infection as evidenced by an indwelling urinary catheter'). It does not contain a third 'defining characteristics' part because the problem has not yet occurred.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-979",
+    "question": "When collaborating with a client to establish realistic and achievable health goals, the nurse should prioritize which of the following actions?",
+    "options": [
+      "Ensure the goals are based solely on the nurse's clinical knowledge",
+      "Assess and identify the resources of the healthcare facility, the family, and the client",
+      "Verify that the patient is completely stable before attempting any goal setting",
+      "Develop the goals independently to save time"
+    ],
+    "correct_answer": "Assess and identify the resources of the healthcare facility, the family, and the client",
+    "explanation": "To ensure health goals are realistic and sustainable, the nurse must evaluate the available resources, financial capacity, family support systems, and local clinical facilities. Setting goals without evaluating these resources often leads to treatment non-adherence.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-980",
+    "question": "In clinical health assessments, the standardized PQRSTU framework is used to evaluate which of the following symptoms?",
+    "options": [
+      "An acute state of confusion or cognitive decline",
+      "The characteristics and severity of pain",
+      "A patient's nutritional status and metabolic balance",
+      "A patient's risk of falling during hospitalization"
+    ],
+    "correct_answer": "The characteristics and severity of pain",
+    "explanation": "The PQRSTU mnemonic is a standard pain assessment tool: P stands for Provocative or Palliative factors, Q for Quality, R for Region or Radiation, S for Severity, T for Timing, and U for how the pain affects the patient's Understanding and daily function.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-981",
+    "question": "A nurse is caring for a patient presenting with an elevated body temperature and fever. Which of the following supportive interventions should the nurse prioritize?",
+    "options": [
+      "Administer plenty of oral fluids to prevent dehydration",
+      "Maintain a strictly normal, baseline fluid intake",
+      "Restrict fluid intake to prevent fluid retention",
+      "Provide a high-protein, solid regular diet immediately"
+    ],
+    "correct_answer": "Administer plenty of oral fluids to prevent dehydration",
+    "explanation": "Fever significantly increases insensible water loss through respiration and sweating, raising the risk of dehydration. Increasing oral or intravenous fluid intake is a priority nursing intervention to maintain hydration and support hemodynamic stability.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-982",
+    "question": "An assessment that gathers detailed data regarding a patient's past medical history, family history, reason for admission, current medications, surgical history, psychosocial status, and a head-to-toe physical exam is classified as which of the following?",
+    "options": [
+      "A comprehensive initial assessment",
+      "A targeted focused assessment",
+      "A rapid emergency assessment",
+      "An ongoing time-lapsed reassessment"
+    ],
+    "correct_answer": "A comprehensive initial assessment",
+    "explanation": "A comprehensive initial assessment is performed shortly after admission to establish a baseline database across all physiological, psychological, and social domains. This complete database is essential for identifying nursing diagnoses and planning long-term care.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-983",
+    "question": "To safely initiate and carry out a nursing intervention, the nurse must demonstrate competence in which three core clinical areas?",
+    "options": [
+      "Clinical leadership, professional autonomy, and technical skills",
+      "Informatical skills, financial management, and leadership",
+      "Personal experience, advanced academic education, and skills",
+      "Knowledge, technical function, and specific interpersonal skills"
+    ],
+    "correct_answer": "Knowledge, technical function, and specific interpersonal skills",
+    "explanation": "Implementing interventions effectively requires a blend of cognitive knowledge (understanding the scientific rationale), technical skill (knowing how to perform the procedure safely), and interpersonal skills (communicating clearly and empathetically with the patient).",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-984",
+    "question": "When formulating realistic, patient-centered goals during the planning phase, the nurse knows that these goals must satisfy which of the following sets of criteria?",
+    "options": [
+      "Be specific, measurable, attainable, realistic, and time-bound",
+      "Be highly complex, long-term, and determined solely by the physician",
+      "Be generalized, flexible, and independent of specific timeframes",
+      "Be designed exclusively to meet the administrative standards of the facility"
+    ],
+    "correct_answer": "Be specific, measurable, attainable, realistic, and time-bound",
+    "explanation": "In professional care planning, goals must follow the SMART framework: Specific, Measurable, Attainable, Realistic, and Time-bound. This structure ensures that the goals are clear to the healthcare team and can be objectively evaluated during the evaluation phase.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-985",
+    "question": "A patient with end-stage renal disease is admitted to the intensive care unit. Which of the following represents an inappropriate nursing diagnosis for this patient?",
+    "options": [
+      "Fluid volume excess related to compromised renal filtration",
+      "A clinical finding of a decreased red blood cell count",
+      "Electrolyte imbalance related to impaired potassium excretion",
+      "Impaired immune function related to systemic uremia"
+    ],
+    "correct_answer": "A clinical finding of a decreased red blood cell count",
+    "explanation": "A decreased red blood cell count is an objective laboratory finding or diagnostic result, rather than a nursing diagnosis. Fluid volume excess, electrolyte imbalance, and impaired immune function are valid nursing diagnoses that identify how the patient responds to end-stage renal disease.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-986",
+    "question": "Which of the following is recognized as the primary clinical tool utilized by professional nurses to deliver structured, individualized, and goal-directed patient care?",
+    "options": [
+      "Standardized nursing diagnoses",
+      "The nursing process",
+      "Excellent and high-quality nursing care",
+      "Empathetic clinical communication"
+    ],
+    "correct_answer": "The nursing process",
+    "explanation": "The nursing process is the fundamental methodology of nursing practice, providing a scientific, systematic, and rational framework for organizing and delivering patient-centered care. It guides the nurse through assessment, diagnosis, planning, implementation, and evaluation.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-987",
+    "question": "A pregnant client is admitted with hyperemesis gravidarum. Which of the following nursing diagnoses should the nurse prioritize in the patient's plan of care?",
+    "options": [
+      "Deficient fluid volume related to persistent vomiting",
+      "Deficient knowledge related to gestational self-care",
+      "Impaired comfort related to nausea and dry retching",
+      "Impaired oral mucous membrane related to gastric acid exposure"
+    ],
+    "correct_answer": "Deficient fluid volume related to persistent vomiting",
+    "explanation": "Severe, persistent vomiting in hyperemesis gravidarum causes rapid fluid and electrolyte depletion, which can threaten maternal and fetal safety. Restoring and maintaining adequate fluid volume takes immediate priority over educational, comfort, or local tissue needs.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-988",
+    "question": "Which type of clinical assessment is performed by the nurse to collect data about a previously identified problem, determining whether it has resolved, improved, or worsened?",
+    "options": [
+      "A focused assessment",
+      "An initial comprehensive assessment",
+      "A rapid emergency assessment",
+      "An ongoing time-lapsed reassessment"
+    ],
+    "correct_answer": "A focused assessment",
+    "explanation": "A focused assessment is designed to gather specific data about a particular, previously identified problem or nursing diagnosis (such as reassessing a patient's pain level after administering analgesics). This is distinct from a comprehensive initial assessment or a rapid emergency assessment.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-989",
+    "question": "The nurse is formulating a plan of care for a client presenting with a massive goiter. Which of the following nursing diagnoses should the nurse identify as the highest priority?",
+    "options": [
+      "Body image disturbance related to the visible enlargement of the neck",
+      "Activity intolerance related to systemic thyroid-induced fatigue",
+      "Imbalanced nutrition, less than body requirements, related to an elevated metabolic rate",
+      "Risk for ineffective airway clearance related to mechanical pressure of the goiter on the trachea"
+    ],
+    "correct_answer": "Risk for ineffective airway clearance related to mechanical pressure of the goiter on the trachea",
+    "explanation": "Applying the airway, breathing, and circulation clinical framework, any threat to airway patency is a first-level priority. A massive goiter can compress the trachea, making risk for ineffective airway clearance the most critical, life-threatening priority nursing diagnosis.",
+    "category": "Nursing Process and Nursing Care Plan"
+  },
+  {
+    "id": "item-990",
+    "question": "Which of the following nursing interventions is most effective at reducing the risk of catheter-associated urinary tract infections in a patient with an indwelling urinary catheter?",
+    "options": [
+      "Cleanse the perineal area and urethral meatus daily using soap and water",
+      "Empty the urinary catheter drainage bag once every shift",
+      "Routinely replace the catheter tubing and drainage bag every forty-eight hours",
+      "Restrict daily fluid intake to prevent bladder over-distension"
+    ],
+    "correct_answer": "Cleanse the perineal area and urethral meatus daily using soap and water",
+    "explanation": "Diligent perineal and meatal hygiene using soap and water is the gold standard nursing intervention to prevent the ascent of bacteria along the catheter tube into the bladder. Routine catheter replacements are not recommended unless obstruction or infection is active.",
+    "category": "Nursing Process and Nursing Care Plan"
+  }
+]
