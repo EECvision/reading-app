@@ -84,7 +84,7 @@ export function resetProgress(deckId: string): void {
 const defaultSettings: AppSettings = {
   theme: 'dark',
   tts: {
-    rate: 0.75,
+    rate: 1,
     pitch: 1,
     voiceURI: '',
     audioMode: 'single-pause',
