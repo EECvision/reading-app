@@ -179,21 +179,9 @@ export function SessionControls({
     }
   };
 
-  // ── One-shot auto-start: play as soon as the first card text is ready ─────────
-  // Uses a 150ms debounce to wait for both frontText and backText to settle
-  // before starting, preventing the cascade bug where two rapid state updates
-  // (frontText then backText) fire two overlapping sequences.
-  useEffect(() => {
-    if (hasAutoStarted.current) return;
-    if (!frontText && !backText) return;
-    const timer = setTimeout(() => {
-      if (hasAutoStarted.current) return;
-      hasAutoStarted.current = true;
-      const seqId = ++playSequenceId.current;
-      runSequence(seqId);
-    }, 150);
-    return () => clearTimeout(timer);
-  }, [frontText, backText]);
+  // ── Auto-start disabled: audio is paused by default on session entry/reload ──
+  // The user must press Play to begin. hasAutoStarted.current stays false until
+  // handleSpeak is called, which also gates the autoplay card-navigation effect.
 
   // ── Restart audio when TTS settings change while speaking ───────────────────
   // Compares relevant fields against the previous snapshot so that changes to

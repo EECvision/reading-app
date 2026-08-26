@@ -155,9 +155,11 @@
   color: var(--text-secondary);
   font-size: var(--text-base);
   text-align: right;
-  padding-right: var(--space-2);
   cursor: pointer;
   direction: rtl; /* Right align the select text */
+  width: 240px;
+  max-width: 65%;
+  flex-shrink: 0;
 }
 
 .nativeSelect option {
