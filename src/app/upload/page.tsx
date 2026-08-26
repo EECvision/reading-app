@@ -117,7 +117,7 @@ export default function UploadPage() {
       { num: 1, label: "Mode" },
       { num: 2, label: "Generate" },
       { num: 3, label: "Upload" },
-      { num: 4, label: "Start" }
+      { num: 4, label: "Start" },
     ];
 
     return (
@@ -126,15 +126,26 @@ export default function UploadPage() {
           const isActive = currentStep === step.num;
           const isCompleted = currentStep > step.num;
           return (
-            <div key={step.num} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
-              <div className={`${styles.stepperItem} ${isActive ? styles.active : ''} ${isCompleted ? styles.completed : ''}`}>
+            <div
+              key={step.num}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "var(--space-4)",
+              }}
+            >
+              <div
+                className={`${styles.stepperItem} ${isActive ? styles.active : ""} ${isCompleted ? styles.completed : ""}`}
+              >
                 <span className={styles.stepperNum}>
-                  {isCompleted ? '✓' : step.num}
+                  {isCompleted ? "✓" : step.num}
                 </span>
                 <span className={styles.stepperLabel}>{step.label}</span>
               </div>
               {idx < steps.length - 1 && (
-                <div className={`${styles.stepperSeparator} ${isCompleted ? styles.completed : ''}`} />
+                <div
+                  className={`${styles.stepperSeparator} ${isCompleted ? styles.completed : ""}`}
+                />
               )}
             </div>
           );
@@ -150,7 +161,7 @@ export default function UploadPage() {
         <div className="nav-inner">
           <Link id="nav-home" href="/" className={styles.navBrand}>
             <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>EchoDeck</span>
+            <span className={styles.navTitle}>Audiobooklm</span>
           </Link>
           <div className={styles.navActions}>
             <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">
@@ -164,7 +175,7 @@ export default function UploadPage() {
       <div className="container-sm section">
         <div className="animate-slideUp">
           <h1 className={styles.pageTitle}>Upload a Deck</h1>
-          
+
           {renderStepper()}
 
           <div className={styles.stepsContainer}>
@@ -174,17 +185,18 @@ export default function UploadPage() {
                   <div>
                     <h2 className={styles.stepTitle}>Select Learning Mode</h2>
                     <p className={styles.stepDesc}>
-                      Choose the format that best fits what you are trying to learn.
+                      Choose the format that best fits what you are trying to
+                      learn.
                     </p>
                   </div>
                 </div>
                 <ModeSelector selected={mode} onSelect={handleModeSelect} />
-                
+
                 <div className={styles.wizardActions}>
                   <div className={styles.wizardActionsRight}>
-                    <button 
-                      className="btn btn-primary" 
-                      onClick={nextStep} 
+                    <button
+                      className="btn btn-primary"
+                      onClick={nextStep}
                       disabled={!mode}
                     >
                       Next Step →
@@ -200,10 +212,28 @@ export default function UploadPage() {
                   <div>
                     <h2 className={styles.stepTitle}>Generate Content</h2>
                     <div className={styles.stepDesc}>
-                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginTop: "8px", display: "flex", flexDirection: "column", gap: "4px" }}>
-                        <li>Use AI or our templates to create your study materials.</li>
-                        <li>You will upload the generated JSON file in the next step.</li>
-                        <li>If you already have your content ready, you can skip this step.</li>
+                      <ul
+                        style={{
+                          listStyleType: "disc",
+                          paddingLeft: "20px",
+                          marginTop: "8px",
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "4px",
+                        }}
+                      >
+                        <li>
+                          Use AI or our templates to create your study
+                          materials.
+                        </li>
+                        <li>
+                          You will upload the generated JSON file in the next
+                          step.
+                        </li>
+                        <li>
+                          If you already have your content ready, you can skip
+                          this step.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -229,7 +259,8 @@ export default function UploadPage() {
                   <div>
                     <h2 className={styles.stepTitle}>Upload JSON</h2>
                     <p className={styles.stepDesc}>
-                      Provide your study content as a JSON file or via copy-paste.
+                      Provide your study content as a JSON file or via
+                      copy-paste.
                     </p>
                   </div>
                 </div>
@@ -271,8 +302,8 @@ export default function UploadPage() {
                     ← Back
                   </button>
                   <div className={styles.wizardActionsRight}>
-                    <button 
-                      className="btn btn-primary" 
+                    <button
+                      className="btn btn-primary"
                       onClick={nextStep}
                       disabled={!validationResult?.valid}
                     >

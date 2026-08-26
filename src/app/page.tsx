@@ -1,13 +1,13 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
-import styles from './page.module.css';
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import type { Metadata } from "next";
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: 'ReadWise — Learn By Listening',
-  description: 'Your personal study companion. Upload JSON content and learn through flashcards, Q&A, articles, structured notes, MCQ, and interview practice with text-to-speech.',
+  title: "Audiobooklm — Learn By Listening",
+  description:
+    "Your personal study companion. Upload JSON content and learn through flashcards, Q&A, articles, structured notes, MCQ, and interview practice with text-to-speech.",
 };
-
 
 export default function HomePage() {
   return (
@@ -17,13 +17,19 @@ export default function HomePage() {
         <div className="nav-inner">
           <div className={styles.navBrand}>
             <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>
-              EchoDeck
-            </span>
+            <span className={styles.navTitle}>Audiobooklm</span>
           </div>
           <div className={styles.navActions}>
-            <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">My Decks</Link>
-            <Link id="nav-upload" href="/upload" className="btn btn-primary btn-sm">+ Upload</Link>
+            <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">
+              My Decks
+            </Link>
+            <Link
+              id="nav-upload"
+              href="/upload"
+              className="btn btn-primary btn-sm"
+            >
+              + Upload
+            </Link>
             <ThemeToggle />
           </div>
         </div>
@@ -40,18 +46,30 @@ export default function HomePage() {
               </div>
 
               <h1 className={styles.heroTitle}>
-                Learn Anything.<br />Just Listen.
+                Learn Anything.
+                <br />
+                Just Listen.
               </h1>
 
               <p className={styles.heroDesc}>
-                Upload your study content as JSON and let EchoDeck read it to you — with flashcards, Q&amp;A, articles, notes, MCQ, and interview practice.
+                Upload your study content as JSON and let Audiobooklm read it to
+                you — with flashcards, Q&amp;A, articles, notes, MCQ, and
+                interview practice.
               </p>
 
               <div className={styles.heroActions}>
-                <Link id="hero-upload" href="/upload" className="btn btn-primary btn-lg">
+                <Link
+                  id="hero-upload"
+                  href="/upload"
+                  className="btn btn-primary btn-lg"
+                >
                   Start Studying →
                 </Link>
-                <Link id="hero-decks" href="/decks" className="btn btn-secondary btn-lg">
+                <Link
+                  id="hero-decks"
+                  href="/decks"
+                  className="btn btn-secondary btn-lg"
+                >
                   My Decks
                 </Link>
               </div>
@@ -63,7 +81,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className="container">
-          EchoDeck · All data stored locally in your browser
+          Audiobooklm · All data stored locally in your browser
         </div>
       </footer>
     </div>

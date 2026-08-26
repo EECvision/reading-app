@@ -21,7 +21,7 @@ export default function SummaryPage() {
           <div className={styles.navBrand}>
             <Link id="nav-home" href="/" className={styles.navLogoLink}>
               <span className={styles.navLogo}>📚</span>
-              <span className={styles.navTitle}>EchoDeck</span>
+              <span className={styles.navTitle}>Audiobooklm</span>
             </Link>
           </div>
           <ThemeToggle />

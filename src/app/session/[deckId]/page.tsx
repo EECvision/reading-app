@@ -13,14 +13,15 @@ import {
   getDeck,
   getSettings,
   saveAutoplaySettings,
-  saveShuffleSettings,
   saveRepeatSettings,
+  saveShuffleSettings,
 } from "@/lib/localStorage";
 import { buildStudyList, saveSessionSummary } from "@/lib/progress";
 import { buildSpeechText, stop } from "@/lib/tts";
 import type {
   AnyItem,
   ArticleItem,
+  Deck,
   FlashcardItem,
   InterviewDeck,
   InterviewQuestion,
@@ -28,11 +29,10 @@ import type {
   NotesItem,
   QAItem,
   SessionStyle,
-  Deck,
 } from "@/types";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { useCallback, useEffect, useState, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
 
 // Helper: safely extract the id added by normaliseItems()
@@ -45,7 +45,8 @@ export default function SessionPage() {
   const params = useParams<{ deckId: string }>();
   const router = useRouter();
   const rawDeckId = params.deckId;
-  const deckId = typeof rawDeckId === "string" ? decodeURIComponent(rawDeckId) : "";
+  const deckId =
+    typeof rawDeckId === "string" ? decodeURIComponent(rawDeckId) : "";
 
   // ── Server-safe initial state ───────────────────────────────────────────────
   // All initializers must be static so server and client render identically.
@@ -80,13 +81,9 @@ export default function SessionPage() {
   const mode = deck?.mode ?? "flashcard";
   const deckName = deck?.name ?? "";
   const role =
-    deck?.mode === "interview"
-      ? (deck.items as InterviewDeck).role
-      : "";
+    deck?.mode === "interview" ? (deck.items as InterviewDeck).role : "";
   const level =
-    deck?.mode === "interview"
-      ? (deck.items as InterviewDeck).level
-      : "";
+    deck?.mode === "interview" ? (deck.items as InterviewDeck).level : "";
 
   const items = useMemo(() => {
     if (!deck) return [];
@@ -128,7 +125,6 @@ export default function SessionPage() {
 
   const currentItem = items[index];
   const currentId = currentItem ? getId(currentItem) : "";
-
 
   const handleNext = useCallback(() => {
     stop();
@@ -255,7 +251,7 @@ export default function SessionPage() {
           <div className={styles.navBrand}>
             <Link id="nav-home" href="/" className={styles.navLogoLink}>
               <span className={styles.navLogo}>📚</span>
-              <span className={styles.navTitle}>EchoDeck</span>
+              <span className={styles.navTitle}>Audiobooklm</span>
             </Link>
             <span className={styles.navSeparator}>/</span>
             <span className={styles.navDeckName}>{deckName}</span>
