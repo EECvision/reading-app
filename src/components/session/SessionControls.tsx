@@ -62,9 +62,11 @@ export function SessionControls({
   }, []);
 
   const playSequenceId = React.useRef(0);
-  // True once the user has manually pressed Play for the first time.
-  // Prevents audio from auto-starting as soon as the session loads.
-  const hasUserStarted = React.useRef(false);
+  // True after the first card text arrives and auto-start fires.
+  // Also set when the user manually presses Play.
+  // Guards the autoplay card-navigation effect so it doesn't retrigger
+  // on the same render cycle as the one-shot auto-start below.
+  const hasAutoStarted = React.useRef(false);
   // Snapshot of previous TTS settings — used to detect which settings changed.
   const prevTTSSettings = React.useRef(ttsSettings);
 
@@ -176,6 +178,18 @@ export function SessionControls({
     }
   };
 
+  // ── One-shot auto-start: play as soon as the first card text is ready ─────────
+  // Fires once on load (or reload) regardless of the autoplay toggle.
+  // After this fires, hasAutoStarted stays true so the autoplay card-navigation
+  // effect can take over for subsequent card changes.
+  useEffect(() => {
+    if (!hasAutoStarted.current && (frontText || backText)) {
+      hasAutoStarted.current = true;
+      const seqId = ++playSequenceId.current;
+      runSequence(seqId);
+    }
+  }, [frontText, backText]);
+
   // ── Restart audio when TTS settings change while speaking ───────────────────
   // Compares relevant fields against the previous snapshot so that changes to
   // voice, speed, engine, or audio-mode take effect immediately without the
@@ -192,7 +206,7 @@ export function SessionControls({
       prev.audioMode   !== ttsSettings.audioMode    ||
       prev.muted       !== ttsSettings.muted;
 
-    if (audioAffected && latestProps.current.speaking && hasUserStarted.current) {
+    if (audioAffected && latestProps.current.speaking && hasAutoStarted.current) {
       stop();
       const seqId = ++playSequenceId.current;
       setSpeaking(false);
@@ -204,10 +218,10 @@ export function SessionControls({
 
 
   // ── Auto-advance when text changes (card navigation + autoplay) ───────────
-  // Only fires once the user has manually pressed Play at least once, so the
-  // session doesn't start talking the moment it loads.
+  // Only fires after the one-shot auto-start has already run, so it doesn't
+  // double-trigger on the first card load.
   useEffect(() => {
-    if (autoplay && hasUserStarted.current && (frontText || backText)) {
+    if (autoplay && hasAutoStarted.current && (frontText || backText)) {
       const timer = setTimeout(() => {
         stop();
         const seqId = ++playSequenceId.current;
@@ -225,9 +239,9 @@ export function SessionControls({
   }, [frontText, backText, isFlipped, autoplay, sessionStyle]);
 
   const handleSpeak = () => {
-    // Mark that the user has intentionally started playback.
-    // The autoplay effect won't fire until this is true.
-    hasUserStarted.current = true;
+    // Mark as started so the autoplay card-navigation effect works
+    // if the user manually restarts after stopping.
+    hasAutoStarted.current = true;
 
     if (paused) {
       resume();

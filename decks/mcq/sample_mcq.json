@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Which planet in our solar system has the most known moons?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correct_answer": "Saturn",
+    "explanation": "Saturn holds the record for the most known moons in our solar system, with over 140 confirmed moons as of recent discoveries. Its moon Titan is particularly notable as the only moon with a dense atmosphere.",
+    "category": "Astronomy"
+  },
+  {
+    "question": "What is the primary function of red blood cells in the human body?",
+    "options": [
+      "Fighting infection",
+      "Transporting oxygen",
+      "Producing hormones",
+      "Regulating temperature"
+    ],
+    "correct_answer": "Transporting oxygen",
+    "explanation": "Red blood cells contain a protein called haemoglobin that binds to oxygen in the lungs and carries it through the bloodstream to all tissues in the body. They also carry carbon dioxide back to the lungs to be exhaled.",
+    "category": "Biology"
+  },
+  {
+    "question": "Which economic concept describes the additional benefit gained from consuming one more unit of a good or service?",
+    "options": [
+      "Opportunity cost",
+      "Marginal utility",
+      "Comparative advantage",
+      "Economies of scale"
+    ],
+    "correct_answer": "Marginal utility",
+    "explanation": "Marginal utility is the additional satisfaction or benefit a consumer receives from consuming one extra unit of a good or service. According to the law of diminishing marginal utility, this additional satisfaction typically decreases with each extra unit consumed.",
+    "category": "Economics"
+  },
+  {
+    "question": "In which year did the Second World War end?",
+    "options": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correct_answer": "1945",
+    "explanation": "The Second World War ended in 1945. Germany surrendered in May 1945, marking Victory in Europe Day. Japan formally surrendered in September 1945 following the atomic bombings of Hiroshima and Nagasaki, marking Victory over Japan Day.",
+    "category": "History"
+  },
+  {
+    "question": "What does the term photosynthesis describe?",
+    "options": [
+      "The process by which animals digest food",
+      "The process by which plants convert sunlight into glucose",
+      "The process by which fungi break down organic matter",
+      "The process by which bacteria reproduce"
+    ],
+    "correct_answer": "The process by which plants convert sunlight into glucose",
+    "explanation": "Photosynthesis is the process by which plants, algae, and some bacteria use sunlight, water, and carbon dioxide to produce glucose and oxygen. It takes place primarily in the chloroplasts of plant cells and is the foundation of most food chains on Earth.",
+    "category": "Biology"
+  }
+]

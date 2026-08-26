@@ -1,0 +1,389 @@
+{
+  "role": "Frontend Developer",
+  "level": "Mid-level",
+  "questions": [
+    {
+      "id": "q1",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "Explain the difference between useEffect and useLayoutEffect.",
+      "answer": "useEffect runs asynchronously after the browser has painted the screen, making it suitable for side effects that do not affect layout. useLayoutEffect runs synchronously after DOM mutations but before the browser paints, which is useful when you need to read layout from the DOM and synchronously re-render to prevent visual flicker.",
+      "code_snippet": "// useEffect — runs after paint\nuseEffect(() => {\n  document.title = 'Hello';\n}, []);\n\n// useLayoutEffect — runs before paint\nuseLayoutEffect(() => {\n  const height = ref.current.getBoundingClientRect().height;\n  setHeight(height);\n}, []);",
+      "follow_ups": [
+        {
+          "question": "When would you choose useLayoutEffect over useEffect?",
+          "answer": "When you need to read layout from the DOM, for example element dimensions, and then update state or style before the user sees the painted result, to avoid a visual flash or flicker."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "category": "JavaScript",
+      "difficulty": "easy",
+      "question": "What is the difference between double equals and triple equals in JavaScript?",
+      "answer": "Double equals performs loose equality with type coercion — it converts operands to the same type before comparing. Triple equals performs strict equality with no type coercion — operands must be the same type and value to be equal.",
+      "code_snippet": "console.log(0 == '0');  // true  (type coercion)\nconsole.log(0 === '0'); // false (strict, different types)"
+    },
+    {
+      "id": "q3",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "Explain the CSS Box Model.",
+      "answer": "The CSS Box Model describes the rectangular boxes generated for elements. From inside out: Content, which is the actual text or image; Padding, which is space inside the border; Border, which surrounds the padding; and Margin, which is space outside the border. By default, width and height set the content area. With box-sizing set to border-box, width and height include padding and border."
+    },
+    {
+      "id": "q4",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "How do you prevent unnecessary re-renders in a React component?",
+      "answer": "You can use React.memo to memoize a functional component so it only re-renders when its props change. For values and functions passed as props, use useMemo and useCallback to preserve their references across renders.",
+      "code_snippet": "const MemoizedChild = React.memo(ChildComponent);\n\nfunction Parent() {\n  const [count, setCount] = useState(0);\n  const handleAction = useCallback(() => console.log('Action'), []);\n  return <MemoizedChild onAction={handleAction} />;\n}",
+      "follow_ups": [
+        {
+          "question": "Does React.memo do a deep or shallow comparison of props?",
+          "answer": "By default, React.memo does a shallow comparison of props. You can provide a custom comparison function as the second argument if deep comparison is needed."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "What is a closure in JavaScript?",
+      "answer": "A closure is a feature in JavaScript where an inner function has access to the outer enclosing function's variables. It remembers the environment in which it was created, even after the outer function has finished executing.",
+      "code_snippet": "function createCounter() {\n  let count = 0;\n  return function() {\n    count++;\n    return count;\n  }\n}\nconst counter = createCounter();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2"
+    },
+    {
+      "id": "q6",
+      "category": "TypeScript",
+      "difficulty": "easy",
+      "question": "What is the difference between interface and type in TypeScript?",
+      "answer": "The interface keyword is specifically used to declare the shapes of objects and can be merged through declaration merging if defined multiple times. The type keyword is a type alias that can define object shapes, but also unions, intersections, primitives, and tuples. Type aliases cannot be merged.",
+      "code_snippet": "// Interface merging\ninterface User { name: string; }\ninterface User { age: number; }\n\n// Type union\ntype Status = 'loading' | 'success' | 'error';"
+    },
+    {
+      "id": "q7",
+      "category": "React",
+      "difficulty": "hard",
+      "question": "Explain the concept of Lifting State Up in React.",
+      "answer": "Lifting state up is a pattern where state is moved from child components to their closest common parent. This is done when multiple sibling components need to share or synchronize the same state. The parent passes the state and the state updater function down as props.",
+      "code_snippet": "function Parent() {\n  const [sharedText, setSharedText] = useState('');\n  return (\n    <>\n      <Input childText={sharedText} onTextChange={setSharedText} />\n      <Display text={sharedText} />\n    </>\n  );\n}"
+    },
+    {
+      "id": "q8",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "How does the JavaScript Event Loop work?",
+      "answer": "JavaScript is single-threaded. The event loop continuously checks the call stack. If the stack is empty, it looks at the microtask queue, which includes Promises, and then the macrotask queue, which includes setTimeout callbacks. Microtasks are processed before the next macrotask, ensuring asynchronous callbacks run in the correct order."
+    },
+    {
+      "id": "q9",
+      "category": "CSS",
+      "difficulty": "easy",
+      "question": "What is the difference between display none and visibility hidden?",
+      "answer": "Display none completely removes the element from the document layout flow, as if it does not exist, freeing up its space. Visibility hidden makes the element invisible but it still occupies its original space in the layout."
+    },
+    {
+      "id": "q10",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "How do you define a Generic in TypeScript?",
+      "answer": "Generics allow you to write reusable, type-safe code by passing a type as a parameter using angle brackets, typically written with the letter T as a placeholder. This ensures the return type or nested properties match the type provided at usage time.",
+      "code_snippet": "function identity<T>(arg: T): T {\n  return arg;\n}\nconst num = identity<number>(42);\nconst str = identity<string>('hello');"
+    },
+    {
+      "id": "q11",
+      "category": "Debugging",
+      "difficulty": "medium",
+      "question": "How would you reproduce and fix a tricky race condition in a UI component?",
+      "answer": "I would first create a minimal reproducible environment by isolating the component. To simulate the race condition, I would use setTimeout or mocked slow network requests by slowing down the network in DevTools. To fix it, I would use an AbortController for fetch requests, or a local isMounted boolean inside the cleanup function of useEffect to ignore out-of-order responses."
+    },
+    {
+      "id": "q12",
+      "category": "React",
+      "difficulty": "easy",
+      "question": "Why should you not mutate state directly in React?",
+      "answer": "React relies on state object references to determine if a re-render is necessary. If you mutate state directly, the object reference remains the same, so React will not trigger a re-render, leading to UI inconsistencies. Always use the setter function provided by useState."
+    },
+    {
+      "id": "q13",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "What is event delegation?",
+      "answer": "Event delegation is a technique where you attach a single event listener to a parent element rather than attaching separate listeners to multiple child elements. It leverages event bubbling, where events fired on a child propagate up to the parent. It improves performance and handles dynamically added children.",
+      "code_snippet": "document.getElementById('parent-list').addEventListener('click', (e) => {\n  if (e.target.tagName === 'LI') {\n    console.log('List item clicked!', e.target.innerText);\n  }\n});"
+    },
+    {
+      "id": "q14",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "What is CSS Specificity and how is it calculated?",
+      "answer": "Specificity determines which CSS rule is applied when multiple rules match the same element. It is calculated based on a weight system: Inline styles score 1000, IDs score 100, Classes, Attributes, and Pseudo-classes score 10, and Elements and Pseudo-elements score 1. The important declaration overrides all standard specificity."
+    },
+    {
+      "id": "q15",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "What is the difference between any and unknown in TypeScript?",
+      "answer": "The any type disables type checking entirely, allowing any operation on the variable, which can lead to runtime errors. The unknown type is the type-safe counterpart — it tells the compiler that the type is currently unknown, forcing you to perform type narrowing or checking before you can perform operations on it.",
+      "follow_ups": [
+        {
+          "question": "How do you narrow an unknown type?",
+          "answer": "Using type guards such as typeof, instanceof, or custom type predicate functions."
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "category": "Architecture",
+      "difficulty": "hard",
+      "question": "How do you structure a highly reusable React component?",
+      "answer": "A highly reusable component should follow the Single Responsibility Principle. It should be stateless, relying on props, wherever possible. I would use compound components or render props for extreme flexibility, avoid hardcoding domain-specific logic, ensure robust TypeScript typing, and use generic CSS class names that can be overridden."
+    },
+    {
+      "id": "q17",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "Explain Promises and the states they can be in.",
+      "answer": "A Promise represents the eventual completion or failure of an asynchronous operation. It has three states: Pending, which is the initial state; Fulfilled, meaning the operation completed successfully; and Rejected, meaning the operation failed. Once settled — either fulfilled or rejected — its state cannot change."
+    },
+    {
+      "id": "q18",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "What is the Context API and when should you use it?",
+      "answer": "The Context API provides a way to pass data through the component tree without having to pass props down manually at every level, a problem known as prop drilling. It is ideal for global state like themes, user authentication, or localization, but should be avoided for highly volatile state as it can cause excessive re-renders."
+    },
+    {
+      "id": "q19",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "Explain the difference between Flexbox and CSS Grid.",
+      "answer": "Flexbox is designed for one-dimensional layouts, meaning arranging items in a single row or a single column. CSS Grid is designed for two-dimensional layouts, allowing you to align items in rows and columns simultaneously. Grid is better for overall page structure, while Flexbox is better for aligning elements within a container."
+    },
+    {
+      "id": "q20",
+      "category": "TypeScript",
+      "difficulty": "hard",
+      "question": "What is a Type Guard and how do you write a custom one?",
+      "answer": "A Type Guard is an expression that performs a runtime check to guarantee the type in some scope. A custom type guard is a function whose return type is a type predicate — for example, the expression arg is Type. If it returns true, TypeScript narrows the type in the calling scope.",
+      "code_snippet": "interface Fish { swim: () => void; }\ninterface Bird { fly: () => void; }\n\nfunction isFish(pet: Fish | Bird): pet is Fish {\n  return (pet as Fish).swim !== undefined;\n}"
+    },
+    {
+      "id": "q21",
+      "category": "React",
+      "difficulty": "hard",
+      "question": "What are custom hooks and why would you create one?",
+      "answer": "Custom hooks are JavaScript functions whose names start with the prefix use and that call other React hooks. They are used to extract and encapsulate reusable stateful logic from components, such as fetching data, managing form state, or listening to window resizing, making components cleaner and the logic shareable."
+    },
+    {
+      "id": "q22",
+      "category": "JavaScript",
+      "difficulty": "easy",
+      "question": "What is the DOM?",
+      "answer": "The Document Object Model, or DOM, is a programming interface for web documents. It represents the HTML page as a tree structure of nodes and objects, allowing scripting languages like JavaScript to dynamically access, modify, add, or delete elements and content on the page."
+    },
+    {
+      "id": "q23",
+      "category": "Debugging",
+      "difficulty": "medium",
+      "question": "How do you detect and fix memory leaks in a Single Page Application?",
+      "answer": "Memory leaks in Single Page Applications often happen due to uncleared intervals, unremoved event listeners on the window or document, or lingering DOM references. I detect them using the Chrome DevTools Memory tab with Heap Snapshots. To fix them, I ensure all listeners and timers are cleared during component unmount phases, for example in the cleanup return function of useEffect."
+    },
+    {
+      "id": "q24",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "What is responsive design and how do you achieve it?",
+      "answer": "Responsive design ensures a web application looks and functions well on all screen sizes and devices. It is achieved using fluid grid layouts with percentages and fractional units, flexible images with a max-width of 100 percent, and CSS media queries to apply different styles based on viewport dimensions."
+    },
+    {
+      "id": "q25",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "Explain Utility Types like Omit and Pick.",
+      "answer": "Utility types construct new types based on existing ones. Pick, used with a type and a set of key names, creates a new type containing only those specified properties. Omit, used with a type and a set of key names, creates a new type with those specified properties removed. They are great for creating variations of an interface without duplicating code.",
+      "code_snippet": "interface User { id: number; name: string; email: string; }\n\ntype UserSummary = Pick<User, 'id' | 'name'>;\ntype UserWithoutId = Omit<User, 'id'>;"
+    },
+    {
+      "id": "q26",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "How do Error Boundaries work in React?",
+      "answer": "Error Boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the whole app. They are implemented using class components with the getDerivedStateFromError or componentDidCatch lifecycle methods."
+    },
+    {
+      "id": "q27",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "What is destructuring assignment?",
+      "answer": "Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables. It makes code cleaner and more readable, especially when working with props or API responses.",
+      "code_snippet": "const user = { id: 1, name: 'Alice', age: 25 };\nconst { name, age } = user; // Object destructuring\n\nconst colors = ['red', 'blue', 'green'];\nconst [firstColor, secondColor] = colors; // Array destructuring"
+    },
+    {
+      "id": "q28",
+      "category": "HTML",
+      "difficulty": "easy",
+      "question": "What are semantic HTML tags and why are they important?",
+      "answer": "Semantic HTML tags such as header, article, nav, and footer clearly describe their meaning in a human and machine readable way. They are crucial for accessibility, because screen readers rely on them for navigation, and for SEO, because search engines use them to understand content structure."
+    },
+    {
+      "id": "q29",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "What is the Virtual DOM?",
+      "answer": "The Virtual DOM is a lightweight, in-memory representation of the actual real DOM. When state changes, React updates the Virtual DOM, compares it to a snapshot of the previous Virtual DOM through a process called Diffing, and calculates the minimal set of changes needed. It then applies only those changes to the real DOM through a process called Reconciliation, which is much faster than re-rendering the entire UI."
+    },
+    {
+      "id": "q30",
+      "category": "TypeScript",
+      "difficulty": "hard",
+      "question": "How do you type a function that takes an unknown number of arguments of the same type?",
+      "answer": "You can use rest parameters combined with an array type to type a function taking an unknown number of arguments of the same type.",
+      "code_snippet": "function sumAll(...numbers: number[]): number {\n  return numbers.reduce((acc, curr) => acc + curr, 0);\n}"
+    },
+    {
+      "id": "q31",
+      "category": "JavaScript",
+      "difficulty": "hard",
+      "question": "Explain hoisting in JavaScript.",
+      "answer": "Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope before code execution. However, only declarations are hoisted, not initializations. Variables declared with var are hoisted and initialized with undefined, while variables declared with let and const are hoisted but not initialized — they sit in what is called the Temporal Dead Zone."
+    },
+    {
+      "id": "q32",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "What is z-index and what is a stacking context?",
+      "answer": "z-index controls the vertical stacking order of positioned elements. A higher z-index element appears in front of a lower one. However, z-index only works within its stacking context. Properties like position relative or position absolute combined with a z-index, opacity less than 1, or transform create new stacking contexts. A child in a lower stacking context can never appear above an element in a higher stacking context, regardless of its z-index value."
+    },
+    {
+      "id": "q33",
+      "category": "Architecture",
+      "difficulty": "medium",
+      "question": "What makes a reproducible environment important in UI bug fixing?",
+      "answer": "A reproducible environment ensures that a bug can be consistently triggered under specific conditions. It eliminates external noise such as backend flakiness and confirms that the implemented fix actually targets the root cause. For AI training, a reliable, deterministic environment is critical for the model to measure success."
+    },
+    {
+      "id": "q34",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "What is forwardRef in React?",
+      "answer": "React.forwardRef is a utility that allows a component to forward a ref that it receives to one of its internal DOM nodes or children. This is typically used when you build a reusable component such as a custom Button or Input and the parent needs direct access to the underlying HTML element for focus management or animations.",
+      "code_snippet": "const CustomInput = React.forwardRef((props, ref) => (\n  <input ref={ref} {...props} className=\"custom-input\" />\n));"
+    },
+    {
+      "id": "q35",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "Explain the this keyword in JavaScript.",
+      "answer": "The this keyword refers to the object that is executing the current function. In standard functions, this depends on how the function is called — for example, as an object method versus a global invocation. In arrow functions, this is lexically bound, meaning it takes the this value from its surrounding execution context."
+    },
+    {
+      "id": "q36",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "What are Enums in TypeScript?",
+      "answer": "Enums allow a developer to define a set of named constants. They can be numeric, which auto-increments by default, or string-based. They are useful for documenting intent and creating a distinct set of strict cases, like application states or directions."
+    },
+    {
+      "id": "q37",
+      "category": "CSS",
+      "difficulty": "hard",
+      "question": "What are CSS Variables, also known as Custom Properties, and how do they differ from SASS variables?",
+      "answer": "CSS Variables are defined with a double-dash prefix and are native browser entities that can be manipulated at runtime, for example via JavaScript, and respect the DOM cascade. SASS variables are defined with a dollar-sign prefix and are compiled away into static CSS during the build step with no presence in the browser. CSS variables are ideal for dynamic themes such as Dark Mode."
+    },
+    {
+      "id": "q38",
+      "category": "React",
+      "difficulty": "hard",
+      "question": "How does React 18's automatic batching work?",
+      "answer": "Automatic batching groups multiple state updates into a single re-render for better performance. Prior to React 18, React only batched updates inside React event handlers. In React 18, updates inside promises, setTimeout, native event handlers, or any other event are also batched by default."
+    },
+    {
+      "id": "q39",
+      "category": "JavaScript",
+      "difficulty": "hard",
+      "question": "Explain async and await and how they relate to Promises.",
+      "answer": "Async and await are syntactic sugar built on top of Promises. Declaring a function as async means it automatically returns a Promise. The await keyword can only be used inside async functions, pausing the execution of the function until the awaited Promise resolves, making asynchronous code read like synchronous code."
+    },
+    {
+      "id": "q40",
+      "category": "HTML",
+      "difficulty": "medium",
+      "question": "What are ARIA attributes?",
+      "answer": "ARIA, which stands for Accessible Rich Internet Applications, attributes are a set of HTML attributes used to make web content and applications more accessible to people with disabilities. They supplement native HTML elements to provide context and roles to assistive technologies, such as aria-hidden, aria-expanded, and the button role."
+    },
+    {
+      "id": "q41",
+      "category": "Architecture",
+      "difficulty": "medium",
+      "question": "What is the Golden Reference Solution in the context of creating coding challenges?",
+      "answer": "A golden reference solution is an optimal, highly readable, and performant implementation that solves a given problem perfectly. It serves as the benchmark to validate test cases against, and it provides the expected correct state for automated evaluation or AI reinforcement learning."
+    },
+    {
+      "id": "q42",
+      "category": "React",
+      "difficulty": "easy",
+      "question": "What are React Fragments?",
+      "answer": "React Fragments, written using React.Fragment or the shorthand empty tag syntax, let you group a list of children without adding extra nodes such as extra div elements to the DOM. This keeps the HTML structure clean and prevents layout issues in flex or grid containers."
+    },
+    {
+      "id": "q43",
+      "category": "JavaScript",
+      "difficulty": "medium",
+      "question": "What is the spread operator?",
+      "answer": "The spread operator, written as three consecutive dots, allows an iterable such as an array or string to be expanded in places where zero or more arguments or elements are expected. For objects, it extracts the key-value pairs. It is commonly used for cloning arrays or objects, or merging them without mutating the originals."
+    },
+    {
+      "id": "q44",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "What does the readonly modifier do in TypeScript?",
+      "answer": "The readonly modifier marks a property of an interface or class as unchangeable after its initial creation. It is a compile-time check that prevents reassignment, promoting immutability in data structures."
+    },
+    {
+      "id": "q45",
+      "category": "CSS",
+      "difficulty": "medium",
+      "question": "How do you vertically and horizontally center a div using Flexbox?",
+      "answer": "You apply display flex to the parent container, then set justify-content to center to align horizontally along the main axis, and align-items to center to align vertically along the cross axis.",
+      "code_snippet": ".parent {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}"
+    },
+    {
+      "id": "q46",
+      "category": "Debugging",
+      "difficulty": "hard",
+      "question": "How do you debug an issue where a React component mounts twice?",
+      "answer": "First, I check if the application is wrapped in React.StrictMode, which intentionally double-invokes certain lifecycles in development mode to catch bugs. If it occurs in production or outside StrictMode, I trace the parent components to see if state changes or routing is tearing down and recreating the component unnecessarily — often caused by declaring components inside other components."
+    },
+    {
+      "id": "q47",
+      "category": "React",
+      "difficulty": "medium",
+      "question": "What is a controlled versus uncontrolled component in React?",
+      "answer": "A controlled component relies on React state to control its value — for example, an input element whose value is tied to state and updated via onChange. An uncontrolled component manages its own internal state, and you use a ref to pull the value from the DOM when needed."
+    },
+    {
+      "id": "q48",
+      "category": "JavaScript",
+      "difficulty": "easy",
+      "question": "What does the map array method do?",
+      "answer": "The map method creates a new array populated with the results of calling a provided function on every element in the calling array. It does not mutate the original array."
+    },
+    {
+      "id": "q49",
+      "category": "TypeScript",
+      "difficulty": "medium",
+      "question": "What are Tuple types in TypeScript?",
+      "answer": "A tuple type is an array type that knows exactly how many elements it contains, and exactly what type each element is at specific positions. It is commonly used in React for the return type of hooks like useState.",
+      "code_snippet": "let ourTuple: [number, boolean, string];\nourTuple = [5, false, 'Coding'];"
+    },
+    {
+      "id": "q50",
+      "category": "Architecture",
+      "difficulty": "medium",
+      "question": "Why is code readability prioritized when building AI training environments?",
+      "answer": "AI models learn from the patterns in the data they ingest. If the frontend code — components, states, and logic — is clean, well-documented, and semantic, the AI learns robust engineering practices. Confusing or obscure code teaches the model poor habits, reducing the quality of its reasoning and eventual outputs."
+    }
+  ]
+}

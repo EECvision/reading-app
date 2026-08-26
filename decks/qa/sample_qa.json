@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between speed and velocity?",
+    "answer": "Speed is a scalar quantity that measures how fast an object is moving, expressed as distance divided by time. Velocity is a vector quantity that includes both speed and direction. Two objects can have the same speed but different velocities if they are moving in different directions.",
+    "hint": "Think about whether direction matters",
+    "category": "Physics"
+  },
+  {
+    "question": "What is the role of the mitochondria in a cell?",
+    "answer": "The mitochondria is often called the powerhouse of the cell. It produces energy in the form of adenosine triphosphate through a process called cellular respiration. It converts glucose and oxygen into usable energy, carbon dioxide, and water.",
+    "hint": "Think about energy production",
+    "category": "Biology"
+  },
+  {
+    "question": "What is the difference between primary and secondary sources in historical research?",
+    "answer": "A primary source is an original, first-hand account created at the time of an event, such as a diary, letter, or photograph. A secondary source is a later interpretation or analysis of primary sources, such as a history textbook or documentary. Primary sources provide raw evidence, while secondary sources provide context and analysis.",
+    "hint": "Think about who created it and when",
+    "category": "History"
+  },
+  {
+    "question": "What is compound interest and how does it differ from simple interest?",
+    "answer": "Simple interest is calculated only on the original principal amount. Compound interest is calculated on the principal plus any interest that has already been earned, meaning the interest itself earns interest over time. This makes compound interest significantly more powerful for long-term savings and more costly for long-term debt.",
+    "hint": "Think about interest growing on itself",
+    "category": "Finance"
+  },
+  {
+    "question": "What causes seasons on Earth?",
+    "answer": "Seasons are caused by the tilt of Earth's axis, which is approximately 23.5 degrees relative to its orbit around the Sun. As Earth orbits the Sun, this tilt causes different hemispheres to receive more direct sunlight at different times of year. Summer occurs when your hemisphere is tilted toward the Sun, and winter occurs when it is tilted away. The distance from the Sun is not the primary factor.",
+    "hint": "Think about Earth's axial tilt, not its distance from the Sun",
+    "category": "Science"
+  }
+]

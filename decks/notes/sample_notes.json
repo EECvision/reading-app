@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "The Water Cycle",
+    "subtopics": [
+      {
+        "heading": "Evaporation",
+        "body": "Heat from the Sun causes liquid water from oceans, lakes, and rivers to convert into water vapour, which rises into the atmosphere. Transpiration from plants also contributes to this process."
+      },
+      {
+        "heading": "Condensation",
+        "body": "As water vapour rises and cools at higher altitudes, it condenses around tiny dust particles to form clouds and fog. This is the process that makes clouds visible."
+      },
+      {
+        "heading": "Precipitation",
+        "body": "When water droplets in clouds combine and grow heavy enough, they fall back to Earth as rain, snow, sleet, or hail, depending on the temperature conditions."
+      },
+      {
+        "heading": "Collection and Runoff",
+        "body": "Precipitation collects in oceans, rivers, and lakes, or soaks into the ground to replenish groundwater. Surface runoff flows downhill into bodies of water, restarting the cycle."
+      }
+    ],
+    "category": "Geography"
+  },
+  {
+    "topic": "The French Revolution",
+    "subtopics": [
+      {
+        "heading": "Causes",
+        "body": "A combination of financial crisis, widespread famine, a rigid class system known as the Estates, and Enlightenment ideas about liberty and equality drove popular resentment against the monarchy and aristocracy."
+      },
+      {
+        "heading": "Key Events",
+        "body": "The storming of the Bastille prison in 1789 marked the symbolic start of the revolution. The Declaration of the Rights of Man was adopted, and King Louis the Sixteenth was eventually executed in 1793."
+      },
+      {
+        "heading": "The Reign of Terror",
+        "body": "Radical revolutionary leader Robespierre oversaw a period of mass executions of perceived enemies, known as the Reign of Terror. Tens of thousands were executed by guillotine before Robespierre himself was arrested and executed."
+      },
+      {
+        "heading": "Legacy",
+        "body": "The revolution dismantled the French monarchy and aristocracy and established principles of liberty, equality, and fraternity that influenced democratic movements worldwide for centuries."
+      }
+    ],
+    "category": "History"
+  },
+  {
+    "topic": "Macroeconomic Indicators",
+    "subtopics": [
+      {
+        "heading": "Gross Domestic Product",
+        "body": "Gross Domestic Product, or GDP, measures the total monetary value of all goods and services produced within a country in a given period. It is the primary indicator of a nation's economic size and health."
+      },
+      {
+        "heading": "Inflation",
+        "body": "Inflation is the rate at which the general price level of goods and services rises over time. Moderate inflation is considered healthy, while very high inflation erodes purchasing power and very low inflation can signal weak demand."
+      },
+      {
+        "heading": "Unemployment Rate",
+        "body": "The unemployment rate measures the percentage of the labour force that is actively seeking work but unable to find it. It is a lagging indicator, meaning it often rises after a recession has already begun."
+      },
+      {
+        "heading": "Interest Rates",
+        "body": "Central banks set benchmark interest rates to control economic activity. Raising rates slows borrowing and spending to combat inflation. Lowering rates stimulates borrowing and investment during slowdowns."
+      }
+    ],
+    "category": "Economics"
+  },
+  {
+    "topic": "Human Digestive System",
+    "subtopics": [
+      {
+        "heading": "Mouth and Oesophagus",
+        "body": "Digestion begins in the mouth, where teeth break food into smaller pieces and saliva starts breaking down carbohydrates. The oesophagus then carries food to the stomach through muscular contractions called peristalsis."
+      },
+      {
+        "heading": "Stomach",
+        "body": "The stomach churns food and mixes it with gastric acid and enzymes, breaking down proteins. Food becomes a semi-liquid mixture called chyme, which is gradually released into the small intestine."
+      },
+      {
+        "heading": "Small Intestine",
+        "body": "The small intestine is where most nutrient absorption occurs. Enzymes from the pancreas and bile from the liver further break down fats, proteins, and carbohydrates. Nutrients are absorbed through the intestinal wall into the bloodstream."
+      },
+      {
+        "heading": "Large Intestine and Elimination",
+        "body": "The large intestine absorbs water and electrolytes from the remaining indigestible material. The body then eliminates the solid waste through the rectum and anus."
+      }
+    ],
+    "category": "Biology"
+  },
+  {
+    "topic": "Fundamentals of Photography",
+    "subtopics": [
+      {
+        "heading": "Aperture",
+        "body": "Aperture refers to the opening in a camera lens that controls how much light reaches the sensor. A wider aperture lets in more light and creates a shallow depth of field, blurring the background. A narrower aperture creates a deeper depth of field, keeping more of the scene in focus."
+      },
+      {
+        "heading": "Shutter Speed",
+        "body": "Shutter speed determines how long the camera's sensor is exposed to light. A fast shutter speed freezes motion, ideal for sports photography. A slow shutter speed creates motion blur and is useful for capturing light trails or waterfalls."
+      },
+      {
+        "heading": "ISO",
+        "body": "ISO measures the camera sensor's sensitivity to light. A low ISO produces a clean image in bright conditions. A high ISO allows shooting in low light but introduces graininess, called noise, to the image."
+      },
+      {
+        "heading": "The Exposure Triangle",
+        "body": "Aperture, shutter speed, and ISO together form the exposure triangle. Every photographic exposure is a balance of these three settings. Changing one requires adjusting at least one other to maintain the desired brightness and creative effect."
+      }
+    ],
+    "category": "Art"
+  }
+]

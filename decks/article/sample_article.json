@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The Science of Sleep",
+    "content": "Sleep is one of the most vital biological processes for human health, yet it remains one of the least understood. During sleep, the brain cycles through several stages roughly every 90 minutes. The two main categories are non-rapid eye movement sleep and rapid eye movement sleep, commonly called REM sleep. Non-rapid eye movement sleep has three stages progressing from light to deep sleep. During deep sleep, the body repairs tissues, builds bone and muscle, and strengthens the immune system. REM sleep, which typically increases in duration as the night progresses, is associated with dreaming and is critical for memory consolidation and emotional regulation. Research shows that adults who consistently sleep fewer than 7 hours per night face a significantly elevated risk of obesity, heart disease, and depression. Despite this, many people in modern societies are chronically sleep-deprived, largely due to artificial lighting, screens, and demanding work schedules.",
+    "summary": "Sleep cycles through distinct stages, each critical for physical repair and mental health. Chronic sleep deprivation significantly increases the risk of serious illness.",
+    "category": "Health"
+  },
+  {
+    "title": "How the Internet Works",
+    "content": "The internet is a global network of interconnected computers that communicate using a standardised set of rules called protocols. When you type a web address into your browser, your computer first contacts a Domain Name System server to translate that human-readable address into a numerical internet protocol address. Your request is then broken into small packets of data and sent across the network through a series of routers, which forward each packet toward its destination. The packets may take different routes and arrive out of order, but the Transmission Control Protocol reassembles them correctly at the destination. The web server receives the request, processes it, and sends back the content of the page as a new series of packets. Your browser then interprets the response and renders the visual page you see. This entire process, from typing an address to seeing a page, often happens in less than one second.",
+    "summary": "The internet works by breaking data into packets, routing them through interconnected servers using standardised protocols, and reassembling them at the destination.",
+    "category": "Technology"
+  },
+  {
+    "title": "The Psychology of Habit Formation",
+    "content": "Habits are automatic behaviours that the brain develops to conserve mental energy. According to research by MIT neuroscientists, every habit follows a three-part loop: a cue, a routine, and a reward. The cue is a trigger that tells the brain to enter automatic mode. The routine is the behaviour itself. The reward is what tells the brain that the loop is worth remembering for the future. Over time, this loop becomes so ingrained that the craving for the reward begins at the cue itself. This is why habits are so hard to break. Research shows it takes on average 66 days to form a new habit, though this varies widely between individuals and behaviours. To build a new habit effectively, experts recommend attaching it to an existing behaviour as a cue, starting with a very small version of the routine, and ensuring the reward is immediate.",
+    "summary": "Habits form through a cue, routine, and reward loop. Understanding this cycle is key to building new habits and breaking unwanted ones.",
+    "category": "Psychology"
+  },
+  {
+    "title": "Climate Change and the Carbon Cycle",
+    "content": "Carbon dioxide is a naturally occurring gas essential for plant life, but its concentration in the atmosphere has a direct effect on global temperature through the greenhouse effect. Carbon naturally cycles between the atmosphere, oceans, land, and living organisms over thousands of years. Human activities, particularly the burning of fossil fuels and deforestation, have disrupted this cycle by releasing carbon that was stored underground over millions of years back into the atmosphere in just a few centuries. The concentration of carbon dioxide in the atmosphere has increased by over 50 percent since the Industrial Revolution. This traps more heat from the Sun, raising average global temperatures. The consequences include melting polar ice, rising sea levels, more frequent extreme weather events, and disruptions to ecosystems worldwide. Addressing climate change requires both reducing emissions and developing ways to remove carbon dioxide from the atmosphere.",
+    "summary": "Human activity has accelerated the release of carbon dioxide far beyond natural rates, intensifying the greenhouse effect and driving global climate change.",
+    "category": "Environment"
+  },
+  {
+    "title": "The Foundations of Democracy",
+    "content": "Democracy is a system of government in which political power derives from the people, either directly through referendums and votes or indirectly through elected representatives. The concept traces its origins to ancient Athens, where citizens voted directly on laws and policies. Modern democracies are predominantly representative, where citizens elect officials who make decisions on their behalf. Most democratic systems are built on a set of core principles: free and fair elections, protection of individual rights, rule of law, separation of powers, and freedom of expression and press. The separation of powers into legislative, executive, and judicial branches is designed to prevent any single entity from holding unchecked authority. Despite its widespread adoption, democracy faces ongoing challenges including voter apathy, misinformation, and the influence of money in politics.",
+    "summary": "Democracy roots political authority in the people, operating through elections and protected rights. Its key safeguard is the separation of governmental power into distinct branches.",
+    "category": "Politics"
+  }
+]
