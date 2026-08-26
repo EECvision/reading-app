@@ -28,8 +28,8 @@ interface SessionControlsProps {
 }
 
 const SESSION_STYLES: { id: SessionStyle; label: string }[] = [
-  { id: 'read-and-listen', label: 'Read + Listen' },
-  { id: 'card-flip',       label: 'Card Flip' },
+  { id: 'listen', label: 'Listen' },
+  { id: 'read',   label: 'Read'   },
 ];
 
 const SPEED_OPTIONS = [0.5, 0.75, 1, 1.25, 1.5, 2];
@@ -99,26 +99,13 @@ export function SessionControls({
 
   const runSequence = (seqId: number) => {
     const p = latestProps.current;
-    
-    if (p.sessionStyle === 'card-flip') {
-      const textToRead = p.isFlipped ? p.backText : p.frontText;
-      speak({
-        text: textToRead,
-        settings: p.ttsSettings,
-        onStart: () => { if (playSequenceId.current === seqId) { setSpeaking(true); setPaused(false); } },
-        onEnd: () => {
-          if (playSequenceId.current !== seqId) return;
-          setSpeaking(false);
-          setPaused(false);
-          if (p.onAudioEnd) p.onAudioEnd();
-          // We intentionally don't auto-next on card flip completion as per previous user request
-        },
-      });
-      return;
-    }
 
-    // read-and-listen mode
+    // 'read' mode has no audio — bail immediately
+    if (p.sessionStyle === 'read') return;
+
+    // 'listen' mode: fall through to the continuous/single-pause/switch audio logic below
     const mode = p.ttsSettings.audioMode || 'continuous';
+
 
     if (mode === 'continuous') {
       speak({
@@ -217,12 +204,10 @@ export function SessionControls({
 
 
   // ── Auto-advance when text changes (card navigation + autoplay) ───────────
-  // Only fires after the one-shot auto-start has already run, so it doesn't
-  // double-trigger on the first card load.
+  // Only fires after the user has pressed Play at least once (hasAutoStarted).
   // isFlipped is intentionally NOT in the dependency array — including it would
   // cause React to re-run this effect (and its stop() cleanup) whenever the user
-  // clicks "Reveal Answer" in read-and-listen mode, interrupting ongoing speech.
-  // Card-flip audio-on-flip is handled separately below.
+  // clicks "Reveal Answer" in listen mode, interrupting ongoing speech.
   useEffect(() => {
     if (autoplay && hasAutoStarted.current && (frontText || backText)) {
       const seqIdRef = playSequenceId; // stable ref object, safe to capture
@@ -241,18 +226,8 @@ export function SessionControls({
     }
   }, [frontText, backText, autoplay, sessionStyle]);
 
-  // ── Card-flip: restart audio when the card is flipped ────────────────────
-  // Intentionally separate from the auto-advance effect above so that
-  // isFlipped changes in read-and-listen mode (Reveal Answer) are ignored.
-  useEffect(() => {
-    if (latestProps.current.sessionStyle !== 'card-flip') return;
-    if (!hasAutoStarted.current) return;
-    stop();
-    const seqId = ++playSequenceId.current;
-    setSpeaking(false);
-    setPaused(false);
-    setTimeout(() => runSequence(seqId), 80);
-  }, [isFlipped]);
+  // Note: The old card-flip isFlipped-audio effect has been removed.
+  // In 'read' mode there is no audio, so no restart is needed on flip.
 
   const handleSpeak = () => {
     // Mark as started so the autoplay card-navigation effect works
@@ -347,7 +322,7 @@ export function SessionControls({
           </button>
         </div>
 
-        {/* Playback Controls Row */}
+        {/* Playback Controls Row — always shown; Play/Pause only in Listen mode */}
         <div className={styles.playbackRow}>
           <button
             id="btn-prev"
@@ -361,29 +336,31 @@ export function SessionControls({
             </svg>
           </button>
 
-          {speaking ? (
-            <button
-              id="btn-pause"
-              className={styles.mainPlayBtn}
-              onClick={handlePause}
-              aria-label="Pause"
-            >
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-                <rect x="6" y="4" width="4" height="16"/>
-                <rect x="14" y="4" width="4" height="16"/>
-              </svg>
-            </button>
-          ) : (
-            <button
-              id="btn-play"
-              className={styles.mainPlayBtn}
-              onClick={handleSpeak}
-              aria-label={paused ? 'Resume' : 'Play'}
-            >
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: 4 }}>
-                <polygon points="5 3 19 12 5 21 5 3"/>
-              </svg>
-            </button>
+          {sessionStyle === 'listen' && (
+            speaking ? (
+              <button
+                id="btn-pause"
+                className={styles.mainPlayBtn}
+                onClick={handlePause}
+                aria-label="Pause"
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="6" y="4" width="4" height="16"/>
+                  <rect x="14" y="4" width="4" height="16"/>
+                </svg>
+              </button>
+            ) : (
+              <button
+                id="btn-play"
+                className={styles.mainPlayBtn}
+                onClick={handleSpeak}
+                aria-label={paused ? 'Resume' : 'Play'}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: 4 }}>
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </button>
+            )
           )}
 
           <button

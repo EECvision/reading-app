@@ -16,6 +16,7 @@ import {
   getSettings,
   saveAutoplaySettings,
   saveRepeatSettings,
+  saveSessionStyleSettings,
   saveShuffleSettings,
 } from "@/lib/localStorage";
 import { buildStudyList, saveSessionSummary } from "@/lib/progress";
@@ -57,7 +58,7 @@ export default function SessionPage() {
 
   const [index, setIndex] = useState(0);
   const [sessionStyle, setSessionStyle] =
-    useState<SessionStyle>("read-and-listen");
+    useState<SessionStyle>("listen");
   const [shuffle, setShuffle] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [repeat, setRepeat] = useState(false);
@@ -71,6 +72,7 @@ export default function SessionPage() {
       setShuffle(s.shuffle);
       setAutoplay(s.autoplay);
       setRepeat(s.repeat);
+      setSessionStyle(s.sessionStyle ?? 'listen');
 
       // For localStorage-stored decks, load now (not in useState to avoid SSR mismatch)
       if (deckId && !deckId.startsWith("file:")) {
@@ -241,6 +243,7 @@ export default function SessionPage() {
             level={level}
             isFlipped={isFlipped}
             onFlip={() => setIsFlipped((f) => !f)}
+            onNext={handleNext}
           />
         );
     }
@@ -312,6 +315,7 @@ export default function SessionPage() {
             sessionStyle={sessionStyle}
             onStyleChange={(s) => {
               setSessionStyle(s);
+              saveSessionStyleSettings(s);
               setIsFlipped(false); // reset state when switching modes
             }}
           />

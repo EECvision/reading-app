@@ -9,8 +9,8 @@ export type ReadingMode =
   | 'interview';
 
 export type SessionStyle =
-  | 'card-flip'
-  | 'read-and-listen';
+  | 'listen'
+  | 'read';
 
 export type AudioPlaybackMode = 
   | 'continuous'
@@ -169,6 +169,7 @@ export interface AppSettings {
   autoplay: boolean;
   shuffle: boolean;
   repeat: boolean;
+  sessionStyle: SessionStyle;
 }
 
 // ─── Session State ───────────────────────────────────────────────────────────

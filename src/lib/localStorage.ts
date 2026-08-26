@@ -1,4 +1,4 @@
-import type { Deck, DeckProgress, AppSettings, SessionState, Theme, TTSSettings } from '@/types';
+import type { Deck, DeckProgress, AppSettings, SessionState, SessionStyle, Theme, TTSSettings } from '@/types';
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────
 
@@ -94,6 +94,7 @@ const defaultSettings: AppSettings = {
   autoplay: true,
   shuffle: false,
   repeat: true,
+  sessionStyle: 'listen',
 };
 
 export function getSettings(): AppSettings {
@@ -103,6 +104,9 @@ export function getSettings(): AppSettings {
   }
   if (settings.repeat === undefined) {
     settings.repeat = true;
+  }
+  if (!settings.sessionStyle) {
+    settings.sessionStyle = 'listen';
   }
   return settings;
 }
@@ -134,6 +138,11 @@ export function saveShuffleSettings(shuffle: boolean): void {
 export function saveRepeatSettings(repeat: boolean): void {
   const s = getSettings();
   saveSettings({ ...s, repeat });
+}
+
+export function saveSessionStyleSettings(sessionStyle: SessionStyle): void {
+  const s = getSettings();
+  saveSettings({ ...s, sessionStyle });
 }
 
 // ─── Active Session ───────────────────────────────────────────────────────────

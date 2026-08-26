@@ -13,8 +13,8 @@ interface FlashCardProps {
 
 export function FlashCard({ item, sessionStyle, isFlipped, onFlip }: FlashCardProps) {
 
-  const isFlipMode = sessionStyle === 'card-flip';
-  const showBoth = sessionStyle === 'read-and-listen';
+  const isFlipMode = sessionStyle === 'read';
+  const showBoth = sessionStyle === 'listen';
 
   return (
     <div className={styles.container}>

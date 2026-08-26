@@ -15,7 +15,7 @@ export function NotesCard({ item, sessionStyle, isFlipped, onFlip }: NotesCardPr
     <div 
       className={styles.container}
       onClick={() => {
-        if (!isFlipped && (sessionStyle === 'card-flip')) {
+        if (!isFlipped && (sessionStyle === 'read')) {
           onFlip();
         }
       }}

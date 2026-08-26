@@ -14,7 +14,7 @@ interface QACardProps {
 export function QACard({ item, sessionStyle, isFlipped, onFlip }: QACardProps) {
   const [hintVisible, setHintVisible] = useState(false);
 
-  const showBoth = sessionStyle === 'read-and-listen';
+  const showBoth = sessionStyle === 'listen';
 
   return (
     <div className={styles.container}>

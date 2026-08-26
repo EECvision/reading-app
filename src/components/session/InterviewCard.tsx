@@ -12,9 +12,10 @@ interface InterviewCardProps {
   level: string;
   isFlipped: boolean;
   onFlip: () => void;
+  onNext: () => void;
 }
 
-export function InterviewCard({ question, role, level, isFlipped, onFlip }: InterviewCardProps) {
+export function InterviewCard({ question, role, level, isFlipped, onFlip, onNext }: InterviewCardProps) {
   const [phase, setPhase] = useState<'question' | 'answer' | 'followups'>('question');
   const [followupIndex, setFollowupIndex] = useState(0);
 
@@ -41,7 +42,7 @@ export function InterviewCard({ question, role, level, isFlipped, onFlip }: Inte
   const handleNext = () => {
     setPhase('question');
     setFollowupIndex(0);
-    onFlip();
+    onNext();
   };
 
   const difficultyBadge = `badge badge-${question.difficulty}`;

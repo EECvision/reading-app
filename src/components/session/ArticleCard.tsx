@@ -15,7 +15,7 @@ export function ArticleCard({ item, sessionStyle, isFlipped, onFlip }: ArticleCa
     <div 
       className={styles.container}
       onClick={() => {
-        if (!isFlipped && (sessionStyle === 'card-flip')) {
+        if (!isFlipped && (sessionStyle === 'read')) {
           onFlip();
         }
       }}
