@@ -9,6 +9,8 @@ import { QACard } from "@/components/session/QACard";
 import { SessionControls } from "@/components/session/SessionControls";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Navbar } from "@/components/ui/Navbar";
+import { Button } from "@/components/ui/Button";
 import {
   getDeck,
   getSettings,
@@ -246,8 +248,8 @@ export default function SessionPage() {
 
   return (
     <div className={`page-bg-accent ${styles.pageContainer}`}>
-      <nav className="nav">
-        <div className="nav-inner">
+      <Navbar 
+        left={
           <div className={styles.navBrand}>
             <Link id="nav-home" href="/" className={styles.navLogoLink}>
               <span className={styles.navLogo}>📚</span>
@@ -256,18 +258,21 @@ export default function SessionPage() {
             <span className={styles.navSeparator}>/</span>
             <span className={styles.navDeckName}>{deckName}</span>
           </div>
-          <div className={styles.navActions}>
-            <Link
+        }
+        right={
+          <>
+            <Button
               id="nav-end-session"
               href={`/session/${deckId}/summary`}
-              className="btn btn-ghost btn-sm"
+              variant="ghost"
+              size="sm"
             >
               End Session
-            </Link>
+            </Button>
             <ThemeToggle />
-          </div>
-        </div>
-      </nav>
+          </>
+        }
+      />
 
       <div className="container-sm section">
         {/* Progress */}

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import type { ReadingMode } from '@/types';
 import { downloadTemplate, getAIPrompt } from '@/lib/templates';
+import { Button } from '@/components/ui/Button';
 import styles from './TemplateActions.module.css';
 
 interface TemplateActionsProps {
@@ -41,17 +42,20 @@ export function TemplateActions({ mode }: TemplateActionsProps) {
           <span className={styles.aiIcon}>✨</span>
           <h3 className={styles.aiTitle}>Generate with AI</h3>
         </div>
-        <button
-          className="btn btn-ghost btn-sm"
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => downloadTemplate(mode)}
+          leftIcon={(
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          )}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
           Download Sample
-        </button>
+        </Button>
       </div>
 
       <div className={styles.formRow}>
@@ -94,13 +98,14 @@ export function TemplateActions({ mode }: TemplateActionsProps) {
           />
         </div>
 
-        <button 
-          className={`btn btn-primary ${styles.generateBtn}`} 
+        <Button 
+          variant="primary"
+          className={styles.generateBtn}
           onClick={handleOpenChatGPT}
           disabled={!topic.trim()}
         >
           Open in ChatGPT
-        </button>
+        </Button>
       </div>
 
       <p className={styles.hint}>

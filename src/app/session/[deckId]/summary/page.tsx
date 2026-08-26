@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Navbar } from "@/components/ui/Navbar";
 import { getDeck } from "@/lib/localStorage";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -16,17 +16,7 @@ export default function SummaryPage() {
 
   return (
     <div className="page-bg min-h-screen">
-      <nav className="nav">
-        <div className="nav-inner">
-          <div className={styles.navBrand}>
-            <Link id="nav-home" href="/" className={styles.navLogoLink}>
-              <span className={styles.navLogo}>📚</span>
-              <span className={styles.navTitle}>Audiobooklm</span>
-            </Link>
-          </div>
-          <ThemeToggle />
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="container-xs section">
         <div className={`animate-slideUp ${styles.summaryContainer}`}>

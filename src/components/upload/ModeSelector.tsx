@@ -65,21 +65,23 @@ export function ModeSelector({ selected, onSelect }: ModeSelectorProps) {
   return (
     <div>
       <div className={styles.grid}>
-        {MODES.map((mode) => {
+        {MODES.map((mode, index) => {
           const isSelected = selected === mode.id;
+          const delayClass = `delay-${(index % 4) + 1}`;
+          
           return (
             <button
               key={mode.id}
               id={`mode-${mode.id}`}
               onClick={() => onSelect(mode.id)}
-              className={styles.modeCard}
+              className={`${styles.modeCard} animate-blurFadeIn ${delayClass}`}
               style={{
                 background: isSelected
-                  ? `linear-gradient(135deg, ${mode.color}22, ${mode.color}11)`
+                  ? `linear-gradient(135deg, ${mode.color}15, ${mode.color}05)`
                   : undefined,
                 borderColor: isSelected ? mode.color : undefined,
-                boxShadow: isSelected ? `0 0 0 4px ${mode.color}18` : undefined,
-                transform: isSelected ? 'translateY(-2px)' : undefined,
+                boxShadow: isSelected ? `0 0 0 1px ${mode.color}, 0 8px 24px ${mode.color}25` : undefined,
+                transform: isSelected ? 'translateY(-4px)' : undefined,
               }}
               aria-pressed={isSelected}
             >

@@ -4,6 +4,8 @@ import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { FileUpload } from "@/components/upload/FileUpload";
 import { JsonPaste } from "@/components/upload/JsonPaste";
 import { JsonValidator } from "@/components/upload/JsonValidator";
+import { Navbar } from "@/components/ui/Navbar";
+import { Button } from "@/components/ui/Button";
 import { ModeSelector } from "@/components/upload/ModeSelector";
 import { TemplateActions } from "@/components/upload/TemplateActions";
 import { saveDeck } from "@/lib/localStorage";
@@ -14,7 +16,7 @@ import {
   type ValidationResult,
 } from "@/lib/schemas";
 import type { Deck, InterviewDeck, ReadingMode } from "@/types";
-import Link from "next/link";
+
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import styles from "./page.module.css";
@@ -155,31 +157,28 @@ export default function UploadPage() {
 
   return (
     <div className={`page-bg ${styles.pageContainer}`}>
+      <div className={styles.uploadGlow} />
       {/* Nav */}
-      <nav className="nav">
-        <div className="nav-inner">
-          <Link id="nav-home" href="/" className={styles.navBrand}>
-            <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>Audiobooklm</span>
-          </Link>
-          <div className={styles.navActions}>
-            <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">
+      <Navbar 
+        right={
+          <>
+            <Button id="nav-decks" href="/decks" variant="ghost" size="sm">
               My Decks
-            </Link>
+            </Button>
             <ThemeToggle />
-          </div>
-        </div>
-      </nav>
+          </>
+        }
+      />
 
       <div className="container-sm section">
-        <div className="animate-slideUp">
+        <div className="animate-blurFadeIn">
           <h1 className={styles.pageTitle}>Upload a Deck</h1>
 
           {renderStepper()}
 
           <div className={styles.stepsContainer}>
             {currentStep === 1 && (
-              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+              <div className={`card-glass animate-blurFadeIn delay-1 ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>
                     <h2 className={styles.stepTitle}>Select Learning Mode</h2>
@@ -206,7 +205,7 @@ export default function UploadPage() {
             )}
 
             {currentStep === 2 && (
-              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+              <div className={`card-glass animate-blurFadeIn delay-1 ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>
                     <h2 className={styles.stepTitle}>Generate & Upload Content</h2>
@@ -270,7 +269,7 @@ export default function UploadPage() {
             )}
 
             {currentStep === 3 && (
-              <div className={`card animate-fadeIn ${styles.stepCard}`}>
+              <div className={`card-glass animate-blurFadeIn delay-1 ${styles.stepCard}`}>
                 <div className={styles.stepHeader}>
                   <div>
                     <h2 className={styles.stepTitle}>Name & Start</h2>

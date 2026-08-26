@@ -1,6 +1,7 @@
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Navbar } from "@/components/ui/Navbar";
+import { Button } from "@/components/ui/Button";
 import type { Metadata } from "next";
-import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -13,27 +14,19 @@ export default function HomePage() {
   return (
     <div className="page-bg flex flex-col">
       {/* Nav */}
-      <nav className="nav">
-        <div className="nav-inner">
-          <div className={styles.navBrand}>
-            <span className={styles.navLogo}>📚</span>
-            <span className={styles.navTitle}>Audiobooklm</span>
-          </div>
-          <div className={styles.navActions}>
-            <Link id="nav-decks" href="/decks" className="btn btn-ghost btn-sm">
+      <Navbar 
+        right={
+          <>
+            <Button id="nav-decks" href="/decks" variant="ghost" size="sm">
               My Decks
-            </Link>
-            <Link
-              id="nav-upload"
-              href="/upload"
-              className="btn btn-primary btn-sm"
-            >
+            </Button>
+            <Button id="nav-upload" href="/upload" variant="primary" size="sm">
               + Upload
-            </Link>
+            </Button>
             <ThemeToggle />
-          </div>
-        </div>
-      </nav>
+          </>
+        }
+      />
 
       <main className="flex-1">
         {/* Hero */}
@@ -57,20 +50,22 @@ export default function HomePage() {
               </p>
 
               <div className={`${styles.heroActions} animate-blurFadeIn delay-4`}>
-                <Link
+                <Button
                   id="hero-upload"
                   href="/upload"
-                  className={styles.btnGlass}
+                  variant="glass"
+                  size="lg"
                 >
-                  <span>Start Studying</span>
-                </Link>
-                <Link
+                  Start Studying
+                </Button>
+                <Button
                   id="hero-decks"
                   href="/decks"
-                  className={styles.btnSubtle}
+                  variant="subtle"
+                  size="lg"
                 >
                   My Decks
-                </Link>
+                </Button>
               </div>
             </div>
           </div>

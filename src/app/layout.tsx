@@ -49,6 +49,26 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var raw = localStorage.getItem('rdapp_settings');
+                  var theme = 'dark';
+                  if (raw) {
+                    var parsed = JSON.parse(raw);
+                    if (parsed.theme) theme = parsed.theme;
+                  }
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>

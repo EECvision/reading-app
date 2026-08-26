@@ -362,31 +362,32 @@ pre {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--brand-500), var(--brand-600));
-  color: white;
-  box-shadow: 0 4px 14px hsl(252 74% 55% / 0.35);
+  background: var(--text-primary);
+  color: var(--bg-base);
+  box-shadow: 0 4px 14px hsl(0 0% 0% / 0.1);
+  border: 1px solid transparent;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--brand-400), var(--brand-500));
-  box-shadow: 0 6px 20px hsl(252 74% 55% / 0.45);
+  background: var(--text-secondary);
+  box-shadow: 0 6px 20px hsl(0 0% 0% / 0.15);
   transform: translateY(-1px);
 }
 
 .btn-primary:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px hsl(252 74% 55% / 0.3);
+  box-shadow: 0 2px 8px hsl(0 0% 0% / 0.1);
 }
 
 .btn-secondary {
-  background: var(--bg-elevated);
+  background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-strong);
 }
 
 .btn-secondary:hover {
-  background: var(--bg-overlay);
-  border-color: var(--border-strong);
+  background: var(--bg-elevated);
+  border-color: var(--text-muted);
   transform: translateY(-1px);
 }
 
@@ -401,32 +402,64 @@ pre {
   color: var(--text-primary);
 }
 
+/* Glass CTA Button */
+.btn-glass {
+  background: hsl(230 20% 10% / 0.9);
+  color: white;
+  border: 1px solid hsl(230 20% 100% / 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px hsl(0 0% 0% / 0.1), inset 0 1px 1px hsl(0 0% 100% / 0.2);
+}
+
+[data-theme="dark"] .btn-glass {
+  background: hsl(0 0% 100% / 0.9);
+  color: hsl(230 20% 10%);
+  border-color: hsl(0 0% 0% / 0.1);
+  box-shadow: 0 4px 24px hsl(0 0% 100% / 0.1), inset 0 1px 1px hsl(0 0% 100% / 0.5);
+}
+
+.btn-glass:hover {
+  transform: scale(1.02);
+  background: hsl(230 20% 10% / 1);
+}
+[data-theme="dark"] .btn-glass:hover {
+  background: hsl(0 0% 100% / 1);
+}
+
+.btn-subtle {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+}
+
+.btn-subtle:hover {
+  color: var(--text-primary);
+  background: hsl(0 0% 50% / 0.08);
+}
+
 .btn-accent {
-  background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+  background: var(--accent-500);
   color: hsl(30, 60%, 10%);
-  box-shadow: 0 4px 14px hsl(38 100% 60% / 0.35);
 }
 
 .btn-accent:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px hsl(38 100% 60% / 0.45);
+  background: var(--accent-400);
 }
 
 .btn-success {
-  background: linear-gradient(135deg, var(--green-400), var(--green-500));
+  background: var(--green-500);
   color: white;
-  box-shadow: 0 4px 14px hsl(142 71% 45% / 0.3);
 }
 
 .btn-success:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px hsl(142 71% 45% / 0.4);
+  background: var(--green-400);
 }
 
 .btn-danger {
-  background: linear-gradient(135deg, var(--red-400), var(--red-500));
+  background: var(--red-500);
   color: white;
-  box-shadow: 0 4px 14px hsl(0 84% 55% / 0.3);
 }
 
 .btn-danger:hover {
@@ -629,28 +662,6 @@ select.input {
 
 .flip-back {
   transform: rotateY(180deg);
-}
-
-/* ─── Page Header / Nav ──────────────────────────────────────────────────── */
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: var(--glass-bg);
-  border-bottom: 1px solid var(--glass-border);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  transition: background var(--transition-base);
-}
-
-.nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--space-6);
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* ─── Page Gradient Background ───────────────────────────────────────────── */

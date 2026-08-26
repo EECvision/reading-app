@@ -1,5 +1,31 @@
 /* src/app/decks/page.module.css */
 
+.pageContainer {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.decksGlow {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  width: 100vw;
+  max-width: 1000px;
+  height: 700px;
+  background: radial-gradient(circle, hsl(252 74% 55% / 0.12) 0%, transparent 60%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+}
+
 .navBrand {
   display: flex;
   align-items: center;
@@ -63,6 +89,11 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-5);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
 }
 
 .emptyIcon {

@@ -79,7 +79,6 @@
   line-height: 1.5;
   padding: 10px 12px;
   background: hsl(252 74% 55% / 0.1);
-  border-left: 3px solid var(--brand-500);
   border-radius: 4px;
 }
 
@@ -108,5 +107,9 @@
   }
   .generateBtn {
     width: 100%;
+  }
+  .hint {
+    font-size: 0.75rem;
+    padding: 8px 10px;
   }
 }

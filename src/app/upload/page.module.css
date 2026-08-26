@@ -2,6 +2,23 @@
 
 .pageContainer {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadGlow {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 100vw;
+  max-width: 1000px;
+  height: 700px;
+  background: radial-gradient(circle, hsl(252 74% 55% / 0.12) 0%, transparent 60%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .navBrand {
@@ -44,6 +61,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
+  position: relative;
+  z-index: 1;
 }
 
 .stepCard {
@@ -166,6 +185,8 @@
   justify-content: center;
   gap: var(--space-4);
   margin-bottom: var(--space-8);
+  position: relative;
+  z-index: 1;
 }
 
 .stepperItem {
@@ -211,12 +232,13 @@
 
 .stepperSeparator {
   height: 2px;
-  width: 24px;
-  background: var(--border);
+  width: 32px;
+  background: var(--bg-overlay);
+  transition: background 0.4s ease;
 }
 
 .stepperSeparator.completed {
-  background: var(--brand-500);
+  background: linear-gradient(90deg, var(--brand-500), var(--brand-400));
 }
 
 /* Wizard Navigation */
@@ -236,7 +258,7 @@
 
 @media (max-width: 600px) {
   .stepDesc {
-    font-size: var(--text-xs);
+    font-size: 0.7rem;
   }
   .stepper {
     gap: var(--space-2);
