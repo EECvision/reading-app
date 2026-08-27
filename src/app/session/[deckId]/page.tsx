@@ -216,6 +216,7 @@ export default function SessionPage() {
     if (!deckId) return;
     // Collection sessions are handled entirely in the mount effect above
     if (isCollectionSession) return;
+    if (isFileColDeck) return;
 
     if (!deckId.startsWith("file:")) {
       // deck will be null until the mount effect above loads it — give it one tick
@@ -239,7 +240,7 @@ export default function SessionPage() {
         setDeck(data);
       })
       .catch(() => router.push("/decks"));
-  }, [deck, deckId, router, isCollectionSession]);
+  }, [deck, deckId, router, isCollectionSession, isFileColDeck]);
 
   const currentItem = items[index];
   const currentId = currentItem ? getId(currentItem) : "";
