@@ -109,23 +109,57 @@
 }
 
 /* Collapsible Settings Drawer */
-.settingsDrawer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--bg-body);
+.settingsDrawerRoot {
+  width: 100%;
 }
 
-.settingsOpen {
-  max-height: 400px;
-  overflow-y: auto;
+.settingsDrawerContent {
+  overflow: hidden;
+  background: var(--bg-body);
   border-top: 1px solid var(--border);
+}
+
+.settingsDrawerContent[data-state='open'] {
+  animation: slideDown 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.settingsDrawerContent[data-state='closed'] {
+  animation: slideUp 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+  from { height: 0; }
+  to { height: var(--radix-collapsible-content-height); }
+}
+
+@keyframes slideUp {
+  from { height: var(--radix-collapsible-content-height); }
+  to { height: 0; }
 }
 
 .settingsDrawerInner {
   padding: var(--space-4);
   display: flex;
   flex-direction: column;
+  max-height: 40vh;
+  overflow-y: auto;
+  
+  /* Custom scrollbar to avoid bulky double-scrollbars on Windows */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.settingsDrawerInner::-webkit-scrollbar {
+  width: 6px;
+}
+
+.settingsDrawerInner::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.settingsDrawerInner::-webkit-scrollbar-thumb {
+  background-color: var(--border-strong);
+  border-radius: var(--radius-full);
 }
 
 /* Native-style list rows */
@@ -154,16 +188,14 @@
   border: none;
   color: var(--text-secondary);
   font-size: var(--text-base);
-  text-align: right;
   cursor: pointer;
-  direction: rtl; /* Right align the select text */
-  width: 240px;
   max-width: 65%;
   flex-shrink: 0;
-}
-
-.nativeSelect option {
-  direction: ltr;
+  
+  /* Flex overrides to align properly without RTL hack */
+  width: auto;
+  justify-content: flex-end;
+  gap: var(--space-2);
 }
 
 /* Switches */

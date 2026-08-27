@@ -4,6 +4,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import type { Collection, Deck } from '@/types';
 import { DeckCard } from './DeckCard';
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from '@/components/ui/DropdownMenu';
 import styles from './CollectionRow.module.css';
 
 interface CollectionRowProps {
@@ -30,7 +36,6 @@ export function CollectionRow({
   readonly = false,
 }: CollectionRowProps) {
   const [expanded, setExpanded] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
   const [renaming, setRenaming] = useState(false);
   const [renameValue, setRenameValue] = useState(collection.name);
 
@@ -44,11 +49,10 @@ export function CollectionRow({
       onRenameCollection(collection.id, trimmed);
     }
     setRenaming(false);
-    setMenuOpen(false);
   };
 
   return (
-    <div className={`${styles.collectionBlock} ${menuOpen ? styles.collectionActive : ''}`}>
+    <div className={styles.collectionBlock}>
       {/* Folder Header */}
       <div className={styles.folderHeader}>
         <button
@@ -106,32 +110,28 @@ export function CollectionRow({
 
         {!readonly && (
           <div className={styles.menuWrapper}>
-            <button
-              id={`menu-collection-${collection.id}`}
-              className={styles.menuBtn}
-              onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); }}
-              aria-label="Collection options"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
-              </svg>
-            </button>
-            {menuOpen && (
-              <>
-                <div className={styles.menuOverlay} onClick={() => setMenuOpen(false)} />
-                <div className={styles.menu}>
-                  <button className={styles.menuItem} onClick={() => { setRenaming(true); setMenuOpen(false); setExpanded(true); }}>
-                    ✏️ Rename
-                  </button>
-                  <button
-                    className={`${styles.menuItem} ${styles.menuItemDanger}`}
-                    onClick={() => { setMenuOpen(false); onDeleteCollection(collection.id); }}
-                  >
-                    🗑 Delete Folder
-                  </button>
-                </div>
-              </>
-            )}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  id={`menu-collection-${collection.id}`}
+                  className={styles.menuBtn}
+                  aria-label="Collection options"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
+                  </svg>
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={(e) => { e.stopPropagation(); setRenaming(true); setExpanded(true); }}>
+                  <span style={{ marginRight: '8px' }}>✏️</span> Rename
+                </DropdownMenuItem>
+                <DropdownMenuItem variant="danger" onClick={(e) => { e.stopPropagation(); onDeleteCollection(collection.id); }}>
+                  <span style={{ marginRight: '8px' }}>🗑</span> Delete Folder
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         )}
       </div>

@@ -187,88 +187,23 @@
   color: var(--text-primary);
 }
 
-.menuOverlay {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-}
-
-.menu {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 20;
-  background: var(--glass-bg);
-  backdrop-filter: blur(24px);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-xl), 0 0 0 1px hsl(0 0% 100% / 0.1) inset;
-  padding: var(--space-2);
-  min-width: 200px;
-  animation: menuIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes menuIn {
-  from { opacity: 0; transform: scale(0.96) translateY(-8px); }
-  to   { opacity: 1; transform: scale(1)   translateY(0); }
-}
-
-.menuItem {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  width: 100%;
-  padding: var(--space-2) var(--space-3);
-  background: none;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: var(--text-sm);
-  font-weight: 500;
+.menuBtn:hover {
+  background: var(--bg-overlay);
   color: var(--text-primary);
-  text-align: left;
-  transition: all 0.15s ease;
 }
 
-.menuItem:hover {
-  background: var(--bg-elevated);
-  transform: translateX(2px);
+.submenuTrigger {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menuItemDanger {
-  color: var(--red-400);
-}
-
-.menuItemDanger:hover {
-  background: hsl(0 84% 65% / 0.1);
-}
-
-.menuDivider {
-  height: 1px;
-  background: var(--border);
-  margin: var(--space-2) 0;
-}
-
-.submenuWrapper {
-  position: relative;
-}
-
-.submenu {
-  position: absolute;
-  left: calc(100% + 4px);
-  top: -8px;
-  z-index: 30;
+.submenuContent {
+  z-index: 60;
+  min-width: 150px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-xl);
-  padding: var(--space-2);
-  min-width: 200px;
-  animation: submenuIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes submenuIn {
-  from { opacity: 0; transform: scale(0.96) translateX(-8px); }
-  to   { opacity: 1; transform: scale(1)   translateX(0); }
+  padding: var(--space-1);
 }
 

@@ -1,7 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+
 import { Button } from '@/components/ui/Button';
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent,
+  DropdownMenuPortal,
+} from '@/components/ui/DropdownMenu';
 import type { Collection } from '@/types';
 import styles from './DeckCard.module.css';
 
@@ -47,8 +58,6 @@ export function DeckCard({
 }: DeckCardProps) {
   const color = MODE_COLORS[mode] ?? 'var(--brand-400)';
   const icon = MODE_ICONS[mode] ?? '📚';
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [moveOpen, setMoveOpen] = useState(false);
 
   const uploadDate = new Date(uploadedAt).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric',
@@ -58,7 +67,7 @@ export function DeckCard({
 
   return (
     <div 
-      className={`card-glass ${styles.card} ${menuOpen ? styles.cardActive : ''} ${className}`} 
+      className={`card-glass ${styles.card} ${className}`} 
       style={{ '--deck-color': color, ...style } as React.CSSProperties}
     >
 
@@ -76,62 +85,54 @@ export function DeckCard({
         {/* ⋮ context menu (only for local decks) */}
         {!isFileDeck && (
           <div className={styles.menuWrapper}>
-            <button
-              id={`menu-deck-${id}`}
-              className={styles.menuBtn}
-              onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); setMoveOpen(false); }}
-              aria-label="Deck options"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
-              </svg>
-            </button>
-            {menuOpen && (
-              <>
-                <div className={styles.menuOverlay} onClick={() => { setMenuOpen(false); setMoveOpen(false); }} />
-                <div className={styles.menu}>
-                  {/* Remove from collection OR move to collection */}
-                  {onRemoveFromCollection ? (
-                    <button className={styles.menuItem} onClick={() => { setMenuOpen(false); onRemoveFromCollection(); }}>
-                      📤 Remove from folder
-                    </button>
-                  ) : onMoveToCollection && allCollections.length > 0 ? (
-                    <div className={styles.submenuWrapper}>
-                      <button
-                        className={styles.menuItem}
-                        onClick={() => setMoveOpen((o) => !o)}
-                      >
-                        📁 Move to folder
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: 'auto' }}>
-                          <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                      </button>
-                      {moveOpen && (
-                        <div className={styles.submenu}>
-                          {allCollections.map((c) => (
-                            <button
-                              key={c.id}
-                              className={styles.menuItem}
-                              onClick={() => { setMenuOpen(false); setMoveOpen(false); onMoveToCollection(c.id); }}
-                            >
-                              📁 {c.name}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : null}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  id={`menu-deck-${id}`}
+                  className={styles.menuBtn}
+                  aria-label="Deck options"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
+                  </svg>
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                {/* Remove from collection OR move to collection */}
+                {onRemoveFromCollection ? (
+                  <DropdownMenuItem onClick={onRemoveFromCollection}>
+                    <span style={{ marginRight: '8px' }}>📤</span> Remove from folder
+                  </DropdownMenuItem>
+                ) : onMoveToCollection && allCollections.length > 0 ? (
+                  <DropdownMenuSub>
+                    <DropdownMenuSubTrigger>
+                      <span style={{ marginRight: '8px', lineHeight: 1, display: 'flex', alignItems: 'center' }}>📁</span> 
+                      <span style={{ flex: 1, lineHeight: 1, display: 'flex', alignItems: 'center' }}>Move to folder</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: 'auto' }}>
+                        <polyline points="9 18 15 12 9 6"/>
+                      </svg>
+                    </DropdownMenuSubTrigger>
+                    <DropdownMenuPortal>
+                      <DropdownMenuSubContent sideOffset={2} alignOffset={-4}>
+                        {allCollections.map((c) => (
+                          <DropdownMenuItem key={c.id} onClick={() => onMoveToCollection(c.id)}>
+                            <span style={{ marginRight: '8px' }}>📁</span> {c.name}
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuSubContent>
+                    </DropdownMenuPortal>
+                  </DropdownMenuSub>
+                ) : null}
 
-                  <div className={styles.menuDivider} />
-                  <button
-                    className={`${styles.menuItem} ${styles.menuItemDanger}`}
-                    onClick={() => { setMenuOpen(false); onDelete(id); }}
-                  >
-                    🗑 Delete deck
-                  </button>
-                </div>
-              </>
-            )}
+                {(onRemoveFromCollection || (onMoveToCollection && allCollections.length > 0)) && (
+                  <DropdownMenuSeparator />
+                )}
+
+                <DropdownMenuItem variant="danger" onClick={() => onDelete(id)}>
+                  <span style={{ marginRight: '8px' }}>🗑</span> Delete deck
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         )}
       </div>
