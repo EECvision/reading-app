@@ -266,9 +266,15 @@ export function SessionControls({
   useEffect(() => {
     if (!isSettingsOpen) return;
     const handleOutsideClick = (e: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
-        setIsSettingsOpen(false);
+      const target = e.target as Element;
+      if (containerRef.current && containerRef.current.contains(target)) {
+        return;
       }
+      // Ignore clicks on Radix UI dropdown portals
+      if (target.closest('[role="listbox"]') || target.closest('[data-radix-popper-content-wrapper]')) {
+        return;
+      }
+      setIsSettingsOpen(false);
     };
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);

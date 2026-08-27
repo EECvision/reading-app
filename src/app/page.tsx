@@ -22,7 +22,7 @@ export default function HomePage() {
               My Decks
             </Button>
             <Button id="nav-upload" href="/upload" variant="primary" size="sm" leftIcon={<PlusIcon />}>
-              Upload
+              Add New
             </Button>
             <ThemeToggle />
           </>

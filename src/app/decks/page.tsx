@@ -137,7 +137,7 @@ export default function DecksPage() {
                 size="sm"
                 leftIcon={<PlusIcon />}
               >
-                Upload
+                Add New
               </Button>
               <ThemeToggle />
             </>

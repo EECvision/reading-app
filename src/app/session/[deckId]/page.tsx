@@ -73,13 +73,24 @@ export default function SessionPage() {
   const [startedAt] = useState(new Date().toISOString());
   const [isFlipped, setIsFlipped] = useState(false);
 
+  // Parse deck ID to determine session type
+  const parts = useMemo(() => deckId.split(":"), [deckId]);
+  
+  // A file collection ID is exactly "filecol:slug"
+  const isFileCollection = deckId.startsWith("filecol:") && parts.length === 2;
+  
+  // A user collection ID is exactly "collection:id"
+  const isUserCollection = deckId.startsWith("collection:") && parts.length === 2;
+  
   // Is this a collection-wide session?
-  const isCollectionSession = deckId.startsWith("collection:") || deckId.startsWith("filecol:");
-  const isFileCollection = deckId.startsWith("filecol:");
-  const collectionId = isCollectionSession
-    ? deckId.slice(deckId.indexOf(":") + 1)
-    : null;
+  const isCollectionSession = isUserCollection || isFileCollection;
+  const collectionId = isCollectionSession ? parts[1] : null;
 
+  // A specific deck inside a file collection: "filecol:slug:mode:file"
+  const isFileColDeck = deckId.startsWith("filecol:") && parts.length > 2;
+
+  // A standalone file deck: "file:mode:file"
+  const isStandaloneFileDeck = deckId.startsWith("file:");
   // Load persisted settings from localStorage after mount
   useEffect(() => {
     Promise.resolve().then(() => {
@@ -113,14 +124,57 @@ export default function SessionPage() {
           setCollectionDecks(result.decks);
           if (result.decks.length > 0) setDeck(result.decks[0]);
         }
-      } else if (deckId && !deckId.startsWith("file:")) {
+      } else if (isFileColDeck) {
+        // Fetch parent collection and select the specific deck
+        const parentSlug = parts[1];
+        fetch("/api/collections")
+          .then((r) => r.json())
+          .then((data: { collection: Collection; decks: Deck[] }[]) => {
+            const found = data.find((fc) => fc.collection.id === `filecol:${parentSlug}`);
+            if (!found) { router.push("/decks"); return; }
+            const specificDeck = found.decks.find(d => d.id === deckId);
+            if (!specificDeck) { router.push("/decks"); return; }
+            
+            setCollection(found.collection);
+            setCollectionDecks(found.decks);
+            setDeck(specificDeck);
+          })
+          .catch(() => router.push("/decks"));
+      } else if (isStandaloneFileDeck) {
+        fetch("/api/decks")
+          .then(r => r.json())
+          .then((apiDecks: Deck[]) => {
+            const specificDeck = apiDecks.find(d => d.id === deckId);
+            if (!specificDeck) { router.push("/decks"); return; }
+            setDeck(specificDeck);
+          })
+          .catch(() => router.push("/decks"));
+      } else if (deckId) {
+        // Local deck or local deck inside a collection
         const col = getCollectionForDeck(deckId);
-        setCollection(col);
+        if (col) {
+          setCollection(col);
+          const result = getCollectionWithDecks(col.id);
+          if (result) setCollectionDecks(result.decks);
+        }
         const stored = decks.find((d) => d.id === deckId) ?? null;
-        if (stored) setDeck(stored);
+        if (stored) {
+          setDeck(stored);
+        } else {
+          router.push("/decks");
+        }
       }
     });
-  }, [deckId, isCollectionSession, collectionId, router, isFileCollection]);
+  }, [
+    deckId,
+    isCollectionSession,
+    collectionId,
+    router,
+    isFileCollection,
+    isFileColDeck,
+    isStandaloneFileDeck,
+    parts,
+  ]);
 
   // For a collection session, derive mode/name from the collection rather than one deck
   const mode = deck?.mode ?? "flashcard";
