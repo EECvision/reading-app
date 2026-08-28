@@ -1,0 +1,373 @@
+{
+"role": "Frontend Engineer",
+"level": "Senior",
+"questions": [
+{
+"id": "q1",
+"category": "Core Web Vitals",
+"difficulty": "medium",
+"question": "What is Largest Contentful Paint, and what are the most common strategies to optimize it?",
+"answer": "Largest Contentful Paint measures the time it takes for the largest image or text block to become visible within the user viewport. To optimize it, you should ensure the server responds quickly by using a content delivery network and database optimizations. You should also preload critical hero images, defer non critical JavaScript that blocks rendering, and use modern compressed image formats like Web P or AVIF.",
+"code_snippet": "\n",
+"follow_ups": [
+{
+"question": "What happens if a user scrolls down while the page is still loading? Does the target element change?",
+"answer": "The browser stops calculating the Largest Contentful Paint as soon as the user interacts with the page, for example by scrolling or clicking. The metric only tracks elements rendered before that first interaction."
+}
+]
+},
+{
+"id": "q2",
+"category": "Core Web Vitals",
+"difficulty": "medium",
+"question": "How do you prevent Cumulative Layout Shift on a webpage?",
+"answer": "Cumulative Layout Shift occurs when visible elements suddenly change position during the page load, causing a jarring user experience. To prevent this, I always define explicit width and height attributes on images and video elements so the browser reserves the correct space before the media downloads. I also avoid inserting new content dynamically above existing content unless it is directly triggered by a user action.",
+"code_snippet": "/* Reserve space using aspect-ratio */\n.image-container {\n  aspect-ratio: 16 / 9;\n  width: 100%;\n}"
+},
+{
+"id": "q3",
+"category": "Core Web Vitals",
+"difficulty": "hard",
+"question": "Explain Interaction to Next Paint and how it differs from First Input Delay.",
+"answer": "Interaction to Next Paint is a modern performance metric that measures the overall responsiveness of a page by observing the latency of all click, tap, and keyboard interactions throughout the entire user visit. First Input Delay only measures the initial delay of the very first user interaction and ignores the time it takes to actually process the event and paint the next frame. Interaction to Next Paint is a much more comprehensive measure of application responsiveness."
+},
+{
+"id": "q4",
+"category": "Auditing",
+"difficulty": "medium",
+"question": "What is the difference between lab data and field data when measuring web performance?",
+"answer": "Lab data is collected in a controlled environment with predefined device and network settings, which makes it excellent for debugging and reproducing performance issues during development. Field data, also known as Real User Monitoring, is collected from actual users interacting with the site in the real world. Field data is crucial because it accounts for the diverse devices, network conditions, and behaviors of your actual audience."
+},
+{
+"id": "q5",
+"category": "JavaScript Performance",
+"difficulty": "medium",
+"question": "What is code splitting, and why is it important for frontend performance?",
+"answer": "Code splitting is the process of breaking down a large JavaScript bundle into smaller, more manageable chunks that can be loaded on demand. This is important because downloading, parsing, and executing a massive JavaScript file blocks the main thread and delays page interactivity. By using dynamic imports, you ensure the browser only downloads the specific code required for the current page or user action."
+},
+{
+"id": "q6",
+"category": "JavaScript Performance",
+"difficulty": "hard",
+"question": "Explain the concept of tree shaking and how you ensure it works effectively in your build process.",
+"answer": "Tree shaking is a dead code elimination technique used by bundlers to remove unused JavaScript from the final production build. It relies on the static structure of modern standard module syntax, specifically import and export statements. To ensure it works effectively, you must configure your bundler to use standard modules instead of legacy Common JavaScript, and avoid side effects in your module files by marking them as side effect free in the package configuration.",
+"code_snippet": "// package.json\n{\n  'sideEffects': false\n}"
+},
+{
+"id": "q7",
+"category": "Asset Optimization",
+"difficulty": "easy",
+"question": "How do you implement lazy loading for images, and what are its benefits?",
+"answer": "I implement lazy loading by adding the loading attribute set to lazy directly on the standard image element. This tells the browser to defer downloading the image until it is about to enter the user viewport. The primary benefit is a significant reduction in initial page weight and network usage, which accelerates the loading time of the critical content that the user actually sees immediately."
+},
+{
+"id": "q8",
+"category": "Rendering",
+"difficulty": "hard",
+"question": "What is the Critical Rendering Path, and how do you optimize it?",
+"answer": "The Critical Rendering Path is the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into actual painted pixels on the screen. To optimize it, I minimize the number of critical resources by extracting and inlining critical CSS directly into the document head. I also defer non essential JavaScript and use resource hints like preload for late discovered critical assets like web fonts."
+},
+{
+"id": "q9",
+"category": "Network",
+"difficulty": "easy",
+"question": "What is the difference between minification and compression?",
+"answer": "Minification is the process of removing unnecessary characters from source code, such as whitespace, comments, and line breaks, without changing its functionality. Compression is a server level optimization that applies mathematical algorithms like Gzip or Brotli to encode the file into a smaller binary format for network transfer. The browser then automatically decompresses the file upon receipt before parsing it."
+},
+{
+"id": "q10",
+"category": "Network",
+"difficulty": "medium",
+"question": "How do the preload and prefetch resource hints differ?",
+"answer": "The preload hint tells the browser that a specific resource is absolutely required for the current page and should be downloaded immediately with high priority. The prefetch hint suggests that a resource might be needed for a future navigation, so the browser downloads it in the background with low priority only during idle time. I use preload for critical fonts and prefetch for assets on the next likely page view."
+},
+{
+"id": "q11",
+"category": "Network",
+"difficulty": "medium",
+"question": "When would you use preconnect and domain name system prefetch?",
+"answer": "I use preconnect to establish an early connection to a critical third party domain, which handles the domain name system lookup, the transmission control protocol handshake, and the secure sockets layer negotiation ahead of time. If connecting is too resource heavy or I only need to resolve the domain name, I use the domain name system prefetch hint instead. This is extremely useful for external font providers or analytics networks.",
+"code_snippet": "\n"
+},
+{
+"id": "q12",
+"category": "JavaScript Performance",
+"difficulty": "medium",
+"question": "Explain the difference between debouncing and throttling.",
+"answer": "Debouncing delays the execution of a function until a specified amount of time has passed since the last time it was called, making it perfect for search input fields where you want to wait for the user to stop typing. Throttling limits a function to execute at most once every specified time window, regardless of how many times the event fires. Throttling is ideal for continuous events like scrolling or window resizing.",
+"follow_ups": [
+{
+"question": "Can you give an example of a potential problem if you debounce a scroll event instead of throttling it?",
+"answer": "If you debounce a scroll event that updates a reading progress bar, the progress bar will not update at all while the user is actively scrolling. It will only suddenly jump to the new position once they completely stop scrolling, creating a disconnected user experience."
+}
+]
+},
+{
+"id": "q13",
+"category": "JavaScript Performance",
+"difficulty": "hard",
+"question": "How can you prevent heavy JavaScript computations from freezing the user interface?",
+"answer": "Because JavaScript is single threaded, heavy computations block the main thread and prevent the browser from painting updates or responding to user input. To prevent this, I offload complex data processing tasks to a Web Worker, which runs the code in a separate background thread. If Web Workers are not viable, I break the computation into smaller chunks and yield control back to the browser using set timeout or request animation frame."
+},
+{
+"id": "q14",
+"category": "Memory Management",
+"difficulty": "hard",
+"question": "What are common causes of memory leaks in a single page application, and how do you prevent them?",
+"answer": "Common causes of memory leaks include forgetting to remove event listeners attached to the window or document when a component unmounts. Another frequent cause is uncleared set interval timers or lingering closures that hold references to large document object model elements. To prevent them, I strictly use the cleanup function inside the React use effect hook to remove listeners, clear timers, and cancel pending network requests."
+},
+{
+"id": "q15",
+"category": "Rendering",
+"difficulty": "hard",
+"question": "Explain the difference between a browser reflow and a repaint. Which is more expensive?",
+"answer": "A reflow, also known as layout, occurs when the browser must calculate the positions and dimensions of elements, which is a highly computationally expensive process that affects the entire document tree. A repaint happens when changes affect the visibility of an element without changing its geometry, such as updating a background color. Reflows are much more expensive because they force the browser to recalculate the layout before repainting."
+},
+{
+"id": "q16",
+"category": "CSS Performance",
+"difficulty": "medium",
+"question": "How do you optimize CSS animations to ensure a smooth sixty frames per second rendering?",
+"answer": "To achieve smooth animations, I exclusively animate the transform and opacity properties. Modifying these specific properties allows the browser to offload the animation work to the graphics processing unit using the compositor thread, completely bypassing the expensive layout and paint phases. Animating properties like width, height, or margins triggers constant reflows and results in visually choppy performance."
+},
+{
+"id": "q17",
+"category": "CSS Performance",
+"difficulty": "medium",
+"question": "What is Critical CSS, and how does it improve perceived performance?",
+"answer": "Critical CSS is the absolute minimum set of styling rules required to render the above the fold content that the user sees immediately upon loading the page. By extracting and inlining this critical CSS directly into the HTML document head, the browser can render the initial view without waiting to download external style sheets. This dramatically improves the First Contentful Paint and provides a much faster perceived loading experience."
+},
+{
+"id": "q18",
+"category": "Asset Optimization",
+"difficulty": "easy",
+"question": "How do you prevent invisible text while web fonts are loading?",
+"answer": "When a custom web font takes too long to load, browsers often hide the text, creating a flash of invisible text. To prevent this, I use the font display property set to swap inside the font face declaration. This instructs the browser to immediately render the text using a system fallback font, and then swap it out for the custom font as soon as the download completes."
+},
+{
+"id": "q19",
+"category": "Caching",
+"difficulty": "hard",
+"question": "What is a Service Worker, and how can it be used to improve web performance?",
+"answer": "A Service Worker is a specialized JavaScript file that acts as a proxy server sitting between the web application and the network. It can intercept outgoing network requests and serve responses directly from a local cache, allowing the application to load instantly on repeat visits and even function completely offline. It also supports background data synchronization and push notifications."
+},
+{
+"id": "q20",
+"category": "Caching",
+"difficulty": "hard",
+"question": "Explain how the Cache-Control HTTP header works for static assets versus dynamic HTML pages.",
+"answer": "For static assets like images and bundled JavaScript files that have unique hash filenames, I set the Cache Control header to public with a maximum age of one year to cache them indefinitely. For dynamic HTML pages, I set the header to no cache, which forces the browser to validate with the server using an entity tag before using the cached version. This ensures users always see fresh content while still avoiding unnecessary downloads."
+},
+{
+"id": "q21",
+"category": "Asset Optimization",
+"difficulty": "medium",
+"question": "How do you serve responsive images to ensure mobile users do not download unnecessarily large files?",
+"answer": "I use the native HTML picture element along with the source element to define different image files for different viewport sizes using media queries. Alternatively, I use the standard image element with the source set attribute and the sizes attribute to let the browser automatically choose the most appropriate image size based on the device screen density and viewport width.",
+"code_snippet": "<img\n  srcset='small.jpg 400w, large.jpg 800w'\n  sizes='(max-width: 600px) 400px, 800px'\n  src='large.jpg'\n  alt='Responsive image'\n/>"
+},
+{
+"id": "q22",
+"category": "JavaScript Performance",
+"difficulty": "medium",
+"question": "What is memoization, and when is it appropriate to use it?",
+"answer": "Memoization is an optimization technique that caches the results of an expensive function call and returns the cached result when the same inputs occur again. It is highly appropriate for complex mathematical calculations or heavy data transformations that run frequently. However, it should not be used for fast primitive operations because the overhead of maintaining the cache memory can actually be slower than simply recalculating the value."
+},
+{
+"id": "q23",
+"category": "Rendering",
+"difficulty": "hard",
+"question": "How do you efficiently render a list of ten thousand items in a web application?",
+"answer": "Rendering thousands of document object model nodes simultaneously will severely degrade browser performance and consume massive amounts of memory. To handle this, I use a technique called windowing or virtualization, utilizing libraries like React Window. This technique only renders the few dozen items currently visible in the user viewport, and recycles those document nodes dynamically as the user scrolls, keeping the total element count very low."
+},
+{
+"id": "q24",
+"category": "Rendering",
+"difficulty": "medium",
+"question": "Why should you use requestAnimationFrame instead of setInterval for JavaScript animations?",
+"answer": "Using set interval forces the browser to execute the callback function at a rigid time delay, which often falls out of sync with the natural display refresh rate, leading to dropped frames and visual stuttering. The request animation frame function solves this by telling the browser to run the callback exactly before the next scheduled repaint. This guarantees perfectly synchronized animations and automatically pauses when the user switches to a different browser tab."
+},
+{
+"id": "q25",
+"category": "JavaScript Performance",
+"difficulty": "medium",
+"question": "Explain event delegation and how it benefits performance.",
+"answer": "Event delegation relies on the event bubbling phase, where an event triggered on a child element bubbles up the document tree. Instead of attaching separate event listeners to hundreds of individual list items, you attach a single listener to their parent container. This drastically reduces the memory footprint of your application and automatically handles dynamic elements added to the list later on."
+},
+{
+"id": "q26",
+"category": "Rendering",
+"difficulty": "hard",
+"question": "What is layout thrashing, and how do you avoid it?",
+"answer": "Layout thrashing occurs when JavaScript repeatedly reads layout properties, such as element height, and then immediately writes style changes in a rapid loop. This forces the browser to recalculate the layout multiple times in a single frame. To avoid it, you should batch all your document object model read operations together first, and then perform all your write operations afterward, effectively separating the read and write phases."
+},
+{
+"id": "q27",
+"category": "Rendering",
+"difficulty": "hard",
+"question": "What is the Island Architecture, and how does it improve frontend performance?",
+"answer": "Island Architecture is a rendering pattern where the majority of a webpage is delivered as pure static HTML, and only small, specific sections of the page are hydrated with JavaScript to become interactive. This dramatically reduces the amount of JavaScript sent to the client, speeds up the Time to Interactive, and avoids the heavy performance cost of hydrating the entire document tree on the client side."
+},
+{
+"id": "q28",
+"category": "Network",
+"difficulty": "medium",
+"question": "How do you minimize the performance impact of heavy third-party scripts like customer support widgets?",
+"answer": "Heavy third party scripts can severely block the main thread and delay the core user experience. To minimize their impact, I always load them asynchronously using the async or defer attributes. For extremely heavy widgets like chat modules, I use a facade pattern where I render a lightweight fake button that looks identical, and only download and execute the actual third party script when the user clicks the facade."
+},
+{
+"id": "q29",
+"category": "Network",
+"difficulty": "easy",
+"question": "What is the difference between the async and defer attributes on a script tag?",
+"answer": "When you use the async attribute, the browser downloads the script in the background and pauses HTML parsing to execute it the exact moment it finishes downloading. When you use the defer attribute, the browser downloads the script in the background but guarantees it will not execute until the entire HTML document is fully parsed. I use defer for almost all scripts to ensure they never block the initial page render."
+},
+{
+"id": "q30",
+"category": "Memory Management",
+"difficulty": "medium",
+"question": "How does using a Document Fragment improve performance when adding multiple elements to the DOM?",
+"answer": "When you append elements directly to the live document object model one by one, each insertion triggers a separate reflow and repaint process. A Document Fragment is an invisible, lightweight container that resides completely in memory. You can append hundreds of elements to the fragment first, and then append the fragment to the live document once, which triggers only a single optimized reflow."
+},
+{
+"id": "q31",
+"category": "Core Web Vitals",
+"difficulty": "medium",
+"question": "What does Time to First Byte measure, and why is it important?",
+"answer": "Time to First Byte measures the exact amount of time it takes for a user browser to receive the very first byte of data from the web server after making a request. It is a critical foundation for all other performance metrics because the browser cannot even begin to parse HTML or download subsequent assets until it receives that first byte of data. It relies heavily on server processing speed and network latency."
+},
+{
+"id": "q32",
+"category": "Core Web Vitals",
+"difficulty": "easy",
+"question": "What is First Contentful Paint, and how does it differ from Largest Contentful Paint?",
+"answer": "First Contentful Paint measures the time until the browser renders the very first piece of document object model content on the screen, whether it is text, an image, or even a non white background canvas. Largest Contentful Paint specifically measures the time until the single largest visible element on the screen is fully rendered. First Contentful Paint indicates that loading has started, while Largest Contentful Paint indicates that the main content is ready."
+},
+{
+"id": "q33",
+"category": "Core Web Vitals",
+"difficulty": "hard",
+"question": "Explain Time to Interactive and why it is a challenging metric to optimize for single page applications.",
+"answer": "Time to Interactive measures the time it takes for a page to become fully visually rendered and for the main thread to be completely idle for at least five seconds, meaning it can immediately respond to user input. It is exceptionally challenging for single page applications because the massive JavaScript frameworks required for client side routing often lock up the main thread during hydration, heavily delaying the interactive state."
+},
+{
+"id": "q34",
+"category": "Core Web Vitals",
+"difficulty": "hard",
+"question": "What is Total Blocking Time, and how do you reduce it?",
+"answer": "Total Blocking Time measures the total sum of time between the First Contentful Paint and the Time to Interactive where the main thread was blocked for more than fifty milliseconds, preventing user input. To drastically reduce it, you must break up long running JavaScript tasks into smaller chunks under fifty milliseconds, defer non critical script execution, and minimize heavy document object model manipulation during the initial load phase."
+},
+{
+"id": "q35",
+"category": "Auditing",
+"difficulty": "medium",
+"question": "How do you identify which dependencies are bloating your application bundle?",
+"answer": "To identify bloated dependencies, I integrate a visual analysis tool like the Webpack Bundle Analyzer into our build process. This tool generates an interactive treemap of all compiled output files, allowing developers to visually spot massive libraries like Moment dot js or heavy utility packages. Once identified, we can replace them with lightweight alternatives or implement strict tree shaking to reduce the overall bundle size."
+},
+{
+"id": "q36",
+"category": "Architecture",
+"difficulty": "hard",
+"question": "What are the common performance pitfalls of a traditional Single Page Application, and how do modern meta-frameworks address them?",
+"answer": "Traditional single page applications require users to download an empty HTML shell and a massive JavaScript bundle before the browser can render any content, leading to terrible initial load times and poor search engine optimization. Modern meta frameworks address this by shifting rendering back to the server using Server Side Rendering and Static Site Generation. This delivers fully formed HTML directly to the browser, offering much faster perceived performance."
+},
+{
+"id": "q37",
+"category": "Caching",
+"difficulty": "hard",
+"question": "What is the Stale While Revalidate caching pattern?",
+"answer": "Stale While Revalidate is a powerful caching strategy where the browser or content delivery network serves a stale cached version of a resource to the user instantly, while simultaneously fetching a fresh version from the server in the background. Once the background fetch completes, the cache is updated. This guarantees lightning fast responses for the user while ensuring the data eventually remains consistent with the server."
+},
+{
+"id": "q38",
+"category": "Rendering",
+"difficulty": "medium",
+"question": "Compare Server Side Rendering with Static Site Generation in terms of performance.",
+"answer": "Static Site Generation creates HTML files once at build time, which can then be served instantly from edge locations worldwide, making it incredibly fast but unsuitable for highly dynamic user data. Server Side Rendering creates HTML dynamically on every single user request, which provides up to date data but introduces server processing latency and slower time to first byte. You should use static generation whenever possible for optimal speed."
+},
+{
+"id": "q39",
+"category": "CSS Performance",
+"difficulty": "hard",
+"question": "What is the CSS contain property, and how does it improve rendering performance?",
+"answer": "The CSS contain property allows developers to explicitly tell the browser that an element and its children are completely independent of the rest of the document tree. When you apply layout containment, the browser knows that changes inside that specific element will never affect the layout of elements outside of it. This drastically reduces the scope of reflows and repaints, providing huge performance gains in complex user interfaces."
+},
+{
+"id": "q40",
+"category": "CSS Performance",
+"difficulty": "medium",
+"question": "What does it mean to force hardware acceleration, and what are the risks?",
+"answer": "Forcing hardware acceleration means moving elements to their own rendering layer so they can be processed by the graphics processing unit rather than the central processing unit, often achieved using a CSS hack like translating the Z axis to zero. While this creates buttery smooth animations, the risk is that creating too many rendering layers consumes massive amounts of device random access memory, which can crash browsers on lower end mobile devices."
+},
+{
+"id": "q41",
+"category": "Asset Optimization",
+"difficulty": "easy",
+"question": "How do you optimize Scalable Vector Graphic files for web usage?",
+"answer": "Scalable Vector Graphic files generated by design tools often contain unnecessary metadata, hidden layers, and overly precise decimal coordinate values that bloat the file size. To optimize them, I run the files through an automated compression tool like SVG O during the build process, which strips out all redundant data and simplifies the paths. I also inline small vector graphics directly into the HTML to eliminate additional HTTP requests."
+},
+{
+"id": "q42",
+"category": "Network",
+"difficulty": "medium",
+"question": "What is Brotli compression, and how does it compare to Gzip?",
+"answer": "Brotli is a modern lossless compression algorithm developed specifically for web assets like HTML, CSS, and JavaScript. It utilizes a dictionary of common web keywords to achieve significantly higher compression ratios than the older Gzip algorithm, meaning smaller file sizes and faster downloads. While Gzip is slightly faster at compressing data on the fly, Brotli is universally preferred for static assets compressed ahead of time."
+},
+{
+"id": "q43",
+"category": "Network",
+"difficulty": "hard",
+"question": "How does HTTP version two multiplexing change the way we optimize frontend assets?",
+"answer": "In older HTTP protocols, browsers could only download a few files concurrently, which forced developers to concatenate multiple JavaScript files into one massive bundle and use CSS sprite sheets to reduce the number of requests. HTTP version two introduced multiplexing, allowing multiple files to be downloaded simultaneously over a single connection. This means we can now serve smaller, granular files and rely on aggressive caching without worrying about the request overhead."
+},
+{
+"id": "q44",
+"category": "JavaScript Performance",
+"difficulty": "hard",
+"question": "What is WebAssembly, and when would you use it in a frontend application?",
+"answer": "WebAssembly is a binary instruction format designed to execute code in the browser at near native speeds. It is completely separate from JavaScript but works alongside it. I would use WebAssembly for incredibly performance intensive tasks that struggle in standard JavaScript, such as heavy image processing, real time video editing, complex physics engines in browser games, or cryptographic calculations."
+},
+{
+"id": "q45",
+"category": "Network",
+"difficulty": "medium",
+"question": "How does a Content Delivery Network improve web performance?",
+"answer": "A Content Delivery Network is a globally distributed network of proxy servers. When a user requests your website, the content delivery network serves static assets like images and styles from the server geographically closest to them. This drastically reduces the physical distance data must travel, which minimizes network latency and speeds up the time to first byte, while also offloading significant traffic from your origin server."
+},
+{
+"id": "q46",
+"category": "Auditing",
+"difficulty": "medium",
+"question": "How can you use the browser Performance API to measure custom metrics?",
+"answer": "The browser Performance API provides the performance dot mark and performance dot measure methods to calculate precise execution times for specific blocks of JavaScript code. You place a starting mark at the beginning of an operation, an ending mark when it completes, and use the measure method to calculate the exact duration between the two marks. This is invaluable for profiling custom client side logic outside of standard Core Web Vitals."
+},
+{
+"id": "q47",
+"category": "JavaScript Performance",
+"difficulty": "medium",
+"question": "Why is the Intersection Observer API better for performance than listening to scroll events?",
+"answer": "Historically, detecting when an element entered the viewport required binding an event listener to the scroll event and constantly calculating element bounding rectangles, forcing continuous and expensive layout thrashing. The Intersection Observer API solves this by moving those calculations off the main JavaScript thread and having the browser asynchronously notify you only when the element actually crosses a specified visibility threshold."
+},
+{
+"id": "q48",
+"category": "Network",
+"difficulty": "easy",
+"question": "Are CSS sprite sheets still necessary for web performance today?",
+"answer": "No, CSS sprite sheets are largely obsolete today. They were originally used to combine dozens of small icons into a single large image file to bypass the connection limits of older HTTP protocols. With the widespread adoption of HTTP version two multiplexing and the rise of Scalable Vector Graphics for resolution independent icons, maintaining complex sprite sheets offers no real performance benefit and actually harms caching efficiency."
+},
+{
+"id": "q49",
+"category": "Memory Management",
+"difficulty": "medium",
+"question": "How does JavaScript garbage collection work, and how can poor code structure defeat it?",
+"answer": "JavaScript uses an automated mark and sweep garbage collection algorithm that periodically identifies objects residing in memory that can no longer be reached by the root application. Once an object is isolated, its memory is reclaimed. However, poor code structure like globally declared variables or forgotten event listeners can unintentionally keep references active, preventing the garbage collector from doing its job and causing a slow memory leak."
+},
+{
+"id": "q50",
+"category": "Auditing",
+"difficulty": "hard",
+"question": "Why might your local Lighthouse performance score be drastically better than your actual user field data?",
+"answer": "Local Lighthouse audits run in a sterile environment on high end developer hardware with fast processors and stable wired connections. In contrast, real user field data aggregates the experience of users on older mobile devices with constrained processors struggling to parse JavaScript on spotty cellular connections. Furthermore, Lighthouse only measures a single page load, whereas field data captures layout shifts and responsiveness throughout the entire session."
+}
+]
+}

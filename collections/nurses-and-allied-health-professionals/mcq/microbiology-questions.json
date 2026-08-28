@@ -1,0 +1,2901 @@
+[
+  {
+    "id": "item-0",
+    "question": "Which of the following would be a sign of an infection?",
+    "options": [
+      "Muscle aches",
+      "Headache",
+      "Fever",
+      "Nausea"
+    ],
+    "correct_answer": "Fever",
+    "explanation": "Fever is a hallmark systemic response of the body to an infection. It is triggered by pyrogens that act on the hypothalamus to raise the body temperature, helping to inhibit pathogen replication.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-1",
+    "question": "Streptomycin antibiotic was discovered by which of the following scientists?",
+    "options": [
+      "Alexander Fleming",
+      "Selman Waksman",
+      "Albert Frankel",
+      "Max Neisser"
+    ],
+    "correct_answer": "Selman Waksman",
+    "explanation": "Selman Waksman was awarded the Nobel Prize in nineteen fifty-two for his discovery of streptomycin, which was the first effective treatment for tuberculosis. His research focused on soil-dwelling organisms and led to the discovery of many other antibiotics.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-2",
+    "question": "What is the first line of defense in any immune response?",
+    "options": [
+      "Anatomical, mechanical, and chemical barriers",
+      "B-lymphocytes and T-lymphocytes",
+      "Antibodies",
+      "Macrophages"
+    ],
+    "correct_answer": "Anatomical, mechanical, and chemical barriers",
+    "explanation": "The first line of defense consists of physical and chemical barriers that prevent pathogens from entering the body. These include the skin, mucous membranes, and stomach acid, which act as a shield against potential infections.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-3",
+    "question": "Pertussis, commonly known as whooping cough, is caused by which of the following?",
+    "options": [
+      "Bordetella disease",
+      "Parovirus",
+      "Herpes disease",
+      "Varicellar zoaster"
+    ],
+    "correct_answer": "Bordetella disease",
+    "explanation": "Whooping cough is caused by a bacterium belonging to the genus Bordetella, specifically Bordetella pertussis. This highly contagious respiratory infection is characterized by severe coughing fits followed by a high-pitched whoop sound on inhalation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-4",
+    "question": "A five-year-old child is being tested for enterobiasis, also known as pinworms. Which of the following symptoms is most commonly associated with this infection?",
+    "options": [
+      "Rectal itching",
+      "Nausea",
+      "Oral ulcerations",
+      "Scalp itching"
+    ],
+    "correct_answer": "Rectal itching",
+    "explanation": "Enterobiasis is caused by pinworms, which migrate to the perianal area at night to lay their eggs. This migration triggers intense rectal itching, which is the most classic symptom of the infection, especially in children.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-5",
+    "question": "Which of the following types of white blood cells is commonly associated with host defenses against parasitic infections?",
+    "options": [
+      "Neutrophils",
+      "Basophils",
+      "Eosinophils",
+      "Macrophages"
+    ],
+    "correct_answer": "Eosinophils",
+    "explanation": "Eosinophils are specialized white blood cells that play a crucial role in defending the body against parasitic infections, such as those caused by helminths. They release toxic granules that help destroy the parasite from the outside.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-6",
+    "question": "Who is credited with the discovery of the first antibiotic, penicillin?",
+    "options": [
+      "Alexander Fleming",
+      "Edward Jenner",
+      "Selman Waksman",
+      "None of these"
+    ],
+    "correct_answer": "Alexander Fleming",
+    "explanation": "Alexander Fleming discovered penicillin in nineteen twenty-eight when he noticed that mold on a petri dish had killed surrounding bacteria. This discovery revolutionized modern medicine and marked the beginning of the antibiotic era.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-7",
+    "question": "A clinical instructor is providing teachings among nursing students about the stages of pertussis. Which of the following is the final phase of a pertussis infection?",
+    "options": [
+      "Paroxysmal phase",
+      "Recovery phase",
+      "Catarrhal phase",
+      "Convalescence phase"
+    ],
+    "correct_answer": "Convalescence phase",
+    "explanation": "The convalescence phase is the final stage of a pertussis infection, during which the chronic cough gradually subsides over several weeks or months. During this period, the respiratory tract heals, though the patient remains susceptible to other respiratory infections.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-8",
+    "question": "At what temperature range do bacteria grow most rapidly, potentially causing food poisoning?",
+    "options": [
+      "Between 4.4 and 60 degrees Celsius",
+      "Between 1.7 and 3.8 degrees Celsius",
+      "Between 15.0 and 48.9 degrees Celsius",
+      "Between 10.0 and 54.4 degrees Celsius"
+    ],
+    "correct_answer": "Between 4.4 and 60 degrees Celsius",
+    "explanation": "The temperature range between 4.4 and 60 degrees Celsius is known as the danger zone for food safety. In this range, bacteria can multiply rapidly and reach levels that can cause foodborne illness.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-9",
+    "question": "Why is it important to prevent mosquitoes from breeding in stagnant water around our surroundings?",
+    "options": [
+      "Multiply very fast and cause pollution",
+      "Are vectors for many diseases",
+      "Bite and cause skin diseases",
+      "Are not important insects"
+    ],
+    "correct_answer": "Are vectors for many diseases",
+    "explanation": "Mosquitoes are primary vectors that transmit serious pathogens, including those that cause malaria, dengue fever, and yellow fever. Preventing them from breeding in stagnant water is a critical public health measure to control the spread of these infectious diseases.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-10",
+    "question": "What is microbiology?",
+    "options": [
+      "Study of molecules that are visible to human eyes",
+      "Study of animals and their family",
+      "Study of organisms that are not visible to naked eyes",
+      "Study of microscopes"
+    ],
+    "correct_answer": "Study of organisms that are not visible to naked eyes",
+    "explanation": "Microbiology is the branch of science that studies microscopic organisms, such as bacteria, viruses, fungi, and protozoa, which are generally too small to be seen with the naked eye. This field explores their structure, function, and interactions with other living things.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-11",
+    "question": "Pathogenic organisms are those that are characterized by which of the following?",
+    "options": [
+      "Capable of producing diseases",
+      "Extremely small or invisible to the naked eye",
+      "Harmless to the body tissues",
+      "Capable of producing an allergic reaction"
+    ],
+    "correct_answer": "Capable of producing diseases",
+    "explanation": "Pathogens are biological agents, such as bacteria, viruses, fungi, or parasites, that can cause disease in a host organism. Their ability to disrupt normal physiological functions distinguishes them from non-pathogenic microbes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-12",
+    "question": "The epidemics that infected Europe, the Middle East, and North Africa and killed tens of millions of people were known as the Black Death. What was the causative disease?",
+    "options": [
+      "Anthrax",
+      "Breathing of foul air",
+      "Bubonic plague",
+      "Smallpox"
+    ],
+    "correct_answer": "Bubonic plague",
+    "explanation": "The Black Death was a devastating global epidemic of bubonic plague that struck Europe and Asia in the mid-fourteen hundreds. It was caused by the bacterium Yersinia pestis, which was transmitted primarily by fleas on rats.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-13",
+    "question": "Which of the following is an example of a non-communicable infectious disease?",
+    "options": [
+      "Infection with a respiratory virus",
+      "Food poisoning due to a preformed bacterial toxin in food",
+      "Skin infection acquired from a dog bite",
+      "Infection acquired from the stick of a contaminated needle"
+    ],
+    "correct_answer": "Food poisoning due to a preformed bacterial toxin in food",
+    "explanation": "Food poisoning caused by preformed bacterial toxins, such as those produced by Clostridium botulinum, is non-communicable because it cannot be transmitted from person to person. The illness results directly from ingesting the toxin present in the food.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-14",
+    "question": "In early taxonomic systems, bacteria were classified under which of the following kingdoms?",
+    "options": [
+      "Molds",
+      "Yeast",
+      "Plants",
+      "Animals"
+    ],
+    "correct_answer": "Plants",
+    "explanation": "Historically, bacteria were classified under the plant kingdom because they possess rigid cell walls, similar to plant cells. Modern classification systems place them in their own distinct domain, Bacteria, separate from plants.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-15",
+    "question": "The nurse is aware that a common mode of transmission of Clostridium difficile is through which of the following?",
+    "options": [
+      "Use of unsterile surgical equipment",
+      "Contamination of objects with sputum",
+      "Through urinary catheterization",
+      "Contamination of objects with stool"
+    ],
+    "correct_answer": "Contamination of objects with stool",
+    "explanation": "Clostridium difficile is shed in feces, and its spores can contaminate surfaces and objects in the healthcare environment. Contact with these contaminated items, followed by ingestion of the spores, is the primary route of transmission.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-16",
+    "question": "Who is widely recognized as the father of microbiology for being the first to observe microorganisms?",
+    "options": [
+      "Edwin John Butler",
+      "Ferdinand Cohn",
+      "Robert Koch",
+      "Antoni van Leeuwenhoek"
+    ],
+    "correct_answer": "Antoni van Leeuwenhoek",
+    "explanation": "Antoni van Leeuwenhoek is known as the father of microbiology because he designed simple microscopes and was the first to describe bacteria and protozoa, which he called animalcules, in the late sixteen hundreds. His observations laid the foundation for the scientific study of microscopic life.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-17",
+    "question": "Which of the following is not classified as an infectious disease?",
+    "options": [
+      "Dengue",
+      "Scurvy",
+      "Typhoid Fever",
+      "Whooping cough"
+    ],
+    "correct_answer": "Scurvy",
+    "explanation": "Scurvy is a nutritional deficiency disease caused by a severe lack of vitamin C, which is essential for collagen synthesis. Unlike dengue, typhoid fever, and whooping cough, scurvy is not caused by any pathogen and is not transmissible.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-18",
+    "question": "A nurse is assessing a child with pertussis. Which of the following cough characteristics is the nurse most likely to observe?",
+    "options": [
+      "A sour cough",
+      "A chesty cough",
+      "A hacking cough that ends with a whooping sound",
+      "A barking, painful cough"
+    ],
+    "correct_answer": "A hacking cough that ends with a whooping sound",
+    "explanation": "Pertussis, or whooping cough, is characterized by paroxysms of rapid, hacking coughs that exhaust the patient and end with a high-pitched whooping sound as the patient breathes in. This symptom is a key clinical indicator of the disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-19",
+    "question": "The shape of a streptococcus bacterium is best described as which of the following?",
+    "options": [
+      "Spiral",
+      "Rod shaped",
+      "Oval",
+      "Spherical"
+    ],
+    "correct_answer": "Spherical",
+    "explanation": "The term coccus refers to a spherical or round shape in bacteria. Streptococci are spherical bacteria that typically grow in chains, though their individual cell shape remains spherical.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-20",
+    "question": "Which of the following viruses is not characterized by a double-stranded linear DNA genome?",
+    "options": [
+      "Poxvirus",
+      "Papovavirus",
+      "Adenovirus",
+      "Herpesvirus"
+    ],
+    "correct_answer": "Papovavirus",
+    "explanation": "Papovaviruses have double-stranded circular DNA genomes, rather than linear ones. In contrast, poxviruses, adenoviruses, and herpesviruses all possess linear double-stranded DNA genomes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-21",
+    "question": "Two diseases caused by Diplococci are which of the following?",
+    "options": [
+      "Meningitis and Gonorrhea",
+      "Influenza and Hepatitis",
+      "Cholera and syphilis",
+      "Whooping cough and measles"
+    ],
+    "correct_answer": "Meningitis and Gonorrhea",
+    "explanation": "Meningitis and gonorrhea are caused by Neisseria meningitidis and Neisseria gonorrhoeae, respectively, which are gram-negative diplococci. These bacteria characteristically grow as pairs of spherical cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-22",
+    "question": "Tuberculosis is a disease that is diagnosed with the help of a protein extracted from Mycobacterium tuberculosis. What is the name of this protein?",
+    "options": [
+      "Tuberlysis",
+      "Rifampicin",
+      "Cephalosporin",
+      "Tuberculin"
+    ],
+    "correct_answer": "Tuberculin",
+    "explanation": "Tuberculin is a purified protein derivative extracted from Mycobacterium tuberculosis cultures used in skin testing to detect exposure or active infection. A positive skin reaction indicates an immune response to the tuberculosis bacteria.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-23",
+    "question": "Diplococci are bacteria that typically grow in which of the following arrangements?",
+    "options": [
+      "Chains",
+      "Pairs",
+      "Cluster",
+      "Circles"
+    ],
+    "correct_answer": "Pairs",
+    "explanation": "Diplococci are spherical bacterial cells that divide in one plane and remain attached in pairs. This characteristic arrangement helps identify genera like Neisseria under microscopic examination.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-24",
+    "question": "Which of the following types of immunity is obtained or developed during an individual's lifetime?",
+    "options": [
+      "Acquired immunity",
+      "Active immunity",
+      "Passive immunity",
+      "None of the above"
+    ],
+    "correct_answer": "Acquired immunity",
+    "explanation": "Acquired immunity refers to the protection that an individual develops during their life, which can be active or passive, and natural or artificial. It is highly specific and adapts to target particular pathogens encountered by the body.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-25",
+    "question": "Which of the following viruses does not possess a single-stranded linear RNA genome?",
+    "options": [
+      "Togavirus",
+      "Retrovirus",
+      "Bunyavirus",
+      "Picornavirus"
+    ],
+    "correct_answer": "Bunyavirus",
+    "explanation": "Bunyaviruses have segmented, circular single-stranded RNA genomes rather than linear genomes. Togaviruses, retroviruses, and picornaviruses are characterized by linear single-stranded RNA genomes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-26",
+    "question": "The use of an alcohol-based waterless antiseptic is particularly encouraged for which of the following patient groups?",
+    "options": [
+      "Immunosuppressed clients",
+      "Clients with lesions",
+      "Newborn clients",
+      "Clients with dermatitis"
+    ],
+    "correct_answer": "Immunosuppressed clients",
+    "explanation": "Immunosuppressed patients are highly vulnerable to opportunistic infections, making strict hand hygiene essential. Alcohol-based waterless antiseptics are highly effective at rapidly reducing transient microbial load on the hands.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-27",
+    "question": "Allergy and immunity are similar in that both processes result in which of the following?",
+    "options": [
+      "Are the result of an infection",
+      "Are unfavorable reaction to a foreign substance entering the body",
+      "Cause very mild symptoms",
+      "Result from the formation of antibodies"
+    ],
+    "correct_answer": "Result from the formation of antibodies",
+    "explanation": "Both allergy and immunity involve adaptive immune responses that trigger the production of specific antibodies. While protective immunity produces immunoglobulin G or immunoglobulin M, allergic reactions are typically mediated by immunoglobulin E.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-28",
+    "question": "Which of the following cell types is primarily involved in cell-mediated immunity?",
+    "options": [
+      "Leukaemia",
+      "T cells",
+      "Mast cells",
+      "Thrombocytes"
+    ],
+    "correct_answer": "T cells",
+    "explanation": "Cell-mediated immunity is mediated by T-lymphocytes, which recognize and destroy infected or abnormal cells directly. This type of immune response does not rely on antibody production by B cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-29",
+    "question": "Which of the following microorganisms can perform photosynthesis by utilizing light?",
+    "options": [
+      "Cyanobacteria, Fungi and Viruses",
+      "Viruses",
+      "Cyanobacteria",
+      "Fungi"
+    ],
+    "correct_answer": "Cyanobacteria",
+    "explanation": "Cyanobacteria are photosynthetic prokaryotes that contain chlorophyll and can convert light energy into chemical energy. Unlike fungi and viruses, they are autotrophic and play a major role in oxygen production on Earth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-30",
+    "question": "Streptococcus is a type of bacterium that is characterized by which shape and arrangement?",
+    "options": [
+      "Rod shaped",
+      "Oval and grows in pairs",
+      "Round and grows in cluster",
+      "Round and grows in pairs"
+    ],
+    "correct_answer": "Round and grows in pairs",
+    "explanation": "Streptococcus bacteria are spherical, or round, and typically grow in chains, though some species may appear in pairs under microscopic evaluation. This is the most accurate option among those listed in the text.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-31",
+    "question": "Which of the following events triggered the development and establishment of microbiology as a scientific discipline?",
+    "options": [
+      "Development of microscope",
+      "Germ theory of disease",
+      "Spontaneous generation",
+      "Vaccination"
+    ],
+    "correct_answer": "Development of microscope",
+    "explanation": "The invention and refinement of the microscope allowed scientists to observe microscopic life forms for the first time. This direct visualization of bacteria and protozoa initiated the field of microbiology.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-32",
+    "question": "Which of the following professionals is at the greatest risk for developing Lyme disease?",
+    "options": [
+      "Computer programmer",
+      "Elementary teacher",
+      "Veterinarian",
+      "Landscaper"
+    ],
+    "correct_answer": "Landscaper",
+    "explanation": "Landscapers work extensively outdoors in wooded, brushy, or grassy areas where deer ticks, the vectors for Lyme disease, are commonly found. Their prolonged exposure to these habitats increases their likelihood of tick bites.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-33",
+    "question": "The human body synthesizes interferons primarily in response to infections by which of the following?",
+    "options": [
+      "Fungi",
+      "Bacteria",
+      "Virus",
+      "Mycoplasma"
+    ],
+    "correct_answer": "Virus",
+    "explanation": "Interferons are proteins produced and released by host cells in response to the presence of viruses. They act to signal neighboring cells, triggering defenses that interfere with viral replication.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-34",
+    "question": "Which of the following scientists first disproved the theory of spontaneous generation by showing that maggots only appear on decaying meat exposed to flies?",
+    "options": [
+      "Francesco Redi",
+      "Joseph Lister",
+      "Louis Pasteur",
+      "Robert Hooke"
+    ],
+    "correct_answer": "Francesco Redi",
+    "explanation": "Francesco Redi conducted a famous experiment in the sixteen hundreds using covered and uncovered jars of meat, demonstrating that maggots came from fly eggs rather than spontaneously generating from the meat. This was the first major scientific challenge to the concept of spontaneous generation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-35",
+    "question": "Which of the following is not classified as a DNA virus?",
+    "options": [
+      "Adenovirus",
+      "Calicivirus",
+      "Papovirus",
+      "Poxvirus"
+    ],
+    "correct_answer": "Calicivirus",
+    "explanation": "Caliciviruses are single-stranded RNA viruses, whereas adenoviruses, papovaviruses, and poxviruses are all DNA viruses. Caliciviruses are known to cause gastroenteritis in humans.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-36",
+    "question": "Salmonella species are the causative agents of which of the following infectious diseases?",
+    "options": [
+      "Tetanus",
+      "Tuberculosis",
+      "Polio",
+      "Typhoid"
+    ],
+    "correct_answer": "Typhoid",
+    "explanation": "Salmonella enterica serovar Typhi causes typhoid fever, a life-threatening systemic infection. It is transmitted through contaminated food or water, causing high fever, abdominal pain, and gastrointestinal symptoms.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-37",
+    "question": "How does the common cold differ from pneumonia?",
+    "options": [
+      "Pneumonia is caused by a virus while the common cold is caused by the bacterium Haemophilus influenza",
+      "Pneumonia pathogen infects alveoli whereas the common cold affects nose and respiratory passage but not the lungs",
+      "Pneumonia is a communicable disease whereas the common cold is a nutritional deficiency disease",
+      "Pneumonia can be prevented by a live attenuated bacterial vaccine whereas the common cold has no effective vaccine"
+    ],
+    "correct_answer": "Pneumonia pathogen infects alveoli whereas the common cold affects nose and respiratory passage but not the lungs",
+    "explanation": "Pneumonia involves inflammation of the alveoli, or air sacs, in the lungs, usually filled with exudate. In contrast, the common cold is a mild upper respiratory tract infection that primarily affects the nasal passages and pharynx.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-38",
+    "question": "What is the characteristic shape of bacilli bacteria?",
+    "options": [
+      "Rod shaped",
+      "Oval",
+      "Spherical",
+      "Spiral"
+    ],
+    "correct_answer": "Rod shaped",
+    "explanation": "Bacilli are rod-shaped bacteria. This term is used both to describe the morphological shape of the cells and as a class taxonomic name.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-39",
+    "question": "What was the purpose of the swan-necked flasks that Louis Pasteur designed to disprove spontaneous generation?",
+    "options": [
+      "Allow the multiplication of microbes in the broth",
+      "Implicate the role of flies in the development of maggots on rotting meat",
+      "Prevent air from entering the flask",
+      "Trap the microbes and prevent them from reaching the broth"
+    ],
+    "correct_answer": "Trap the microbes and prevent them from reaching the broth",
+    "explanation": "Pasteur's swan-necked flasks allowed air to enter but trapped airborne microbes in the curved neck, keeping the sterile broth inside completely free of contamination. When the neck was tilted or removed, microbes entered and grew, proving they came from the air, not spontaneous generation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-40",
+    "question": "Which of the following body systems protects against disease-causing pathogens?",
+    "options": [
+      "Respiratory system",
+      "Immune system",
+      "Digestive system",
+      "Urinary system"
+    ],
+    "correct_answer": "Immune system",
+    "explanation": "The immune system is a complex network of cells, tissues, and organs that work together to defend the body against foreign invaders, such as bacteria, viruses, fungi, and parasites. It recognizes pathogens and coordinates responses to eliminate them.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-41",
+    "question": "Which of the following animals is least commonly associated with the transmission of rabies?",
+    "options": [
+      "Dogs",
+      "Skunks",
+      "Foxes",
+      "Rats"
+    ],
+    "correct_answer": "Rats",
+    "explanation": "Rats and other small rodents are extremely rarely infected with rabies and have not been known to transmit the virus to humans. Larger mammals, such as dogs, skunks, foxes, and bats, are the primary reservoirs and vectors.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-42",
+    "question": "In a bacterial growth curve, which phase is characterized by a rapid, exponential increase in cell numbers?",
+    "options": [
+      "The stationary phase",
+      "The log phase",
+      "The decline phase",
+      "The lag phase"
+    ],
+    "correct_answer": "The log phase",
+    "explanation": "The log phase, or exponential phase, is the period during which cells are actively dividing and growing at their maximum rate under the given conditions. This results in a rapid increase in the total population.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-43",
+    "question": "Which part of a compound microscope is responsible for gathering and focusing light rays directly onto the specimen?",
+    "options": [
+      "Condenser lens",
+      "Magnifying lens",
+      "Objective lens",
+      "Eyepiece lens"
+    ],
+    "correct_answer": "Condenser lens",
+    "explanation": "The condenser lens collects light from the light source and focuses it into a tight cone, illuminating the specimen with uniform intensity. This is essential for achieving optimal resolution and contrast.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-44",
+    "question": "Who demonstrated that open tubes of broth remained sterile when the air was completely dust-free, supporting Pasteur's findings?",
+    "options": [
+      "Abbe Spallanzani",
+      "John Tyndall",
+      "Francisco Redi",
+      "Pasteur"
+    ],
+    "correct_answer": "John Tyndall",
+    "explanation": "John Tyndall developed a method of sterilizing liquids by heat and demonstrated that dust-free air did not cause contamination, confirming that microbes are carried on dust particles. His work helped put an end to the theory of spontaneous generation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-45",
+    "question": "Allergens are best defined as substances that are characterized by which of the following?",
+    "options": [
+      "Are capable of producing an allergic reaction in some sensitive individuals",
+      "Provide the body with antibodies",
+      "Help the body with antibodies",
+      "Prevent an allergic reaction to some substances in our environment"
+    ],
+    "correct_answer": "Are capable of producing an allergic reaction in some sensitive individuals",
+    "explanation": "Allergens are typically harmless environmental substances, such as pollen or dust, that trigger an inappropriate immune response in sensitive individuals. This hypersensitivity reaction is mediated by immunoglobulin E antibodies.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-46",
+    "question": "Which type of immunity are T cells primarily involved in coordinating?",
+    "options": [
+      "Humoral immunity",
+      "Cell mediated immunity",
+      "Antigen mediated immunity",
+      "Immunoglobin mediated immunity"
+    ],
+    "correct_answer": "Cell mediated immunity",
+    "explanation": "T cells are the primary mediators of cell-mediated immunity, which involves the activation of phagocytes, antigen-specific cytotoxic T-lymphocytes, and the release of various cytokines in response to antigens. Unlike humoral immunity, it does not involve antibody production.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-47",
+    "question": "Which of the following products are produced through the action of microorganisms?",
+    "options": [
+      "Alcoholic beverages",
+      "Fermented dairy products",
+      "Breads",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "Microorganisms, particularly yeasts and bacteria, are essential for fermentation in producing alcoholic beverages, fermented dairy products like yogurt and cheese, and leavening bread. These industrial processes exploit microbial metabolism to transform raw ingredients.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-48",
+    "question": "What is the term for the time period between the ingestion of contaminated food and the first appearance of food poisoning symptoms?",
+    "options": [
+      "Duration of illness",
+      "The infective period",
+      "The incubation period",
+      "The 'carrying' period"
+    ],
+    "correct_answer": "The incubation period",
+    "explanation": "The incubation period is the time elapsed between exposure to a pathogenic organism or chemical toxin and when clinical symptoms first manifest. This duration varies depending on the specific pathogen or toxin involved.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-49",
+    "question": "According to Pasteur's discoveries regarding stereoisomers, which of the following statements is true?",
+    "options": [
+      "Living organisms discriminate between stereoisomers",
+      "Fermentation is an aerobic process",
+      "Living organisms doesn't discriminate between stereoisomers",
+      "Both a and b"
+    ],
+    "correct_answer": "Living organisms discriminate between stereoisomers",
+    "explanation": "Louis Pasteur discovered that organic molecules can exist in asymmetric stereoisomeric forms and demonstrated that living organisms can selectively metabolize or interact with one specific stereoisomer over another. This finding established the chemical basis of biological specificity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-50",
+    "question": "Which of the following statements is true regarding Louis Pasteur's discoveries about stereoisomers?",
+    "options": [
+      "Living organisms can discriminate between different stereoisomers",
+      "Fermentation is strictly an aerobic process",
+      "Living organisms are unable to discriminate between different stereoisomers",
+      "Both the discrimination of stereoisomers and aerobic fermentation are true"
+    ],
+    "correct_answer": "Living organisms can discriminate between different stereoisomers",
+    "explanation": "Louis Pasteur discovered that organic molecules can exist in asymmetric stereoisomeric forms. He demonstrated that living organisms selectively interact with or metabolize one specific stereoisomer over another, establishing biological specificity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-51",
+    "question": "Naturally acquired active immunity would be most likely acquired through which of the following processes?",
+    "options": [
+      "Receiving a vaccine injection",
+      "Drinking colostrums as an infant",
+      "The process of natural birth",
+      "Infection with a disease causing organism followed by recovery"
+    ],
+    "correct_answer": "Infection with a disease causing organism followed by recovery",
+    "explanation": "Naturally acquired active immunity occurs when a person is exposed to a live pathogen, develops the disease, and subsequently recovers. This exposure triggers the immune system to produce its own antibodies and memory cells for long-term protection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-52",
+    "question": "Which of the following descriptions best classifies the bacterium Clostridium botulinum?",
+    "options": [
+      "Facultative aerobe",
+      "Obligate anaerobe",
+      "Facultative anaerobe",
+      "Obligate aerobe"
+    ],
+    "correct_answer": "Obligate anaerobe",
+    "explanation": "Clostridium botulinum is a gram-positive, spore-forming rod that is an obligate anaerobe, meaning it cannot grow in the presence of free oxygen. It produces a highly potent neurotoxin under anaerobic conditions, which causes botulism.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-53",
+    "question": "Which of the following organisms is the causative agent of syphilis?",
+    "options": [
+      "A spirochete called Treponema pallidum",
+      "A bacillus called Tubercle bacillus",
+      "A staphylococcus that grows in pairs",
+      "A comma shaped organism classified as a vibrio"
+    ],
+    "correct_answer": "A spirochete called Treponema pallidum",
+    "explanation": "Syphilis is a sexually transmitted infection caused by Treponema pallidum, which is a highly spiral, motile spirochete bacterium. This pathogen penetrates mucous membranes or broken skin and can spread systemically.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-54",
+    "question": "Which of the following viruses does not contain an ribonucleic acid genome?",
+    "options": [
+      "Reovirus",
+      "Orthomyxovirus",
+      "Deltavirus",
+      "Herpesvirus"
+    ],
+    "correct_answer": "Herpesvirus",
+    "explanation": "Herpesvirus is a double-stranded deoxyribonucleic acid virus, not an ribonucleic acid virus. Reovirus, orthomyxovirus, and deltavirus are all classified as ribonucleic acid viruses.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-55",
+    "question": "Infectious diseases that are caused by fungi are collectively referred to as which of the following?",
+    "options": [
+      "Mycoses",
+      "Melena",
+      "Monilial infections",
+      "Mixed infections"
+    ],
+    "correct_answer": "Mycoses",
+    "explanation": "Fungal infections are medically termed mycoses. They can range from superficial skin infections, like athlete's foot, to severe systemic infections that affect internal organs, particularly in immunocompromised individuals.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-56",
+    "question": "Which of the following groups of diseases is characterized by being caused by various pathogenic microorganisms?",
+    "options": [
+      "Deficiency diseases",
+      "Hereditary diseases",
+      "Infectious diseases",
+      "Degenerative diseases"
+    ],
+    "correct_answer": "Infectious diseases",
+    "explanation": "Infectious diseases are caused by the invasion and multiplication of pathogenic microorganisms, such as bacteria, viruses, fungi, or parasites, in a host. Unlike hereditary or deficiency diseases, they are directly tied to active pathogens.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-57",
+    "question": "Bacteria belonging to the genus Shigella are the primary causative agents of which of the following food-borne illnesses?",
+    "options": [
+      "Cholera",
+      "Brucellosis",
+      "Dysentery",
+      "Enteric fever"
+    ],
+    "correct_answer": "Dysentery",
+    "explanation": "Shigella species cause bacillary dysentery, or shigellosis, which is marked by severe abdominal cramps, fever, and bloody diarrhea. It is typically transmitted via the fecal-oral route through contaminated food or water.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-58",
+    "question": "Which of the following is a key characteristic of spore-forming bacteria?",
+    "options": [
+      "They are easily destroyed by simple boiling",
+      "They are highly resistant to many standard methods of sterilization",
+      "They are easily destroyed by drying and cooling",
+      "They are much less dangerous than other types of bacteria"
+    ],
+    "correct_answer": "They are highly resistant to many standard methods of sterilization",
+    "explanation": "Bacterial endospores are extremely resilient structures that allow bacteria to survive harsh conditions, such as extreme heat, radiation, desiccation, and chemical disinfectants. Because of this, sterilizing them requires rigorous autoclaving.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-59",
+    "question": "The tsetse fly serves as the primary biological vector for transmitting which of the following pathogenic organisms?",
+    "options": [
+      "Trichomonas vaginalis",
+      "Trypanosoma gambiense",
+      "Entamoeba histolytica",
+      "Toxoplasma"
+    ],
+    "correct_answer": "Trypanosoma gambiense",
+    "explanation": "Trypanosoma gambiense, a protozoan parasite that causes West African sleeping sickness, is transmitted to humans through the bite of an infected tsetse fly. The parasite multiplies in the blood and lymphatic system, eventually invading the central nervous system.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-60",
+    "question": "Which of the following is the first antibody isotype to make contact with invading microorganisms during a primary immune response?",
+    "options": [
+      "Immunoglobulin M",
+      "Immunoglobulin G",
+      "Immunoglobulin A",
+      "Immunoglobulin D"
+    ],
+    "correct_answer": "Immunoglobulin M",
+    "explanation": "Immunoglobulin M is the first class of antibody secreted by plasma cells during a primary antibody response to an antigen. Its pentameric structure makes it highly effective at neutralizing pathogens and activating the complement system.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-61",
+    "question": "What is the approximate size range of a typical bacterial cell?",
+    "options": [
+      "One millimeter in diameter",
+      "Zero point five to one point zero micrometer in diameter",
+      "Two millimeter in diameter",
+      "Two micrometer in diameter"
+    ],
+    "correct_answer": "Zero point five to one point zero micrometer in diameter",
+    "explanation": "Most typical bacterial cells measure between zero point five and one point zero micrometer in diameter. This microscopic size requires compound light microscopy or electron microscopy for detailed visualization.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-62",
+    "question": "Staphylococcus aureus is a pyogenic bacterium that commonly causes boils and abscesses. Why is it classified as pyogenic?",
+    "options": [
+      "Because its infection is accompanied by the formation of pus",
+      "Because it does not usually produce a fever in a patient",
+      "Because it is capable of extremely rapid cell division",
+      "Because it produces highly resistant endospores"
+    ],
+    "correct_answer": "Because its infection is accompanied by the formation of pus",
+    "explanation": "The term pyogenic literally translates to pus-producing. Staphylococcus aureus attracts neutrophils to the infection site, resulting in the accumulation of dead immune cells, bacteria, and tissue fluid, which forms pus.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-63",
+    "question": "Which of the following microbial elements can be destroyed by the enzyme lysozyme found in human tears and saliva?",
+    "options": [
+      "Some of the fungi",
+      "Host cells that are infected with viruses",
+      "All types of viruses",
+      "Some of the bacteria"
+    ],
+    "correct_answer": "Some of the bacteria",
+    "explanation": "Lysozyme is an antimicrobial enzyme that cleaves the chemical bonds in peptidoglycan, a major component of bacterial cell walls. It is particularly effective at destroying gram-positive bacteria by compromising their structural integrity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-64",
+    "question": "Antibiotics are ineffective against viral infections. In response to a viral infection, what antiviral protein does the human body produce to protect other cells?",
+    "options": [
+      "Interferon",
+      "Leishmania",
+      "Ascaris",
+      "Pertussis"
+    ],
+    "correct_answer": "Interferon",
+    "explanation": "Interferons are signaling proteins made and released by host cells in response to viral infections. They stimulate neighboring cells to synthesize antiviral proteins, interfering with the process of viral replication and limiting the spread of infection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-65",
+    "question": "In a laboratory setting, which of the following media must be used to grow viruses for study?",
+    "options": [
+      "Glucose solution",
+      "Living tissues",
+      "Agar",
+      "Beef broth"
+    ],
+    "correct_answer": "Living tissues",
+    "explanation": "Viruses are obligate intracellular parasites, meaning they lack their own metabolic machinery and can only replicate inside living host cells. Unlike bacteria, they cannot grow on non-living nutrient media like agar or beef broth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-66",
+    "question": "The emission of light by luminescent bacteria is chemically mediated by which of the following enzymes?",
+    "options": [
+      "Coenzyme Q",
+      "Luciferase",
+      "Lactose dehydrogenase",
+      "Carboxylase reductase"
+    ],
+    "correct_answer": "Luciferase",
+    "explanation": "Bioluminescence in bacteria is catalyzed by the enzyme luciferase. This enzyme catalyzes the oxidation of reduced flavin mononucleotide and a long-chain aldehyde, releasing energy in the form of visible blue-green light.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-67",
+    "question": "Which of the following groups of microorganisms are classified as the smallest?",
+    "options": [
+      "The bacteria",
+      "The fungi",
+      "The viruses",
+      "The protozoa"
+    ],
+    "correct_answer": "The viruses",
+    "explanation": "Viruses are submicroscopic, non-cellular infectious agents that are significantly smaller than bacteria, fungi, and protozoa. Most viruses range in size from twenty to four hundred nanometers, requiring electron microscopes to be seen.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-68",
+    "question": "Which of the following descriptions best represents the cellular shape of Salmonella bacteria?",
+    "options": [
+      "Spherical",
+      "Rod-shaped",
+      "Comma-shaped",
+      "Spiral"
+    ],
+    "correct_answer": "Rod-shaped",
+    "explanation": "Salmonella species are rod-shaped, gram-negative, facultative anaerobic bacilli. This rod shape is characteristic of enterobacteria and helps distinguish them from spherical cocci or spiral spirochetes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-69",
+    "question": "Which of the following structures in a bacterial cell is primarily responsible for providing protection and structural integrity?",
+    "options": [
+      "The cell wall",
+      "The cell membrane",
+      "The flagella",
+      "The cytoplasm"
+    ],
+    "correct_answer": "The cell wall",
+    "explanation": "The bacterial cell wall provides mechanical protection, maintains cell shape, and prevents osmotic lysis. It is composed of peptidoglycan, which provides a rigid outer framework that protects the cell from internal turgor pressure.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-70",
+    "question": "Which of the following is the primary method of asexual reproduction in yeasts?",
+    "options": [
+      "Binary fission",
+      "Production of hyphae",
+      "Budding",
+      "Spore formation"
+    ],
+    "correct_answer": "Budding",
+    "explanation": "Budding is the most common method of vegetative reproduction in unicellular fungi like yeasts. During this process, a new cell develops as an outgrowth, or bud, from the parent cell, eventually pinching off as a separate individual.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-71",
+    "question": "Which of the following factors for the growth of microorganisms cannot be exploited on its own during food processing to prevent microbial growth?",
+    "options": [
+      "Control of temperature",
+      "Removal of water",
+      "Removal of oxygen",
+      "Control of pH conditions"
+    ],
+    "correct_answer": "Removal of oxygen",
+    "explanation": "While temperature, moisture, and pH control can directly stop microbial growth, simply removing oxygen cannot prevent microbial growth on its own. Many foodborne pathogens are anaerobic or facultatively anaerobic, allowing them to thrive in oxygen-free environments.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-72",
+    "question": "Most microorganisms grow best when the surrounding environmental pH is in which of the following ranges?",
+    "options": [
+      "Between pH two and four",
+      "Between pH four and six",
+      "Between pH six and eight",
+      "Between pH eight and ten"
+    ],
+    "correct_answer": "Between pH six and eight",
+    "explanation": "Most medically relevant microorganisms are neutrophiles that grow best in a pH range near neutrality, typically between six point eight and seven point four. Extreme acidic or alkaline conditions can denature essential enzymes and disrupt cell membranes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-73",
+    "question": "Pathogenic microorganisms grow most rapidly and optimally within which of the following temperature ranges?",
+    "options": [
+      "Between five and ten degrees Celsius",
+      "Between fifteen and twenty degrees Celsius",
+      "Between twenty-five and thirty degrees Celsius",
+      "Between thirty-five and forty degrees Celsius"
+    ],
+    "correct_answer": "Between thirty-five and forty degrees Celsius",
+    "explanation": "Human pathogens are mesophilic organisms that have evolved to grow best at or near human body temperature, which is approximately thirty-seven degrees Celsius. Temperatures outside this mesophilic range slow down enzymatic activity or kill the cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-74",
+    "question": "To obtain the greatest resolution in light microscopy, which of the following combinations should be utilized?",
+    "options": [
+      "The shortest wavelength of visible light",
+      "The longest wavelength of visible light",
+      "An objective lens with the minimum numerical aperture",
+      "The shortest wavelength of visible light and an objective lens with the maximum numerical aperture"
+    ],
+    "correct_answer": "The shortest wavelength of visible light and an objective lens with the maximum numerical aperture",
+    "explanation": "Resolution in light microscopy is determined by Abbe's limit, which states that resolution is directly proportional to the wavelength of light used and inversely proportional to the numerical aperture of the objective lens. Using shorter wavelengths and high numerical apertures minimizes light diffraction.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-75",
+    "question": "Which of the following types of immunity provides the longest lasting protection against an infectious pathogen?",
+    "options": [
+      "Naturally acquired passive immunity",
+      "Artificially acquired passive immunity",
+      "Naturally acquired active immunity",
+      "All of these options provide equal protection"
+    ],
+    "correct_answer": "Naturally acquired active immunity",
+    "explanation": "Naturally acquired active immunity stimulates the host's own immune system to produce antibodies and memory T and B cells. Because these memory cells persist in the body for decades, they mount a rapid response upon re-exposure, providing long-term immunity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-76",
+    "question": "Rickettsial infections, such as Rocky Mountain spotted fever and typhus, are almost always transmitted to humans through which of the following?",
+    "options": [
+      "The bite of arthropods such as lice, fleas, or ticks",
+      "Consumption of a contaminated water supply",
+      "Being bitten by common flies and mosquitoes",
+      "Direct physical contact with a person carrying the disease"
+    ],
+    "correct_answer": "The bite of arthropods such as lice, fleas, or ticks",
+    "explanation": "Rickettsial diseases are caused by obligate intracellular bacteria that rely on biological vectors for transmission. Ticks, lice, and fleas harbor these pathogens and inject them into human hosts during feeding, causing systemic infections.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-77",
+    "question": "The motile zygote of the malaria-causing parasite Plasmodium is found in which of the following locations?",
+    "options": [
+      "Human liver cells",
+      "Human red blood cells",
+      "Salivary glands of the female Anopheles mosquito",
+      "The gut of the female Anopheles mosquito"
+    ],
+    "correct_answer": "The gut of the female Anopheles mosquito",
+    "explanation": "After sexual reproduction of Plasmodium occurs within the stomach of an infected female Anopheles mosquito, the resulting zygote becomes a motile ookinete. This motile form is located in the mosquito's gut, where it penetrates the wall to form an oocyst.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-78",
+    "question": "The principles of surgical asepsis are primarily based upon which of the following goals?",
+    "options": [
+      "Destroying bacteria as they exit the patient's body",
+      "Destroying microorganisms before they can enter the body",
+      "Isolating all patients who are diagnosed with an infectious disease",
+      "Promoting basic daily cleanliness and hygiene measures"
+    ],
+    "correct_answer": "Destroying microorganisms before they can enter the body",
+    "explanation": "Surgical asepsis, or sterile technique, aims to prevent any microbial contamination of open wounds or sterile body cavities. It involves treating and handling equipment in a manner that ensures all micro-organisms are eliminated before contact.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-79",
+    "question": "Which of the following clinical conditions is not typically associated with a Haemophilus influenzae bacterial infection?",
+    "options": [
+      "Otitis media",
+      "Pneumonia",
+      "Malaria",
+      "Epiglottitis"
+    ],
+    "correct_answer": "Malaria",
+    "explanation": "Malaria is a mosquito-borne disease caused by protozoan parasites of the genus Plasmodium. Haemophilus influenzae is a bacterium that can cause respiratory tract infections, middle ear infections, and epiglottitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-80",
+    "question": "Fungal infections are most likely to develop and thrive in environments characterized by which of the following conditions?",
+    "options": [
+      "In warm and dry places",
+      "In cool and dry places",
+      "On dry outer surfaces of the hands and feet",
+      "In warm and moist places"
+    ],
+    "correct_answer": "In warm and moist places",
+    "explanation": "Fungi thrive in warm, damp, and humid environments. Moisture is critical for the germination of fungal spores, and warmth facilitates cellular growth, making skin folds and warm, damp climates prime areas for mycoses.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-81",
+    "question": "Which of the following is utilized within an electron microscope to focus and create highly magnified images of specimens?",
+    "options": [
+      "Electron beams and electromagnetic fields",
+      "Visible light waves",
+      "Electrostatic and light fields",
+      "Electron beams alone without focusing elements"
+    ],
+    "correct_answer": "Electron beams and electromagnetic fields",
+    "explanation": "Electron microscopes utilize a beam of accelerated electrons instead of light to illuminate specimens. Because electrons have a wave-particle nature, electromagnetic lenses are used to focus the electron beams, achieving massive magnification.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-82",
+    "question": "Salt and sugar are effective at preserving food products primarily because they perform which of the following actions?",
+    "options": [
+      "They significantly lower the pH of the food to make it highly acidic",
+      "They produce a hypotonic environment that causes bacterial cells to swell",
+      "They deplete all essential vitamins and minerals within the food",
+      "They produce a hypertonic environment that draws water out of bacterial cells"
+    ],
+    "correct_answer": "They produce a hypertonic environment that draws water out of bacterial cells",
+    "explanation": "High concentrations of salt or sugar create a hypertonic extracellular environment. Water inside microbial cells moves out via osmosis, resulting in plasmolysis and dehydration, which prevents microbial cell division and growth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-83",
+    "question": "Approximately fifty percent of children will suffer from congenital defects if the mother contracts rubella during which of the following periods?",
+    "options": [
+      "During the first month of pregnancy",
+      "During the fourth month of pregnancy",
+      "During the sixth month of pregnancy",
+      "Immediately prior to labor and delivery"
+    ],
+    "correct_answer": "During the first month of pregnancy",
+    "explanation": "Maternal rubella infection during the first trimester, especially the first month, carries a massive risk of Congenital Rubella Syndrome. During this early gestational period, fetal organs are actively developing, making them highly vulnerable to viral disruption.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-84",
+    "question": "The Schick test is a diagnostic test designed to determine susceptibility to which of the following infectious diseases?",
+    "options": [
+      "Rubella",
+      "Measles",
+      "Diphtheria",
+      "Mumps"
+    ],
+    "correct_answer": "Diphtheria",
+    "explanation": "The Schick test evaluates a patient's immunity to diphtheria. It involves injecting a small, diluted dose of diphtheria toxin under the skin; a localized inflammatory skin reaction indicates a lack of neutralizing antibodies.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-85",
+    "question": "Protozoan organisms are most commonly found living in which of the following environments?",
+    "options": [
+      "Arid mountainous regions",
+      "Dry desert sand and soil",
+      "Almost any substantial body of water",
+      "Strictly within tropical geographic regions"
+    ],
+    "correct_answer": "Almost any substantial body of water",
+    "explanation": "Protozoa are single-celled eukaryotic microorganisms that require moisture to survive and reproduce. They are ubiquitous in aquatic habitats, including freshwater lakes, rivers, ocean waters, and moist soils.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-86",
+    "question": "Which of the following interventions is effective at reducing the severity and transmission of a pertussis infection if administered early?",
+    "options": [
+      "There are no effective pharmacological treatments",
+      "Erythromycin",
+      "Benzyl penicillin",
+      "Ampicillin"
+    ],
+    "correct_answer": "Erythromycin",
+    "explanation": "Erythromycin is a macrolide antibiotic of choice for treating whooping cough. When started early in the catarrhal stage, it helps eliminate the bacterium Bordetella pertussis from the respiratory tract, reducing the duration and spread of infection.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-87",
+    "question": "The ability of the human body to recognize and defend itself against specific foreign invaders, such as bacteria, toxins, and viruses, is defined as which of the following?",
+    "options": [
+      "Hormones",
+      "Secretion",
+      "Immunity",
+      "Glands"
+    ],
+    "correct_answer": "Immunity",
+    "explanation": "Immunity is the physiological state of defense against specific pathogens or toxic substances. It involves both innate barriers and adaptive immune responses that coordinate to eliminate foreign antigens and establish long-term cellular memory.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-88",
+    "question": "Which of the following diseases is matched incorrectly with its causative agent?",
+    "options": [
+      "Syphilis and Treponema pallidum",
+      "Tinea nigra and Cladosporium werneckii",
+      "Lyme disease and Borrelia burgdorferi",
+      "Diphtheria and Yersinia enterocolitica"
+    ],
+    "correct_answer": "Diphtheria and Yersinia enterocolitica",
+    "explanation": "Diphtheria is caused by the gram-positive rod Corynebacterium diphtheriae, which produces the potent diphtheria toxin. Yersinia enterocolitica is an enteropathogenic bacterium that causes yersiniosis, an intestinal illness.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-89",
+    "question": "Which of the following is widely recognized as the most prevalent and clinically significant protozoal infection in humans?",
+    "options": [
+      "Pneumonia",
+      "Cholera",
+      "Syphilis",
+      "Malaria"
+    ],
+    "correct_answer": "Malaria",
+    "explanation": "Malaria is a major global health threat caused by protozoa of the genus Plasmodium and transmitted by Anopheles mosquitoes. It causes widespread morbidity and mortality, making it the best-known protozoal disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-90",
+    "question": "Strong disinfectants, such as phenol or carbolic acid, are primarily intended to perform which of the following actions?",
+    "options": [
+      "Kill bacteria present on medical instruments and other inanimate objects",
+      "Sterilize and disinfect human skin prior to incisions",
+      "Inhibit the growth of bacteria on living tissue without killing them",
+      "Remove bacteria from open wounds or active skin infections safely"
+    ],
+    "correct_answer": "Kill bacteria present on medical instruments and other inanimate objects",
+    "explanation": "Disinfectants are antimicrobial agents designed to destroy microorganisms on inanimate surfaces. Because strong chemicals like phenol are highly tissue-toxic, they cannot be used safely on living skin or open wounds.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-91",
+    "question": "The tubercle bacillus, Mycobacterium tuberculosis, is characteristically identified under microscopy using which of the following properties?",
+    "options": [
+      "Its gram-positive cell wall structure",
+      "Its status as an acid-fast bacillus",
+      "The ease with which it is cultured on simple nutrient agar",
+      "None of these options are correct"
+    ],
+    "correct_answer": "Its status as an acid-fast bacillus",
+    "explanation": "Mycobacterium tuberculosis is characterized by a cell wall containing high levels of mycolic acid. This waxy lipid coat resists decolorization by acid-alcohol during staining, classifying it as an acid-fast bacillus.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-92",
+    "question": "Within a bacterial cell, the enzymes and carriers of the respiratory electron transport chain are associated with which of the following structures?",
+    "options": [
+      "The cytoplasmic membrane",
+      "The outer cell wall",
+      "The fluid cytoplasm",
+      "The inner mitochondrial membrane"
+    ],
+    "correct_answer": "The cytoplasmic membrane",
+    "explanation": "Bacteria are prokaryotes and lack membrane-bound organelles like mitochondria. Consequently, their cellular respiration machinery, including electron carriers and ATP synthase, is embedded in their cytoplasmic membrane.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-93",
+    "question": "The human immunodeficiency virus selectively targets and destroys which of the following primary immune cells?",
+    "options": [
+      "Polymorphonuclear leukocytes",
+      "B-lymphocytes",
+      "Blood platelets",
+      "Helper T-lymphocytes"
+    ],
+    "correct_answer": "Helper T-lymphocytes",
+    "explanation": "The human immunodeficiency virus utilizes its gp120 glycoprotein to bind specifically to the CD4 receptor on helper T-lymphocytes. Once inside, the virus replicates and eventually lyses the host cell, leading to immunodeficiency.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-94",
+    "question": "Which of the following statements is true regarding human immunoglobulin M antibodies?",
+    "options": [
+      "Immunoglobulin M can readily cross the placental barrier",
+      "Immunoglobulin M is the primary antibody protecting mucosal surfaces",
+      "Immunoglobulin M is secreted exclusively by high-affinity plasma cells",
+      "Immunoglobulin M is primarily restricted within the systemic circulation"
+    ],
+    "correct_answer": "Immunoglobulin M is primarily restricted within the systemic circulation",
+    "explanation": "Immunoglobulin M is a large pentameric antibody molecule with a high molecular weight. Because of its large size, it cannot easily cross blood vessel walls or the placenta, remaining largely restricted to the bloodstream.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-95",
+    "question": "The process of rendering medical instruments completely free of all viable microbial life, including bacterial endospores, is referred to as which of the following?",
+    "options": [
+      "Sterilization",
+      "Disinfection",
+      "Asepsis",
+      "Carbonization"
+    ],
+    "correct_answer": "Sterilization",
+    "explanation": "Sterilization is an absolute term describing the complete destruction or removal of all living microorganisms, including vegetative cells, viruses, and highly resistant bacterial endospores. This is typically achieved using heat, chemicals, or radiation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-96",
+    "question": "B-lymphocytes and T-lymphocytes originate from hematopoietic stem cells that are formed within which of the following tissues?",
+    "options": [
+      "The bone marrow",
+      "The fetal liver",
+      "The systemic circulatory vessels",
+      "The lymphoid spleen tissue"
+    ],
+    "correct_answer": "The bone marrow",
+    "explanation": "All blood cells, including B-lymphocytes and T-lymphocytes, originate from pluripotent stem cells in the red bone marrow. B cells also mature in the bone marrow, while pre-T cells migrate to the thymus for maturation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-97",
+    "question": "The chemical fixation of atmospheric nitrogen into organic compounds is achieved through which of the following pathways?",
+    "options": [
+      "Biological processes by diazotrophic bacteria",
+      "Abiotic atmospheric lightning strikes",
+      "High-energy solar ultraviolet light exposure",
+      "All of these pathways are correct"
+    ],
+    "correct_answer": "All of these pathways are correct",
+    "explanation": "Nitrogen fixation occurs biologically through free-living or symbiotic diazotrophs like Rhizobium. It also occurs non-biologically through lightning strikes and solar ultraviolet radiation, which provide the high energy needed to break nitrogen's triple bond.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-98",
+    "question": "Medical asepsis is a nursing technique primarily utilized to achieve which of the following clinical goals?",
+    "options": [
+      "Preventing the introduction of any microbes into a sterile surgical site",
+      "Eliminating all organisms from every object in contact with the patient",
+      "Preventing the spread of disease-causing pathogens from person to person",
+      "Removing bacteria from objects before they contact an open wound"
+    ],
+    "correct_answer": "Preventing the spread of disease-causing pathogens from person to person",
+    "explanation": "Medical asepsis, or clean technique, focuses on reducing the number, growth, and transmission of pathogens in the healthcare environment. This includes practices like hand hygiene and environmental cleaning.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-99",
+    "question": "The metabolic process of glycolysis can take place within which of the following cell types?",
+    "options": [
+      "Strictly anaerobic cells",
+      "Strictly aerobic cells",
+      "Neither aerobic nor anaerobic cells",
+      "Both aerobic and anaerobic cells"
+    ],
+    "correct_answer": "Both aerobic and anaerobic cells",
+    "explanation": "Glycolysis is a universal, oxygen-independent metabolic pathway that breaks down glucose in the cytosol. Because it does not require oxygen, it is utilized by both aerobic and anaerobic cells to yield pyruvate and ATP.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-100",
+    "question": "The organism capable of causing diseases is called which of the following?",
+    "options": [
+      "Micro organism",
+      "Infection",
+      "Pathogen",
+      "Antigens"
+    ],
+    "correct_answer": "Pathogen",
+    "explanation": "A pathogen is any organism that can cause disease in a host. This includes bacteria, viruses, fungi, and parasites that disrupt the normal physiological processes of the body.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-101",
+    "question": "All of the following are features of prokaryotic cells EXCEPT:",
+    "options": [
+      "Photosynthesis",
+      "Locomotion",
+      "Nitrogen fixation",
+      "Sexual reproduction"
+    ],
+    "correct_answer": "Sexual reproduction",
+    "explanation": "Prokaryotes reproduce primarily through asexual methods such as binary fission. They do not undergo true sexual reproduction with meiosis and gamete fusion, although they can exchange genetic material through horizontal gene transfer.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-102",
+    "question": "The image obtained through a compound light microscope is best described as which of the following?",
+    "options": [
+      "Real and upright",
+      "Virtual and upright",
+      "Real and inverted",
+      "Virtual and inverted"
+    ],
+    "correct_answer": "Virtual and inverted",
+    "explanation": "A compound light microscope uses multiple lenses to magnify a specimen. The objective lens forms a real, inverted image, which is then further magnified by the eyepiece lens to produce a final virtual and inverted image for the observer.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-103",
+    "question": "Which of the following agents is capable of destroying all vegetative bacteria as well as their highly resistant spores?",
+    "options": [
+      "Disinfectant",
+      "Detergent",
+      "Antiseptic",
+      "Sterilant"
+    ],
+    "correct_answer": "Sterilant",
+    "explanation": "A sterilant is an antimicrobial agent that completely destroys all forms of microbial life, including vegetative cells, viruses, and highly resilient bacterial endospores. Standard disinfectants and antiseptics are typically not strong enough to kill spores.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-104",
+    "question": "Papillomaviruses cause warts and certain cancers. How do they most commonly infect human hosts?",
+    "options": [
+      "Through contaminated drinking water",
+      "Through airborne respiratory droplets",
+      "Via scratches and minor breaks in the skin",
+      "Via nosocomial transmission in clinical settings"
+    ],
+    "correct_answer": "Via scratches and minor breaks in the skin",
+    "explanation": "Papillomaviruses enter the body through microscopic tears, scratches, or abrasions in the skin or mucous membranes. Once inside, they infect the basal epithelial cells, leading to localized benign epithelial growths or warts.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-105",
+    "question": "Which of the following statements is not true concerning the bacterium Staphylococcus aureus?",
+    "options": [
+      "It is closely associated with localized inflammation",
+      "It is a common causative agent of bacterial pneumonia",
+      "It can lead to acute bacterial endocarditis",
+      "It is unable to produce the enzyme coagulase"
+    ],
+    "correct_answer": "It is unable to produce the enzyme coagulase",
+    "explanation": "Staphylococcus aureus is famously coagulase-positive, producing the enzyme coagulase to convert fibrinogen to fibrin. This feature distinguishes S. aureus from other, less pathogenic coagulase-negative staphylococci.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-106",
+    "question": "The active trophozoite stage of the parasite Entamoeba histolytica feeds primarily on which of the following?",
+    "options": [
+      "Only the mucosa and submucosa of the colon",
+      "Undigested intestinal food particles",
+      "Circulating host blood plasma",
+      "Erythrocytes, mucosa, and submucosa of the colon"
+    ],
+    "correct_answer": "Erythrocytes, mucosa, and submucosa of the colon",
+    "explanation": "Entamoeba histolytica trophozoites reside in the large intestine, where they actively ingest host red blood cells, mucosal tissue, and submucosal debris. This tissue invasion causes flask-shaped ulcers and amoebic dysentery.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-107",
+    "question": "The first successful vaccine, which protected against smallpox, was invented by which of the following scientists?",
+    "options": [
+      "Louis Pasteur",
+      "Paul Eugene",
+      "Edward Jenner",
+      "John Snow"
+    ],
+    "correct_answer": "Edward Jenner",
+    "explanation": "Edward Jenner developed the smallpox vaccine in seventeen ninety-six using cowpox material to induce immunity. His pioneering work laid the foundation for immunology and led to the global eradication of smallpox.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-108",
+    "question": "Medical asepsis is most effectively carried out by focusing on which of the following clinical goals?",
+    "options": [
+      "Sterilizing all objects in the patient's immediate environment",
+      "Administering prophylactic antibiotics to prevent infection",
+      "Observing strict sterile techniques when giving any nursing care",
+      "Observing the basic principles of cleanliness and sanitation"
+    ],
+    "correct_answer": "Observing the basic principles of cleanliness and sanitation",
+    "explanation": "Medical asepsis, also known as clean technique, focuses on reducing the number and transfer of pathogens in healthcare settings. It relies on daily sanitation, proper waste disposal, and diligent hand hygiene, unlike surgical asepsis which requires complete sterility.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-109",
+    "question": "The antibiotic treatment of choice for treating cholera in an adult patient is a single dose of which of the following?",
+    "options": [
+      "Tetracycline",
+      "Cotrimoxazole",
+      "Doxycycline",
+      "Furazolidone"
+    ],
+    "correct_answer": "Doxycycline",
+    "explanation": "A single dose of doxycycline is the globally recommended first-line antibiotic treatment for adults with severe cholera. It effectively reduces stool volume and shortens the duration of the illness by inhibiting protein synthesis in Vibrio cholerae.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-110",
+    "question": "Which of the following infectious diseases is caused by a protozoan parasite?",
+    "options": [
+      "Malaria",
+      "Influenza",
+      "Tuberculosis",
+      "Cholera"
+    ],
+    "correct_answer": "Malaria",
+    "explanation": "Malaria is caused by unicellular eukaryotic protozoans belonging to the genus Plasmodium. In contrast, influenza is caused by a virus, while tuberculosis and cholera are caused by bacterial pathogens.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-111",
+    "question": "Delicate surgical instruments that must have sharp edges will last longer if they are sterilized by which of the following methods?",
+    "options": [
+      "Boiling water immersion",
+      "Steam autoclaving",
+      "Soaking in mild chemical solutions",
+      "Applying dry heat"
+    ],
+    "correct_answer": "Applying dry heat",
+    "explanation": "Dry heat sterilization is non-corrosive and does not dull or rust sharp cutting edges, making it ideal for delicate metal instruments. Moisture-based methods like autoclaving can corrode fine blades over time.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-112",
+    "question": "An infected patient has chills and begins to shiver. Which of the following is the best nursing intervention?",
+    "options": [
+      "Apply iced alcohol sponges to reduce core temperature",
+      "Provide increased cool liquids for hydration",
+      "Provide additional blankets and bedclothes for comfort",
+      "Provide increased ventilation in the room"
+    ],
+    "correct_answer": "Provide additional blankets and bedclothes for comfort",
+    "explanation": "Shivering is a physiological mechanism to raise body temperature to meet a higher set-point in the hypothalamus during a fever. Adding blankets helps the patient reach this new set-point comfortably, preventing muscle exhaustion.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-113",
+    "question": "The human pathogen Staphylococcus aureus is classified under which of the following thermal categories?",
+    "options": [
+      "Mesophile",
+      "Mesophile and psychrophile",
+      "Psychrophile",
+      "Thermophile"
+    ],
+    "correct_answer": "Mesophile",
+    "explanation": "Staphylococcus aureus is a mesophile, meaning it grows best at moderate temperatures, typically between twenty and forty-five degrees Celsius. Its optimal growth temperature is thirty-seven degrees, which matches human body temperature.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-114",
+    "question": "Which of the following bacterial species was not discovered by the pioneering microbiologist Robert Koch?",
+    "options": [
+      "Bacillus anthracis",
+      "Mycobacterium tuberculosis",
+      "Salmonella typhi",
+      "Vibrio cholerae"
+    ],
+    "correct_answer": "Salmonella typhi",
+    "explanation": "Robert Koch identified the causative agents of anthrax, tuberculosis, and cholera. The bacterium Salmonella typhi, which causes typhoid fever, was discovered by Karl Joseph Eberth in eighteen eighty.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-115",
+    "question": "Infections caused by microorganisms that do not typically produce disease in hosts with healthy immune systems are known as which of the following?",
+    "options": [
+      "Systemic infections",
+      "Blood-borne infections",
+      "Opportunistic infections",
+      "Nosocomial infections"
+    ],
+    "correct_answer": "Opportunistic infections",
+    "explanation": "Opportunistic infections are caused by pathogens that take advantage of an opportunity not normally available, such as a host with a weakened immune system. These microbes are often harmless commensals in healthy individuals.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-116",
+    "question": "Which of the following substances is not a chemical preservative commonly utilized to preserve food products?",
+    "options": [
+      "Sulphur dioxide",
+      "Ascorbic acid",
+      "Sodium nitrate",
+      "Carbon dioxide"
+    ],
+    "correct_answer": "Carbon dioxide",
+    "explanation": "Carbon dioxide is used in modified atmosphere packaging to inhibit aerobic microbial growth, but it is not added directly to food as a chemical preservative. Sulphur dioxide, ascorbic acid, and sodium nitrate are direct food additives.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-117",
+    "question": "In microbiology, the term growth of a bacterial population refers specifically to which of the following?",
+    "options": [
+      "Changes in the total population characteristics",
+      "An increase in the total number of cells",
+      "An increase in the physical size of individual organisms",
+      "An increase in the total cellular mass of an individual organism"
+    ],
+    "correct_answer": "An increase in the total number of cells",
+    "explanation": "Microbial growth is defined as an increase in the number of individual cells in a population, rather than an increase in the physical size of individual cells. This cell division is typically accomplished via binary fission.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-118",
+    "question": "Which of the following combinations of characteristics best describes the primary differences between cilia and flagella?",
+    "options": [
+      "The specific molecular arrangement of internal microtubules",
+      "The length and location of their associated basal bodies",
+      "The way their internal microtubules are chemically fused together",
+      "Their total number, overall length, and the direction of force"
+    ],
+    "correct_answer": "Their total number, overall length, and the direction of force",
+    "explanation": "Cilia are typically numerous and short, exhibiting a sweeping back-and-forth movement. Flagella are fewer, longer, and move with a propeller-like undulating force, though both share a nine plus two microtubule structure.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-119",
+    "question": "The physical methods of sterilization and disinfection include all of the following pathways EXCEPT:",
+    "options": [
+      "Exposure to dry gas",
+      "Electromagnetic radiation",
+      "Steam autoclaving",
+      "Applying dry heat"
+    ],
+    "correct_answer": "Exposure to dry gas",
+    "explanation": "Exposure to dry gases, such as ethylene oxide, is classified as a chemical method of sterilization. Radiation, autoclaving, and dry heat are all physical methods that rely on thermal energy or radiation to destroy microbes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-120",
+    "question": "Which of the following genera of spirochetes is classified as microaerophilic bacteria?",
+    "options": [
+      "Treponema",
+      "Borrelia",
+      "Spirochaeta",
+      "Cristispira"
+    ],
+    "correct_answer": "Borrelia",
+    "explanation": "Borrelia species are spirochetes that are microaerophilic, meaning they require oxygen to survive but at concentrations lower than those found in the atmosphere. They are famous for causing Lyme disease and relapsing fever.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-121",
+    "question": "Which of the following pairs of infectious diseases is caused exclusively by bacterial pathogens?",
+    "options": [
+      "Herpes and influenza",
+      "Tetanus and mumps",
+      "Typhoid and smallpox",
+      "Cholera and tetanus"
+    ],
+    "correct_answer": "Cholera and tetanus",
+    "explanation": "Cholera is caused by the bacterium Vibrio cholerae, and tetanus is caused by Clostridium tetani. The other options list viral diseases such as herpes, influenza, mumps, and smallpox.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-122",
+    "question": "The infectious fungal condition known as cryptococcosis is medically classified as which of the following?",
+    "options": [
+      "A viral infection",
+      "A mycotic infection",
+      "A parasitic infection",
+      "A bacterial infection"
+    ],
+    "correct_answer": "A mycotic infection",
+    "explanation": "Cryptococcosis is caused by yeast fungi from the genus Cryptococcus, making it a mycotic, or fungal, infection. It primarily affects the lungs and central nervous system, particularly in immunocompromised individuals.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-123",
+    "question": "If your hands accidentally touch the contaminated sink surface during a handwashing procedure, what action must you take?",
+    "options": [
+      "Repeat the entire handwashing procedure",
+      "Apply more friction during the remainder of the wash",
+      "Continue washing your hands normally",
+      "Add more soap to your hands and rinse immediately"
+    ],
+    "correct_answer": "Repeat the entire handwashing procedure",
+    "explanation": "Touching the contaminated sink surface compromises hand hygiene by introducing transient microbes back onto the hands. The nurse must restart the entire handwashing procedure to ensure proper decontamination.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-124",
+    "question": "Which of the following macromolecules serves as the primary structural component of fungal cell walls?",
+    "options": [
+      "Peptidoglycan",
+      "Cellulose",
+      "Chitin",
+      "Chitin, cellulose, or hemicellulose"
+    ],
+    "correct_answer": "Chitin",
+    "explanation": "Fungal cell walls are uniquely composed of chitin, a tough polysaccharide that provides structural strength and rigidity. Bacterial cell walls contain peptidoglycan, while plant cell walls are made of cellulose.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-125",
+    "question": "B-lymphocytes are immunologically activated when their surface immunoglobulin receptors bind directly to which of the following?",
+    "options": [
+      "Antibody",
+      "Interferon",
+      "Memory cells",
+      "Antigen"
+    ],
+    "correct_answer": "Antigen",
+    "explanation": "B cells are activated when they encounter and bind to their specific foreign antigen via surface immunoglobulin receptors. This binding, often assisted by helper T-cell cytokines, triggers clonal expansion and antibody production.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-126",
+    "question": "Which of the following microorganisms is the specific causative agent of the diarrheal disease cholera?",
+    "options": [
+      "Vibrio cholera",
+      "Shigella dysenteriae",
+      "Campylobacter jejuni",
+      "Escherichia coli"
+    ],
+    "correct_answer": "Vibrio cholera",
+    "explanation": "Cholera is a severe waterborne disease caused by the gram-negative, comma-shaped bacterium Vibrio cholerae. It secretes a potent cholera enterotoxin that leads to massive watery diarrhea and dehydration.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-127",
+    "question": "Circulating blood monocytes migrate into body tissues and differentiate into which of the following phagocytic cells?",
+    "options": [
+      "Neutrophils",
+      "B cells",
+      "Macrophages",
+      "T cells"
+    ],
+    "correct_answer": "Macrophages",
+    "explanation": "Monocytes are a type of white blood cell that circulate in the bloodstream for a short time before entering tissues. Once in the tissue, they enlarge and mature into highly efficient phagocytic cells called macrophages.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-128",
+    "question": "Many industrial food preservation techniques are specifically engineered to destroy the highly resistant spores of which pathogen?",
+    "options": [
+      "Salmonella species",
+      "Clostridium botulinum",
+      "Staphylococcus species",
+      "Bacillus cereus"
+    ],
+    "correct_answer": "Clostridium botulinum",
+    "explanation": "Clostridium botulinum produces highly heat-resistant endospores that can survive in anaerobic environments and release deadly botulinum neurotoxins. Food canning processes are designed to kill these spores to prevent botulism.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-129",
+    "question": "When sterilizing a medical instrument using chemical solutions, why is it essential to wash the article thoroughly beforehand?",
+    "options": [
+      "To remove all organic material like blood or mucus which could shield microbes",
+      "To prevent the instrument from soaking in the chemical solution for too long",
+      "To ensure the chemical solution does not damage living tissue during use",
+      "To rinse the article under running water before placing it in the sterilant"
+    ],
+    "correct_answer": "To remove all organic material like blood or mucus which could shield microbes",
+    "explanation": "Organic matter such as blood, mucus, or pus can act as a physical barrier that prevents the chemical sterilant from contacting the instrument surface, or it can chemically neutralize the active ingredients of the disinfectant.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-130",
+    "question": "The microscopic finding of active trophozoites containing ingested erythrocytes is diagnostic for which organism?",
+    "options": [
+      "Entamoeba histolytica",
+      "Dientamoeba fragilis",
+      "Entamoeba coli",
+      "Iodamoeba butcheli"
+    ],
+    "correct_answer": "Entamoeba histolytica",
+    "explanation": "Erythrophagocytosis, or the presence of ingested red blood cells in the cytoplasm of amoebic trophozoites, is a classic diagnostic feature that distinguishes pathogenic Entamoeba histolytica from non-pathogenic intestinal amoebae.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-131",
+    "question": "Free-living protozoan organisms that ingest solid organic matter or other microscopic organisms are classified under which nutritional type?",
+    "options": [
+      "Parasitic",
+      "Mutualistic",
+      "Holozoic",
+      "Saprophytic"
+    ],
+    "correct_answer": "Holozoic",
+    "explanation": "Holozoic nutrition is a method of heterotrophic nutrition where organisms ingest solid or liquid organic particles. Most free-living protozoa feed holozoically by engulfing prey, such as bacteria, through phagocytosis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-132",
+    "question": "Which of the following statements best describes what occurs during the clinical incubation period of an infection?",
+    "options": [
+      "The pathogen is rapidly cleared from the body by the host's immune system",
+      "Active pathogen replication is occurring at an intracellular level",
+      "The period typically lasts for only a few days in most diseases",
+      "The period is extremely brief and lasts for only a few hours"
+    ],
+    "correct_answer": "Active pathogen replication is occurring at an intracellular level",
+    "explanation": "The incubation period is the time between initial pathogen exposure and the first appearance of clinical symptoms. During this phase, the pathogen is actively replicating inside host cells, but has not yet reached a threshold to cause noticeable symptoms.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-133",
+    "question": "Which of the following scientists first isolated and described the genus Azotobacter as free-living, nitrogen-fixing bacteria?",
+    "options": [
+      "H. Hellriegel",
+      "H. Wilfarth",
+      "Martinus willem Beijerinck",
+      "Sergei Winogradsky"
+    ],
+    "correct_answer": "Martinus willem Beijerinck",
+    "explanation": "Martinus Beijerinck discovered the genus Azotobacter in nineteen hundred and one and demonstrated its ability to fix atmospheric nitrogen without living in symbiosis with plants, adding significantly to the field of soil microbiology.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-134",
+    "question": "Which of the following pairs of infectious diseases is caused by a virus and transmitted to human hosts by mosquitoes?",
+    "options": [
+      "Encephalitis and sleeping sickness",
+      "Yellow fever and sleeping sickness",
+      "Elephantiasis and Dengue",
+      "Yellow fever and Dengue"
+    ],
+    "correct_answer": "Yellow fever and Dengue",
+    "explanation": "Yellow fever and Dengue fever are viral diseases belonging to the Flaviviridae family. Both are primarily transmitted to humans through the bites of infected female Aedes mosquitoes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-135",
+    "question": "Regarding microbial control and food safety, which of the following statements is not true?",
+    "options": [
+      "Refrigeration extends the shelf life of many food products",
+      "Household refrigerators should maintain temperatures between one and five degrees Celsius",
+      "Refrigeration completely eliminates the risk of foodborne poisoning",
+      "Refrigerators must be defrosted regularly to maintain optimal function"
+    ],
+    "correct_answer": "Refrigeration completely eliminates the risk of foodborne poisoning",
+    "explanation": "Refrigeration only slows down or inhibits microbial metabolism and reproduction; it does not destroy pathogens or eliminate the risk of food poisoning entirely. Some psychrotrophic pathogens, like Listeria monocytogenes, can still grow at refrigeration temperatures.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-136",
+    "question": "The malaria parasite Plasmodium reproduces asexually within host cells through which primary division mechanism?",
+    "options": [
+      "Regeneration",
+      "Budding",
+      "Binary fission",
+      "Multiple fission"
+    ],
+    "correct_answer": "Multiple fission",
+    "explanation": "Plasmodium species reproduce asexually inside host liver and red blood cells through schizogony, which is a form of multiple fission. During this process, the nucleus divides multiple times before the cell cytoplasm divides, producing many merozoites.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-137",
+    "question": "Cell theory is a cornerstone of modern biology. It includes all of the following core tenets EXCEPT:",
+    "options": [
+      "All living organisms are composed of one or more cells",
+      "The individual cell is the most primitive form of life",
+      "All cells arise from the division of pre-existing cells",
+      "The cell is the basic structural and functional unit of life"
+    ],
+    "correct_answer": "The individual cell is the most primitive form of life",
+    "explanation": "Cell theory states that the cell is the basic structural, functional, and organizational unit of all living organisms. It does not label the cell as primitive, but rather as the essential unit of all life.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-138",
+    "question": "Which of the following diseases can be acquired by consuming raw or undercooked vegetables contaminated with human pathogens?",
+    "options": [
+      "Vibrio cholera",
+      "Botulism",
+      "Hepatitis",
+      "Hepatitis and Vibrio cholera"
+    ],
+    "correct_answer": "Hepatitis and Vibrio cholera",
+    "explanation": "Both viral hepatitis and Vibrio cholerae can be transmitted through the fecal-oral route. Consuming raw vegetables that have been irrigated, washed, or handled with sewage-contaminated water is a well-known risk factor for both infections.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-139",
+    "question": "Infectious diseases that are easily transmitted directly or indirectly from one individual to another are referred to as what?",
+    "options": [
+      "Communicable diseases",
+      "Degenerative diseases",
+      "Non-communicable diseases",
+      "Congenital diseases"
+    ],
+    "correct_answer": "Communicable diseases",
+    "explanation": "Communicable, or contagious, diseases are those that can be transmitted from person to person through direct contact, respiratory droplets, bodily fluids, or shared contaminated objects. Non-communicable diseases cannot be spread between hosts.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-140",
+    "question": "If you are sterilizing a clinical thermometer in a home environment, what is the best practice?",
+    "options": [
+      "Soak the thermometer in undiluted liquid phenol",
+      "Hold it under running warm water and wipe it down with an alcohol sponge",
+      "Wash it thoroughly with soap and cool water before placing it in chemical disinfectant",
+      "Rinse the thermometer in alcohol both before and after each patient use"
+    ],
+    "correct_answer": "Wash it thoroughly with soap and cool water before placing it in chemical disinfectant",
+    "explanation": "Washing the thermometer first with soap and water removes any physical debris, mucus, or organic matter that might shield pathogens from the disinfectant. Once clean, chemical disinfectants like rubbing alcohol can effectively sanitize the surface.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-141",
+    "question": "In the human immune system, B-lymphocytes mature in the bone marrow, whereas T-lymphocytes mature in which of the following organs?",
+    "options": [
+      "The thymus",
+      "The bone marrow",
+      "The spleen",
+      "The gut-associated lymphoid tissue"
+    ],
+    "correct_answer": "The thymus",
+    "explanation": "While both lymphocyte types originate from hematopoietic stem cells in the bone marrow, B cells remain in the bone marrow to complete their maturation. Immature T cells, however, migrate through the bloodstream to the thymus, where they mature.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-142",
+    "question": "The concept of immunization and active vaccination was pioneered and invented by which of the following scientists?",
+    "options": [
+      "James Watson",
+      "Edward Jenner",
+      "Francis Crick",
+      "Louis Pasteur"
+    ],
+    "correct_answer": "Edward Jenner",
+    "explanation": "Edward Jenner is widely credited with inventing the first vaccine when he successfully inoculated a young boy against smallpox using cowpox lesions in seventeen ninety-six. His work established the field of clinical vaccinology.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-143",
+    "question": "The motile, invasive zygote of the malaria parasite Plasmodium occurs within which of the following hosts or cells?",
+    "options": [
+      "Human red blood cells",
+      "The gut of the female Anopheles mosquito",
+      "Human liver parenchymal cells",
+      "The salivary glands of the female Anopheles mosquito"
+    ],
+    "correct_answer": "The gut of the female Anopheles mosquito",
+    "explanation": "After sexual fertilization of Plasmodium gametes occurs inside the stomach of the female Anopheles mosquito, the resulting zygote develops into a motile ookinete. This motile form penetrates the mosquito's gut wall to form an oocyst.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-144",
+    "question": "For which of the following viral diseases was a vaccine successfully developed using modern tissue culture techniques?",
+    "options": [
+      "Smallpox",
+      "Rabies",
+      "Mumps",
+      "Measles"
+    ],
+    "correct_answer": "Rabies",
+    "explanation": "The original rabies vaccine developed by Pasteur used dried spinal cords from infected animals. Modern, much safer rabies vaccines are manufactured by growing the virus in human diploid or chick embryo cell cultures.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-145",
+    "question": "To safely sterilize dry linens, gauze dressings, or cotton bandages in a home environment, which of the following is best?",
+    "options": [
+      "Boil them in water for thirty minutes",
+      "Soak them in a household liquid disinfectant solution",
+      "Place them in an oven preheated to one hundred and seventy-seven degrees Celsius for one hour",
+      "Wash them with standard laundry soap in very hot water"
+    ],
+    "correct_answer": "Place them in an oven preheated to one hundred and seventy-seven degrees Celsius for one hour",
+    "explanation": "Dry heat sterilization in a kitchen oven preheated to one hundred and seventy-seven degrees Celsius, or three hundred and fifty degrees Fahrenheit, for at least one hour is an effective domestic method to sterilize dry bandages and linens without making them wet.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-146",
+    "question": "Which of the following human diseases was the first to be treated successfully using a synthesized chemotherapeutic agent?",
+    "options": [
+      "Smallpox",
+      "Syphilis",
+      "AIDS",
+      "Malaria"
+    ],
+    "correct_answer": "Syphilis",
+    "explanation": "Syphilis was the first disease treated with a synthesized antimicrobial chemical. In nineteen nine, Paul Ehrlich discovered Salvarsan, an arsenic compound that selectively targeted Treponema pallidum, marking the birth of chemotherapy.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-147",
+    "question": "The organic components of municipal solid waste will decompose primarily through which of the following pathways?",
+    "options": [
+      "The physical flow of water",
+      "Abrasive friction against soil particles",
+      "The metabolic action of microorganisms",
+      "Abiotic chemical oxidation"
+    ],
+    "correct_answer": "The metabolic action of microorganisms",
+    "explanation": "Biodegradation of organic solid waste is mediated by microorganisms such as saprophytic bacteria and fungi. These decomposers utilize metabolic enzymes to break down complex organic polymers into simpler compounds.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-148",
+    "question": "The horizontal gene transfer mechanism known as transduction is characterized by which of the following events?",
+    "options": [
+      "Bacterial cells absorbing free DNA directly from their environment",
+      "A cell acquiring chromosomal DNA from its immediate mother cell",
+      "The direct transfer of genomic material via a conjugation pilus",
+      "The transfer of bacterial genetic material from one cell to another via a virus"
+    ],
+    "correct_answer": "The transfer of bacterial genetic material from one cell to another via a virus",
+    "explanation": "Transduction is the process by which bacterial DNA is transferred from a donor cell to a recipient cell by a viral vector, specifically a bacteriophage. This occurs when bacterial host DNA is accidentally packaged inside a viral capsid.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-149",
+    "question": "All of the following historical scientists supported the theory of abiogenesis, or spontaneous generation, EXCEPT:",
+    "options": [
+      "Aristotle",
+      "Francesco Redi",
+      "John Needham",
+      "Felix Archimede Pouchet"
+    ],
+    "correct_answer": "Francesco Redi",
+    "explanation": "Francesco Redi was a pioneer in challenging spontaneous generation. In sixteen sixty-eight, he performed a famous experiment showing that maggots only developed on meat exposed to flies, disproving that they spontaneously generated from decaying meat.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-150",
+    "question": "Which of the following locations is widely recognized as the most common site for amoebiasis in the human body?",
+    "options": [
+      "The cecum",
+      "The sigmoid colon",
+      "The transverse colon",
+      "The hepatic flexure"
+    ],
+    "correct_answer": "The cecum",
+    "explanation": "Amoebiasis, caused by Entamoeba histolytica, primarily affects the large intestine. The cecum and the ascending colon are the most common sites for the formation of classic flask-shaped amoebic ulcers because of the relative stagnation of fecal content in these areas.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-151",
+    "question": "Which of the following bacteria is not classified as an ammonia-oxidizing bacterium involved in the nitrogen cycle?",
+    "options": [
+      "Nitrospina gracilis",
+      "Nitrosococcus oceanus",
+      "Nitrosomonas europaea",
+      "Nitrosovibrio tenuis"
+    ],
+    "correct_answer": "Nitrospina gracilis",
+    "explanation": "Nitrospina gracilis is a nitrite-oxidizing bacterium, meaning it oxidizes nitrite to nitrate. In contrast, Nitrosococcus, Nitrosomonas, and Nitrosovibrio are all ammonia-oxidizing bacteria that convert ammonia to nitrite during the nitrification process.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-152",
+    "question": "What is the recommended water flow and temperature combination that a nurse should use when washing their hands?",
+    "options": [
+      "A medium flow and warm water",
+      "A fast flow and cool water",
+      "A slow flow and warm water",
+      "A medium flow and hot water"
+    ],
+    "correct_answer": "A medium flow and warm water",
+    "explanation": "A medium flow of warm water is recommended for handwashing because warm water facilitates the lathering and emulsification of oils on the skin better than cold water. Extremely hot water should be avoided because it strips protective skin lipids, leading to dry skin and dermatitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-153",
+    "question": "Cellulose is chemically degraded to cellobiose through the action of which of the following enzymes?",
+    "options": [
+      "Cellulose dehydrogenase",
+      "Hexokinase",
+      "Beta-glucosidase",
+      "Cellulase"
+    ],
+    "correct_answer": "Cellulase",
+    "explanation": "Cellulase is an enzyme complex produced by many symbiotic fungi and bacteria that catalyzes the hydrolysis of cellulose, breaking down the complex beta-glucan polymer into cellobiose. Cellobiose is then further cleaved into individual glucose molecules.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-154",
+    "question": "Which of the following subject areas is not typically studied under the discipline of microbiology?",
+    "options": [
+      "Animal behavior",
+      "Fungi",
+      "Viruses",
+      "Bacteria"
+    ],
+    "correct_answer": "Animal behavior",
+    "explanation": "Microbiology is the scientific study of microscopic organisms, which includes bacteria, viruses, fungi, algae, and protozoa. Animal behavior is a branch of zoology and ethology, which focuses on macroscopic multicellular organisms and falls outside the scope of microbiology.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-155",
+    "question": "When utilizing boiling as a physical method of disinfection or sanitization, when should the timing of the process begin?",
+    "options": [
+      "From the moment the articles are first placed in the water",
+      "Exactly five minutes after the articles are submerged in the water",
+      "At the exact moment the heat source is turned off",
+      "Only when the water has reached a vigorous boil"
+    ],
+    "correct_answer": "Only when the water has reached a vigorous boil",
+    "explanation": "The disinfection timer must only begin when the water has reached a rolling boil, as this ensures the temperature has reached one hundred degrees Celsius. Timing beforehand is inaccurate because the water temperature has not yet reached the level required to kill vegetative microbial cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-156",
+    "question": "Bacteriophages that infect host bacteria and immediately cause the lysis and death of the bacterial cell are classified under which of the following terms?",
+    "options": [
+      "Lysogenic phages",
+      "Lytic phages",
+      "Lipolytic phages",
+      "Lysozyme phages"
+    ],
+    "correct_answer": "Lytic phages",
+    "explanation": "Lytic or virulent phages infect bacterial cells, rapidly replicate, and then produce specialized enzymes that rupture the bacterial cell membrane, releasing new viral progeny and destroying the host cell. In contrast, lysogenic phages integrate their DNA into the host genome without immediately killing it.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-157",
+    "question": "Which of the following food-borne bacterial pathogens causes a highly severe and frequently fatal form of neuroparalytic food poisoning?",
+    "options": [
+      "Bacillus cereus",
+      "Staphylococcus aureus",
+      "Clostridium perfringens",
+      "Clostridium botulinum"
+    ],
+    "correct_answer": "Clostridium botulinum",
+    "explanation": "Clostridium botulinum is a spore-forming obligate anaerobe that secretes a highly potent neurotoxin. Ingesting this preformed botulinum toxin in contaminated foods leads to botulism, a life-threatening illness characterized by descending flaccid paralysis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-158",
+    "question": "Which of the following scientists supported the disproving of spontaneous generation by demonstrating that open flasks of heated broth remained sterile if the entering air was passed through cotton wool filters?",
+    "options": [
+      "Franz Schulze",
+      "Heinrich Schroder and Theodor von Dusch",
+      "Lazaro Spallanzani",
+      "Theodor Schwann"
+    ],
+    "correct_answer": "Heinrich Schroder and Theodor von Dusch",
+    "explanation": "Heinrich Schroder and Theodor von Dusch designed a classical experiment in eighteen fifty-four showing that cotton wool could filter out microbes from entering air, keeping boiled organic infusions sterile. This demonstrated that dust particles carry airborne microbes, representing a major step toward establishing the germ theory.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-159",
+    "question": "Poliovirus, an enterovirus, is most likely to experience a significant increase in virulence through which of the following processes?",
+    "options": [
+      "A single-point mutation of its ribonucleic acid genome at a few specific positions",
+      "Genetic recombination with another related enterovirus",
+      "Direct structural alteration of its outer capsid protein coat",
+      "Multiple nucleotide deletions and substitutions across major genes"
+    ],
+    "correct_answer": "A single-point mutation of its ribonucleic acid genome at a few specific positions",
+    "explanation": "The live-attenuated Sabin polio vaccine can occasionally revert to a neurovirulent phenotype through a single nucleotide mutation in its non-coding region. This minor genomic shift restores its replication efficiency in the central nervous system, occasionally causing vaccine-derived paralytic poliomyelitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-160",
+    "question": "In the commercial canning industry, the primary goal of the thermal preservation process is the complete elimination of which highly resistant pathogen?",
+    "options": [
+      "Lactobacillus species",
+      "Clostridium botulinum",
+      "Mycobacterium tuberculosis",
+      "Coxiella burnetii"
+    ],
+    "correct_answer": "Clostridium botulinum",
+    "explanation": "Because Clostridium botulinum endospores are highly heat-resistant and can germinate in anaerobic canned environments to release lethal toxins, industrial thermal processing must achieve a twelve decimal reduction of these spores. This safety standard is known as the botulinum cook.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-161",
+    "question": "Which of the following differentiated cells of the immune system is specialized for producing and secreing large quantities of high-affinity antibodies?",
+    "options": [
+      "Memory cells",
+      "Basophils",
+      "Plasma cells",
+      "Killer cells"
+    ],
+    "correct_answer": "Plasma cells",
+    "explanation": "Plasma cells are fully differentiated B-lymphocytes that function as protein factories, synthesizing and secreting thousands of antibody molecules per second. They possess an abundant rough endoplasmic reticulum to facilitate this massive secretory activity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-162",
+    "question": "Which of the following anatomical structures is characteristic of prokaryotic cells but is completely absent in eukaryotic cells?",
+    "options": [
+      "The Golgi apparatus",
+      "The chloroplast",
+      "The mitochondrion",
+      "The mesosome"
+    ],
+    "correct_answer": "The mesosome",
+    "explanation": "Mesosomes are folded invaginations of the plasma membrane in bacteria that historically were believed to play a role in cell wall synthesis and chromosome replication, though modern electron microscopy often views them as artifacts. Eukaryotic cells lack mesosomes but contain membrane-bound organelles like mitochondria and Golgi structures.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-163",
+    "question": "The devastating pandemic that swept through Europe and Asia in the middle of the fourteenth century, known as the Black Death, was caused by which of the following diseases?",
+    "options": [
+      "The bubonic plague",
+      "Rabies",
+      "Leprosy",
+      "Smallpox"
+    ],
+    "correct_answer": "The bubonic plague",
+    "explanation": "The Black Death was an epidemic of bubonic plague caused by the gram-negative bacterium Yersinia pestis. This zoonotic pathogen was transmitted to humans primarily through the bites of infected rodent fleas, resulting in massive mortality.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-164",
+    "question": "Which of the following scientists challenged the theory of spontaneous generation by showing that heated organic broth remained sterile when entering air was passed through red-hot tubes?",
+    "options": [
+      "Franz Schulze",
+      "Heinrich Schroder",
+      "Lazaro Spallanzani",
+      "Theodor Schwann"
+    ],
+    "correct_answer": "Theodor Schwann",
+    "explanation": "Theodor Schwann conducted experiments in eighteen thirty-seven where he sterilized entering air by passing it through heated glass tubes before it entered a flask of boiled broth. Because the broth remained sterile, he demonstrated that the air itself did not possess a spontaneous life-generating force.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-165",
+    "question": "Which of the following liquid food products is routinely pasteurized or heated to destroy potential pathogens such as Coxiella burnetii and Mycobacterium tuberculosis?",
+    "options": [
+      "Fruit juice",
+      "Liquid sugar solutions",
+      "Cow milk",
+      "Vinegar"
+    ],
+    "correct_answer": "Cow milk",
+    "explanation": "Pasteurization of milk was originally developed to destroy Mycobacterium tuberculosis and is currently calibrated to eliminate Coxiella burnetii, which is the most heat-tolerant non-spore-forming pathogen found in milk. This thermal process ensures dairy products are safe for public consumption.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-166",
+    "question": "Which of the following routes of transmission is not associated with the spread of Lyme disease?",
+    "options": [
+      "Direct physical skin contact with an infected individual",
+      "Intimate kissing or saliva exchange with an infected individual",
+      "Unprotected sexual contact with an infected individual",
+      "None of these options are associated with Lyme disease transmission"
+    ],
+    "correct_answer": "None of these options are associated with Lyme disease transmission",
+    "explanation": "Lyme disease, caused by the spirochete bacterium Borrelia burgdorferi, is not transmitted from person to person through casual contact, kissing, or sexual intercourse. It is transmitted exclusively through the bite of infected blacklegged ticks belonging to the genus Ixodes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-167",
+    "question": "Which of the following terms describes a chemical or physical process that destroys most pathogenic microorganisms on inanimate objects, with the exception of bacterial endospores?",
+    "options": [
+      "Sanitizing",
+      "Disinfection",
+      "Sterilization",
+      "Cleaning"
+    ],
+    "correct_answer": "Disinfection",
+    "explanation": "Disinfection is a process that eliminates vegetative microbial cells, viruses, and fungi from non-living surfaces, but is ineffective at killing highly resilient bacterial endospores. In contrast, sterilization destroys all viable microbial life, including endospores.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-168",
+    "question": "The global influenza pandemic of nineteen eighteen, commonly referred to as the Spanish Flu, was caused by which of the following pathogens?",
+    "options": [
+      "An H1N1 influenza A virus strain",
+      "Severe acute respiratory syndrome coronavirus 2",
+      "An influenza C virus strain",
+      "Simian virus 5"
+    ],
+    "correct_answer": "An H1N1 influenza A virus strain",
+    "explanation": "The nineteen eighteen influenza pandemic was caused by an exceptionally virulent H1N1 subtype of the influenza A virus. It infected roughly one-third of the world's population, causing tens of millions of deaths worldwide through severe respiratory complications.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-169",
+    "question": "When administering an active immunizing agent or vaccine, what critical safety principle must the nurse keep in mind?",
+    "options": [
+      "Active vaccines are completely harmless and free of adverse reactions",
+      "Severe allergic or anaphylactic reactions can occur in highly sensitive individuals",
+      "Vaccines provide only temporary passive protection that lasts a few weeks",
+      "Only live vaccines are capable of producing an immune response in the body"
+    ],
+    "correct_answer": "Severe allergic or anaphylactic reactions can occur in highly sensitive individuals",
+    "explanation": "While vaccinations are generally safe and effective, any immunizing agent can trigger an IgE-mediated hypersensitivity reaction or anaphylaxis in sensitive patients. Nurses must monitor patients closely after vaccination and have emergency epinephrine readily available.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-170",
+    "question": "The most common environmental and dietary allergens associated with hereditary atopic allergies include which of the following?",
+    "options": [
+      "Plant pollens, house dust mites, and specific foods",
+      "Animal serums and blood plasma proteins",
+      "Pharmacological drugs and passive immunizations",
+      "Hymenoptera insect venoms such as bee venom"
+    ],
+    "correct_answer": "Plant pollens, house dust mites, and specific foods",
+    "explanation": "Atopic allergies have a strong hereditary component and are characterized by an IgE response to common environmental antigens. Airborne pollens, house dust, mold spores, and dietary proteins like peanuts or shellfish are the most frequent triggers.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-171",
+    "question": "Regarding food preservation, the process of pickling can be broadly classified into how many primary biochemical categories?",
+    "options": [
+      "One category",
+      "Two categories",
+      "Three categories",
+      "Four categories"
+    ],
+    "correct_answer": "Two categories",
+    "explanation": "Pickling is classified into two main categories: chemical pickling and fermentation pickling. In chemical pickling, food is preserved in an edible acid such as vinegar, whereas in fermentation pickling, bacteria like Lactobacillus ferment sugars in a salt brine to produce lactic acid.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-172",
+    "question": "What is meant by the biological concept that adaptive immunity provides specific resistance against infectious diseases?",
+    "options": [
+      "Acquiring immunity to one pathogen guarantees lifelong protection against all related infections",
+      "The antibodies generated against a specific pathogen will not provide protection against different pathogens",
+      "Specific antibodies are highly versatile and can neutralize any foreign antigen encountered",
+      "Immunity is a general bodily state that is independent of specific antigen exposure"
+    ],
+    "correct_answer": "The antibodies generated against a specific pathogen will not provide protection against different pathogens",
+    "explanation": "Adaptive immunity is characterized by antigen specificity. Antibodies and memory cells produced in response to a specific antigenic epitope, such as a measles protein, will not recognize or neutralize unrelated pathogens like polio because of structural differences.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-173",
+    "question": "Which of the following secretions or structures acts as a primary physiological and chemical barrier to prevent the entry of pathogens into the human body?",
+    "options": [
+      "Lysozyme-containing tears",
+      "The outer keratinized epidermal layer of the skin",
+      "Circulating blood monocytes",
+      "The epithelial cell layer of the urogenital tract"
+    ],
+    "correct_answer": "Lysozyme-containing tears",
+    "explanation": "Physiological and chemical barriers consist of body secretions that inhibit or destroy microbial growth. Tears contain the enzyme lysozyme, which chemically cleaves peptidoglycan, destroying bacterial cell walls, while the skin and urogenital epithelium function primarily as physical or anatomical barriers.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-174",
+    "question": "From an immunological perspective, the antiviral signaling proteins known as interferons are best classified under which barrier category?",
+    "options": [
+      "Cytokine and physiological barriers",
+      "Anatomical and physical barriers",
+      "Cellular and phagocytic barriers",
+      "Superficial mechanical barriers"
+    ],
+    "correct_answer": "Cytokine and physiological barriers",
+    "explanation": "Interferons are regulatory cytokines secreted by virally infected host cells that stimulate neighboring cells to produce antiviral proteins. Because they are soluble signaling molecules that modify cellular physiology to inhibit viral replication, they represent cytokine-mediated physiological barriers.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-175",
+    "question": "When assessing a patient suffering from an acute upper respiratory infection, which of the following findings most strongly indicates the development of a clinical complication?",
+    "options": [
+      "A mild, scratchy throat",
+      "A dry, non-productive cough",
+      "A high fever of sudden onset",
+      "Mild nasal congestion and stuffiness"
+    ],
+    "correct_answer": "A high fever of sudden onset",
+    "explanation": "While mild scratchy throat, dry cough, and nasal stuffiness are expected symptoms of a localized upper respiratory viral infection, the sudden onset of a high fever is a classic systemic indicator that a secondary bacterial infection, such as sinusitis, otitis media, or pneumonia, has developed.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-176",
+    "question": "The simple presence of viable, circulating bacteria within the bloodstream of a patient is medically defined by which of the following terms?",
+    "options": [
+      "Toxemia",
+      "Septicemia",
+      "Bacteremia",
+      "Viremia"
+    ],
+    "correct_answer": "Bacteremia",
+    "explanation": "Bacteremia is defined as the simple presence of bacteria in the blood, which can be transient and asymptomatic. Septicemia, or sepsis, refers to a more severe clinical state where bacteria are actively multiplying in the bloodstream, triggering a systemic inflammatory response.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-177",
+    "question": "When a person undergoes active immunization or vaccination, they are injected with a formulation containing which of the following?",
+    "options": [
+      "Readymade exogenous antibodies",
+      "Weakened, attenuated, or inactivated pathogens",
+      "An immune serum rich in antitoxins",
+      "A purified dose of horse serum proteins"
+    ],
+    "correct_answer": "Weakened, attenuated, or inactivated pathogens",
+    "explanation": "Active vaccines contain weakened (attenuated) or killed (inactivated) pathogens, or their subunit antigens. Ingesting or injecting these antigens stimulates the host's own immune system to produce specific antibodies and memory cells without causing severe disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-178",
+    "question": "Which of the following immunoglobulins is the most abundant isotype found circulating in human blood serum?",
+    "options": [
+      "Immunoglobulin M",
+      "Immunoglobulin E",
+      "Immunoglobulin A",
+      "Immunoglobulin G"
+    ],
+    "correct_answer": "Immunoglobulin G",
+    "explanation": "Immunoglobulin G is the most abundant antibody class in human blood and tissue fluid, comprising approximately seventy-five to eighty percent of total serum immunoglobulins. It plays a major role in neutralizing toxins, opsonizing pathogens, and crossing the placenta to protect the fetus.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-179",
+    "question": "Which of the following organism groups represents the crucial first link, or primary producer, in almost all natural food chains?",
+    "options": [
+      "A herbivore",
+      "A decomposer",
+      "A photosynthetic autotroph",
+      "A carnivore"
+    ],
+    "correct_answer": "A photosynthetic autotroph",
+    "explanation": "Photosynthetic autotrophs, such as cyanobacteria, algae, and plants, utilize solar energy to synthesize organic compounds from carbon dioxide and water. Because they generate the primary biomass that sustains heterotrophic organisms, they represent the first trophic level in food chains.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-180",
+    "question": "Which of the following cellular components of the adaptive immune system is most effective at identifying and destroying host cells infected with intracellular pathogens?",
+    "options": [
+      "Helper T-lymphocytes",
+      "B-lymphocytes",
+      "Circulating antibodies",
+      "Cytotoxic T-lymphocytes"
+    ],
+    "correct_answer": "Cytotoxic T-lymphocytes",
+    "explanation": "Cytotoxic T-lymphocytes, also known as T cytolytic or CD8+ T cells, specialize in monitoring host cells for intracellular infections. Upon recognizing viral or foreign bacterial antigens presented on major histocompatibility complex class one molecules, they release perforin and granzymes to induce apoptosis in the infected cell.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-181",
+    "question": "Which of the following pioneering scientists was the first to successfully isolate, culture, and describe the bacterium Vibrio cholerae as the causative agent of cholera?",
+    "options": [
+      "Robert Koch",
+      "Ronald Ross",
+      "Albert Neisser",
+      "Alexander Fleming"
+    ],
+    "correct_answer": "Robert Koch",
+    "explanation": "In eighteen eighty-three, Robert Koch traveled to Egypt and India during a cholera epidemic, where he successfully isolated the comma-shaped bacterium Vibrio cholerae in pure culture. His work proved that this specific microbe was responsible for the waterborne diarrheal disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-182",
+    "question": "The active immunization formulation known as tetanus toxoid consists of a modified bacterial toxin designed to perform which of the following actions?",
+    "options": [
+      "Stimulate the recipient's immune system to produce neutralizing antibodies",
+      "Provide immediate, temporary passive protection against tetanus",
+      "Neutralize active tetanospasmin toxins already circulating in the bloodstream",
+      "Induce naturally acquired active immunity through a mild clinical infection"
+    ],
+    "correct_answer": "Stimulate the recipient's immune system to produce neutralizing antibodies",
+    "explanation": "Tetanus toxoid is an inactivated form of the tetanospasmin toxin that is immunogenic but no longer toxic. Injecting the toxoid stimulates host B-lymphocytes to produce protective neutralizing antibodies and memory cells, establishing artificially acquired active immunity.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-183",
+    "question": "The highly contagious childhood disease chickenpox is caused by which of the following viral pathogens?",
+    "options": [
+      "Morbillivirus",
+      "Herpes simplex virus",
+      "Parvovirus",
+      "Varicella-Zoster virus"
+    ],
+    "correct_answer": "Varicella-Zoster virus",
+    "explanation": "Chickenpox is an acute infectious disease caused by the Varicella-Zoster virus, which is also known as human alphaherpesvirus three. Following the resolution of chickenpox, the virus remains latent in cranial nerve and dorsal root ganglia and can reactivate later in life to cause shingles.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-184",
+    "question": "The fatal neurodegenerative disorder Creutzfeldt-Jakob disease can be contracted if an individual does which of the following?",
+    "options": [
+      "Consumes nervous tissue from cattle infected with bovine spongiform encephalopathy",
+      "Consumes shellfish harvested from waters contaminated with Escherichia coli",
+      "Consumes drinking water contaminated with sewage runoff containing enteric bacteria",
+      "Has direct physical skin-to-skin contact with an infected patient"
+    ],
+    "correct_answer": "Consumes nervous tissue from cattle infected with bovine spongiform encephalopathy",
+    "explanation": "Variant Creutzfeldt-Jakob disease is a fatal brain disorder caused by prions. It can be acquired by consuming beef products, specifically brain and spinal cord tissue, contaminated with prions from cattle suffering from bovine spongiform encephalopathy, commonly known as mad cow disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-185",
+    "question": "Which of the following antibody classes is primarily responsible for protecting the mucosal surfaces of the respiratory, gastrointestinal, and urogenital tracts from viral and bacterial invasion?",
+    "options": [
+      "Immunoglobulin M",
+      "Immunoglobulin E",
+      "Immunoglobulin A",
+      "Immunoglobulin G"
+    ],
+    "correct_answer": "Immunoglobulin A",
+    "explanation": "Secretory Immunoglobulin A is the primary antibody found in mucosal secretions, including saliva, tears, colostrum, and bronchial mucus. Its dimeric structure makes it highly resistant to enzymatic degradation, allowing it to effectively neutralize pathogens on mucosal surfaces before they can attach and invade.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-186",
+    "question": "Which of the following scenarios best satisfies the epidemiological classification of a nosocomial, or hospital-acquired, infection?",
+    "options": [
+      "The pathogen is contracted during hospitalization, and the incubation period is shorter than the patient's hospital stay",
+      "The patient was already incubating the infection at the time of admission to the hospital",
+      "The infection is a chronic nutritional deficiency that manifests during the hospital stay",
+      "The patient develops symptoms immediately within minutes of entering the hospital triage area"
+    ],
+    "correct_answer": "The pathogen is contracted during hospitalization, and the incubation period is shorter than the patient's hospital stay",
+    "explanation": "A hospital-acquired or nosocomial infection is defined as an infection that was neither present nor incubating at the time of hospital admission. For it to qualify, the exposure must occur during the stay, and the incubation period must be brief enough that clinical signs manifest during or shortly after hospitalization.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-187",
+    "question": "During the initial phase of an acute inflammatory response, what term is used to describe the local vascular changes characterized by increased blood flow and fluid accumulation in the tissue?",
+    "options": [
+      "Exudation",
+      "Leukocytosis",
+      "Suppuration",
+      "Vascular congestion"
+    ],
+    "correct_answer": "Vascular congestion",
+    "explanation": "Vascular congestion, or hyperemia, is an early event in acute inflammation triggered by histamines and prostaglandins that cause local vasodilation. This increases blood flow to the injured tissue, leading to the clinical signs of redness and warmth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-188",
+    "question": "An organism, such as an arthropod, that carries and transmits an infectious pathogen from one host to another is referred to as which of the following?",
+    "options": [
+      "A vector",
+      "A pathogen",
+      "A reservoir",
+      "A vaccine"
+    ],
+    "correct_answer": "A vector",
+    "explanation": "A vector is a biological or mechanical agent, such as a mosquito, tick, flea, or fly, that transmits an infectious pathogen from an infected animal or human to a susceptible host. Pathogens are the disease-causing microbes themselves, and reservoirs are the natural habitats where the pathogen normally lives.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-189",
+    "question": "Which of the following is not a scientifically valid reason for utilizing physical or chemical food preservation techniques?",
+    "options": [
+      "To prevent food spoilage and minimize waste",
+      "To maintain nutritional value and facilitate easier, faster preparation",
+      "To artificially increase the commercial price of a food product",
+      "None of these options are valid reasons"
+    ],
+    "correct_answer": "To artificially increase the commercial price of a food product",
+    "explanation": "The primary objectives of food preservation are to inhibit microbial spoilage, prevent foodborne illness, reduce economic waste, and preserve nutritional quality and flavor. Artificially inflating the market price is a commercial or financial motive, not a scientific reason for food preservation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-190",
+    "question": "Which of the following statements is true regarding the pathogen responsible for causing coronavirus disease two thousand nineteen?",
+    "options": [
+      "It is caused by an enveloped, single-stranded ribonucleic acid virus",
+      "It is caused by a double-stranded deoxyribonucleic acid virus",
+      "It is a bacterial infection that can be treated with penicillin",
+      "It is a protozoal disease transmitted by common flies"
+    ],
+    "correct_answer": "It is caused by an enveloped, single-stranded ribonucleic acid virus",
+    "explanation": "Coronavirus disease nineteen is caused by severe acute respiratory syndrome coronavirus two, which is an enveloped, positive-sense, single-stranded ribonucleic acid virus belonging to the Coronaviridae family. It is viral, not bacterial or protozoal, and is highly transmissible via respiratory droplets.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-191",
+    "question": "An acute, life-threatening infection of the central nervous system characterized by painful muscle spasms, severe jaw stiffness, and arching of the back is known as which of the following?",
+    "options": [
+      "Poliomyelitis",
+      "Epilepsy",
+      "Tetanus",
+      "A febrile convulsion"
+    ],
+    "correct_answer": "Tetanus",
+    "explanation": "Tetanus is caused by the neurotoxin tetanospasmin produced by Clostridium tetani. The toxin blocks inhibitory neurotransmitter release in the spinal cord, causing generalized muscle rigidity, lockjaw, and painful muscle spasms known as opisthotonos.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-192",
+    "question": "Chemically, the vast majority of essential bacterial structures, metabolic enzymes, and functional receptors are composed of which of the following macromolecules?",
+    "options": [
+      "Lipids",
+      "Proteins",
+      "Carbohydrates",
+      "Complex nucleic acids"
+    ],
+    "correct_answer": "Proteins",
+    "explanation": "While lipids, carbohydrates, and nucleic acids are essential structural and genetic components of microbial cells, proteins serve as the primary functional macromolecules. Enzymes, membrane transport channels, flagella, and toxic secretions are all proteins composed of amino acid chains.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-193",
+    "question": "The cellular process by which specialized white blood cells engulf, ingest, and destroy invading foreign microorganisms is defined as which of the following?",
+    "options": [
+      "Pinocytosis",
+      "Phagocytosis",
+      "Active cytolysis",
+      "Clonal selection"
+    ],
+    "correct_answer": "Phagocytosis",
+    "explanation": "Phagocytosis is a key mechanism of innate immunity carried out by professional phagocytes, such as macrophages and neutrophils. The cell extends pseudopods to surround the microbe, engulfing it in a vesicle called a phagosome, which then fuses with a lysosome to destroy the pathogen.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-194",
+    "question": "An inflammatory abscess represents a localized collection of pus in body tissue. This structural change results primarily from the body's attempt to achieve which clinical goal?",
+    "options": [
+      "To wall off and localize the infection, preventing systemic spread",
+      "To increase the systemic blood pressure to the affected area",
+      "To rapidly drain toxins away from the infected tissue",
+      "To allow the rapid multiplication of bacteria for immune targeting"
+    ],
+    "correct_answer": "To wall off and localize the infection, preventing systemic spread",
+    "explanation": "An abscess is formed as part of the host's inflammatory defense mechanism. The body walls off the infected area with a fibrous capsule to contain the pathogen and prevent it from spreading through adjacent tissues or into the general circulation, creating a localized pocket of dead tissue and white blood cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-195",
+    "question": "A pharmacological agent or chemical process that inhibits the metabolic growth and reproduction of bacteria without directly killing them is described by which of the following terms?",
+    "options": [
+      "Bactericidal",
+      "Bacteriostatic",
+      "Sterilizing",
+      "Disinfecting"
+    ],
+    "correct_answer": "Bacteriostatic",
+    "explanation": "Bacteriostatic agents, such as tetracyclines or erythromycin, inhibit bacterial growth and replication, allowing the host's immune system to effectively target and clear the remaining pathogens. Bactericidal agents, in contrast, actively kill the target bacterial cells.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-196",
+    "question": "Which of the following biochemical mediators of inflammation acts directly on the hypothalamus to elevate the thermoregulatory set-point, causing a fever?",
+    "options": [
+      "Prostaglandin F",
+      "Prostaglandin A",
+      "Prostaglandin E-one",
+      "Prostaglandin E-two"
+    ],
+    "correct_answer": "Prostaglandin E-two",
+    "explanation": "During an infection, pyrogens stimulate immune cells to release cytokines, which trigger the synthesis of prostaglandin E-two in the vascular endothelial cells of the hypothalamus. Prostaglandin E-two then binds to receptors on the preoptic area, raising the body's thermal set-point and causing a fever.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-197",
+    "question": "A pediatric nurse is assessing a child suspected of having measles. In which anatomical location should the nurse look to identify the diagnostic lesions known as Koplik's spots?",
+    "options": [
+      "On the outer skin of the neck and torso",
+      "On the mucosal membrane of the oral cavity, opposite the lower molars",
+      "On the palmar surface of the hands and fingers",
+      "On the sclera and conjunctiva of the eyes"
+    ],
+    "correct_answer": "On the mucosal membrane of the oral cavity, opposite the lower molars",
+    "explanation": "Koplik's spots are a pathognomonic sign of measles that appear during the prodromal stage. They present as small, blue-white spots on a red background located on the buccal mucosa of the mouth, opposite the lower molar teeth.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-198",
+    "question": "A patient's laboratory report reveals a significant elevation in the percentage of circulating eosinophils. This finding is most commonly associated with which of the following conditions?",
+    "options": [
+      "Allergic hypersensitivity reactions or parasitic infections",
+      "Acute systemic bacterial meningitis",
+      "Acute myocardial infarction",
+      "Chronic primary iron-deficiency anemia"
+    ],
+    "correct_answer": "Allergic hypersensitivity reactions or parasitic infections",
+    "explanation": "Eosinophils are specialized granulocytes that play a major role in host defenses against multicellular parasites, such as helminths, and are heavily involved in mediating allergic reactions and asthma. An elevated eosinophil count, or eosinophilia, strongly suggests an active parasitic or atopic condition.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-199",
+    "question": "Which of the following cellular features is characteristic of prokaryotic cells but is completely absent in eukaryotic cells?",
+    "options": [
+      "The presence of a nuclear membrane bounding the genome",
+      "A chromosome containing structural histone proteins",
+      "The presence of seventy-S ribosomes within chloroplasts and mitochondria",
+      "The presence of gas vacuoles in aquatic species"
+    ],
+    "correct_answer": "The presence of gas vacuoles in aquatic species",
+    "explanation": "Gas vacuoles are specialized protein structures that provide buoyancy to certain aquatic prokaryotic cells, such as cyanobacteria. In contrast, eukaryotic cells do not possess gas vacuoles. Eukaryotes have membrane-bound nuclei and histones, and while their organelles contain seventy-S ribosomes, this is an endosymbiotic bacterial feature, not a eukaryotic nuclear trait.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-200",
+    "question": "The study of changes in the body brought about by illness or injury is called:",
+    "options": [
+      "Microbiology",
+      "Pathology",
+      "Psychology",
+      "Etiology"
+    ],
+    "correct_answer": "Pathology",
+    "explanation": "Pathology is the branch of medical science that focuses on the study of the causes, mechanisms, and structural and functional changes in cells, tissues, and organs during disease or injury. This field helps clinicians diagnose illnesses and understand disease progression.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-201",
+    "question": "The body increases its number of white blood cells when an infection occurs because:",
+    "options": [
+      "White blood cells contain oxygen which the tissues need to destroy bacteria",
+      "White blood cells destroy and ingest bacteria",
+      "The formation of pus from white blood cells is necessary for the proper healing of an inflammation",
+      "White blood cells aid in the clotting of blood"
+    ],
+    "correct_answer": "White blood cells destroy and ingest bacteria",
+    "explanation": "An elevated white blood cell count, known as leukocytosis, is a classic physiological response to infection. These immune cells, particularly neutrophils and macrophages, migrate to the infection site to actively engulf and destroy invading pathogens through phagocytosis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-202",
+    "question": "Circulating plasma proteins which are made in the liver and activated when an antibody combines with antigen are known as:",
+    "options": [
+      "Null lymphocytes",
+      "Lymphokines",
+      "Natural Killer cells",
+      "Complement"
+    ],
+    "correct_answer": "Complement",
+    "explanation": "The complement system consists of a group of circulating plasma proteins synthesized primarily by the liver. When an antibody binds to its specific antigen, it initiates a cascade of complement activation that leads to pathogen lysis, opsonization, and recruitment of phagocytes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-203",
+    "question": "Giving a patient an immune serum against a specific disease will provide them with:",
+    "options": [
+      "An active immunity that is permanent",
+      "A natural immunity that is only temporary",
+      "A passive immunity that is permanent",
+      "A passive immunity that is only temporary"
+    ],
+    "correct_answer": "A passive immunity that is only temporary",
+    "explanation": "Immune serum contains preformed antibodies harvested from another host, providing immediate but temporary protection against a pathogen. Because the recipient's own immune system is not stimulated to produce its own antibodies or memory cells, this passive immunity fades as the injected antibodies are naturally degraded.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-204",
+    "question": "The criteria for proving the causal relationship between a microorganism and a specific disease are known as:",
+    "options": [
+      "Koch postulates",
+      "Jenner postulates",
+      "Pasteur postulates",
+      "Leeuwenhoek postulates"
+    ],
+    "correct_answer": "Koch postulates",
+    "explanation": "Koch's postulates are a set of four scientific criteria established by Robert Koch in nineteen hundred to prove that a specific microbe causes a specific disease. These guidelines laid the foundation for medical microbiology and the germ theory of disease.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-205",
+    "question": "Nipah henipavirus is which of the following types of virus?",
+    "options": [
+      "Water-borne virus",
+      "Bat-borne virus",
+      "Air-borne virus",
+      "None of the above"
+    ],
+    "correct_answer": "Bat-borne virus",
+    "explanation": "Nipah virus is a zoonotic virus that is primarily transmitted to humans from animals, with fruit bats of the Pteropodidae family serving as the natural reservoir host. It can cause severe respiratory and neurological disease, including fatal encephalitis.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-206",
+    "question": "Another name for antibody-mediated defenses is:",
+    "options": [
+      "Humonal immunity",
+      "Active immunity",
+      "Humoral immunity",
+      "Herd immunity"
+    ],
+    "correct_answer": "Humoral immunity",
+    "explanation": "Humoral immunity, or antibody-mediated immunity, is the aspect of adaptive host defenses that is mediated by macromolecules such as secreted antibodies and complement proteins in extracellular fluids. This system is coordinated primarily by B-lymphocytes.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-207",
+    "question": "A nurse reads the results of a Mantoux test on a three-year-old child. The results indicate an area of induration measuring ten millimeters. The nurse would interpret this result as:",
+    "options": [
+      "Negative",
+      "Positive",
+      "Definitive and requiring a repeat test",
+      "Inconclusive"
+    ],
+    "correct_answer": "Positive",
+    "explanation": "In children under four years of age, or those with other clinical risk factors, an induration of ten millimeters or greater during a tuberculin skin test is interpreted as a positive result. This indicates that the child has been exposed to and sensitized by Mycobacterium tuberculosis, requiring further clinical evaluation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-208",
+    "question": "Which of the following organisms is the most common cause of post-operative ward infections?",
+    "options": [
+      "Escherichia coli",
+      "Aerobacter aerogenes",
+      "Staphylococcus aureus",
+      "Streptococcus pyogenes"
+    ],
+    "correct_answer": "Staphylococcus aureus",
+    "explanation": "Staphylococcus aureus is a transient commensal bacterium that colonizes the skin and nares, making it a major cause of surgical site infections and healthcare-associated infections. Its ability to form biofilms on medical equipment and its resistance to many antibiotics make it a persistent clinical challenge.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-209",
+    "question": "Which of the following plans is used as a comprehensive waste management plan?",
+    "options": [
+      "Plan for reuse",
+      "The integrated plan",
+      "Plan for recycling",
+      "Plan for reducing"
+    ],
+    "correct_answer": "The integrated plan",
+    "explanation": "An integrated waste management plan combines several waste control methods, including reduction, reuse, recycling, composting, and landfilling, to manage municipal waste sustainably. This holistic approach optimizes resources and minimizes environmental impact.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-210",
+    "question": "The following statements are true of immunoglobulin G EXCEPT:",
+    "options": [
+      "It crosses the placenta",
+      "It activates the complement system",
+      "It forms seventy-five percent of the total immunoglobulins",
+      "It combats parasitic infection"
+    ],
+    "correct_answer": "It combats parasitic infection",
+    "explanation": "Immunoglobulin G is the most abundant antibody class in human serum, comprising seventy-five percent of total antibodies, and is capable of crossing the placenta and activating complement. However, host defense against multicellular parasitic infections is primarily mediated by immunoglobulin E, not immunoglobulin G.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-211",
+    "question": "When recommending the use of a non-prescription decongestant to a client with catarrh, the nurse should first assess for a medical history of which condition?",
+    "options": [
+      "Diabetes",
+      "Asthma",
+      "Hypertension",
+      "Arthritis"
+    ],
+    "correct_answer": "Hypertension",
+    "explanation": "Oral and nasal decongestants typically contain sympathomimetic agents like pseudoephedrine or phenylephrine, which stimulate alpha-adrenergic receptors to cause vasoconstriction. Because this systemic vasoconstriction can significantly raise blood pressure, these medications are contraindicated or must be used with extreme caution in patients with hypertension.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-212",
+    "question": "Who discovered the Mycobacterium leprae bacilli, which cause leprosy?",
+    "options": [
+      "Edward Jenner",
+      "Alexandre Yersin",
+      "Friedrich Loeffler",
+      "Gerhard Armauer Hansen"
+    ],
+    "correct_answer": "Gerhard Armauer Hansen",
+    "explanation": "Gerhard Armauer Hansen identified Mycobacterium leprae under the microscope in eighteen seventy-three, proving that leprosy was an infectious disease caused by a bacterium rather than a hereditary curse. This was the first time a chronic human disease was linked to a specific bacterial pathogen.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-213",
+    "question": "Which of the following statements is true regarding the chickenpox virus?",
+    "options": [
+      "It can be grown in standard cell-free culture medium",
+      "It is a single-stranded ribonucleic acid virus",
+      "It does not cross the placental barrier",
+      "It is not found in the crusts or scabs of lesions"
+    ],
+    "correct_answer": "It is not found in the crusts or scabs of lesions",
+    "explanation": "Varicella-Zoster virus is highly infectious in fluid from active vesicle lesions and respiratory droplets, but is absent from dry, crusted lesions. Once all skin lesions have crusted over, the patient is no longer considered contagious.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-214",
+    "question": "Perinatal transmission is said to occur when a pathogen is transmitted from:",
+    "options": [
+      "A non-human vector to a human host",
+      "An infected individual to an uninfected individual through casual contact",
+      "A mother to her infant during pregnancy, labor, or delivery",
+      "A contaminated source in the environment to a host"
+    ],
+    "correct_answer": "A mother to her infant during pregnancy, labor, or delivery",
+    "explanation": "Perinatal transmission refers to the vertical transfer of pathogens from mother to child immediately before, during, or shortly after birth. This can occur across the placenta, through exposure to blood and vaginal secretions during delivery, or through breast milk.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-215",
+    "question": "Why is it highly difficult to recycle post-consumer plastics?",
+    "options": [
+      "They are physically too hard to break down",
+      "They come in too many different shapes and sizes",
+      "They are too adhesive and stick to machinery",
+      "They contain different types of polymer resins that cannot be mixed"
+    ],
+    "correct_answer": "They contain different types of polymer resins that cannot be mixed",
+    "explanation": "Post-consumer plastics are made from diverse poolymer resins, such as polyethylene, polypropylene, and polystyrene, which have different melting points and chemical structures. Because these resins are incompatible, they must be meticulously sorted before recycling to prevent structural defects in the recycled material.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-216",
+    "question": "Which of the following infectious diseases is NOT transmitted mainly through the fecal-oral route?",
+    "options": [
+      "Enteric fever",
+      "Measles",
+      "Cholera",
+      "Hepatitis A"
+    ],
+    "correct_answer": "Measles",
+    "explanation": "Measles is a highly contagious viral disease transmitted through airborne respiratory droplets or direct contact with nasal secretions. In contrast, enteric fever, cholera, and hepatitis A are primarily waterborne or foodborne pathogens transmitted via the fecal-oral route.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-217",
+    "question": "Who is credited with being the first to design a simple microscope and observe living microorganisms?",
+    "options": [
+      "James Paget",
+      "Max Knoll and Ernst Ruska",
+      "Antoni van Leeuwenhoek",
+      "Athanasius Kircher"
+    ],
+    "correct_answer": "Antoni van Leeuwenhoek",
+    "explanation": "Antoni van Leeuwenhoek designed high-quality, high-magnification single-lens microscopes in the late sixteen hundreds. He was the first to observe, describe, and record microscopic unicellular organisms, which he called animalcules, including bacteria and protozoa.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-218",
+    "question": "Which of the following is recognized as a physiological function of mesosomes in bacterial cells?",
+    "options": [
+      "Cellular respiration",
+      "Cell division and chromosome segregation",
+      "Sporulation processes",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Mesosomes are folded invaginations of the bacterial cell membrane. Historically, they have been associated with cellular respiration, cell wall synthesis, DNA replication, cell division, and spore formation, although some modern techniques view them as artifacts of chemical fixation.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-219",
+    "question": "Which of the following preservation methods preserves food by slowing down the growth and reproduction of microorganisms and the action of rot-causing enzymes?",
+    "options": [
+      "Cooling",
+      "Freezing",
+      "Curing",
+      "Boiling"
+    ],
+    "correct_answer": "Cooling",
+    "explanation": "Cooling, or refrigeration, lowers the temperature of food to between one and five degrees Celsius. This reduction in temperature slows down the metabolic rates and enzymatic processes of both spoiling bacteria and the food tissue itself, significantly extending shelf life.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-220",
+    "question": "Humans act as the definitive host, and mosquitoes serve as the intermediate host, in which of the following diseases?",
+    "options": [
+      "Malaria",
+      "Lymphatic filariasis",
+      "Japanese encephalitis",
+      "Dengue fever"
+    ],
+    "correct_answer": "Lymphatic filariasis",
+    "explanation": "In lymphatic filariasis, caused by parasitic filarial worms, humans serve as the definitive host because the adult worms mature and undergo sexual reproduction within the human lymphatic system. Mosquitoes serve as intermediate hosts, where the microfilariae develop into infective larvae.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-221",
+    "question": "Which of the following statements is NOT true regarding prokaryotic organisms?",
+    "options": [
+      "The nuclear material is not bounded by a nuclear membrane",
+      "Their chromosomes do not contain histone proteins",
+      "Eighty-S ribosomes are distributed throughout the cytoplasm",
+      "The cell wall contains peptidoglycan as a major structural component"
+    ],
+    "correct_answer": "Eighty-S ribosomes are distributed throughout the cytoplasm",
+    "explanation": "Prokaryotic cells contain seventy-S ribosomes, which are smaller and structurally different from the eighty-S ribosomes found in the cytoplasm of eukaryotic cells. While prokaryotic cell walls are composed of peptidoglycan and lack a true nuclear membrane or histones, their ribosomes remain strictly seventy-S.",
+    "category": "Microbiology and Infectious Diseases"
+  },
+  {
+    "id": "item-222",
+    "question": "Which of the following microorganisms are classified under the biological Kingdom Prokaryotae?",
+    "options": [
+      "Bacteria",
+      "Protozoa",
+      "Fungi",
+      "All of the above"
+    ],
+    "correct_answer": "Bacteria",
+    "explanation": "Kingdom Prokaryotae consists exclusively of single-celled prokaryotic organisms, which are bacteria and archaea. Protozoa and fungi are eukaryotic organisms that contain membrane-bound nuclei and organelles, placing them in separate eukaryotic kingdoms.",
+    "category": "Microbiology and Infectious Diseases"
+  }
+]

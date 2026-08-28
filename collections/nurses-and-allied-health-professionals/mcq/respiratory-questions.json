@@ -1,0 +1,2745 @@
+[
+  {
+    "id": "item-426",
+    "question": "In general, the term respiration may refer to lung breathing or cell breathing and simply mean:",
+    "options": [
+      "The combination of inhaling and exhaling",
+      "An exchange of oxygen and carbon dioxide",
+      "The act of inhaling oxygen",
+      "The act of exhaling carbon dioxide"
+    ],
+    "correct_answer": "An exchange of oxygen and carbon dioxide",
+    "explanation": "Broadly defined, respiration is the physiological process of gas exchange between an organism and its environment. It encompasses pulmonary ventilation, external respiration in the lungs, transport of gases, and internal cellular respiration.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-427",
+    "question": "The main blood supply to the tonsil is:",
+    "options": [
+      "Facial artery",
+      "Greater palatine artery",
+      "Dorsalis linguae artery",
+      "Ascending pharyngeal artery"
+    ],
+    "correct_answer": "Facial artery",
+    "explanation": "The tonsillar branch of the facial artery is the principal arterial supply to the palatine tonsil. Other collateral branches arise from the ascending pharyngeal, lingual, and descending palatine arteries.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-428",
+    "question": "The nurse is caring for a child with suspected epiglottitis. Which finding is not associated with epiglottitis?",
+    "options": [
+      "Drooling",
+      "Brassy cough",
+      "Muffled phonation",
+      "Inspiratory stridor"
+    ],
+    "correct_answer": "Brassy cough",
+    "explanation": "Epiglottitis is characterized by sudden high fever, dysphagia, drooling, muffled voice, and inspiratory stridor. A brassy, barking cough is typically a hallmark of croup, not acute epiglottitis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-429",
+    "question": "The organ commonly called the throat is the:",
+    "options": [
+      "Trachea",
+      "Esophagus",
+      "Pharynx",
+      "Larynx"
+    ],
+    "correct_answer": "Pharynx",
+    "explanation": "The pharynx is the muscular tube that connects the nasal cavity and mouth to the larynx and esophagus. It is commonly referred to as the throat and serves as a shared passage for both air and food.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-430",
+    "question": "The term blue bloater refers to which of the following conditions?",
+    "options": [
+      "Adult respiratory distress syndrome (ARDS)",
+      "Asthma",
+      "Chronic obstructive bronchitis",
+      "Emphysema"
+    ],
+    "correct_answer": "Chronic obstructive bronchitis",
+    "explanation": "In chronic obstructive pulmonary disease, patients with chronic bronchitis are historically called blue bloaters due to cyanosis resulting from severe hypoxemia and fluid retention from right-sided heart failure. Patients with emphysema are called pink puffers.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-431",
+    "question": "Which of the following is NOT a function of the nasal passages:",
+    "options": [
+      "Allows for absorption of oxygen through its mucus membrane",
+      "Warms and moistens inhaled air",
+      "Act as a filter",
+      "Serves as passageways for air"
+    ],
+    "correct_answer": "Allows for absorption of oxygen through its mucus membrane",
+    "explanation": "The nasal passages are lined with highly vascular mucous membranes that warm, humidify, and filter inhaled air. However, they do not participate in the physiological absorption or exchange of oxygen, which occurs exclusively in the alveoli.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-432",
+    "question": "The exchange of gases between alveoli and their surrounding capillaries is called:",
+    "options": [
+      "External respiration",
+      "Internal respiration",
+      "Intrinsic respiration",
+      "Both external and internal respiration"
+    ],
+    "correct_answer": "External respiration",
+    "explanation": "External respiration refers to the exchange of oxygen and carbon dioxide across the respiratory membrane between the air in the alveoli and the blood in the pulmonary capillaries. Internal respiration is the exchange of gases between systemic capillaries and tissue cells.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-433",
+    "question": "What is the correct path air takes when it enters the trachea on its way to the lungs?",
+    "options": [
+      "Bronchi, bronchioles, pulmonary capillaries, and alveoli",
+      "Bronchioles, bronchi, alveoli, and pulmonary capillaries",
+      "Bronchi, pulmonary capillaries, alveoli, and bronchioles",
+      "Bronchi, bronchioles, alveoli, and pulmonary capillaries"
+    ],
+    "correct_answer": "Bronchi, bronchioles, alveoli, and pulmonary capillaries",
+    "explanation": "Once inside the trachea, inhaled air travels through the primary bronchi, down into the smaller branching bronchioles, and into the microscopic alveoli, where oxygen diffuses across the respiratory membrane into the surrounding pulmonary capillaries.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-434",
+    "question": "The inflammation of bronchi or bronchioles is called:",
+    "options": [
+      "Emphysema",
+      "Bronchitis",
+      "Asthma",
+      "Lung cancer"
+    ],
+    "correct_answer": "Bronchitis",
+    "explanation": "Bronchitis is the medical term for inflammation of the mucous membranes of the bronchial tubes, which carry air to and from the lungs. This condition can be acute or chronic and is typically characterized by a persistent cough and mucus production.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-435",
+    "question": "Which of the following is adherent to the inside of the chest wall and the thoracic surface of the diaphragm?",
+    "options": [
+      "Visceral pleura",
+      "Parietal pleura",
+      "Parietal cavity",
+      "Visceral cavity"
+    ],
+    "correct_answer": "Parietal pleura",
+    "explanation": "The parietal pleura is the outer membrane of the pleural sac that adheres to the inner surface of the thoracic wall and the superior surface of the diaphragm. The visceral pleura is the inner layer that directly covers the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-436",
+    "question": "Radiation of pain to the ear in tonsillitis occurs along which cranial nerve?",
+    "options": [
+      "Cranial nerve eleven",
+      "Cranial nerve nine",
+      "Cranial nerve seven",
+      "Cranial nerve ten"
+    ],
+    "correct_answer": "Cranial nerve nine",
+    "explanation": "The glossopharyngeal nerve, which is cranial nerve nine, provides sensory innervation to both the palatine tonsil and the middle ear. During tonsillitis, irritation of these sensory fibers can cause referred pain to the ear, known as tonsillar otalgia.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-437",
+    "question": "Which of the following clients is most likely to develop acute respiratory distress syndrome?",
+    "options": [
+      "A twenty-year-old with fractures of the tibia",
+      "A thirty-six-year-old who is HIV positive",
+      "A forty-year-old with duodenal ulcers",
+      "A thirty-two-year-old with barbiturate overdose"
+    ],
+    "correct_answer": "A thirty-two-year-old with barbiturate overdose",
+    "explanation": "Barbiturate overdose is a major risk factor for acute respiratory distress syndrome because it causes severe central nervous system and respiratory depression. This leads to hypoventilation and potential aspiration of gastric contents that damages the alveoli.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-438",
+    "question": "The epiglottis is:",
+    "options": [
+      "The organ which acts as a lid to close off the larynx when food is swallowed",
+      "Commonly called the Adam's apple",
+      "The small covering over the pharynx which prevents aspiration of liquids into the lungs",
+      "The structure containing the vocal folds"
+    ],
+    "correct_answer": "The organ which acts as a lid to close off the larynx when food is swallowed",
+    "explanation": "The epiglottis is a leaf-shaped flap of elastic cartilage located at the root of the tongue. During swallowing, it folds down over the laryngeal inlet, acting as a lid to prevent food and liquids from entering the respiratory tract.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-439",
+    "question": "The wandering phagocytes found in the alveoli are called:",
+    "options": [
+      "Alveolar macrophages",
+      "Pulmonary cells",
+      "Goblet cells",
+      "Chalice cells"
+    ],
+    "correct_answer": "Alveolar macrophages",
+    "explanation": "Alveolar macrophages are specialized immune cells that roam the alveolar spaces, engulfing and removing inhaled dust particles, bacteria, and other foreign matter. They represent a critical cellular defense mechanism in the lower respiratory tract.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-440",
+    "question": "A male adult patient hospitalized for treatment of a pulmonary embolism develops respiratory alkalosis. Which clinical findings commonly accompany respiratory alkalosis?",
+    "options": [
+      "Nausea or vomiting",
+      "Abdominal pain or diarrhea",
+      "Hallucinations or tinnitus",
+      "Lightheadedness or paresthesia"
+    ],
+    "correct_answer": "Lightheadedness or paresthesia",
+    "explanation": "Hyperventilation in respiratory alkalosis causes hypocapnia, which leads to cerebral vasoconstriction and decreased cerebral blood flow, causing lightheadedness. It also lowers serum ionized calcium, triggering peripheral paresthesia such as numbness in the extremities.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-441",
+    "question": "In acute rhinitis, nasal drainage normally is:",
+    "options": [
+      "Yellow",
+      "Clear",
+      "Green",
+      "Gray"
+    ],
+    "correct_answer": "Clear",
+    "explanation": "Acute rhinitis, commonly known as the common cold, initially presents with clear, watery nasal secretions due to localized viral inflammation of the nasal mucosa. Yellow or green drainage typically suggests a secondary bacterial infection.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-442",
+    "question": "Hoarseness or inability to make voice sounds most likely would be a result of inflammation of or injury to the:",
+    "options": [
+      "Nasal cavities",
+      "Alveoli",
+      "Larynx",
+      "Trachea"
+    ],
+    "correct_answer": "Larynx",
+    "explanation": "The larynx contains the vocal folds, which are responsible for voice production. Inflammation of the larynx or direct trauma to the laryngeal nerves impairs vocal cord vibration, resulting in hoarseness.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-443",
+    "question": "A black client with asthma seeks emergency care for acute respiratory distress. Because of this client's dark skin, the nurse should assess for cyanosis by inspecting the:",
+    "options": [
+      "Lips",
+      "Mucous membranes",
+      "Nail beds",
+      "Earlobes"
+    ],
+    "correct_answer": "Mucous membranes",
+    "explanation": "For patients with dark skin tones, standard skin sites like the nail beds or lips may not reliably show cyanosis. Assessing the oral mucous membranes and conjunctiva provides a more accurate clinical indication of central oxygen desaturation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-444",
+    "question": "Cellular respiration is defined as:",
+    "options": [
+      "An intracellular, energy-producing process",
+      "An extracellular, energy-producing process",
+      "An intracellular, energy-requiring process",
+      "An extracellular, energy-requiring process"
+    ],
+    "correct_answer": "An intracellular, energy-producing process",
+    "explanation": "Cellular respiration is the set of metabolic reactions that take place within the cytoplasm and mitochondria of cells to convert biochemical energy from nutrients into adenosine triphosphate. Because it yields adenosine triphosphate, it is an energy-producing process.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-445",
+    "question": "A client with a laryngectomy returns from surgery with a nasogastric tube in place. The primary reason for placement of the nasogastric tube is to:",
+    "options": [
+      "Prevent swelling and dysphagia",
+      "Decompress the stomach",
+      "Prevent contamination of the suture line",
+      "Promote healing of the oral mucosa"
+    ],
+    "correct_answer": "Prevent contamination of the suture line",
+    "explanation": "After a total laryngectomy, a nasogastric tube is used to deliver enteral nutrition, bypassing the newly sutured pharyngeal mucosa. This prevents food and liquids from leaking across the suture lines, minimizing the risk of contamination and infection.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-446",
+    "question": "Each cycle of breathing consists of three phases in the following order:",
+    "options": [
+      "Expiration, pause, and inspiration",
+      "Pause, inspiration, and expiration",
+      "Inspiration, pause, and expiration",
+      "Inspiration, expiration, and pause"
+    ],
+    "correct_answer": "Inspiration, expiration, and pause",
+    "explanation": "A normal, quiet breathing cycle begins with active inspiration, followed by passive expiration, and ends with a brief physiological pause before the next cycle begins.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-447",
+    "question": "Which of the following measures can reduce or prevent the incidence of atelectasis in a post-operative client?",
+    "options": [
+      "Chest physiotherapy",
+      "Mechanical ventilation",
+      "Reducing oxygen requirements",
+      "Use of an incentive spirometer"
+    ],
+    "correct_answer": "Use of an incentive spirometer",
+    "explanation": "Using an incentive spirometer encourages deep, sustained inhalations that maximize lung expansion and reopen collapsed alveoli, preventing post-operative atelectasis. It is a highly effective, non-invasive nursing intervention for surgical patients.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-448",
+    "question": "The right lung has two lobes while the left lung has three lobes:",
+    "options": [
+      "True",
+      "False",
+      "Partially true",
+      "None of the above"
+    ],
+    "correct_answer": "False",
+    "explanation": "The human anatomy consists of a right lung with three distinct lobes and a left lung with only two lobes. The left lung is smaller to accommodate the space occupied by the heart.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-449",
+    "question": "Which of the following damage is most likely to occur during direct laryngoscopy?",
+    "options": [
+      "Gingival laceration",
+      "Damage to maxillary incisors",
+      "Damage to the arytenoid cartilage",
+      "Damage to mandibular molars"
+    ],
+    "correct_answer": "Damage to maxillary incisors",
+    "explanation": "During a direct laryngoscopy, the rigid metal blade of the laryngoscope is inserted into the mouth to visualize the vocal cords. If the clinician uses the patient's upper teeth as a fulcrum, the excessive leverage is highly likely to chip or fracture the maxillary incisor teeth.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-450",
+    "question": "The mediastinum is an anatomical space in the thoracic cavity that contains which of the following?",
+    "options": [
+      "The heart and the aorta",
+      "The esophagus and bronchi",
+      "The trachea and bronchi",
+      "All of these structures"
+    ],
+    "correct_answer": "All of these structures",
+    "explanation": "The mediastinum is the central compartment of the thoracic cavity located between the two pleural sacs. It contains the heart, the great vessels such as the aorta, the esophagus, the trachea, the main bronchi, and various nerves and lymphatic structures.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-451",
+    "question": "The muscles of inspiration include the diaphragm and the internal intercostal muscles. Is this statement true or false?",
+    "options": [
+      "True",
+      "False",
+      "Partially true",
+      "Partially false"
+    ],
+    "correct_answer": "False",
+    "explanation": "The primary muscles of inspiration are the diaphragm and the external intercostal muscles, which expand the thoracic cavity to draw air in. The internal intercostals are active during forced expiration by depressing the ribs to push air out.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-452",
+    "question": "On auscultation, which of the following findings most strongly suggests the development of a right pneumothorax?",
+    "options": [
+      "Bilateral inspiratory and expiratory crackles",
+      "Absence of breath sounds in the right thorax",
+      "Inspiratory wheezes in the right thorax",
+      "A bilateral pleural friction rub"
+    ],
+    "correct_answer": "Absence of breath sounds in the right thorax",
+    "explanation": "A pneumothorax occurs when air enters the pleural space, causing the lung on the affected side to collapse. Because the lung is collapsed and cannot ventilate, the nurse will note a complete absence of breath sounds on that side during auscultation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-453",
+    "question": "While inserting a nasogastric tube, the nurse should utilize which of the following personal protective equipment and measures?",
+    "options": [
+      "Double gloves, goggles, a mask, and a surgical cap",
+      "Gloves, a gown, a mask, and goggles",
+      "Sterile gloves, a mask, plastic bags, and a gown",
+      "Gloves, goggles, and a surgical cap"
+    ],
+    "correct_answer": "Gloves, a gown, a mask, and goggles",
+    "explanation": "Although nasogastric tube insertion is a clean rather than a sterile procedure, it frequently stimulates the patient's gag reflex, which can cause gagging, coughing, or vomiting. Wearing standard gloves, a protective gown, a face mask, and goggles guards against accidental splashes or airborne droplets.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-454",
+    "question": "What is the approximate total lung capacity in a healthy, average adult male?",
+    "options": [
+      "Five hundred milliliters",
+      "Five thousand milliliters",
+      "Six thousand milliliters",
+      "Six thousand liters"
+    ],
+    "correct_answer": "Six thousand milliliters",
+    "explanation": "Total lung capacity is the maximum volume of air that the lungs can hold after a maximum forced inspiration. In a healthy, average adult male, this volume is approximately six thousand milliliters, or six liters.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-455",
+    "question": "A community health nurse is conducting an educational session regarding tuberculosis. The nurse should explain that one of the earliest symptoms associated with tuberculosis is:",
+    "options": [
+      "Severe dyspnea on minimal exertion",
+      "Acute, localized chest pain",
+      "A bloody, productive cough",
+      "A chronic cough with the expectoration of mucoid sputum"
+    ],
+    "correct_answer": "A chronic cough with the expectoration of mucoid sputum",
+    "explanation": "In its early stages, pulmonary tuberculosis typically manifests as a persistent, non-productive or minimally productive cough that yields clear or mucoid sputum. Advanced symptoms such as dyspnea, chest pain, and hemoptysis, which is a bloody cough, develop as the disease progresses and causes parenchymal destruction.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-456",
+    "question": "Which of the following respiratory disorders is characterized by uncontrolled cellular division leading to the formation of malignant tumors?",
+    "options": [
+      "Severe pulmonary emphysema",
+      "Lung cancer",
+      "Bronchial inflammation",
+      "Infectious bronchiolitis"
+    ],
+    "correct_answer": "Lung cancer",
+    "explanation": "Lung cancer, or bronchogenic carcinoma, is a malignant neoplasm arising from the epithelial cells of the respiratory tract. It is characterized by rapid, unregulated cell division that forms tumors, which can invade adjacent tissues and metastasize.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-457",
+    "question": "When assessing a patient for tracheal displacement, the nurse should be aware that the trachea will typically deviate toward which of the following areas?",
+    "options": [
+      "The contralateral side in a simple pneumothorax",
+      "The affected side in a large hemothorax",
+      "The affected side in a severe tension pneumothorax",
+      "The contralateral side in a massive hemothorax"
+    ],
+    "correct_answer": "The contralateral side in a simple pneumothorax",
+    "explanation": "A pneumothorax increases pressure within the affected pleural space, which pushes the mediastinal structures, including the trachea, toward the opposite or contralateral side. In contrast, conditions that involve significant volume loss, such as atelectasis, pull the trachea toward the affected side.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-458",
+    "question": "The stylopharyngeus muscle, which elevates the larynx and pharynx during swallowing, is innervated by which of the following cranial nerves?",
+    "options": [
+      "Cranial nerve ten",
+      "Cranial nerve nine",
+      "Cranial nerve five",
+      "Cranial nerve seven"
+    ],
+    "correct_answer": "Cranial nerve nine",
+    "explanation": "The stylopharyngeus is the only muscle of the pharynx that is innervated by the glossopharyngeal nerve, which is cranial nerve nine. Most other pharyngeal muscles are innervated by the vagus nerve, which is cranial nerve ten.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-459",
+    "question": "A patient is admitted to a healthcare facility for treatment of an acute exacerbation of chronic obstructive pulmonary disease. Which of the following nursing diagnoses is the highest priority for this patient?",
+    "options": [
+      "Activity intolerance related to generalized fatigue",
+      "Anxiety related to the actual threat to health status",
+      "Risk for infection related to retained secretions",
+      "Impaired gas exchange related to airflow obstruction"
+    ],
+    "correct_answer": "Impaired gas exchange related to airflow obstruction",
+    "explanation": "For a patient experiencing an acute exacerbation of chronic obstructive pulmonary disease, maintaining adequate oxygenation and carbon dioxide elimination is the primary clinical goal. Impaired gas exchange directly threatens oxygenation of vital organs, making it the highest priority diagnosis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-460",
+    "question": "During expiration, decreased thoracic volume results in increased pressure inside the alveoli, causing air to move out of the lungs. Is this statement true or false?",
+    "options": [
+      "True",
+      "False",
+      "Partially true",
+      "Partially false"
+    ],
+    "correct_answer": "True",
+    "explanation": "According to Boyle's law, gas pressure is inversely proportional to volume. During expiration, the relaxation of respiratory muscles decreases thoracic volume, which raises intrapulmonary pressure above atmospheric pressure, pushing air out.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-461",
+    "question": "Under normal physiological conditions, the pressure within the pleural sac is best described as which of the following?",
+    "options": [
+      "Equal to atmospheric pressure",
+      "Greater than atmospheric pressure",
+      "Less than atmospheric pressure",
+      "Less than the pressure surrounding the lungs"
+    ],
+    "correct_answer": "Less than atmospheric pressure",
+    "explanation": "The intrapleural pressure is normally subatmospheric, or negative, measuring about minus four millimeters of mercury relative to atmospheric pressure. This negative pressure creates a suction effect that keeps the lungs inflated and prevents them from collapsing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-462",
+    "question": "When developing a postoperative care plan for a patient who has just undergone a total laryngectomy, the nurse should include which of the following interventions?",
+    "options": [
+      "Encouraging oral liquid feeding as soon as possible",
+      "Developing an alternative communication method",
+      "Keeping the tracheostomy cuff fully inflated at all times",
+      "Keeping the patient completely flat in bed"
+    ],
+    "correct_answer": "Developing an alternative communication method",
+    "explanation": "Because a total laryngectomy involves the complete removal of the larynx and vocal cords, the patient permanently loses the ability to speak. Establishing an alternative communication method, such as a picture board, writing tablet, or electronic device, is a critical early postoperative goal.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-463",
+    "question": "In clinical respiratory medicine, the term 'pink puffer' is traditionally associated with a patient suffering from which of the following conditions?",
+    "options": [
+      "Acute respiratory distress syndrome",
+      "Severe bronchial asthma",
+      "Chronic obstructive bronchitis",
+      "Pulmonary emphysema"
+    ],
+    "correct_answer": "Pulmonary emphysema",
+    "explanation": "Patients with emphysema are historically termed pink puffers because they tend to hyperventilate to maintain relatively normal blood oxygen levels, resulting in a pink or flushed complexion. In contrast, patients with chronic bronchitis are called blue bloaters due to profound cyanosis and fluid retention.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-464",
+    "question": "For a patient who presents with acute epistaxis, which of the following interventions is the most appropriate first-line nursing action?",
+    "options": [
+      "Encouraging warm saline throat gargles",
+      "Applying a warm compress or ice collar to the neck area",
+      "Compressing the soft outer nares against the septum for five to ten minutes",
+      "Performing several rapid abdominal thrust maneuvers"
+    ],
+    "correct_answer": "Compressing the soft outer nares against the septum for five to ten minutes",
+    "explanation": "Applying direct, continuous pressure by pinching the soft part of the nose against the nasal septum for five to ten minutes is the most effective first-line action to control anterior nosebleeds. The patient should also sit upright and lean slightly forward to prevent blood swallowing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-465",
+    "question": "The primary exchange of oxygen and carbon dioxide between the inhaled air and the bloodstream occurs in which of the following anatomical structures?",
+    "options": [
+      "The trachea",
+      "The pleural space",
+      "The bronchioles",
+      "The alveoli"
+    ],
+    "correct_answer": "The alveoli",
+    "explanation": "The alveoli are microscopic, thin-walled air sacs at the terminus of the bronchial tree. They are surrounded by a dense network of pulmonary capillaries, forming the respiratory membrane where gas exchange occurs via simple diffusion.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-466",
+    "question": "A patient has just returned to the nursing unit following a diagnostic bronchoscopy. Before offering the patient any oral fluids or food, the nurse must assess for which of the following?",
+    "options": [
+      "A baseline blood pressure reading",
+      "The pupillary light response",
+      "The return of the gag reflex",
+      "A normal radial pulse rate"
+    ],
+    "correct_answer": "The return of the gag reflex",
+    "explanation": "During a bronchoscopy, local anesthetics are sprayed onto the pharynx to suppress the gag reflex and ease instrument passage. The nurse must withhold all oral intake until the gag reflex has fully returned to prevent aspiration of fluids into the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-467",
+    "question": "The thin, highly delicate membrane that directly covers and adheres to the outer surface of the lungs is known as which of the following?",
+    "options": [
+      "The parietal pleura",
+      "The visceral pleura",
+      "The pleuracardium",
+      "The lobar bronchus"
+    ],
+    "correct_answer": "The visceral pleura",
+    "explanation": "The visceral pleura is the inner layer of the pleural membrane that directly covers the lungs, extending into the fissures between the lobes. The parietal pleura is the outer membrane that lines the inner chest wall and diaphragm.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-468",
+    "question": "Which of the following respiratory complications is most common during the first twenty-four to forty-eight hours following major abdominal surgery?",
+    "options": [
+      "Pulmonary atelectasis",
+      "Acute bronchitis",
+      "Bacterial pneumonia",
+      "A spontaneous pneumothorax"
+    ],
+    "correct_answer": "Pulmonary atelectasis",
+    "explanation": "Atelectasis, which is the collapse of alveoli, is the most common early postoperative respiratory complication. It is caused by shallow breathing, a lack of deep coughing, and diaphragmatic splinting due to abdominal pain or residual anesthesia effects.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-469",
+    "question": "The emergency pharmacological management of a patient experiencing status asthmaticus includes the administration of which of the following first-line agents?",
+    "options": [
+      "Inhaled beta-adrenergic bronchodilating agents",
+      "Inhaled corticosteroid anti-inflammatory agents",
+      "Intravenous beta-adrenergic bronchodilating agents",
+      "Oral corticosteroid anti-inflammatory agents"
+    ],
+    "correct_answer": "Inhaled beta-adrenergic bronchodilating agents",
+    "explanation": "Inhaled short-acting beta-adrenergic agonists, such as salbutamol, are the first-line emergency medications used to treat status asthmaticus. They act rapidly to relax airway smooth muscle and relieve severe bronchospasm, whereas corticosteroids take hours to reduce inflammation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-470",
+    "question": "In respiratory physiology, the volume of air inspired and expired during normal, quiet breathing is measured utilizing which of the following instruments?",
+    "options": [
+      "A spirometer",
+      "A stethoscope",
+      "A sphygmomanometer",
+      "A hydrometer"
+    ],
+    "correct_answer": "A spirometer",
+    "explanation": "A spirometer is a diagnostic device that measures the volume and flow rate of air during inhalation and exhalation. It is used in pulmonary function testing to evaluate lung capacity and assess for obstructive or restrictive patterns.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-471",
+    "question": "Following a left pneumonectomy, a patient has a chest tube in place. When providing nursing care, which of the following represents a critical standard for managing the chest drainage system?",
+    "options": [
+      "Regularly monitoring the water-seal chamber for normal fluid fluctuations",
+      "Clamping the chest tube once during each nursing shift",
+      "Encouraging frequent deep breathing and active coughing",
+      "Milking the chest tube every two hours to clear clots"
+    ],
+    "correct_answer": "Regularly monitoring the water-seal chamber for normal fluid fluctuations",
+    "explanation": "Monitoring the water-seal chamber for fluid fluctuations, or tidaling, is essential to confirm that the chest tube remains patent and is functioning correctly. Fluctuations normally stop when the lung is fully re-expanded or if the tube is obstructed.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-472",
+    "question": "What is the physiological term for the volume of air inspired or expired with each breath during quiet, resting respiration, which typically averages five hundred milliliters?",
+    "options": [
+      "Tidal volume",
+      "Inspiratory reserve volume",
+      "Expiratory reserve volume",
+      "Residual volume"
+    ],
+    "correct_answer": "Tidal volume",
+    "explanation": "Tidal volume represents the volume of air that moves into and out of the lungs during a single normal, quiet respiratory cycle. In a healthy adult, this baseline volume is approximately five hundred milliliters.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-473",
+    "question": "Which of the following clinical findings should a nurse expect to note on a chest x-ray for a patient suffering from an acute exacerbation of chronic obstructive pulmonary disease?",
+    "options": [
+      "Signs of pulmonary hypocapnia",
+      "A hyperinflated chest and flattened diaphragm",
+      "Significantly increased oxygen saturation",
+      "A widened diaphragm and collapsed lungs"
+    ],
+    "correct_answer": "A hyperinflated chest and flattened diaphragm",
+    "explanation": "Chronic airflow obstruction leads to air trapping and lung hyperinflation in patients with chronic obstructive pulmonary disease. On a chest x-ray, this manifests as hyperinflated lung fields, an increased anteroposterior diameter, and a flattened diaphragm.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-474",
+    "question": "An accurate and definitive clinical diagnosis of bacterial pneumonia is most commonly established utilizing which of the following diagnostics?",
+    "options": [
+      "Arterial blood gas analysis",
+      "A chest x-ray",
+      "Serial blood cultures",
+      "Sputum culture and sensitivity"
+    ],
+    "correct_answer": "A chest x-ray",
+    "explanation": "While sputum cultures help identify the causative pathogen, a chest x-ray is the primary diagnostic tool used to confirm the presence of pneumonia. The x-ray reveals characteristic pulmonary infiltrates or consolidation in the affected lung lobes.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-475",
+    "question": "Which of the following chronic obstructive pulmonary disorders is characterized by the progressive, irreversible destruction of alveolar walls?",
+    "options": [
+      "Extrinsic bronchial asthma",
+      "Pulmonary emphysema",
+      "Chronic obstructive bronchitis",
+      "Bacterial pneumonia"
+    ],
+    "correct_answer": "Pulmonary emphysema",
+    "explanation": "Emphysema is a disease marked by the destruction of the alveolar walls and the permanent enlargement of air spaces distal to the terminal bronchioles. This tissue destruction reduces elastic recoil and limits the surface area available for gas exchange.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-476",
+    "question": "A bronchial asthma attack that is directly triggered by an immunological hypersensitivity reaction to foreign environmental allergens is classified as which of the following?",
+    "options": [
+      "Cardiac asthma",
+      "Atopic asthma",
+      "Non-atopic asthma",
+      "Foreign allergies asthma"
+    ],
+    "correct_answer": "Atopic asthma",
+    "explanation": "Atopic or extrinsic asthma is mediated by an immunoglobulin E-type hypersensitivity reaction to inhaled allergens, such as pollen, dander, or dust mites. This stands in contrast to non-atopic or intrinsic asthma, which is triggered by factors like cold air, exercise, or infections.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-477",
+    "question": "What is the term for the volume of air passing into and out of the lungs during a single quiet respiratory cycle?",
+    "options": [
+      "Tidal volume",
+      "Residual volume",
+      "Vital capacity",
+      "Inspiratory reserve volume"
+    ],
+    "correct_answer": "Tidal volume",
+    "explanation": "Tidal volume is the amount of air inhaled or exhaled during a normal, quiet breath without extra effort. In a healthy adult at rest, this volume is approximately five hundred milliliters.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-478",
+    "question": "When assessing a patient's respiratory status, which of the following observations most clearly indicates that the patient is experiencing significant difficulty in breathing?",
+    "options": [
+      "Active diaphragmatic breathing",
+      "The use of accessory muscles during inspiration",
+      "Controlled pursed-lip breathing",
+      "Slow, controlled breathing"
+    ],
+    "correct_answer": "The use of accessory muscles during inspiration",
+    "explanation": "Using accessory muscles, such as the scalene, sternocleidomastoid, and intercostal muscles, indicates that the work of breathing is significantly increased. This physical sign is a classic indicator of respiratory distress or airway obstruction.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-479",
+    "question": "Which of the following represents the most common and potentially life-threatening postoperative complication following a pediatric tonsillectomy?",
+    "options": [
+      "Accidental injury to the uvula",
+      "Systemic sepsis",
+      "Postoperative hemorrhage",
+      "Persistent central apnea"
+    ],
+    "correct_answer": "Postoperative hemorrhage",
+    "explanation": "Hemorrhage is the most common and dangerous complication following a tonsillectomy. It can occur immediately after surgery or up to ten days later when the surgical crusts detach, requiring close monitoring for frequent swallowing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-480",
+    "question": "Which of the following statements best describes the pathophysiological nature of bacterial pneumonia?",
+    "options": [
+      "A widespread collapse of alveoli due to inadequate surfactant levels",
+      "An acute inflammation of the lung parenchyma",
+      "Ischemia of lung tissue due to blockage of a bronchial artery",
+      "The occlusion of a terminal bronchiole with non-inflammatory fluid"
+    ],
+    "correct_answer": "An acute inflammation of the lung parenchyma",
+    "explanation": "Pneumonia is an acute infectious inflammation of the lung parenchyma, which includes the alveoli, alveolar ducts, and interstitial spaces. It leads to alveolar consolidation as the air spaces fill with exudate, inflammatory cells, and fibrin.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-481",
+    "question": "Regarding the paranasal sinuses, which of the following statements is NOT scientifically true?",
+    "options": [
+      "They act to significantly increase the overall weight of the skull",
+      "They function as resonating chambers for voice production",
+      "They contribute directly to the timber of the voice",
+      "They protect the nasal cavity by producing moist mucus"
+    ],
+    "correct_answer": "They act to significantly increase the overall weight of the skull",
+    "explanation": "The paranasal sinuses are air-filled cavities within the bones of the skull. Because they are filled with air rather than solid bone, they function to decrease, rather than increase, the overall weight of the skull.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-482",
+    "question": "The pleural membrane that directly covers and adheres to the outer surface of the lungs is designated as which of the following?",
+    "options": [
+      "The pleural cavity",
+      "The pleural fluid",
+      "The visceral pleura",
+      "The parietal pleura"
+    ],
+    "correct_answer": "The visceral pleura",
+    "explanation": "The pleural cavity is lined by a double-layered membrane. The visceral pleura is the inner layer that closely wraps and adheres to the lung parenchyma, while the parietal pleura is the outer layer that lines the inner thoracic wall.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-483",
+    "question": "As inhaled air travels down the respiratory tract, the bronchi progressively subdivide and finally terminate in which of the following structures?",
+    "options": [
+      "The terminal alveoli",
+      "The alveolar dust cells",
+      "The germinal bronchioles",
+      "The respiratory bronchioles"
+    ],
+    "correct_answer": "The respiratory bronchioles",
+    "explanation": "The airway branches from the primary bronchi down through secondary and tertiary bronchi, into terminal bronchioles, and finally terminates in the respiratory bronchioles. The respiratory bronchioles then connect directly to the alveolar ducts and alveolar sacs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-484",
+    "question": "The lymphatic drainage of the palatine tonsils is primarily directed to which of the following regional lymph node groups?",
+    "options": [
+      "The prelaryngeal lymph nodes",
+      "The submental lymph nodes",
+      "The juguloomohyoid lymph nodes",
+      "The jugulodigastric lymph nodes"
+    ],
+    "correct_answer": "The jugulodigastric lymph nodes",
+    "explanation": "The palatine tonsils drain primarily into the jugulodigastric lymph nodes, which are located near the angle of the mandible. These nodes are often enlarged and tender during episodes of acute tonsillitis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-485",
+    "question": "To deliver a highly precise and controlled concentration of oxygen to a patient, the nurse should expect the physician to prescribe which of the following delivery systems?",
+    "options": [
+      "A simple face tent",
+      "A Venturi mask",
+      "An aerosol face mask",
+      "A tracheostomy collar"
+    ],
+    "correct_answer": "A Venturi mask",
+    "explanation": "The Venturi mask is the most accurate device for delivering a precise, pre-determined concentration of oxygen. It utilizes a narrowing tube to draw in a specific ratio of room air, making it ideal for patients with chronic obstructive pulmonary disease.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-486",
+    "question": "Physiologically, carbon dioxide dissolved in the blood acts on the central nervous system primarily as which of the following?",
+    "options": [
+      "A potent respiratory stimulant",
+      "A direct bronchodilator",
+      "A peripheral vasodilator",
+      "A central respiratory depressant"
+    ],
+    "correct_answer": "A potent respiratory stimulant",
+    "explanation": "Carbon dioxide is the primary chemical driver of respiration. Elevated carbon dioxide levels lower blood pH, which stimulates central chemoreceptors in the medulla to increase the rate and depth of breathing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-487",
+    "question": "Which of the following bacterial pathogens is recognized as the most common causative agent of acute tonsillitis in pediatric patients?",
+    "options": [
+      "Staphylococcus species",
+      "Streptococcus species",
+      "Treponema species",
+      "Haemophilus species"
+    ],
+    "correct_answer": "Streptococcus species",
+    "explanation": "Group A beta-hemolytic Streptococcus, particularly Streptococcus pyogenes, is the most common bacterial cause of acute tonsillitis and pharyngitis in children. Viral pathogens are also frequent causes, but Streptococcus is the primary bacterial agent.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-488",
+    "question": "Which of the following physical assessment findings would most strongly confirm a diagnosis of bronchial asthma in a patient presenting with respiratory distress?",
+    "options": [
+      "Persistent circumoral cyanosis",
+      "An increased forced expiratory volume",
+      "Inspiratory and expiratory wheezing on auscultation",
+      "Vesicular, normal breath sounds"
+    ],
+    "correct_answer": "Inspiratory and expiratory wheezing on auscultation",
+    "explanation": "Wheezing is a high-pitched, whistling sound produced by air flowing through narrowed airways. Hearing wheezes during both inspiration and expiration is a classic clinical indicator of the bronchospasm and airway inflammation characteristic of asthma.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-489",
+    "question": "Anatomically, the glottis, which is the opening between the vocal cords, opens directly on the floor of which of the following cavities?",
+    "options": [
+      "The pharyngeal cavity",
+      "The thoracic diaphragm",
+      "The tracheal lumen",
+      "The laryngeal vestibule"
+    ],
+    "correct_answer": "The pharyngeal cavity",
+    "explanation": "The glottis is the voice apparatus of the larynx, consisting of the vocal cords and the opening between them. This opening is positioned at the base of the pharynx, which is the shared throat passage for air and food.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-490",
+    "question": "A patient is prescribed streptomycin as part of a multi-drug regimen for tuberculosis. Before beginning therapy, the nurse should instruct the patient to notify the physician immediately if which of the following symptoms occurs?",
+    "options": [
+      "Impaired color discrimination",
+      "Increased urinary frequency",
+      "Decreased hearing acuity",
+      "An increased appetite"
+    ],
+    "correct_answer": "Decreased hearing acuity",
+    "explanation": "Streptomycin is an aminoglycoside antibiotic that can cause significant ototoxicity, damaging the eighth cranial nerve. This damage can lead to permanent hearing loss or vestibular dysfunction, making any change in hearing a critical safety concern.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-491",
+    "question": "Which of the following obstructive lung disorders is characterized by a loss of lung elasticity due to the destruction of elastic fibers, leading to alveolar collapse during expiration?",
+    "options": [
+      "Extrinsic asthma",
+      "Chronic bronchitis",
+      "Pulmonary emphysema",
+      "Active tuberculosis"
+    ],
+    "correct_answer": "Pulmonary emphysema",
+    "explanation": "Emphysema involves the destruction of elastic fibers and alveolar walls, reducing the lung's elastic recoil. This loss of structural support causes the small airways to collapse during expiration, leading to air trapping and hyperinflation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-492",
+    "question": "All of the following diagnostic investigations are commonly performed to evaluate respiratory tract disorders EXCEPT which of the following?",
+    "options": [
+      "An intravenous pyelogram",
+      "An endoscopic bronchoscopy",
+      "Microbiological sputum cultures",
+      "Pulmonary imaging studies"
+    ],
+    "correct_answer": "An intravenous pyelogram",
+    "explanation": "An intravenous pyelogram is an imaging test that uses contrast dye to evaluate the kidneys, ureters, and bladder. It has no clinical utility in assessing or diagnosing respiratory system disorders.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-493",
+    "question": "Which of the following statements represents a scientifically true description of the process of internal respiration?",
+    "options": [
+      "The metabolic production of adenosine triphosphate inside cells",
+      "The exchange of gases between systemic blood and tissue cells",
+      "The exchange of gases between alveoli and the bloodstream",
+      "The mechanical flow of air between the atmosphere and the alveoli"
+    ],
+    "correct_answer": "The exchange of gases between systemic blood and tissue cells",
+    "explanation": "Internal respiration is the physiological exchange of oxygen and carbon dioxide between the systemic capillaries and the surrounding body cells. External respiration is the gas exchange that occurs in the lungs between the alveoli and capillaries.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-494",
+    "question": "In the human respiratory tract, the physical exchange of gases occurs primarily within which of the following structures?",
+    "options": [
+      "The terminal bronchioles",
+      "The microscopic alveolar sinuses",
+      "The alveolar sacs",
+      "The segmental bronchi"
+    ],
+    "correct_answer": "The alveolar sacs",
+    "explanation": "The alveolar sacs contain clusters of individual alveoli where the bulk of gas exchange takes place. The extremely thin walls of the alveoli and their close contact with capillary walls allow gases to diffuse rapidly.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-495",
+    "question": "Which of the following physiological shifts would cause an increase in the amount of oxygen discharged or unloaded by hemoglobin to the peripheral body tissues?",
+    "options": [
+      "A decrease in local body temperature",
+      "A decrease in local blood pH",
+      "An increase in local tissue oxygen partial pressure",
+      "A decrease in blood diphosphoglycerate levels"
+    ],
+    "correct_answer": "A decrease in local blood pH",
+    "explanation": "A decrease in pH, which is an increase in acidity, shifts the oxygen-hemoglobin dissociation curve to the right, which is known as the Bohr effect. This rightward shift decreases hemoglobin's affinity for oxygen, promoting oxygen unloading to active, metabolizing tissues.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-496",
+    "question": "The prominent, scroll-like bony ridges located on the lateral walls of the nasal cavity that serve to increase mucosal surface area are known as which of the following?",
+    "options": [
+      "The choanae",
+      "The nasal septa",
+      "The hard palate",
+      "The conchae"
+    ],
+    "correct_answer": "The conchae",
+    "explanation": "The nasal conchae, or turbinates, are three pairs of bony ridges that project from the lateral walls of the nasal cavity. They increase surface area and create turbulence in the airflow, helping to warm, humidify, and filter inhaled air.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-497",
+    "question": "When performing a comprehensive physical auscultation of a patient's lungs, the nurse should utilize which of the following stethoscope components?",
+    "options": [
+      "The flat diaphragm exclusively",
+      "The hollow bell exclusively",
+      "Both the diaphragm and the bell",
+      "Whichever component the nurse prefers"
+    ],
+    "correct_answer": "Both the diaphragm and the bell",
+    "explanation": "The diaphragm of a stethoscope is designed to pick up high-pitched sounds, such as normal vesicular breath sounds, while the bell is suited for low-pitched sounds, such as certain murmurs or pleural friction rubs. Using both ensures a comprehensive assessment.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-498",
+    "question": "A patient is diagnosed with streptococcal pharyngitis, commonly known as strep throat. Which of the following clinical findings would the nurse expect to note upon assessment?",
+    "options": [
+      "A weak, hacking cough and high-pitched stridor",
+      "Foul-smelling breath and loud, noisy respirations",
+      "Severe pain over the sinuses and purulent nasal drainage",
+      "A fiery red pharyngeal membrane and a high fever"
+    ],
+    "correct_answer": "A fiery red pharyngeal membrane and a high fever",
+    "explanation": "Acute streptococcal pharyngitis presents with a sudden onset of a high fever, severe throat pain, and a highly erythematous pharyngeal membrane with or without purulent tonsillar exudates. Cough and nasal congestion are typically absent.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-499",
+    "question": "Which of the following organs or chambers in the upper respiratory tract serves as the primary 'air conditioner' by warming, moistening, and filtering inhaled air?",
+    "options": [
+      "The larynx",
+      "The pharynx",
+      "The nasal chambers",
+      "All of these organs"
+    ],
+    "correct_answer": "The nasal chambers",
+    "explanation": "The nasal chambers are lined with a highly vascular, ciliated mucous membrane. As air passes through, it is warmed by the superficial capillaries, moistened by mucous secretions, and filtered by the entrapment of dust particles in the mucus and cilia.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-500",
+    "question": "Diagnostic evaluation for tuberculosis includes which of the following procedures?",
+    "options": [
+      "Chest X ray",
+      "Tissue Biopsy",
+      "Acid fast bacillus test",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "A comprehensive diagnostic evaluation for tuberculosis includes a combination of chest x-rays to identify pulmonary lesions, acid-fast bacillus sputum tests to detect the Mycobacterium tuberculosis bacterium, and tissue biopsies when extrapulmonary infection is suspected. Together, these tests provide a definitive clinical picture.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-501",
+    "question": "The pleura is best described by which of the following?",
+    "options": [
+      "Smooth, moist membrane that lines the chest cavity and covers the outer surface of the lung",
+      "Lower part of the lung",
+      "Muscle most important in respiration",
+      "Main branch of the bronchial tree"
+    ],
+    "correct_answer": "Smooth, moist membrane that lines the chest cavity and covers the outer surface of the lung",
+    "explanation": "The pleura consists of a double-layered serous membrane structure where the outer parietal layer lines the thoracic cavity and the inner visceral layer directly covers the lungs. This smooth, moist membrane maintains a thin fluid film to reduce friction during ventilation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-502",
+    "question": "Which of the following viruses are implicated in the etiology of acute tonsillitis?",
+    "options": [
+      "Herpes simplex virus",
+      "Adenovirus",
+      "Epstein Bar virus",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Acute tonsillitis is commonly viral in origin, with herpes simplex virus, adenoviruses, and the Epstein-Barr virus representing frequent causative agents. These pathogens invade the mucosal epithelial cells of the tonsils, triggering localized inflammation and swelling.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-503",
+    "question": "An emergency room nurse is assessing a male client who has sustained a blunt injury to the chest wall. Which of these signs would indicate the presence of a pneumothorax in this client?",
+    "options": [
+      "A low respiratory rate",
+      "Diminished breath sounds",
+      "The presence of a barrel chest",
+      "A sucking sound at the site of injury"
+    ],
+    "correct_answer": "Diminished breath sounds",
+    "explanation": "A pneumothorax involves the accumulation of air in the pleural space, which collapses the lung on the affected side and prevents normal expansion. During chest auscultation, this collapse results in significantly diminished or completely absent breath sounds.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-504",
+    "question": "The right lung possesses how many lobes and bronchopulmonary segments?",
+    "options": [
+      "Two lobes and nine segments",
+      "Two lobes and ten segments",
+      "Three lobes and nine segments",
+      "Three lobes and ten segments"
+    ],
+    "correct_answer": "Three lobes and ten segments",
+    "explanation": "Anatomically, the right lung is divided into three distinct lobes (superior, middle, and inferior) and contains ten bronchopulmonary segments. This structural compartmentalization helps localize pulmonary disease and prevents infection from spreading easily.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-505",
+    "question": "Nurse Richard is caring for a client immediately after removal of the endotracheal tube. The nurse reports which of the following signs immediately if experienced by the client?",
+    "options": [
+      "Stridor",
+      "Occasional pink-tinged sputum",
+      "A few basilar lung crackles on the right",
+      "Respiratory rate twenty-four breaths per minute"
+    ],
+    "correct_answer": "Stridor",
+    "explanation": "Laryngeal edema or vocal cord spasm can occur immediately after extubation, leading to a high-pitched inspiratory sound known as stridor. This represents an acute upper airway obstruction and is a life-threatening medical emergency requiring immediate notification of the physician.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-506",
+    "question": "Which of the following is the normal percussion sound obtained during examination of healthy lungs?",
+    "options": [
+      "Dull",
+      "Resonant",
+      "Flat",
+      "Tympany"
+    ],
+    "correct_answer": "Resonant",
+    "explanation": "Percussion over normal, air-filled lung tissue produces a clear, low-pitched, hollow sound classified as resonance. Dull or flat sounds typically suggest the presence of fluid or solid mass, while tympany indicates excessive air or gas.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-507",
+    "question": "Which assessment finding in a client with chronic obstructive pulmonary disease indicates to the nurse that the respiratory problem is chronic?",
+    "options": [
+      "Wheezing on exhalation",
+      "Productive cough",
+      "Clubbing of fingers",
+      "Generalized cyanosis"
+    ],
+    "correct_answer": "Clubbing of fingers",
+    "explanation": "Clubbing of the fingers is a classic clinical manifestation of chronic hypoxemia, where long-standing oxygen deprivation triggers vascular hyperplasia in the nail beds. This changes the angle of the nail and is typically seen in advanced chronic obstructive pulmonary disease.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-508",
+    "question": "The normal breathing process is controlled by which of the following groups of neurons?",
+    "options": [
+      "Lungs",
+      "Ventral respiratory group",
+      "Dorsal respiratory group",
+      "Both ventral and dorsal respiratory groups"
+    ],
+    "correct_answer": "Both ventral and dorsal respiratory groups",
+    "explanation": "Involuntary breathing is controlled by respiratory centers in the brainstem, specifically the dorsal respiratory group and the ventral respiratory group located in the medulla oblongata. The dorsal group coordinates the basic rhythm, while the ventral group is active during forced respiration.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-509",
+    "question": "A section of the lung that receives its own tertiary bronchus is called a:",
+    "options": [
+      "Interpulmonary segment",
+      "Bronchopulmonary segment",
+      "Respiratory segment",
+      "Pulmonary lobule"
+    ],
+    "correct_answer": "Bronchopulmonary segment",
+    "explanation": "A bronchopulmonary segment is the largest anatomical division of a lung lobe, served by its own tertiary segmental bronchus, artery, and vein. Because it is physically isolated from adjacent segments by connective tissue, it can be surgically resected without affecting surrounding tissue.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-510",
+    "question": "An eight-year-old girl is returned to her room following a tonsillectomy. She remains sleepy from the anesthesia but is easily awakened. The nurse should place the child in which of the following positions?",
+    "options": [
+      "Prone",
+      "Supine",
+      "Side-lying",
+      "Sims position"
+    ],
+    "correct_answer": "Side-lying",
+    "explanation": "Following a tonsillectomy, a semi-conscious pediatric patient should be placed in a side-lying or prone position to facilitate the drainage of oral secretions and blood out of the mouth. This simple positioning prevents aspiration and maintains airway patency.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-511",
+    "question": "Most of the carbon dioxide in the blood is transported in which of the following forms?",
+    "options": [
+      "Solute dissolved in the plasma",
+      "Carbaminohemoglobin",
+      "Bicarbonate ions",
+      "Solute dissolved in the cytoplasm of red blood cells"
+    ],
+    "correct_answer": "Bicarbonate ions",
+    "explanation": "Approximately seventy percent of metabolic carbon dioxide is transported in the blood as bicarbonate ions. Carbon dioxide diffuses into red blood cells, where the enzyme carbonic anhydrase converts it into carbonic acid, which then dissociates into bicarbonate and hydrogen ions.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-512",
+    "question": "Which finding is the best indication that a client with ineffective airway clearance needs suctioning?",
+    "options": [
+      "Oxygen saturation",
+      "Respiratory rate",
+      "Breath sounds",
+      "Arterial blood gases"
+    ],
+    "correct_answer": "Breath sounds",
+    "explanation": "Auscultating adventitious breath sounds, such as gurgling, coarse crackles, or rhonchi over the major airways, is the most direct clinical indicator of retained secretions. While oxygen saturation and respiratory rate can be affected by many factors, abnormal breath sounds confirm the localized presence of mucus.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-513",
+    "question": "Treatment of moderate viral croup, also known as laryngotracheitis, includes all the following interventions EXCEPT:",
+    "options": [
+      "Dexamethasone zero point six milligrams per kilogram",
+      "Cold humidified air",
+      "Amoxicillin forty milligrams per kilogram per day",
+      "Nebulized racemic epinephrine"
+    ],
+    "correct_answer": "Amoxicillin forty milligrams per kilogram per day",
+    "explanation": "Croup is an acute upper respiratory infection typically caused by parainfluenza viruses, making antibacterial drugs like amoxicillin completely ineffective. Standard treatment focuses on corticosteroids to reduce laryngeal swelling and nebulized epinephrine to ease breathing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-514",
+    "question": "A client with primary tuberculosis infection can expect to develop which of the following conditions?",
+    "options": [
+      "Active tuberculosis within two weeks",
+      "Active tuberculosis within one month",
+      "A fever that requires hospitalization",
+      "A positive skin test"
+    ],
+    "correct_answer": "A positive skin test",
+    "explanation": "Most individuals exposed to Mycobacterium tuberculosis develop a cell-mediated immune response that walls off the bacterium inside a granuloma, resulting in a latent infection. Because of this persistent immunological memory, the patient will exhibit a positive tuberculin skin test.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-515",
+    "question": "Which of the following structures separates the lung into distinct lobes?",
+    "options": [
+      "Pleura",
+      "Fissure",
+      "Mediastinum",
+      "Root of the lung"
+    ],
+    "correct_answer": "Fissure",
+    "explanation": "Fissures are deep anatomical grooves lined by visceral pleura that divide the lung parenchyma into distinct lobes. The oblique fissure is found in both lungs, while the horizontal fissure is unique to the right lung.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-516",
+    "question": "To correctly assess the oxygen saturation level of an adult client, the pulse oximeter should not be placed on which of the following locations?",
+    "options": [
+      "Finger",
+      "Earlobe",
+      "An extremity with a non-invasive blood pressure cuff",
+      "Nose"
+    ],
+    "correct_answer": "An extremity with a non-invasive blood pressure cuff",
+    "explanation": "A pulse oximeter relies on arterial blood flow to calculate oxygen saturation. Placing the sensor on an extremity with a non-invasive blood pressure cuff will cause false low readings or sensor errors whenever the cuff inflates and occludes arterial flow.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-517",
+    "question": "Which of the following phrases is used to describe the volume of air inspired and expired with a normal, quiet breath?",
+    "options": [
+      "Total lung capacity",
+      "Forced vital capacity",
+      "Tidal volume",
+      "Residual volume"
+    ],
+    "correct_answer": "Tidal volume",
+    "explanation": "Tidal volume represents the amount of air displaced during normal, quiet inhalation and exhalation without extra effort. In a healthy adult individual, this volume is approximately five hundred milliliters.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-518",
+    "question": "A left-lower lobectomy is performed on a client with lung cancer. The nurse should expect postoperative care to include which of the following?",
+    "options": [
+      "A closed chest drainage system",
+      "Bed rest for forty-eight hours",
+      "Positioning supine or right-side lying",
+      "Chest physiotherapy"
+    ],
+    "correct_answer": "A closed chest drainage system",
+    "explanation": "Following a lobectomy, a closed chest drainage system with chest tubes is required to re-establish negative intrapleural pressure, drain postoperative blood and pleural fluid, and allow the remaining lung tissue to expand fully. It is a critical nursing priority to monitor this drainage system.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-519",
+    "question": "The windpipe is anatomically referred to as which of the following?",
+    "options": [
+      "Larynx",
+      "Lungs",
+      "Trachea",
+      "Oesophagus"
+    ],
+    "correct_answer": "Trachea",
+    "explanation": "The trachea, commonly known as the windpipe, is a rigid cartilaginous tube that extends from the larynx and bifurcates into the primary bronchi. It functions primarily as a protected passageway for air entering and leaving the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-520",
+    "question": "The adult human trachea is approximately what size in diameter and contains how many tracheal cartilages?",
+    "options": [
+      "One point zero centimeter in diameter and fifteen to twenty cartilages",
+      "One point zero centimeter in diameter and ten to fifteen cartilages",
+      "Two point five centimeters in diameter and fifteen to twenty cartilages",
+      "Two point five centimeters in diameter and forty to fifty cartilages"
+    ],
+    "correct_answer": "Two point five centimeters in diameter and fifteen to twenty cartilages",
+    "explanation": "Anatomically, the adult human trachea is approximately two point five centimeters in diameter and is supported by fifteen to twenty C-shaped cartilaginous rings. These cartilaginous rings prevent the tracheal airway from collapsing during changes in intrathoracic pressure.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-521",
+    "question": "When the diaphragm contracts during inhalation, it performs which of the following actions?",
+    "options": [
+      "Pushes downward and inward, causing the lungs to deflate and expel air",
+      "Causes the intercostal muscles to relax and expand the chest wall",
+      "Pushes upward against the lungs and causes them to deflate",
+      "Flattens out, allowing the lungs to expand and fill with air"
+    ],
+    "correct_answer": "Flattens out, allowing the lungs to expand and fill with air",
+    "explanation": "Contraction of the diaphragm causes it to flatten out and move downward, expanding the vertical volume of the thoracic cavity. This volume expansion lowers the intrapleural pressure, drawing air into the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-522",
+    "question": "Which of the following is NOT typically a clinical manifestation of laryngeal cancer?",
+    "options": [
+      "Fever",
+      "Dyspnea",
+      "Dysphagia",
+      "Hoarseness"
+    ],
+    "correct_answer": "Fever",
+    "explanation": "Laryngeal cancer commonly manifests as hoarseness, progressive dyspnea, and dysphagia as the tumor compromises the vocal cords and surrounding tissues. A fever, however, is a systemic sign of infection or inflammation and is not a typical sign of localized laryngeal cancer.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-523",
+    "question": "The normal rate and depth of breathing is established by which of the following centers in the brain?",
+    "options": [
+      "Ventral respiratory group",
+      "Pneumotaxic center",
+      "Apneustic center",
+      "Expiratory center"
+    ],
+    "correct_answer": "Ventral respiratory group",
+    "explanation": "The ventral respiratory group, located in the medulla oblongata, contains pacemaking neurons that generate the fundamental rhythm of quiet breathing and coordinate active respiration during exercise. The pneumotaxic and apneustic centers are located in the pons and function to modulate this rhythm.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-524",
+    "question": "Symptoms and signs of acute sinusitis include all the following clinical findings EXCEPT:",
+    "options": [
+      "Maxillary toothache",
+      "Facial fullness",
+      "Purulent nasal secretions",
+      "Epistaxis"
+    ],
+    "correct_answer": "Epistaxis",
+    "explanation": "Acute sinusitis is characterized by mucosal inflammation of the paranasal sinuses, presenting with facial fullness, purulent nasal discharge, and referred pain such as a maxillary toothache. Epistaxis, or nosebleeds, is caused by direct vascular rupture in the nasal septum and is not a typical sign of sinusitis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-525",
+    "question": "Which of the following descriptions regarding the larynx is anatomically CORRECT?",
+    "options": [
+      "The most inferior cartilage in the larynx is the epiglottis",
+      "Unlike the other cartilages of the larynx, the epiglottis consists of hyaline cartilage",
+      "The larynx contains four unpaired cartilages",
+      "When the vestibular folds come together, they prevent air from leaving the lungs"
+    ],
+    "correct_answer": "When the vestibular folds come together, they prevent air from leaving the lungs",
+    "explanation": "The vestibular folds, also known as the false vocal cords, can adduct and seal the laryngeal airway during activities like the Valsalva maneuver or coughing, trapping air in the lower respiratory tract. The most inferior laryngeal cartilage is the cricoid, and the epiglottis is made of elastic cartilage.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-526",
+    "question": "The right and left bronchus, along with the pulmonary artery and vein, enter into the lung tissue at which of the following sites?",
+    "options": [
+      "Hilum",
+      "Carina",
+      "Alveolar ducts",
+      "Right middle lobe"
+    ],
+    "correct_answer": "Hilum",
+    "explanation": "The hilum is a triangular depression located on the medial surface of each lung, serving as the entry and exit point for primary bronchi, pulmonary arteries, pulmonary veins, lymphatic vessels, and nerves. These structures are collectively referred to as the root of the lung.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-527",
+    "question": "Which of the following signs or symptoms will alert a nurse to a potentially life-threatening complication in a patient with chronic sinusitis?",
+    "options": [
+      "Purulent sputum",
+      "Nuchal rigidity",
+      "Intermittent loss of muscle control",
+      "Muscle weakness"
+    ],
+    "correct_answer": "Nuchal rigidity",
+    "explanation": "Because the paranasal sinuses are located close to the cranial vault, severe untreated infections can spread directly to the central nervous system. The development of nuchal rigidity, or neck stiffness, is a classic warning sign of bacterial meningitis, which is a life-threatening complication.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-528",
+    "question": "The volume of air represented by vital capacity in a healthy adult male of average height is approximately which of the following?",
+    "options": [
+      "Three thousand milliliters",
+      "Four thousand milliliters",
+      "Four thousand seven hundred milliliters",
+      "Eight thousand milliliters"
+    ],
+    "correct_answer": "Four thousand seven hundred milliliters",
+    "explanation": "Vital capacity is the maximum volume of air an individual can expel from the lungs after a maximum inhalation. In a healthy adult male of average height and weight, this volume is approximately forty-seven hundred milliliters.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-529",
+    "question": "A male patient has a sucking stab wound to the chest. Which action should the nurse take first?",
+    "options": [
+      "Drawing blood for a hematocrit and hemoglobin level",
+      "Applying a sterile dressing over the wound and taping it on three sides",
+      "Preparing a chest tube insertion tray",
+      "Preparing to start an intravenous line"
+    ],
+    "correct_answer": "Applying a sterile dressing over the wound and taping it on three sides",
+    "explanation": "A sucking chest wound allows atmospheric air to enter the pleural space, collapsing the lung and potentially causing a life-threatening tension pneumothorax. Applying a sterile, occlusive dressing taped on three sides acts as a one-way valve, allowing trapped air to escape during exhalation while preventing outside air from entering.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-530",
+    "question": "Which of the following structures prevents the physical collapse of the trachea?",
+    "options": [
+      "Jugular foramen",
+      "Cartilaginous rings",
+      "Diaphragm",
+      "None of the above"
+    ],
+    "correct_answer": "Cartilaginous rings",
+    "explanation": "The trachea contains sixteen to twenty C-shaped cartilaginous rings composed of hyaline cartilage. These rings provide the rigid structural support needed to keep the airway open during changes in intrathoracic pressure.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-531",
+    "question": "A nurse understands that the excessive use of oral antacids containing bicarbonate can result in which of the following acid-base disturbances?",
+    "options": [
+      "Respiratory alkalosis",
+      "Respiratory acidosis",
+      "Metabolic acidosis",
+      "Metabolic alkalosis"
+    ],
+    "correct_answer": "Metabolic alkalosis",
+    "explanation": "Antacids containing sodium bicarbonate are basic alkaline compounds. Excessive intake leads to an accumulation of bicarbonate ions in the extracellular fluid, raising the blood pH and causing metabolic alkalosis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-532",
+    "question": "What is the approximate percentage of oxygen in normal atmospheric air?",
+    "options": [
+      "Eighteen percent",
+      "Twenty percent",
+      "Twenty-one percent",
+      "Twenty-three percent"
+    ],
+    "correct_answer": "Twenty-one percent",
+    "explanation": "Atmospheric air is composed primarily of nitrogen (approximately seventy-eight percent) and oxygen (approximately twenty-one percent), with trace amounts of other gases like argon and carbon dioxide. This oxygen concentration is essential for sustaining aerobic life.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-533",
+    "question": "When you inhale, your lungs expand easily because healthy lung tissues possess which of the following characteristics?",
+    "options": [
+      "Low compliance",
+      "High compliance",
+      "Low elasticity",
+      "High elasticity"
+    ],
+    "correct_answer": "High compliance",
+    "explanation": "Lung compliance refers to the ease with which the lungs expand under pressure. Healthy lungs have high compliance because of elastic fibers and pulmonary surfactant, which minimizes surface tension in the alveoli, allowing them to expand easily during inhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-534",
+    "question": "Which of the following is NOT a true physical or structural characteristic of a typical rib?",
+    "options": [
+      "The medial facet of the tubercle faces backwards",
+      "The angle represents the most posterior point of the rib",
+      "The necks of the ribs are all of equal length",
+      "There are three distinct costotransverse ligaments stabilizing the joints"
+    ],
+    "correct_answer": "The necks of the ribs are all of equal length",
+    "explanation": "Typical ribs have a head, neck, tubercle, and body, with costotransverse ligaments stabilizing their joints. However, the necks of ribs are not of equal length, as they vary progressively down the thoracic cage to accommodate the shape of the chest cavity.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-535",
+    "question": "The practice of using pursed lips during exhalation is primarily intended to perform which of the following actions?",
+    "options": [
+      "Prolong exhalation",
+      "Slow down respiration",
+      "Widen the airways",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "Pursed-lip breathing creates a small back-pressure in the airways during exhalation, preventing early bronchial collapse and keeping airways open. This prolongs exhalation, slows the respiratory rate, and improves alveolar gas exchange.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-536",
+    "question": "A clinical diagnosis of pneumonia is typically confirmed through the results of which of the following tests?",
+    "options": [
+      "Arterial blood gas analysis",
+      "Chest X ray",
+      "Blood culture",
+      "Sputum culture and sensitivity"
+    ],
+    "correct_answer": "Chest X ray",
+    "explanation": "While sputum culture and blood gases provide valuable clinical detail, a chest x-ray is the primary diagnostic test used to confirm pneumonia. It reveals localized consolidation, pulmonary infiltrates, or fluid within the lung lobes.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-537",
+    "question": "The respiratory disease known as bronchiectasis is clinically characterized by which of the following?",
+    "options": [
+      "Bronchoconstriction and acute mucosal edema",
+      "Severe hypersensitivity of the small bronchioles",
+      "Chronic abnormal dilation of the bronchi",
+      "Rupture of the bronchi secondary to advanced fibrosis"
+    ],
+    "correct_answer": "Chronic abnormal dilation of the bronchi",
+    "explanation": "Bronchiectasis is a chronic respiratory condition characterized by the permanent, abnormal dilation of the bronchi and bronchioles. This is caused by recurrent infection and inflammation that destroys the muscular and elastic support of the airway walls.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-538",
+    "question": "The common passageway shared by both the respiratory and digestive systems is the:",
+    "options": [
+      "Larynx",
+      "Glottis",
+      "Vestibule",
+      "Pharynx"
+    ],
+    "correct_answer": "Pharynx",
+    "explanation": "The pharynx functions as a shared pathway for both the respiratory and digestive systems, allowing the passage of both inhaled air and swallowed food or liquids. Food is routed to the esophagus, while air enters the larynx.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-539",
+    "question": "The term used to describe thoracic surgery in which an entire lung is removed is called a:",
+    "options": [
+      "Lobectomy",
+      "Pneumonectomy",
+      "Segmentectomy",
+      "Wedge resection"
+    ],
+    "correct_answer": "Pneumonectomy",
+    "explanation": "A pneumonectomy is the surgical removal of an entire lung, typically performed to treat advanced lung cancer. A lobectomy involves removing a single lobe, while a segmentectomy removes a specific bronchopulmonary segment.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-540",
+    "question": "For a patient with advanced chronic obstructive pulmonary disease, which nursing action best promotes adequate gas exchange?",
+    "options": [
+      "Encouraging the patient to drink three glasses of fluid daily",
+      "Keeping the patient in semi-Fowler's position",
+      "Using a high-flow Venturi mask to deliver oxygen as prescribed",
+      "Administering a respiratory sedative as prescribed"
+    ],
+    "correct_answer": "Keeping the patient in semi-Fowler's position",
+    "explanation": "Placing a client with chronic obstructive pulmonary disease in a semi-Fowler's or high-Fowler's position utilizes gravity to pull the diaphragm downward, maximizing thoracic cavity expansion and reducing the work of breathing. Sedatives should be avoided as they can depress the respiratory drive.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-541",
+    "question": "Which of the following structures is most critical in preventing food and liquids from entering the trachea during swallowing?",
+    "options": [
+      "Extrinsic muscles of the larynx",
+      "Epiglottis",
+      "Glottis",
+      "Soft palate"
+    ],
+    "correct_answer": "Epiglottis",
+    "explanation": "The epiglottis is a leaf-shaped cartilaginous structure that acts as a lid over the laryngeal inlet. During swallowing, it folds down to cover the larynx, routing swallowed food and liquids into the esophagus and preventing aspiration.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-542",
+    "question": "Which of the following cartilages forms a complete, circular ring that surrounds the airway at the base of the larynx?",
+    "options": [
+      "Treillage cartilage",
+      "Voicebox cartilage",
+      "Arytenoid cartilage",
+      "Cricoid cartilage"
+    ],
+    "correct_answer": "Cricoid cartilage",
+    "explanation": "The cricoid cartilage is a complete ring of hyaline cartilage located at the base of the larynx, immediately superior to the trachea. Unlike the incomplete C-shaped tracheal cartilages, it forms a complete circular band.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-543",
+    "question": "A male patient's chest x-ray reveals bilateral white-outs, indicating acute respiratory distress syndrome. This syndrome primarily results from which of the following mechanisms?",
+    "options": [
+      "Cardiogenic pulmonary edema",
+      "Respiratory alkalosis",
+      "Increased pulmonary capillary permeability",
+      "Acute renal failure"
+    ],
+    "correct_answer": "Increased pulmonary capillary permeability",
+    "explanation": "Acute respiratory distress syndrome is characterized by severe inflammation that damages the alveolar-capillary membrane, leading to increased vascular permeability. This allows protein-rich fluid to leak into the alveoli, causing bilateral white-outs and severe hypoxemia.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-544",
+    "question": "Which of the following organisms represents the most common cause of community-acquired bacterial pneumonia in adults?",
+    "options": [
+      "Haemophilus influenzae",
+      "Klebsiella pneumoniae",
+      "Streptococcus pneumoniae",
+      "Staphylococcus aureus"
+    ],
+    "correct_answer": "Streptococcus pneumoniae",
+    "explanation": "Streptococcus pneumoniae, also known as pneumococcus, is the most common bacterial pathogen responsible for community-acquired pneumonia in adults. It colonizes the upper respiratory tract and can invade the lower airways, causing lobar consolidation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-545",
+    "question": "A client experiencing damage to the eighth cranial nerve will most likely report which of the following clinical symptoms?",
+    "options": [
+      "Vertigo",
+      "Facial paralysis",
+      "Impaired vision",
+      "Difficulty swallowing"
+    ],
+    "correct_answer": "Vertigo",
+    "explanation": "The vestibulocochlear nerve, which is cranial nerve eight, is responsible for transmitting sound and maintaining equilibrium. Damage to this nerve typically results in hearing loss, tinnitus, and vertigo, which is a sensation of spinning.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-546",
+    "question": "Which of the following parameters is mathematically equal to the respiratory rate multiplied by the difference between tidal volume and anatomic dead space?",
+    "options": [
+      "Vital capacity",
+      "Respiratory minute volume",
+      "Pulmonary ventilation rate",
+      "Alveolar ventilation rate"
+    ],
+    "correct_answer": "Alveolar ventilation rate",
+    "explanation": "Alveolar ventilation rate represents the actual volume of fresh air that reaches the alveoli per minute and participates in gas exchange. It is calculated by subtracting the anatomic dead space volume from the tidal volume and multiplying the result by the respiratory rate.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-547",
+    "question": "The clinical condition known as cor pulmonale is also referred to by which of the following terms?",
+    "options": [
+      "Pulmonary hypertension",
+      "Pneumonia",
+      "Pulmonary heart disease",
+      "Pulmonary failure"
+    ],
+    "correct_answer": "Pulmonary heart disease",
+    "explanation": "Cor pulmonale, commonly known as pulmonary heart disease, is the enlargement and subsequent failure of the right ventricle of the heart. It is caused by chronic pulmonary hypertension resulting from long-standing respiratory disorders like COPD.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-548",
+    "question": "Which of the following statements is true regarding the control of involuntary breathing in the human body?",
+    "options": [
+      "It is controlled locally by the stretching of bronchioles",
+      "It is controlled by the vaso-constrictive action of pulmonary arterioles",
+      "It is controlled by the chemoreceptor networks in the alveolar-capillary membrane",
+      "It is controlled by respiratory neurons located in the medulla and pons"
+    ],
+    "correct_answer": "It is controlled by respiratory neurons located in the medulla and pons",
+    "explanation": "Involuntary breathing is regulated by respiratory centers in the brainstem. The medullary rhythmicity center controls the basic respiratory pace, while the pneumotaxic and apneustic centers in the pons modulate this rhythm to ensure smooth transitions between inhalation and exhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-549",
+    "question": "After a tonsillectomy, a child begins to vomit bright red blood. Which of the following is the most appropriate initial nursing action?",
+    "options": [
+      "Notify the attending physician immediately",
+      "Maintain the child strictly nil per oral",
+      "Administer the prescribed antiemetic medication",
+      "Turn the child onto their side immediately"
+    ],
+    "correct_answer": "Turn the child onto their side immediately",
+    "explanation": "Vomiting bright red blood indicates active bleeding at the surgical site. The nurse's immediate priority is to place the child on their side (lateral or prone position) to allow blood to drain from the mouth, protecting the airway from aspiration before notifying the physician.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-550",
+    "question": "Which of the following is an effect of cellular or systemic hypoxia?",
+    "options": [
+      "Pneumothorax",
+      "Atelectasis",
+      "Low hematocrit",
+      "Cyanosis"
+    ],
+    "correct_answer": "Cyanosis",
+    "explanation": "Cyanosis is a clinical sign of severe hypoxia or hypoxemia, where an increased concentration of deoxygenated hemoglobin gives a bluish discoloration to the skin and mucous membranes. This visible change reflects a critical drop in oxygen saturation levels in the arterial blood.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-551",
+    "question": "Which respiratory complication is most commonly observed in patients during the first thirty-four to forty-eight hours following surgery?",
+    "options": [
+      "Atelectasis",
+      "Bronchitis",
+      "Pneumonia",
+      "Pneumothorax"
+    ],
+    "correct_answer": "Atelectasis",
+    "explanation": "Atelectasis, which is the partial collapse of small airways or alveoli, is the most frequent post-operative respiratory complication within the first two days after surgery. It typically results from shallow breathing, splinting due to incisional pain, and the effects of anesthetic agents.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-552",
+    "question": "The nurse is preparing to review diagnostic test results for a patient suspected of having active tuberculosis. Which of the following tests provides a definitive confirmation of this diagnosis?",
+    "options": [
+      "Bronchoscopy",
+      "Sputum culture",
+      "Chest x-ray",
+      "Tuberculin skin test"
+    ],
+    "correct_answer": "Sputum culture",
+    "explanation": "While a chest x-ray and a tuberculin skin test are useful screening tools, a sputum culture is the only definitive diagnostic test to confirm active pulmonary tuberculosis. This test actively isolates and grows Mycobacterium tuberculosis, confirming the presence of live bacilli.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-553",
+    "question": "The mucosal lining of the conducting airways of the human respiratory tract is composed of which type of epithelium?",
+    "options": [
+      "Pseudostratified ciliated columnar epithelium",
+      "Moist cuboidal epithelium",
+      "Simple squamous epithelium",
+      "Ciliated squamous epithelium"
+    ],
+    "correct_answer": "Pseudostratified ciliated columnar epithelium",
+    "explanation": "The conducting airways, including the trachea and major bronchi, are lined with pseudostratified ciliated columnar epithelium. This specialized tissue contains mucus-secreting goblet cells and microscopic cilia that work together to trap and sweep foreign particles out of the airway.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-554",
+    "question": "Which of the following anatomical structures or organs are classified as integral components of the human respiratory system?",
+    "options": [
+      "The trachea",
+      "The diaphragm",
+      "The lungs",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "The respiratory system includes conducting airways like the trachea, gas exchange organs like the lungs, and primary muscular drivers of ventilation like the diaphragm. All of these structures must function in harmony to achieve pulmonary ventilation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-555",
+    "question": "Which of the following diagnostic procedures is most appropriate to perform to rule out a diagnosis of bronchial asthma in a symptomatic patient?",
+    "options": [
+      "An immunoglobulin E test",
+      "Bronchoscopy",
+      "Arterial blood gas analysis",
+      "Bronchodilator reversibility test"
+    ],
+    "correct_answer": "Bronchodilator reversibility test",
+    "explanation": "A bronchodilator reversibility test is a primary diagnostic tool used to confirm or rule out asthma. It evaluates whether airway obstruction, measured via spirometry, improves significantly after administering a short-acting beta-agonist, which is a key clinical feature of asthma.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-556",
+    "question": "In a healthy adult human, the total number of microscopic alveoli contained within the lungs is estimated to be approximately which of the following?",
+    "options": [
+      "One hundred and fifty million",
+      "Five hundred million",
+      "Eight hundred million",
+      "One billion"
+    ],
+    "correct_answer": "Five hundred million",
+    "explanation": "Healthy adult lungs contain an estimated three hundred to five hundred million alveoli, which provide an immense surface area for gas exchange. This large surface area is essential for meeting the metabolic oxygen demands of the body.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-557",
+    "question": "Which of the following statements best describes the pathophysiology of a pleural effusion?",
+    "options": [
+      "The collapse of alveoli",
+      "The collapse of bronchiole",
+      "The fluid in the alveolar space",
+      "The accumulation of fluid between the linings of the pleural space"
+    ],
+    "correct_answer": "The accumulation of fluid between the linings of the pleural space",
+    "explanation": "A pleural effusion is characterized by the abnormal accumulation of excess fluid in the pleural cavity, which is the space between the visceral and parietal pleura surrounding the lungs. This accumulation can compress the lung tissue and restrict full expansion during inhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-558",
+    "question": "From a physiological perspective, stimulation of the apneustic center in the lower pons results in which of the following respiratory changes?",
+    "options": [
+      "Increased respiratory rate",
+      "More intense inhalation",
+      "Shorter respiratory cycle",
+      "Less activity in the dorsal respiratory group"
+    ],
+    "correct_answer": "More intense inhalation",
+    "explanation": "The apneustic center in the pons provides an excitatory signal to the inspiratory center in the medulla, prolonging the duration of diaphragmatic contraction. This stimulation leads to deeper, more intense, and sustained inhalations.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-559",
+    "question": "The pharynx is anatomically divided into three sections. Which of the following is recognized as the most superior portion of this muscular tube?",
+    "options": [
+      "Nasopharynx",
+      "Oropharynx",
+      "Laryngopharynx",
+      "Oral Pharynx"
+    ],
+    "correct_answer": "Nasopharynx",
+    "explanation": "The nasopharynx is the most superior portion of the pharynx, located immediately behind the nasal cavity and above the soft palate. It serves strictly as an airway passage and contains the pharyngeal tonsils and openings of the auditory tubes.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-560",
+    "question": "Administering excessively high concentrations of supplemental oxygen to a patient for an extended period can exert which of the following detrimental effects on the lungs?",
+    "options": [
+      "Improve oxygen intake",
+      "Increase carbon dioxide levels",
+      "Stabilize carbon dioxide levels",
+      "Reduces the amount of functional alveolar surface area"
+    ],
+    "correct_answer": "Reduces the amount of functional alveolar surface area",
+    "explanation": "Prolonged exposure to high fractions of inspired oxygen can cause oxygen toxicity, leading to alveolar membrane damage, pulmonary edema, and absorption atelectasis. This structural damage ultimately reduces the functional surface area available for gas exchange.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-561",
+    "question": "The clinical condition characterized by the abnormal presence of air within the pleural cavity surrounding the lung is known as which of the following?",
+    "options": [
+      "Pneumothorax",
+      "Atelectasis",
+      "Hydrothorax",
+      "Pleurisy"
+    ],
+    "correct_answer": "Pneumothorax",
+    "explanation": "A pneumothorax occurs when free air enters the pleural space, either from an external chest wound or an internal lung leak. This entry of air disrupts the negative intrapleural pressure, causing the affected lung to collapse.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-562",
+    "question": "A nurse is assessing a patient suspected of having a acute pulmonary embolism. Which of the following symptoms is recognized as the most common and sudden clinical manifestation of this condition?",
+    "options": [
+      "Dyspnea",
+      "Bradypnea",
+      "Bradycardia",
+      "Decreased respirations"
+    ],
+    "correct_answer": "Dyspnea",
+    "explanation": "Sudden-onset, unexplained dyspnea is the most common clinical symptom of a pulmonary embolism. It occurs when a blood clot obstructs pulmonary blood flow, triggering rapid ventilation reflexes and hypoxemia.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-563",
+    "question": "Which of the following physiological processes is directly responsible for generating voice sounds as air passes through the larynx?",
+    "options": [
+      "Speech",
+      "Articulation",
+      "Phonation",
+      "Whistling"
+    ],
+    "correct_answer": "Phonation",
+    "explanation": "Phonation is the specific physiological process of producing vocal sounds through the vibration of the vocal folds within the larynx. This sound is subsequently modified by resonators and articulators to produce coherent speech.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-564",
+    "question": "Pulmonary ventilation involves both active and passive phases. Which of the following muscles is NOT actively recruited during a forced exhalation?",
+    "options": [
+      "Transversus abdominis",
+      "Rectus abdominis",
+      "Diaphragm",
+      "External oblique"
+    ],
+    "correct_answer": "Diaphragm",
+    "explanation": "Forced exhalation is an active process that recruits abdominal muscles like the rectus abdominis, transversus abdominis, and external oblique to compress the abdominal cavity and push the diaphragm upward. The diaphragm itself is an inspiratory muscle that relaxes during exhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-565",
+    "question": "A patient diagnosed with active pulmonary tuberculosis is highly infectious. Which of the following symptom clusters is classic for this disease?",
+    "options": [
+      "Chest and lower back pain",
+      "Chills, fever, night sweats, and hemoptysis",
+      "Fever of more than one hundred and four degrees Fahrenheit and nausea",
+      "Headache and photophobia"
+    ],
+    "correct_answer": "Chills, fever, night sweats, and hemoptysis",
+    "explanation": "The classic clinical manifestations of active pulmonary tuberculosis include low-grade afternoon fevers, night sweats, chills, unexplained weight loss, chronic cough, and hemoptysis, which is coughing up blood-tinged sputum.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-566",
+    "question": "Which of the following clinical conditions in infants results from an inadequate production of surfactant, leading to widespread alveolar collapse?",
+    "options": [
+      "Respiratory distress syndrome",
+      "Chronic obstructive pulmonary disease",
+      "Anoxia",
+      "Pulmonary embolism"
+    ],
+    "correct_answer": "Respiratory distress syndrome",
+    "explanation": "Infant respiratory distress syndrome occurs primarily in premature newborns due to a lack of surfactant production by type two alveolar cells. Without surfactant to reduce surface tension, the alveoli collapse with each breath, causing severe respiratory distress.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-567",
+    "question": "In human thoracic anatomy, the deep oblique fissures, also known as the greater fissures, are located on which of the following structures?",
+    "options": [
+      "Right lung",
+      "Left lung",
+      "Both right and left lungs",
+      "Not present in the lungs"
+    ],
+    "correct_answer": "Both right and left lungs",
+    "explanation": "Both the right and left lungs possess an oblique or greater fissure. On the left, it separates the superior and inferior lobes, while on the right, it separates the inferior lobe from both the middle and superior lobes.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-568",
+    "question": "An emergency department nurse is preparing a plan of care for a patient presenting with an acute asthma attack. Which of the following interventions should be implemented first?",
+    "options": [
+      "Administer Glucocorticoid intravenously",
+      "Administer oxygen five liters through nasal catheter",
+      "Assess breath sounds every five minutes",
+      "Establish and maintain a twenty-gauge saline lock"
+    ],
+    "correct_answer": "Administer oxygen five liters through nasal catheter",
+    "explanation": "Treating hypoxemia and maintaining adequate tissue oxygenation is the highest immediate priority during an acute asthma exacerbation. Administering supplemental oxygen should be done immediately, alongside rapid bronchodilator therapy.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-569",
+    "question": "A patient with Guillain-Barre syndrome is monitored closely for respiratory compromise. Which of the following arterial blood gas profiles represents uncompensated respiratory acidosis?",
+    "options": [
+      "P H of five point zero, and a partial pressure of carbon dioxide of thirty millimeters of mercury",
+      "P H of seven point forty, and a partial pressure of carbon dioxide of thirty-five millimeters of mercury",
+      "P H of seven point thirty-five, and a partial pressure of carbon dioxide of forty millimeters of mercury",
+      "P H of seven point twenty-five, and a partial pressure of carbon dioxide of fifty millimeters of mercury"
+    ],
+    "correct_answer": "P H of seven point twenty-five, and a partial pressure of carbon dioxide of fifty millimeters of mercury",
+    "explanation": "Respiratory acidosis is characterized by an acidic arterial P H below seven point three five and an elevated partial pressure of carbon dioxide above forty-five millimeters of mercury. This profile indicates alveolar hypoventilation resulting in carbon dioxide retention.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-570",
+    "question": "Which of the following biological agents is the specific causative pathogen responsible for tuberculosis in humans?",
+    "options": [
+      "Mycobacterium Tuberculosis",
+      "Hansen's Bacilli",
+      "Bacillus Anthracis",
+      "Group A Beta Hemolytic Streptococcus"
+    ],
+    "correct_answer": "Mycobacterium Tuberculosis",
+    "explanation": "Tuberculosis is caused by Mycobacterium tuberculosis, which is a slow-growing, aerobic, acid-fast bacillus. It is transmitted primarily through airborne droplets containing the bacteria, affecting the lungs and occasionally other organ systems.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-571",
+    "question": "When assessing an elderly patient with newly developed bacterial pneumonia, the nurse should be aware that the earliest clinical symptom of this disease is most commonly which of the following?",
+    "options": [
+      "Altered mental status and dehydration",
+      "Fever and chills",
+      "Hemoptysis and dyspnea",
+      "Pleuritic chest pain and cough"
+    ],
+    "correct_answer": "Altered mental status and dehydration",
+    "explanation": "Elderly patients with pneumonia frequently present with atypical symptoms rather than a high fever and productive cough. Cognitive changes, such as confusion or altered mental status, and mild dehydration are often the first visible indicators of systemic infection in geriatric populations.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-572",
+    "question": "Which of the following physiological and cellular processes occurring within the lung parenchyma is directly responsible for the development of bacterial pneumonia?",
+    "options": [
+      "Atelectasis",
+      "Bronchiectasis",
+      "Effusion",
+      "Inflammation"
+    ],
+    "correct_answer": "Inflammation",
+    "explanation": "Pneumonia is fundamentally an acute inflammatory response of the lung parenchyma in response to an infectious pathogen. This inflammation triggers vascular congestion and fills the alveolar air sacs with inflammatory exudate, compromising gas exchange.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-573",
+    "question": "The human nasal cavity is a complex anatomical structure. Which of the following descriptions accurately represents its physiological characteristics?",
+    "options": [
+      "Divided into the right and left sides",
+      "Has tiny hair-like structures called cilia",
+      "Filters, moistens and heats air for the journey to the lungs",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "The nasal cavity is bisected by the nasal septum into right and left chambers. Its mucosal lining contains cilia and mucous glands that filter, warm, and humidify inhaled air before it reaches the lower respiratory tract.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-574",
+    "question": "Which of the following muscular organs acts as the primary muscle of inspiration and physically separates the thoracic cavity from the abdominopelvic cavity?",
+    "options": [
+      "The trachea",
+      "The diaphragm",
+      "The pleura",
+      "The sternum"
+    ],
+    "correct_answer": "The diaphragm",
+    "explanation": "The diaphragm is a large, dome-shaped muscle that forms the floor of the thoracic cavity and the ceiling of the abdominal cavity. Its contraction flattens the muscle dome, increasing vertical thoracic volume and driving quiet inspiration.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-575",
+    "question": "A patient undergoes a tuberculin skin test, also known as a Mantoux test. A positive skin reaction of induration indicates which of the following?",
+    "options": [
+      "Is exposed to mycobacterium tuberculosis",
+      "Has active tuberculosis",
+      "Have developed immunity to tuberculosis",
+      "Will develop active tuberculosis in the near future"
+    ],
+    "correct_answer": "Is exposed to mycobacterium tuberculosis",
+    "explanation": "A positive Mantoux skin test indicates that the patient has been exposed to Mycobacterium tuberculosis and has mounted a delayed-type hypersensitivity immune response. It does not differentiate between active infection and latent tuberculosis, requiring further clinical evaluation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-576",
+    "question": "A nurse is caring for a patient who has a nasogastric tube connected to continuous low suction. The nurse should monitor the patient closely for which of the following acid-base imbalances?",
+    "options": [
+      "Respiratory acidosis",
+      "Respiratory alkalosis",
+      "Metabolic acidosis",
+      "Metabolic alkalosis"
+    ],
+    "correct_answer": "Metabolic alkalosis",
+    "explanation": "Continuous nasogastric suction removes highly acidic gastric secretions containing hydrochloric acid. This loss of hydrogen and chloride ions raises the systemic pH, predisposing the patient to metabolic alkalosis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-577",
+    "question": "In human laryngeal anatomy, the prominent thyroid cartilage protrusion situated at the anterior of the neck is commonly referred to as which of the following?",
+    "options": [
+      "Adam's Apple",
+      "Epiglottis",
+      "Thyroids",
+      "Laryngitis"
+    ],
+    "correct_answer": "Adam's Apple",
+    "explanation": "The laryngeal prominence of the thyroid cartilage is commonly known as the Adam's apple. It is a subcutaneous landmark that is larger in males due to the influence of androgenic hormones during puberty.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-578",
+    "question": "A patient with chronic obstructive pulmonary disease is admitted to the hospital. Their arterial blood gas results are: P H of seven point thirty-six, partial pressure of carbon dioxide of forty-five, partial pressure of oxygen of eighty-four, and bicarbonate of twenty-eight. How should the nurse interpret this acid-base profile?",
+    "options": [
+      "Uncompensated acidosis",
+      "Compensated alkalosis",
+      "Compensated respiratory acidosis",
+      "Uncompensated metabolic acidosis"
+    ],
+    "correct_answer": "Compensated respiratory acidosis",
+    "explanation": "A P H of seven point thirty-six is within the normal range but on the acidotic side. Combined with an elevated carbon dioxide level of forty-five and an elevated bicarbonate of twenty-eight, this indicates fully compensated respiratory acidosis, where renal bicarbonate retention has normalized the pH.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-579",
+    "question": "The pharynx is a muscular tube that serves as a shared pathway for both respiratory and digestive tracts. How many anatomical sections compose this structure?",
+    "options": [
+      "One section",
+      "Two sections",
+      "Three sections",
+      "Four sections"
+    ],
+    "correct_answer": "Three sections",
+    "explanation": "The pharynx is anatomically divided into three distinct segments: the nasopharynx, which lies behind the nasal cavity; the oropharynx, located behind the oral cavity; and the laryngopharynx, situated superior to the larynx and esophagus.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-580",
+    "question": "Patients suffering from chronic respiratory illnesses are at an increased risk of developing pneumonia if which of the following clinical conditions is also present?",
+    "options": [
+      "Dehydration",
+      "Group living",
+      "Malnutrition",
+      "Severe periodontal disease"
+    ],
+    "correct_answer": "Dehydration",
+    "explanation": "Dehydration dries out the respiratory mucous membranes and thickens secretions, impairing the function of the mucociliary escalator. This reduction in the clearance of trapped pathogens makes it significantly easier for bacteria to colonize the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-581",
+    "question": "A nurse is caring for an eight-year-old child following a routine tonsillectomy. Which of the following assessment findings should the nurse report immediately to the physician?",
+    "options": [
+      "Reluctance to swallow",
+      "Drooling of blood-tinged saliva",
+      "An axillary temperature of ninety-nine degrees Fahrenheit",
+      "Respiratory stridor"
+    ],
+    "correct_answer": "Respiratory stridor",
+    "explanation": "Respiratory stridor is a high-pitched sound indicating significant airway narrowing or laryngeal edema, representing an immediate life-threatening emergency. While reluctance to swallow and mild blood-tinged saliva are common post-operatively, stridor requires rapid intervention.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-582",
+    "question": "A patient diagnosed with acute maxillary sinusitis is most likely to report a primary complaint of localized pain in which of the following areas?",
+    "options": [
+      "In the cheeks",
+      "Above the ear",
+      "Near all eyebrows",
+      "Over the eyeball"
+    ],
+    "correct_answer": "In the cheeks",
+    "explanation": "The maxillary sinuses are located in the cheekbones immediately below the orbits. Inflammation and fluid accumulation within these cavities cause pain, tenderness, and pressure over the cheeks, which can radiate to the upper teeth.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-583",
+    "question": "What is the primary physiological function of the hyaline cartilage rings located within the human trachea?",
+    "options": [
+      "Protect thyroid",
+      "Increase the surface area",
+      "Support trachea",
+      "Connect conchae"
+    ],
+    "correct_answer": "Support trachea",
+    "explanation": "The trachea contains sixteen to twenty C-shaped hyaline cartilage rings. Their primary function is to provide structural support, preventing the trachea from collapsing during the pressure changes of inhalation and exhalation while remaining flexible.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-584",
+    "question": "An abnormal respiratory pattern characterized by a gradual increase in depth followed by a gradual decrease and subsequent periods of apnea is medically defined as which of the following?",
+    "options": [
+      "Hyperpnea",
+      "Kussmaul's respiration",
+      "Chime- stroke breathing",
+      "Bradypnea"
+    ],
+    "correct_answer": "Chime- stroke breathing",
+    "explanation": "This alternating pattern of hyperventilation and apnea is known as Cheyne-Stokes respiration, recorded in the textbook as Chime- stroke breathing. It is commonly observed in patients with severe congestive heart failure, increased intracranial pressure, or neurological damage.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-585",
+    "question": "In human respiratory anatomy, the specialized bony projections known as the nasal conchae are located within which of the following areas?",
+    "options": [
+      "The cardiac notch",
+      "The voicebox",
+      "The diaphragm",
+      "The nasal cavity"
+    ],
+    "correct_answer": "The nasal cavity",
+    "explanation": "The superior, middle, and inferior nasal conchae are scroll-like bony plates located on the lateral walls of the nasal cavity. They function to create turbulence in inhaled air, increasing contact with the moist mucosa to maximize warming, filtering, and humidification.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-586",
+    "question": "Which of the following sequences represents the correct anatomical order of the pharynx segments, arranged from superior to inferior?",
+    "options": [
+      "Nasopharynx and laryngopharynx and oropharynx",
+      "Laryngopharynx and nasopharynx and oropharynx",
+      "Nasopharynx and oropharynx and laryngopharynx",
+      "Oropharynx and laryngopharynx and nasopharynx"
+    ],
+    "correct_answer": "Nasopharynx and oropharynx and laryngopharynx",
+    "explanation": "The pharynx is sequentially structured from top to bottom. The nasopharynx lies superiorly behind the nasal cavity, transitioning into the oropharynx behind the mouth, and terminating in the laryngopharynx, which lies above the larynx and esophagus.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-587",
+    "question": "Which of the following descriptions accurately characterizes the anatomical shape of the base of the human lungs?",
+    "options": [
+      "Apex",
+      "Medial Surface",
+      "The base",
+      "Costal surface"
+    ],
+    "correct_answer": "The base",
+    "explanation": "The inferior surface of the lung, known as the base, is broad, concave, and semilunar in shape. It rests directly on the convex upper dome of the diaphragm, adapting to its contours during breathing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-588",
+    "question": "A surgical tonsillectomy is a common pediatric procedure. Which of the following scenarios is NOT recognized as a clinical indication for performing this surgery?",
+    "options": [
+      "Peritonsillar abscess",
+      "Lack of facilities for microscopic culture and sensitivity to determine appropriate antibiotics",
+      "Foreign bodies embedded in the substance of the tonsil which cannot be removed in a routine manner",
+      "Chronic tonsillitis with recurrent acute attack"
+    ],
+    "correct_answer": "Lack of facilities for microscopic culture and sensitivity to determine appropriate antibiotics",
+    "explanation": "Clinical indications for a tonsillectomy include airway obstruction, recurrent peritonsillar abscesses, persistent foreign bodies, or chronic recurrent tonsillitis. The lack of diagnostic laboratory facilities is not a medical justification for performing a surgical tonsillectomy.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-589",
+    "question": "Which of the following diagnostic procedures represents the definitive test utilized to confirm active pulmonary tuberculosis?",
+    "options": [
+      "Chest x-ray",
+      "Mantoux test",
+      "Sputum culture",
+      "Tuberculin test"
+    ],
+    "correct_answer": "Sputum culture",
+    "explanation": "While chest x-rays and skin tests can identify potential exposure or lung lesions, only a sputum culture can definitively confirm active pulmonary tuberculosis. This test grows and identifies Mycobacterium tuberculosis, confirming an active bacillary infection.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-590",
+    "question": "A nurse receives a shift handoff report and is preparing to round on patients. Which of the following patients should the nurse assess first?",
+    "options": [
+      "A client recovering from a stroke with an oxygen saturation rate of ninety-nine percent",
+      "A client three days post-coronary artery bypass graft with an oral temperature of one hundred point two degrees Fahrenheit",
+      "A client admitted one hour ago with rales and shortness of breath",
+      "A client being prepared for discharge following a right colectomy"
+    ],
+    "correct_answer": "A client admitted one hour ago with rales and shortness of breath",
+    "explanation": "Applying the airway, breathing, and circulation priority framework, the newly admitted patient with acute shortness of breath and adventitious breath sounds (rales) represents the most unstable airway concern. They must be evaluated immediately to prevent acute respiratory failure.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-591",
+    "question": "Respiration is regulated by a complex network of sensory feedback. Which of the following classes of sensory receptors can modify the rate and depth of respiratory reflexes?",
+    "options": [
+      "Nociceptors",
+      "Chemoreceptors",
+      "Stretch receptors",
+      "All of these"
+    ],
+    "correct_answer": "All of these",
+    "explanation": "Respiratory reflexes are continuously adjusted by chemoreceptors (which monitor blood carbon dioxide, oxygen, and P H), mechanoreceptors or stretch receptors (which monitor lung expansion), and nociceptors (which detect painful stimuli or respiratory tract irritants).",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-592",
+    "question": "To facilitate efficient gas exchange, the specialized respiratory membranes of the lungs must possess several features. Which of the following characteristics is NOT a feature of a healthy respiratory membrane?",
+    "options": [
+      "Dry",
+      "Thin",
+      "Permeable",
+      "Moist"
+    ],
+    "correct_answer": "Dry",
+    "explanation": "The respiratory membrane must be extremely thin, moist, and highly permeable to allow oxygen and carbon dioxide to diffuse rapidly. A dry alveolar surface would halt gas exchange because gases must dissolve in a thin liquid film to cross the membrane.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-593",
+    "question": "What direct effect does a severe reduction in total circulating hemoglobin have on a patient's respiratory and oxygenation status?",
+    "options": [
+      "No effect",
+      "More hemoglobin reduces the client's respiratory rate",
+      "Low hemoglobin levels cause reduced oxygen-carrying capacity",
+      "Low hemoglobin levels cause increased oxygen-carrying capacity"
+    ],
+    "correct_answer": "Low hemoglobin levels cause reduced oxygen-carrying capacity",
+    "explanation": "Hemoglobin is the primary vehicle for transporting oxygen throughout the body. A significant reduction in circulating hemoglobin, such as in severe anemia, directly limits the blood's oxygen-carrying capacity, potentially causing tissue hypoxia despite normal lung function.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-594",
+    "question": "Which of the following physiological parameters acts as the most important driver in determining the oxygen saturation level of hemoglobin?",
+    "options": [
+      "The partial pressure of oxygen",
+      "Acidity",
+      "The partial pressure of carbon dioxide",
+      "All of these"
+    ],
+    "correct_answer": "The partial pressure of oxygen",
+    "explanation": "The partial pressure of oxygen (P O 2) in blood is the primary driver of hemoglobin's affinity for oxygen, as illustrated by the sigmoidal oxygen-hemoglobin dissociation curve. High partial pressures in the lungs promote oxygen binding, while lower pressures in tissues facilitate unloading.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-595",
+    "question": "Which of the following vascular structures is unique because it carries deoxygenated blood away from the heart and directly to the lungs?",
+    "options": [
+      "Pulmonary vein",
+      "Aorta",
+      "Left ventricle",
+      "Pulmonary artery"
+    ],
+    "correct_answer": "Pulmonary artery",
+    "explanation": "The pulmonary artery is the only artery in the adult body that carries deoxygenated blood. It originates from the right ventricle and branches to deliver deoxygenated blood to the alveolar capillaries for gas exchange.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-596",
+    "question": "In pulmonary function testing, the maximum volume of air that a person can forcefully expire after a maximum, deepest inhalation is defined as which of the following parameters?",
+    "options": [
+      "Vital capacity",
+      "Tidal volume",
+      "Peak inspiratory volume",
+      "Inspiratory reserve"
+    ],
+    "correct_answer": "Vital capacity",
+    "explanation": "Vital capacity is the maximum amount of air a person can exhale after inhaling as deeply as possible. It is a key metric in evaluating lung function and distinguishing between obstructive and restrictive lung disorders.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-597",
+    "question": "Which of the following statements is true regarding the motor innervation of the larynx by the tenth cranial nerve, also known as the vagus nerve?",
+    "options": [
+      "Arises in a series of rootlets from the pons",
+      "Lies outside the carotid sheath in the neck",
+      "Supplies muscles of the larynx via the recurrent laryngeal nerve",
+      "Passes in front of the root of the lung and has a superior and inferior ganglion within the jugular fossa"
+    ],
+    "correct_answer": "Supplies muscles of the larynx via the recurrent laryngeal nerve",
+    "explanation": "The vagus nerve provides critical motor innervation to the intrinsic muscles of the larynx through its branching nerves, principally the recurrent laryngeal nerve. Damage to this nerve during neck surgery can cause vocal cord paralysis and hoarseness.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-598",
+    "question": "In arterial blood gas analysis and respiratory physiology, the standard symbol P O two represents which of the following parameters?",
+    "options": [
+      "Pure oxygen",
+      "Partial oxygen",
+      "Pressure of oxygen",
+      "Partial pressure of oxygen"
+    ],
+    "correct_answer": "Partial pressure of oxygen",
+    "explanation": "P O two stands for the partial pressure of oxygen in a gas mixture or a fluid, representing the pressure exerted by oxygen alone. In clinical practice, arterial P O two is a primary indicator of arterial oxygenation status.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-599",
+    "question": "The trachea is a primary conducting airway lined internally with a ciliated mucosal membrane. Which of the following tissues forms this internal lining?",
+    "options": [
+      "Ciliated endothelium",
+      "Squamous epithelium",
+      "Connective tissue cells",
+      "Mucous cells"
+    ],
+    "correct_answer": "Ciliated endothelium",
+    "explanation": "The internal lining of the trachea is composed of pseudostratified ciliated columnar epithelium, described in the text as a ciliated endothelium. This tissue features microscopic, hair-like cilia that beat synchronously to propel foreign matter and mucus upward toward the pharynx.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-600",
+    "question": "In order for the respiratory system to maintain homeostatic tissue levels of oxygen and carbon dioxide, it must coordinate constantly with which of the following systems?",
+    "options": [
+      "Cardiovascular system",
+      "Integumentary system",
+      "Digestive system",
+      "Urinary system"
+    ],
+    "correct_answer": "Cardiovascular system",
+    "explanation": "The respiratory system works in close coordination with the cardiovascular system to maintain gas homeostasis in the body tissues. While the lungs perform the exchange of oxygen and carbon dioxide, the heart and blood vessels transport these gases to and from metabolizing tissues.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-601",
+    "question": "The maximum volume of air contained in the lung by a full forced inhalation is called:",
+    "options": [
+      "Tidal volume",
+      "Vital capacity",
+      "Ventilation rate",
+      "Total lung capacity"
+    ],
+    "correct_answer": "Total lung capacity",
+    "explanation": "Total lung capacity is the maximum volume of air that the lungs can hold after a maximal, deepest inhalation. It represents the sum of the vital capacity and the residual volume of the lungs.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-602",
+    "question": "A patient is experiencing some difficulty in breathing. The nurse most appropriately assists him into which of the following positions?",
+    "options": [
+      "Dorsal recumbent position",
+      "Sim's position",
+      "Fowler's position",
+      "Lateral position"
+    ],
+    "correct_answer": "Fowler's position",
+    "explanation": "Fowler's position, where the head of the bed is elevated between forty-five and sixty degrees, is the most appropriate position for a patient experiencing dyspnea. It allows maximum chest expansion and reduces the workload of breathing by utilizing gravity to pull the diaphragm downward.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-603",
+    "question": "Lecithin is an essential surfactant substance present in which of the following areas?",
+    "options": [
+      "Oropharynx",
+      "Bronchial tubes",
+      "Alveoli",
+      "Trachea"
+    ],
+    "correct_answer": "Alveoli",
+    "explanation": "Lecithin is a major phospholipid component of pulmonary surfactant, which is synthesized by type two alveolar cells in the alveoli. Surfactant reduces surface tension at the air-liquid interface within the alveoli, preventing their collapse during exhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-604",
+    "question": "Which of the following is a tube of about twelve to fourteen centimeters long that extends from the base of the skull to the level of cervical vertebrae?",
+    "options": [
+      "Larynx",
+      "Pharynx",
+      "Trachea",
+      "Oesophagus"
+    ],
+    "correct_answer": "Pharynx",
+    "explanation": "The pharynx is a fibromuscular tube measuring approximately twelve to fourteen centimeters in length that extends from the base of the skull to the lower border of the cricoid cartilage. It serves as a common passageway for both the respiratory and digestive tracts.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-605",
+    "question": "Which of the following terms refers to an increase in the rate and depth of breathing that exceeds the body's need to remove carbon dioxide?",
+    "options": [
+      "Hyperventilation",
+      "Dyspnea",
+      "Hypercapnia",
+      "Hypoventilation"
+    ],
+    "correct_answer": "Hyperventilation",
+    "explanation": "Hyperventilation is characterized by rapid, deep breathing that exceeds the metabolic needs of the body to eliminate carbon dioxide. This excessive ventilation causes arterial carbon dioxide levels to fall below normal, potentially leading to respiratory alkalosis.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-606",
+    "question": "Which of the following is considered an intrinsic factor in the development of bronchial asthma?",
+    "options": [
+      "Sinusitis",
+      "Hormonal influences",
+      "Food additives",
+      "Psychological stress"
+    ],
+    "correct_answer": "Hormonal influences",
+    "explanation": "Intrinsic asthma is triggered by non-allergic factors within the body, such as hormonal influences, respiratory infections, or physical exercise. Extrinsic asthma, in contrast, is initiated by hypersensitivity to environmental allergens such as pollen or dust.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-607",
+    "question": "The maximum volume of air contained in the lung by a full forced inhalation is known as:",
+    "options": [
+      "Tidal volume",
+      "Vital capacity",
+      "Ventilation rate",
+      "Total lung capacity"
+    ],
+    "correct_answer": "Total lung capacity",
+    "explanation": "Total lung capacity represents the entire volume of air that can be held within the respiratory system after a maximal inhalation. It combines the vital capacity and the residual volume that remains in the lungs after forced exhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-608",
+    "question": "A child is admitted to the hospital with suspected epiglottitis. Which of the following actions is not a part of the appropriate nursing care?",
+    "options": [
+      "Checking the vital signs",
+      "Assessing the throat with a tongue blade",
+      "Administering oxygen as needed",
+      "Administering intravenous antibiotics"
+    ],
+    "correct_answer": "Assessing the throat with a tongue blade",
+    "explanation": "When acute epiglottitis is suspected, assessing the throat with a tongue blade or performing any oral examination is strictly contraindicated. The physical irritation can trigger immediate, complete laryngospasm, resulting in sudden airway occlusion.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-609",
+    "question": "The nasopharynx houses which of the following collections of tissues?",
+    "options": [
+      "Lymphatic tissue",
+      "Adenoids",
+      "Pharyngeal tonsils",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "explanation": "The nasopharynx houses specialized lymphoid aggregates, specifically the pharyngeal tonsils, which are commonly referred to as the adenoids when enlarged. This lymphatic tissue plays a critical role in filtering and defending against pathogens entering through the nose.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-610",
+    "question": "A chronic obstructive disorder of the airways characterized by airway hypersensitivity, resulting in transient bronchospasm and constriction of the airways, is called:",
+    "options": [
+      "Pneumonia",
+      "Asthma",
+      "Pulmonary tuberculosis",
+      "Bronchitis"
+    ],
+    "correct_answer": "Asthma",
+    "explanation": "Asthma is a chronic inflammatory airway disorder characterized by bronchial hyper-responsiveness and reversible bronchospasm. This hypersensitivity leads to temporary narrowing of the airways, causing symptoms like wheezing and shortness of breath.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-611",
+    "question": "A client is diagnosed with emphysema and cor pulmonale. Which of the following assessment findings is characteristic of cor pulmonale?",
+    "options": [
+      "Hypoxia, shortness of breath, and exertional fatigue",
+      "Weight loss, increased red blood cells, and fever",
+      "Rales, edema, and enlarged spleen",
+      "Edema of the lower extremities and distended neck veins"
+    ],
+    "correct_answer": "Edema of the lower extremities and distended neck veins",
+    "explanation": "Cor pulmonale refers to right-sided heart failure resulting from chronic pulmonary hypertension associated with lung diseases like emphysema. Signs of systemic venous congestion include jugular venous distention and bilateral peripheral edema of the lower extremities.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-612",
+    "question": "Acute laryngotracheobronchitis is most commonly observed among which of the following patient groups?",
+    "options": [
+      "Middle age irrespective of gender",
+      "Children irrespective of gender",
+      "Elderly men",
+      "Young adults"
+    ],
+    "correct_answer": "Children irrespective of gender",
+    "explanation": "Acute laryngotracheobronchitis, commonly known as croup, is a viral infection that primarily affects infants and young children irrespective of gender. The inflammation narrows the subglottic airway, causing a classic barking cough and inspiratory stridor.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-613",
+    "question": "Which of the following clinical manifestations indicates that a client suffering from pneumonia has developed pleurisy?",
+    "options": [
+      "High fever",
+      "Productive cough",
+      "Central cyanosis",
+      "Chest pain when breathing"
+    ],
+    "correct_answer": "Chest pain when breathing",
+    "explanation": "Pleurisy is an inflammation of the pleural membranes surrounding the lungs. This condition causes sharp, localized chest pain that is typically exacerbated by deep breathing, coughing, or sneezing due to friction between the inflamed pleural layers.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-614",
+    "question": "Which of the following is considered a primary function of the human trachea?",
+    "options": [
+      "Gaseous exchange",
+      "Filters the air we breathe",
+      "Exhales the air from the body",
+      "All of the above"
+    ],
+    "correct_answer": "Filters the air we breathe",
+    "explanation": "The trachea acts primarily as a conducting airway that warms, humidifies, and filters inhaled air before it reaches the lungs. Its ciliated mucosal lining traps airborne particles and sweeps them upward to prevent lower respiratory tract contamination.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-615",
+    "question": "In preparation for the removal of a client's chest tubes, the nurse should instruct the client to perform which action?",
+    "options": [
+      "Breathe normally",
+      "Hold his breath and bear down",
+      "Take deep breaths",
+      "Take shallow breaths"
+    ],
+    "correct_answer": "Hold his breath and bear down",
+    "explanation": "During chest tube removal, the patient should perform the Valsalva maneuver by holding their breath and bearing down. This transiently increases intrathoracic pressure, preventing atmospheric air from rushing into the pleural space and causing a pneumothorax.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-616",
+    "question": "A five-year-old child is admitted to the unit following a tonsillectomy. Which of the following findings would alert the nurse to a potential complication of the surgery?",
+    "options": [
+      "Decreased appetite",
+      "A low-grade fever",
+      "Chest congestion",
+      "Constant swallowing"
+    ],
+    "correct_answer": "Constant swallowing",
+    "explanation": "Frequent or constant swallowing in a post-operative tonsillectomy patient is a classic clinical warning sign of active bleeding from the surgical site. The patient is swallowing trickling blood, which requires immediate medical evaluation to prevent severe hemorrhage.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-617",
+    "question": "Which of the following gases is primarily released from the body during the process of expiration?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "None of the above"
+    ],
+    "correct_answer": "Carbon dioxide",
+    "explanation": "During respiration, metabolic cellular processes consume oxygen to produce adenosine triphosphate and generate carbon dioxide as a waste product. This carbon dioxide is then transported in the blood to the lungs to be exhaled.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-618",
+    "question": "Which of the following isolation procedures should a nurse implement for a patient with a diagnosis of active pulmonary tuberculosis?",
+    "options": [
+      "Droplet precautions",
+      "Contact precautions",
+      "Airborne precautions",
+      "Standard contact precautions"
+    ],
+    "correct_answer": "Airborne precautions",
+    "explanation": "Pulmonary tuberculosis is transmitted via tiny infectious aerosol droplets that can remain suspended in the air for extended periods. To prevent transmission, healthcare workers must implement airborne precautions, placing the patient in a negative-pressure room and wearing N-95 respirators.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-619",
+    "question": "Which of the following factors represents the most common cause of Chronic Obstructive Pulmonary Disease?",
+    "options": [
+      "Chronic bronchitis",
+      "Pulmonary emphysema",
+      "Cigarette smoking",
+      "Bronchial asthma"
+    ],
+    "correct_answer": "Cigarette smoking",
+    "explanation": "Cigarette smoking is the most significant risk factor and primary cause of chronic obstructive pulmonary disease. Prolonged exposure to tobacco smoke triggers chronic airway inflammation, destroys alveolar walls, and impairs normal mucociliary clearance.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-620",
+    "question": "Active pulmonary tuberculosis is commonly associated with which of the following patient cohorts?",
+    "options": [
+      "Elderly people with asthma",
+      "Chronic active smokers",
+      "Farming communities in rural areas",
+      "People living with HIV infection"
+    ],
+    "correct_answer": "People living with HIV infection",
+    "explanation": "Pulmonary tuberculosis is a major opportunistic infection that is closely linked to people living with HIV infection due to their compromised cell-mediated immunity. The lack of CD4+ T cells impairs the body's ability to contain Mycobacterium tuberculosis within granulomas.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-621",
+    "question": "Which of the following statements is false regarding the anatomy of the human trachea?",
+    "options": [
+      "It contains supportive C-shaped cartilage rings",
+      "It is covered directly by the epiglottis",
+      "It splits into the right and left primary bronchi",
+      "None of the above statements are false"
+    ],
+    "correct_answer": "It is covered directly by the epiglottis",
+    "explanation": "While the trachea contains supportive C-shaped cartilage rings and bifurcates into the primary bronchi, it is not directly covered by the epiglottis. The epiglottis is located superiorly to cover the inlet of the larynx during swallowing.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-622",
+    "question": "A child with croup is placed in a cool, high-humidity tent. The primary purpose of this high-humidity tent is to:",
+    "options": [
+      "Prevent insensible water loss",
+      "Provide a moist environment with oxygen at thirty percent",
+      "Prevent systemic dehydration and reduce fever",
+      "Liquefy secretions and relieve laryngeal spasm"
+    ],
+    "correct_answer": "Liquefy secretions and relieve laryngeal spasm",
+    "explanation": "Cool mist or high-humidity therapy serves to liquefy thick, sticky airway secretions and soothe the inflamed subglottic mucosa in croup. This reduces laryngeal irritation and relieves laryngeal spasms, improving airflow through the airway.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-623",
+    "question": "Which of the following structures in the respiratory epithelium are responsible for transporting mucus out of the lower respiratory system?",
+    "options": [
+      "Vocal folds",
+      "Microscopic cilia",
+      "Epiglottis",
+      "The uvula"
+    ],
+    "correct_answer": "Microscopic cilia",
+    "explanation": "Microscopic, hair-like cilia project from the pseudostratified columnar cells of the respiratory epithelium. They beat in a coordinated, wave-like fashion to propel a blanket of trapped mucus upward toward the pharynx to be swallowed or expelled.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-624",
+    "question": "Which of the following anatomical areas is situated between the two pleural sacs and forms the central compartment of the thoracic cavity?",
+    "options": [
+      "The pulmonary hilum",
+      "The visceral pleura",
+      "The mediastinum",
+      "The thoracic cage"
+    ],
+    "correct_answer": "The mediastinum",
+    "explanation": "The mediastinum is the central anatomical compartment of the thoracic cavity, situated between the two lateral pleural sacs. It houses critical structures including the heart, great vessels, trachea, esophagus, and thymus gland.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-625",
+    "question": "A child with cystic fibrosis is observed making loud respiratory sounds. The nurse is aware that many children with cystic fibrosis develop which of the following complications?",
+    "options": [
+      "Choanal atresia",
+      "Nasal polyps",
+      "Septal deviations",
+      "Enlarged adenoids"
+    ],
+    "correct_answer": "Nasal polyps",
+    "explanation": "Cystic fibrosis is characterized by abnormally thick, sticky mucus production that can lead to chronic sinus irritation and mucosal inflammation. This persistent inflammation predisposes pediatric cystic fibrosis patients to developing benign nasal polyps.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-626",
+    "question": "Gasping, labored breathing, or a subjective craving for air is clinically defined as:",
+    "options": [
+      "Eupnea",
+      "Hyperventilation",
+      "Dyspnea",
+      "Hyperpnea"
+    ],
+    "correct_answer": "Dyspnea",
+    "explanation": "Dyspnea is the clinical term for subjective shortness of breath, labored breathing, or a distressing sensation of air hunger. It is commonly described by patients as difficulty catching their breath or gasping for air.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-627",
+    "question": "Which of the following structures is primary in filtering and keeping trapped dust and dirt away from the lungs?",
+    "options": [
+      "Microscopic cilia",
+      "Alveolar bronchioles",
+      "Hairs in the lungs",
+      "All of the above"
+    ],
+    "correct_answer": "Microscopic cilia",
+    "explanation": "Cilia are essential components of the respiratory defense system, acting as a physical filter that sweeps mucus and inhaled dust particles out of the airways. This continuous movement helps keep the delicate alveolar spaces free of contamination.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-628",
+    "question": "Which of the following statements is correct regarding the human larynx?",
+    "options": [
+      "It houses the vocal cords",
+      "It prevents invading pathogens from entering the trachea",
+      "It is a cartilaginous organ that connects the pharynx to the trachea",
+      "All of the above statements are correct"
+    ],
+    "correct_answer": "All of the above statements are correct",
+    "explanation": "The larynx is a cartilaginous structure that connects the pharynx to the trachea, containing the vocal folds for phonation. It also acts as a protective sphincter to prevent foreign substances and pathogens from entering the lower respiratory tract.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-629",
+    "question": "The palatine tonsils, commonly referred to as the tonsils, are anatomically located within which of the following areas?",
+    "options": [
+      "Nasopharynx",
+      "Oropharynx",
+      "Laryngopharynx",
+      "None of these"
+    ],
+    "correct_answer": "Oropharynx",
+    "explanation": "The palatine tonsils are located on the lateral walls of the oropharynx, which is the middle segment of the pharynx behind the oral cavity. They are situated within the tonsillar fossa between the palatoglossal and palatopharyngeal arches.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-630",
+    "question": "External respiration includes all of the following physiological processes except:",
+    "options": [
+      "Release of carbon dioxide by tissue cells",
+      "Gas diffusion across the respiratory membrane",
+      "Pulmonary ventilation and breathing",
+      "Oxygen and carbon dioxide gas transport"
+    ],
+    "correct_answer": "Release of carbon dioxide by tissue cells",
+    "explanation": "External respiration is restricted to processes occurring within the lungs, including pulmonary ventilation and gas exchange across the alveolar-capillary membrane. The release of carbon dioxide by tissue cells occurs at the systemic capillary level and is classified as internal respiration.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-631",
+    "question": "Which of the following physiological mechanisms protects the lungs from experiencing severe damage due to over-inflation?",
+    "options": [
+      "Pulmonary compliance",
+      "The inflation reflex",
+      "The baroreflex",
+      "Airway resistance"
+    ],
+    "correct_answer": "The inflation reflex",
+    "explanation": "The Hering-Breuer inflation reflex is a protective mechanism that prevents over-expansion of the lungs. When stretch receptors in the bronchioles detect excessive inflation, they send inhibitory signals to the inspiratory center in the brain to halt inhalation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-632",
+    "question": "Which of the following statements represents the core principle of Boyle's Law of Gases?",
+    "options": [
+      "The pressure and volume of a gas are directly equal",
+      "As the temperature rises, the pressure rises proportionally",
+      "The total gas pressure equals the sum of the individual partial pressures",
+      "If the volume goes up, the gas pressure goes down"
+    ],
+    "correct_answer": "If the volume goes up, the gas pressure goes down",
+    "explanation": "Boyle's Law states that at a constant temperature, the pressure of a given mass of gas is inversely proportional to its volume. Therefore, if the volume of the container increases, the gas pressure decreases, which is the physical driver of pulmonary ventilation.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-633",
+    "question": "In a healthy individual, a ten percent increase in the concentration of carbon dioxide in the blood will trigger which of the following respiratory responses?",
+    "options": [
+      "Decrease the rate of breathing",
+      "Increase the rate of breathing",
+      "Decrease total pulmonary ventilation",
+      "Decrease the alveolar ventilation rate"
+    ],
+    "correct_answer": "Increase the rate of breathing",
+    "explanation": "An increase in arterial carbon dioxide levels lowers blood pH, which is immediately detected by central and peripheral chemoreceptors. This triggers the respiratory center in the brain to increase the rate and depth of breathing to blow off excess carbon dioxide.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-634",
+    "question": "The supportive cartilage rings of the human trachea are C-shaped rather than complete circles. Why is this structural feature biologically important?",
+    "options": [
+      "It allows large masses of food to pass through the esophagus during swallowing",
+      "It allows larger masses of air to pass through the trachea",
+      "It facilitates the rotation and turning of the head",
+      "All of the above statements are correct"
+    ],
+    "correct_answer": "It allows large masses of food to pass through the esophagus during swallowing",
+    "explanation": "The trachea's supportive cartilaginous rings are C-shaped with the open portion facing posteriorly against the esophagus. This structural design allows the esophagus to expand anteriorly when large boluses of food are swallowed, preventing dysphagia.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-635",
+    "question": "Which of the following terms is defined as the maximum volume of air that can be inhaled deeply above the resting tidal volume?",
+    "options": [
+      "Residual inhaled volume",
+      "Expiratory reserve volume",
+      "Inspiratory reserve volume",
+      "Enhanced tidal volume"
+    ],
+    "correct_answer": "Inspiratory reserve volume",
+    "explanation": "Inspiratory reserve volume is the extra volume of air that can be inhaled deeply and forcefully above the normal resting tidal volume. It is a key spirometric parameter used to evaluate respiratory muscle strength and lung expansion.",
+    "category": "Respiratory Nursing"
+  },
+  {
+    "id": "item-636",
+    "question": "Which of the following anatomical structures does not belong to the conducting portion of the human respiratory system?",
+    "options": [
+      "Nose",
+      "Pharynx",
+      "Alveoli",
+      "Bronchioles"
+    ],
+    "correct_answer": "Alveoli",
+    "explanation": "The conducting portion of the respiratory system includes structures that transport air, such as the nose, pharynx, trachea, and bronchioles. The alveoli, in contrast, form the respiratory portion where active gas exchange occurs between air and blood.",
+    "category": "Respiratory Nursing"
+  }
+]

@@ -1,0 +1,362 @@
+{
+"role": "Frontend Engineer",
+"level": "Senior",
+"questions": [
+{
+"id": "q1",
+"category": "Redux Core",
+"difficulty": "easy",
+"question": "What is Redux, and what problem does it solve in a frontend application?",
+"answer": "Redux is a predictable state container for JavaScript applications. It solves the problem of managing complex state across deeply nested components by moving the state into a single centralized repository called the store. This prevents prop drilling and makes it much easier to track, debug, and test how data changes over time.",
+"code_snippet": "const store = configureStore({ reducer: rootReducer });"
+},
+{
+"id": "q2",
+"category": "Redux Core",
+"difficulty": "easy",
+"question": "What are the three core principles of Redux?",
+"answer": "The three core principles of Redux are that there is a single source of truth, state is strictly read only, and changes are made using pure functions. A single source of truth means the entire application state is stored in one object tree. Read only state means you must dispatch an action to trigger a change, and pure functions mean reducers must never produce side effects."
+},
+{
+"id": "q3",
+"category": "Redux Core",
+"difficulty": "medium",
+"question": "Explain the role of actions and reducers in the Redux architecture.",
+"answer": "Actions are plain JavaScript objects that describe an event that just happened in the application, and they must contain a type property. Reducers are pure functions that take the current state and the dispatched action as arguments, calculate the new state based on the action type, and return a brand new state object without mutating the original state."
+},
+{
+"id": "q4",
+"category": "Redux Toolkit",
+"difficulty": "easy",
+"question": "What is Redux Toolkit, and why is it currently the recommended way to write Redux?",
+"answer": "Redux Toolkit is the official recommended package that simplifies standard Redux development. It reduces the boilerplate code previously required to set up a store, define actions, and write reducers. It also automatically sets up the Redux DevTools extension and includes powerful libraries like Immer for immutable updates and Reselect for caching data."
+},
+{
+"id": "q5",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "How does the configure store function improve upon the legacy create store method?",
+"answer": "The configure store function automatically sets up a Redux store with good default settings right out of the box. It automatically combines your slice reducers, adds the thunk middleware for asynchronous actions, and enables the Redux DevTools extension for easier debugging in the browser. This eliminates the need for complex manual setup code."
+},
+{
+"id": "q6",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "What is a Redux slice, and how do you create one using Redux Toolkit?",
+"answer": "A slice represents a single feature or domain of your application state, bundling its reducer logic and actions together. You use the create slice function provided by Redux Toolkit, which requires a string name, an initial state, and an object of reducer functions. Redux Toolkit then automatically generates the corresponding action creators and action types for you.",
+"code_snippet": "const counterSlice = createSlice({\n  name: 'counter',\n  initialState: { value: 0 },\n  reducers: {\n    increment: (state) => { state.value += 1; }\n  }\n});"
+},
+{
+"id": "q7",
+"category": "Redux Core",
+"difficulty": "hard",
+"question": "Why must Redux reducers be pure functions?",
+"answer": "Reducers must be pure functions because Redux relies on strict reference equality checks to determine if the state has changed. If a reducer mutated the state directly or performed unpredictable side effects like network requests, Redux would not realize the data changed, and the user interface would fail to update. Pure functions guarantee predictable and traceable state transitions."
+},
+{
+"id": "q8",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "How does the Immer library work inside Redux Toolkit slices?",
+"answer": "The Immer library allows developers to write code that appears to mutate the state directly, which is normally strictly forbidden in Redux. Under the hood, Immer intercepts these mutations using a JavaScript Proxy object, tracks the changes, and safely produces a brand new immutable state object. This drastically reduces the complex spread operator syntax required in traditional reducers."
+},
+{
+"id": "q9",
+"category": "React Redux",
+"difficulty": "easy",
+"question": "How do you connect a React application to a Redux store?",
+"answer": "To connect a React application to a Redux store, you use the Provider component imported from the react redux library. You wrap this component around your root application component and pass your configured Redux store as a property to the Provider. This makes the store globally available to any nested components that need to read state or dispatch actions."
+},
+{
+"id": "q10",
+"category": "React Redux",
+"difficulty": "easy",
+"question": "What is the purpose of the use selector hook?",
+"answer": "The use selector hook allows a React component to extract and read specific pieces of data from the Redux store state. It takes a selector function as an argument, and it automatically subscribes the component to the store. Whenever the selected portion of the state changes, the hook forces the component to re render with the fresh data."
+},
+{
+"id": "q11",
+"category": "React Redux",
+"difficulty": "easy",
+"question": "What is the purpose of the use dispatch hook?",
+"answer": "The use dispatch hook returns the dispatch function from the Redux store. Components use this function to send actions to the store in order to trigger state updates. You simply call the dispatch function and pass in an action creator, such as clicking a button to dispatch an increment action."
+},
+{
+"id": "q12",
+"category": "Middleware",
+"difficulty": "medium",
+"question": "What is Redux middleware, and what are some common use cases for it?",
+"answer": "Redux middleware provides a way to intercept actions between the moment they are dispatched and the moment they reach the reducer. Common use cases include logging actions to the console for debugging, reporting crash errors to external services, routing, and handling asynchronous workflows like making network requests to an application programming interface."
+},
+{
+"id": "q13",
+"category": "Middleware",
+"difficulty": "medium",
+"question": "What is a Redux thunk, and why is it necessary?",
+"answer": "A Redux thunk is a specific type of middleware that allows you to write action creators that return a function instead of a plain action object. This returned function receives the dispatch and get state methods as arguments. It is necessary because standard Redux reducers are strictly synchronous, so thunks provide a safe place to execute asynchronous logic like fetching data before dispatching the final results."
+},
+{
+"id": "q14",
+"category": "Redux Toolkit",
+"difficulty": "hard",
+"question": "Explain how the create async thunk function works in Redux Toolkit.",
+"answer": "The create async thunk function abstracts the standard pattern of dispatching pending, fulfilled, and rejected actions for asynchronous workflows. It accepts a string action prefix and a payload creator function that returns a promise. It automatically dispatches the pending lifecycle action before execution, and then dispatches either fulfilled or rejected depending on whether your promise resolves or throws an error.",
+"code_snippet": "export const fetchUser = createAsyncThunk('user/fetch', async (id) => {\n  const response = await api.getUser(id);\n  return response.data;\n});"
+},
+{
+"id": "q15",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "What is the extra reducers property inside a Redux Toolkit slice used for?",
+"answer": "The extra reducers property allows a slice to respond to action types that were defined completely outside of the slice itself. This is primarily used to handle the pending, fulfilled, and rejected actions generated by the create async thunk function. It ensures that a single slice can manage its own internal state while also reacting to external events."
+},
+{
+"id": "q16",
+"category": "Reselect",
+"difficulty": "medium",
+"question": "What is Reselect, and why is it important for Redux performance?",
+"answer": "Reselect is a library for creating memoized selector functions that extract data from the Redux store. It is crucial for performance because the use selector hook runs its selector function every time the store updates. If a selector performs heavy computations like filtering a massive array, Reselect caches the previous output and only recalculates if the specific input state has actually changed."
+},
+{
+"id": "q17",
+"category": "Reselect",
+"difficulty": "hard",
+"question": "How do you create a memoized selector using the create selector function?",
+"answer": "You use the create selector function by passing one or more input selector functions as the first arguments, followed by a final output function. The input selectors extract the raw data from the state, and the output function receives those extracted values to perform complex formatting or filtering. The library caches the result based on the values returned by the input selectors.",
+"code_snippet": "const selectUsers = state => state.users.list;\nconst selectActiveFilter = state => state.users.filter;\n\nexport const selectActiveUsers = createSelector(\n  [selectUsers, selectActiveFilter],\n  (users, filter) => users.filter(user => user.status === filter)\n);"
+},
+{
+"id": "q18",
+"category": "React Redux",
+"difficulty": "hard",
+"question": "What happens if a standard use selector hook returns a brand new object literal or array every time it runs?",
+"answer": "If a selector returns a brand new object or array reference on every run, it breaks the equality check built into the use selector hook. Because the reference is technically new every time, React Redux assumes the data has changed and forces the component to re render after every single action dispatched to the store, causing severe performance degradation. You must use memoization to solve this."
+},
+{
+"id": "q19",
+"category": "Architecture",
+"difficulty": "hard",
+"question": "What does it mean to normalize Redux state, and why is it recommended?",
+"answer": "Normalizing state means organizing your Redux data like a relational database, where arrays of objects are converted into dictionary objects keyed by their unique identifier, and relationships are stored as arrays of identifier strings. This prevents nested data duplication and makes updating a specific item extremely fast, because you can access it directly by its identifier without having to map over a massive array."
+},
+{
+"id": "q20",
+"category": "Redux Toolkit",
+"difficulty": "hard",
+"question": "What is the create entity adapter function in Redux Toolkit?",
+"answer": "The create entity adapter function provides a standardized way to store normalized data in a slice. It automatically generates a set of pre built reducer logic and selectors for managing collections of items, such as adding, updating, or removing entities by their identifier. This eliminates the repetitive boilerplate code associated with managing dictionary objects and identifier arrays manually."
+},
+{
+"id": "q21",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "When deciding where to store data, how do you choose between local component state and global Redux state?",
+"answer": "I use local component state for transient data that only affects one specific component, such as whether a drop down menu is currently open or the current text in a search input field. I use global Redux state for data that is shared across completely different parts of the application, such as the authenticated user profile, shopping cart items, or cached server data."
+},
+{
+"id": "q22",
+"category": "RTK Query",
+"difficulty": "medium",
+"question": "What is RTK Query, and what problems does it solve?",
+"answer": "RTK Query is an advanced data fetching and caching tool that is built directly into Redux Toolkit. It solves the problem of having to manually write thunks, reducers, and loading state flags for every single network request. It automatically tracks loading and error states, caches the server responses in the Redux store, and handles background polling and automatic re fetching."
+},
+{
+"id": "q23",
+"category": "RTK Query",
+"difficulty": "hard",
+"question": "How do you configure a new application programming interface slice using RTK Query?",
+"answer": "To configure a new API slice, you use the create API function. You must provide a reducer path string, a base query configuration representing your server uniform resource locator, and an endpoints function. The endpoints function allows you to define specific query or mutation operations, and RTK Query automatically generates custom React hooks for each endpoint you define.",
+"code_snippet": "export const api = createApi({\n  reducerPath: 'pokemonApi',\n  baseQuery: fetchBaseQuery({ baseUrl: '[https://pokeapi.co/api/v2/](https://www.google.com/search?q=https://pokeapi.co/api/v2/)' }),\n  endpoints: (builder) => ({\n    getPokemon: builder.query({ query: (name) => `pokemon/${name}` })\n  })\n});"
+},
+{
+"id": "q24",
+"category": "RTK Query",
+"difficulty": "medium",
+"question": "What is the difference between a query endpoint and a mutation endpoint in RTK Query?",
+"answer": "A query endpoint is used specifically for fetching data from the server, and its results are automatically cached and deduplicated by the library. A mutation endpoint is used to send updates to the server, such as creating, modifying, or deleting records. Mutations are generally not cached in the same way, and they often trigger invalidation to refresh the associated queries."
+},
+{
+"id": "q25",
+"category": "RTK Query",
+"difficulty": "hard",
+"question": "Explain how automated cache invalidation works in RTK Query using tags.",
+"answer": "Automated cache invalidation relies on tag types to manage data relationships. You assign specific provider tags to the data returned by your query endpoints. When a mutation endpoint modifies data on the server, you assign it an invalidation tag. RTK Query detects this invalidation and automatically triggers a background refetch for any active queries that share the matching tag, ensuring the user interface stays perfectly synchronized."
+},
+{
+"id": "q26",
+"category": "Debugging",
+"difficulty": "medium",
+"question": "How do you trace state changes and track down bugs in a Redux application?",
+"answer": "The most effective way to debug a Redux application is by using the Redux DevTools extension in the browser. It provides a visual history of every single action dispatched, showing the payload data and the complete state tree before and after the action. It also supports time travel debugging, allowing you to step backwards and forwards through the application state history."
+},
+{
+"id": "q27",
+"category": "TypeScript",
+"difficulty": "medium",
+"question": "How do you strongly type the use selector and use dispatch hooks in a TypeScript Redux project?",
+"answer": "Because the default hooks from React Redux do not know the shape of your specific store, you must create custom typed versions of them. You infer the Root State type and the App Dispatch type directly from the configured store object. Then, you export pre typed versions of use selector and use dispatch, which ensures you get proper auto completion and strict error checking throughout your components."
+},
+{
+"id": "q28",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "What is the builder callback notation inside the extra reducers property?",
+"answer": "The builder callback notation is a function that receives a builder object, which provides methods like add case and add matcher. It is the modern, type safe way to listen for external action types, such as those generated by a thunk. It replaces the older object key notation and provides excellent TypeScript support by automatically inferring the action payload types.",
+"code_snippet": "extraReducers: (builder) => {\n  builder.addCase(fetchUser.fulfilled, (state, action) => {\n    state.userData = action.payload;\n  });\n}"
+},
+{
+"id": "q29",
+"category": "Architecture",
+"difficulty": "hard",
+"question": "Why is it discouraged to store non-serializable data, like class instances or DOM elements, in the Redux store?",
+"answer": "Redux expects the state tree to be completely serializable into standard JSON. Storing non serializable values like functions, promises, or document object model references breaks the ability to persist the state to local storage and completely breaks the time travel features of the Redux DevTools. It can also cause unexpected rendering bugs because React cannot reliably determine if the object references have actually mutated."
+},
+{
+"id": "q30",
+"category": "Redux Core",
+"difficulty": "medium",
+"question": "What is the difference between a controlled component and managing input state with Redux?",
+"answer": "A controlled component typically manages form input data using the local React use state hook. While you can technically store every single keystroke of a text input in Redux, it is heavily discouraged because dispatching global actions for rapid typing events causes unnecessary overhead and widespread re renders. You should keep rapid form state local and only dispatch to Redux when the form is submitted."
+},
+{
+"id": "q31",
+"category": "React Redux",
+"difficulty": "easy",
+"question": "What is the connect function, and why is it rarely used in modern React development?",
+"answer": "The connect function is a higher order component used to wrap class components so they can read Redux state and dispatch actions. It maps store state to component properties. It is rarely used today because modern React relies on functional components, and the use selector and use dispatch hooks provide a much simpler and more readable way to interact with the store without wrapping the component."
+},
+{
+"id": "q32",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "How does Redux Toolkit help prevent accidental state mutations?",
+"answer": "In development mode, Redux Toolkit automatically enables a specialized middleware called the immutable state invariant middleware. If this middleware detects that you have directly modified the state object instead of returning a new copy or using Immer, it will immediately throw a loud error in the console. This guarantees you catch mutation bugs early during development."
+},
+{
+"id": "q33",
+"category": "RTK Query",
+"difficulty": "hard",
+"question": "How do you implement optimistic updates in RTK Query?",
+"answer": "Optimistic updates involve modifying the cached data immediately before the mutation network request actually finishes. Inside your endpoint configuration, you use the on query started lifecycle method. You manually dispatch an update to the cache to reflect the new state instantly for the user, and if the mutation promise ultimately rejects, you catch the error and roll the cache back to its previous state."
+},
+{
+"id": "q34",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "What is the Ducks pattern in Redux architecture?",
+"answer": "The Ducks pattern is a widely adopted file structure methodology where all the Redux logic for a specific feature is kept in a single file, rather than splitting actions, constants, and reducers into separate folders across the project. This is exactly the philosophy that Redux Toolkit adopted when they created the slice concept, bundling the reducer logic and action creators together."
+},
+{
+"id": "q35",
+"category": "Reselect",
+"difficulty": "hard",
+"question": "What happens if you pass component properties directly into a memoized selector?",
+"answer": "If multiple instances of the same component use the exact same memoized selector with different properties, they will constantly overwrite the single internal cache of the selector, completely destroying the performance benefits. To fix this, you must use a factory function that creates a unique, separate instance of the selector for every single component instance that requires it."
+},
+{
+"id": "q36",
+"category": "Redux Toolkit",
+"difficulty": "easy",
+"question": "What is the create action function in Redux Toolkit?",
+"answer": "The create action function is a utility that generates an action creator function for a given action type string. When you call the resulting function, it returns a standard action object with a type property and places any argument you pass into the payload property. This removes the need to write boilerplate action creator functions manually."
+},
+{
+"id": "q37",
+"category": "Redux Core",
+"difficulty": "hard",
+"question": "Explain how the Redux compose function works and where it is typically used.",
+"answer": "The compose function is a utility that takes multiple functions as arguments and combines them into a single function, evaluating them from right to left. In legacy Redux, it was primarily used to chain multiple store enhancers together, such as combining custom middleware application with the setup code for the browser DevTools extension."
+},
+{
+"id": "q38",
+"category": "Middleware",
+"difficulty": "hard",
+"question": "What is Redux Saga, and how does it differ from Redux Thunk?",
+"answer": "Redux Saga is an alternative middleware for managing complex asynchronous operations. While thunks use simple promises and functions, sagas use specialized generator functions that yield side effects. This makes Sagas incredibly powerful for handling advanced scenarios like canceling active network requests, debouncing rapid actions, or listening for complex sequences of events, though it comes with a steeper learning curve."
+},
+{
+"id": "q39",
+"category": "RTK Query",
+"difficulty": "medium",
+"question": "How do you prevent a component from immediately fetching data with RTK Query when it mounts?",
+"answer": "By default, RTK Query custom hooks fetch data immediately upon mounting. To prevent this, you can pass a skip option in the hook configuration object based on a specific condition, for example waiting until a user identifier is available. Alternatively, you can use the lazy query hook version, which returns a trigger function that you must call manually to initiate the fetch."
+},
+{
+"id": "q40",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "Compare the React Context Application Programming Interface to Redux. When would you use Context instead?",
+"answer": "The Context interface is excellent for passing static or slow moving data deep down the component tree without prop drilling, such as user theme preferences or current language settings. However, it is not a true state management tool because any change to the context value forces every consuming component to re render. Redux is better for complex, rapidly changing data where precise re render optimization is necessary."
+},
+{
+"id": "q41",
+"category": "Redux Toolkit",
+"difficulty": "easy",
+"question": "Can you use the create slice function without defining an initial state?",
+"answer": "No, you must always provide an initial state object when using the create slice function. Redux requires that the application state starts with a defined default structure so that components have predictable data to read during the initial render phase before any actions are dispatched."
+},
+{
+"id": "q42",
+"category": "React Redux",
+"difficulty": "medium",
+"question": "What is the shallow equal function provided by React Redux, and when should you use it?",
+"answer": "The shallow equal function is an alternative comparison method that you can pass as the second argument to the use selector hook. By default, the hook uses strict reference equality to determine if the selected data changed. If your selector intentionally returns an object with multiple properties from the state, you use shallow equal to tell React Redux to only re render if the individual property values inside the object have actually changed."
+},
+{
+"id": "q43",
+"category": "Redux Core",
+"difficulty": "hard",
+"question": "What is an enhancer in Redux?",
+"answer": "A store enhancer is a higher order function that wraps the store creation process to add completely new capabilities to the store itself. While middleware only intercepts actions as they flow toward the reducer, an enhancer can completely alter how the store behaves, such as changing the signature of the dispatch method or adding support for time travel debugging."
+},
+{
+"id": "q44",
+"category": "RTK Query",
+"difficulty": "hard",
+"question": "Explain how polling works in RTK Query.",
+"answer": "Polling allows your application to automatically re fetch data from the server at a specific time interval. You enable it by passing the polling interval property in milliseconds directly into the query hook options. RTK Query handles the background timer automatically, and it also provides options to smartly pause the polling when the browser window loses focus or the user goes offline."
+},
+{
+"id": "q45",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "How do you handle multiple loading states for different components in Redux?",
+"answer": "Instead of having a single global loading boolean, which causes the entire page to show a spinner, you should store isolated loading states for different features in their respective slices. For example, a user profile slice and a dashboard feed slice should each maintain their own status strings representing idle, pending, or fulfilled states, allowing components to render independent loading skeletons."
+},
+{
+"id": "q46",
+"category": "Redux Toolkit",
+"difficulty": "medium",
+"question": "What is the current function from the Immer library, and how do you use it in Redux Toolkit?",
+"answer": "Because Redux Toolkit uses Immer to manage state, if you try to use console log to print the state inside a reducer, you will see a confusing Proxy object instead of your actual data. The current function allows you to extract a readable snapshot of the raw data from that Proxy. You import it from Redux Toolkit and wrap your state variable in it to log it safely during debugging."
+},
+{
+"id": "q47",
+"category": "Middleware",
+"difficulty": "hard",
+"question": "How do you write a custom middleware function in Redux?",
+"answer": "A custom Redux middleware is written as a series of three nested functions, which is often referred to as currying. The first function receives the store application programming interfaces like dispatch and get state. It returns a second function that receives the next middleware in the chain. That returns a third function that receives the dispatched action, allowing you to intercept it, log it, or pass it along by calling next with the action."
+},
+{
+"id": "q48",
+"category": "Redux Core",
+"difficulty": "easy",
+"question": "Why is it important to use constant string variables for action types?",
+"answer": "Using constant string variables instead of typing out raw strings prevents hard to trace spelling errors. If you misspell a string literal in a reducer, the reducer will silently ignore the action, causing bugs that are difficult to find. Using a predefined constant ensures that if you misspell the variable name, the JavaScript engine or TypeScript compiler will immediately throw a loud error."
+},
+{
+"id": "q49",
+"category": "Architecture",
+"difficulty": "hard",
+"question": "How do you split a large Redux store into separate modules for code splitting?",
+"answer": "To support code splitting, you dynamically inject reducers into the Redux store at runtime rather than combining them all at application startup. You configure the initial store with an empty reducer registry, and when a user navigates to a lazy loaded route, the route components call a custom inject reducer method on the store instance to add the new feature slice dynamically."
+},
+{
+"id": "q50",
+"category": "RTK Query",
+"difficulty": "medium",
+"question": "What happens to the cached data when a component that initiated an RTK Query unmounts?",
+"answer": "When the last component subscribed to a specific query unmounts, RTK Query starts an internal timer. If no other component requests that same data before the timer expires, the library automatically removes the data from the Redux store cache to free up memory. By default, this keep alive timer is set to sixty seconds, but you can configure it globally or on individual endpoints."
+}
+]
+}

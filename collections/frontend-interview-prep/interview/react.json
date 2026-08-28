@@ -1,0 +1,417 @@
+{
+"role": "Frontend Engineer",
+"level": "Mid-level",
+"questions": [
+{
+"id": "q1",
+"category": "Debugging",
+"difficulty": "medium",
+"question": "You click a button that is supposed to update the user profile name on the screen, but nothing changes. Walk through your step-by-step approach to investigate and fix this issue.",
+"answer": "First, I would isolate the event trigger to verify that the button click is actually registering, perhaps by logging a message to the console. Second, if the event fires, I would trace the state update using React Developer Tools to ensure the state is changing without any direct mutation. Third, if a backend is involved, I would verify the network request to confirm the API communication is successful and returns the correct payload. Finally, if the state and network are fine but the user interface is stale, I would check the rendering logic to ensure the correct state variable is being rendered.",
+"code_snippet": "const handleNameUpdate = async () => {\n  console.log('Button clicked'); // Step 1: Check event\n  const response = await api.updateName('New Name'); // Step 3: Check network\n  setName(response.data.name); // Step 2 & 4: Check state update and rendering\n};",
+"follow_ups": [
+{
+"question": "What specifically would you look for when checking for direct state mutation?",
+"answer": "I would look to see if the previous state object was modified directly instead of passing a brand new object reference to the state setter function, because React relies on object identity to detect changes and trigger a re render."
+}
+]
+},
+{
+"id": "q2",
+"category": "Code Quality",
+"difficulty": "hard",
+"question": "When reviewing a pull request for a new React component, what are the top three things you look for to ensure code correctness, performance, and clarity?",
+"answer": "When reviewing a pull request, the first thing I look for is code correctness and logic, ensuring the component meets all acceptance criteria and handles edge cases properly without introducing bugs. The second thing I check is performance, specifically looking for unnecessary re renders, missing memoization, or overly complex state management. The third area is clarity and maintainability, meaning I verify that variables are named descriptively, the code is well documented, and it strictly follows our component architecture guidelines.",
+"follow_ups": [
+{
+"question": "How do you communicate structural feedback to a peer without sounding overly critical?",
+"answer": "I make sure to frame my feedback constructively by first acknowledging what works well in their implementation. Then, I ask clarifying questions about their approach and provide concrete examples of how a different structure might improve readability or long term maintenance."
+}
+]
+},
+{
+"id": "q3",
+"category": "CSS",
+"difficulty": "easy",
+"question": "Can you explain when you would choose to use CSS Grid versus CSS Flexbox for a layout component?",
+"answer": "I use CSS Flexbox for one dimensional layouts, such as aligning a list of items in a single row or a single column. I use CSS Grid for two dimensional layouts, where I need precise control over both rows and columns simultaneously. For example, I would use Grid to build a complex dashboard layout, and Flexbox to distribute spacing for navigation links within a header bar.",
+"code_snippet": "/* Flexbox for 1D */\n.header {\n  display: flex;\n  align-items: center;\n}\n\n/* Grid for 2D */\n.dashboard {\n  display: grid;\n  grid-template-columns: 250px 1fr;\n  grid-template-rows: auto 1fr;\n}"
+},
+{
+"id": "q4",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "When building a reusable user interface component, what steps do you take to keep the code clean and easy to follow for the rest of your team?",
+"answer": "To build a clean and reusable component, I ensure the component does not manage any internal state unless absolutely necessary, keeping it completely data driven by passing down properties. I write strict type definitions for all expected properties using TypeScript so other developers instantly know what the component requires. I also avoid hardcoding specific margins or colors, instead allowing the parent component to dictate layout spacing.",
+"code_snippet": "interface ButtonProps {\n  label: string;\n  onClick: () => void;\n  disabled?: boolean;\n}\n\nconst ReusableButton = ({ label, onClick, disabled }: ButtonProps) => (\n  \n    {label}\n  \n);"
+},
+{
+"id": "q5",
+"category": "React",
+"difficulty": "hard",
+"question": "What strategies do you use to prevent unnecessary re renders in a React application?",
+"answer": "The primary strategy I use is wrapping components in React dot memo, which skips rendering if the component properties have not changed. To support this, I use the use callback hook to cache function references and the use memo hook to cache the results of expensive calculations. This combination prevents child components from updating just because a parent component experienced a state change unrelated to the child.",
+"follow_ups": [
+{
+"question": "Is it a good idea to wrap every single component in React dot memo?",
+"answer": "No, it is not a good idea because React dot memo performs a shallow comparison of properties on every render, which carries its own performance cost. It should only be used on heavy components that re render frequently with exactly the same properties."
+}
+]
+},
+{
+"id": "q6",
+"category": "React",
+"difficulty": "medium",
+"question": "Why is the dependency array important in the use effect hook, and what happens if you omit it?",
+"answer": "The dependency array tells React exactly which variables to watch for changes so it knows when to re run the effect. If you omit the dependency array completely, the effect will run after every single render of the component, which can lead to severe performance issues or infinite rendering loops. If you provide an empty dependency array, the effect will only run exactly once after the initial render.",
+"code_snippet": "// Runs once\nuseEffect(() => { init(); }, []);\n\n// Runs on id change\nuseEffect(() => { load(id); }, [id]);"
+},
+{
+"id": "q7",
+"category": "TypeScript",
+"difficulty": "medium",
+"question": "How do you decide whether to use an interface or a type alias in TypeScript?",
+"answer": "I generally prefer interfaces when defining object shapes or building public application programming interfaces, because interfaces support declaration merging and feel very object oriented. I switch to type aliases when I need to write complex definitions, for example union types, intersection types, or mapped types. In most internal application code, consistency across the team is the most important factor.",
+"follow_ups": [
+{
+"question": "What is an example of a situation where you must use a type instead of an interface?",
+"answer": "You must use a type when you need to define a union of primitive values, for example a status type that can only be the string literal active or the string literal inactive."
+}
+]
+},
+{
+"id": "q8",
+"category": "Accessibility",
+"difficulty": "easy",
+"question": "Why is semantic HTML important in modern frontend development?",
+"answer": "Using semantic HTML elements gives meaningful context to the content on a web page, which is critical for accessibility. Screen readers rely on these elements to help visually impaired users navigate the page logically. Furthermore, semantic tags improve search engine optimization because web crawlers can accurately determine the hierarchy and primary topics of the page content."
+},
+{
+"id": "q9",
+"category": "Responsive Design",
+"difficulty": "medium",
+"question": "Describe your approach to building responsive user interfaces without relying on external UI frameworks.",
+"answer": "I start with a mobile first methodology by writing the base styling for small screens before adding any media queries. Then, I introduce media queries using minimum width breakpoints to adjust the layout progressively for tablet and desktop sizes. I also heavily rely on relative units like percentages, viewport width, and root ems instead of hardcoded pixel values to ensure the design scales fluidly.",
+"code_snippet": ".container {\n  width: 100%;\n  padding: 1rem;\n}\n\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px;\n    padding: 2rem;\n  }\n}"
+},
+{
+"id": "q10",
+"category": "JavaScript",
+"difficulty": "easy",
+"question": "What is the difference between double equals and triple equals in JavaScript?",
+"answer": "The double equals operator performs a loose equality check, meaning it attempts to convert the operands to the same data type before making the comparison. The triple equals operator performs a strict equality check, meaning both the value and the data type must be identical for it to return true. I always use triple equals to avoid unexpected bugs caused by type coercion.",
+"code_snippet": "console.log(1 == '1');  // true\nconsole.log(1 === '1'); // false"
+},
+{
+"id": "q11",
+"category": "State Management",
+"difficulty": "medium",
+"question": "When would you choose to use the React Context API over a state management library like Redux?",
+"answer": "I choose the Context API for relatively simple global state that does not change rapidly, for example the current user theme, authentication status, or user language preferences. I would opt for a dedicated library like Redux if the application has complex state logic, frequent updates, or requires robust developer tools for time travel debugging. Context is great for avoiding prop drilling but is not optimized for high frequency renders.",
+"follow_ups": [
+{
+"question": "How do you prevent unnecessary re renders when using the Context API?",
+"answer": "To prevent unnecessary renders, I split my context into separate providers, keeping state values and state setter functions independent. I also wrap the consuming components in React dot memo or use the use memo hook to stabilize the context values."
+}
+]
+},
+{
+"id": "q12",
+"category": "JavaScript",
+"difficulty": "medium",
+"question": "Explain the concept of event delegation in JavaScript and why it is useful.",
+"answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of attaching individual listeners to multiple child elements. It works by taking advantage of event bubbling, where events fire on the child and bubble up the document object model tree to the parent. This approach improves memory usage and performance, and it ensures that dynamically added children automatically inherit the event listener.",
+"code_snippet": "document.getElementById('parent-list').addEventListener('click', (event) => {\n  if (event.target && event.target.nodeName === 'LI') {\n    console.log('List item clicked:', event.target.textContent);\n  }\n});"
+},
+{
+"id": "q13",
+"category": "Network",
+"difficulty": "hard",
+"question": "What is Cross Origin Resource Sharing, commonly known as CORS, and how do you resolve CORS errors on the frontend?",
+"answer": "Cross Origin Resource Sharing is a browser security mechanism that restricts a webpage from making requests to a different domain than the one that served the webpage. A CORS error occurs when the backend server does not include the proper headers to explicitly allow the frontend domain. To resolve it permanently, the backend server must be configured to return the Access Control Allow Origin header, though a frontend proxy can be used during local development.",
+"follow_ups": [
+{
+"question": "Can you fix a CORS error purely using JavaScript in the browser?",
+"answer": "No, you cannot fix a CORS error directly from the browser using JavaScript because it is a strict security policy enforced by the browser itself. The correct headers must be set by the server receiving the request."
+}
+]
+},
+{
+"id": "q14",
+"category": "React",
+"difficulty": "medium",
+"question": "How does the Virtual Document Object Model work in React?",
+"answer": "The Virtual Document Object Model is a lightweight in memory representation of the actual browser user interface. When state changes in a React application, React creates a new virtual tree and compares it against the previous virtual tree using a process called reconciliation. It then calculates the exact differences and updates only the changed elements in the real browser document, which is much faster than re rendering the entire page."
+},
+{
+"id": "q15",
+"category": "CSS",
+"difficulty": "medium",
+"question": "How does CSS specificity work, and how do you resolve specificity conflicts?",
+"answer": "CSS specificity is the set of rules browsers use to determine which styles apply to an element when multiple conflicting rules exist. It is calculated using a weight system where inline styles have the highest weight, followed by identifiers, then classes and attributes, and finally element tags. To resolve conflicts, I prefer to use specific class names or methodologies like Block Element Modifier, rather than relying on heavy identifiers or the important keyword."
+},
+{
+"id": "q16",
+"category": "JavaScript",
+"difficulty": "hard",
+"question": "What is a closure in JavaScript, and what is a practical use case for it?",
+"answer": "A closure is a feature in JavaScript where an inner function retains access to the variables of its outer function, even after the outer function has completely finished executing. This happens because the inner function creates a lexical scope chain. A practical use case for closures is creating private variables or functions, such as building a counter function where the count variable cannot be modified directly from the outside.",
+"code_snippet": "function createCounter() {\n  let count = 0;\n  return function() {\n    count += 1;\n    return count;\n  };\n}\nconst counter = createCounter();\nconsole.log(counter()); // 1"
+},
+{
+"id": "q17",
+"category": "JavaScript",
+"difficulty": "easy",
+"question": "What are the advantages of using async and await over traditional Promise chaining?",
+"answer": "Using async and await makes asynchronous code look and behave much more like synchronous code, which makes it significantly easier to read and understand. It eliminates the deep nesting often associated with multiple chained Promise statements. Additionally, error handling becomes cleaner because you can use standard try and catch blocks instead of attaching separate catch methods."
+},
+{
+"id": "q18",
+"category": "Performance",
+"difficulty": "hard",
+"question": "What is Largest Contentful Paint, and how would you optimize it on a web page?",
+"answer": "Largest Contentful Paint is a core web vital metric that measures the time it takes for the largest text block or image element to become visible within the user viewport. To optimize it, I would ensure critical images are preloaded and compressed using modern formats like Web P. I would also defer non critical JavaScript and use server side rendering or static site generation to deliver the initial HTML faster."
+},
+{
+"id": "q19",
+"category": "Testing",
+"difficulty": "medium",
+"question": "What is your approach to testing a React component?",
+"answer": "My approach focuses on testing the component from the perspective of the user, primarily utilizing the React Testing Library. I write unit tests to ensure the component renders correctly with specific properties, and I simulate user interactions like clicking buttons or typing into input fields. I assert that the correct functions are called and that the user interface updates appropriately, avoiding testing internal implementation details."
+},
+{
+"id": "q20",
+"category": "React",
+"difficulty": "medium",
+"question": "What are custom hooks in React, and why would you create one?",
+"answer": "Custom hooks are standard JavaScript functions that start with the word use and can call other built in React hooks. I create custom hooks to extract and reuse complex stateful logic across multiple components, which keeps the components themselves clean and focused on rendering. For example, I might create a custom hook to handle fetching data from an application programming interface, managing the loading status and any error states internally."
+},
+{
+"id": "q21",
+"category": "React",
+"difficulty": "medium",
+"question": "When would you use the use reducer hook instead of the use state hook?",
+"answer": "I use the use reducer hook when I have complex state logic that involves multiple sub values, or when the next state depends heavily on the previous state. It is also beneficial when passing a dispatch function down to deep child components, because it is more predictable and avoids passing multiple callback functions.",
+"code_snippet": "const initialState = { count: 0 };\nfunction reducer(state, action) {\n  switch (action.type) {\n    case 'increment': return { count: state.count + 1 };\n    default: throw new Error();\n  }\n}\nconst [state, dispatch] = useReducer(reducer, initialState);"
+},
+{
+"id": "q22",
+"category": "React",
+"difficulty": "easy",
+"question": "What is prop drilling, and how can you avoid it in a React application?",
+"answer": "Prop drilling is the process of passing data down through multiple layers of nested components, even if the intermediate components do not need the data themselves. To avoid it, I typically use the React Context application programming interface for global data, or component composition where I pass child elements directly as properties.",
+"follow_ups": [
+{
+"question": "Can you explain how component composition prevents prop drilling?",
+"answer": "By passing a fully constructed child component down through a children property, the intermediate wrapper component does not need to know about or pass along the individual data properties. It simply renders the children it receives."
+}
+]
+},
+{
+"id": "q23",
+"category": "JavaScript",
+"difficulty": "easy",
+"question": "What is the difference between null and undefined in JavaScript?",
+"answer": "Undefined means a variable has been declared but has not yet been assigned a value by the compiler. Null is an intentional assignment value that represents the deliberate absence of any object value. I explicitly set a variable to null when I want to clear its value, whereas I leave uninitialized variables as undefined."
+},
+{
+"id": "q24",
+"category": "JavaScript",
+"difficulty": "hard",
+"question": "Explain how the JavaScript Event Loop works.",
+"answer": "The Event Loop continuously checks the call stack and the callback queue. If the call stack is empty, it takes the first task from the queue and pushes it onto the stack for execution. Microtasks, like Promise callbacks, have a higher priority and are executed before macrotasks, like set timeout callbacks, which ensures that asynchronous data resolves promptly."
+},
+{
+"id": "q25",
+"category": "JavaScript",
+"difficulty": "medium",
+"question": "How does the Promise dot all method work, and what happens if one of the promises fails?",
+"answer": "Promise dot all takes an iterable array of promises and returns a single promise that resolves when all of the input promises have resolved. The returned array contains the results in the exact order of the original promises. However, if even a single promise rejects, the entire Promise dot all immediately rejects with that specific error."
+},
+{
+"id": "q26",
+"category": "Web",
+"difficulty": "medium",
+"question": "Compare local storage, session storage, and cookies. When would you use each?",
+"answer": "Local storage persists data indefinitely until explicitly cleared, which is great for user preferences. Session storage clears data as soon as the browser tab is closed, making it ideal for temporary state like a multi step form. Cookies store small amounts of data sent with every HTTP request, making them the standard choice for authentication tokens and server side tracking."
+},
+{
+"id": "q27",
+"category": "CSS",
+"difficulty": "medium",
+"question": "What is the Block Element Modifier methodology, and why is it useful?",
+"answer": "The Block Element Modifier methodology is a naming convention for classes in cascading style sheets. It breaks the user interface into independent blocks, inner elements, and state modifiers. This creates a flat specificity hierarchy and prevents style collisions, making it incredibly easy for a team to maintain a growing code base without accidentally overriding existing styles.",
+"code_snippet": "/* Block */\n.card { }\n/* Element */\n.card__title { }\n/* Modifier */\n.card--highlighted { }"
+},
+{
+"id": "q28",
+"category": "TypeScript",
+"difficulty": "hard",
+"question": "What are Generics in TypeScript, and why are they useful?",
+"answer": "Generics allow developers to create reusable components and functions that can work over a variety of data types rather than a single fixed type. By acting as a variable for the type itself, generics provide strict type safety while remaining flexible. For example, a custom fetch function can use a generic type parameter to define the expected shape of the returned JSON data.",
+"code_snippet": "function identity(arg: Type): Type {\n  return arg;\n}\nconst num = identity(42);"
+},
+{
+"id": "q29",
+"category": "TypeScript",
+"difficulty": "medium",
+"question": "Explain the difference between the Partial and Pick utility types in TypeScript.",
+"answer": "The Partial utility type constructs a new type where all the properties of the original type are set to optional, which is very useful for updating a subset of data. The Pick utility type creates a new type by selecting a specific set of properties from an existing type, making it great for limiting the shape of an object to only what a specific component requires."
+},
+{
+"id": "q30",
+"category": "Performance",
+"difficulty": "easy",
+"question": "What is lazy loading, and how do you implement it for images?",
+"answer": "Lazy loading is a performance optimization technique where you delay the rendering of non critical resources until they are needed, such as when they scroll into the user viewport. To implement it for images, I use the native loading attribute set to lazy directly on the image element, which prevents the browser from downloading images that the user might never see."
+},
+{
+"id": "q31",
+"category": "Security",
+"difficulty": "hard",
+"question": "What is Cross Site Scripting, and how do you prevent it in a React application?",
+"answer": "Cross Site Scripting is a security vulnerability where an attacker injects malicious JavaScript into a web page viewed by other users. React automatically protects against this by escaping string variables before rendering them to the document object model. To maintain this security, I strictly avoid using the dangerously set inner HTML property unless the incoming string has been thoroughly sanitized by a library."
+},
+{
+"id": "q32",
+"category": "Architecture",
+"difficulty": "hard",
+"question": "Explain the concept of micro frontends and when they might be beneficial.",
+"answer": "Micro frontends extend the concept of micro services to the frontend by breaking a monolithic application into smaller, independently deployable applications. These smaller parts are then stitched together in the browser. This approach is highly beneficial for large enterprise companies with multiple teams, because each team can deploy their specific feature without coordinating a massive release cycle."
+},
+{
+"id": "q33",
+"category": "React",
+"difficulty": "medium",
+"question": "What are React Portals, and what is a common use case for them?",
+"answer": "React Portals provide a seamless way to render children into a completely different part of the document object model hierarchy outside the parent component. A common use case is building modal dialogs or tooltips. By rendering the modal via a portal at the bottom of the document body, it avoids being visually cropped by parent containers with hidden overflow styling.",
+"code_snippet": "import { createPortal } from 'react-dom';\n\nfunction Modal({ children }) {\n  return createPortal(\n    children,\n    document.body\n  );\n}"
+},
+{
+"id": "q34",
+"category": "React",
+"difficulty": "hard",
+"question": "How do Error Boundaries work in React?",
+"answer": "Error Boundaries are special class components that catch JavaScript errors anywhere in their child component tree, preventing the entire application from crashing. They log those errors and display a fallback user interface instead. Currently, error boundaries can only be implemented using class components with specific lifecycle methods, though they can wrap standard functional components.",
+"follow_ups": [
+{
+"question": "Do Error Boundaries catch asynchronous errors like a failed network request?",
+"answer": "No, Error Boundaries do not catch asynchronous errors, server side rendering errors, or errors in event handlers. They only catch errors that occur during the standard React rendering phase or inside lifecycle methods."
+}
+]
+},
+{
+"id": "q35",
+"category": "React",
+"difficulty": "medium",
+"question": "When should you use the use ref hook instead of standard state?",
+"answer": "I use the use ref hook when I need to store a mutable value that does not trigger a re render when it updates. This is perfect for directly accessing document object model elements, like focusing an input field, or for keeping track of a timer identifier that needs to persist across renders without causing visual updates."
+},
+{
+"id": "q36",
+"category": "JavaScript",
+"difficulty": "easy",
+"question": "Explain the difference between the Document Object Model and the Browser Object Model.",
+"answer": "The Document Object Model represents the structure of the HTML page as a tree of objects, allowing JavaScript to manipulate elements and content. The Browser Object Model provides a way to interact with the browser environment itself outside of the page content. This includes navigating history, accessing the user screen size, and working with location URLs."
+},
+{
+"id": "q37",
+"category": "JavaScript",
+"difficulty": "medium",
+"question": "What is the difference between ECMAScript modules and Common JavaScript modules?",
+"answer": "ECMAScript modules use the import and export syntax, are statically analyzed at compile time, and run strictly in asynchronous mode. This is the modern standard for the browser and newer Node environments. Common JavaScript uses require and module dot exports, loads modules synchronously, and has historically been the standard format for Node server environments."
+},
+{
+"id": "q38",
+"category": "Web",
+"difficulty": "easy",
+"question": "What is the main difference between an HTTP GET request and a POST request?",
+"answer": "A GET request is used exclusively to retrieve data from a server and should never modify resources. Its parameters are visible directly in the uniform resource locator. A POST request is used to send data to the server to create or update a resource, and its payload is hidden securely within the request body."
+},
+{
+"id": "q39",
+"category": "Performance",
+"difficulty": "hard",
+"question": "What is the Critical Rendering Path?",
+"answer": "The Critical Rendering Path is the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into actual pixels on the screen. It involves building the document object model tree, constructing the cascading style sheet object model tree, combining them into a render tree, calculating the layout, and finally painting the pixels. Optimizing this path is crucial for fast initial page load times."
+},
+{
+"id": "q40",
+"category": "CSS",
+"difficulty": "medium",
+"question": "What is the difference between CSS Transitions and CSS Keyframe Animations?",
+"answer": "CSS Transitions provide a simple way to animate a property change from an initial state to a final state, usually triggered by user interaction like a hover event. CSS Keyframe Animations are much more powerful, allowing you to define multiple intermediate steps, loop the animation infinitely, and run it automatically without requiring any user interaction."
+},
+{
+"id": "q41",
+"category": "JavaScript",
+"difficulty": "hard",
+"question": "Explain prototypal inheritance in JavaScript.",
+"answer": "Prototypal inheritance is a feature where JavaScript objects inherit properties and methods from a prototype object. When trying to access a property on an object, JavaScript searches the object itself first. If it cannot find it, it moves up the prototype chain to the parent object, continuing this process until it finds the property or reaches the end of the chain."
+},
+{
+"id": "q42",
+"category": "JavaScript",
+"difficulty": "hard",
+"question": "How does the this keyword behave differently in an arrow function compared to a regular function?",
+"answer": "In a regular function, the this keyword is determined dynamically by how the function is called. If called as a method, it points to the object. However, an arrow function does not have its own this context. Instead, it statically binds the this value from the surrounding lexical scope at the exact time the function is defined, which prevents common scope binding errors."
+},
+{
+"id": "q43",
+"category": "TypeScript",
+"difficulty": "medium",
+"question": "What is the difference between the any type and the unknown type in TypeScript?",
+"answer": "The any type completely disables type checking, allowing you to perform any operation without compiler errors, which can be dangerous. The unknown type is a safer alternative because it forces you to perform type narrowing or type checking before you can interact with the value. I always use unknown for uncertain data, like responses from a generic network request."
+},
+{
+"id": "q44",
+"category": "Web",
+"difficulty": "medium",
+"question": "Contrast REST APIs with GraphQL APIs.",
+"answer": "REST utilizes multiple endpoints that return fixed data structures, which can lead to over fetching or under fetching of data. GraphQL uses a single endpoint and allows the client to explicitly request exactly the fields they need. This flexibility makes GraphQL incredibly efficient for complex frontend interfaces, while REST remains simpler and leverages native HTTP caching better."
+},
+{
+"id": "q45",
+"category": "React",
+"difficulty": "medium",
+"question": "What is the difference between controlled and uncontrolled form components in React?",
+"answer": "In a controlled component, form data is handled entirely by the React component state, meaning the input value is always tied to a state variable. In an uncontrolled component, the browser itself manages the form data internally, and React accesses the values only when necessary using a reference. Controlled components are generally preferred because they allow for instant field validation."
+},
+{
+"id": "q46",
+"category": "Testing",
+"difficulty": "easy",
+"question": "Explain the difference between unit testing and end to end testing.",
+"answer": "Unit testing isolates and verifies individual pieces of code, such as a single utility function or a standalone component, ensuring they work correctly in a vacuum. End to end testing evaluates the entire application flow from the user perspective, simulating real browser interactions from a login screen all the way to database updates, to ensure all systems integrate perfectly."
+},
+{
+"id": "q47",
+"category": "Web",
+"difficulty": "medium",
+"question": "When would you use WebSockets instead of standard HTTP polling?",
+"answer": "I use WebSockets when the application requires real time, two way communication between the client and the server, such as a live chat interface or a stock trading dashboard. It creates a persistent connection, drastically reducing latency and server load compared to HTTP polling, which continuously makes redundant requests to ask if new data is available."
+},
+{
+"id": "q48",
+"category": "JavaScript",
+"difficulty": "medium",
+"question": "What is destructuring assignment in JavaScript, and how do you use it safely?",
+"answer": "Destructuring assignment is a syntax that allows developers to unpack values from arrays or properties from objects directly into distinct variables. It makes code cleaner and easier to read. To use it safely, I always define fallback default values during the destructuring process so that the application does not crash if the target property evaluates to undefined.",
+"code_snippet": "const user = { name: 'Alice' };\nconst { name, age = 30 } = user;"
+},
+{
+"id": "q49",
+"category": "CSS",
+"difficulty": "hard",
+"question": "What is the Stacking Context in CSS, and how is it formed?",
+"answer": "A Stacking Context is a three dimensional conceptualization of HTML elements along an imaginary z axis. Elements within a stacking context are painted together in a specific order. It is formed by certain CSS properties, such as a position value of relative or absolute combined with a z index greater than zero, or by properties like opacity less than one."
+},
+{
+"id": "q50",
+"category": "Architecture",
+"difficulty": "medium",
+"question": "How do you handle routing in a single page application built with React?",
+"answer": "In a single page application, I use a client side routing library like React Router to intercept URL changes without causing a full page reload. I define route paths that map directly to specific view components. I also utilize lazy loading for these route components, ensuring the user only downloads the JavaScript bundle required for the exact page they are currently viewing."
+}
+]
+}
