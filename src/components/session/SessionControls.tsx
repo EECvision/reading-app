@@ -478,17 +478,7 @@ export function SessionControls({
                 </>
               )}
             </>
-          )}  <label className={styles.listRow}>
-            <span className={styles.listLabel}>Mute Voice</span>
-            <input
-              id="toggle-mute"
-              type="checkbox"
-              checked={ttsSettings.muted || false}
-              onChange={(e) => updateTTS({ muted: e.target.checked })}
-              className={styles.toggleSwitch}
-            />
-          </label>
-
+          )}
           <label className={styles.listRow}>
             <span className={styles.listLabel}>Autoplay</span>
             <input
