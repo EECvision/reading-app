@@ -6,8 +6,8 @@
 "id": "q1",
 "category": "Architecture",
 "difficulty": "hard",
-"question": "Walk me through your most complex Next dot js project. What was the core problem it solved, and what architecture did you choose?",
-"answer": "The most complex project I built was an e commerce dashboard that aggregated real time sales data. I chose the Next dot js App Router because it allowed me to leverage Server Components for fast initial data loads while keeping the interactive charts as Client Components. This hybrid architecture drastically reduced the JavaScript bundle size compared to a traditional single page application."
+"question": "Walk me through your most complex Nextjs project. What was the core problem it solved, and what architecture did you choose?",
+"answer": "The most complex project I built was an e commerce dashboard that aggregated real time sales data. I chose the Nextjs App Router because it allowed me to leverage Server Components for fast initial data loads while keeping the interactive charts as Client Components. This hybrid architecture drastically reduced the JavaScript bundle size compared to a traditional single page application."
 },
 {
 "id": "q2",
@@ -28,14 +28,14 @@
 "category": "Performance",
 "difficulty": "medium",
 "question": "What steps did you take to optimize the Largest Contentful Paint metric on the landing page of your project?",
-"answer": "To optimize the Largest Contentful Paint, I identified the main hero image and preloaded it using the priority property on the Next dot js Image component. I also ensured that the initial HTML was statically generated at build time, and I deferred the loading of non critical third party analytics scripts until after the page became completely interactive."
+"answer": "To optimize the Largest Contentful Paint, I identified the main hero image and preloaded it using the priority property on the Nextjs Image component. I also ensured that the initial HTML was statically generated at build time, and I deferred the loading of non critical third party analytics scripts until after the page became completely interactive."
 },
 {
 "id": "q5",
 "category": "Performance",
 "difficulty": "easy",
-"question": "How did you handle image optimization in your Next dot js application to prevent layout shifts?",
-"answer": "I relied entirely on the native Next dot js Image component. It automatically converted my large image assets into modern formats like Web P and generated responsive sizes based on the user device screen. I also enforced explicit width and height properties to eliminate Cumulative Layout Shift while the images downloaded in the background.",
+"question": "How did you handle image optimization in your Nextjs application to prevent layout shifts?",
+"answer": "I relied entirely on the native Nextjs Image component. It automatically converted my large image assets into modern formats like Web P and generated responsive sizes based on the user device screen. I also enforced explicit width and height properties to eliminate Cumulative Layout Shift while the images downloaded in the background.",
 "code_snippet": "import Image from 'next/image';\n\n<Image \n alt=\"Hero banner\" height=\"{600}\n\" priority\n src=\"/hero.webp\" width=\"{1200}\n\"/>"
 },
 {
@@ -50,7 +50,7 @@
 "category": "Data Fetching",
 "difficulty": "medium",
 "question": "How did you handle caching and keeping your data up to date when a user updated their profile in the application?",
-"answer": "When a user updated their profile using a Server Action, I called the revalidate path function provided by Next dot js to instantly clear the cached data for that specific route. This forced the server to fetch the fresh data and re render the page on the very next request, ensuring the user immediately saw their updated information without doing a hard browser refresh."
+"answer": "When a user updated their profile using a Server Action, I called the revalidate path function provided by Nextjs to instantly clear the cached data for that specific route. This forced the server to fetch the fresh data and re render the page on the very next request, ensuring the user immediately saw their updated information without doing a hard browser refresh."
 },
 {
 "id": "q8",
@@ -78,7 +78,7 @@
 "category": "Performance",
 "difficulty": "hard",
 "question": "How did you address the issue of an oversized JavaScript bundle when you analyzed your project performance?",
-"answer": "I used the Next dot js bundle analyzer and discovered that a heavy data formatting library was bloating the main client chunk. I replaced it with a much smaller alternative and utilized dynamic imports for a complex charting component. This ensured the charting library was only downloaded when the user actually navigated to the analytics dashboard."
+"answer": "I used the Nextjs bundle analyzer and discovered that a heavy data formatting library was bloating the main client chunk. I replaced it with a much smaller alternative and utilized dynamic imports for a complex charting component. This ensured the charting library was only downloaded when the user actually navigated to the analytics dashboard."
 },
 {
 "id": "q12",
@@ -91,7 +91,7 @@
 "id": "q13",
 "category": "Architecture",
 "difficulty": "medium",
-"question": "How did you structure your nested layouts in the Next dot js App Router to manage complex page navigation?",
+"question": "How did you structure your nested layouts in the Nextjs App Router to manage complex page navigation?",
 "answer": "I heavily utilized the nested layout system by creating a root layout for global providers and navigation headers, and specific nested layouts for authenticated dashboard sections. This ensured that the sidebar and header did not unnecessarily re render when the user navigated between different dashboard pages, preserving scroll position and significantly improving the perceived performance."
 },
 {
@@ -99,21 +99,21 @@
 "category": "Performance",
 "difficulty": "medium",
 "question": "Custom web fonts can often cause visual jumps. How did you optimize font loading in your project?",
-"answer": "I utilized the next font package provided by Next dot js. It automatically downloaded and hosted the Google Fonts locally during the build process, eliminating external network round trips. More importantly, it generated a fallback font with matching metrics, which completely prevented any Cumulative Layout Shift when the final font finished loading and swapped in."
+"answer": "I utilized the next font package provided by Nextjs. It automatically downloaded and hosted the Google Fonts locally during the build process, eliminating external network round trips. More importantly, it generated a fallback font with matching metrics, which completely prevented any Cumulative Layout Shift when the final font finished loading and swapped in."
 },
 {
 "id": "q15",
 "category": "SEO",
 "difficulty": "hard",
 "question": "Search engine optimization is crucial for public projects. How did you manage dynamic meta tags and open graph images?",
-"answer": "For static pages, I exported a static metadata object from the page file. For dynamic routes like individual blog posts, I used the generate metadata asynchronous function to query the database and dynamically construct the title and description. I also implemented the Next dot js Image Response interface to programmatically generate unique Open Graph images for every post on the fly."
+"answer": "For static pages, I exported a static metadata object from the page file. For dynamic routes like individual blog posts, I used the generate metadata asynchronous function to query the database and dynamically construct the title and description. I also implemented the Nextjs Image Response interface to programmatically generate unique Open Graph images for every post on the fly."
 },
 {
 "id": "q16",
 "category": "Challenges",
 "difficulty": "hard",
 "question": "Implementing secure authentication can be tricky. What strategy did you use, and what was the hardest part?",
-"answer": "I implemented credential based authentication using Next Auth, storing the session tokens securely in HTTP only cookies. The hardest part was protecting both Server Components and Client Components simultaneously. I solved this by using Next dot js Middleware to intercept unauthenticated requests at the edge and redirect them to the login page before they ever reached my application logic."
+"answer": "I implemented credential based authentication using Next Auth, storing the session tokens securely in HTTP only cookies. The hardest part was protecting both Server Components and Client Components simultaneously. I solved this by using Nextjs Middleware to intercept unauthenticated requests at the edge and redirect them to the login page before they ever reached my application logic."
 },
 {
 "id": "q17",
@@ -133,7 +133,7 @@
 "id": "q19",
 "category": "Deployment",
 "difficulty": "easy",
-"question": "Can you describe your deployment process and continuous integration pipeline for this Next dot js project?",
+"question": "Can you describe your deployment process and continuous integration pipeline for this Nextjs project?",
 "answer": "I hosted the project on Vercel, which provided seamless integration with my source code repository. I set up GitHub Actions to automatically run my test suite, linting, and TypeScript type checking on every pull request. Once a pull request was merged into the main branch, Vercel automatically triggered a production build, ensuring that only passing code ever reached the live environment."
 },
 {
@@ -141,7 +141,7 @@
 "category": "Retrospective",
 "difficulty": "hard",
 "question": "Looking back at the completed project, what is one major architectural decision you would change if you had to rebuild it today?",
-"answer": "If I were to rebuild it today, I would rely even less on heavy client side state management like Redux. With the introduction of React Server Components and Server Actions in Next dot js, I realized that much of my complex data fetching and mutation logic could have been handled entirely on the server, drastically simplifying my client code and reducing the initial bundle size."
+"answer": "If I were to rebuild it today, I would rely even less on heavy client side state management like Redux. With the introduction of React Server Components and Server Actions in Nextjs, I realized that much of my complex data fetching and mutation logic could have been handled entirely on the server, drastically simplifying my client code and reducing the initial bundle size."
 }
 ]
 }
