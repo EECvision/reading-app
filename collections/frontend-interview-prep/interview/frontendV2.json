@@ -1,0 +1,188 @@
+{
+  "role": "Frontend Engineer",
+  "level": "Mid-level",
+  "questions": [
+    {
+      "id": "q1",
+      "category": "Tell me about yourself and your experience.",
+      "difficulty": "medium",
+      "question": "Tell me a little about your background, what you've been working on recently, and why you think your experience makes you a good fit for this role.",
+      "answer": "I'm a frontend engineer with about five years of experience building production web applications with JavaScript, TypeScript, React, and Next.js.\nI've worked across responsive UI development, reusable component architecture, API integration, state management, and debugging UI and rendering issues.\nOne of the projects I've worked on recently is an API development tool. It takes an OpenAPI specification and generates REST API clients, React Query integrations, and TypeScript types. I also worked on authentication and developer-facing functionality, so that project involved both frontend architecture and creating a good developer experience.\nI've also worked on payment and invoice management interfaces, where I collaborated with designers and backend engineers, integrated APIs, and investigated UI, layout, state, and rendering issues.\nWhat makes me a good fit for this role is that the work isn't just about writing React code. It also requires debugging unfamiliar codebases, improving existing implementations, reviewing code, and clearly explaining technical decisions. Those are areas I've had practical experience with, and I'm particularly interested in the AI-training aspect because it requires being precise about both the implementation and the reasoning behind it.\n\nYour resume supports the React/TypeScript/Next.js, API, debugging, and architecture experience described here."
+    },
+    {
+      "id": "q2",
+      "category": "How would you investigate a tricky React rendering bug?",
+      "difficulty": "medium",
+      "question": "Walk me through how you'd investigate a tricky rendering bug in a React component.",
+      "answer": "First, I'd reproduce the bug consistently and identify exactly what behavior is incorrect.\nThen I'd use React DevTools and the Profiler to inspect the component's rendering behavior. I'd look at when the component renders, how frequently it renders, and what changed between renders.\nI'd inspect the component's props, state, context, and its parent components. I'd also check whether an effect is updating state and unintentionally causing a render loop or whether an object or function prop is being recreated on every render.\nIf the issue involves data, I'd also inspect the network requests and verify that the response is what I expect.\nOnce I've identified the root cause, I'd make the smallest appropriate fix and then reproduce the original scenario again to verify it.\nI wouldn't immediately reach for React.memo, useMemo, or useCallback. I'd first establish that unnecessary rendering is actually the problem through profiling, and then use memoization if it addresses the specific issue.\n\nWhat makes this excellent?\nThe key phrase is:\n“I wouldn't immediately reach for memoization.”\nThat demonstrates that you understand debugging versus optimization."
+    },
+    {
+      "id": "q3",
+      "category": "When might React.memo make things worse?",
+      "difficulty": "medium",
+      "question": "When might React.memo actually make things worse?",
+      "answer": "React.memo isn't automatically a performance improvement. It adds a props comparison step on every render to determine whether the component can be skipped.\nIf the component is very cheap to render, the comparison itself may cost more than simply rendering the component.\nAlso, if the component's props change frequently, React.memo won't provide much benefit. For example, if I'm passing a newly created object or function on every parent render, the prop reference changes, so the memoized component may still render.\nOverusing memoization can also make the code more complicated and harder to reason about.\nSo I'd use React.memo when profiling shows that a component is rendering unnecessarily and skipping those renders provides a meaningful performance benefit.\n\nKey concept to remember\nMemoization is an optimization, not a default architecture rule."
+    },
+    {
+      "id": "q4",
+      "category": "What would you look for if the application is over-memoized?",
+      "difficulty": "medium",
+      "question": "Say you over-memoize an application. What symptoms would you look for in profiling?",
+      "answer": "I'd use the React Profiler to compare the rendering behavior before and after the memoization.\nI'd look at whether the number of renders actually decreased and whether the commit times or interaction times improved.\nIf the components are still rendering because their props change every time, then the memoization isn't providing much value.\nI'd also look for increased complexity, unnecessary useMemo and useCallback calls, and cases where we're doing expensive dependency comparisons for components that are cheap to render.\nUltimately, I'd compare measurable performance metrics rather than assuming that more memoization means better performance."
+    },
+    {
+      "id": "q5",
+      "category": "Tell me about a time you improved a messy codebase.",
+      "difficulty": "medium",
+      "question": "Tell me about a time you improved a messy codebase for readability or performance.",
+      "answer": "When working on an existing codebase, I normally start by identifying duplication, unclear naming, large components, tightly coupled responsibilities, and inconsistent patterns.\nFor example, if I find the same utility function implemented in several places, I'd extract it into a shared utility and update the consumers to use the same implementation.\nI'd also look at component boundaries. If a component is responsible for data fetching, business logic, and rendering a large UI all at once, I'd consider separating those responsibilities so that each part is easier to understand and test.\nFor performance, I'd measure first rather than optimizing blindly. I might inspect bundle size, network requests, image sizes, unnecessary renders, and Core Web Vitals using tools such as Lighthouse and browser DevTools.\nAfter making changes, I'd measure again to confirm that the changes actually improved the application rather than just making the code look different."
+    },
+    {
+      "id": "q6",
+      "category": "How would you optimize images?",
+      "difficulty": "medium",
+      "question": "How would you improve image performance on a frontend application?",
+      "answer": "First, I'd check the actual image sizes and how they're being delivered rather than assuming the format is the problem.\nI'd use appropriately sized images, modern formats such as WebP or AVIF where appropriate, responsive images, and lazy loading for images that aren't immediately visible.\nI'd also make sure the browser knows the image dimensions so that space is reserved before the image loads, which helps prevent Cumulative Layout Shift.\nIn Next.js, I'd consider using next/image because it provides image optimization, responsive sizing, lazy loading, and other optimizations.\nFinally, I'd validate the improvement using Lighthouse, the Network panel, and relevant Core Web Vitals such as LCP and CLS.\n\nImportant: Don't say “WebP is always better than PNG.” The correct answer is that the optimal format depends on the image and use case."
+    },
+    {
+      "id": "q7",
+      "category": "How would you validate a performance improvement?",
+      "difficulty": "medium",
+      "question": "How would you validate that your performance changes actually worked?",
+      "answer": "I'd establish a baseline before making the change.\nI'd use Lighthouse and Chrome DevTools to measure things like LCP, CLS, load performance, network transfer size, and potentially interaction responsiveness depending on the problem.\nI'd then make the change and run the same scenario under comparable conditions.\nFor example, if I optimized an image, I'd compare the image's transferred size and loading behavior before and after. If I changed rendering behavior, I'd use the React Profiler to compare render and commit times.\nThe important thing is that I wouldn't rely only on the code looking more efficient. I'd use measurable evidence to confirm that the user's experience actually improved."
+    },
+    {
+      "id": "q8",
+      "category": "How would you document your technical decisions?",
+      "difficulty": "medium",
+      "question": "How would you document your reasoning and code decisions so that another developer—or an AI rater—could understand them later?",
+      "answer": "I'd first make the code itself as readable as possible. Good naming, clear component boundaries, and simple functions should reduce the amount of documentation required.\nFor comments, I'd focus on explaining the reasoning behind non-obvious decisions rather than describing what the code literally does.\nFor larger architectural decisions, I'd document the problem, the options considered, the chosen approach, and the reason for choosing it. I'd also document important tradeoffs or limitations.\nFor example, instead of writing a comment saying 'fetch user data,' I'd document why a particular caching strategy was chosen if that decision isn't obvious from the code.\nThe goal is that someone unfamiliar with the codebase can understand not only what we implemented, but why we implemented it that way.\n\nThis aligns particularly well with your Reex API Builder experience, where your resume says you created developer documentation and documented architectural decisions."
+    },
+    {
+      "id": "q9",
+      "category": "How do you review peer code when you disagree?",
+      "difficulty": "medium",
+      "question": "What's your approach to reviewing peer code when you disagree with the implementation?",
+      "answer": "First, I'd understand the implementation and the problem it's solving before deciding that it's wrong.\nIf something is already working well, I'd acknowledge that. If I disagree with an implementation, I'd explain the specific concern rather than simply saying that I'd do it differently.\nI'd try to support the feedback with a concrete reason—for example, maintainability, performance, correctness, accessibility, or consistency with the project's existing architecture.\nI'd also ask the developer about their reasoning because there may be a constraint or requirement I'm not aware of.\nIf there are multiple valid approaches, I'd discuss the tradeoffs rather than treating my preferred approach as automatically correct.\nThe goal of a code review is to improve the code and share knowledge, not to win an argument.\n\nExcellent phrase to remember:\n“I try to challenge the implementation, not the person.”"
+    },
+    {
+      "id": "q10",
+      "category": "How would you debug a function intermittently returning undefined?",
+      "difficulty": "medium",
+      "question": "How would you debug a function that's intermittently returning undefined?",
+      "answer": "I'd first determine exactly under what conditions it returns undefined.\nI'd reproduce the issue and add targeted logging or breakpoints around the function and its inputs and outputs. I'd inspect the call stack and trace the data through the function.\nBecause the issue is intermittent, I'd look for things such as asynchronous timing, race conditions, missing data, conditional branches, exceptions, or different input values.\nIf the function depends on an API response, I'd inspect the Network panel and verify whether the response itself is sometimes missing the expected data.\nI'd also check whether the caller is correctly awaiting an asynchronous operation.\nIf I can't reproduce it locally, I'd add structured logging or error monitoring around the relevant code so I can capture the inputs and execution path when the issue occurs.\nOnce I understand the root cause, I'd fix it and add a test covering the failure case so it doesn't regress."
+    },
+    {
+      "id": "q11",
+      "category": "How would you make an intermittent bug reproducible?",
+      "difficulty": "medium",
+      "question": "If the bug only happens sometimes, how would you make it reproducible?",
+      "answer": "I'd first identify what variables might affect the behavior—timing, network speed, user actions, data, browser environment, or application state.\nThen I'd try to isolate those variables. For example, I'd use Chrome DevTools network throttling, repeatedly trigger the interaction, or introduce controlled delays if I suspect a race condition.\nI'd also inspect the Network and Console panels and add targeted logging around the relevant operations.\nIf the issue involves asynchronous requests, I'd try to reproduce different response ordering.\nOnce I can reliably reproduce the issue, I'd reduce it to the smallest possible reproduction case. That makes the root cause much easier to identify and makes it easier to verify the eventual fix."
+    },
+    {
+      "id": "q12",
+      "category": "Tell me about collaborating with designers/backend engineers.",
+      "difficulty": "medium",
+      "question": "Tell me about a time you collaborated with designers or backend engineers to smooth out a rough integration.",
+      "answer": "I try to establish clear communication early, especially around API contracts, UI behavior, and edge cases.\nIf an issue appears during integration, I'd first reproduce it and determine whether it's coming from the frontend, backend response, API contract, or design expectation.\nI'd then communicate the problem with concrete evidence—for example, the request being sent, the response received, and the UI behavior we're seeing.\nIf it's easier to resolve together, I'd get on a call with the relevant person, reproduce the issue together, agree on the expected behavior, and then implement the appropriate fix.\nI find that this approach keeps the conversation focused on solving the problem rather than assigning blame."
+    },
+    {
+      "id": "q13",
+      "category": "What if a designer wants an animation that hurts performance?",
+      "difficulty": "medium",
+      "question": "Suppose a designer wants a heavy animation that significantly hurts performance. What would you do?",
+      "answer": "I wouldn't immediately reject the design. I'd first understand what experience the animation is intended to create and measure the performance impact.\nI'd profile the animation and determine whether the problem is caused by expensive JavaScript, layout calculations, large assets, or properties that trigger excessive painting or layout.\nIf possible, I'd move the animation to CSS and prefer performant properties such as transform and opacity rather than repeatedly triggering layout.\nIf JavaScript is necessary, I'd make sure updates are scheduled appropriately and avoid unnecessary work during animation frames.\nI'd then compare the performance before and after the optimization.\nIf the animation still has a significant impact, I'd discuss alternatives with the designer—perhaps a simpler animation or a reduced version for lower-powered devices.\nThe goal would be to preserve the intended user experience while finding an implementation that meets the performance requirements."
+    },
+    {
+      "id": "q14",
+      "category": "Explain the race condition with rapid refresh requests.",
+      "difficulty": "medium",
+      "question": "Suppose users click refresh several times quickly. Multiple requests go out, and an older response sometimes arrives after a newer response and overwrites the latest state. How would you debug and fix that?",
+      "answer": "That's a race condition caused by multiple asynchronous requests completing in an unpredictable order.\nFirst, I'd reproduce it by triggering the refresh action rapidly and inspect the Network panel to confirm that multiple requests are being made and that the responses are arriving out of order.\nIf I'm using TanStack Query, I'd take advantage of its query management and caching behavior rather than manually managing request state.\nIf I were implementing the request manually, one solution would be to cancel the previous request using AbortController when a new request starts. Another approach would be to associate each request with an identifier and only allow the latest request to update the state.\nFor example, I could keep the latest request ID in a ref and, when a response arrives, check whether it still corresponds to the latest request. If it doesn't, I'd ignore that response.\nThe important thing is that an older response must not be allowed to overwrite newer data.\n\nKey concept\nDon't just say “React Query handles it.”\nThe interviewer wants to know that you understand why the bug happens."
+    },
+    {
+      "id": "q15",
+      "category": "Would you approve a 500-line React component?",
+      "difficulty": "medium",
+      "question": "You're reviewing a pull request where a component is 500 lines long and mixes data fetching, business logic, and UI, but it works. Do you approve?",
+      "answer": "I wouldn't automatically reject it simply because it's 500 lines, because line count by itself doesn't determine code quality.\nHowever, if the component genuinely mixes data fetching, business logic, state management, and presentation responsibilities, I'd probably request changes before approving it.\nI'd suggest separating the responsibilities. For example, data-fetching logic could be handled through a custom hook or appropriate data layer, reusable business logic could be extracted into functions or services, and the UI could be divided into smaller components where that improves clarity.\nI'd explain the reason for the change rather than just saying the component is too large: separation would make the code easier to test, reason about, reuse, and maintain.\nI would also avoid over-engineering it. The goal isn't to create ten files from one component just for the sake of separation. I'd extract responsibilities where there's a clear benefit.\n\nThat last paragraph is important. A senior interviewer will appreciate that you understand separation of concerns without blindly splitting everything."
+    },
+    {
+      "id": "q16",
+      "category": "What is the difference between == and ===?",
+      "difficulty": "medium",
+      "question": "What's the difference between double equals and triple equals? When, if ever, would you use double equals?",
+      "answer": "Double equals, ==, performs loose equality comparison. JavaScript can perform type coercion before comparing the values.\nTriple equals, ===, performs strict equality comparison. It checks both the value and the type without performing that implicit type coercion.\nFor example, 1 == '1' evaluates to true because JavaScript coerces the string into a number, while 1 === '1' evaluates to false because one value is a number and the other is a string.\nIn application code, I generally prefer === because it makes comparisons more explicit and avoids unexpected coercion.\nThere are cases where == can intentionally be useful, but I'd use it only when the coercion behavior is deliberate and clearly understood. In a TypeScript codebase, I'd normally favor strict equality for clarity and consistency."
+    },
+    {
+      "id": "q17",
+      "category": "What's the first performance metric you'd check?",
+      "difficulty": "medium",
+      "question": "What's one performance metric you check first in a frontend review, and why?",
+      "answer": "It depends on what type of performance problem I'm investigating, but for an initial assessment of page-load performance, I'd look at Largest Contentful Paint, or LCP.\nLCP gives an indication of how quickly the main content becomes visible to the user, so it's useful for understanding the perceived loading experience.\nI wouldn't look at LCP in isolation, though. I'd also look at metrics such as CLS for visual stability and INP for interaction responsiveness, along with the Network panel and browser performance tools.\nThe specific metric I'd prioritize would depend on the user-facing problem I'm trying to solve."
+    },
+    {
+      "id": "q18",
+      "category": "Tell me about a challenging bug you solved.",
+      "difficulty": "medium",
+      "question": "Tell me about a challenging bug you solved recently.",
+      "answer": "This is a behavioral question, so don't invent a story.\nA strong structure is:\n\n“One challenging issue I worked on involved [specific problem].\nThe problem was [observable behavior], and it was difficult because [reason].\nI first reproduced the issue and narrowed it down by [debugging approach].\nI discovered that the root cause was [technical cause].\nI fixed it by [solution].\nAfter the fix, I verified it by [testing/measurement].\nThe main thing I took away from that issue was [lesson].”\n\nImportant\nFor this question, a real story from your experience is much stronger than a technically perfect generic answer.\nYour resume gives you several possible areas to draw from, including UI/state/rendering issues at Orki and the API development tool at Reex."
+    },
+    {
+      "id": "q19",
+      "category": "How do you debug a button that doesn't update the UI?",
+      "difficulty": "medium",
+      "question": "Suppose you click a button that's supposed to update the UI, but nothing changes. How do you debug it?",
+      "answer": "I'd start from the user interaction and work through the entire chain.\nFirst, I'd verify that the click handler is actually firing, using a breakpoint or targeted console logging.\nThen I'd inspect the state update. I'd check whether the correct setter is being called and whether I'm accidentally mutating state directly.\nFor objects and arrays, I'd make sure I'm creating a new reference rather than mutating the existing state.\nI'd then inspect the component with React DevTools to verify that the state actually changed and that the component rerendered.\nIf the state changes but the UI doesn't, I'd check whether the component is actually rendering that state value. I'd also investigate memoization, stale closures, or stale props if they're relevant.\nIf the state update depends on an API request, I'd inspect the Network panel and verify the request, response, and error handling.\nFinally, I'd verify the rendered output and reproduce the original issue after applying the fix."
+    },
+    {
+      "id": "q20",
+      "category": "How do you know whether state updating is the actual problem?",
+      "difficulty": "medium",
+      "question": "How do you know if the problem is actually in the way the state is updated?",
+      "answer": "I'd inspect the state transition itself.\nFirst, I'd verify that the state setter is being called with the expected value.\nIf the state is an object or array, I'd check for direct mutation. For example, mutating an existing array and then passing the same reference back can cause problems because React relies heavily on reference identity when determining changes.\nI'd also check whether the new state is being calculated from previous state. If so, I'd use the functional updater form where appropriate, such as setCount(prev => prev + 1), to avoid relying on a potentially stale value.\nThen I'd use React DevTools to verify what the state value is on the next render.\nIf the state is correct but the UI is still stale, I'd move my investigation away from the setter and look at rendering, props, memoization, selectors, or stale closures."
+    },
+    {
+      "id": "q21",
+      "category": "How would you render 10,000 items efficiently?",
+      "difficulty": "medium",
+      "question": "Suppose you have a list containing 10,000 items. How would you keep the UI performant?",
+      "answer": "I wouldn't render all 10,000 DOM nodes at once if the user only sees a small portion of them.\nI'd use virtualization, where only the items currently visible in or near the viewport are rendered. Libraries such as react-window can be used for this.\nI'd also make sure each item has a stable key and avoid unnecessary work inside the item component.\nIf the items are expensive to render, I'd profile the list and consider memoization where it provides a measurable benefit.\nI'd also consider pagination or server-side pagination if loading all 10,000 records isn't actually necessary.\nThe right solution depends on the interaction requirements, but virtualization is the main technique I'd consider for a large client-rendered list."
+    },
+    {
+      "id": "q22",
+      "category": "What's your favorite thing about frontend engineering?",
+      "difficulty": "medium",
+      "question": "What's your favorite thing about working in frontend engineering?",
+      "answer": "I really enjoy taking an idea and turning it into an interface that people can actually interact with.\nI particularly enjoy responsive UI development and working on the details of how an interface behaves across different screen sizes.\nI also enjoy solving challenging frontend problems, especially animations, rendering behavior, and performance issues, because they require both creativity and technical problem-solving.\nWhat I like most is that frontend engineering sits at the intersection of engineering and user experience. A technically correct implementation isn't enough—the result also needs to feel intuitive and perform well for the user."
+    },
+    {
+      "id": "q23",
+      "category": "How would you investigate a slow Next.js first page load?",
+      "difficulty": "medium",
+      "question": "You've built a Next.js application and the first page load is slow. Walk me through how you'd investigate it and which Next.js features you'd consider.",
+      "answer": "I'd start by measuring the problem rather than immediately changing the implementation.\nI'd use Lighthouse and Chrome DevTools to determine whether the bottleneck is JavaScript, server response time, network transfer, images, fonts, rendering, or third-party scripts.\nThen I'd inspect the application bundle and identify whether we're shipping unnecessarily large JavaScript to the client.\nIn Next.js, I'd consider the rendering strategy. Depending on the page, I'd determine whether static generation, server rendering, incremental regeneration, or client-side fetching is most appropriate.\nI'd use dynamic imports for large client-side components that don't need to be included in the initial bundle.\nI'd also optimize images using Next.js image optimization and optimize fonts where appropriate.\nI'd look for unnecessary client components as well, particularly in the App Router, because keeping components on the server where possible can reduce the amount of JavaScript sent to the browser.\nFinally, I'd measure again after each significant change to verify that the initial load actually improved."
+    },
+    {
+      "id": "q24",
+      "category": "What problem does React Suspense solve?",
+      "difficulty": "medium",
+      "question": "What problem does Suspense solve? What does the fallback prop do?",
+      "answer": "Suspense allows part of a React application's UI to wait for something it depends on while another part of the UI can continue displaying.\nThe fallback is the UI React displays while the suspended content isn't ready. That might be a loading indicator, skeleton, or placeholder.\nThe important benefit is that we don't necessarily have to block the entire interface while one piece of content is loading.\nIt allows us to create loading boundaries and provide a better progressive loading experience."
+    },
+    {
+      "id": "q25",
+      "category": "Why does Suspense improve user experience?",
+      "difficulty": "medium",
+      "question": "Why does Suspense improve the user experience?",
+      "answer": "Without a loading boundary, users may see a blank area or have to wait for an entire page to become available.\nWith Suspense, we can show meaningful placeholder content while the slower content loads.\nThis gives users immediate visual feedback and allows different parts of the interface to become available progressively.\nA well-designed fallback can also reserve the appropriate layout space, which can help avoid visual instability."
+    },
+    {
+      "id": "q26",
+      "category": "How does Suspense work with data fetching in Next.js App Router?",
+      "difficulty": "medium",
+      "question": "In Next.js App Router, how might you combine Suspense with data fetching?",
+      "answer": "In the App Router, Server Components can perform asynchronous data fetching.\nI can place a slow asynchronous Server Component inside a Suspense boundary and provide a fallback UI.\nWhile the server is resolving the suspended content, the fallback can be streamed to the browser, and the actual content can be inserted when it's ready.\nThis allows the page to progressively render instead of making the user wait for every piece of data before seeing anything.\nIn Next.js App Router, I can also use route-level loading UI with loading.tsx, which provides a loading state for a route segment.\nThe key idea is to create meaningful loading boundaries around parts of the UI that may take longer to resolve."
+    }
+  ]
+}
